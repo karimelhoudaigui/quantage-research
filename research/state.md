@@ -1,4 +1,4 @@
-# QuantAge — état de recherche au 18 novembre 2026
+# QuantAge — état de recherche au 19 novembre 2026
 
 Mission active : une contribution scientifique nouvelle, vérifiée et reproductible sur les agents de formulation et de sélection de solveurs. L’objectif global reste ouvert. Article de travail compilé, sans déclaration de nouveauté mondiale ni de maturité de soumission. Historique détaillé conservé dans research/archive/state-before-c26-20261116.md et dans les cycles immuables.
 
@@ -43,3 +43,11 @@ Les anciens tmp_pack Git fermés/classés déchets ont été nettoyés de maniè
 Caches publics 4B, C16 et C17 évincés après contrôles et URLs épinglées ; modèles bruts et preuves historiques non effacés. research/c19-c21-validation-before-cache-eviction.json atteste 17 validations réussies avant éviction, pas une validation actuelle avec poids absents. Le 8B est présent. Le disque dispose maintenant de marge ; aucune origine unique de cette variation n’est prétendue. Ne tuer aucun autre processus/projet utilisateur.
 
 Prochaine action : ne pas relancer C28 ni lancer le corpus réservé C23. Une nouvelle tentative exige une nouvelle décision prospective et un protocole révisé. Finaliser l'article comme document de travail avec C19/H19 inchangés et la limite C28 explicitée; ne pas assimiler ce pilote à un résultat scientifique ni transformer les fixtures en résultat empirique.
+
+## 19 novembre 2026 — P2-RYD-00 bloqué avant exécution
+
+Choix de la piste `many_body` : formalisation d'une demande analogique Rydberg et vérification des frontières Pulser/Device, en lien avec la limite quantique explicitée dans l'article C19. La question générale de workflow agentique neutre-atomique n'est pas différenciée de travaux Pasqal proches. Un sous-angle sur la préservation de l'intention physique reste candidat, mais sa nouveauté n'est pas établie par la recherche ciblée. QAOS arXiv:2607.25834v1 indique 633 articles dans l'abstract et 526 dans l'introduction; l'écart reste non résolu.
+
+Le protocole de développement n'a pas passé la revue indépendante : l'agent de revue a échoué avant lecture avec `400 The requested model is not supported`. L'intégrateur a produit une auto-revue, explicitement non indépendante, et a identifié des critères d'effet/taille manquants ainsi que le réemploi interdit des sondes C13 comme scores nouveaux. Aucun code, modèle, simulation, QPU, dépense externe ou test réservé n'a été exécuté/consulté pour P2-RYD-00. Le cycle est clos `blocked`, non comme hypothèse confirmée. Le manuscrit C19 a été actualisé sans changer ses résultats; le PDF a été reconstruit hors ligne avec Tectonic épinglé (empreintes dans `runs/20261119-p2-rydberg-gate/paper-build.json`). Rapport : `runs/20261119-p2-rydberg-gate/summary.md`; cadrage : `research/quantum_agents_v2/`.
+
+Prochaine action : obtenir une relecture bibliographique et de protocole indépendante, préciser l'effet et le critère primaire, puis décider humainement si le sous-angle mérite un nouveau cycle. Aucun pilote P2 ni appel C23/C28 sans une nouvelle décision et un protocole gelé.

@@ -1,0 +1,36 @@
+{
+  "command": [
+    "research/external/tectonic/tectonic",
+    "--untrusted",
+    "--only-cached",
+    "--keep-logs",
+    "--makefile-rules",
+    "runs/20261119-p2-rydberg-gate/paper-build-c19/dependencies.mk",
+    "--outdir",
+    "runs/20261119-p2-rydberg-gate/paper-build-c19",
+    "paper/main.tex"
+  ],
+  "engine": "Tectonic 0.17.0",
+  "binary_sha256": "b52b5a730e2b0b33087304f7720f649603953f270a6b1c88bb031e1ae01f7f9c",
+  "tex_sha256": "d15e2e7022a426f431b2331ef682ecd9cc9911df22038ba185fe2c8f6374ea9f",
+  "tex_sha256_after": "d15e2e7022a426f431b2331ef682ecd9cc9911df22038ba185fe2c8f6374ea9f",
+  "pdf_sha256": "4ddc681660da8d1342dcbfaa7281bff9e4527c81bc82e12add27ff21f3c4683d",
+  "exit_code": 0,
+  "cache_scope": "pinned local cache only; network disabled; no shell escape",
+  "build_artifacts": "Canonical paper/main.pdf and paper/main.tex are versioned; generated build directories and raw logs are retained only in the local working tree.",
+  "failed_attempts_preserved": [
+    {
+      "directory": "runs/20261119-p2-rydberg-gate/paper-build",
+      "reason": "Input copied outside paper/; relative figure path did not resolve."
+    },
+    {
+      "directory": "runs/20261119-p2-rydberg-gate/paper-build-final",
+      "reason": "The generic non-C19 article builder output required an uncached cmr6 font. Its generated sources were restored; this attempt did not replace paper/main.pdf."
+    }
+  ],
+  "outputs": {
+    "paper/main.pdf": "4ddc681660da8d1342dcbfaa7281bff9e4527c81bc82e12add27ff21f3c4683d",
+    "paper/main.tex": "d15e2e7022a426f431b2331ef682ecd9cc9911df22038ba185fe2c8f6374ea9f"
+  },
+  "scope": "The PDF confirms syntax/layout of the updated C19 work-in-progress only; it is not scientific validation or publication readiness."
+}

@@ -43,9 +43,13 @@
       "préparation d’états",
       "corrélations et transitions sur petites tailles"
     ],
-    "next_action": "Isoler la représentation temporelle Pulser et l’arrondi de durée; la dynamique deux atomes est validée seulement aux tolérances finies, aucune généralisation agentique.",
+    "next_action": "P2-RYD-00 est clos blocked : la nouveauté du sous-angle intention→IR→Pulser reste non établie et la revue indépendante a échoué avant lecture. Ne pas lancer le pilote; reprendre après revue indépendante, métrique primaire/effet justifiés et cas distincts des sondes C13.",
     "completed_cycles": [
-      "C13"
+      "C13",
+      "P2-RYD-00"
+    ],
+    "blocked_cycles": [
+      "P2-RYD-00"
     ]
   },
   {
@@ -130,7 +134,8 @@
     "blockers": [
       "Le gate C28 de viabilité sous la configuration C23 a échoué au critère de réponse complète; aucun retry autorisé par le protocole",
       "Comparaison réservée C23 non exécutée et bloquée",
-      "Contribution scientifique à différencier des antériorités proches"
+      "Contribution scientifique à différencier des antériorités proches",
+      "P2-RYD-00 : nouveauté Rydberg agentique non établie et reviewer indépendant indisponible"
     ],
     "blocked_cycles": [
       "C06",

@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-11-14",
+  "checked_on": "2026-11-19",
   "ready_for_submission": false,
   "criteria": [
     {
@@ -75,7 +75,17 @@
         "paper/main.tex",
         "paper/archive/"
       ],
-      "gap": "Restructured and self-reviewed; no new independent finalreferee and no manuscript PDF compilation."
+      "gap": "The updated work-in-progress PDF compiles; no new independent final referee or publication-readiness review."
+    },
+    {
+      "criterion": "Phase 2 Rydberg agentic novelty and protocol gate",
+      "status": "not_established",
+      "evidence": [
+        "runs/20261119-p2-rydberg-gate/summary.md",
+        "runs/20261119-p2-rydberg-gate/review.md",
+        "research/quantum_agents_v2/01_LITERATURE_AND_NOVELTY.md"
+      ],
+      "gap": "Nearest works overlap with the broad workflow; the narrower question lacks independent novelty/protocol review, predeclared primary threshold and any new agent experiment."
     }
   ],
   "next_priority": "Clause-grounded verifier and stronger practical baseline on new groups, with independent annotation/review after resources restored; C11/C14 become development for new method."

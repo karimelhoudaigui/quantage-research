@@ -1,0 +1,19 @@
+{
+  "status": "blocked",
+  "cycle": "P2-RYD-00",
+  "question": "Un système agentique peut-il préserver l'intention physique d'une demande de dynamique Rydberg à travers IR, Hamiltonien, Pulser/Device et abstention, au-delà d'une génération directe ?",
+  "result_scope": "Gate de nouveauté et protocole bloqué avant gel et avant exécution. Aucun code, modèle, simulation ou test réservé n'a été utilisé.",
+  "claim_id": "P2-RYD-NOVELTY-AND-EVALUATION",
+  "evidence": [
+    "protocol.md",
+    "review.md",
+    "summary.md",
+    "paper-build.json",
+    "../../research/quantum_agents_v2/01_LITERATURE_AND_NOVELTY.md",
+    "../../research/quantum_agents_v2/10_GATE_DECISION.md",
+    "../20261113-c13-sdk-rydberg/summary.md"
+  ],
+  "hypothesis_status": "Nouveauté du cadrage large non différenciée; nouveauté du sous-angle non établie. Revue indépendante indisponible; protocole non gelé.",
+  "next_action": "Aucune implémentation ni exécution jusqu'à une revue bibliographique indépendante, un reviewer distinct, un critère primaire/effet minimal justifiés et des cas réservés distincts des sondes C13; ne pas consulter ou lancer C23.",
+  "created_at_utc": "2026-11-19"
+}

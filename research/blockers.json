@@ -56,5 +56,12 @@
     "observed": "17sources primaires proches couvrent déjà vérification sémantique, cohérence modulaire, risque sélectif, feedback SDK et audits de benchmarks.",
     "consequence": "La contribution candidate reste un banc et une étude empirique bornés; aucune nouveauté mondiale ou maturité de soumission démontrée.",
     "resume_when": "Contribution plus précisément différenciée et nouvelle expérience discriminante, revue d’antériorité et relecture disponibles."
+  },
+  {
+    "id": "phase2_rydberg_gate",
+    "status": "blocked",
+    "observed": "P2-RYD-00 a identifié des workflows Pasqal/neutral-atom proches. Le reviewer indépendant a échoué avant lecture avec 400 The requested model is not supported; l'auto-revue n'est pas indépendante.",
+    "consequence": "Aucune implémentation ni génération/pilote Phase 2; nouveauté du sous-angle non établie et critères primaires/puissance non gelés.",
+    "resume_when": "Revue bibliographique et protocole indépendants, métrique primaire et effet minimal justifiés, annotations séparées et cas scorés distincts des sondes C13."
   }
 ]

@@ -448,5 +448,18 @@
     ],
     "verification_report": "runs/20261118-c28-c23-config-probe/verification.md",
     "limitations": "Un seul appel sur un cas de développement; aucune réponse complète, donc aucune mesure de fidélité. Aucun corpus C23 ou gold n'a été utilisé. Le compteur client à zéro ne signifie pas zéro token réellement généré. L'absence de marqueur OOM ne prouve pas une marge mémoire. Aucun retry, comparaison C23, performance de population ou résultat QPU."
+  },
+  {
+    "id": "P2-RYD-NOVELTY-AND-EVALUATION",
+    "status": "inconclusive",
+    "statement": "La nouveauté d'une évaluation agentique de fidélité physique à travers IR et Pulser pour des tâches Rydberg n'est pas établie. Le cadrage large recoupe des workflows Pasqal publiés; le protocole Phase 2 n'a pas été relu indépendamment ni exécuté.",
+    "evidence": [
+      "runs/20261119-p2-rydberg-gate/protocol.md",
+      "runs/20261119-p2-rydberg-gate/summary.md",
+      "research/quantum_agents_v2/01_LITERATURE_AND_NOVELTY.md",
+      "runs/20261113-c13-sdk-rydberg/summary.md"
+    ],
+    "verification_report": "runs/20261119-p2-rydberg-gate/review.md",
+    "limitations": "Revue bibliographique ciblée et non systématique; reviewer indépendant échoué avant lecture; auto-revue de l'intégrateur non indépendante. Aucune expérience Phase 2 ou test réservé exécuté. La discordance 633/526 de Dalyac et al. reste non résolue."
   }
 ]
