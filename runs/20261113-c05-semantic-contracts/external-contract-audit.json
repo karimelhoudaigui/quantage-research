@@ -1,0 +1,6948 @@
+{
+  "assertion_tested": "Replay 67 initial external proposals against independent manually established schema/output expectations; add 42 discriminating cases; exclude six initial pipeline-only requests.",
+  "audited_files": [
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "runs/20261113-c05-semantic-contracts/audit_cases.json"
+  ],
+  "bounds": {
+    "cases": 109,
+    "mis_n_valid_max": 3,
+    "randomness_used": false
+  },
+  "cases": [
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_unknown_sense",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          1,
+          2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            -3
+          ]
+        ],
+        "sense": "banana"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_negative_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            -1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_bool_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            true,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_large_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            2,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_too_negative_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            -3,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_float_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            0.5,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_wrong_kind",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "garbage",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_bool_coefficient",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          false,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_unused_penalty",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": "not numeric",
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_extra_semantics",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "extra_constraint": "select vertex 0",
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "mis_constant_shift",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 7,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "mis_positive_scaling",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -3,
+          -6
+        ],
+        "penalty": 9,
+        "quadratic": [
+          [
+            0,
+            1,
+            9
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_constant_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": {
+          "$float": "nan"
+        },
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_linear_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          {
+            "$float": "nan"
+          },
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_quadratic_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            {
+              "$float": "nan"
+            }
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_penalty_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": {
+          "$float": "nan"
+        },
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_constant_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": {
+          "$float": "inf"
+        },
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_linear_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          {
+            "$float": "inf"
+          },
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_quadratic_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            {
+              "$float": "inf"
+            }
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_penalty_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": {
+          "$float": "inf"
+        },
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_constant_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": {
+          "$float": "-inf"
+        },
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_linear_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          {
+            "$float": "-inf"
+          },
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_quadratic_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            {
+              "$float": "-inf"
+            }
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_penalty_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": {
+          "$float": "-inf"
+        },
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_unknown_order",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "garbage",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_unknown_output",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "garbage",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_string_coherent",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": "false",
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_negative_phase_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": -1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_bool_phase_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": true,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_bool_input_mode",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": false,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_large_phase_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 2,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_float_phase_index",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 0.5,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_unknown_input_mode",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": "garbage",
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_wrong_kind",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "garbage",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "photon_global_phase",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 1.234,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": false,
+      "id": "photon_incoherent",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": false,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_unknown_enums_combined",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": "false",
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "garbage",
+        "output": "garbage",
+        "phase_mode": -1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_a_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": {
+          "$float": "nan"
+        },
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_b_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": {
+          "$float": "nan"
+        },
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_phi_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": {
+          "$float": "nan"
+        }
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_global_phase_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": {
+          "$float": "nan"
+        },
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_coherent_nan",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": {
+          "$float": "nan"
+        },
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_a_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": {
+          "$float": "inf"
+        },
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_b_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": {
+          "$float": "inf"
+        },
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_phi_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": {
+          "$float": "inf"
+        }
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_global_phase_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": {
+          "$float": "inf"
+        },
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_coherent_inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": {
+          "$float": "inf"
+        },
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_a_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": {
+          "$float": "-inf"
+        },
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_b_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": {
+          "$float": "-inf"
+        },
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_phi_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": {
+          "$float": "-inf"
+        }
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_global_phase_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": {
+          "$float": "-inf"
+        },
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_coherent_-inf",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": {
+          "$float": "-inf"
+        },
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_unknown_input_on_balanced",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.7853981633974483,
+        "b": 0,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.7853981633974483,
+        "b": 0,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 666,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_changed_angle_tolerance_{'$float': 'inf'}",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 1.1,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": {
+        "$float": "inf"
+      }
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_changed_angle_tolerance_{'$float': 'nan'}",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 1.1,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": {
+        "$float": "nan"
+      }
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_changed_angle_tolerance_-1",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 1.1,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": -1
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": false,
+      "id": "photon_changed_angle_tolerance_1e-12",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 1.1,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "photon_unknown_normalized_family",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "unsupported_family",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "mis_finite_inputs_infinite_energy",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [],
+        "family": "mis",
+        "n": 1,
+        "objective": "maximize_weight",
+        "weights": [
+          1
+        ]
+      },
+      "proposal": {
+        "constant": 1e+308,
+        "kind": "qubo",
+        "linear": [
+          1e+308
+        ],
+        "penalty": 2,
+        "quadratic": [],
+        "sense": "maximize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "control_mis_k2",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "control_mis_tied",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          1
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -1
+        ],
+        "penalty": 2,
+        "quadratic": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "control_mis_star",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "family": "mis",
+        "n": 3,
+        "objective": "maximize_weight",
+        "weights": [
+          5,
+          1,
+          1
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -5,
+          -1,
+          -1
+        ],
+        "penalty": 6,
+        "quadratic": [
+          [
+            0,
+            1,
+            6
+          ],
+          [
+            0,
+            2,
+            6
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "control_photon_identity",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0,
+        "b": 0,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0
+      },
+      "proposal": {
+        "a": 0,
+        "b": 0,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "control_photon_swap",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 1.5707963267948966,
+        "b": 0,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0
+      },
+      "proposal": {
+        "a": 1.5707963267948966,
+        "b": 0,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "control_photon_constructive",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.7853981633974483,
+        "b": 0.7853981633974483,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0
+      },
+      "proposal": {
+        "a": 0.7853981633974483,
+        "b": 0.7853981633974483,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "control_photon_destructive",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.7853981633974483,
+        "b": 0.7853981633974483,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 3.141592653589793
+      },
+      "proposal": {
+        "a": 0.7853981633974483,
+        "b": 0.7853981633974483,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 3.141592653589793
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "manual schema domain assessment and hand-derived instance-output equivalence; root labels not used",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "control_photon_quarter_phase",
+      "origin": "initial_auditor_cases",
+      "problem": {
+        "a": 0.7853981633974483,
+        "b": 0.7853981633974483,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 1.5707963267948966
+      },
+      "proposal": {
+        "a": 0.7853981633974483,
+        "b": 0.7853981633974483,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 1.5707963267948966
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_maximize_sign_reversal",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          1,
+          2
+        ],
+        "penalty": -3,
+        "quadratic": [
+          [
+            0,
+            1,
+            -3
+          ]
+        ],
+        "sense": "maximize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_optional_penalty",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_inconsistent_penalty",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 4,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_float_penalty",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3.0,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_bool_constant",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": false,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_float_linear",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1.0,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_duplicate_terms",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_reversed_term",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            1,
+            0,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_self_term",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            0,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_missing_sense",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ]
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_missing_penalty_is_not_required",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "quadratic": [
+          [
+            0,
+            1,
+            101
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_huge_integer_exact_scaling",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "kind": "qubo",
+        "linear": [
+          -10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+          -20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        ],
+        "penalty": 30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+        "quadratic": [
+          [
+            0,
+            1,
+            30000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": false,
+      "id": "extra_wrong_ordinary_optimum",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "quadratic": [],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": false,
+      "id": "extra_boundary_tied_infeasible",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          1
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -1
+        ],
+        "penalty": 1,
+        "quadratic": [
+          [
+            0,
+            1,
+            1
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_normalized_reversed_edge",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            1,
+            0
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_problem_objective",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_cardinality",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_problem_constraints",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "dependent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_problem_bool_n",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": true,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_problem_bool_weight",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          true,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_problem_duplicate_edge",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_problem_extra_field",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "extra": 0,
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_problem_bad_family",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "qubo",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_problem_dimension",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 13,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_huge_integer_problem_weights",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+          20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+          -20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+        ],
+        "penalty": 20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001,
+        "quadratic": [
+          [
+            0,
+            1,
+            20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_photon_problem_bool_input",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          false
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_photon_problem_wrong_input",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          0,
+          1
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_photon_problem_bool_modes",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": true,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_photon_problem_bool_loss",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": false,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_photon_problem_observable",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "amplitudes",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_photon_problem_bool_angle",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": false,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_photon_reverse_order",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_a P R_b",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_photon_negate_phase",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": -0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_photon_phase_other_mode",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 0,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_photon_huge_global_phase",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.2,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.2,
+        "b": 0.3,
+        "coherent": true,
+        "global_phase": 1e+308,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_valid_input1_balanced",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0.7853981633974483,
+        "b": 0,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0.7853981633974483,
+        "b": 0,
+        "coherent": true,
+        "global_phase": 0,
+        "input_mode": 1,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_valid_incoherent_on_zero_rotation",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "a": 0,
+        "b": 0.3,
+        "family": "photon",
+        "input": [
+          1,
+          0
+        ],
+        "loss": 0,
+        "modes": 2,
+        "observable": "probabilities",
+        "phi": 0.4
+      },
+      "proposal": {
+        "a": 0,
+        "b": 0.3,
+        "coherent": false,
+        "global_phase": 0,
+        "input_mode": 0,
+        "kind": "linear_optics",
+        "order": "R_b P R_a",
+        "output": "probabilities",
+        "phase_mode": 1,
+        "phi": 0.4
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_tolerance_zero",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 0
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_tolerance_bool",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": true
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_tolerance_too_large",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-05
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_tolerance_string",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": "1e-12"
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "schema",
+      "expected_valid": false,
+      "id": "extra_tolerance_null",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": null
+    },
+    {
+      "basis": "explicit allowed schema; exact or analytic hand comparison",
+      "expected_stage": "finite_output",
+      "expected_valid": true,
+      "id": "extra_tolerance_maximum",
+      "origin": "additional_discriminating_case",
+      "problem": {
+        "constraints": "independent",
+        "domain": "binary",
+        "edges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "family": "mis",
+        "n": 2,
+        "objective": "maximize_weight",
+        "weights": [
+          1,
+          2
+        ]
+      },
+      "proposal": {
+        "constant": 0,
+        "kind": "qubo",
+        "linear": [
+          -1,
+          -2
+        ],
+        "penalty": 3,
+        "quadratic": [
+          [
+            0,
+            1,
+            3
+          ]
+        ],
+        "sense": "minimize"
+      },
+      "tolerance": 1e-06
+    }
+  ],
+  "command_argv": [
+    "python3",
+    "-c",
+    "import json; from pathlib import Path; exec(json.loads(Path(\"runs/20261113-c05-semantic-contracts/external-contract-audit.json\").read_text())[\"replay_source\"])"
+  ],
+  "date_utc": "2026-11-13T13:22:19.128341+00:00",
+  "exit_status": 0,
+  "non_claims": [
+    "Not a population false-acceptance rate",
+    "Not a language or hardware certificate",
+    "Not a uniform floating-point error proof"
+  ],
+  "recorded_run": {
+    "input_hashes_after": {
+      "quantage/contracts.py": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "quantage/core.py": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "quantage/verification.py": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "runs/20261113-c05-semantic-contracts/audit_cases.json": "24318900c9e929b4284f29e0961e4934466d2d6b5a1ccd1a9a7c194631fd4edd"
+    },
+    "input_hashes_before": {
+      "quantage/contracts.py": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "quantage/core.py": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "quantage/verification.py": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "runs/20261113-c05-semantic-contracts/audit_cases.json": "24318900c9e929b4284f29e0961e4934466d2d6b5a1ccd1a9a7c194631fd4edd"
+    },
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.9.6",
+    "results": [
+      {
+        "expectation_matches": true,
+        "id": "mis_unknown_sense",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "unknown objective sense",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_negative_index",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "indices must satisfy 0<=i<j<n",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_bool_index",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "indices must satisfy 0<=i<j<n",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_large_index",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "indices must satisfy 0<=i<j<n",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_too_negative_index",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "indices must satisfy 0<=i<j<n",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_float_index",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "indices must satisfy 0<=i<j<n",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_wrong_kind",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "expected qubo",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_bool_coefficient",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer linear coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_unused_penalty",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer penalty metadata required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_extra_semantics",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "missing or unknown fields",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_constant_shift",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_positive_scaling",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_constant_nan",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer constant required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_linear_nan",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer linear coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_quadratic_nan",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer quadratic coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_penalty_nan",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer penalty metadata required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_constant_inf",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer constant required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_linear_inf",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer linear coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_quadratic_inf",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer quadratic coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_penalty_inf",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer penalty metadata required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_constant_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer constant required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_linear_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer linear coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_quadratic_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer quadratic coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_penalty_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer penalty metadata required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_unknown_order",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "unknown component order",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_unknown_output",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "probability output required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_string_coherent",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "coherent must be boolean",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_negative_phase_index",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "phase mode must be 0 or 1",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_bool_phase_index",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "phase mode must be 0 or 1",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_bool_input_mode",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "input mode must be 0 or 1",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_large_phase_index",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "phase mode must be 0 or 1",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_float_phase_index",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "phase mode must be 0 or 1",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_unknown_input_mode",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "input mode must be 0 or 1",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_wrong_kind",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "expected linear_optics",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_global_phase",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_incoherent",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 0.10126242936762508,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_unknown_enums_combined",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "phase mode must be 0 or 1",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_a_nan",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_b_nan",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_phi_nan",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_global_phase_nan",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_coherent_nan",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "coherent must be boolean",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_a_inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_b_inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_phi_inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_global_phase_inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_coherent_inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "coherent must be boolean",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_a_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_b_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_phi_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_global_phase_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "finite real angles required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_coherent_-inf",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "coherent must be boolean",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_unknown_input_on_balanced",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.7853981633974483,
+            "b": 0,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "input mode must be 0 or 1",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_changed_angle_tolerance_{'$float': 'inf'}",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "invalid or unsupported tolerance",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_changed_angle_tolerance_{'$float': 'nan'}",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "invalid or unsupported tolerance",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_changed_angle_tolerance_-1",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "reason": "invalid or unsupported tolerance",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_changed_angle_tolerance_1e-12",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 0.7319226834603982,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "photon_unknown_normalized_family",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "unknown family"
+        },
+        "result": {
+          "reason": "unknown family",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "mis_finite_inputs_infinite_energy",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [],
+            "family": "mis",
+            "n": 1,
+            "objective": "maximize_weight",
+            "weights": [
+              1
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer linear coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "control_mis_k2",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "control_mis_tied",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              1
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 1,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "control_mis_star",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ],
+              [
+                0,
+                2
+              ]
+            ],
+            "family": "mis",
+            "n": 3,
+            "objective": "maximize_weight",
+            "weights": [
+              5,
+              1,
+              1
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 5,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 8,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "control_photon_identity",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0,
+            "b": 0,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0
+          }
+        },
+        "result": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "control_photon_swap",
+        "problem_normalization": {
+          "normalized": {
+            "a": 1.5707963267948966,
+            "b": 0,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0
+          }
+        },
+        "result": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "control_photon_constructive",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.7853981633974483,
+            "b": 0.7853981633974483,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0
+          }
+        },
+        "result": {
+          "max_abs_error": 4.930380657631324e-32,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "control_photon_destructive",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.7853981633974483,
+            "b": 0.7853981633974483,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 3.141592653589793
+          }
+        },
+        "result": {
+          "max_abs_error": 3.749399456654644e-33,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "control_photon_quarter_phase",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.7853981633974483,
+            "b": 0.7853981633974483,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 1.5707963267948966
+          }
+        },
+        "result": {
+          "max_abs_error": 1.6653345369377348e-16,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_maximize_sign_reversal",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_optional_penalty",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_inconsistent_penalty",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "penalty metadata contradicts coefficients",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_float_penalty",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer penalty metadata required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_bool_constant",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer constant required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_float_linear",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "exact integer linear coefficients required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_duplicate_terms",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "duplicate quadratic term",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_reversed_term",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "indices must satisfy 0<=i<j<n",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_self_term",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "indices must satisfy 0<=i<j<n",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_missing_sense",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "missing or unknown fields",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_missing_penalty_is_not_required",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_huge_integer_exact_scaling",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_wrong_ordinary_optimum",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_boundary_tied_infeasible",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              1
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 1,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_normalized_reversed_edge",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_problem_objective",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "unsupported MIS task"
+        },
+        "result": {
+          "reason": "unsupported MIS task",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_problem_constraints",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "unsupported MIS task"
+        },
+        "result": {
+          "reason": "unsupported MIS task",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_problem_bool_n",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "MIS local exact cap: 1<=n<=12"
+        },
+        "result": {
+          "reason": "MIS local exact cap: 1<=n<=12",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_problem_bool_weight",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "positive integer weights required"
+        },
+        "result": {
+          "reason": "positive integer weights required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_problem_duplicate_edge",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "duplicate undirected edge"
+        },
+        "result": {
+          "reason": "duplicate undirected edge",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_problem_extra_field",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "missing or unknown fields"
+        },
+        "result": {
+          "reason": "missing or unknown fields",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_problem_bad_family",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "unknown family"
+        },
+        "result": {
+          "reason": "unknown family",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_problem_dimension",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "MIS local exact cap: 1<=n<=12"
+        },
+        "result": {
+          "reason": "MIS local exact cap: 1<=n<=12",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_huge_integer_problem_weights",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+              20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_problem_bool_input",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "unsupported optical input"
+        },
+        "result": {
+          "reason": "unsupported optical input",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_problem_wrong_input",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "unsupported optical input"
+        },
+        "result": {
+          "reason": "unsupported optical input",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_problem_bool_modes",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "only one photon, two modes"
+        },
+        "result": {
+          "reason": "only one photon, two modes",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_problem_bool_loss",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "only ideal lossless model"
+        },
+        "result": {
+          "reason": "only ideal lossless model",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_problem_observable",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "unsupported observable"
+        },
+        "result": {
+          "reason": "unsupported observable",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_problem_bool_angle",
+        "problem_normalization": {
+          "exception": "ContractError",
+          "message": "finite real angles in radians required"
+        },
+        "result": {
+          "reason": "finite real angles in radians required",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_reverse_order",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_negate_phase",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_phase_other_mode",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_photon_huge_global_phase",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.2,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_valid_input1_balanced",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0.7853981633974483,
+            "b": 0,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 2.220446049250313e-16,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_valid_incoherent_on_zero_rotation",
+        "problem_normalization": {
+          "normalized": {
+            "a": 0,
+            "b": 0.3,
+            "family": "photon",
+            "input": [
+              1,
+              0
+            ],
+            "loss": 0,
+            "modes": 2,
+            "observable": "probabilities",
+            "phi": 0.4
+          }
+        },
+        "result": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "valid": true
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_tolerance_zero",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "invalid or unsupported tolerance",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_tolerance_bool",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "invalid or unsupported tolerance",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_tolerance_too_large",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "invalid or unsupported tolerance",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_tolerance_string",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "invalid or unsupported tolerance",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_tolerance_null",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "reason": "invalid or unsupported tolerance",
+          "stage": "schema",
+          "valid": false
+        }
+      },
+      {
+        "expectation_matches": true,
+        "id": "extra_tolerance_maximum",
+        "problem_normalization": {
+          "normalized": {
+            "constraints": "independent",
+            "domain": "binary",
+            "edges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "family": "mis",
+            "n": 2,
+            "objective": "maximize_weight",
+            "weights": [
+              1,
+              2
+            ]
+          }
+        },
+        "result": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "scope": "this normalized instance only",
+          "stage": "finite_output",
+          "states_checked": 4,
+          "valid": true
+        }
+      }
+    ],
+    "runtime_seconds": 0.0024633750000000038
+  },
+  "replay_source": "import hashlib,json,math,platform,time\nfrom pathlib import Path\nfrom quantage.contracts import verify_external,normalize_problem\npath=Path(\"runs/20261113-c05-semantic-contracts/external-contract-audit.json\")\ndoc=json.loads(path.read_text())\ndef decode(v):\n    if isinstance(v,dict):\n        if set(v)=={\"$float\"}:return float(v[\"$float\"])\n        return {k:decode(x) for k,x in v.items()}\n    if isinstance(v,list):return [decode(x) for x in v]\n    return v\ndef encode(v):\n    if isinstance(v,float) and not math.isfinite(v):return {\"$float\":\"nan\" if math.isnan(v) else \"inf\" if v>0 else \"-inf\"}\n    if isinstance(v,dict):return {k:encode(x) for k,x in v.items()}\n    if isinstance(v,(list,tuple)):return [encode(x) for x in v]\n    return v\ndef hashes():return {s:hashlib.sha256(Path(s).read_bytes()).hexdigest() for s in doc[\"audited_files\"]}\nstarted=time.perf_counter();before=hashes();rows=[]\nfor raw in doc[\"cases\"]:\n    case=decode(raw)\n    try:\n        result=verify_external(case[\"problem\"],case[\"proposal\"],case[\"tolerance\"])\n        match=result[\"valid\"]==case[\"expected_valid\"] and result[\"stage\"]==case[\"expected_stage\"]\n    except Exception as exc:result={\"exception\":type(exc).__name__,\"message\":str(exc)};match=False\n    try:normalization={\"normalized\":normalize_problem(case[\"problem\"])}\n    except Exception as exc:normalization={\"exception\":type(exc).__name__,\"message\":str(exc)}\n    rows.append({\"id\":case[\"id\"],\"result\":result,\"expectation_matches\":match,\"problem_normalization\":normalization})\nprint(json.dumps(encode({\"results\":rows,\"input_hashes_before\":before,\"input_hashes_after\":hashes(),\"runtime_seconds\":time.perf_counter()-started,\"python\":platform.python_version(),\"platform\":platform.platform()}),sort_keys=True,allow_nan=False))\n",
+  "repository_commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+  "repository_dirty": true,
+  "run_status": "completed",
+  "schema": "quantage-independent-external-contract-audit-v1"
+}

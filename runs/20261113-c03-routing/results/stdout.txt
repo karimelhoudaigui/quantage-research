@@ -1,0 +1,1 @@
+{"cases": 20, "methods": {"name_only": {"tp": 6, "tn": 1, "fp": 13, "fn": 0}, "modality": {"tp": 6, "tn": 10, "fp": 4, "fn": 0}, "guarded": {"tp": 6, "tn": 14, "fp": 0, "fn": 0}}, "physical_permissions": 0, "elapsed_seconds": 0.000830916999999997, "non_claim": "Hand-authored documentary labels, not physical feasibility or agent performance."}

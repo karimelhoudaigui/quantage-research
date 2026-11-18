@@ -1,0 +1,384 @@
+{
+  "status": "completed",
+  "created_local_date": "2026-11-16",
+  "timezone": "Europe/Paris",
+  "run_identifier": "20261115-c23-compositional-repair",
+  "seed": 202611160023,
+  "max_attempts_per_case": 50000,
+  "wall_seconds_limit": 300,
+  "historical_max_implications": 2,
+  "history_sha256": {
+    "runs/20261114-c15-formulation-repair/dev_cases.json": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b",
+    "runs/20261114-c15-formulation-repair/test_cases.json": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f",
+    "runs/20261115-c16-quantized-repair/dev_cases.json": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3",
+    "runs/20261115-c16-quantized-repair/test_cases.json": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c",
+    "runs/20261115-c19-instruct-repair/dev_cases.json": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3",
+    "runs/20261115-c19-instruct-repair/test_cases.json": "742301bb909289baaf1f34f328032851aa1ca8b935ede5b34e4081aa903d223b",
+    "runs/20261115-c20-grounded-edits/probe_cases.json": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+    "runs/20261115-c21-tool-grounded-edits/probe_cases.json": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+    "runs/20261115-c16-quantized-repair/private_gold.review.json": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135",
+    "runs/20261115-c19-instruct-repair/private_gold.review.json": "1775911ed0d9f7403b85a74768f6694b8e39ff00ee5db33df21d8eced737d192"
+  },
+  "groups": [
+    {
+      "key": "p01",
+      "n": 6,
+      "families": "I",
+      "motif": "three_arc_path",
+      "arcs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "key": "p02",
+      "n": 6,
+      "families": "BI",
+      "motif": "out_star",
+      "arcs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    {
+      "key": "p03",
+      "n": 6,
+      "families": "IL",
+      "motif": "in_star",
+      "arcs": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "key": "p04",
+      "n": 6,
+      "families": "IU",
+      "motif": "branch_after_arc",
+      "arcs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "key": "p05",
+      "n": 6,
+      "families": "IM",
+      "motif": "directed_three_cycle",
+      "arcs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "required": [
+        4
+      ]
+    },
+    {
+      "key": "p06",
+      "n": 7,
+      "families": "FI",
+      "motif": "reciprocal_pair_disjoint_arc",
+      "arcs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "forbidden": [
+        6
+      ]
+    },
+    {
+      "key": "p07",
+      "n": 7,
+      "families": "BILU",
+      "motif": "three_disjoint_arcs",
+      "arcs": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "key": "p08",
+      "n": 7,
+      "families": "BILM",
+      "motif": "fork_with_extension",
+      "arcs": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "required": [
+        5
+      ]
+    },
+    {
+      "key": "p09",
+      "n": 7,
+      "families": "FILMU",
+      "motif": "shared_consequent_disjoint_arc",
+      "arcs": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "required": [
+        5
+      ],
+      "forbidden": [
+        6
+      ],
+      "fixed": true
+    },
+    {
+      "key": "p10",
+      "n": 7,
+      "families": "BFILMU",
+      "motif": "dense_reciprocal_pair_disjoint_arc",
+      "arcs": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "required": [
+        4
+      ],
+      "forbidden": [
+        6
+      ],
+      "fixed": true
+    }
+  ],
+  "cases": 20,
+  "languages": {
+    "fr": 10,
+    "en": 10
+  },
+  "sizes": {
+    "6": 10,
+    "7": 10
+  },
+  "all_feasible": true,
+  "individual_implications_active": 60,
+  "all_present_families_active": true,
+  "all_individual_edges_active": true,
+  "all_labeled_graphs_new": true,
+  "attempts": [
+    {
+      "slot": 1,
+      "attempts": 10,
+      "rejections": 9
+    },
+    {
+      "slot": 2,
+      "attempts": 3,
+      "rejections": 2
+    },
+    {
+      "slot": 3,
+      "attempts": 38,
+      "rejections": 37
+    },
+    {
+      "slot": 4,
+      "attempts": 6,
+      "rejections": 5
+    },
+    {
+      "slot": 5,
+      "attempts": 1,
+      "rejections": 0
+    },
+    {
+      "slot": 6,
+      "attempts": 3,
+      "rejections": 2
+    },
+    {
+      "slot": 7,
+      "attempts": 12,
+      "rejections": 11
+    },
+    {
+      "slot": 8,
+      "attempts": 8,
+      "rejections": 7
+    },
+    {
+      "slot": 9,
+      "attempts": 3,
+      "rejections": 2
+    },
+    {
+      "slot": 10,
+      "attempts": 10,
+      "rejections": 9
+    },
+    {
+      "slot": 11,
+      "attempts": 1,
+      "rejections": 0
+    },
+    {
+      "slot": 12,
+      "attempts": 1,
+      "rejections": 0
+    },
+    {
+      "slot": 13,
+      "attempts": 77,
+      "rejections": 76
+    },
+    {
+      "slot": 14,
+      "attempts": 213,
+      "rejections": 212
+    },
+    {
+      "slot": 15,
+      "attempts": 1,
+      "rejections": 0
+    },
+    {
+      "slot": 16,
+      "attempts": 16,
+      "rejections": 15
+    },
+    {
+      "slot": 17,
+      "attempts": 1,
+      "rejections": 0
+    },
+    {
+      "slot": 18,
+      "attempts": 1,
+      "rejections": 0
+    },
+    {
+      "slot": 19,
+      "attempts": 1,
+      "rejections": 0
+    },
+    {
+      "slot": 20,
+      "attempts": 4,
+      "rejections": 3
+    }
+  ],
+  "rejections_by_reason": {
+    "historical_or_intra_graph_collision": 8,
+    "inactive_edge_1": 9,
+    "inactive_edge_2": 1,
+    "inactive_edge_0": 6,
+    "inactive_family_E": 127,
+    "inactive_implication_0": 22,
+    "inactive_implication_2": 6,
+    "inactive_family_I": 2,
+    "inactive_implication_1": 5,
+    "no_upper_bound_interval": 58,
+    "inactive_family_U": 141,
+    "no_budget_interval": 3,
+    "inactive_family_M": 2
+  },
+  "total_candidates": 410,
+  "public_sha256": "fd8442be1df42c65bda00fb97a6d4627c638e69fea7211e0a8f3c8c9f8ae0ea1",
+  "elapsed_seconds": 0.327882459,
+  "finished_at_utc": "2026-11-15T23:07:44.954939+00:00",
+  "builder_sha256": "88a558fbd31a56a8d0d6397f26f99ec3c17de7f846db440844870f67c630e0ee"
+}

@@ -1,0 +1,42 @@
+{
+  "claim_id": "C05-EXTERNAL-CONTRACT",
+  "mathematics": {
+    "assertion_tested": "Reject ill-typed external proposals and preserve declared finite output controls on independently audited cases.",
+    "coefficient_domain": "exact integer QUBO, finite real optical parameters; JSON-coded nonfinite rejection cases",
+    "conventions": "Old internal generator interface retained; external proposals validated separately",
+    "inputs": [
+      "73 fixed audit cases, including 67 direct verifications and 6 pipeline boundary cases"
+    ],
+    "bounds": {
+      "mis_n_max": 3,
+      "cases": 73,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "Not natural-language fidelity",
+      "Not a population robustness rate",
+      "Not a physical compatibility certificate"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/boundarystudy.py",
+    "runs/20261113-c05-semantic-contracts/protocol.md",
+    "runs/20261113-c05-semantic-contracts/audit_cases.json",
+    "runs/20261113-c05-semantic-contracts/labels.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "files_verified": 12,
+  "inspected": [
+    {
+      "path": "research/external/public-traces/quantum-circuit-vision/dataset/experiment_results/raw/claude-haiku-4.5_bv_A04_single_rx_raw.txt",
+      "bytes": 866,
+      "contains_generated_circuit": true,
+      "code_executed": false
+    },
+    {
+      "path": "research/external/public-traces/quantum-circuit-vision/dataset/experiment_results/raw/claude-haiku-4.5_bv_A05_single_ry_raw.txt",
+      "bytes": 870,
+      "contains_generated_circuit": true,
+      "code_executed": false
+    },
+    {
+      "path": "research/external/public-traces/quantum-circuit-vision/dataset/experiment_results/raw/claude-haiku-4.5_bv_A06_single_rz_raw.txt",
+      "bytes": 857,
+      "contains_generated_circuit": true,
+      "code_executed": false
+    },
+    {
+      "path": "research/external/public-traces/PQID-Bench/artifacts/external_model_batches/responses/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_responses.jsonl",
+      "records": 70,
+      "record_types": [
+        "external_model_response"
+      ],
+      "models": [
+        "Qwen/Qwen2.5-Coder-7B-Instruct"
+      ],
+      "nonempty_generated_code": 51,
+      "provider_authentication": "publisher declaration only"
+    },
+    {
+      "path": "research/external/public-traces/PQID-Bench/artifacts/external_model_batches/requests/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_requests.jsonl",
+      "records": 70,
+      "first_fields": [
+        "access_path",
+        "api_model_id",
+        "exported_at_utc",
+        "generation_config",
+        "model",
+        "model_input",
+        "model_input_sha256",
+        "model_label",
+        "model_role",
+        "prompt_id",
+        "prompt_record_sha256",
+        "provider",
+        "record_type",
+        "request_body",
+        "request_family",
+        "request_sha256",
+        "row_id",
+        "run_id",
+        "schema_version",
+        "target_metadata_policy"
+      ]
+    }
+  ],
+  "no_remote_code_executed": true
+}

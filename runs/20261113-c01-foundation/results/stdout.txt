@@ -1,0 +1,1 @@
+{"elapsed_seconds": 0.17077508400000002, "external_spend_eur": 0, "failed": 0, "greedy_suboptimal": 4, "llm_calls": 0, "max_greedy_absolute_gap": 2, "max_probability_error": 2.220446049250313e-16, "mis": 1199, "photon": 125, "qpu_jobs": 0, "states_checked": 36346}

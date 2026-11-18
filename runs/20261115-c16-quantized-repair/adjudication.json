@@ -1,0 +1,13 @@
+{
+  "agreement": 24,
+  "total": 24,
+  "disagreements": [],
+  "sha256": {
+    "private_gold.author.json": "3ffb3fb71f049c1d461afbeec233f43758f4ac5f08a488c327f0da47f52af665",
+    "private_gold.review.json": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135",
+    "gold.json": "3591f586f76f224ea806c79e843b55286e1a2bfcf234c9341f07c876f154505d",
+    "dev_cases.json": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3",
+    "test_cases.json": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c"
+  },
+  "scope": "public-only annotation by distinct LLM role before author labels; no human or model independence proven"
+}

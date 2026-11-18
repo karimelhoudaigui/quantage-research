@@ -1,0 +1,14 @@
+{
+  "client_date": "2026-11-15",
+  "observed_test_responses_final": 1,
+  "planned_test_initial": 16,
+  "missing_test_initial": 15,
+  "observed_ids": [
+    "1c94d7a6"
+  ],
+  "raw_retained": true,
+  "resource_stop_record_is_pre_signal_inspection": true,
+  "reconciliation": "One response was flushed between the earlier zero-row inspection and process termination. Final raw and failed manifest are authoritative; stop record retained unchanged.",
+  "H15": "unresolved; no complete comparison or imputed failures",
+  "run_status": "failed"
+}

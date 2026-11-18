@@ -1,0 +1,993 @@
+{
+  "schema_version": 2,
+  "claim_id": "C16-CONSERVED-OBSERVATIONS-INDEPENDENT-AUDIT",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-B",
+    "research/c16-observed-audit.py",
+    "--output",
+    "research/c16-observed-audit/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Independently reconstruct C16 domains, objectives, selection, feedback, token-probability arithmetic, observed costs and solver-answer validity, preserving one unknown response.",
+    "coefficient_domain": "exact integers; recorded floating-point token probabilities and times",
+    "conventions": "Reviewer annotations only; bit i includes item i; full cube feasibility and objective fidelity, plus separate optimum-set diagnosis. Never import production scorers or execute inference/solvers.",
+    "inputs": [
+      "16 public test cases and independently frozen reviewer annotations",
+      "63 conserved LLM response records and HTTP pairs; one failed request",
+      "15 recorded four-method solver portfolios"
+    ],
+    "bounds": {
+      "cases": 16,
+      "max_n": 7,
+      "max_assignments_per_case": 128,
+      "response_records": 63,
+      "max_AST_nodes": 256,
+      "max_constraint_rows": 32
+    },
+    "non_claims": [
+      "No missing-response imputation",
+      "No new inference or solver benchmark",
+      "No arbitrary NL semantic guarantee, population inference or quantum run"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T22:05:56.354905+00:00",
+    "runtime_seconds": 0.683244,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 70.0,
+    "max_output_bytes": 65536,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c16-observed-audit.py",
+    "research/c16-annotation-oracle/raw.json",
+    "runs/20261115-c16-quantized-repair/test_cases.json",
+    "runs/20261115-c16-quantized-repair/private_gold.review.json",
+    "runs/20261115-c16-quantized-repair/instructions.frozen.txt",
+    "runs/20261115-c16-quantized-repair/disk-incident-guided.json",
+    "runs/20261115-c16-quantized-repair/test-feedback-v1/minimal.json",
+    "runs/20261115-c16-quantized-repair/test-feedback-v1/reports.jsonl",
+    "runs/20261115-c16-quantized-repair/partial-score/metrics.json",
+    "runs/20261115-c16-quantized-repair/partial-score/paired-results/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/generation.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/000.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/000.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/001.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/001.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/002.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/002.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/003.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/003.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/004.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/004.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/005.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/005.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/006.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/006.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/007.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/007.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/008.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/008.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/009.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/009.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/010.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/010.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/011.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/011.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/012.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/012.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/013.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/013.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/014.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/014.response.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/015.request.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/015.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/generation.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/000.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/000.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/001.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/001.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/002.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/002.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/003.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/003.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/004.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/004.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/005.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/005.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/006.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/006.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/007.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/007.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/008.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/008.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/009.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/009.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/010.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/010.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/011.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/011.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/012.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/012.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/013.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/013.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/014.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/014.response.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/015.request.json",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/015.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/generation.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/000.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/000.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/001.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/001.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/002.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/002.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/003.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/003.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/004.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/004.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/005.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/005.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/006.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/006.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/007.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/007.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/008.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/008.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/009.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/009.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/010.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/010.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/011.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/011.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/012.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/012.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/013.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/013.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/014.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/014.response.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/015.request.json",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/015.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/000.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/000.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/001.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/001.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/002.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/002.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/003.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/003.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/004.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/004.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/005.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/generation.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/000.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/000.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/001.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/001.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/002.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/002.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/003.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/003.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/004.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/004.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/005.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/005.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/006.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/006.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/007.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/007.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/008.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/008.response.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/009.request.json",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/009.response.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c16-observed-audit.py",
+      "sha256": "3d8939f15bd201aba7b4228d30541600fcfeab0f081e71147b692c41d9a0c167",
+      "sha256_after": "3d8939f15bd201aba7b4228d30541600fcfeab0f081e71147b692c41d9a0c167"
+    },
+    {
+      "path": "research/c16-annotation-oracle/raw.json",
+      "sha256": "f9f8275cf7114cc9521f122de9fd8067af4611bda6baa57d582d053bf6bee065",
+      "sha256_after": "f9f8275cf7114cc9521f122de9fd8067af4611bda6baa57d582d053bf6bee065"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test_cases.json",
+      "sha256": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c",
+      "sha256_after": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/private_gold.review.json",
+      "sha256": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135",
+      "sha256_after": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/instructions.frozen.txt",
+      "sha256": "06967f5933c798a175b2e45f589d2a77d0ed8cf78a597fc920452f84b63898ea",
+      "sha256_after": "06967f5933c798a175b2e45f589d2a77d0ed8cf78a597fc920452f84b63898ea"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/disk-incident-guided.json",
+      "sha256": "b8601e02f5b2d8acc2ddc0e08a5adafaad4b5c9d6154f2037d59b2725a49861c",
+      "sha256_after": "b8601e02f5b2d8acc2ddc0e08a5adafaad4b5c9d6154f2037d59b2725a49861c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-feedback-v1/minimal.json",
+      "sha256": "3c3b318a27e775311c32e5d844060a4dfe62f6f960e1fd51e520a96a8c858472",
+      "sha256_after": "3c3b318a27e775311c32e5d844060a4dfe62f6f960e1fd51e520a96a8c858472"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-feedback-v1/reports.jsonl",
+      "sha256": "927cb608324478b4db6abf42b64dbf30cd61318603448c34df276d2b1a82ab69",
+      "sha256_after": "927cb608324478b4db6abf42b64dbf30cd61318603448c34df276d2b1a82ab69"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/partial-score/metrics.json",
+      "sha256": "5e28041c4f9f9a793556235bc319ba4bf0b2afb2b92d2340b7dde1cc0119e3c3",
+      "sha256_after": "5e28041c4f9f9a793556235bc319ba4bf0b2afb2b92d2340b7dde1cc0119e3c3"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/partial-score/paired-results/raw.jsonl",
+      "sha256": "9b55ab7ee49c3c7bb27e9a5000833f8af951b0d1f1324481302fb0282c8f696e",
+      "sha256_after": "9b55ab7ee49c3c7bb27e9a5000833f8af951b0d1f1324481302fb0282c8f696e"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/raw.jsonl",
+      "sha256": "81796dc3d9e1ed619965c6aa3608d4d544c3403a1e7bd9786c933b051a9a2e8f",
+      "sha256_after": "81796dc3d9e1ed619965c6aa3608d4d544c3403a1e7bd9786c933b051a9a2e8f"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/generation.json",
+      "sha256": "7f882007f1707df3465a5c89d864cf33f88069568dd2b8dfd10f470d9d84142b",
+      "sha256_after": "7f882007f1707df3465a5c89d864cf33f88069568dd2b8dfd10f470d9d84142b"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/000.request.json",
+      "sha256": "87d5a43bf1c68d26885d72a2e6e62ab98fbf2d33828ad33c692a289ab97aee01",
+      "sha256_after": "87d5a43bf1c68d26885d72a2e6e62ab98fbf2d33828ad33c692a289ab97aee01"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/000.response.json",
+      "sha256": "d0b968de1fe0570ce520cb8013e6bc00fa3bfe5686b7d20b17d98959fe0d5d11",
+      "sha256_after": "d0b968de1fe0570ce520cb8013e6bc00fa3bfe5686b7d20b17d98959fe0d5d11"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/001.request.json",
+      "sha256": "18850d0b962724ecd99b6ba6b417356804bb1317a030623c14adc04c716c0c6d",
+      "sha256_after": "18850d0b962724ecd99b6ba6b417356804bb1317a030623c14adc04c716c0c6d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/001.response.json",
+      "sha256": "5d37420104e4509b44675848326b58e47a51839e09fe53a0d8103a769f704551",
+      "sha256_after": "5d37420104e4509b44675848326b58e47a51839e09fe53a0d8103a769f704551"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/002.request.json",
+      "sha256": "3adca3b1674d09172e490e1249a0f5c547ac64780b74c042fcab965d06f2f55a",
+      "sha256_after": "3adca3b1674d09172e490e1249a0f5c547ac64780b74c042fcab965d06f2f55a"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/002.response.json",
+      "sha256": "572db9ac44e93e982d0c6af954a5869881933c506766a5e9900e3a2a69776166",
+      "sha256_after": "572db9ac44e93e982d0c6af954a5869881933c506766a5e9900e3a2a69776166"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/003.request.json",
+      "sha256": "acfd8c1de86ad14842975064079e101dbd78f59eedea989bda9277281b8cac39",
+      "sha256_after": "acfd8c1de86ad14842975064079e101dbd78f59eedea989bda9277281b8cac39"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/003.response.json",
+      "sha256": "97b33b513d9feb916affaca2f6b2b404f0088e2f6884876ada265a1a3e3019aa",
+      "sha256_after": "97b33b513d9feb916affaca2f6b2b404f0088e2f6884876ada265a1a3e3019aa"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/004.request.json",
+      "sha256": "bb7c50d97148a62c8a26f542dada84e337beacd34699ac73b9bfc22ffcd2466a",
+      "sha256_after": "bb7c50d97148a62c8a26f542dada84e337beacd34699ac73b9bfc22ffcd2466a"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/004.response.json",
+      "sha256": "ee288c7e08cd0943aa9f0169e4c61f8b794865cda529f839e67666b6c2cb4254",
+      "sha256_after": "ee288c7e08cd0943aa9f0169e4c61f8b794865cda529f839e67666b6c2cb4254"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/005.request.json",
+      "sha256": "fa641c1d46192cc856b54620756955c2d5614c8d1e2da46d51ce868ea8b661c3",
+      "sha256_after": "fa641c1d46192cc856b54620756955c2d5614c8d1e2da46d51ce868ea8b661c3"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/005.response.json",
+      "sha256": "0a10375c828f2562f424d3390c06feb7e42ab225e3db9f3d177cd96ef9a6449a",
+      "sha256_after": "0a10375c828f2562f424d3390c06feb7e42ab225e3db9f3d177cd96ef9a6449a"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/006.request.json",
+      "sha256": "af999390f0b97330365c3ebd7ed2b657abec0431c91f4c8449a876750495ab67",
+      "sha256_after": "af999390f0b97330365c3ebd7ed2b657abec0431c91f4c8449a876750495ab67"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/006.response.json",
+      "sha256": "8af77331658086b2a0846c7ec9b6fbc8a7b627786cb8fa1ab6f7040861622b3b",
+      "sha256_after": "8af77331658086b2a0846c7ec9b6fbc8a7b627786cb8fa1ab6f7040861622b3b"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/007.request.json",
+      "sha256": "8a04c713d95d417250b76a269e9d1f78bac738923231ddbc40470e99ebebf28a",
+      "sha256_after": "8a04c713d95d417250b76a269e9d1f78bac738923231ddbc40470e99ebebf28a"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/007.response.json",
+      "sha256": "ba76a14c88df1951675639a71f5f0e9efa45be3ef9e3e18a478d19f5bd269477",
+      "sha256_after": "ba76a14c88df1951675639a71f5f0e9efa45be3ef9e3e18a478d19f5bd269477"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/008.request.json",
+      "sha256": "c3853b0f61b03134eb8a82e1396b6a46e8ae43debfd0caae04d59c40eefda6ae",
+      "sha256_after": "c3853b0f61b03134eb8a82e1396b6a46e8ae43debfd0caae04d59c40eefda6ae"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/008.response.json",
+      "sha256": "07cabede5121c155d8494156df0da2df7b204f875d572728e31be8455b639ae6",
+      "sha256_after": "07cabede5121c155d8494156df0da2df7b204f875d572728e31be8455b639ae6"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/009.request.json",
+      "sha256": "55806a1b6840a4077c6e576b4fe4b9419ae44129b4c02d856443613ba5b71652",
+      "sha256_after": "55806a1b6840a4077c6e576b4fe4b9419ae44129b4c02d856443613ba5b71652"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/009.response.json",
+      "sha256": "781c21a30d1065f4482c50cf90829618be0c96d49256160df7fd0160b570908e",
+      "sha256_after": "781c21a30d1065f4482c50cf90829618be0c96d49256160df7fd0160b570908e"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/010.request.json",
+      "sha256": "ec54a672da554839202f1e2d3ffc835460a293fad53848dc25e686b85e20412b",
+      "sha256_after": "ec54a672da554839202f1e2d3ffc835460a293fad53848dc25e686b85e20412b"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/010.response.json",
+      "sha256": "d987a0df002b1780a9959e8acca5efbf8e7f064eba5a040837778605d8ab5be1",
+      "sha256_after": "d987a0df002b1780a9959e8acca5efbf8e7f064eba5a040837778605d8ab5be1"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/011.request.json",
+      "sha256": "09adc7293738dc1d99c180eb82a17e1dfe564e58d77fab4100c5b11c1c742fdc",
+      "sha256_after": "09adc7293738dc1d99c180eb82a17e1dfe564e58d77fab4100c5b11c1c742fdc"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/011.response.json",
+      "sha256": "9247c3f58a7879d394d3f80f7a72a794f4a9ea6bcf112edb56815477cb6bffcf",
+      "sha256_after": "9247c3f58a7879d394d3f80f7a72a794f4a9ea6bcf112edb56815477cb6bffcf"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/012.request.json",
+      "sha256": "fc5e04a658278c19ff75e3a2139a79d22926771cfae0e4c5e570ff11b6808a75",
+      "sha256_after": "fc5e04a658278c19ff75e3a2139a79d22926771cfae0e4c5e570ff11b6808a75"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/012.response.json",
+      "sha256": "7d040c0ad80e67e968c1db30b3c1acb749c7097d4ee1141078f964722f638397",
+      "sha256_after": "7d040c0ad80e67e968c1db30b3c1acb749c7097d4ee1141078f964722f638397"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/013.request.json",
+      "sha256": "47d16a2dca4cb71e63564c60bb4b58e030ba58682d85209af2ef3ab12a36314a",
+      "sha256_after": "47d16a2dca4cb71e63564c60bb4b58e030ba58682d85209af2ef3ab12a36314a"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/013.response.json",
+      "sha256": "972a13b3920fd7c67743873812af661c0af16019fd6e6d1720d40a49e193e0e0",
+      "sha256_after": "972a13b3920fd7c67743873812af661c0af16019fd6e6d1720d40a49e193e0e0"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/014.request.json",
+      "sha256": "477a0054a62ce6c7586c1dcafd33a0beeb94540c6dde936bda3e4c7d2d369bce",
+      "sha256_after": "477a0054a62ce6c7586c1dcafd33a0beeb94540c6dde936bda3e4c7d2d369bce"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/014.response.json",
+      "sha256": "33bf36d48857f48710e9f9c6fc543b76b05ab656f2a315ccff485376a4b5ed40",
+      "sha256_after": "33bf36d48857f48710e9f9c6fc543b76b05ab656f2a315ccff485376a4b5ed40"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/015.request.json",
+      "sha256": "9b8ca4dff34bcd21d2ad32e93cf3718d329010d183e986dbbf49878db9cdaa23",
+      "sha256_after": "9b8ca4dff34bcd21d2ad32e93cf3718d329010d183e986dbbf49878db9cdaa23"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/015.response.json",
+      "sha256": "ca2a1b26fe4bcc6e8989f620eff3d8d459c548d9c45c14b025f64fc8bf5536b0",
+      "sha256_after": "ca2a1b26fe4bcc6e8989f620eff3d8d459c548d9c45c14b025f64fc8bf5536b0"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/raw.jsonl",
+      "sha256": "aadb3b1efdb9c697ba72b4dc8ee17009fea9446be7556a41c314c2c6c6b65316",
+      "sha256_after": "aadb3b1efdb9c697ba72b4dc8ee17009fea9446be7556a41c314c2c6c6b65316"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/generation.json",
+      "sha256": "c1c43e3028a246969e2c7b34ab67850c087529b5c37b632ab975d7649c54253f",
+      "sha256_after": "c1c43e3028a246969e2c7b34ab67850c087529b5c37b632ab975d7649c54253f"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/000.request.json",
+      "sha256": "dd455606fdd071659dd5597c04845ab0c17f54e0ae3360814df1b899e75499dc",
+      "sha256_after": "dd455606fdd071659dd5597c04845ab0c17f54e0ae3360814df1b899e75499dc"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/000.response.json",
+      "sha256": "b95c2e377e3975e5c26657057c365d1dace9929f53fcf04b68081445051c8ab5",
+      "sha256_after": "b95c2e377e3975e5c26657057c365d1dace9929f53fcf04b68081445051c8ab5"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/001.request.json",
+      "sha256": "5014ca5a5c215e0ba481c32c33c49609565bb38220740cef95e01b9d5dbf9575",
+      "sha256_after": "5014ca5a5c215e0ba481c32c33c49609565bb38220740cef95e01b9d5dbf9575"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/001.response.json",
+      "sha256": "f01454857e2bfdd6ab6947d934c95cd80a220a32c4946fc0c1826249c1687d5b",
+      "sha256_after": "f01454857e2bfdd6ab6947d934c95cd80a220a32c4946fc0c1826249c1687d5b"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/002.request.json",
+      "sha256": "3fc16a7cd7774fbb813ad09e6cdd89d9450756dc7abeb865e3791f97dfcc3b57",
+      "sha256_after": "3fc16a7cd7774fbb813ad09e6cdd89d9450756dc7abeb865e3791f97dfcc3b57"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/002.response.json",
+      "sha256": "5f7f020a460b363e63497e6ef1193cf2802230582e5c3f7946a8fb282a0cfc96",
+      "sha256_after": "5f7f020a460b363e63497e6ef1193cf2802230582e5c3f7946a8fb282a0cfc96"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/003.request.json",
+      "sha256": "b224a4d89b86f38a5bc6ed5582943b6a91e29ec212a47c027b504bc3cde975e0",
+      "sha256_after": "b224a4d89b86f38a5bc6ed5582943b6a91e29ec212a47c027b504bc3cde975e0"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/003.response.json",
+      "sha256": "b50f7c536ad2680c1d3a3d74556496dab44b296e822cb2e3d75a2882e04469a3",
+      "sha256_after": "b50f7c536ad2680c1d3a3d74556496dab44b296e822cb2e3d75a2882e04469a3"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/004.request.json",
+      "sha256": "95aedad2b6a3346c660294430647036f8a9c8f597ab4fdcc64aae9f254c7c394",
+      "sha256_after": "95aedad2b6a3346c660294430647036f8a9c8f597ab4fdcc64aae9f254c7c394"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/004.response.json",
+      "sha256": "21bfca48a50fb7857a10cf56a4bffaf81ba26464c06e715c145f5540ca88e49c",
+      "sha256_after": "21bfca48a50fb7857a10cf56a4bffaf81ba26464c06e715c145f5540ca88e49c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/005.request.json",
+      "sha256": "b1076249cd80203ac1189080caa8324a0db6c18ba3249b071e3482b47c4d7200",
+      "sha256_after": "b1076249cd80203ac1189080caa8324a0db6c18ba3249b071e3482b47c4d7200"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/005.response.json",
+      "sha256": "8c7c20a1bdb5d6bfc98f8f9f7a9c87094d12bfdcaa77f969efbe0e0c23ce676a",
+      "sha256_after": "8c7c20a1bdb5d6bfc98f8f9f7a9c87094d12bfdcaa77f969efbe0e0c23ce676a"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/006.request.json",
+      "sha256": "7fc2660511308fc6a84cc5e09179532ba7f52d36febb9a9f27920f85ac4ea78b",
+      "sha256_after": "7fc2660511308fc6a84cc5e09179532ba7f52d36febb9a9f27920f85ac4ea78b"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/006.response.json",
+      "sha256": "4134a955b8d4293351da1cd62a3b9648b10d55a50866b7e6042a2ae5dc47fe82",
+      "sha256_after": "4134a955b8d4293351da1cd62a3b9648b10d55a50866b7e6042a2ae5dc47fe82"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/007.request.json",
+      "sha256": "15bc844c02467b8eecc5e2b3d6082bb4128e8c6591198b19c88f4b735bf46b1f",
+      "sha256_after": "15bc844c02467b8eecc5e2b3d6082bb4128e8c6591198b19c88f4b735bf46b1f"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/007.response.json",
+      "sha256": "8533f2be07fafcc6ca9f329d4442156ccd4672d2ac614426bb8ad7b543d9fbb0",
+      "sha256_after": "8533f2be07fafcc6ca9f329d4442156ccd4672d2ac614426bb8ad7b543d9fbb0"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/008.request.json",
+      "sha256": "d94b6f557534f5c98b1f5a5949c7dcd4d93c3de04b138e030f785ae46a59a792",
+      "sha256_after": "d94b6f557534f5c98b1f5a5949c7dcd4d93c3de04b138e030f785ae46a59a792"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/008.response.json",
+      "sha256": "b3358bad6555e5b8fbfeeb862a3d59d676e6af2b40ecc132104af92db150a71a",
+      "sha256_after": "b3358bad6555e5b8fbfeeb862a3d59d676e6af2b40ecc132104af92db150a71a"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/009.request.json",
+      "sha256": "846d0d12a2e99430ccbc6149ec87138fab04177c4c954b8f04e5abe0ca9419d1",
+      "sha256_after": "846d0d12a2e99430ccbc6149ec87138fab04177c4c954b8f04e5abe0ca9419d1"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/009.response.json",
+      "sha256": "186ac0e4e813bdaad97e798f78fa68306f2a59b3185b2d7c6c2ba79fbf38c7bc",
+      "sha256_after": "186ac0e4e813bdaad97e798f78fa68306f2a59b3185b2d7c6c2ba79fbf38c7bc"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/010.request.json",
+      "sha256": "c5213567a1928ef0ace0ac72134d693ff8b7bf7221dfabb02dae66f05649a410",
+      "sha256_after": "c5213567a1928ef0ace0ac72134d693ff8b7bf7221dfabb02dae66f05649a410"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/010.response.json",
+      "sha256": "d05b6cad9e69ccbe65573388a890ebc1355bf1d4dcc5c501dc25864fa4a212e5",
+      "sha256_after": "d05b6cad9e69ccbe65573388a890ebc1355bf1d4dcc5c501dc25864fa4a212e5"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/011.request.json",
+      "sha256": "5fef879d186392d6e2c03251c1eb140c5ee65954f51d4f0612f1b251d8754ab5",
+      "sha256_after": "5fef879d186392d6e2c03251c1eb140c5ee65954f51d4f0612f1b251d8754ab5"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/011.response.json",
+      "sha256": "1377825ea83391dc60f4499e29f7274b890105f1bf46fff63035a4efc7035c96",
+      "sha256_after": "1377825ea83391dc60f4499e29f7274b890105f1bf46fff63035a4efc7035c96"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/012.request.json",
+      "sha256": "3fd133d6ab3e20da2b521bf8a7fed0339da3aac32e1810fde6532e92e9f9d7cd",
+      "sha256_after": "3fd133d6ab3e20da2b521bf8a7fed0339da3aac32e1810fde6532e92e9f9d7cd"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/012.response.json",
+      "sha256": "05c393c889cf923b66f3e8e426f171e70e8e5e3fcc7b22d64196ee3d8581daf1",
+      "sha256_after": "05c393c889cf923b66f3e8e426f171e70e8e5e3fcc7b22d64196ee3d8581daf1"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/013.request.json",
+      "sha256": "fe4c6ab94cd67be9c776e0fb5dc4a80b08724f563a2e8753ea433a092b292991",
+      "sha256_after": "fe4c6ab94cd67be9c776e0fb5dc4a80b08724f563a2e8753ea433a092b292991"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/013.response.json",
+      "sha256": "cc97e11394d1b21877885d06dfcc88ab94732f2838a3c94c4c43f4208e5ca48d",
+      "sha256_after": "cc97e11394d1b21877885d06dfcc88ab94732f2838a3c94c4c43f4208e5ca48d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/014.request.json",
+      "sha256": "0bb85ae527e65ab5406bec2ecbc18abd8e3aa9e14eb9dce99557bda9798a63e7",
+      "sha256_after": "0bb85ae527e65ab5406bec2ecbc18abd8e3aa9e14eb9dce99557bda9798a63e7"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/014.response.json",
+      "sha256": "1e76a6da5657eb0099abbb565f1b01d2e79d62c2fbbd5c2aa011e18cef7ed0d8",
+      "sha256_after": "1e76a6da5657eb0099abbb565f1b01d2e79d62c2fbbd5c2aa011e18cef7ed0d8"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/015.request.json",
+      "sha256": "316738362441d05aed030016ad6d6ed8d15fe5f457ef4a2a578ce343a5e384f4",
+      "sha256_after": "316738362441d05aed030016ad6d6ed8d15fe5f457ef4a2a578ce343a5e384f4"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/015.response.json",
+      "sha256": "a24749cf02047617287ca17774d2dae145b52c83cd58b417db834c8f1ac11be0",
+      "sha256_after": "a24749cf02047617287ca17774d2dae145b52c83cd58b417db834c8f1ac11be0"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/raw.jsonl",
+      "sha256": "a7aa35b6b8747905a47af8cf4436ec616d5431c4233ee894fa253ff3855205dc",
+      "sha256_after": "a7aa35b6b8747905a47af8cf4436ec616d5431c4233ee894fa253ff3855205dc"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/generation.json",
+      "sha256": "6a9a46304a20fc3d4278632e1816b044aba69582a4030f18a577f6de997a1f1e",
+      "sha256_after": "6a9a46304a20fc3d4278632e1816b044aba69582a4030f18a577f6de997a1f1e"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/000.request.json",
+      "sha256": "235cbeac82139263ca2686aa70e5596c3e7a4dd911de2ed0468962669b40524c",
+      "sha256_after": "235cbeac82139263ca2686aa70e5596c3e7a4dd911de2ed0468962669b40524c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/000.response.json",
+      "sha256": "6ef26c4dc36c0d97f9b29ba642907608fb56c5566f2400e28e5e2686eaba7533",
+      "sha256_after": "6ef26c4dc36c0d97f9b29ba642907608fb56c5566f2400e28e5e2686eaba7533"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/001.request.json",
+      "sha256": "23438fc3ba5b5a437c7066a8db8362671be26110af955986d4c96fd5a2e6b960",
+      "sha256_after": "23438fc3ba5b5a437c7066a8db8362671be26110af955986d4c96fd5a2e6b960"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/001.response.json",
+      "sha256": "e291dc126be3957b2a0cf405a01e95cfcf669553eff3297d6a67fd98e6fe09f0",
+      "sha256_after": "e291dc126be3957b2a0cf405a01e95cfcf669553eff3297d6a67fd98e6fe09f0"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/002.request.json",
+      "sha256": "0d3d1e378a668f3d86c2fbe0d63b81a02c679e5859694fa10ca029f9afaf740c",
+      "sha256_after": "0d3d1e378a668f3d86c2fbe0d63b81a02c679e5859694fa10ca029f9afaf740c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/002.response.json",
+      "sha256": "ced3b19c71f4afb513ac9bb4fa27f3ed5cd0e9b87b15c8dbd0d6afa64773858b",
+      "sha256_after": "ced3b19c71f4afb513ac9bb4fa27f3ed5cd0e9b87b15c8dbd0d6afa64773858b"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/003.request.json",
+      "sha256": "65ecf1ce89faa858b58a3af20d6aa3113cf3e17f4d122b16e93122e7bb250efe",
+      "sha256_after": "65ecf1ce89faa858b58a3af20d6aa3113cf3e17f4d122b16e93122e7bb250efe"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/003.response.json",
+      "sha256": "5ab36a8ea1da48965ee59230fcbaf4171b5a8c56d8328db4b3a831c767e47d66",
+      "sha256_after": "5ab36a8ea1da48965ee59230fcbaf4171b5a8c56d8328db4b3a831c767e47d66"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/004.request.json",
+      "sha256": "0de6ce512cc2fec2f6903fa190a5c8d501f87eb3581f0f91937e1ae8c41706e2",
+      "sha256_after": "0de6ce512cc2fec2f6903fa190a5c8d501f87eb3581f0f91937e1ae8c41706e2"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/004.response.json",
+      "sha256": "205b586fa7d7a2636e034aa906f34acab4a0e853e307cf93ad753379be3acf4e",
+      "sha256_after": "205b586fa7d7a2636e034aa906f34acab4a0e853e307cf93ad753379be3acf4e"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/005.request.json",
+      "sha256": "f4890fe7459828b018b329e0e9c861c3e5754a8db0794dee4d28145c75b867d2",
+      "sha256_after": "f4890fe7459828b018b329e0e9c861c3e5754a8db0794dee4d28145c75b867d2"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/005.response.json",
+      "sha256": "eb8d985af382314e62e32daff00be28898f4b22eca27e45bf96f0feae48b6a03",
+      "sha256_after": "eb8d985af382314e62e32daff00be28898f4b22eca27e45bf96f0feae48b6a03"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/006.request.json",
+      "sha256": "6d3a823c5ca8286e58688b45fc488a89a50a6435a09d85b952d53bb6c1e7672b",
+      "sha256_after": "6d3a823c5ca8286e58688b45fc488a89a50a6435a09d85b952d53bb6c1e7672b"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/006.response.json",
+      "sha256": "8fffb5346798de64f47e08b48bba1f48f26d87f2ae4fb7d2c332447d6a1fcde5",
+      "sha256_after": "8fffb5346798de64f47e08b48bba1f48f26d87f2ae4fb7d2c332447d6a1fcde5"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/007.request.json",
+      "sha256": "901f798ec85a46d2d118b22473b40a1642b95905e60a66df7ab89c88ad8787f4",
+      "sha256_after": "901f798ec85a46d2d118b22473b40a1642b95905e60a66df7ab89c88ad8787f4"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/007.response.json",
+      "sha256": "6817ca85483b0e9bc86e130cfab1b0aa9e150054f2e13409354834a856767f0a",
+      "sha256_after": "6817ca85483b0e9bc86e130cfab1b0aa9e150054f2e13409354834a856767f0a"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/008.request.json",
+      "sha256": "a32b4f9f9a3bac217719fbe23d3f0a233bc6890be328ec3a7d7aeb9a04c5f7b7",
+      "sha256_after": "a32b4f9f9a3bac217719fbe23d3f0a233bc6890be328ec3a7d7aeb9a04c5f7b7"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/008.response.json",
+      "sha256": "068fcb7c6c7a42ddf66b9646815a35210d07701353cc0dbf2274fffa83d47e90",
+      "sha256_after": "068fcb7c6c7a42ddf66b9646815a35210d07701353cc0dbf2274fffa83d47e90"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/009.request.json",
+      "sha256": "5bb31d9fc40cc5a54ec8bf8be5fbd9ea0f86af8050564b0fb5144a2be3635fdd",
+      "sha256_after": "5bb31d9fc40cc5a54ec8bf8be5fbd9ea0f86af8050564b0fb5144a2be3635fdd"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/009.response.json",
+      "sha256": "d9596289b8dd9787b4149a26ecec8ad7bbae5fd102d13e35b43e86ac6d5679aa",
+      "sha256_after": "d9596289b8dd9787b4149a26ecec8ad7bbae5fd102d13e35b43e86ac6d5679aa"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/010.request.json",
+      "sha256": "4de95e44a50980ecc5fcae69fb0ed6923650986dc278d6e76279de8c18c2702d",
+      "sha256_after": "4de95e44a50980ecc5fcae69fb0ed6923650986dc278d6e76279de8c18c2702d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/010.response.json",
+      "sha256": "19aa0b5385f408a24ed3f71effeabffe2810c0120c14ebcf210c71933895b068",
+      "sha256_after": "19aa0b5385f408a24ed3f71effeabffe2810c0120c14ebcf210c71933895b068"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/011.request.json",
+      "sha256": "3069c17cd0aea235a84ca9437e8e1aa2554a39819660aadc8cec50edccbd7f5b",
+      "sha256_after": "3069c17cd0aea235a84ca9437e8e1aa2554a39819660aadc8cec50edccbd7f5b"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/011.response.json",
+      "sha256": "d035a50a487228d010320986e9a373603f34a196e18ed63bdffcd8a06e4a8581",
+      "sha256_after": "d035a50a487228d010320986e9a373603f34a196e18ed63bdffcd8a06e4a8581"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/012.request.json",
+      "sha256": "af60fdb6c4432b34abc385d2fa7ddd5e6746d6ae6b75c5ce41dcd31c6ef5b9ce",
+      "sha256_after": "af60fdb6c4432b34abc385d2fa7ddd5e6746d6ae6b75c5ce41dcd31c6ef5b9ce"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/012.response.json",
+      "sha256": "e9731287423147ac55a7b89913508bcd180fbe95899ea519e91d050d1e48ee14",
+      "sha256_after": "e9731287423147ac55a7b89913508bcd180fbe95899ea519e91d050d1e48ee14"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/013.request.json",
+      "sha256": "6fabeeb4fcbf0e0e64099eb188252b62e99bd69f584c4a30b0c83f231adff673",
+      "sha256_after": "6fabeeb4fcbf0e0e64099eb188252b62e99bd69f584c4a30b0c83f231adff673"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/013.response.json",
+      "sha256": "99b1c65e6d2960e4989ead07931a735bfc01b948d2bb0c4cd0bc21817f2f290d",
+      "sha256_after": "99b1c65e6d2960e4989ead07931a735bfc01b948d2bb0c4cd0bc21817f2f290d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/014.request.json",
+      "sha256": "97522ad0790142cd2096f870ae371e64150ab6b9626cf3c5415c3a815305b826",
+      "sha256_after": "97522ad0790142cd2096f870ae371e64150ab6b9626cf3c5415c3a815305b826"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/014.response.json",
+      "sha256": "5b1b11bee0d5808519a37602c20232e3ba01ef045805f97b7aff730fc10b34cb",
+      "sha256_after": "5b1b11bee0d5808519a37602c20232e3ba01ef045805f97b7aff730fc10b34cb"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/015.request.json",
+      "sha256": "e8d1bf6b6319fec57a1f435fe27be4e110a62f94d214e5d112620329655fb78e",
+      "sha256_after": "e8d1bf6b6319fec57a1f435fe27be4e110a62f94d214e5d112620329655fb78e"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/015.response.json",
+      "sha256": "00b03061261b665bf647e9bd9b4bc927438ff66d4d0d90929275d52040f72dc1",
+      "sha256_after": "00b03061261b665bf647e9bd9b4bc927438ff66d4d0d90929275d52040f72dc1"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/raw.jsonl",
+      "sha256": "d60d262c20d4c3c5bd309c594f16006891ab90b816f11403ab952a3e97021b5c",
+      "sha256_after": "d60d262c20d4c3c5bd309c594f16006891ab90b816f11403ab952a3e97021b5c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/000.request.json",
+      "sha256": "6877db47706a3da769ac4ea5c596144aa276bafe5c38dc31158820f0b59f29b2",
+      "sha256_after": "6877db47706a3da769ac4ea5c596144aa276bafe5c38dc31158820f0b59f29b2"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/000.response.json",
+      "sha256": "f971ef098a938c586a85f598925de57fe5a4f29d13a5a884228e5b2216480e91",
+      "sha256_after": "f971ef098a938c586a85f598925de57fe5a4f29d13a5a884228e5b2216480e91"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/001.request.json",
+      "sha256": "c910cd69c385edc0263cb4e0d97b75fd809dfb72b64c60c2384c8b98969df19e",
+      "sha256_after": "c910cd69c385edc0263cb4e0d97b75fd809dfb72b64c60c2384c8b98969df19e"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/001.response.json",
+      "sha256": "03d2e4d972b86eae166e1bc4c5795406c9ec2a9825fae2245dfff2704fbdcd8d",
+      "sha256_after": "03d2e4d972b86eae166e1bc4c5795406c9ec2a9825fae2245dfff2704fbdcd8d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/002.request.json",
+      "sha256": "5a199fc332ef3134ce291026e199d3c2341a54c59b111ce3e3933bda99e3bfe4",
+      "sha256_after": "5a199fc332ef3134ce291026e199d3c2341a54c59b111ce3e3933bda99e3bfe4"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/002.response.json",
+      "sha256": "338a6e95444b072d5f1722b76f313788eca0dd4f4902a75cedc4945345f1206d",
+      "sha256_after": "338a6e95444b072d5f1722b76f313788eca0dd4f4902a75cedc4945345f1206d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/003.request.json",
+      "sha256": "56be772130f15e8fde52593d875ff8ab75547c767519ff231cc7401dd53c78aa",
+      "sha256_after": "56be772130f15e8fde52593d875ff8ab75547c767519ff231cc7401dd53c78aa"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/003.response.json",
+      "sha256": "2f3afe359f8a7d17742cf900f7a397edfe37942692e1ba7c01b06ea1fee02c80",
+      "sha256_after": "2f3afe359f8a7d17742cf900f7a397edfe37942692e1ba7c01b06ea1fee02c80"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/004.request.json",
+      "sha256": "c6c2cd45053ff0f01e2870203f1caf7c5e749c8f7ac4f7cb31e12c29a819dfdb",
+      "sha256_after": "c6c2cd45053ff0f01e2870203f1caf7c5e749c8f7ac4f7cb31e12c29a819dfdb"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/004.response.json",
+      "sha256": "af10f09600ad389db7a3b10ef1c22938b97b52cd6498fb4c6a07e7d30aca7592",
+      "sha256_after": "af10f09600ad389db7a3b10ef1c22938b97b52cd6498fb4c6a07e7d30aca7592"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/005.request.json",
+      "sha256": "148f26703f7e1f851e2dc595b8725dd7ec705794df1dde74e0a2ea02651b8851",
+      "sha256_after": "148f26703f7e1f851e2dc595b8725dd7ec705794df1dde74e0a2ea02651b8851"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/raw.jsonl",
+      "sha256": "0cbab993b857d0623c1b6eb2b7809c0c445d8f8e36219feb5654087b5a292c36",
+      "sha256_after": "0cbab993b857d0623c1b6eb2b7809c0c445d8f8e36219feb5654087b5a292c36"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/generation.json",
+      "sha256": "7d18e586e54f4272fbdbaf1dd7dc47d98339da3f332827f12a017ba17475d99d",
+      "sha256_after": "7d18e586e54f4272fbdbaf1dd7dc47d98339da3f332827f12a017ba17475d99d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/000.request.json",
+      "sha256": "0980067ab070b7d18ea5f00da33fd35a1a8c8b14644df1c822cd3205539022ef",
+      "sha256_after": "0980067ab070b7d18ea5f00da33fd35a1a8c8b14644df1c822cd3205539022ef"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/000.response.json",
+      "sha256": "0a8143554788a33b41a80c9a987bd88684de2e7f590fad23db9ec3f3f4f398f2",
+      "sha256_after": "0a8143554788a33b41a80c9a987bd88684de2e7f590fad23db9ec3f3f4f398f2"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/001.request.json",
+      "sha256": "0484ea9a5ef6d5dd4560b5b7e4582eb0b8ac142640752904d460b1ffa7ce0470",
+      "sha256_after": "0484ea9a5ef6d5dd4560b5b7e4582eb0b8ac142640752904d460b1ffa7ce0470"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/001.response.json",
+      "sha256": "2aa9c2f05db8598e956465be632120aefdb2dfef9088c5ab4bb2719b9fcd4dfb",
+      "sha256_after": "2aa9c2f05db8598e956465be632120aefdb2dfef9088c5ab4bb2719b9fcd4dfb"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/002.request.json",
+      "sha256": "a8314e167315a525a317f246a285c0cc88040c5b9000ee30da6b2b6a80cc14c1",
+      "sha256_after": "a8314e167315a525a317f246a285c0cc88040c5b9000ee30da6b2b6a80cc14c1"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/002.response.json",
+      "sha256": "017328d90e49d6f29abc316f60feb7c05e31244e33405ef615702cfb32bbbd47",
+      "sha256_after": "017328d90e49d6f29abc316f60feb7c05e31244e33405ef615702cfb32bbbd47"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/003.request.json",
+      "sha256": "cf0a89e54f0785c088e6465e244eabd24c06d838cc577093a97ad69053e7ba8e",
+      "sha256_after": "cf0a89e54f0785c088e6465e244eabd24c06d838cc577093a97ad69053e7ba8e"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/003.response.json",
+      "sha256": "5439743711ed9401495d25bd9ff0771e4229281e750bb87ee4b94203a25d38c6",
+      "sha256_after": "5439743711ed9401495d25bd9ff0771e4229281e750bb87ee4b94203a25d38c6"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/004.request.json",
+      "sha256": "9ee03e208c7c1745aab0146da3ed4fd71953ac0ecc114a7659a2b48a5a2263e2",
+      "sha256_after": "9ee03e208c7c1745aab0146da3ed4fd71953ac0ecc114a7659a2b48a5a2263e2"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/004.response.json",
+      "sha256": "b97588fc5ba5918aeed625538d87a92f2ed8fef6f71ed8d8543af15a8f4a275c",
+      "sha256_after": "b97588fc5ba5918aeed625538d87a92f2ed8fef6f71ed8d8543af15a8f4a275c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/005.request.json",
+      "sha256": "b05e37f6b7a48dd8c796e12cab736c16d17fb41b4d260dd0c20343437dac9704",
+      "sha256_after": "b05e37f6b7a48dd8c796e12cab736c16d17fb41b4d260dd0c20343437dac9704"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/005.response.json",
+      "sha256": "04b8d8a3ff837f3d3900610c348c8252fbddf20af29f6772f0d89cec7959d53d",
+      "sha256_after": "04b8d8a3ff837f3d3900610c348c8252fbddf20af29f6772f0d89cec7959d53d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/006.request.json",
+      "sha256": "9462b707673bbd9bbcce60d5739c116ffdc484104b28784ff61213709531b00d",
+      "sha256_after": "9462b707673bbd9bbcce60d5739c116ffdc484104b28784ff61213709531b00d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/006.response.json",
+      "sha256": "207a53b4116463ef3e591f09c500205356dbf835219d527119e160342afc9487",
+      "sha256_after": "207a53b4116463ef3e591f09c500205356dbf835219d527119e160342afc9487"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/007.request.json",
+      "sha256": "222d7eee3b6aaebad9b4b727d9f7778c3dc90f5a697006c0f8aa3fa41b5b06d3",
+      "sha256_after": "222d7eee3b6aaebad9b4b727d9f7778c3dc90f5a697006c0f8aa3fa41b5b06d3"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/007.response.json",
+      "sha256": "0d356493f17f7c206efca6fd8084f36a61d5e9e82313559d38f36dd21e75199e",
+      "sha256_after": "0d356493f17f7c206efca6fd8084f36a61d5e9e82313559d38f36dd21e75199e"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/008.request.json",
+      "sha256": "2518bd7ba80abbe4672d93bfc5188c2ca306cb630f07b28768165e0cddb2555f",
+      "sha256_after": "2518bd7ba80abbe4672d93bfc5188c2ca306cb630f07b28768165e0cddb2555f"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/008.response.json",
+      "sha256": "5fffcc2196774e3a44e9db58b576e8e240bc288f1c2d710d5a1cdd89cd271489",
+      "sha256_after": "5fffcc2196774e3a44e9db58b576e8e240bc288f1c2d710d5a1cdd89cd271489"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/009.request.json",
+      "sha256": "35271de0ed171a9131d7c199bc7d20770d6ef10232c3d6364db87c24cc547762",
+      "sha256_after": "35271de0ed171a9131d7c199bc7d20770d6ef10232c3d6364db87c24cc547762"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/009.response.json",
+      "sha256": "af3b54c86af6255fb63ce75db98f0437178163c458ad684c35bc404173281105",
+      "sha256_after": "af3b54c86af6255fb63ce75db98f0437178163c458ad684c35bc404173281105"
+    }
+  ],
+  "output_directory": "research/c16-observed-audit",
+  "declared_results": [
+    "research/c16-observed-audit/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c16-observed-audit/stdout.txt",
+      "sha256": "ea3e0ef77ee90e1612ead262000a47e68c88e60e690ec0bf4a1085f30f2cedd8",
+      "kind": "log"
+    },
+    {
+      "path": "research/c16-observed-audit/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c16-observed-audit/raw.json",
+      "sha256": "56c4611029a5b688d8a5c08adf40a85ea9aefa8ef845219178181b51edba53f7",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

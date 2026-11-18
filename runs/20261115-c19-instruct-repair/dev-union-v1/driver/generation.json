@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "completed": 8,
+  "planned": 8,
+  "aggregate_of": [
+    "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver",
+    "runs/20261115-c19-instruct-repair/development-remaining-v1/driver"
+  ],
+  "scope": "union of actual 2 v1 and 6 v2 development responses, not a new inference phase or uniform-prompt estimate",
+  "physical_generation_calls": 8,
+  "phase": "initial",
+  "input_tokens": 5121,
+  "output_tokens": 1045,
+  "wall_seconds": 122.66316962600001,
+  "cpu_seconds": 32.471672999999996,
+  "load_seconds": 37.308235167,
+  "client_cpu_seconds": 6.290443000000001,
+  "server_cpu_seconds": 26.18123
+}

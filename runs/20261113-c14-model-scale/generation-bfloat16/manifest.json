@@ -1,0 +1,211 @@
+{
+  "schema_version": 2,
+  "claim_id": "C14-LARGER-DELAYED-ARM",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-local-llm/bin/python",
+    "-m",
+    "quantage.c14_bfloat16_inference",
+    "--cases",
+    "runs/20261113-c14-model-scale/cases.json",
+    "--instructions",
+    "runs/20261113-c09-heldout-guard/instructions.md",
+    "--model",
+    "research/external/models/qwen2.5-1.5b-989aa79",
+    "--model-manifest",
+    "runs/20261113-c14-model-scale/model-acquisition.json",
+    "--output",
+    "runs/20261113-c14-model-scale/generation-bfloat16"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "torch",
+        "version": "2.8.0"
+      },
+      {
+        "name": "transformers",
+        "version": "4.45.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "32 actual local delayed-model proposals on a deterministic matched C11 subset; no gold read",
+    "coefficient_domain": "bfloat16 CPU checkpoint and JSON text after finite-prefill precondition",
+    "conventions": "same frozen C09 prompt, v2 parse, greedy128-token maximum",
+    "inputs": [
+      "32 requests in16groups, four groups per family/language stratum"
+    ],
+    "bounds": {
+      "requests": 32,
+      "new_tokens": 128,
+      "internal_wall_seconds": 1650
+    },
+    "non_claims": [
+      "Not a new independent corpus",
+      "No isolated causal size effect: dtype differs",
+      "No QPU",
+      "Float16 failure retained separately; comparison is exploratory"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "torch seed, greedy no sampling",
+    "seed": 20261113
+  },
+  "run": {
+    "started_at": "2026-11-14T12:21:23.785449+00:00",
+    "runtime_seconds": 796.427963,
+    "exit_status": -15,
+    "status": "failed",
+    "timeout_seconds": 1800.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 4
+    },
+    "missing_results": [
+      "runs/20261113-c14-model-scale/generation-bfloat16/generation.json"
+    ],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/c14_bfloat16_inference.py",
+    "quantage/compact_v2.py",
+    "quantage/compact_agent.py",
+    "quantage/core.py",
+    "quantage/contracts.py",
+    "quantage/verification.py",
+    "runs/20261113-c09-heldout-guard/instructions.md",
+    "runs/20261113-c14-model-scale/cases.json",
+    "runs/20261113-c14-model-scale/selection.json",
+    "runs/20261113-c14-model-scale/model-acquisition.json",
+    "runs/20261113-c14-model-scale/protocol.md",
+    "runs/20261113-c14-model-scale/amendment-precision.md",
+    "runs/20261113-c14-model-scale/precision-bfloat16/result.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/c14_bfloat16_inference.py",
+      "sha256": "3f777b2b3a607025e6386f06617da0c81af5b9e888b242d754ab159ff0fa0776",
+      "sha256_after": "3f777b2b3a607025e6386f06617da0c81af5b9e888b242d754ab159ff0fa0776"
+    },
+    {
+      "path": "quantage/compact_v2.py",
+      "sha256": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d",
+      "sha256_after": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d"
+    },
+    {
+      "path": "quantage/compact_agent.py",
+      "sha256": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+      "sha256_after": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/contracts.py",
+      "sha256": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "sha256_after": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/instructions.md",
+      "sha256": "872a5cb612628dbdc86c3f919526a5cf150e52423a2e3fca78356ec71b9eb185",
+      "sha256_after": "872a5cb612628dbdc86c3f919526a5cf150e52423a2e3fca78356ec71b9eb185"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/cases.json",
+      "sha256": "989f642f07aff255b100a9158823287d39afcd4b8863af59048ace6c3cb47a88",
+      "sha256_after": "989f642f07aff255b100a9158823287d39afcd4b8863af59048ace6c3cb47a88"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/selection.json",
+      "sha256": "f128ef8e4c94ded530a75e8df4214d287d9e84ce9ecf3ddfe7fe5239c756b2fb",
+      "sha256_after": "f128ef8e4c94ded530a75e8df4214d287d9e84ce9ecf3ddfe7fe5239c756b2fb"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/model-acquisition.json",
+      "sha256": "68553800060fa14dcff2b544904e88bf061f9a33420c5cacd92dd7bd316b35d5",
+      "sha256_after": "68553800060fa14dcff2b544904e88bf061f9a33420c5cacd92dd7bd316b35d5"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/protocol.md",
+      "sha256": "785a15576348e9cd873bcf551f5c3b724c11f9ebeb97ae62aeced2c58e1f5e6e",
+      "sha256_after": "785a15576348e9cd873bcf551f5c3b724c11f9ebeb97ae62aeced2c58e1f5e6e"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/amendment-precision.md",
+      "sha256": "76dcdfbcd10cfd3c11fa79ba28c0b0ffc796c2febf9155b5a9e9f99626defa5e",
+      "sha256_after": "76dcdfbcd10cfd3c11fa79ba28c0b0ffc796c2febf9155b5a9e9f99626defa5e"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/precision-bfloat16/result.json",
+      "sha256": "d6f3de069ad2d21aa4a2acf078b463c84c2a831806232c452ac10a3664dd4440",
+      "sha256_after": "d6f3de069ad2d21aa4a2acf078b463c84c2a831806232c452ac10a3664dd4440"
+    }
+  ],
+  "output_directory": "runs/20261113-c14-model-scale/generation-bfloat16",
+  "declared_results": [
+    "runs/20261113-c14-model-scale/generation-bfloat16/raw.jsonl",
+    "runs/20261113-c14-model-scale/generation-bfloat16/generation.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c14-model-scale/generation-bfloat16/stdout.txt",
+      "sha256": "2a20e2b7166dbe2255eff620fe82c0f9713435b1ee782941b35fa568f1375db8",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/generation-bfloat16/stderr.txt",
+      "sha256": "9ee2fb6125427ec9a60dee24e988415ca4021eb744446ced3e092ed884833742",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/generation-bfloat16/raw.jsonl",
+      "sha256": "4efcf1dabf1abe0b6ee73641c8a933e968d4ddf77f18b5180a253c852b524a10",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": false
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": false
+    }
+  ],
+  "result": "Run failed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "Declared results were not produced: runs/20261113-c14-model-scale/generation-bfloat16/generation.json"
+  ]
+}

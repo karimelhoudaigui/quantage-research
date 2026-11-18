@@ -1,0 +1,53 @@
+{
+  "status": "passed_source_recheck_after_root_fix",
+  "python": "3.9.6 (default, Apr 30 2025, 02:07:17) \n[Clang 17.0.0 (clang-1700.0.13.5)]",
+  "scope": "Formatting and byte conservation only; no PDF compiler or mathematical correctness certification.",
+  "files": [
+    {
+      "path": "scripts/build_paper.py",
+      "sha256": "e2498b6205e75d5f07eb8c2362b7c765fcbc90d3c3f8f05a38efa3c75d6e077d"
+    },
+    {
+      "path": "paper/article.md",
+      "sha256": "a06263b124e84609b389ebe72993697b6526e006f212d479600ced7996bcbb3f"
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "1618d27a5c48f7e08769705995d23cf16c5347a55903d6e18c0e3b5e4dc84b82"
+    }
+  ],
+  "checks": {
+    "controls_rejected": true,
+    "display_count": 5,
+    "bodies_identical_md_tex": true,
+    "expected_commands_present": true,
+    "inline_geq_restored": true,
+    "escaped_double_dollars_absent": true,
+    "controls_absent": true
+  },
+  "display_bodies": [
+    "C=\\frac{\\sum_i A_i}{N},\\qquad R=\\frac{\\sum_i A_i L_i}{\\sum_i A_i}.",
+    "Q(x)=-\\sum_i w_i x_i+P\\sum_{(i,j)\\in E}x_i x_j,\\qquad P=1+\\max_i w_i.",
+    "R(t)=\\begin{pmatrix}\\cos t&-\\sin t\\\\\\sin t&\\cos t\\end{pmatrix}.",
+    "P(s|t)=\\frac{|U_{i_1j_1}U_{i_2j_2}+U_{i_1j_2}U_{i_2j_1}|^2}{\\prod_k s_k!\\prod_k t_k!}.",
+    "H=\\frac{\\Omega}{2}\\sum_{j=0}^1(e^{i\\phi}|r_j\\rangle\\langle g_j|+e^{-i\\phi}|g_j\\rangle\\langle r_j|)-\\delta\\sum_{j=0}^1n_j+\\frac{C_6}{r^6}n_0n_1."
+  ],
+  "command": "Read-only Python byte scan, regular-expression extraction of $$...$$ and \\[...\\], equality and explicit command-token assertions.",
+  "rejected_control_probes": [
+    {
+      "control": 12,
+      "rejected": true,
+      "error": "control character in manuscript source"
+    },
+    {
+      "control": 13,
+      "rejected": true,
+      "error": "control character in manuscript source"
+    },
+    {
+      "control": 11,
+      "rejected": true,
+      "error": "control character in manuscript source"
+    }
+  ]
+}

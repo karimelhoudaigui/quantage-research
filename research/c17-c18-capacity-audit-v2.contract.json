@@ -1,0 +1,52 @@
+{
+  "claim_id": "C17-C18-CAPACITY",
+  "mathematics": {
+    "assertion_tested": "Reconcile 2nonthinking and2thinking actual known-development calls with original raw text and finite integer verifier",
+    "coefficient_domain": "binary integers, Q4_K_M LLM",
+    "conventions": "closed trusted annotated contract, no imputation",
+    "inputs": [
+      "research/c17-c18-capacity-audit-v2.py",
+      "quantage/repair_model.py",
+      "quantage/repair_language.py",
+      "quantage/repair_thinking_language.py",
+      "runs/20261115-c16-quantized-repair/gold.json",
+      "runs/20261115-c17-capacity-repair/probe_cases.json",
+      "runs/20261115-c17-capacity-repair/capacity-probe-v2/driver/raw.jsonl",
+      "runs/20261115-c18-thinking-repair/recovered-first-response.json",
+      "runs/20261115-c18-thinking-repair/capacity-remaining-v1/driver/raw.jsonl"
+    ],
+    "bounds": {
+      "cases_per_configuration": 2,
+      "C17_tokens": 512,
+      "C18_tokens": 1024
+    },
+    "non_claims": [
+      "Not test/generalization",
+      "Not independent review",
+      "No model-size causal comparison",
+      "No QPU"
+    ]
+  },
+  "execution_artifacts": [
+    "research/c17-c18-capacity-audit-v2.py",
+    "quantage/repair_model.py",
+    "quantage/repair_language.py",
+    "quantage/repair_thinking_language.py",
+    "runs/20261115-c16-quantized-repair/gold.json",
+    "runs/20261115-c17-capacity-repair/probe_cases.json",
+    "runs/20261115-c17-capacity-repair/capacity-probe-v2/driver/raw.jsonl",
+    "runs/20261115-c18-thinking-repair/recovered-first-response.json",
+    "runs/20261115-c18-thinking-repair/capacity-remaining-v1/driver/raw.jsonl"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

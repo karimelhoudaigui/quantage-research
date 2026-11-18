@@ -1,0 +1,87 @@
+{
+  "run": "20261116-c26-quantized-kv",
+  "protocol_file": "/Users/karimelhoudaigui/Downloads/quantage-research/runs/20261116-c26-quantized-kv/protocol.md",
+  "generated_from_code_checks": true,
+  "results": {
+    "scripts/run_c26_repair.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "quantage/repair_second_round_q8_inference.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "quantage/repair_iterative_patch_inference.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "quantage/repair_iterative_state.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "quantage/repair_patch_tool_language.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "quantage/repair_language.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "quantage/repair_model.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "quantage/repair_feedback.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "quantage/repair_trace_feedback.py": {
+      "py_compile": true,
+      "stderr": ""
+    },
+    "model": {
+      "path": "/Users/karimelhoudaigui/Downloads/quantage-research/research/external/c22-public/models/Qwen3-8B-Q4_K_M.gguf",
+      "exists": true,
+      "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+      "acquisition_expected": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+      "match": true
+    },
+    "acquisition": {
+      "status": "completed",
+      "runtime_tag": "b12359"
+    },
+    "runs/20261116-c24-second-repair/public_case.json": {
+      "valid": true,
+      "kind": "json"
+    },
+    "runs/20261116-c24-second-repair/states.json": {
+      "valid": true,
+      "kind": "json"
+    },
+    "runs/20261116-c24-second-repair/feedback.json": {
+      "valid": true,
+      "kind": "json"
+    },
+    "runs/20261116-c24-second-repair/instructions.txt": {
+      "valid": true,
+      "kind": "text"
+    },
+    "runs/20261116-c24-second-repair/before-verification.json": {
+      "valid": true,
+      "kind": "json"
+    },
+    "runs/20261116-c24-second-repair/freeze-round2-v1.json": {
+      "valid": true,
+      "kind": "json"
+    },
+    "native-help": {
+      "has_flash_attn": true,
+      "has_cache_type_k": true,
+      "has_cache_type_v": true
+    },
+    "imports": {
+      "ok": true,
+      "stderr": ""
+    }
+  }
+}

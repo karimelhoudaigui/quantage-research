@@ -1,0 +1,105 @@
+{
+  "status": "passed_author_software_checks",
+  "checks": {
+    "second_literal_repair_removes_residual_error": true,
+    "syntax_fallback_and_explicit_replacement_only": true,
+    "6144_1024_round_seeds_and_batch128": true,
+    "partial30_and_bounded_10s_reap_state_fixture": true,
+    "actual_previous_patch_assistant_and_own_materialized_state": true,
+    "round1_final_metrics_best3_tie_and_7_physical_9_attributable": true,
+    "tampered_state_rejected": true,
+    "missing_lineage_rejected_without_imputation": true
+  },
+  "model_executions": 0,
+  "network_requests": 0,
+  "C23_corpus_or_gold_reads": 0,
+  "fixtures": "synthetic only; classical DFS/HiGHS really execute; not LLM performance",
+  "elapsed_seconds": 0.438189875,
+  "source_sha256": {
+    "quantage/repair_iterative_state.py": "749e5450a159de77fe6cd6ca64a2cd2b48abe78d1db3a55f89bfc2d5c249b7d2",
+    "quantage/repair_iterative_full_inference.py": "456b38124ce7f1e9d21d2f38c6d17114f4f3e5e42c95b1141c18207ca1217af6",
+    "quantage/repair_iterative_patch_inference.py": "567fc2031df62434d544c68dd14d0e51070df911d02195d8bd7ab2ef67eee2bd",
+    "quantage/repair_study_c23_v2.py": "57e5cdc15a25e1b862b975569a068785c8ed92071ed4836d74f05e64ef3fc949",
+    "quantage/repair_iterative_checks.py": "f6821e1c55c93bae6fc9ac11db70960ea7cf401effe8b68b4d7057612a63cf84"
+  },
+  "review_provenance": "author synthetic checks; separate fresh-agent read-only review and fixture invocation, followed by delta review",
+  "date": "2026-11-16",
+  "recorded_at_utc": "2026-11-16T12:23:27.956345+00:00",
+  "independent_reviews": [
+    {
+      "stage": "initial_followup",
+      "reviewer_task": "/root/c15_formulation/c23_independent",
+      "scope": "independent agent, read-only source review plus one synthetic fixture invocation; no model/network/C23 corpus",
+      "artifact": "/tmp/c23-independent-fixture-20261116-fix-review.json",
+      "artifact_sha256": "060636d8fa3d7d4ba5d4fed418881fbc4375ae52bc6bf029fada3ed5fdef431f",
+      "source_sha256": {
+        "quantage/repair_iterative_state.py": "749e5450a159de77fe6cd6ca64a2cd2b48abe78d1db3a55f89bfc2d5c249b7d2",
+        "quantage/repair_iterative_full_inference.py": "88ded94114850cc2296c89d5493e7d2cd1256cfc7d5c6a3a65af19462a450e0a",
+        "quantage/repair_iterative_patch_inference.py": "e42705ef510d46fec28d6f585f373219615cce1b75f8b823ee17620d6013ccad",
+        "quantage/repair_study_c23_v2.py": "57e5cdc15a25e1b862b975569a068785c8ed92071ed4836d74f05e64ef3fc949",
+        "quantage/repair_iterative_checks.py": "e5c4f6d46b8ae00f7700c1b20b4a64fb3074bff12b9f420972adfc96818f57a7"
+      },
+      "matches_current_sources": false,
+      "checks_passed": 7,
+      "model_executions": 0,
+      "findings": [
+        "Absent-state local patch and reduced-output input-cap findings resolved."
+      ]
+    },
+    {
+      "stage": "partial30_cleanup_delta",
+      "reviewer_task": "/root/c15_formulation/c23_independent",
+      "scope": "independent agent, read-only source review plus one synthetic fixture invocation; no model/network/C23 corpus",
+      "artifact": "/tmp/c23-independent-fixture-20261116-partial30-review.json",
+      "artifact_sha256": "119e637031c74cc1a0b89ac98e702ab7009eb0dd9097ae08fa0a51526d8a5c93",
+      "source_sha256": {
+        "quantage/repair_iterative_state.py": "749e5450a159de77fe6cd6ca64a2cd2b48abe78d1db3a55f89bfc2d5c249b7d2",
+        "quantage/repair_iterative_full_inference.py": "456b38124ce7f1e9d21d2f38c6d17114f4f3e5e42c95b1141c18207ca1217af6",
+        "quantage/repair_iterative_patch_inference.py": "567fc2031df62434d544c68dd14d0e51070df911d02195d8bd7ab2ef67eee2bd",
+        "quantage/repair_study_c23_v2.py": "57e5cdc15a25e1b862b975569a068785c8ed92071ed4836d74f05e64ef3fc949",
+        "quantage/repair_iterative_checks.py": "f6821e1c55c93bae6fc9ac11db70960ea7cf401effe8b68b4d7057612a63cf84"
+      },
+      "matches_current_sources": true,
+      "checks_passed": 8,
+      "model_executions": 0,
+      "findings": [
+        "No blocking issue observed in limited delta review.",
+        "C25 precondition declared, not automatically enforced.",
+        "Cleanup fixtures use simulated process state and establish no memory-fit or real-server-stop claim."
+      ]
+    }
+  ],
+  "runtime_configuration": {
+    "context": 6144,
+    "max_new_tokens": 1024,
+    "max_input_tokens": 5119,
+    "gpu_layers_requested": 30,
+    "cpu_threads": 4,
+    "batch": 128,
+    "ubatch": 128,
+    "gpu_offload_observed": "runtime logs only; no model run in this delivery",
+    "term_wait_seconds": 2,
+    "kill_reap_wait_seconds": 10,
+    "external_group_watchdog_required_seconds": 1800
+  },
+  "runtime_precondition": {
+    "condition": "C25 produces one complete proposal before any C23 model call",
+    "enforced_by": "root orchestration",
+    "validated_here": false,
+    "reason": "C24 99-layer Metal allocation failure reported by coordinator; no prospective fit claimed"
+  },
+  "prospective_hypothesis": {
+    "guided_minus_self_final_faithful_at_least": 3,
+    "guided_final_regressions_from_initial_at_most": 1,
+    "must_freeze_before_test": true,
+    "empirical_status": "not evaluated"
+  },
+  "scope_limitations": [
+    "No C23 model call or data/gold inspection.",
+    "Synthetic fixtures are software checks, not LLM performance.",
+    "Partial GPU request is not proof of memory fit or GPU-only execution.",
+    "No real Metal OOM/reaping reproduced.",
+    "No old source, article, claims or state modified by this delivery."
+  ],
+  "notes_sha256": "5510933a2adaf5660b309aa0f7e8872ec3dbbaeead23691f3532d98a6500ad7a"
+}

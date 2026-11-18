@@ -1,0 +1,9 @@
+{
+  "path": "research/external/models/qwen2.5-0.5b-7ae5576/model.safetensors",
+  "bytes": 988097824,
+  "sha256_verified": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+  "source": "runs/20261113-c07-public-traces/model-acquisition.json",
+  "restoration_url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/7ae557604adf67be50417f59c2c2f167def9a775/model.safetensors",
+  "reason": "bounded C17 acquisition free-disk reserve; only public ignored cache weights, original observations and metadata retained",
+  "free_before": 820813824
+}

@@ -1,0 +1,485 @@
+{
+  "fcec7afd3dd6": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      }
+    ]
+  },
+  "79769e445d63": {
+    "kind": "no_counterexample",
+    "message": "No discrepancy on the finite cube. Preserve all model fields."
+  },
+  "38289dce9fa8": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "bc6455847de3": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  },
+  "192394ff7b7a": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  },
+  "a84cf14c247d": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      }
+    ]
+  },
+  "2869335ff788": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          1,
+          0,
+          1,
+          0,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      }
+    ]
+  },
+  "5c92952e6b23": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  },
+  "cd5f7022ac2e": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      }
+    ]
+  },
+  "bce63f435951": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  },
+  "dcdad683f9dc": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "37e4073ab724": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  },
+  "e208889911d5": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  },
+  "0917fa453976": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      }
+    ]
+  },
+  "5d9702fb5f6c": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "54969ba6bb41": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  }
+}

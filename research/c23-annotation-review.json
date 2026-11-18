@@ -1,0 +1,163 @@
+{
+  "status": "independent_finite_oracle_and_author_comparison_passed",
+  "timestamp_utc": "2026-11-16T11:03:03.920072+00:00",
+  "python": "3.9.6",
+  "own_manifest": "research/c23-annotation-oracle.output/manifest.json",
+  "own_raw_sha256": "8f000b0f298b72d65d2e2f4f47afa9bb4f2cb916bf0d7abe61ea7eaf90f42c2e",
+  "independence_order": "Public-only manual labels frozen first; own complete masks/optima/removal arrays frozen and validated second; author certificates opened only afterwards under explicit root authorization.",
+  "cases": 20,
+  "all_feasible": true,
+  "family_removals_active": 80,
+  "individual_implication_removals_active": 60,
+  "individual_exclusion_removals_active": 32,
+  "case_comparisons": [
+    {
+      "id": "0d1fcab20bbf",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "12d7d632fc5a",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "1591c552ce60",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "2c5f03082098",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "3bb2d6807209",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "3f2da1e93197",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "4d46af430e6c",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "59cc26171df7",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "819b31e9501a",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "bc03e3d47a10",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "c616c3b27d14",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "c7b67c2417a6",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "c8e0347b6769",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "d11c57a34450",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "d394c4b72e6e",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "d7da9a72a703",
+      "domain_count_optima_and_all_removal_masks_match": true
+    },
+    {
+      "id": "f62f0c0bce93",
+      "domain_count_optima_and_all_removal_masks_match": true
+    }
+  ],
+  "author_self_crosscheck": {
+    "status": "passed",
+    "method": "Author self-check with separate set-based enumeration and direct deletion, not bit-violation implementation; regex roundtrip checks rendered clauses. Not independent public annotation.",
+    "reported_check_count": 332,
+    "scope": "Author self-check is not relabelled independent; independent array comparisons are above."
+  },
+  "input_sha256_before": {
+    "research/c23-annotation-oracle.output/raw.json": "8f000b0f298b72d65d2e2f4f47afa9bb4f2cb916bf0d7abe61ea7eaf90f42c2e",
+    "runs/20261115-c23-compositional-repair/private_gold.author.json": "7aadec43fe1feee31aa063bac78b835f5f4f0eba0498913a751239665d39a8e5",
+    "runs/20261115-c23-compositional-repair/author-crosscheck.private.json": "be1aecfa8ce6aa5740ffc32dbf73180d22ff1e39447879e2a9152b2b5ab08daf",
+    "runs/20261115-c23-compositional-repair/private_gold.review.json": "d874ff3b11a15d817a38a3c32698351a08512b80e8b3f11341fd7a7a9165f002"
+  },
+  "input_sha256_after": {
+    "research/c23-annotation-oracle.output/raw.json": "8f000b0f298b72d65d2e2f4f47afa9bb4f2cb916bf0d7abe61ea7eaf90f42c2e",
+    "runs/20261115-c23-compositional-repair/private_gold.author.json": "7aadec43fe1feee31aa063bac78b835f5f4f0eba0498913a751239665d39a8e5",
+    "runs/20261115-c23-compositional-repair/author-crosscheck.private.json": "be1aecfa8ce6aa5740ffc32dbf73180d22ff1e39447879e2a9152b2b5ab08daf",
+    "runs/20261115-c23-compositional-repair/private_gold.review.json": "d874ff3b11a15d817a38a3c32698351a08512b80e8b3f11341fd7a7a9165f002"
+  },
+  "comparison_command": "python3 heredoc: compare feasible_masks/count/max_weight/optimal_masks and all E/family/individual-I/individual-E additional-mask arrays and minimum witnesses by ID and clause pair; assert equality and unchanged SHA256.",
+  "non_claims": [
+    "No model/server/inference executed.",
+    "Finite instance-specific activity is not an arbitrary-text certificate or population guarantee.",
+    "No C23 label modified after freeze."
+  ],
+  "prospective_static_code_review": {
+    "timestamp_utc": "2026-11-16T11:05:56.707850+00:00",
+    "status": "no_blocking_issue_identified_by_static_review; fixtures_not_executed_by_reviewer",
+    "sources": [
+      {
+        "path": "quantage/repair_scale_full_inference.py",
+        "sha256": "26f55ab85063376bc01abab39754c8d9a4c9d5960c961009105a6c5f59c517d1"
+      },
+      {
+        "path": "quantage/repair_study_c23.py",
+        "sha256": "abb585b93c30136a3eb7fb91314552f7bd780d8660adcee5e89c34b8a36a0a00"
+      },
+      {
+        "path": "quantage/repair_patch_scale_inference.py",
+        "sha256": "ae99264343b27391d1d6201541abcb9a52ea55e86eb464ae934b9dc57c87e523"
+      },
+      {
+        "path": "quantage/repair_patch_tool_language.py",
+        "sha256": "ec0b66334b3fbac6ee2720f23d68450b1cd9b21c5d57c509260f9160c40359bc"
+      },
+      {
+        "path": "quantage/repair_trace_feedback.py",
+        "sha256": "8ae1576b3abd974d084e74816e02ccab36f490f72678d59577750f41660e82cc"
+      },
+      {
+        "path": "tests/test_repair_study_c23.py",
+        "sha256": "5694b3e97a852336e198b3d93e15b0842eb9f4e2d5f1159e971878eb6d47a92e"
+      }
+    ],
+    "checks": [
+      "Full initial/direct phases refuse all initial/feedback inputs; native closed-empty thinking prefix check preserved.",
+      "Scorer reparses full output or replays literal atomic patches against exact initial raw bytes and hash.",
+      "Direct messages equal initial messages; self/guided share patch system and policy; guided message is compared with exact own-candidate feedback.",
+      "Finite mean token logprob, seed, counts,1024 output cap,3071 input reserve checked.",
+      "Primary guided-tool-patch versus self-patch; full direct is a separate secondary comparator.",
+      "Scorer selection uses syntax and processed logprob only, never final reference certificate.",
+      "Expected physical4N and attributable6N calls; explicit candidate-only solver profiling and CPU scopes."
+    ],
+    "remaining": [
+      "Freeze prospective H23 protocol,actual wrappers/instructions/runtime pins before first test call.",
+      "Execute remaining software fixtures under an authorized bounded runner; none were executed in this review.",
+      "Actual prompt/token/HTTP/runtime and metric audit remains after observations."
+    ]
+  }
+}

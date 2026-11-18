@@ -1,0 +1,180 @@
+{
+  "schema_version": 2,
+  "claim_id": "C15-STUDY-V2-SOFTWARE-AUDIT",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "research/c15-study-audit-v2.py",
+    "--output",
+    "research/c15-study-audit-v2"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.13.1"
+      },
+      {
+        "name": "NumPy",
+        "version": "1.26.4"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Hand-specified synthetic software fixtures give the expected selector decisions, exact discrepancy counts, strata, repairs/regressions and cost accounting.",
+    "coefficient_domain": "exact integer ILP domains; floating timing bookkeeping compared within standard isclose tolerance",
+    "conventions": "Four artificial n=2 cases; one infeasible; predetermined fake generations explicitly marked synthetic; no LLM executed.",
+    "inputs": [
+      "Handwritten synthetic fixtures encoded in the audit script",
+      "Production offline scorer, verifier, feedback helper and solvers"
+    ],
+    "bounds": {
+      "cases": 4,
+      "n": 2,
+      "synthetic_record_count": 16
+    },
+    "non_claims": [
+      "No performance evidence",
+      "No real H15 result",
+      "No public held-out response inspected or generated"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T13:05:04.844555+00:00",
+    "runtime_seconds": 1.051225,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c15-study-audit-v2.py",
+    "quantage/repair_study_v2.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py",
+    "quantage/repair_language.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c15-study-audit-v2.py",
+      "sha256": "1aa9d1486e0c39e0e3c06ce5232fb79a2acc5597eb0b255a65cbe4cf8d4ec2e9",
+      "sha256_after": "1aa9d1486e0c39e0e3c06ce5232fb79a2acc5597eb0b255a65cbe4cf8d4ec2e9"
+    },
+    {
+      "path": "quantage/repair_study_v2.py",
+      "sha256": "199e4e20cd75754509a0798c44b81dbe78bf94d1734d0f948c4a32079e1954b8",
+      "sha256_after": "199e4e20cd75754509a0798c44b81dbe78bf94d1734d0f948c4a32079e1954b8"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "sha256_after": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    }
+  ],
+  "output_directory": "research/c15-study-audit-v2",
+  "declared_results": [
+    "research/c15-study-audit-v2/raw.json",
+    "research/c15-study-audit-v2/scores/raw.jsonl",
+    "research/c15-study-audit-v2/scores/metrics.json",
+    "research/c15-study-audit-v2/feedback/minimal.json",
+    "research/c15-study-audit-v2/feedback/reports.jsonl"
+  ],
+  "outputs": [
+    {
+      "path": "research/c15-study-audit-v2/stdout.txt",
+      "sha256": "562a25375c804cf56f739d93326a3b1f5a0c049f72abef2dc75af6e5e18783e0",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-study-audit-v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-study-audit-v2/raw.json",
+      "sha256": "c9d1fa095969cc0e8dba8742ddb5731110792269e6c8718996a335b3caddd98f",
+      "kind": "result"
+    },
+    {
+      "path": "research/c15-study-audit-v2/scores/raw.jsonl",
+      "sha256": "66cb283dfa8c5dc129b2dc1b6a1412b5f4a07566324b293a11df69271ae530e9",
+      "kind": "result"
+    },
+    {
+      "path": "research/c15-study-audit-v2/scores/metrics.json",
+      "sha256": "339c8143a0df9266ead4a3413876cb630bb502763a74f8d4bbd06ce3a06c2777",
+      "kind": "result"
+    },
+    {
+      "path": "research/c15-study-audit-v2/feedback/minimal.json",
+      "sha256": "76332bb6e6adc6686a2b39616e847310fa9ae1f886265f243ca9ea866bea96db",
+      "kind": "result"
+    },
+    {
+      "path": "research/c15-study-audit-v2/feedback/reports.jsonl",
+      "sha256": "f4778ea785dce285a8bb5b1680127436cb05e0cefac4d05f3cae39db983b6834",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

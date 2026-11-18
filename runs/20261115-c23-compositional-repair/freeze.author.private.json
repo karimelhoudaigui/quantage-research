@@ -1,0 +1,16 @@
+{
+  "created_local_date": "2026-11-16",
+  "frozen_at_utc": "2026-11-15T23:09:19.572759+00:00",
+  "status": "author_data_frozen_pending_public_only_annotation",
+  "private_before_annotation_freeze": true,
+  "sha256": {
+    "test_cases.json": "fd8442be1df42c65bda00fb97a6d4627c638e69fea7211e0a8f3c8c9f8ae0ea1",
+    "private_gold.author.json": "7aadec43fe1feee31aa063bac78b835f5f4f0eba0498913a751239665d39a8e5",
+    "build_corpus.private.py": "88a558fbd31a56a8d0d6397f26f99ec3c17de7f846db440844870f67c630e0ee",
+    "build_corpus.preflight-failed.private.py": "2e5b8a9562518e71dc3588650a04fb21b6dff49cf189a0dfa4492e3cdc9566cb",
+    "preflight-failure.private.json": "33c6b78b8a020595d454854ec102d5bb16933c8489bcd58b99dacc09ac8c286f",
+    "construction-attempts.private.jsonl": "6638a1e9d68a22af1d40cf1600cc40d7f601aa4b35f82f9f672f292c1c59d711",
+    "construction-status.private.json": "48749f329e2293756e0abb1ea92ed26ed9a6171bbb13fb0df6683c045b4388b5",
+    "author-crosscheck.private.json": "be1aecfa8ce6aa5740ffc32dbf73180d22ff1e39447879e2a9152b2b5ab08daf"
+  }
+}

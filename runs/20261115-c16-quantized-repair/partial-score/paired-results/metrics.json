@@ -1,0 +1,420 @@
+{
+  "cases": 15,
+  "methods": {
+    "initial": {
+      "observed": 15,
+      "schema_valid": 12,
+      "faithful": 1,
+      "optimization_equivalent": 1,
+      "feasibility_mismatches": 76,
+      "objective_mismatches": 0,
+      "assignments_compared": 624,
+      "portfolio_concordant": 12,
+      "usable_for_original_problem": 1,
+      "format_repairs_to_faithful": 0,
+      "mathematical_repairs_to_faithful": 0,
+      "regressions_from_faithful": 0,
+      "initial_errors": 0,
+      "repairs_to_faithful": 0
+    },
+    "direct": {
+      "observed": 15,
+      "schema_valid": 14,
+      "faithful": 1,
+      "optimization_equivalent": 1,
+      "feasibility_mismatches": 126,
+      "objective_mismatches": 0,
+      "assignments_compared": 816,
+      "portfolio_concordant": 14,
+      "usable_for_original_problem": 1,
+      "format_repairs_to_faithful": 0,
+      "mathematical_repairs_to_faithful": 0,
+      "regressions_from_faithful": 0,
+      "initial_errors": 14,
+      "repairs_to_faithful": 0
+    },
+    "self": {
+      "observed": 15,
+      "schema_valid": 12,
+      "faithful": 1,
+      "optimization_equivalent": 1,
+      "feasibility_mismatches": 67,
+      "objective_mismatches": 0,
+      "assignments_compared": 624,
+      "portfolio_concordant": 12,
+      "usable_for_original_problem": 1,
+      "format_repairs_to_faithful": 0,
+      "mathematical_repairs_to_faithful": 0,
+      "regressions_from_faithful": 0,
+      "initial_errors": 14,
+      "repairs_to_faithful": 0
+    },
+    "guided": {
+      "observed": 15,
+      "schema_valid": 12,
+      "faithful": 1,
+      "optimization_equivalent": 1,
+      "feasibility_mismatches": 76,
+      "objective_mismatches": 0,
+      "assignments_compared": 624,
+      "portfolio_concordant": 12,
+      "usable_for_original_problem": 1,
+      "format_repairs_to_faithful": 0,
+      "mathematical_repairs_to_faithful": 0,
+      "regressions_from_faithful": 0,
+      "initial_errors": 14,
+      "repairs_to_faithful": 0
+    }
+  },
+  "strata": {
+    "language": {
+      "fr": {
+        "initial": {
+          "observed": 8,
+          "schema_valid": 5,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 23,
+          "objective_mismatches": 0,
+          "assignments_compared": 272,
+          "portfolio_concordant": 5,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        },
+        "direct": {
+          "observed": 8,
+          "schema_valid": 7,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 74,
+          "objective_mismatches": 0,
+          "assignments_compared": 464,
+          "portfolio_concordant": 7,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 8,
+          "repairs_to_faithful": 0
+        },
+        "self": {
+          "observed": 8,
+          "schema_valid": 5,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 15,
+          "objective_mismatches": 0,
+          "assignments_compared": 272,
+          "portfolio_concordant": 5,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 8,
+          "repairs_to_faithful": 0
+        },
+        "guided": {
+          "observed": 8,
+          "schema_valid": 5,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 23,
+          "objective_mismatches": 0,
+          "assignments_compared": 272,
+          "portfolio_concordant": 5,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 8,
+          "repairs_to_faithful": 0
+        }
+      },
+      "en": {
+        "initial": {
+          "observed": 7,
+          "schema_valid": 7,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 53,
+          "objective_mismatches": 0,
+          "assignments_compared": 352,
+          "portfolio_concordant": 7,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        },
+        "direct": {
+          "observed": 7,
+          "schema_valid": 7,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 52,
+          "objective_mismatches": 0,
+          "assignments_compared": 352,
+          "portfolio_concordant": 7,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 6,
+          "repairs_to_faithful": 0
+        },
+        "self": {
+          "observed": 7,
+          "schema_valid": 7,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 52,
+          "objective_mismatches": 0,
+          "assignments_compared": 352,
+          "portfolio_concordant": 7,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 6,
+          "repairs_to_faithful": 0
+        },
+        "guided": {
+          "observed": 7,
+          "schema_valid": 7,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 53,
+          "objective_mismatches": 0,
+          "assignments_compared": 352,
+          "portfolio_concordant": 7,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 6,
+          "repairs_to_faithful": 0
+        }
+      }
+    },
+    "reference_feasibility": {
+      "feasible": {
+        "initial": {
+          "observed": 12,
+          "schema_valid": 10,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 72,
+          "objective_mismatches": 0,
+          "assignments_compared": 576,
+          "portfolio_concordant": 10,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        },
+        "direct": {
+          "observed": 12,
+          "schema_valid": 12,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 122,
+          "objective_mismatches": 0,
+          "assignments_compared": 768,
+          "portfolio_concordant": 12,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 12,
+          "repairs_to_faithful": 0
+        },
+        "self": {
+          "observed": 12,
+          "schema_valid": 10,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 63,
+          "objective_mismatches": 0,
+          "assignments_compared": 576,
+          "portfolio_concordant": 10,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 12,
+          "repairs_to_faithful": 0
+        },
+        "guided": {
+          "observed": 12,
+          "schema_valid": 10,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 72,
+          "objective_mismatches": 0,
+          "assignments_compared": 576,
+          "portfolio_concordant": 10,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 12,
+          "repairs_to_faithful": 0
+        }
+      },
+      "infeasible": {
+        "initial": {
+          "observed": 3,
+          "schema_valid": 2,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 4,
+          "objective_mismatches": 0,
+          "assignments_compared": 48,
+          "portfolio_concordant": 2,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        },
+        "direct": {
+          "observed": 3,
+          "schema_valid": 2,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 4,
+          "objective_mismatches": 0,
+          "assignments_compared": 48,
+          "portfolio_concordant": 2,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 2,
+          "repairs_to_faithful": 0
+        },
+        "self": {
+          "observed": 3,
+          "schema_valid": 2,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 4,
+          "objective_mismatches": 0,
+          "assignments_compared": 48,
+          "portfolio_concordant": 2,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 2,
+          "repairs_to_faithful": 0
+        },
+        "guided": {
+          "observed": 3,
+          "schema_valid": 2,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 4,
+          "objective_mismatches": 0,
+          "assignments_compared": 48,
+          "portfolio_concordant": 2,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 2,
+          "repairs_to_faithful": 0
+        }
+      }
+    }
+  },
+  "H16": {
+    "status": "not_supported_in_finite_test",
+    "guided_minus_self_faithful": 0,
+    "required_gain": 3,
+    "guided_regressions": 0,
+    "maximum_regressions": 1
+  },
+  "physical_generation_calls": 60,
+  "physical_generation_cost": {
+    "input_tokens": 43828,
+    "output_tokens": 11231,
+    "wall_seconds": 294.57380575099995,
+    "cpu_seconds": 0.5197140000000002
+  },
+  "attributable_cost_per_arm": {
+    "direct": {
+      "input_tokens": 17860,
+      "output_tokens": 5558,
+      "wall_seconds": 125.80685137100005,
+      "cpu_seconds": 0.22408100000000042
+    },
+    "self": {
+      "input_tokens": 21077,
+      "output_tokens": 5673,
+      "wall_seconds": 149.05824587699996,
+      "cpu_seconds": 0.2618609999999999
+    },
+    "guided": {
+      "input_tokens": 22751,
+      "output_tokens": 5290,
+      "wall_seconds": 135.81059341700004,
+      "cpu_seconds": 0.2205159999999995
+    }
+  },
+  "generation_executions": {
+    "initial": {
+      "load_seconds": null,
+      "process_wall_seconds": null,
+      "wrapper_wall_seconds": null,
+      "client_cpu_seconds": null,
+      "server_cpu_seconds": null,
+      "server_cpu_scope": null,
+      "aggregate_of": null
+    },
+    "direct": {
+      "load_seconds": null,
+      "process_wall_seconds": null,
+      "wrapper_wall_seconds": null,
+      "client_cpu_seconds": null,
+      "server_cpu_seconds": null,
+      "server_cpu_scope": null,
+      "aggregate_of": null
+    },
+    "self": {
+      "load_seconds": null,
+      "process_wall_seconds": null,
+      "wrapper_wall_seconds": null,
+      "client_cpu_seconds": null,
+      "server_cpu_seconds": null,
+      "server_cpu_scope": null,
+      "aggregate_of": null
+    },
+    "guided": {
+      "load_seconds": null,
+      "process_wall_seconds": null,
+      "wrapper_wall_seconds": null,
+      "client_cpu_seconds": null,
+      "server_cpu_seconds": null,
+      "server_cpu_scope": null,
+      "aggregate_of": null
+    }
+  },
+  "feedback_computation_seconds": null,
+  "scored_portfolio_seconds_total": 1.1203230840000005,
+  "cost_scope": "row wall times include server request/postprocessing, not imports/load; row CPU is Python HTTP client only; server CPU is phase-level separately; process/wrapper timings reported; GPU energy and annotation/development/session cost unknown",
+  "budget": "two calls and max768 outputtokens per arm/case; shared initial counted once physically",
+  "selection": {
+    "direct": "schema validity then mean processed-token logprob, tie first",
+    "self_guided": "second if schema-valid, else initial if schema-valid"
+  },
+  "scope": "finite annotated reference, no population CI, full explicit ILP emitted by LLM; portfolio is ex-post profiling"
+}

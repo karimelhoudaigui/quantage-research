@@ -1,0 +1,21 @@
+# Vérification C13 — programme analogique et simulateur Pulser réels
+
+Manifest v2 results/manifest.json : completed; validation avec --root . passée. Assertion finie vérifiée dans la tolérance annoncée, revue indépendante d'auteur encore requise.
+
+Exécution réelle : Python3.11.15, Pulser/core/simulation1.7.2, QuTiP5.2.3; aucun SDK téléchargé pour C13. Les 162 séquences prévues ont toutes été construites sur AnalogDevice et simulées avec QutipEmulator/ODE sans bruit, modulation ou shots. La grille de distance, drive, detuning, phase et temps est exactement celle du protocole.
+
+L'oracle construit un Hamiltonien hermitien4x4 en base|gg>,|gr>,|rg>,|rr>, avec interaction finieV=C6/r^6 et C6=865723.02. La valeur de C6 provient du Device public installé, pas d'un ajustement des résultats. Le SDK est traduit depuis l'ordre inverse et son Hamiltonien au temps0 est comparé séparément. La matrice SDK ou son état final ne sont pas réutilisés dans l'oracle; numpy.linalg.eigh calcule l'évolution du modèle constant nominal alors que QuTiP intègre le programme échantillonné. Indépendance d'implémentation au sens algorithmique; bibliothèques mathématiques communes possibles, pas indépendance de pile numérique garantie.
+
+Erreurs maximales : Hamiltonien 6.123233995736766e-17 pour seuil1e-10; probabilités 0.00047265280721298097 pour seuil5e-3; normalisation 1.611415334501487e-09 pour seuil1e-8. Les tolérances ODE1e-10 ne sont pas assimilées à une précision globale des probabilités. Le contrôle nominal constant et le pulse SDK échantillonné peuvent différer à leurs frontières; leur écart et l'erreur numérique ne sont pas causalement isolés dans ce run. Aucune nouvelle précision ou convergence n'est proclamée après observation.
+
+Les trois tests analytiques séparés vérifient absence de drive, limite sans interaction (produit de rotations de Rabi) et placement de l'interaction sur la seule double excitation. Tous passent; aucun test ne lance un QPU ni n'utilise un mock comme résultat scientifique.
+
+Les neuf sondes de limites ont des résultats explicites : sept rejets (distance trop petite, rayon dépassé, canal absent, amplitude/detuning excessifs, durée trop courte, séquence trop longue), une acceptation après arrondi101ns→104ns, une acceptation de registre libre sans layout malgré requires_layout=True. Ce dernier point ne prouve pas un défaut : les contraintes de layout propres à l'exécution QPU sont distinctes de la simulation. L'arrondi est un changement de programme observable; une architecture d'agents fidèle à une durée demandée doit vérifier la durée effectivement construite ou obtenir une correction autorisée, pas assimiler absence d'exception et préservation exacte.
+
+Spécification observée : AnalogDevice2D,80atomes au plus, rayon38µm, espacementminimal5µm, Rydberg60, canal globalΩmax4πrad/µs,|delta|max40πrad/µs, horloge4ns,min16ns,maxséquence6000ns. Ces chiffres identifient l'objet logiciel versionné, pas une machine réelle attribuée au compte. Les 162 cas respectent les contraintes constructeur effectivement vérifiées; qpu_backend_constraints_checked=false et specific_hardware_compatible=unverified restent explicites. Aucun backend distant/QPU, compte, secret, paiement ou soumission.
+
+Temps mur 21.815239s, CPU du processus 3.730003s. Des avertissements fontconfig/matplotlib de cache non inscriptible sont conservés dans stderr; ils n'ont pas empêché le calcul. Pas de coût machine/énergie mesuré. Aucun tirage aléatoire; pas de statistique sur population ou absence de contamination revendiquée.
+
+H13 est soutenue seulement sur cette grille et dans les tolérances préenregistrées. Contribution au manuscrit : validation logicielle locale d'une troisième famille de dynamique de spins et contre-exemple pratique à «accepté par le SDK⇒programme exactement demandé et admissible QPU». Les arrondis/layouts sont documentés; aucune originalité de ce fait n'est revendiquée. La performance d'agents sur cette famille reste à évaluer séparément.
+
+Prochaine action : revue distincte des deux oracles et des manifests C12/C13; puis test prospectif des agents sur ambiguïtés d'unités, durées et hypothèses de photons/spins, sans réutiliser ces grilles comme validation aveugle d'un agent adapté après consultation.

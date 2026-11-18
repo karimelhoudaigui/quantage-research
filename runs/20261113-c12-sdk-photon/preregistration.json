@@ -1,0 +1,8 @@
+{
+  "recorded_at_utc": "2026-11-13T19:54:59.715881+00:00",
+  "stage": "before SDK import/scientific execution",
+  "files": {
+    "runs/20261113-c12-sdk-photon/protocol.md": "02bdcdd5330baec41960982754f430d3c03b8f58484c21c48f7b1be95597e6ba",
+    "runs/20261113-c12-sdk-photon/contract.json": "ae831967004bc4a271c6892f493c79f420d5d071384ee5a13511eb37540b180d"
+  }
+}

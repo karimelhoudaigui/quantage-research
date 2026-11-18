@@ -1,0 +1,38 @@
+{
+  "claim_id": "C03-ROUTING",
+  "mathematics": {
+    "assertion_tested": "Measure documentary false acceptance of 20 labelled solver recommendations under three rule ablations.",
+    "coefficient_domain": "finite labelled proposals",
+    "conventions": "Accepting a conditional candidate is distinct from authorizing its execution.",
+    "inputs": [
+      "20 manually labelled proposals in cases.json"
+    ],
+    "bounds": {
+      "cases": 20
+    },
+    "non_claims": [
+      "No physical feasibility established",
+      "No account access tested",
+      "No LLM accuracy measured"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/routing.py",
+    "quantage/routingstudy.py",
+    "runs/20261113-c03-routing/protocol.md",
+    "runs/20261113-c03-routing/cases.json",
+    "config/policy.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

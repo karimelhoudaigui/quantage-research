@@ -1,0 +1,3391 @@
+{
+  "assertion_tested": "Exact feasible domain and maximizing weight for every binary assignment in 20 public C23 instances under independently extracted reviewer clauses.",
+  "arithmetic": "integer, exact",
+  "bit_convention": "bit i is inclusion of item i",
+  "label_source": "private_gold.review.json frozen before author comparison",
+  "cases": [
+    {
+      "id": "0d1fcab20bbf",
+      "split": "test",
+      "feasible_masks": [
+        1,
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        14,
+        32,
+        34,
+        38,
+        40,
+        42,
+        48,
+        50,
+        56,
+        72,
+        74,
+        104
+      ],
+      "feasible_count": 21,
+      "max_weight": 143,
+      "optimal_masks": [
+        42
+      ]
+    },
+    {
+      "id": "12d7d632fc5a",
+      "split": "test",
+      "feasible_masks": [
+        11,
+        13,
+        14,
+        15,
+        21,
+        28,
+        29,
+        30,
+        37,
+        41,
+        45,
+        53,
+        69,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        84,
+        85,
+        92,
+        97,
+        101
+      ],
+      "feasible_count": 24,
+      "max_weight": 178,
+      "optimal_masks": [
+        92
+      ]
+    },
+    {
+      "id": "1591c552ce60",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        2,
+        8,
+        10,
+        17,
+        19,
+        32,
+        34,
+        40,
+        42,
+        72,
+        74,
+        104,
+        106
+      ],
+      "feasible_count": 14,
+      "max_weight": 172,
+      "optimal_masks": [
+        106
+      ]
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        1,
+        4,
+        5,
+        16,
+        17,
+        25,
+        27,
+        32,
+        33,
+        48,
+        49,
+        57
+      ],
+      "feasible_count": 13,
+      "max_weight": 177,
+      "optimal_masks": [
+        27
+      ]
+    },
+    {
+      "id": "2c5f03082098",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        12,
+        13,
+        15,
+        16,
+        17,
+        20,
+        21,
+        24,
+        25,
+        28,
+        29,
+        32,
+        36,
+        40,
+        44
+      ],
+      "feasible_count": 21,
+      "max_weight": 196,
+      "optimal_masks": [
+        29
+      ]
+    },
+    {
+      "id": "3bb2d6807209",
+      "split": "test",
+      "feasible_masks": [
+        66,
+        68,
+        70,
+        76,
+        78,
+        82,
+        86,
+        98,
+        102
+      ],
+      "feasible_count": 9,
+      "max_weight": 190,
+      "optimal_masks": [
+        86
+      ]
+    },
+    {
+      "id": "3f2da1e93197",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        1,
+        8,
+        32,
+        33,
+        40,
+        48,
+        49,
+        52,
+        53,
+        54,
+        56,
+        60,
+        62
+      ],
+      "feasible_count": 14,
+      "max_weight": 224,
+      "optimal_masks": [
+        62
+      ]
+    },
+    {
+      "id": "4d46af430e6c",
+      "split": "test",
+      "feasible_masks": [
+        8,
+        10,
+        24,
+        26,
+        45
+      ],
+      "feasible_count": 5,
+      "max_weight": 136,
+      "optimal_masks": [
+        45
+      ]
+    },
+    {
+      "id": "59cc26171df7",
+      "split": "test",
+      "feasible_masks": [
+        36,
+        69
+      ],
+      "feasible_count": 2,
+      "max_weight": 83,
+      "optimal_masks": [
+        69
+      ]
+    },
+    {
+      "id": "819b31e9501a",
+      "split": "test",
+      "feasible_masks": [
+        13,
+        14,
+        15,
+        26,
+        42,
+        44,
+        45,
+        46,
+        47,
+        56,
+        58,
+        109
+      ],
+      "feasible_count": 12,
+      "max_weight": 219,
+      "optimal_masks": [
+        109
+      ]
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        18,
+        22,
+        26,
+        30,
+        50,
+        54,
+        58,
+        62
+      ],
+      "feasible_count": 16,
+      "max_weight": 193,
+      "optimal_masks": [
+        62
+      ]
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        4,
+        9,
+        13,
+        16,
+        20,
+        64,
+        68,
+        73,
+        77,
+        80,
+        84,
+        96,
+        105
+      ],
+      "feasible_count": 14,
+      "max_weight": 175,
+      "optimal_masks": [
+        105
+      ]
+    },
+    {
+      "id": "bc03e3d47a10",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        32,
+        33,
+        36
+      ],
+      "feasible_count": 8,
+      "max_weight": 85,
+      "optimal_masks": [
+        33
+      ]
+    },
+    {
+      "id": "c616c3b27d14",
+      "split": "test",
+      "feasible_masks": [
+        35,
+        40
+      ],
+      "feasible_count": 2,
+      "max_weight": 106,
+      "optimal_masks": [
+        35
+      ]
+    },
+    {
+      "id": "c7b67c2417a6",
+      "split": "test",
+      "feasible_masks": [
+        32,
+        39,
+        40,
+        48,
+        55,
+        56
+      ],
+      "feasible_count": 6,
+      "max_weight": 222,
+      "optimal_masks": [
+        55
+      ]
+    },
+    {
+      "id": "c8e0347b6769",
+      "split": "test",
+      "feasible_masks": [
+        4,
+        5,
+        6,
+        7,
+        16,
+        20,
+        21,
+        32,
+        36,
+        37,
+        38,
+        39,
+        48,
+        52,
+        53
+      ],
+      "feasible_count": 15,
+      "max_weight": 153,
+      "optimal_masks": [
+        39,
+        53
+      ]
+    },
+    {
+      "id": "d11c57a34450",
+      "split": "test",
+      "feasible_masks": [
+        5,
+        6,
+        7,
+        13,
+        15,
+        22,
+        23,
+        70,
+        71
+      ],
+      "feasible_count": 9,
+      "max_weight": 174,
+      "optimal_masks": [
+        23
+      ]
+    },
+    {
+      "id": "d394c4b72e6e",
+      "split": "test",
+      "feasible_masks": [
+        7,
+        11,
+        14,
+        15,
+        35,
+        38,
+        39,
+        42,
+        43,
+        46,
+        47
+      ],
+      "feasible_count": 11,
+      "max_weight": 154,
+      "optimal_masks": [
+        47
+      ]
+    },
+    {
+      "id": "d7da9a72a703",
+      "split": "test",
+      "feasible_masks": [
+        47,
+        61
+      ],
+      "feasible_count": 2,
+      "max_weight": 215,
+      "optimal_masks": [
+        61
+      ]
+    },
+    {
+      "id": "f62f0c0bce93",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        16,
+        17,
+        18,
+        19,
+        20,
+        27,
+        32,
+        33,
+        34,
+        48,
+        49,
+        50
+      ],
+      "feasible_count": 17,
+      "max_weight": 156,
+      "optimal_masks": [
+        27
+      ]
+    }
+  ],
+  "infeasible_ids": [],
+  "hand_controls_passed": 6,
+  "family_drop_checks": [
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        33,
+        35,
+        41,
+        49
+      ],
+      "additional_count": 4,
+      "witness_mask": 33,
+      "relaxed_feasible_count": 25,
+      "family": "E"
+    },
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        73
+      ],
+      "additional_count": 1,
+      "witness_mask": 73,
+      "relaxed_feasible_count": 22,
+      "family": "B"
+    },
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        0
+      ],
+      "additional_count": 1,
+      "witness_mask": 0,
+      "relaxed_feasible_count": 22,
+      "family": "L"
+    },
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        46,
+        54
+      ],
+      "additional_count": 2,
+      "witness_mask": 46,
+      "relaxed_feasible_count": 23,
+      "family": "U"
+    },
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        4,
+        5,
+        12,
+        13,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        24,
+        26,
+        28,
+        36,
+        44,
+        52,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        76,
+        80,
+        81,
+        82,
+        84,
+        96,
+        98,
+        100,
+        112
+      ],
+      "additional_count": 33,
+      "witness_mask": 4,
+      "relaxed_feasible_count": 54,
+      "family": "I"
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        43
+      ],
+      "additional_count": 1,
+      "witness_mask": 43,
+      "relaxed_feasible_count": 25,
+      "family": "E"
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        105
+      ],
+      "additional_count": 1,
+      "witness_mask": 105,
+      "relaxed_feasible_count": 25,
+      "family": "B"
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        10,
+        12,
+        20,
+        33,
+        64,
+        65,
+        68,
+        72
+      ],
+      "additional_count": 14,
+      "witness_mask": 0,
+      "relaxed_feasible_count": 38,
+      "family": "L"
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        117
+      ],
+      "additional_count": 1,
+      "witness_mask": 117,
+      "relaxed_feasible_count": 25,
+      "family": "U"
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        7,
+        19,
+        22,
+        23,
+        25,
+        26,
+        27,
+        44,
+        49,
+        52,
+        56,
+        57,
+        60,
+        67,
+        70,
+        71,
+        81,
+        82,
+        83,
+        86,
+        88,
+        89,
+        90,
+        100,
+        104,
+        112,
+        113,
+        116,
+        120
+      ],
+      "additional_count": 29,
+      "witness_mask": 7,
+      "relaxed_feasible_count": 53,
+      "family": "I"
+    },
+    {
+      "id": "1591c552ce60",
+      "additional_masks": [
+        25,
+        27,
+        49,
+        51,
+        57,
+        59,
+        89,
+        91,
+        121,
+        123
+      ],
+      "additional_count": 10,
+      "witness_mask": 25,
+      "relaxed_feasible_count": 24,
+      "family": "E"
+    },
+    {
+      "id": "1591c552ce60",
+      "additional_masks": [
+        4,
+        6,
+        12,
+        14,
+        21,
+        23,
+        36,
+        38,
+        44,
+        46,
+        76,
+        78,
+        108,
+        110
+      ],
+      "additional_count": 14,
+      "witness_mask": 4,
+      "relaxed_feasible_count": 28,
+      "family": "F"
+    },
+    {
+      "id": "1591c552ce60",
+      "additional_masks": [
+        1,
+        3,
+        9,
+        11,
+        16,
+        18,
+        48,
+        50,
+        64,
+        65,
+        66,
+        67,
+        73,
+        75,
+        80,
+        81,
+        82,
+        83,
+        96,
+        98,
+        112,
+        114
+      ],
+      "additional_count": 22,
+      "witness_mask": 1,
+      "relaxed_feasible_count": 36,
+      "family": "I"
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "additional_masks": [
+        20,
+        21,
+        29,
+        36,
+        37,
+        52,
+        53
+      ],
+      "additional_count": 7,
+      "witness_mask": 20,
+      "relaxed_feasible_count": 20,
+      "family": "E"
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "additional_masks": [
+        59
+      ],
+      "additional_count": 1,
+      "witness_mask": 59,
+      "relaxed_feasible_count": 14,
+      "family": "U"
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "additional_masks": [
+        2,
+        3,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        24,
+        26,
+        34,
+        35,
+        40,
+        41,
+        42,
+        43,
+        50,
+        51,
+        56,
+        58
+      ],
+      "additional_count": 26,
+      "witness_mask": 2,
+      "relaxed_feasible_count": 39,
+      "family": "I"
+    },
+    {
+      "id": "2c5f03082098",
+      "additional_masks": [
+        33,
+        37,
+        41,
+        45,
+        48,
+        49,
+        52,
+        53,
+        56,
+        57,
+        60
+      ],
+      "additional_count": 11,
+      "witness_mask": 33,
+      "relaxed_feasible_count": 32,
+      "family": "E"
+    },
+    {
+      "id": "2c5f03082098",
+      "additional_masks": [
+        31
+      ],
+      "additional_count": 1,
+      "witness_mask": 31,
+      "relaxed_feasible_count": 22,
+      "family": "B"
+    },
+    {
+      "id": "2c5f03082098",
+      "additional_masks": [
+        2,
+        3,
+        6,
+        7,
+        10,
+        11,
+        14,
+        18,
+        19,
+        22,
+        23,
+        26,
+        30,
+        34,
+        38,
+        42,
+        46
+      ],
+      "additional_count": 17,
+      "witness_mask": 2,
+      "relaxed_feasible_count": 38,
+      "family": "I"
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        114
+      ],
+      "additional_count": 1,
+      "witness_mask": 114,
+      "relaxed_feasible_count": 10,
+      "family": "E"
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        64
+      ],
+      "additional_count": 1,
+      "witness_mask": 64,
+      "relaxed_feasible_count": 10,
+      "family": "L"
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        94,
+        110
+      ],
+      "additional_count": 2,
+      "witness_mask": 94,
+      "relaxed_feasible_count": 11,
+      "family": "U"
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        6,
+        12,
+        14,
+        18,
+        22,
+        30,
+        34,
+        38,
+        46
+      ],
+      "additional_count": 9,
+      "witness_mask": 6,
+      "relaxed_feasible_count": 18,
+      "family": "M"
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        65,
+        67,
+        69,
+        71,
+        77,
+        83,
+        99
+      ],
+      "additional_count": 7,
+      "witness_mask": 65,
+      "relaxed_feasible_count": 16,
+      "family": "F"
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        72,
+        74,
+        80,
+        84,
+        88,
+        90,
+        92,
+        96,
+        100,
+        104,
+        106,
+        108
+      ],
+      "additional_count": 12,
+      "witness_mask": 72,
+      "relaxed_feasible_count": 21,
+      "family": "I"
+    },
+    {
+      "id": "3f2da1e93197",
+      "additional_masks": [
+        9,
+        41,
+        55,
+        57,
+        61,
+        63
+      ],
+      "additional_count": 6,
+      "witness_mask": 9,
+      "relaxed_feasible_count": 20,
+      "family": "E"
+    },
+    {
+      "id": "3f2da1e93197",
+      "additional_masks": [
+        2,
+        4,
+        5,
+        6,
+        10,
+        12,
+        14,
+        16,
+        17,
+        18,
+        20,
+        21,
+        22,
+        24,
+        26,
+        28,
+        30,
+        34,
+        36,
+        37,
+        38,
+        42,
+        44,
+        46,
+        50,
+        58
+      ],
+      "additional_count": 26,
+      "witness_mask": 2,
+      "relaxed_feasible_count": 40,
+      "family": "I"
+    },
+    {
+      "id": "4d46af430e6c",
+      "additional_masks": [
+        47,
+        61,
+        63
+      ],
+      "additional_count": 3,
+      "witness_mask": 47,
+      "relaxed_feasible_count": 8,
+      "family": "E"
+    },
+    {
+      "id": "4d46af430e6c",
+      "additional_masks": [
+        0,
+        2,
+        16,
+        18,
+        37
+      ],
+      "additional_count": 5,
+      "witness_mask": 0,
+      "relaxed_feasible_count": 10,
+      "family": "M"
+    },
+    {
+      "id": "4d46af430e6c",
+      "additional_masks": [
+        9,
+        12,
+        13,
+        14,
+        25,
+        28,
+        29,
+        30,
+        40,
+        41,
+        42,
+        44,
+        46
+      ],
+      "additional_count": 13,
+      "witness_mask": 9,
+      "relaxed_feasible_count": 18,
+      "family": "I"
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        12,
+        44
+      ],
+      "additional_count": 2,
+      "witness_mask": 12,
+      "relaxed_feasible_count": 4,
+      "family": "E"
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        52
+      ],
+      "additional_count": 1,
+      "witness_mask": 52,
+      "relaxed_feasible_count": 3,
+      "family": "B"
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        4
+      ],
+      "additional_count": 1,
+      "witness_mask": 4,
+      "relaxed_feasible_count": 3,
+      "family": "L"
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        101
+      ],
+      "additional_count": 1,
+      "witness_mask": 101,
+      "relaxed_feasible_count": 3,
+      "family": "U"
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        40,
+        48,
+        65,
+        73,
+        97
+      ],
+      "additional_count": 5,
+      "witness_mask": 40,
+      "relaxed_feasible_count": 7,
+      "family": "M"
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        6,
+        38
+      ],
+      "additional_count": 2,
+      "witness_mask": 6,
+      "relaxed_feasible_count": 4,
+      "family": "F"
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        5,
+        20,
+        37,
+        68,
+        100
+      ],
+      "additional_count": 5,
+      "witness_mask": 5,
+      "relaxed_feasible_count": 7,
+      "family": "I"
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        28,
+        29,
+        30,
+        31,
+        60,
+        61,
+        62
+      ],
+      "additional_count": 7,
+      "witness_mask": 28,
+      "relaxed_feasible_count": 19,
+      "family": "E"
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        111
+      ],
+      "additional_count": 1,
+      "witness_mask": 111,
+      "relaxed_feasible_count": 13,
+      "family": "B"
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        8,
+        10,
+        12,
+        24,
+        40
+      ],
+      "additional_count": 5,
+      "witness_mask": 8,
+      "relaxed_feasible_count": 17,
+      "family": "L"
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        7,
+        37,
+        38,
+        39,
+        50,
+        101
+      ],
+      "additional_count": 6,
+      "witness_mask": 7,
+      "relaxed_feasible_count": 18,
+      "family": "M"
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        11,
+        25,
+        27,
+        41,
+        43,
+        57,
+        59,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        88,
+        89,
+        90,
+        91,
+        104,
+        105,
+        106,
+        107,
+        108,
+        110,
+        120,
+        121,
+        122
+      ],
+      "additional_count": 27,
+      "witness_mask": 11,
+      "relaxed_feasible_count": 39,
+      "family": "I"
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "additional_masks": [
+        51,
+        55,
+        59,
+        63
+      ],
+      "additional_count": 4,
+      "witness_mask": 51,
+      "relaxed_feasible_count": 20,
+      "family": "E"
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "additional_masks": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        16,
+        20,
+        24,
+        28,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        52,
+        56,
+        60
+      ],
+      "additional_count": 32,
+      "witness_mask": 1,
+      "relaxed_feasible_count": 48,
+      "family": "I"
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        25,
+        29,
+        89,
+        93,
+        100,
+        109,
+        112,
+        116,
+        121,
+        125
+      ],
+      "additional_count": 10,
+      "witness_mask": 25,
+      "relaxed_feasible_count": 24,
+      "family": "E"
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        2,
+        6,
+        11,
+        15,
+        18,
+        22,
+        66,
+        70,
+        75,
+        79,
+        82,
+        86,
+        98,
+        107
+      ],
+      "additional_count": 14,
+      "witness_mask": 2,
+      "relaxed_feasible_count": 28,
+      "family": "F"
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        1,
+        5,
+        8,
+        12,
+        17,
+        21,
+        32,
+        33,
+        40,
+        41,
+        65,
+        69,
+        72,
+        76,
+        81,
+        85,
+        97,
+        104
+      ],
+      "additional_count": 18,
+      "witness_mask": 1,
+      "relaxed_feasible_count": 32,
+      "family": "I"
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        5,
+        6,
+        34
+      ],
+      "additional_count": 3,
+      "witness_mask": 5,
+      "relaxed_feasible_count": 11,
+      "family": "E"
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        19,
+        27
+      ],
+      "additional_count": 2,
+      "witness_mask": 19,
+      "relaxed_feasible_count": 10,
+      "family": "U"
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        8,
+        9,
+        10,
+        12,
+        16,
+        17,
+        18,
+        20,
+        24,
+        40,
+        48
+      ],
+      "additional_count": 11,
+      "witness_mask": 8,
+      "relaxed_feasible_count": 19,
+      "family": "I"
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        96,
+        104
+      ],
+      "additional_count": 2,
+      "witness_mask": 96,
+      "relaxed_feasible_count": 4,
+      "family": "E"
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        56
+      ],
+      "additional_count": 1,
+      "witness_mask": 56,
+      "relaxed_feasible_count": 3,
+      "family": "B"
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        32
+      ],
+      "additional_count": 1,
+      "witness_mask": 32,
+      "relaxed_feasible_count": 3,
+      "family": "L"
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        43
+      ],
+      "additional_count": 1,
+      "witness_mask": 43,
+      "relaxed_feasible_count": 3,
+      "family": "U"
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        3,
+        11,
+        24,
+        67,
+        72
+      ],
+      "additional_count": 5,
+      "witness_mask": 3,
+      "relaxed_feasible_count": 7,
+      "family": "M"
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        36,
+        44
+      ],
+      "additional_count": 2,
+      "witness_mask": 36,
+      "relaxed_feasible_count": 4,
+      "family": "F"
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        33,
+        34,
+        41,
+        42,
+        48
+      ],
+      "additional_count": 5,
+      "witness_mask": 33,
+      "relaxed_feasible_count": 7,
+      "family": "I"
+    },
+    {
+      "id": "c7b67c2417a6",
+      "additional_masks": [
+        47,
+        63
+      ],
+      "additional_count": 2,
+      "witness_mask": 47,
+      "relaxed_feasible_count": 8,
+      "family": "E"
+    },
+    {
+      "id": "c7b67c2417a6",
+      "additional_masks": [
+        0,
+        7,
+        8,
+        16,
+        23,
+        24
+      ],
+      "additional_count": 6,
+      "witness_mask": 0,
+      "relaxed_feasible_count": 12,
+      "family": "M"
+    },
+    {
+      "id": "c7b67c2417a6",
+      "additional_masks": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        42,
+        44,
+        46,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        58,
+        60,
+        62
+      ],
+      "additional_count": 18,
+      "witness_mask": 33,
+      "relaxed_feasible_count": 24,
+      "family": "I"
+    },
+    {
+      "id": "c8e0347b6769",
+      "additional_masks": [
+        12,
+        13,
+        14,
+        15,
+        22,
+        23,
+        28,
+        29,
+        30,
+        31,
+        44,
+        45,
+        46,
+        47,
+        54,
+        55,
+        60,
+        61,
+        62,
+        63
+      ],
+      "additional_count": 20,
+      "witness_mask": 12,
+      "relaxed_feasible_count": 35,
+      "family": "E"
+    },
+    {
+      "id": "c8e0347b6769",
+      "additional_masks": [
+        0
+      ],
+      "additional_count": 1,
+      "witness_mask": 0,
+      "relaxed_feasible_count": 16,
+      "family": "L"
+    },
+    {
+      "id": "c8e0347b6769",
+      "additional_masks": [
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        17,
+        24,
+        25,
+        33,
+        34,
+        35,
+        40,
+        41,
+        42,
+        43,
+        49,
+        56,
+        57
+      ],
+      "additional_count": 20,
+      "witness_mask": 1,
+      "relaxed_feasible_count": 35,
+      "family": "I"
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        86
+      ],
+      "additional_count": 1,
+      "witness_mask": 86,
+      "relaxed_feasible_count": 10,
+      "family": "E"
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        4
+      ],
+      "additional_count": 1,
+      "witness_mask": 4,
+      "relaxed_feasible_count": 10,
+      "family": "L"
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        31,
+        79
+      ],
+      "additional_count": 2,
+      "witness_mask": 31,
+      "relaxed_feasible_count": 11,
+      "family": "U"
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        3,
+        9,
+        11,
+        18,
+        19,
+        27,
+        66,
+        67,
+        75
+      ],
+      "additional_count": 9,
+      "witness_mask": 3,
+      "relaxed_feasible_count": 18,
+      "family": "M"
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        36,
+        37,
+        38,
+        39,
+        45,
+        54,
+        102
+      ],
+      "additional_count": 7,
+      "witness_mask": 36,
+      "relaxed_feasible_count": 16,
+      "family": "F"
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        12,
+        14,
+        20,
+        21,
+        28,
+        29,
+        30,
+        68,
+        69,
+        76,
+        77,
+        78
+      ],
+      "additional_count": 12,
+      "witness_mask": 12,
+      "relaxed_feasible_count": 21,
+      "family": "I"
+    },
+    {
+      "id": "d394c4b72e6e",
+      "additional_masks": [
+        19,
+        22,
+        23,
+        26,
+        27,
+        30,
+        31,
+        50,
+        51,
+        54,
+        55,
+        58,
+        59,
+        62,
+        63
+      ],
+      "additional_count": 15,
+      "witness_mask": 19,
+      "relaxed_feasible_count": 26,
+      "family": "E"
+    },
+    {
+      "id": "d394c4b72e6e",
+      "additional_masks": [
+        0,
+        2,
+        3,
+        6,
+        10,
+        16,
+        32,
+        34,
+        48
+      ],
+      "additional_count": 9,
+      "witness_mask": 0,
+      "relaxed_feasible_count": 20,
+      "family": "L"
+    },
+    {
+      "id": "d394c4b72e6e",
+      "additional_masks": [
+        13,
+        21,
+        25,
+        28,
+        29,
+        37,
+        41,
+        44,
+        45,
+        49,
+        52,
+        53,
+        56,
+        57,
+        60,
+        61
+      ],
+      "additional_count": 16,
+      "witness_mask": 13,
+      "relaxed_feasible_count": 27,
+      "family": "I"
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        117,
+        124
+      ],
+      "additional_count": 2,
+      "witness_mask": 117,
+      "relaxed_feasible_count": 4,
+      "family": "E"
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        63
+      ],
+      "additional_count": 1,
+      "witness_mask": 63,
+      "relaxed_feasible_count": 3,
+      "family": "B"
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        4,
+        12,
+        20,
+        28,
+        36,
+        37,
+        44,
+        45,
+        52,
+        53,
+        60
+      ],
+      "additional_count": 11,
+      "witness_mask": 4,
+      "relaxed_feasible_count": 13,
+      "family": "L"
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        59
+      ],
+      "additional_count": 1,
+      "witness_mask": 59,
+      "relaxed_feasible_count": 3,
+      "family": "M"
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        31,
+        55,
+        62
+      ],
+      "additional_count": 3,
+      "witness_mask": 31,
+      "relaxed_feasible_count": 5,
+      "family": "I"
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        5,
+        6,
+        21,
+        36
+      ],
+      "additional_count": 4,
+      "witness_mask": 5,
+      "relaxed_feasible_count": 21,
+      "family": "E"
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        35,
+        51,
+        59
+      ],
+      "additional_count": 3,
+      "witness_mask": 35,
+      "relaxed_feasible_count": 20,
+      "family": "B"
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        24,
+        25,
+        26,
+        28,
+        40,
+        41,
+        42,
+        56,
+        57
+      ],
+      "additional_count": 14,
+      "witness_mask": 8,
+      "relaxed_feasible_count": 31,
+      "family": "I"
+    }
+  ],
+  "individual_implication_drop_checks": [
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        16,
+        17,
+        18,
+        19,
+        22,
+        24,
+        26
+      ],
+      "additional_count": 7,
+      "witness_mask": 16,
+      "relaxed_feasible_count": 28,
+      "clause_index": 0,
+      "implication": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        64,
+        65,
+        66,
+        67,
+        70,
+        96,
+        98,
+        112
+      ],
+      "additional_count": 8,
+      "witness_mask": 64,
+      "relaxed_feasible_count": 29,
+      "clause_index": 1,
+      "implication": [
+        6,
+        3
+      ]
+    },
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        4,
+        5,
+        12,
+        13,
+        36,
+        44,
+        52,
+        76
+      ],
+      "additional_count": 8,
+      "witness_mask": 4,
+      "relaxed_feasible_count": 29,
+      "clause_index": 2,
+      "implication": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        25,
+        26,
+        27,
+        49,
+        57,
+        81,
+        88,
+        89,
+        90,
+        113
+      ],
+      "additional_count": 10,
+      "witness_mask": 25,
+      "relaxed_feasible_count": 34,
+      "clause_index": 0,
+      "implication": [
+        4,
+        2
+      ]
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        44,
+        52,
+        60,
+        100,
+        104,
+        116
+      ],
+      "additional_count": 6,
+      "witness_mask": 44,
+      "relaxed_feasible_count": 30,
+      "clause_index": 1,
+      "implication": [
+        5,
+        0
+      ]
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        7,
+        22,
+        23,
+        67,
+        70,
+        71,
+        86
+      ],
+      "additional_count": 7,
+      "witness_mask": 7,
+      "relaxed_feasible_count": 31,
+      "clause_index": 2,
+      "implication": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "1591c552ce60",
+      "additional_masks": [
+        1,
+        3,
+        9,
+        11,
+        73,
+        75
+      ],
+      "additional_count": 6,
+      "witness_mask": 1,
+      "relaxed_feasible_count": 20,
+      "clause_index": 0,
+      "implication": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "1591c552ce60",
+      "additional_masks": [
+        16,
+        18,
+        48,
+        50
+      ],
+      "additional_count": 4,
+      "witness_mask": 16,
+      "relaxed_feasible_count": 18,
+      "clause_index": 1,
+      "implication": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "1591c552ce60",
+      "additional_masks": [
+        64,
+        66,
+        81,
+        83,
+        96,
+        98
+      ],
+      "additional_count": 6,
+      "witness_mask": 64,
+      "relaxed_feasible_count": 20,
+      "clause_index": 2,
+      "implication": [
+        6,
+        3
+      ]
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "additional_masks": [
+        2,
+        3,
+        6,
+        7,
+        18,
+        19,
+        34,
+        35,
+        50,
+        51
+      ],
+      "additional_count": 10,
+      "witness_mask": 2,
+      "relaxed_feasible_count": 23,
+      "clause_index": 0,
+      "implication": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "additional_masks": [
+        9,
+        11,
+        13,
+        15,
+        41,
+        43
+      ],
+      "additional_count": 6,
+      "witness_mask": 9,
+      "relaxed_feasible_count": 19,
+      "clause_index": 1,
+      "implication": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "additional_masks": [
+        24,
+        26,
+        56,
+        58
+      ],
+      "additional_count": 4,
+      "witness_mask": 24,
+      "relaxed_feasible_count": 17,
+      "clause_index": 2,
+      "implication": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "2c5f03082098",
+      "additional_masks": [
+        14,
+        30,
+        46
+      ],
+      "additional_count": 3,
+      "witness_mask": 14,
+      "relaxed_feasible_count": 24,
+      "clause_index": 0,
+      "implication": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "2c5f03082098",
+      "additional_masks": [
+        11
+      ],
+      "additional_count": 1,
+      "witness_mask": 11,
+      "relaxed_feasible_count": 22,
+      "clause_index": 1,
+      "implication": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "2c5f03082098",
+      "additional_masks": [
+        7,
+        23
+      ],
+      "additional_count": 2,
+      "witness_mask": 7,
+      "relaxed_feasible_count": 23,
+      "clause_index": 2,
+      "implication": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        96,
+        100,
+        108
+      ],
+      "additional_count": 3,
+      "witness_mask": 96,
+      "relaxed_feasible_count": 12,
+      "clause_index": 0,
+      "implication": [
+        5,
+        1
+      ]
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        80,
+        84,
+        92
+      ],
+      "additional_count": 3,
+      "witness_mask": 80,
+      "relaxed_feasible_count": 12,
+      "clause_index": 1,
+      "implication": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        72,
+        74,
+        90,
+        106
+      ],
+      "additional_count": 4,
+      "witness_mask": 72,
+      "relaxed_feasible_count": 13,
+      "clause_index": 2,
+      "implication": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "3f2da1e93197",
+      "additional_masks": [
+        2,
+        10,
+        34,
+        42,
+        50,
+        58
+      ],
+      "additional_count": 6,
+      "witness_mask": 2,
+      "relaxed_feasible_count": 20,
+      "clause_index": 0,
+      "implication": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "3f2da1e93197",
+      "additional_masks": [
+        16,
+        17,
+        20,
+        21,
+        22,
+        24,
+        28,
+        30
+      ],
+      "additional_count": 8,
+      "witness_mask": 16,
+      "relaxed_feasible_count": 22,
+      "clause_index": 1,
+      "implication": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "3f2da1e93197",
+      "additional_masks": [
+        4,
+        5,
+        6,
+        12,
+        14,
+        36,
+        37,
+        38,
+        44,
+        46
+      ],
+      "additional_count": 10,
+      "witness_mask": 4,
+      "relaxed_feasible_count": 24,
+      "clause_index": 2,
+      "implication": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "4d46af430e6c",
+      "additional_masks": [
+        9,
+        13,
+        25,
+        29
+      ],
+      "additional_count": 4,
+      "witness_mask": 9,
+      "relaxed_feasible_count": 9,
+      "clause_index": 0,
+      "implication": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "4d46af430e6c",
+      "additional_masks": [
+        12,
+        14,
+        28,
+        30,
+        44,
+        46
+      ],
+      "additional_count": 6,
+      "witness_mask": 12,
+      "relaxed_feasible_count": 11,
+      "clause_index": 1,
+      "implication": [
+        2,
+        0
+      ]
+    },
+    {
+      "id": "4d46af430e6c",
+      "additional_masks": [
+        40,
+        41,
+        42
+      ],
+      "additional_count": 3,
+      "witness_mask": 40,
+      "relaxed_feasible_count": 8,
+      "clause_index": 2,
+      "implication": [
+        5,
+        2
+      ]
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        5,
+        37
+      ],
+      "additional_count": 2,
+      "witness_mask": 5,
+      "relaxed_feasible_count": 4,
+      "clause_index": 0,
+      "implication": [
+        0,
+        6
+      ]
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        68,
+        100
+      ],
+      "additional_count": 2,
+      "witness_mask": 68,
+      "relaxed_feasible_count": 4,
+      "clause_index": 1,
+      "implication": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        20
+      ],
+      "additional_count": 1,
+      "witness_mask": 20,
+      "relaxed_feasible_count": 3,
+      "clause_index": 2,
+      "implication": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        104,
+        106,
+        108,
+        110,
+        120,
+        122
+      ],
+      "additional_count": 6,
+      "witness_mask": 104,
+      "relaxed_feasible_count": 18,
+      "clause_index": 0,
+      "implication": [
+        6,
+        0
+      ]
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        77,
+        79
+      ],
+      "additional_count": 2,
+      "witness_mask": 77,
+      "relaxed_feasible_count": 14,
+      "clause_index": 1,
+      "implication": [
+        6,
+        5
+      ]
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        11,
+        25,
+        27,
+        41,
+        43,
+        57,
+        59,
+        105,
+        107,
+        121
+      ],
+      "additional_count": 10,
+      "witness_mask": 11,
+      "relaxed_feasible_count": 22,
+      "clause_index": 2,
+      "implication": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "additional_masks": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "additional_count": 8,
+      "witness_mask": 1,
+      "relaxed_feasible_count": 24,
+      "clause_index": 0,
+      "implication": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "additional_masks": [
+        16,
+        20,
+        24,
+        28,
+        48,
+        52,
+        56,
+        60
+      ],
+      "additional_count": 8,
+      "witness_mask": 16,
+      "relaxed_feasible_count": 24,
+      "clause_index": 1,
+      "implication": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "additional_masks": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "additional_count": 16,
+      "witness_mask": 32,
+      "relaxed_feasible_count": 32,
+      "clause_index": 2,
+      "implication": [
+        5,
+        4
+      ]
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        32,
+        41
+      ],
+      "additional_count": 2,
+      "witness_mask": 32,
+      "relaxed_feasible_count": 16,
+      "clause_index": 0,
+      "implication": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        1,
+        5,
+        17,
+        21,
+        65,
+        69,
+        81,
+        85,
+        97
+      ],
+      "additional_count": 9,
+      "witness_mask": 1,
+      "relaxed_feasible_count": 23,
+      "clause_index": 1,
+      "implication": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        8,
+        12,
+        72,
+        76,
+        104
+      ],
+      "additional_count": 5,
+      "witness_mask": 8,
+      "relaxed_feasible_count": 19,
+      "clause_index": 2,
+      "implication": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        18
+      ],
+      "additional_count": 1,
+      "witness_mask": 18,
+      "relaxed_feasible_count": 9,
+      "clause_index": 0,
+      "implication": [
+        4,
+        0
+      ]
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        8,
+        9,
+        10,
+        12,
+        40
+      ],
+      "additional_count": 5,
+      "witness_mask": 8,
+      "relaxed_feasible_count": 13,
+      "clause_index": 1,
+      "implication": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        17
+      ],
+      "additional_count": 1,
+      "witness_mask": 17,
+      "relaxed_feasible_count": 9,
+      "clause_index": 2,
+      "implication": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        34,
+        42
+      ],
+      "additional_count": 2,
+      "witness_mask": 34,
+      "relaxed_feasible_count": 4,
+      "clause_index": 0,
+      "implication": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        48
+      ],
+      "additional_count": 1,
+      "witness_mask": 48,
+      "relaxed_feasible_count": 3,
+      "clause_index": 1,
+      "implication": [
+        4,
+        3
+      ]
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        33,
+        41
+      ],
+      "additional_count": 2,
+      "witness_mask": 33,
+      "relaxed_feasible_count": 4,
+      "clause_index": 2,
+      "implication": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "c7b67c2417a6",
+      "additional_masks": [
+        36,
+        37,
+        44,
+        52,
+        53,
+        60
+      ],
+      "additional_count": 6,
+      "witness_mask": 36,
+      "relaxed_feasible_count": 12,
+      "clause_index": 0,
+      "implication": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "c7b67c2417a6",
+      "additional_masks": [
+        34,
+        38,
+        42,
+        46,
+        50,
+        54,
+        58,
+        62
+      ],
+      "additional_count": 8,
+      "witness_mask": 34,
+      "relaxed_feasible_count": 14,
+      "clause_index": 1,
+      "implication": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "c7b67c2417a6",
+      "additional_masks": [
+        33,
+        35,
+        49,
+        51
+      ],
+      "additional_count": 4,
+      "witness_mask": 33,
+      "relaxed_feasible_count": 10,
+      "clause_index": 2,
+      "implication": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "c8e0347b6769",
+      "additional_masks": [
+        8,
+        24,
+        40,
+        56
+      ],
+      "additional_count": 4,
+      "witness_mask": 8,
+      "relaxed_feasible_count": 19,
+      "clause_index": 0,
+      "implication": [
+        3,
+        2
+      ]
+    },
+    {
+      "id": "c8e0347b6769",
+      "additional_masks": [
+        2,
+        34
+      ],
+      "additional_count": 2,
+      "witness_mask": 2,
+      "relaxed_feasible_count": 17,
+      "clause_index": 1,
+      "implication": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "c8e0347b6769",
+      "additional_masks": [
+        1,
+        17,
+        33,
+        49
+      ],
+      "additional_count": 4,
+      "witness_mask": 1,
+      "relaxed_feasible_count": 19,
+      "clause_index": 2,
+      "implication": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        68,
+        69,
+        77
+      ],
+      "additional_count": 3,
+      "witness_mask": 68,
+      "relaxed_feasible_count": 12,
+      "clause_index": 0,
+      "implication": [
+        6,
+        1
+      ]
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        12,
+        14,
+        30,
+        78
+      ],
+      "additional_count": 4,
+      "witness_mask": 12,
+      "relaxed_feasible_count": 13,
+      "clause_index": 1,
+      "implication": [
+        3,
+        0
+      ]
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        20,
+        21,
+        29
+      ],
+      "additional_count": 3,
+      "witness_mask": 20,
+      "relaxed_feasible_count": 12,
+      "clause_index": 2,
+      "implication": [
+        4,
+        1
+      ]
+    },
+    {
+      "id": "d394c4b72e6e",
+      "additional_masks": [
+        52
+      ],
+      "additional_count": 1,
+      "witness_mask": 52,
+      "relaxed_feasible_count": 12,
+      "clause_index": 0,
+      "implication": [
+        2,
+        1
+      ]
+    },
+    {
+      "id": "d394c4b72e6e",
+      "additional_masks": [
+        49
+      ],
+      "additional_count": 1,
+      "witness_mask": 49,
+      "relaxed_feasible_count": 12,
+      "clause_index": 1,
+      "implication": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "d394c4b72e6e",
+      "additional_masks": [
+        56
+      ],
+      "additional_count": 1,
+      "witness_mask": 56,
+      "relaxed_feasible_count": 12,
+      "clause_index": 2,
+      "implication": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        62
+      ],
+      "additional_count": 1,
+      "witness_mask": 62,
+      "relaxed_feasible_count": 3,
+      "clause_index": 0,
+      "implication": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        31
+      ],
+      "additional_count": 1,
+      "witness_mask": 31,
+      "relaxed_feasible_count": 3,
+      "clause_index": 1,
+      "implication": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        55
+      ],
+      "additional_count": 1,
+      "witness_mask": 55,
+      "relaxed_feasible_count": 3,
+      "clause_index": 2,
+      "implication": [
+        1,
+        3
+      ]
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        25,
+        57
+      ],
+      "additional_count": 2,
+      "witness_mask": 25,
+      "relaxed_feasible_count": 19,
+      "clause_index": 0,
+      "implication": [
+        3,
+        1
+      ]
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        11
+      ],
+      "additional_count": 1,
+      "witness_mask": 11,
+      "relaxed_feasible_count": 18,
+      "clause_index": 1,
+      "implication": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        26
+      ],
+      "additional_count": 1,
+      "witness_mask": 26,
+      "relaxed_feasible_count": 18,
+      "clause_index": 2,
+      "implication": [
+        3,
+        0
+      ]
+    }
+  ],
+  "individual_edge_drop_checks": [
+    {
+      "id": "0d1fcab20bbf",
+      "additional_masks": [
+        33,
+        35,
+        41,
+        49
+      ],
+      "additional_count": 4,
+      "witness_mask": 33,
+      "relaxed_feasible_count": 25,
+      "clause_index": 0,
+      "edge": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "12d7d632fc5a",
+      "additional_masks": [
+        43
+      ],
+      "additional_count": 1,
+      "witness_mask": 43,
+      "relaxed_feasible_count": 25,
+      "clause_index": 0,
+      "edge": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "1591c552ce60",
+      "additional_masks": [
+        49,
+        51
+      ],
+      "additional_count": 2,
+      "witness_mask": 49,
+      "relaxed_feasible_count": 16,
+      "clause_index": 0,
+      "edge": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "1591c552ce60",
+      "additional_masks": [
+        25,
+        27,
+        89,
+        91
+      ],
+      "additional_count": 4,
+      "witness_mask": 25,
+      "relaxed_feasible_count": 18,
+      "clause_index": 1,
+      "edge": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "additional_masks": [
+        20,
+        21,
+        29
+      ],
+      "additional_count": 3,
+      "witness_mask": 20,
+      "relaxed_feasible_count": 16,
+      "clause_index": 0,
+      "edge": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "additional_masks": [
+        36,
+        37
+      ],
+      "additional_count": 2,
+      "witness_mask": 36,
+      "relaxed_feasible_count": 15,
+      "clause_index": 1,
+      "edge": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "2c5f03082098",
+      "additional_masks": [
+        33,
+        37,
+        41,
+        45
+      ],
+      "additional_count": 4,
+      "witness_mask": 33,
+      "relaxed_feasible_count": 25,
+      "clause_index": 0,
+      "edge": [
+        0,
+        5
+      ]
+    },
+    {
+      "id": "2c5f03082098",
+      "additional_masks": [
+        48,
+        52,
+        56,
+        60
+      ],
+      "additional_count": 4,
+      "witness_mask": 48,
+      "relaxed_feasible_count": 25,
+      "clause_index": 1,
+      "edge": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "3bb2d6807209",
+      "additional_masks": [
+        114
+      ],
+      "additional_count": 1,
+      "witness_mask": 114,
+      "relaxed_feasible_count": 10,
+      "clause_index": 0,
+      "edge": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "3f2da1e93197",
+      "additional_masks": [
+        55
+      ],
+      "additional_count": 1,
+      "witness_mask": 55,
+      "relaxed_feasible_count": 15,
+      "clause_index": 0,
+      "edge": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "3f2da1e93197",
+      "additional_masks": [
+        9,
+        41,
+        57,
+        61
+      ],
+      "additional_count": 4,
+      "witness_mask": 9,
+      "relaxed_feasible_count": 18,
+      "clause_index": 1,
+      "edge": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "4d46af430e6c",
+      "additional_masks": [
+        47
+      ],
+      "additional_count": 1,
+      "witness_mask": 47,
+      "relaxed_feasible_count": 6,
+      "clause_index": 0,
+      "edge": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "4d46af430e6c",
+      "additional_masks": [
+        61
+      ],
+      "additional_count": 1,
+      "witness_mask": 61,
+      "relaxed_feasible_count": 6,
+      "clause_index": 1,
+      "edge": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "59cc26171df7",
+      "additional_masks": [
+        12,
+        44
+      ],
+      "additional_count": 2,
+      "witness_mask": 12,
+      "relaxed_feasible_count": 4,
+      "clause_index": 0,
+      "edge": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "819b31e9501a",
+      "additional_masks": [
+        28,
+        29,
+        30,
+        31,
+        60,
+        61,
+        62
+      ],
+      "additional_count": 7,
+      "witness_mask": 28,
+      "relaxed_feasible_count": 19,
+      "clause_index": 0,
+      "edge": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "additional_masks": [
+        51,
+        55,
+        59,
+        63
+      ],
+      "additional_count": 4,
+      "witness_mask": 51,
+      "relaxed_feasible_count": 20,
+      "clause_index": 0,
+      "edge": [
+        0,
+        4
+      ]
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        100,
+        109
+      ],
+      "additional_count": 2,
+      "witness_mask": 100,
+      "relaxed_feasible_count": 16,
+      "clause_index": 0,
+      "edge": [
+        2,
+        5
+      ]
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        25,
+        29,
+        89,
+        93
+      ],
+      "additional_count": 4,
+      "witness_mask": 25,
+      "relaxed_feasible_count": 18,
+      "clause_index": 1,
+      "edge": [
+        3,
+        4
+      ]
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "additional_masks": [
+        112
+      ],
+      "additional_count": 1,
+      "witness_mask": 112,
+      "relaxed_feasible_count": 15,
+      "clause_index": 2,
+      "edge": [
+        4,
+        5
+      ]
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        5
+      ],
+      "additional_count": 1,
+      "witness_mask": 5,
+      "relaxed_feasible_count": 9,
+      "clause_index": 0,
+      "edge": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        6
+      ],
+      "additional_count": 1,
+      "witness_mask": 6,
+      "relaxed_feasible_count": 9,
+      "clause_index": 1,
+      "edge": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "bc03e3d47a10",
+      "additional_masks": [
+        34
+      ],
+      "additional_count": 1,
+      "witness_mask": 34,
+      "relaxed_feasible_count": 9,
+      "clause_index": 2,
+      "edge": [
+        1,
+        5
+      ]
+    },
+    {
+      "id": "c616c3b27d14",
+      "additional_masks": [
+        96,
+        104
+      ],
+      "additional_count": 2,
+      "witness_mask": 96,
+      "relaxed_feasible_count": 4,
+      "clause_index": 0,
+      "edge": [
+        5,
+        6
+      ]
+    },
+    {
+      "id": "c7b67c2417a6",
+      "additional_masks": [
+        47,
+        63
+      ],
+      "additional_count": 2,
+      "witness_mask": 47,
+      "relaxed_feasible_count": 8,
+      "clause_index": 0,
+      "edge": [
+        0,
+        3
+      ]
+    },
+    {
+      "id": "c8e0347b6769",
+      "additional_masks": [
+        22,
+        23,
+        54,
+        55
+      ],
+      "additional_count": 4,
+      "witness_mask": 22,
+      "relaxed_feasible_count": 19,
+      "clause_index": 0,
+      "edge": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "c8e0347b6769",
+      "additional_masks": [
+        12,
+        13,
+        14,
+        15,
+        28,
+        29,
+        44,
+        45,
+        46,
+        47,
+        60,
+        61
+      ],
+      "additional_count": 12,
+      "witness_mask": 12,
+      "relaxed_feasible_count": 27,
+      "clause_index": 1,
+      "edge": [
+        2,
+        3
+      ]
+    },
+    {
+      "id": "d11c57a34450",
+      "additional_masks": [
+        86
+      ],
+      "additional_count": 1,
+      "witness_mask": 86,
+      "relaxed_feasible_count": 10,
+      "clause_index": 0,
+      "edge": [
+        4,
+        6
+      ]
+    },
+    {
+      "id": "d394c4b72e6e",
+      "additional_masks": [
+        19,
+        22,
+        23,
+        26,
+        27,
+        30,
+        31,
+        50,
+        51,
+        54,
+        55,
+        58,
+        59,
+        62,
+        63
+      ],
+      "additional_count": 15,
+      "witness_mask": 19,
+      "relaxed_feasible_count": 26,
+      "clause_index": 0,
+      "edge": [
+        1,
+        4
+      ]
+    },
+    {
+      "id": "d7da9a72a703",
+      "additional_masks": [
+        117,
+        124
+      ],
+      "additional_count": 2,
+      "witness_mask": 117,
+      "relaxed_feasible_count": 4,
+      "clause_index": 0,
+      "edge": [
+        2,
+        6
+      ]
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        5,
+        21
+      ],
+      "additional_count": 2,
+      "witness_mask": 5,
+      "relaxed_feasible_count": 19,
+      "clause_index": 0,
+      "edge": [
+        0,
+        2
+      ]
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        6
+      ],
+      "additional_count": 1,
+      "witness_mask": 6,
+      "relaxed_feasible_count": 18,
+      "clause_index": 1,
+      "edge": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "f62f0c0bce93",
+      "additional_masks": [
+        36
+      ],
+      "additional_count": 1,
+      "witness_mask": 36,
+      "relaxed_feasible_count": 18,
+      "clause_index": 2,
+      "edge": [
+        2,
+        5
+      ]
+    }
+  ],
+  "all_stated_families_active": true,
+  "all_three_implications_individually_active": true,
+  "non_claims": [
+    "No LLM performance measured.",
+    "Finite exact semantics do not certify arbitrary free text.",
+    "No author labels or production solver imported."
+  ]
+}

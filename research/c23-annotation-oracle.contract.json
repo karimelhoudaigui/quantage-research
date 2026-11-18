@@ -1,0 +1,40 @@
+{
+  "claim_id": "C23-REVIEWER-COMPOSITIONAL-DOMAINS",
+  "mathematics": {
+    "assertion_tested": "Exact feasible domains and all maximum-weight masks for20public C23 instances under independently frozen reviewer labels; remove exclusions E/all stated families and every individual implication and exclusion.",
+    "coefficient_domain": "integers, exact arithmetic",
+    "conventions": "Binary bit i includes item i; edges are mutual exclusions; implication [a,b] is a implies b; only explicit textual cost and cardinality bounds apply.",
+    "inputs": [
+      "20 public test cases",
+      "Frozen independent reviewer constraints"
+    ],
+    "bounds": {
+      "n_min": 6,
+      "n_max": 7,
+      "case_count": 20,
+      "per_case_assignments_max": 128,
+      "individual_implication_removals": 60
+    },
+    "non_claims": [
+      "No inference or performance measurement",
+      "No population or arbitrary-text guarantee",
+      "No author gold or production solver read/imported"
+    ]
+  },
+  "execution_artifacts": [
+    "research/c23-annotation-oracle.py",
+    "runs/20261115-c23-compositional-repair/test_cases.json",
+    "runs/20261115-c23-compositional-repair/private_gold.review.json"
+  ],
+  "software": [
+    {
+      "name": "computation Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

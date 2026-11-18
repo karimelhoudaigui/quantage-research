@@ -1,0 +1,224 @@
+{
+  "schema_version": 2,
+  "claim_id": "C10-DEVELOPMENT-V4",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-m",
+    "quantage.local_score_v4",
+    "--cases",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "--gold",
+    "runs/20261113-c09-heldout-guard/gold.json",
+    "--responses",
+    "runs/20261113-c09-heldout-guard/generation/raw.jsonl",
+    "--output",
+    "runs/20261113-c10-regression-release/results-v4"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Check v4 development correction on same observed C09 responses, preserving previous negative regressions and all raw generations.",
+    "coefficient_domain": "finite retrospective semantic decisions",
+    "conventions": "development regression, not reserved or population test",
+    "inputs": [
+      "16original C09responses and unchanged labels"
+    ],
+    "bounds": {
+      "cases": 16
+    },
+    "non_claims": [
+      "Not a new held-out result",
+      "Not universal semantic correctness",
+      "No new model inference performed by scorer"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "fixed recorded responses",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-13T18:46:02.428070+00:00",
+    "runtime_seconds": 0.084428,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/compact_v2.py",
+    "quantage/compact_v3.py",
+    "quantage/compact_v4.py",
+    "quantage/local_score.py",
+    "quantage/local_score_v4.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "runs/20261113-c10-regression-release/protocol.md",
+    "runs/20261113-c10-regression-release/amendment-v4.md",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "runs/20261113-c09-heldout-guard/gold.json",
+    "runs/20261113-c09-heldout-guard/generation/raw.jsonl"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "quantage/contracts.py",
+      "sha256": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "sha256_after": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef"
+    },
+    {
+      "path": "quantage/compact_agent.py",
+      "sha256": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+      "sha256_after": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323"
+    },
+    {
+      "path": "quantage/compact_v2.py",
+      "sha256": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d",
+      "sha256_after": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d"
+    },
+    {
+      "path": "quantage/compact_v3.py",
+      "sha256": "87f052487c4bb522b3e4d8580e9aa0199628f910a3e844a5085edc401c86db35",
+      "sha256_after": "87f052487c4bb522b3e4d8580e9aa0199628f910a3e844a5085edc401c86db35"
+    },
+    {
+      "path": "quantage/compact_v4.py",
+      "sha256": "1ad338864a35ce9a2af4f6ce91b2f5806ec3856dd56f2185adaa5e1a19c3c7e9",
+      "sha256_after": "1ad338864a35ce9a2af4f6ce91b2f5806ec3856dd56f2185adaa5e1a19c3c7e9"
+    },
+    {
+      "path": "quantage/local_score.py",
+      "sha256": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293",
+      "sha256_after": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293"
+    },
+    {
+      "path": "quantage/local_score_v4.py",
+      "sha256": "d9e919833e978ee7a1088c9d6c91d215a29494fa31bf224ff824c56c667b4952",
+      "sha256_after": "d9e919833e978ee7a1088c9d6c91d215a29494fa31bf224ff824c56c667b4952"
+    },
+    {
+      "path": "quantage/benchmark.py",
+      "sha256": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b",
+      "sha256_after": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b"
+    },
+    {
+      "path": "quantage/transferstudy.py",
+      "sha256": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+      "sha256_after": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333"
+    },
+    {
+      "path": "runs/20261113-c10-regression-release/protocol.md",
+      "sha256": "b88300ab6fd50ceb55330ee19fd00c0a9ef26370e7e15ca34100e7029c420907",
+      "sha256_after": "b88300ab6fd50ceb55330ee19fd00c0a9ef26370e7e15ca34100e7029c420907"
+    },
+    {
+      "path": "runs/20261113-c10-regression-release/amendment-v4.md",
+      "sha256": "f2262fa3c3146f065ee44e51b014bfe439c03db8a76592384eca36bf560e1f3a",
+      "sha256_after": "f2262fa3c3146f065ee44e51b014bfe439c03db8a76592384eca36bf560e1f3a"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/cases.json",
+      "sha256": "f7c754c80433ace90db0538a0ae3494856dd964edfd46ec08c62bf38ab100b38",
+      "sha256_after": "f7c754c80433ace90db0538a0ae3494856dd964edfd46ec08c62bf38ab100b38"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/gold.json",
+      "sha256": "343b1d4896e91b3d641d5f782e492137daae6836e0ad4450383d97e3953fdb67",
+      "sha256_after": "343b1d4896e91b3d641d5f782e492137daae6836e0ad4450383d97e3953fdb67"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/generation/raw.jsonl",
+      "sha256": "0f7939e1c390ab289232669faea1eaa1b0569a9aca0b5e590c485f6cc6367944",
+      "sha256_after": "0f7939e1c390ab289232669faea1eaa1b0569a9aca0b5e590c485f6cc6367944"
+    }
+  ],
+  "output_directory": "runs/20261113-c10-regression-release/results-v4",
+  "declared_results": [
+    "runs/20261113-c10-regression-release/results-v4/raw.jsonl",
+    "runs/20261113-c10-regression-release/results-v4/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c10-regression-release/results-v4/stdout.txt",
+      "sha256": "c1ef0d52eb60a459e2d0fb4fd53768a8e6b32c8153f949a29f6c486c30630cc0",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c10-regression-release/results-v4/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c10-regression-release/results-v4/raw.jsonl",
+      "sha256": "81b4b6fc576a074329124293b43346c4e99bab4395bc3f8fc1fc32bc5fd4211e",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c10-regression-release/results-v4/metrics.json",
+      "sha256": "3a98b06936d14d8107dd0549e5865dc31324b51f23e18a138999e0f829270f10",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

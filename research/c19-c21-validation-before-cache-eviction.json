@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-16",
+  "validator": "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+  "hash_cache_scope": "same absolutepath,inode,size,mtime,ctime only; eachuniquecontent read by officialfile_hash",
+  "manifests": [
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/capacity-probe-v1/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/dev-score-v1/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/dev-union-v1/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/development-loop-v1/manifest.json",
+      "run_status": "failed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/development-remaining-v1/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/test-direct-v2/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/test-feedback-v2/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/test-guided-v2/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/test-initial-v1/manifest.json",
+      "run_status": "failed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/test-initial-v2/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/test-score-v2/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/test-self-remaining-inference-v2/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c19-instruct-repair/test-self-v2/manifest.json",
+      "run_status": "failed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c20-grounded-edits/probe-guided-v1/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c20-grounded-edits/probe-score-v1/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    },
+    {
+      "manifest": "runs/20261115-c21-tool-grounded-edits/probe-score-v1/manifest.json",
+      "run_status": "completed",
+      "valid": true,
+      "errors": []
+    }
+  ],
+  "all_valid": true,
+  "unique_files_hashed": 400
+}

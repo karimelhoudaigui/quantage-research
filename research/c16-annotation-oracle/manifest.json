@@ -1,0 +1,143 @@
+{
+  "schema_version": 2,
+  "claim_id": "C16-REVIEWER-FINITE-DOMAINS",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "research/c16-annotation-oracle.py",
+    "--output",
+    "research/c16-annotation-oracle/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact finite reviewer domains and optima, feasibility-family activity after single-family removal, and signature overlap with the independent C15 review.",
+    "coefficient_domain": "integers, exact arithmetic",
+    "conventions": "Binary bit i includes item i; edges are mutual exclusions; implication [a,b] is a implies b; only explicit textual cost and cardinality bounds apply.",
+    "inputs": [
+      "24 public cases, 8 dev and 16 test",
+      "Frozen independent reviewer annotations"
+    ],
+    "bounds": {
+      "n_min": 4,
+      "n_max": 7,
+      "case_count": 24,
+      "per_case_assignments_max": 128
+    },
+    "non_claims": [
+      "No inference or performance measurement",
+      "No population or arbitrary-text guarantee",
+      "No author gold or production solver read/imported"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T13:31:34.216390+00:00",
+    "runtime_seconds": 0.089353,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c16-annotation-oracle.py",
+    "runs/20261115-c16-quantized-repair/dev_cases.json",
+    "runs/20261115-c16-quantized-repair/test_cases.json",
+    "runs/20261115-c16-quantized-repair/private_gold.review.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c16-annotation-oracle.py",
+      "sha256": "143ac8657f1d702b8043a5a65fe317e3c7d1c78f0b36d435b88d1c9ede27bd1c",
+      "sha256_after": "143ac8657f1d702b8043a5a65fe317e3c7d1c78f0b36d435b88d1c9ede27bd1c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev_cases.json",
+      "sha256": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3",
+      "sha256_after": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test_cases.json",
+      "sha256": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c",
+      "sha256_after": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/private_gold.review.json",
+      "sha256": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135",
+      "sha256_after": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/private_gold.review.json",
+      "sha256": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+      "sha256_after": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2"
+    }
+  ],
+  "output_directory": "research/c16-annotation-oracle",
+  "declared_results": [
+    "research/c16-annotation-oracle/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c16-annotation-oracle/stdout.txt",
+      "sha256": "4fd67e7acbffb9e1ed32539f9428fc4f67959b8260da91cdfaee5c13173126db",
+      "kind": "log"
+    },
+    {
+      "path": "research/c16-annotation-oracle/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c16-annotation-oracle/raw.json",
+      "sha256": "f9f8275cf7114cc9521f122de9fd8067af4611bda6baa57d582d053bf6bee065",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

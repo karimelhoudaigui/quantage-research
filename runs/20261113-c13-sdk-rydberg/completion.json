@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Un vrai programme Pulser2atomes correspond-il à un Hamiltonien indépendant et quelles contraintes SDK sont effectivement vérifiées ?",
+  "next_action": "Revue indépendante C12/C13, puis évaluation prospective de la fidélité des agents aux unités/durées et hypothèses matérielles; aucun QPU."
+}

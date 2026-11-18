@@ -1,0 +1,191 @@
+{
+  "schema_version": 2,
+  "claim_id": "C13-SDK-RYDBERG-GRID",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/opt/homebrew/bin/python3.11",
+    "-m",
+    "quantage.sdk_rydberg",
+    "--output",
+    "runs/20261113-c13-sdk-rydberg/results"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python computation",
+        "version": "3.11.15"
+      },
+      {
+        "name": "pulser",
+        "version": "1.7.2"
+      },
+      {
+        "name": "pulser-simulation",
+        "version": "1.7.2"
+      },
+      {
+        "name": "qutip",
+        "version": "5.2.3"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.4"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "162 declared AnalogDevice constant-pulse sequences agree with separately constructed 4x4 finite-interaction Hamiltonian: H(t=0) within1e-10; probabilities within5e-3 including nominal-pulse/SDK-edge discrepancy; normalization within1e-8. Nine SDK constraint probes observed.",
+    "coefficient_domain": "complex floating point; C6 read from pinned installed Device specification, not fitted",
+    "conventions": "oracle gg,gr,rg,rr; SDK reversed; phases/rabi/detunings rad/us, positionsum,time ns convertedus; no modulation/noise/shots",
+    "inputs": [
+      "r in{6,10,14},Omega in{0,1,2},delta in{-1,0,1},phi in{0,pi/2},durationns in{100,500,1000}"
+    ],
+    "bounds": {
+      "evaluations": 162,
+      "atoms": 2,
+      "probability_tolerance": 0.005,
+      "hamiltonian_tolerance": 1e-10,
+      "normalization_tolerance": 1e-08
+    },
+    "non_claims": [
+      "QPU execution or accessibility",
+      "complete QPU-backend/layout compatibility",
+      "LLM generalization",
+      "quantum advantage",
+      "algorithmic novelty",
+      "population inference"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-13T20:08:21.584391+00:00",
+    "runtime_seconds": 22.099654,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 300.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/sdk_rydberg.py",
+    "quantage/__init__.py",
+    "tests/test_sdk_rydberg.py",
+    "runs/20261113-c13-sdk-rydberg/protocol.md",
+    "runs/20261113-c13-sdk-rydberg/preregistration.json",
+    "runs/20261113-c13-sdk-rydberg/sources.json",
+    "runs/20261113-c13-sdk-rydberg/environment.json",
+    "runs/20261113-c13-sdk-rydberg/requirements-pulser.txt"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/sdk_rydberg.py",
+      "sha256": "499bf819b1b62e635c92913dd6005990e65b0b3a74cd1ab53ce10d86a3356109",
+      "sha256_after": "499bf819b1b62e635c92913dd6005990e65b0b3a74cd1ab53ce10d86a3356109"
+    },
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "tests/test_sdk_rydberg.py",
+      "sha256": "f0f8b2f727e9a0ab2e66afb2cf0c0d62758b8853b0d55880434b78b4f6f3a8b3",
+      "sha256_after": "f0f8b2f727e9a0ab2e66afb2cf0c0d62758b8853b0d55880434b78b4f6f3a8b3"
+    },
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/protocol.md",
+      "sha256": "cf9aed2da6e78ec90ca7d48d7ae05f3ed2e2a5fd3e5ae8c3ec470a9e0a68226d",
+      "sha256_after": "cf9aed2da6e78ec90ca7d48d7ae05f3ed2e2a5fd3e5ae8c3ec470a9e0a68226d"
+    },
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/preregistration.json",
+      "sha256": "62730ec9c748878e997165ede9047584738fb00c659ab85a8021e60010dcbe6b",
+      "sha256_after": "62730ec9c748878e997165ede9047584738fb00c659ab85a8021e60010dcbe6b"
+    },
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/sources.json",
+      "sha256": "27e1a4999858f54f75103d3b4aa799f86237d3d0b390ecdd6286770c9eb9c8e9",
+      "sha256_after": "27e1a4999858f54f75103d3b4aa799f86237d3d0b390ecdd6286770c9eb9c8e9"
+    },
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/environment.json",
+      "sha256": "7572b5092ae3cab8c3b0653dfd9b961de37aeebcbca3c2e05f3ee5c76ac8de12",
+      "sha256_after": "7572b5092ae3cab8c3b0653dfd9b961de37aeebcbca3c2e05f3ee5c76ac8de12"
+    },
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/requirements-pulser.txt",
+      "sha256": "a293ac436105a81c07182c137f3d1e1bfa2c2de5c44118775d8f9175c137d931",
+      "sha256_after": "a293ac436105a81c07182c137f3d1e1bfa2c2de5c44118775d8f9175c137d931"
+    }
+  ],
+  "output_directory": "runs/20261113-c13-sdk-rydberg/results",
+  "declared_results": [
+    "runs/20261113-c13-sdk-rydberg/results/raw.jsonl",
+    "runs/20261113-c13-sdk-rydberg/results/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/results/stdout.txt",
+      "sha256": "e719d75bdf58c3ad7cc7270c7049a365b3a57531c9cdfad3edf87d96f741fbd4",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/results/stderr.txt",
+      "sha256": "734eaa8edbdee3ef546059eab0b6ffad058ea8527af04b35fabe60a9df8a86bf",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/results/raw.jsonl",
+      "sha256": "06e34bc85a4c3f554991f92243fa86600d80bc6bda67d37b02fa7d923aa85ac3",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c13-sdk-rydberg/results/metrics.json",
+      "sha256": "db632d97ee5d49eadbb070b6ef264efec2743ef1bc0aad6cc9580c25c7145bee",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

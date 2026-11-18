@@ -1,0 +1,119 @@
+{
+  "status": "all_checks_match",
+  "timestamp_utc": "2026-11-15T20:47:40.153743+00:00",
+  "python": "3.9.6",
+  "case_count": 20,
+  "family_drop_count": 86,
+  "checks": [
+    {
+      "id": "a7cee13741d7",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "3c3aeb08aafb",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "312bdf4f360f",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "433fb7624d1a",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "29507bb778cc",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "eca92fb0c776",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "765e3caadee5",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "4cc6cc21f46a",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "66f7838312e1",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "8c55da367b52",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "409b79d93348",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "2755ab981f66",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "e6637cdda4dc",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "88a560c8b3f6",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "6e8232652580",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "417127d82203",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "7c800233c771",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "4dddb4cfc8db",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "70cc302cf8a4",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    },
+    {
+      "id": "caf531e5abc9",
+      "domain_and_optima_match": true,
+      "family_drop_counts_and_witnesses_match": true
+    }
+  ],
+  "input_sha256_before": {
+    "research/c19-annotation-oracle/raw.json": "d67cf63fb01e427ffbca89530b025312127e8bbfb89c45fc5b599ec9cef2de6b",
+    "runs/20261115-c19-instruct-repair/private_gold.author.json": "32590e6dae74fe0494e22ec794ec7da1633db2dc8a8cfd5ec33abef898c4c695"
+  },
+  "input_sha256_after": {
+    "research/c19-annotation-oracle/raw.json": "d67cf63fb01e427ffbca89530b025312127e8bbfb89c45fc5b599ec9cef2de6b",
+    "runs/20261115-c19-instruct-repair/private_gold.author.json": "32590e6dae74fe0494e22ec794ec7da1633db2dc8a8cfd5ec33abef898c4c695"
+  },
+  "command": "python3 heredoc: compare saved independent feasible_counts/masks/max_weight/optimal_masks and relaxed-domain size differences/minimum witness masks with authorized author_check fields; assert equality and unchanged input SHA256.",
+  "independence": "Own labels and own oracle were frozen first; author_check opened only after explicit root authorization. No author code imported or run."
+}

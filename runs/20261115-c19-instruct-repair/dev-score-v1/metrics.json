@@ -1,0 +1,115 @@
+{
+  "cases": 8,
+  "methods": {
+    "initial": {
+      "observed": 8,
+      "schema_valid": 7,
+      "faithful": 5,
+      "optimization_equivalent": 5,
+      "feasibility_mismatches": 24,
+      "objective_mismatches": 0,
+      "assignments_compared": 464,
+      "portfolio_concordant": 7,
+      "usable_for_original_problem": 5,
+      "format_repairs_to_faithful": 0,
+      "mathematical_repairs_to_faithful": 0,
+      "regressions_from_faithful": 0,
+      "initial_errors": 0,
+      "repairs_to_faithful": 0
+    }
+  },
+  "strata": {
+    "language": {
+      "fr": {
+        "initial": {
+          "observed": 4,
+          "schema_valid": 3,
+          "faithful": 2,
+          "optimization_equivalent": 2,
+          "feasibility_mismatches": 15,
+          "objective_mismatches": 0,
+          "assignments_compared": 224,
+          "portfolio_concordant": 3,
+          "usable_for_original_problem": 2,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        }
+      },
+      "en": {
+        "initial": {
+          "observed": 4,
+          "schema_valid": 4,
+          "faithful": 3,
+          "optimization_equivalent": 3,
+          "feasibility_mismatches": 9,
+          "objective_mismatches": 0,
+          "assignments_compared": 240,
+          "portfolio_concordant": 4,
+          "usable_for_original_problem": 3,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        }
+      }
+    },
+    "reference_feasibility": {
+      "feasible": {
+        "initial": {
+          "observed": 8,
+          "schema_valid": 7,
+          "faithful": 5,
+          "optimization_equivalent": 5,
+          "feasibility_mismatches": 24,
+          "objective_mismatches": 0,
+          "assignments_compared": 464,
+          "portfolio_concordant": 7,
+          "usable_for_original_problem": 5,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        }
+      }
+    }
+  },
+  "H19": {
+    "status": "development_only"
+  },
+  "physical_generation_calls": 8,
+  "physical_generation_cost": {
+    "input_tokens": 5121,
+    "output_tokens": 1045,
+    "wall_seconds": 80.140463917,
+    "cpu_seconds": 0.12047400000000064
+  },
+  "attributable_cost_per_arm": {},
+  "generation_executions": {
+    "initial": {
+      "load_seconds": 37.308235167,
+      "process_wall_seconds": 122.66316962600001,
+      "wrapper_wall_seconds": 0.038983,
+      "client_cpu_seconds": 6.290443000000001,
+      "server_cpu_seconds": 26.18123,
+      "server_cpu_scope": null,
+      "aggregate_of": [
+        "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver",
+        "runs/20261115-c19-instruct-repair/development-remaining-v1/driver"
+      ]
+    }
+  },
+  "feedback_computation_seconds": null,
+  "scored_portfolio_seconds_total": 0.39123241599999986,
+  "cost_scope": "row wall times include server request/postprocessing, not imports/load; row CPU is Python HTTP client only; server CPU is phase-level separately; process/wrapper timings reported; GPU energy and annotation/development/session cost unknown",
+  "budget": "two calls and max1024 outputtokens per arm/case; shared initial counted once physically",
+  "selection": {
+    "direct": "schema validity then mean processed-token logprob, tie first",
+    "self_guided": "second if schema-valid, else initial if schema-valid"
+  },
+  "scope": "finite annotated reference, no population CI, full explicit ILP emitted by LLM; portfolio is ex-post profiling"
+}

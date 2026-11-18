@@ -1,0 +1,3414 @@
+{
+  "created_local_date": "2026-11-16",
+  "private_until_reviewer_annotation_freeze": true,
+  "cases": [
+    {
+      "id": "0d1fcab20bbf",
+      "split": "test",
+      "language": "en",
+      "group": "p07",
+      "motif": "three_disjoint_arcs",
+      "constraints": {
+        "budget": 94,
+        "min_count": 1,
+        "max_count": 3,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            6,
+            3
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          14,
+          32,
+          34,
+          38,
+          40,
+          42,
+          48,
+          50,
+          56,
+          72,
+          74,
+          104
+        ],
+        "feasible_count": 21,
+        "max_weight": 143,
+        "optimal_masks": [
+          42
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              33,
+              35,
+              41,
+              49
+            ],
+            "witness_mask": 33
+          },
+          "B": {
+            "additional_masks": [
+              73
+            ],
+            "witness_mask": 73
+          },
+          "L": {
+            "additional_masks": [
+              0
+            ],
+            "witness_mask": 0
+          },
+          "U": {
+            "additional_masks": [
+              46,
+              54
+            ],
+            "witness_mask": 46
+          },
+          "I": {
+            "additional_masks": [
+              4,
+              5,
+              12,
+              13,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              24,
+              26,
+              28,
+              36,
+              44,
+              52,
+              64,
+              65,
+              66,
+              67,
+              68,
+              69,
+              70,
+              76,
+              80,
+              81,
+              82,
+              84,
+              96,
+              98,
+              100,
+              112
+            ],
+            "witness_mask": 4
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              6,
+              3
+            ],
+            "additional_masks": [
+              64,
+              65,
+              66,
+              67,
+              70,
+              96,
+              98,
+              112
+            ],
+            "witness_mask": 64
+          },
+          {
+            "implication": [
+              2,
+              1
+            ],
+            "additional_masks": [
+              4,
+              5,
+              12,
+              13,
+              36,
+              44,
+              52,
+              76
+            ],
+            "witness_mask": 4
+          },
+          {
+            "implication": [
+              4,
+              5
+            ],
+            "additional_masks": [
+              16,
+              17,
+              18,
+              19,
+              22,
+              24,
+              26
+            ],
+            "witness_mask": 16
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              5
+            ],
+            "additional_masks": [
+              33,
+              35,
+              41,
+              49
+            ],
+            "witness_mask": 33
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 213,
+      "seed": 202612560065
+    },
+    {
+      "id": "12d7d632fc5a",
+      "split": "test",
+      "language": "fr",
+      "group": "p07",
+      "motif": "three_disjoint_arcs",
+      "constraints": {
+        "budget": 106,
+        "min_count": 3,
+        "max_count": 4,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            5,
+            0
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            2
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          11,
+          13,
+          14,
+          15,
+          21,
+          28,
+          29,
+          30,
+          37,
+          41,
+          45,
+          53,
+          69,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          84,
+          85,
+          92,
+          97,
+          101
+        ],
+        "feasible_count": 24,
+        "max_weight": 178,
+        "optimal_masks": [
+          92
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              43
+            ],
+            "witness_mask": 43
+          },
+          "B": {
+            "additional_masks": [
+              105
+            ],
+            "witness_mask": 105
+          },
+          "L": {
+            "additional_masks": [
+              0,
+              1,
+              4,
+              5,
+              8,
+              9,
+              10,
+              12,
+              20,
+              33,
+              64,
+              65,
+              68,
+              72
+            ],
+            "witness_mask": 0
+          },
+          "U": {
+            "additional_masks": [
+              117
+            ],
+            "witness_mask": 117
+          },
+          "I": {
+            "additional_masks": [
+              7,
+              19,
+              22,
+              23,
+              25,
+              26,
+              27,
+              44,
+              49,
+              52,
+              56,
+              57,
+              60,
+              67,
+              70,
+              71,
+              81,
+              82,
+              83,
+              86,
+              88,
+              89,
+              90,
+              100,
+              104,
+              112,
+              113,
+              116,
+              120
+            ],
+            "witness_mask": 7
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              5,
+              0
+            ],
+            "additional_masks": [
+              44,
+              52,
+              60,
+              100,
+              104,
+              116
+            ],
+            "witness_mask": 44
+          },
+          {
+            "implication": [
+              1,
+              3
+            ],
+            "additional_masks": [
+              7,
+              22,
+              23,
+              67,
+              70,
+              71,
+              86
+            ],
+            "witness_mask": 7
+          },
+          {
+            "implication": [
+              4,
+              2
+            ],
+            "additional_masks": [
+              25,
+              26,
+              27,
+              49,
+              57,
+              81,
+              88,
+              89,
+              90,
+              113
+            ],
+            "witness_mask": 25
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              1,
+              5
+            ],
+            "additional_masks": [
+              43
+            ],
+            "witness_mask": 43
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 77,
+      "seed": 202612460062
+    },
+    {
+      "id": "1591c552ce60",
+      "split": "test",
+      "language": "en",
+      "group": "p06",
+      "motif": "reciprocal_pair_disjoint_arc",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [
+          2
+        ],
+        "implications": [
+          [
+            6,
+            3
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          0,
+          2,
+          8,
+          10,
+          17,
+          19,
+          32,
+          34,
+          40,
+          42,
+          72,
+          74,
+          104,
+          106
+        ],
+        "feasible_count": 14,
+        "max_weight": 172,
+        "optimal_masks": [
+          106
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              25,
+              27,
+              49,
+              51,
+              57,
+              59,
+              89,
+              91,
+              121,
+              123
+            ],
+            "witness_mask": 25
+          },
+          "F": {
+            "additional_masks": [
+              4,
+              6,
+              12,
+              14,
+              21,
+              23,
+              36,
+              38,
+              44,
+              46,
+              76,
+              78,
+              108,
+              110
+            ],
+            "witness_mask": 4
+          },
+          "I": {
+            "additional_masks": [
+              1,
+              3,
+              9,
+              11,
+              16,
+              18,
+              48,
+              50,
+              64,
+              65,
+              66,
+              67,
+              73,
+              75,
+              80,
+              81,
+              82,
+              83,
+              96,
+              98,
+              112,
+              114
+            ],
+            "witness_mask": 1
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              6,
+              3
+            ],
+            "additional_masks": [
+              64,
+              66,
+              81,
+              83,
+              96,
+              98
+            ],
+            "witness_mask": 64
+          },
+          {
+            "implication": [
+              4,
+              0
+            ],
+            "additional_masks": [
+              16,
+              18,
+              48,
+              50
+            ],
+            "witness_mask": 16
+          },
+          {
+            "implication": [
+              0,
+              4
+            ],
+            "additional_masks": [
+              1,
+              3,
+              9,
+              11,
+              73,
+              75
+            ],
+            "witness_mask": 1
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              5
+            ],
+            "additional_masks": [
+              49,
+              51
+            ],
+            "witness_mask": 49
+          },
+          {
+            "edge": [
+              3,
+              4
+            ],
+            "additional_masks": [
+              25,
+              27,
+              89,
+              91
+            ],
+            "witness_mask": 25
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 1,
+      "seed": 202612360059
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "split": "test",
+      "language": "en",
+      "group": "p04",
+      "motif": "branch_after_arc",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": 4,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            3,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          0,
+          1,
+          4,
+          5,
+          16,
+          17,
+          25,
+          27,
+          32,
+          33,
+          48,
+          49,
+          57
+        ],
+        "feasible_count": 13,
+        "max_weight": 177,
+        "optimal_masks": [
+          27
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              20,
+              21,
+              29,
+              36,
+              37,
+              52,
+              53
+            ],
+            "witness_mask": 20
+          },
+          "U": {
+            "additional_masks": [
+              59
+            ],
+            "witness_mask": 59
+          },
+          "I": {
+            "additional_masks": [
+              2,
+              3,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              18,
+              19,
+              24,
+              26,
+              34,
+              35,
+              40,
+              41,
+              42,
+              43,
+              50,
+              51,
+              56,
+              58
+            ],
+            "witness_mask": 2
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              3,
+              4
+            ],
+            "additional_masks": [
+              9,
+              11,
+              13,
+              15,
+              41,
+              43
+            ],
+            "witness_mask": 9
+          },
+          {
+            "implication": [
+              1,
+              3
+            ],
+            "additional_masks": [
+              2,
+              3,
+              6,
+              7,
+              18,
+              19,
+              34,
+              35,
+              50,
+              51
+            ],
+            "witness_mask": 2
+          },
+          {
+            "implication": [
+              3,
+              0
+            ],
+            "additional_masks": [
+              24,
+              26,
+              56,
+              58
+            ],
+            "witness_mask": 24
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              2,
+              4
+            ],
+            "additional_masks": [
+              20,
+              21,
+              29
+            ],
+            "witness_mask": 20
+          },
+          {
+            "edge": [
+              2,
+              5
+            ],
+            "additional_masks": [
+              36,
+              37
+            ],
+            "witness_mask": 36
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 8,
+      "seed": 202611960047
+    },
+    {
+      "id": "2c5f03082098",
+      "split": "test",
+      "language": "fr",
+      "group": "p02",
+      "motif": "out_star",
+      "constraints": {
+        "budget": 105,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          0,
+          1,
+          4,
+          5,
+          8,
+          9,
+          12,
+          13,
+          15,
+          16,
+          17,
+          20,
+          21,
+          24,
+          25,
+          28,
+          29,
+          32,
+          36,
+          40,
+          44
+        ],
+        "feasible_count": 21,
+        "max_weight": 196,
+        "optimal_masks": [
+          29
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              33,
+              37,
+              41,
+              45,
+              48,
+              49,
+              52,
+              53,
+              56,
+              57,
+              60
+            ],
+            "witness_mask": 33
+          },
+          "B": {
+            "additional_masks": [
+              31
+            ],
+            "witness_mask": 31
+          },
+          "I": {
+            "additional_masks": [
+              2,
+              3,
+              6,
+              7,
+              10,
+              11,
+              14,
+              18,
+              19,
+              22,
+              23,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46
+            ],
+            "witness_mask": 2
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              1,
+              2
+            ],
+            "additional_masks": [
+              11
+            ],
+            "witness_mask": 11
+          },
+          {
+            "implication": [
+              1,
+              3
+            ],
+            "additional_masks": [
+              7,
+              23
+            ],
+            "witness_mask": 7
+          },
+          {
+            "implication": [
+              1,
+              0
+            ],
+            "additional_masks": [
+              14,
+              30,
+              46
+            ],
+            "witness_mask": 14
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              5
+            ],
+            "additional_masks": [
+              33,
+              37,
+              41,
+              45
+            ],
+            "witness_mask": 33
+          },
+          {
+            "edge": [
+              4,
+              5
+            ],
+            "additional_masks": [
+              48,
+              52,
+              56,
+              60
+            ],
+            "witness_mask": 48
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 38,
+      "seed": 202611460032
+    },
+    {
+      "id": "3bb2d6807209",
+      "split": "test",
+      "language": "fr",
+      "group": "p09",
+      "motif": "shared_consequent_disjoint_arc",
+      "constraints": {
+        "budget": null,
+        "min_count": 2,
+        "max_count": 4,
+        "required": [
+          6
+        ],
+        "forbidden": [
+          0
+        ],
+        "implications": [
+          [
+            5,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          66,
+          68,
+          70,
+          76,
+          78,
+          82,
+          86,
+          98,
+          102
+        ],
+        "feasible_count": 9,
+        "max_weight": 190,
+        "optimal_masks": [
+          86
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              114
+            ],
+            "witness_mask": 114
+          },
+          "L": {
+            "additional_masks": [
+              64
+            ],
+            "witness_mask": 64
+          },
+          "U": {
+            "additional_masks": [
+              94,
+              110
+            ],
+            "witness_mask": 94
+          },
+          "M": {
+            "additional_masks": [
+              6,
+              12,
+              14,
+              18,
+              22,
+              30,
+              34,
+              38,
+              46
+            ],
+            "witness_mask": 6
+          },
+          "F": {
+            "additional_masks": [
+              65,
+              67,
+              69,
+              71,
+              77,
+              83,
+              99
+            ],
+            "witness_mask": 65
+          },
+          "I": {
+            "additional_masks": [
+              72,
+              74,
+              80,
+              84,
+              88,
+              90,
+              92,
+              96,
+              100,
+              104,
+              106,
+              108
+            ],
+            "witness_mask": 72
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              5,
+              1
+            ],
+            "additional_masks": [
+              96,
+              100,
+              108
+            ],
+            "witness_mask": 96
+          },
+          {
+            "implication": [
+              3,
+              2
+            ],
+            "additional_masks": [
+              72,
+              74,
+              90,
+              106
+            ],
+            "witness_mask": 72
+          },
+          {
+            "implication": [
+              4,
+              1
+            ],
+            "additional_masks": [
+              80,
+              84,
+              92
+            ],
+            "witness_mask": 80
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              4,
+              5
+            ],
+            "additional_masks": [
+              114
+            ],
+            "witness_mask": 114
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 1,
+      "seed": 202612860074
+    },
+    {
+      "id": "3f2da1e93197",
+      "split": "test",
+      "language": "fr",
+      "group": "p01",
+      "motif": "three_arc_path",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          0,
+          1,
+          8,
+          32,
+          33,
+          40,
+          48,
+          49,
+          52,
+          53,
+          54,
+          56,
+          60,
+          62
+        ],
+        "feasible_count": 14,
+        "max_weight": 224,
+        "optimal_masks": [
+          62
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              9,
+              41,
+              55,
+              57,
+              61,
+              63
+            ],
+            "witness_mask": 9
+          },
+          "I": {
+            "additional_masks": [
+              2,
+              4,
+              5,
+              6,
+              10,
+              12,
+              14,
+              16,
+              17,
+              18,
+              20,
+              21,
+              22,
+              24,
+              26,
+              28,
+              30,
+              34,
+              36,
+              37,
+              38,
+              42,
+              44,
+              46,
+              50,
+              58
+            ],
+            "witness_mask": 2
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              2,
+              4
+            ],
+            "additional_masks": [
+              4,
+              5,
+              6,
+              12,
+              14,
+              36,
+              37,
+              38,
+              44,
+              46
+            ],
+            "witness_mask": 4
+          },
+          {
+            "implication": [
+              4,
+              5
+            ],
+            "additional_masks": [
+              16,
+              17,
+              20,
+              21,
+              22,
+              24,
+              28,
+              30
+            ],
+            "witness_mask": 16
+          },
+          {
+            "implication": [
+              1,
+              2
+            ],
+            "additional_masks": [
+              2,
+              10,
+              34,
+              42,
+              50,
+              58
+            ],
+            "witness_mask": 2
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              1
+            ],
+            "additional_masks": [
+              55
+            ],
+            "witness_mask": 55
+          },
+          {
+            "edge": [
+              0,
+              3
+            ],
+            "additional_masks": [
+              9,
+              41,
+              57,
+              61
+            ],
+            "witness_mask": 9
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 10,
+      "seed": 202611260026
+    },
+    {
+      "id": "4d46af430e6c",
+      "split": "test",
+      "language": "fr",
+      "group": "p05",
+      "motif": "directed_three_cycle",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [
+          3
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            5,
+            2
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          8,
+          10,
+          24,
+          26,
+          45
+        ],
+        "feasible_count": 5,
+        "max_weight": 136,
+        "optimal_masks": [
+          45
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              47,
+              61,
+              63
+            ],
+            "witness_mask": 47
+          },
+          "M": {
+            "additional_masks": [
+              0,
+              2,
+              16,
+              18,
+              37
+            ],
+            "witness_mask": 0
+          },
+          "I": {
+            "additional_masks": [
+              9,
+              12,
+              13,
+              14,
+              25,
+              28,
+              29,
+              30,
+              40,
+              41,
+              42,
+              44,
+              46
+            ],
+            "witness_mask": 9
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              5,
+              2
+            ],
+            "additional_masks": [
+              40,
+              41,
+              42
+            ],
+            "witness_mask": 40
+          },
+          {
+            "implication": [
+              0,
+              5
+            ],
+            "additional_masks": [
+              9,
+              13,
+              25,
+              29
+            ],
+            "witness_mask": 9
+          },
+          {
+            "implication": [
+              2,
+              0
+            ],
+            "additional_masks": [
+              12,
+              14,
+              28,
+              30,
+              44,
+              46
+            ],
+            "witness_mask": 12
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              1
+            ],
+            "additional_masks": [
+              47
+            ],
+            "witness_mask": 47
+          },
+          {
+            "edge": [
+              4,
+              5
+            ],
+            "additional_masks": [
+              61
+            ],
+            "witness_mask": 61
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 3,
+      "seed": 202612060050
+    },
+    {
+      "id": "59cc26171df7",
+      "split": "test",
+      "language": "fr",
+      "group": "p10",
+      "motif": "dense_reciprocal_pair_disjoint_arc",
+      "constraints": {
+        "budget": 60,
+        "min_count": 2,
+        "max_count": 3,
+        "required": [
+          2
+        ],
+        "forbidden": [
+          1
+        ],
+        "implications": [
+          [
+            6,
+            0
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          36,
+          69
+        ],
+        "feasible_count": 2,
+        "max_weight": 83,
+        "optimal_masks": [
+          69
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              12,
+              44
+            ],
+            "witness_mask": 12
+          },
+          "B": {
+            "additional_masks": [
+              52
+            ],
+            "witness_mask": 52
+          },
+          "L": {
+            "additional_masks": [
+              4
+            ],
+            "witness_mask": 4
+          },
+          "U": {
+            "additional_masks": [
+              101
+            ],
+            "witness_mask": 101
+          },
+          "M": {
+            "additional_masks": [
+              40,
+              48,
+              65,
+              73,
+              97
+            ],
+            "witness_mask": 40
+          },
+          "F": {
+            "additional_masks": [
+              6,
+              38
+            ],
+            "witness_mask": 6
+          },
+          "I": {
+            "additional_masks": [
+              5,
+              20,
+              37,
+              68,
+              100
+            ],
+            "witness_mask": 5
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              6,
+              0
+            ],
+            "additional_masks": [
+              68,
+              100
+            ],
+            "witness_mask": 68
+          },
+          {
+            "implication": [
+              0,
+              6
+            ],
+            "additional_masks": [
+              5,
+              37
+            ],
+            "witness_mask": 5
+          },
+          {
+            "implication": [
+              4,
+              5
+            ],
+            "additional_masks": [
+              20
+            ],
+            "witness_mask": 20
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "additional_masks": [
+              12,
+              44
+            ],
+            "witness_mask": 12
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 1,
+      "seed": 202613060080
+    },
+    {
+      "id": "819b31e9501a",
+      "split": "test",
+      "language": "fr",
+      "group": "p08",
+      "motif": "fork_with_extension",
+      "constraints": {
+        "budget": 136,
+        "min_count": 3,
+        "max_count": null,
+        "required": [
+          3
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          13,
+          14,
+          15,
+          26,
+          42,
+          44,
+          45,
+          46,
+          47,
+          56,
+          58,
+          109
+        ],
+        "feasible_count": 12,
+        "max_weight": 219,
+        "optimal_masks": [
+          109
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              28,
+              29,
+              30,
+              31,
+              60,
+              61,
+              62
+            ],
+            "witness_mask": 28
+          },
+          "B": {
+            "additional_masks": [
+              111
+            ],
+            "witness_mask": 111
+          },
+          "L": {
+            "additional_masks": [
+              8,
+              10,
+              12,
+              24,
+              40
+            ],
+            "witness_mask": 8
+          },
+          "M": {
+            "additional_masks": [
+              7,
+              37,
+              38,
+              39,
+              50,
+              101
+            ],
+            "witness_mask": 7
+          },
+          "I": {
+            "additional_masks": [
+              11,
+              25,
+              27,
+              41,
+              43,
+              57,
+              59,
+              73,
+              74,
+              75,
+              76,
+              77,
+              78,
+              79,
+              88,
+              89,
+              90,
+              91,
+              104,
+              105,
+              106,
+              107,
+              108,
+              110,
+              120,
+              121,
+              122
+            ],
+            "witness_mask": 11
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              6,
+              0
+            ],
+            "additional_masks": [
+              104,
+              106,
+              108,
+              110,
+              120,
+              122
+            ],
+            "witness_mask": 104
+          },
+          {
+            "implication": [
+              6,
+              5
+            ],
+            "additional_masks": [
+              77,
+              79
+            ],
+            "witness_mask": 77
+          },
+          {
+            "implication": [
+              0,
+              2
+            ],
+            "additional_masks": [
+              11,
+              25,
+              27,
+              41,
+              43,
+              57,
+              59,
+              105,
+              107,
+              121
+            ],
+            "witness_mask": 11
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              2,
+              4
+            ],
+            "additional_masks": [
+              28,
+              29,
+              30,
+              31,
+              60,
+              61,
+              62
+            ],
+            "witness_mask": 28
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 1,
+      "seed": 202612660068
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "split": "test",
+      "language": "en",
+      "group": "p01",
+      "motif": "three_arc_path",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            0,
+            5
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            4
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          0,
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          14,
+          18,
+          22,
+          26,
+          30,
+          50,
+          54,
+          58,
+          62
+        ],
+        "feasible_count": 16,
+        "max_weight": 193,
+        "optimal_masks": [
+          62
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              51,
+              55,
+              59,
+              63
+            ],
+            "witness_mask": 51
+          },
+          "I": {
+            "additional_masks": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15,
+              16,
+              20,
+              24,
+              28,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              52,
+              56,
+              60
+            ],
+            "witness_mask": 1
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              0,
+              5
+            ],
+            "additional_masks": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ],
+            "witness_mask": 1
+          },
+          {
+            "implication": [
+              4,
+              1
+            ],
+            "additional_masks": [
+              16,
+              20,
+              24,
+              28,
+              48,
+              52,
+              56,
+              60
+            ],
+            "witness_mask": 16
+          },
+          {
+            "implication": [
+              5,
+              4
+            ],
+            "additional_masks": [
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              39,
+              40,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47
+            ],
+            "witness_mask": 32
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              4
+            ],
+            "additional_masks": [
+              51,
+              55,
+              59,
+              63
+            ],
+            "witness_mask": 51
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 3,
+      "seed": 202611360029
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "split": "test",
+      "language": "fr",
+      "group": "p06",
+      "motif": "reciprocal_pair_disjoint_arc",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [
+          1
+        ],
+        "implications": [
+          [
+            3,
+            0
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          0,
+          4,
+          9,
+          13,
+          16,
+          20,
+          64,
+          68,
+          73,
+          77,
+          80,
+          84,
+          96,
+          105
+        ],
+        "feasible_count": 14,
+        "max_weight": 175,
+        "optimal_masks": [
+          105
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              25,
+              29,
+              89,
+              93,
+              100,
+              109,
+              112,
+              116,
+              121,
+              125
+            ],
+            "witness_mask": 25
+          },
+          "F": {
+            "additional_masks": [
+              2,
+              6,
+              11,
+              15,
+              18,
+              22,
+              66,
+              70,
+              75,
+              79,
+              82,
+              86,
+              98,
+              107
+            ],
+            "witness_mask": 2
+          },
+          "I": {
+            "additional_masks": [
+              1,
+              5,
+              8,
+              12,
+              17,
+              21,
+              32,
+              33,
+              40,
+              41,
+              65,
+              69,
+              72,
+              76,
+              81,
+              85,
+              97,
+              104
+            ],
+            "witness_mask": 1
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              3,
+              0
+            ],
+            "additional_masks": [
+              8,
+              12,
+              72,
+              76,
+              104
+            ],
+            "witness_mask": 8
+          },
+          {
+            "implication": [
+              5,
+              6
+            ],
+            "additional_masks": [
+              32,
+              41
+            ],
+            "witness_mask": 32
+          },
+          {
+            "implication": [
+              0,
+              3
+            ],
+            "additional_masks": [
+              1,
+              5,
+              17,
+              21,
+              65,
+              69,
+              81,
+              85,
+              97
+            ],
+            "witness_mask": 1
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              2,
+              5
+            ],
+            "additional_masks": [
+              100,
+              109
+            ],
+            "witness_mask": 100
+          },
+          {
+            "edge": [
+              3,
+              4
+            ],
+            "additional_masks": [
+              25,
+              29,
+              89,
+              93
+            ],
+            "witness_mask": 25
+          },
+          {
+            "edge": [
+              4,
+              5
+            ],
+            "additional_masks": [
+              112
+            ],
+            "witness_mask": 112
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 1,
+      "seed": 202612260056
+    },
+    {
+      "id": "bc03e3d47a10",
+      "split": "test",
+      "language": "fr",
+      "group": "p04",
+      "motif": "branch_after_arc",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": 2,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            4,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            0
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          32,
+          33,
+          36
+        ],
+        "feasible_count": 8,
+        "max_weight": 85,
+        "optimal_masks": [
+          33
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              5,
+              6,
+              34
+            ],
+            "witness_mask": 5
+          },
+          "U": {
+            "additional_masks": [
+              19,
+              27
+            ],
+            "witness_mask": 19
+          },
+          "I": {
+            "additional_masks": [
+              8,
+              9,
+              10,
+              12,
+              16,
+              17,
+              18,
+              20,
+              24,
+              40,
+              48
+            ],
+            "witness_mask": 8
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              4,
+              1
+            ],
+            "additional_masks": [
+              17
+            ],
+            "witness_mask": 17
+          },
+          {
+            "implication": [
+              3,
+              4
+            ],
+            "additional_masks": [
+              8,
+              9,
+              10,
+              12,
+              40
+            ],
+            "witness_mask": 8
+          },
+          {
+            "implication": [
+              4,
+              0
+            ],
+            "additional_masks": [
+              18
+            ],
+            "witness_mask": 18
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              2
+            ],
+            "additional_masks": [
+              5
+            ],
+            "witness_mask": 5
+          },
+          {
+            "edge": [
+              1,
+              2
+            ],
+            "additional_masks": [
+              6
+            ],
+            "witness_mask": 6
+          },
+          {
+            "edge": [
+              1,
+              5
+            ],
+            "additional_masks": [
+              34
+            ],
+            "witness_mask": 34
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 12,
+      "seed": 202611860044
+    },
+    {
+      "id": "c616c3b27d14",
+      "split": "test",
+      "language": "en",
+      "group": "p10",
+      "motif": "dense_reciprocal_pair_disjoint_arc",
+      "constraints": {
+        "budget": 62,
+        "min_count": 2,
+        "max_count": 3,
+        "required": [
+          5
+        ],
+        "forbidden": [
+          2
+        ],
+        "implications": [
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          35,
+          40
+        ],
+        "feasible_count": 2,
+        "max_weight": 106,
+        "optimal_masks": [
+          35
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              96,
+              104
+            ],
+            "witness_mask": 96
+          },
+          "B": {
+            "additional_masks": [
+              56
+            ],
+            "witness_mask": 56
+          },
+          "L": {
+            "additional_masks": [
+              32
+            ],
+            "witness_mask": 32
+          },
+          "U": {
+            "additional_masks": [
+              43
+            ],
+            "witness_mask": 43
+          },
+          "M": {
+            "additional_masks": [
+              3,
+              11,
+              24,
+              67,
+              72
+            ],
+            "witness_mask": 3
+          },
+          "F": {
+            "additional_masks": [
+              36,
+              44
+            ],
+            "witness_mask": 36
+          },
+          "I": {
+            "additional_masks": [
+              33,
+              34,
+              41,
+              42,
+              48
+            ],
+            "witness_mask": 33
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              4,
+              3
+            ],
+            "additional_masks": [
+              48
+            ],
+            "witness_mask": 48
+          },
+          {
+            "implication": [
+              0,
+              1
+            ],
+            "additional_masks": [
+              33,
+              41
+            ],
+            "witness_mask": 33
+          },
+          {
+            "implication": [
+              1,
+              0
+            ],
+            "additional_masks": [
+              34,
+              42
+            ],
+            "witness_mask": 34
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              5,
+              6
+            ],
+            "additional_masks": [
+              96,
+              104
+            ],
+            "witness_mask": 96
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 4,
+      "seed": 202613160083
+    },
+    {
+      "id": "c7b67c2417a6",
+      "split": "test",
+      "language": "en",
+      "group": "p05",
+      "motif": "directed_three_cycle",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [
+          5
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          32,
+          39,
+          40,
+          48,
+          55,
+          56
+        ],
+        "feasible_count": 6,
+        "max_weight": 222,
+        "optimal_masks": [
+          55
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              47,
+              63
+            ],
+            "witness_mask": 47
+          },
+          "M": {
+            "additional_masks": [
+              0,
+              7,
+              8,
+              16,
+              23,
+              24
+            ],
+            "witness_mask": 0
+          },
+          "I": {
+            "additional_masks": [
+              33,
+              34,
+              35,
+              36,
+              37,
+              38,
+              42,
+              44,
+              46,
+              49,
+              50,
+              51,
+              52,
+              53,
+              54,
+              58,
+              60,
+              62
+            ],
+            "witness_mask": 33
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              0,
+              2
+            ],
+            "additional_masks": [
+              33,
+              35,
+              49,
+              51
+            ],
+            "witness_mask": 33
+          },
+          {
+            "implication": [
+              1,
+              0
+            ],
+            "additional_masks": [
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              58,
+              62
+            ],
+            "witness_mask": 34
+          },
+          {
+            "implication": [
+              2,
+              1
+            ],
+            "additional_masks": [
+              36,
+              37,
+              44,
+              52,
+              53,
+              60
+            ],
+            "witness_mask": 36
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              3
+            ],
+            "additional_masks": [
+              47,
+              63
+            ],
+            "witness_mask": 47
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 10,
+      "seed": 202612160053
+    },
+    {
+      "id": "c8e0347b6769",
+      "split": "test",
+      "language": "en",
+      "group": "p03",
+      "motif": "in_star",
+      "constraints": {
+        "budget": null,
+        "min_count": 1,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          4,
+          5,
+          6,
+          7,
+          16,
+          20,
+          21,
+          32,
+          36,
+          37,
+          38,
+          39,
+          48,
+          52,
+          53
+        ],
+        "feasible_count": 15,
+        "max_weight": 153,
+        "optimal_masks": [
+          39,
+          53
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              12,
+              13,
+              14,
+              15,
+              22,
+              23,
+              28,
+              29,
+              30,
+              31,
+              44,
+              45,
+              46,
+              47,
+              54,
+              55,
+              60,
+              61,
+              62,
+              63
+            ],
+            "witness_mask": 12
+          },
+          "L": {
+            "additional_masks": [
+              0
+            ],
+            "witness_mask": 0
+          },
+          "I": {
+            "additional_masks": [
+              1,
+              2,
+              3,
+              8,
+              9,
+              10,
+              11,
+              17,
+              24,
+              25,
+              33,
+              34,
+              35,
+              40,
+              41,
+              42,
+              43,
+              49,
+              56,
+              57
+            ],
+            "witness_mask": 1
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              1,
+              2
+            ],
+            "additional_masks": [
+              2,
+              34
+            ],
+            "witness_mask": 2
+          },
+          {
+            "implication": [
+              0,
+              2
+            ],
+            "additional_masks": [
+              1,
+              17,
+              33,
+              49
+            ],
+            "witness_mask": 1
+          },
+          {
+            "implication": [
+              3,
+              2
+            ],
+            "additional_masks": [
+              8,
+              24,
+              40,
+              56
+            ],
+            "witness_mask": 8
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              1,
+              4
+            ],
+            "additional_masks": [
+              22,
+              23,
+              54,
+              55
+            ],
+            "witness_mask": 22
+          },
+          {
+            "edge": [
+              2,
+              3
+            ],
+            "additional_masks": [
+              12,
+              13,
+              14,
+              15,
+              28,
+              29,
+              44,
+              45,
+              46,
+              47,
+              60,
+              61
+            ],
+            "witness_mask": 12
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 3,
+      "seed": 202611760041
+    },
+    {
+      "id": "d11c57a34450",
+      "split": "test",
+      "language": "en",
+      "group": "p09",
+      "motif": "shared_consequent_disjoint_arc",
+      "constraints": {
+        "budget": null,
+        "min_count": 2,
+        "max_count": 4,
+        "required": [
+          2
+        ],
+        "forbidden": [
+          5
+        ],
+        "implications": [
+          [
+            3,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          5,
+          6,
+          7,
+          13,
+          15,
+          22,
+          23,
+          70,
+          71
+        ],
+        "feasible_count": 9,
+        "max_weight": 174,
+        "optimal_masks": [
+          23
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              86
+            ],
+            "witness_mask": 86
+          },
+          "L": {
+            "additional_masks": [
+              4
+            ],
+            "witness_mask": 4
+          },
+          "U": {
+            "additional_masks": [
+              31,
+              79
+            ],
+            "witness_mask": 31
+          },
+          "M": {
+            "additional_masks": [
+              3,
+              9,
+              11,
+              18,
+              19,
+              27,
+              66,
+              67,
+              75
+            ],
+            "witness_mask": 3
+          },
+          "F": {
+            "additional_masks": [
+              36,
+              37,
+              38,
+              39,
+              45,
+              54,
+              102
+            ],
+            "witness_mask": 36
+          },
+          "I": {
+            "additional_masks": [
+              12,
+              14,
+              20,
+              21,
+              28,
+              29,
+              30,
+              68,
+              69,
+              76,
+              77,
+              78
+            ],
+            "witness_mask": 12
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              3,
+              0
+            ],
+            "additional_masks": [
+              12,
+              14,
+              30,
+              78
+            ],
+            "witness_mask": 12
+          },
+          {
+            "implication": [
+              6,
+              1
+            ],
+            "additional_masks": [
+              68,
+              69,
+              77
+            ],
+            "witness_mask": 68
+          },
+          {
+            "implication": [
+              4,
+              1
+            ],
+            "additional_masks": [
+              20,
+              21,
+              29
+            ],
+            "witness_mask": 20
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              4,
+              6
+            ],
+            "additional_masks": [
+              86
+            ],
+            "witness_mask": 86
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 1,
+      "seed": 202612960077
+    },
+    {
+      "id": "d394c4b72e6e",
+      "split": "test",
+      "language": "fr",
+      "group": "p03",
+      "motif": "in_star",
+      "constraints": {
+        "budget": null,
+        "min_count": 3,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          7,
+          11,
+          14,
+          15,
+          35,
+          38,
+          39,
+          42,
+          43,
+          46,
+          47
+        ],
+        "feasible_count": 11,
+        "max_weight": 154,
+        "optimal_masks": [
+          47
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              19,
+              22,
+              23,
+              26,
+              27,
+              30,
+              31,
+              50,
+              51,
+              54,
+              55,
+              58,
+              59,
+              62,
+              63
+            ],
+            "witness_mask": 19
+          },
+          "L": {
+            "additional_masks": [
+              0,
+              2,
+              3,
+              6,
+              10,
+              16,
+              32,
+              34,
+              48
+            ],
+            "witness_mask": 0
+          },
+          "I": {
+            "additional_masks": [
+              13,
+              21,
+              25,
+              28,
+              29,
+              37,
+              41,
+              44,
+              45,
+              49,
+              52,
+              53,
+              56,
+              57,
+              60,
+              61
+            ],
+            "witness_mask": 13
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              2,
+              1
+            ],
+            "additional_masks": [
+              52
+            ],
+            "witness_mask": 52
+          },
+          {
+            "implication": [
+              0,
+              1
+            ],
+            "additional_masks": [
+              49
+            ],
+            "witness_mask": 49
+          },
+          {
+            "implication": [
+              3,
+              1
+            ],
+            "additional_masks": [
+              56
+            ],
+            "witness_mask": 56
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              1,
+              4
+            ],
+            "additional_masks": [
+              19,
+              22,
+              23,
+              26,
+              27,
+              30,
+              31,
+              50,
+              51,
+              54,
+              55,
+              58,
+              59,
+              62,
+              63
+            ],
+            "witness_mask": 19
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 1,
+      "seed": 202611660038
+    },
+    {
+      "id": "d7da9a72a703",
+      "split": "test",
+      "language": "en",
+      "group": "p08",
+      "motif": "fork_with_extension",
+      "constraints": {
+        "budget": 144,
+        "min_count": 5,
+        "max_count": null,
+        "required": [
+          2
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            0
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          47,
+          61
+        ],
+        "feasible_count": 2,
+        "max_weight": 215,
+        "optimal_masks": [
+          61
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              117,
+              124
+            ],
+            "witness_mask": 117
+          },
+          "B": {
+            "additional_masks": [
+              63
+            ],
+            "witness_mask": 63
+          },
+          "L": {
+            "additional_masks": [
+              4,
+              12,
+              20,
+              28,
+              36,
+              37,
+              44,
+              45,
+              52,
+              53,
+              60
+            ],
+            "witness_mask": 4
+          },
+          "M": {
+            "additional_masks": [
+              59
+            ],
+            "witness_mask": 59
+          },
+          "I": {
+            "additional_masks": [
+              31,
+              55,
+              62
+            ],
+            "witness_mask": 31
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              1,
+              3
+            ],
+            "additional_masks": [
+              55
+            ],
+            "witness_mask": 55
+          },
+          {
+            "implication": [
+              0,
+              5
+            ],
+            "additional_masks": [
+              31
+            ],
+            "witness_mask": 31
+          },
+          {
+            "implication": [
+              1,
+              0
+            ],
+            "additional_masks": [
+              62
+            ],
+            "witness_mask": 62
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              2,
+              6
+            ],
+            "additional_masks": [
+              117,
+              124
+            ],
+            "witness_mask": 117
+          }
+        ],
+        "assignments": 128
+      },
+      "accepted_attempt": 16,
+      "seed": 202612760071
+    },
+    {
+      "id": "f62f0c0bce93",
+      "split": "test",
+      "language": "en",
+      "group": "p02",
+      "motif": "out_star",
+      "constraints": {
+        "budget": 81,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      "author_certificate": {
+        "feasible_masks": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          16,
+          17,
+          18,
+          19,
+          20,
+          27,
+          32,
+          33,
+          34,
+          48,
+          49,
+          50
+        ],
+        "feasible_count": 17,
+        "max_weight": 156,
+        "optimal_masks": [
+          27
+        ],
+        "family_removal": {
+          "E": {
+            "additional_masks": [
+              5,
+              6,
+              21,
+              36
+            ],
+            "witness_mask": 5
+          },
+          "B": {
+            "additional_masks": [
+              35,
+              51,
+              59
+            ],
+            "witness_mask": 35
+          },
+          "I": {
+            "additional_masks": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              24,
+              25,
+              26,
+              28,
+              40,
+              41,
+              42,
+              56,
+              57
+            ],
+            "witness_mask": 8
+          }
+        },
+        "implication_removal": [
+          {
+            "implication": [
+              3,
+              0
+            ],
+            "additional_masks": [
+              26
+            ],
+            "witness_mask": 26
+          },
+          {
+            "implication": [
+              3,
+              4
+            ],
+            "additional_masks": [
+              11
+            ],
+            "witness_mask": 11
+          },
+          {
+            "implication": [
+              3,
+              1
+            ],
+            "additional_masks": [
+              25,
+              57
+            ],
+            "witness_mask": 25
+          }
+        ],
+        "edge_removal": [
+          {
+            "edge": [
+              0,
+              2
+            ],
+            "additional_masks": [
+              5,
+              21
+            ],
+            "witness_mask": 5
+          },
+          {
+            "edge": [
+              1,
+              2
+            ],
+            "additional_masks": [
+              6
+            ],
+            "witness_mask": 6
+          },
+          {
+            "edge": [
+              2,
+              5
+            ],
+            "additional_masks": [
+              36
+            ],
+            "witness_mask": 36
+          }
+        ],
+        "assignments": 64
+      },
+      "accepted_attempt": 6,
+      "seed": 202611560035
+    }
+  ]
+}

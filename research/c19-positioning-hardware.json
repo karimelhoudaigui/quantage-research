@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-15",
+  "source_count": 5,
+  "question": "Calibrer les frontières matérielles françaises et les antériorités utiles à C19, sans catalogue ni nouveauté globale.",
+  "scope": "Contrôle documentaire ciblé de cinq sources primaires, sans génération ni lecture de résultats C19.",
+  "sources": [
+    {
+      "id": "pulser-hardware-1.8.0",
+      "title": "Hardware specifications",
+      "publisher": "Pasqal / Pulser",
+      "url": "https://docs.pasqal.com/pulser/v1.8.0/hardware/",
+      "version": "Pulser documentation v1.8.0",
+      "passages_read": [
+        "The Device, y compris Device ≠ QPU et sélection backend",
+        "Reading through the Device specifications : requires_layout, accepts_new_layouts",
+        "The Channels et AnalogDevice"
+      ],
+      "verified_extraction": "Contraintes de géométrie et pulses ; certains contrôles de layout sont propres au QPU ; Device ne constitue pas le QPU.",
+      "c19_application": "Aucun pont ILP complet → registre/pulses/backend n’est fourni par C19.",
+      "implication_verdict": "verified",
+      "unverified_bridge": "Encodage de toutes les contraintes, pénalités/ressources, géométrie, contrôles et backend QPU effectif.",
+      "current_machine_availability": "unverified",
+      "latest_release_claim": false,
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "access": "passages ciblés directement relus, pas seulement snippet/abstract",
+      "full_text_retained": false,
+      "retained_sha256": null,
+      "software_or_empirical_results_reproduced": false
+    },
+    {
+      "id": "perceval-computer-1.3",
+      "title": "Computer",
+      "publisher": "Quandela / Perceval",
+      "url": "https://perceval.quandela.net/docs/v1.3/reference/runtime/computer.html",
+      "version": "Perceval documentation v1.3",
+      "passages_read": [
+        "Introduction : local/remote et QPU/simulator",
+        "SimulatedComputer",
+        "RemoteComputer : CommunicationLayer et QPU ou simulateur distant"
+      ],
+      "verified_extraction": "Simulation locale et acquisition distante sont séparées ; distant n’implique pas QPU physique.",
+      "c19_application": "Les anciens contrôles locaux ne certifient pas une compilation des ILP C19 vers une machine Quandela.",
+      "implication_verdict": "verified",
+      "unverified_bridge": "Circuit et encodage, plateforme identifiée, compilation, sources/détecteurs/pertes et accès distant.",
+      "current_machine_availability": "unverified",
+      "latest_release_claim": false,
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "access": "passages ciblés directement relus, pas seulement snippet/abstract",
+      "full_text_retained": false,
+      "retained_sha256": null,
+      "software_or_empirical_results_reproduced": false
+    },
+    {
+      "id": "cegis-2006",
+      "title": "Combinatorial Sketching for Finite Programs",
+      "authors": "Armando Solar-Lezama et al.",
+      "url": "https://people.csail.mit.edu/asolar/papers/Solar-LezamaTBSS06.pdf",
+      "version": "ASPLOS 2006, copie auteur sans révision des octets explicitée",
+      "passages_read": [
+        "§5.2, équation (5.1), PDF p.7",
+        "Texte de §5.4, PDF p.9"
+      ],
+      "verified_extraction": "Synthèse/vérification itérative avec accumulation des contre-exemples.",
+      "c19_application": "Inspiration CEGIS, sans transférer complétude ou progression au générateur LLM borné.",
+      "implication_verdict": "verified",
+      "hypotheses_not_transferred": [
+        "Synthétiseur satisfaisant les observations cumulées",
+        "Recherche complète dans le domaine fini"
+      ],
+      "overlap_classification": "partial or adjacent result only",
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "access": "passages ciblés directement relus, pas seulement snippet/abstract",
+      "full_text_retained": false,
+      "retained_sha256": null,
+      "software_or_empirical_results_reproduced": false
+    },
+    {
+      "id": "self-refine-2023",
+      "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+      "authors": "Aman Madaan et al.",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/91edff07232fb1b55a505a9e9f6c0ff3-Paper-Conference.pdf",
+      "version": "Version publiée NeurIPS 2023 / Advances in Neural Information Processing Systems 36",
+      "passages_read": [
+        "§2, algorithme 1 et équations (2)–(4), PDF pp.3–4"
+      ],
+      "verified_extraction": "Le même LLM produit un feedback distinct puis raffine en conservant l’historique.",
+      "c19_application": "La simple auto-révision C19 ne reproduit pas cette étape FEEDBACK séparée.",
+      "implication_verdict": "verified",
+      "overlap_classification": "partial or adjacent result only",
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "access": "passages ciblés directement relus, pas seulement snippet/abstract",
+      "full_text_retained": false,
+      "retained_sha256": null,
+      "software_or_empirical_results_reproduced": false
+    },
+    {
+      "id": "opt-verifier-v1",
+      "title": "Opt-Verifier: Unleashing the Power of LLMs for Optimization Modeling via Dual-Side Verification",
+      "authors": "Haoyang Liu et al.",
+      "url": "https://arxiv.org/html/2605.29556v1",
+      "version": "arXiv:2605.29556v1, 2026-05-28",
+      "passages_read": [
+        "§4.2 : structure interpretation and consistency verification",
+        "§4.3 : solution interpretation and validity verification",
+        "§4.4 : refinement"
+      ],
+      "verified_extraction": "Les commentaires de vérification de structure et solution guident une révision du modèle d’optimisation.",
+      "c19_application": "Précédent pertinent ; C19 emploie un oracle fini annoté plutôt que ces jugements d’agents.",
+      "implication_verdict": "verified",
+      "overlap_classification": "partial or adjacent result only",
+      "published_final_read": false,
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "access": "passages ciblés directement relus, pas seulement snippet/abstract",
+      "full_text_retained": false,
+      "retained_sha256": null,
+      "software_or_empirical_results_reproduced": false
+    }
+  ],
+  "local_records_reused": [
+    {
+      "path": "agents/literature.md",
+      "sha256_observed": "04516a3bf8ea9c31d9ceeea3d32d492d84d0025204382e8da9631d519724f54c"
+    },
+    {
+      "path": "agents/hardware.md",
+      "sha256_observed": "740afcd0744610956cc10bb27eddaa5b1f734b2af471a5dfc59dc7dd527eead1"
+    },
+    {
+      "path": "research/c15-method-positioning.md",
+      "sha256_observed": "8d1be08aab9ccbf02b60b3d69d2233058db3b6d7410efc4864ce08afaf210b67"
+    },
+    {
+      "path": "research/c15-method-positioning.json",
+      "sha256_observed": "61673a38f668e21a7d1090fe181b43eb4243b5de64a0df8f2577a71aa2a8af58"
+    },
+    {
+      "path": "research/c11-hardware-plan.md",
+      "sha256_observed": "a7552f0e06ea2fe1583e6fafa075911cf4ae0a9a4670d8112e15ea105198ca19"
+    },
+    {
+      "path": "research/c11-hardware-sources.json",
+      "sha256_observed": "eefbfe5bec8b58fa35b31a910f59cb5e71909495496c28b41ce0c301377e3f8e"
+    },
+    {
+      "path": "research/sources/index.json",
+      "sha256_observed": "45ad327b74e2dbd99f1ad76944e9824e9051d3e62bbddcb2f25f578119efd0c6"
+    },
+    {
+      "path": "research/c11-comparison.json",
+      "sha256_observed": "587273a5001616de2231870bf1197a096e1fda0fa53d050fe0508991afe360cf"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/protocol-test.md",
+      "sha256_observed": "0f07c7f2b76709ab7b883f0f6d18c5472fbf62ba83290746963519523ab9fa8c"
+    },
+    {
+      "path": "config/policy.json",
+      "sha256_observed": "bf40f7dc349b1e22468e14e4d31ce34f5e17c21f8e45459d71bb062e3fd0fc7b"
+    }
+  ],
+  "project_contract": {
+    "source": "runs/20261115-c19-instruct-repair/protocol-test.md",
+    "formulation": "ILP binaire complète, coefficients et contraintes produits par LLM",
+    "certificate": "Égalité finie du domaine et des valeurs d’objectif relative à un contrat annoté",
+    "solvers": "DFS et SciPy/HiGHS classiques, profilage ex post annoncé",
+    "hardware_encoding_provided": false,
+    "qpu_execution_claimed": false
+  },
+  "article_calibration": [
+    {
+      "claim": "Validation mathématique finie ≠ programme SDK admissible ≠ conformité backend ≠ exécution QPU.",
+      "status": "verified",
+      "source_ids": [
+        "pulser-hardware-1.8.0",
+        "perceval-computer-1.3"
+      ],
+      "inference_from_sources_and_project_scope": true
+    },
+    {
+      "claim": "Une ILP ou QUBO seule ne certifie pas l’implémentation physique Pasqal ; aucune impossibilité générale n’est conclue.",
+      "status": "conditional",
+      "source_ids": [
+        "pulser-hardware-1.8.0"
+      ],
+      "missing_bridge": "Encodage concret de l’instance et validation du registre/pulses/backend."
+    },
+    {
+      "claim": "Le local Perceval historique n’établit ni plateforme distante identifiée ni encodage des ILP de C19.",
+      "status": "verified",
+      "source_ids": [
+        "perceval-computer-1.3"
+      ]
+    },
+    {
+      "claim": "Les mécanismes de candidats/contre-exemples, auto-révision et réparation guidée de modèles préexistent.",
+      "status": "verified",
+      "source_ids": [
+        "cegis-2006",
+        "self-refine-2023",
+        "opt-verifier-v1"
+      ]
+    },
+    {
+      "claim": "C19 peut être décrit comme une étude empirique bornée avec oracle annoté ; aucune supériorité ou nouveauté mondiale n’est établie ici.",
+      "status": "verified",
+      "source_ids": [
+        "cegis-2006",
+        "self-refine-2023",
+        "opt-verifier-v1"
+      ]
+    }
+  ],
+  "version_limits": [
+    "Les pages SDK ont été consultées aujourd’hui dans leurs versions URL citées ; aucune n’est annoncée comme dernière release.",
+    "Les restrictions d’une machine, les droits d’accès et les files d’attente actuels ne sont pas vérifiés.",
+    "La copie CEGIS auteur n’a pas été comparée octet pour octet à la version éditeur.",
+    "Opt-Verifier est consulté en arXiv v1, pas dans une version finale publiée."
+  ],
+  "cached_neighbor_not_new_evidence": {
+    "name": "OptiMUS",
+    "record": "research/sources/index.json",
+    "reread": false,
+    "sixth_source_added": false,
+    "new_result_or_guarantee_attributed": false
+  },
+  "novelty": {
+    "established": false,
+    "verdict": "unverified",
+    "exhaustive_search": false,
+    "novelty_inferred_from_search_absence": false
+  },
+  "policy": {
+    "qpu_submission_enabled": false,
+    "external_spend_eur": 0,
+    "policy_file": "config/policy.json",
+    "publication_or_external_message_sent": false
+  },
+  "limits": [
+    "Pas de reproduction des articles ou de leurs chiffres.",
+    "Pas d’audit de source SDK ou de séquence/circuit nouveau dans cette passe.",
+    "L’auteur a aussi créé le corpus C19 : aucun nouvel audit aveugle des annotations/résultats.",
+    "Aucune source complète ajoutée au cache, aucun hash distant inventé."
+  ],
+  "write_scope": [
+    "research/c19-positioning-hardware.md",
+    "research/c19-positioning-hardware.json"
+  ]
+}

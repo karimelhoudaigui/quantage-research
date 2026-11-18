@@ -1,0 +1,33 @@
+# C19 — comparaison prospective figée avant toute inférence de test
+
+15 novembre 2026. Question prioritaire optimization du backlog : le retour d'un vérificateur améliore-t-il la fidélité des formulations, à budget d'inférence comparable, sur des combinaisons de contraintes jamais utilisées dans le développement historique ? Ce cycle est une expérience agentique ; C01–C18 servent de motivation et de développement, sans preuve d'une solution efficace ni nouveauté mondiale.
+
+## Construction et annotation
+
+Vingt nouveaux problèmes de sélection pondérée avec exclusions, n=4..7, cinq de chaque taille, dix français/dix anglais. Dix signatures inédites dans tous les labels C15/C16 : BFILM, BFIM, BFIMU, BFIU, FILM, FILMU, FILU, FIMU, FLMU, ILMU ; deux instances par signature. Poids17..61, coûts13..39,1..4 exclusions. Chaque famille optionnelle est essentielle au domaine faisable sous les autres clauses. Trois références infaisables, dix-sept faisables. Nouvelles données et graphes ; contrôle de duplication conservé dans la provenance. Même style de rendu C16, avec plusieurs implications verbalisées explicitement quand nécessaire ; pas de prétention de généralisation à une langue naturelle ouverte.
+
+Corrections de construction AVANT toute inférence : template FILMU/ILMU unidirectionnel réfuté par {0,2}, remplacé par implication réciproque ; BFIMU_EN ne peut avoir B et U essentielles à n4 sous les autres familles, échange n4/n5 avec FIMU_EN. Raisons et rejets bornés conservés ; aucune sélection fondée sur les sorties du modèle. Auteur et annotateur distincts, annotation des seuls publics avant accès au gold auteur, comparaison avant gel. Pas d'indépendance humaine ou de modèle démontrée.
+
+## Modèle, représentation et ressources
+
+Qwen3-4B-Instruct-2507 (modèle d'origine uniquement non-thinking), conversion communautaire bartowski Q4_K_M épinglée dans acquisition.json, binaire officiel llama.cpp b12359, MetalMTL0 et4threads CPU. La conversion n'est pas reproduite. Huit anciennes instances C16 ont servi au développement C19 : deux sous grammaire de chaînes arbitraires, puis six sous la seule révision vers une grammaire d'expressions linéaires. Elles ne constituent pas une estimation uniforme et restent exclues du test.
+
+Même code repair_llama_linear.py, consigne et grammaire générique dans tous les bras. Cinq champs : variables binaires indexées, sens max, coefficients entiers d'objectif, liste complète de contraintes algébriques. La grammaire fixe seulement syntaxe/ordre des champs et bornes génériques : indices0..7, entiers≤10000,≤32lignes ; elle ne lit ni données du problème ni référence. Le compilateur AST préserve les coefficients, relations et clauses effectivement écrits et n'en complète aucun. L'agent reçoit toutes les primitives mais aucune formulation résolue ou exemple test. Il peut encore omettre ou inventer une contrainte, mal choisir un indice ou une valeur.
+
+Un appel initial partagé, puis un second indépendant, une auto-révision et une révision guidée. Deux appels par bras/cas, maximum512tokens nouveaux par appel, contexte4096 (réserve512+1), T0.7/top-p0.8/top-k20. Graine SHA256(ID) première tranche8hex, décalage0 initial et+1 pour chacun des seconds appels. Même capacité et paramètres, longueurs effectivement générées rapportées ; l'égalité des plafonds n'implique pas l'égalité des tokens utilisés.
+
+Au total80appels physiques et120attribuables aux trois bras exécutés isolément.180s maximum par completion,1650s internes et1800s runner par phase, aucune nouvelle tentative d'un appel déjà commencé après incident. Réserve disque3GiB au démarrage et1GiB entre appels. Un seul serveur GPU appartenant au run, boucle locale127.0.0.1, aucune API externe, dépense, entraînement ou QPU. Stop sur échec ; conserver partiels et absents sans imputation.
+
+## Vérification et sélection
+
+Oracle entier indépendant du générateur : toutes les2^n affectations, domaine faisable et valeur d'objectif (y compris hors domaine). Retour fermé : erreur de schéma fixe ou jusqu'à trois contre-exemples distincts lexicographiques, priorité faisabilité ; bits et booléens/scalaires seulement. Aucun nom de clause, coefficient corrigé ou formulation de référence transmis. La référence annotée est supposée correcte, pas extraite par le vérificateur d'un texte libre. Une contradiction arbitraire peut être extensionnellement fidèle sur une référence infaisable ; la fidélité n'y démontre pas la compréhension de chaque clause. Rapporter séparément les17références faisables et les3infaisables.
+
+Direct : schéma valide prioritaire, puis moyenne des log-probabilités traitées, égalité en faveur de l'initiale. Convention API auditée, heuristique de sélection et non vraisemblance inconditionnelle comparable. Auto/guidée : seconde si valide au schéma, sinon initiale valide (sinon seconde invalide). Aucun choix par le certificat final ni modèle canonique de secours. Même les initiales fidèles sont révisées pour mesurer les régressions. La démonstration opérationnelle séparée peut arrêter au certificat, pas ce test.
+
+H19 : au moins QUATRE formulations fidèles de plus pour guidée qu'auto sur vingt, avec au plus UNE régression guidée parmi les initiales fidèles. Le seuil de quatre dépasse les trois références infaisables. Secondaires : réparations de format et mathématiques, régressions, désaccords de faisabilité/objectif, équivalence de tous les optima, strates langue et faisabilité, tokens/temps de génération et vérification. Corpus de convenance, dix groupes seulement et une graine par appel : pas d'intervalle de confiance populationnel ni effet causal de changement de modèle/grammaire par comparaison à C16.
+
+## Solveurs, preuve et restitution
+
+DFS exhaustif et SciPy1.13.1/HiGHS réellement exécutés sur tous les candidats sélectionnés valides, délai HiGHS2s. Comparer statuts et objectifs entiers, autoriser différents optima. Choisir ex post le solveur concordant le plus rapide et rapporter le coût DES DEUX : ce n'est pas une politique prédictive apprise ni un gain de vitesse démontré. Accord sur un modèle faux ne rend pas ce modèle fidèle. Utilisable pour le problème initial exige aussi le certificat de formulation.
+
+Avant initiale test, geler sources, consigne, publics, labels, protocole, sélection et règles de métriques. Après exécution, audit distinct des traces, choix, contre-exemples, coûts, scores et solutions. Intégrateur seul pour article, claims append-only, état et journal. Même résultat négatif : summary.md, verification.md, completion.json, python3 scripts/check.py et tests pertinents. Complete veut dire cycle terminé, pas mission scientifique atteinte. Pas de soumission/push/publication/message externe automatique.

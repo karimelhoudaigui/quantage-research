@@ -1,0 +1,442 @@
+{
+  "assertion_tested": "Exact feasible domain and maximizing weight for every binary assignment in 24 public C15 instances under independently extracted reviewer clauses.",
+  "arithmetic": "integer, exact",
+  "bit_convention": "bit i is inclusion of item i",
+  "label_source": "private_gold.review.json frozen before author comparison",
+  "cases": [
+    {
+      "id": "9e2a4c71",
+      "split": "dev",
+      "feasible_masks": [
+        0,
+        1,
+        2,
+        4,
+        8,
+        10,
+        12
+      ],
+      "feasible_count": 7,
+      "max_weight": 14,
+      "optimal_masks": [
+        12
+      ]
+    },
+    {
+      "id": "31d8b6f0",
+      "split": "dev",
+      "feasible_masks": [
+        3,
+        6,
+        9,
+        12,
+        17,
+        18,
+        19,
+        24,
+        25
+      ],
+      "feasible_count": 9,
+      "max_weight": 17,
+      "optimal_masks": [
+        19
+      ]
+    },
+    {
+      "id": "a7f03d2c",
+      "split": "dev",
+      "feasible_masks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        12,
+        16,
+        18,
+        20,
+        24,
+        32,
+        33,
+        34,
+        36,
+        48
+      ],
+      "feasible_count": 19,
+      "max_weight": 20,
+      "optimal_masks": [
+        20
+      ]
+    },
+    {
+      "id": "68c1e9b4",
+      "split": "dev",
+      "feasible_masks": [
+        36,
+        38,
+        44,
+        46,
+        100,
+        102
+      ],
+      "feasible_count": 6,
+      "max_weight": 32,
+      "optimal_masks": [
+        46
+      ]
+    },
+    {
+      "id": "c2b7460d",
+      "split": "dev",
+      "feasible_masks": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        12
+      ],
+      "feasible_count": 6,
+      "max_weight": 13,
+      "optimal_masks": [
+        12
+      ]
+    },
+    {
+      "id": "f40a8e53",
+      "split": "dev",
+      "feasible_masks": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        9,
+        12,
+        16,
+        18,
+        24,
+        25
+      ],
+      "feasible_count": 11,
+      "max_weight": 24,
+      "optimal_masks": [
+        25
+      ]
+    },
+    {
+      "id": "0b5d97a2",
+      "split": "dev",
+      "feasible_masks": [
+        3,
+        6,
+        12,
+        18,
+        20,
+        22,
+        24,
+        33,
+        34,
+        40,
+        48,
+        50,
+        56
+      ],
+      "feasible_count": 13,
+      "max_weight": 21,
+      "optimal_masks": [
+        22
+      ]
+    },
+    {
+      "id": "7d139ac8",
+      "split": "dev",
+      "feasible_masks": [
+        0,
+        1,
+        2,
+        3,
+        8,
+        10,
+        16,
+        17,
+        18,
+        24,
+        32,
+        33,
+        40,
+        48
+      ],
+      "feasible_count": 14,
+      "max_weight": 18,
+      "optimal_masks": [
+        33
+      ]
+    },
+    {
+      "id": "e84b2f19",
+      "split": "test",
+      "feasible_masks": [
+        1,
+        2,
+        4,
+        5,
+        6,
+        8,
+        9,
+        12
+      ],
+      "feasible_count": 8,
+      "max_weight": 16,
+      "optimal_masks": [
+        6
+      ]
+    },
+    {
+      "id": "4a6d90c3",
+      "split": "test",
+      "feasible_masks": [
+        17,
+        18,
+        20,
+        22
+      ],
+      "feasible_count": 4,
+      "max_weight": 17,
+      "optimal_masks": [
+        22
+      ]
+    },
+    {
+      "id": "b91c5e72",
+      "split": "test",
+      "feasible_masks": [
+        12,
+        33,
+        40
+      ],
+      "feasible_count": 3,
+      "max_weight": 18,
+      "optimal_masks": [
+        12
+      ]
+    },
+    {
+      "id": "23e8a6d0",
+      "split": "test",
+      "feasible_masks": [
+        35,
+        38,
+        49,
+        52,
+        74,
+        88,
+        97,
+        98,
+        112,
+        113
+      ],
+      "feasible_count": 10,
+      "max_weight": 29,
+      "optimal_masks": [
+        113
+      ]
+    },
+    {
+      "id": "d062f4b9",
+      "split": "test",
+      "feasible_masks": [
+        8,
+        10,
+        24
+      ],
+      "feasible_count": 3,
+      "max_weight": 14,
+      "optimal_masks": [
+        24
+      ]
+    },
+    {
+      "id": "5fc7a138",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        4,
+        8
+      ],
+      "feasible_count": 3,
+      "max_weight": 9,
+      "optimal_masks": [
+        8
+      ]
+    },
+    {
+      "id": "8b2e6c40",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        12,
+        32,
+        33,
+        40,
+        64,
+        65,
+        68,
+        69,
+        80,
+        82,
+        84,
+        96,
+        97,
+        112
+      ],
+      "feasible_count": 20,
+      "max_weight": 25,
+      "optimal_masks": [
+        82
+      ]
+    },
+    {
+      "id": "1c94d7a6",
+      "split": "test",
+      "feasible_masks": [
+        1,
+        3,
+        9,
+        17,
+        25
+      ],
+      "feasible_count": 5,
+      "max_weight": 20,
+      "optimal_masks": [
+        25
+      ]
+    },
+    {
+      "id": "6e3a08f5",
+      "split": "test",
+      "feasible_masks": [],
+      "feasible_count": 0,
+      "max_weight": null,
+      "optimal_masks": []
+    },
+    {
+      "id": "f7a1d269",
+      "split": "test",
+      "feasible_masks": [
+        0,
+        1,
+        2,
+        8,
+        9
+      ],
+      "feasible_count": 5,
+      "max_weight": 13,
+      "optimal_masks": [
+        9
+      ]
+    },
+    {
+      "id": "3d5b9e01",
+      "split": "test",
+      "feasible_masks": [
+        3,
+        6,
+        10,
+        11,
+        14,
+        18,
+        26,
+        34,
+        35,
+        38,
+        42,
+        50
+      ],
+      "feasible_count": 12,
+      "max_weight": 23,
+      "optimal_masks": [
+        14
+      ]
+    },
+    {
+      "id": "a063c8f2",
+      "split": "test",
+      "feasible_masks": [],
+      "feasible_count": 0,
+      "max_weight": null,
+      "optimal_masks": []
+    },
+    {
+      "id": "74f20b8d",
+      "split": "test",
+      "feasible_masks": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12
+      ],
+      "feasible_count": 6,
+      "max_weight": 16,
+      "optimal_masks": [
+        12
+      ]
+    },
+    {
+      "id": "ce1964a7",
+      "split": "test",
+      "feasible_masks": [],
+      "feasible_count": 0,
+      "max_weight": null,
+      "optimal_masks": []
+    },
+    {
+      "id": "2f8c05e1",
+      "split": "test",
+      "feasible_masks": [
+        24,
+        48
+      ],
+      "feasible_count": 2,
+      "max_weight": 14,
+      "optimal_masks": [
+        24
+      ]
+    },
+    {
+      "id": "905e3b6a",
+      "split": "test",
+      "feasible_masks": [
+        38,
+        44
+      ],
+      "feasible_count": 2,
+      "max_weight": 25,
+      "optimal_masks": [
+        44
+      ]
+    }
+  ],
+  "infeasible_ids": [
+    "6e3a08f5",
+    "a063c8f2",
+    "ce1964a7"
+  ],
+  "hand_controls_passed": 6,
+  "non_claims": [
+    "No LLM performance measured.",
+    "Finite exact semantics do not certify arbitrary free text.",
+    "No author labels or production solver imported."
+  ]
+}

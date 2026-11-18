@@ -1,0 +1,1 @@
+{"id": "loop-software", "raw_response": "{\"formulation\": \"binary_ilp\", \"variables\": [0, 1], \"sense\": \"max\", \"objective\": [3, 2], \"constraints\": [\"x0+x1<=1\", \"2*x0+x1<=2\", \"x0+x1>=1\"]}"}

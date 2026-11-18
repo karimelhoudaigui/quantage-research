@@ -1,0 +1,13 @@
+{
+  "mis": 1199,
+  "photon": 125,
+  "failed": 0,
+  "max_probability_error": 2.220446049250313e-16,
+  "greedy_suboptimal": 4,
+  "max_greedy_absolute_gap": 2,
+  "states_checked": 36346,
+  "llm_calls": 0,
+  "qpu_jobs": 0,
+  "external_spend_eur": 0,
+  "elapsed_seconds": 0.17077508400000002
+}

@@ -1,0 +1,14 @@
+{
+  "paths": [
+    "research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "runs/20261115-c16-quantized-repair/dev-preflight-v1/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+  ],
+  "one_inode_hardlinks": 3,
+  "unique_bytes": 1117320736,
+  "sha256_verified": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "restore_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "reason": "release public ignored weight cache before C17; all C16 responses, scripts, labels, metadata and recorded input hashes preserved",
+  "consequence": "C16 manifest input verification needs exact public weight restored; historical snapshots retain all small sources but external weight is intentionally absent",
+  "free_before": 1545543680
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-15",
+  "scope": "local repository only, no global config read/written; reversible maintenance flags to prevent orphan pack accumulation",
+  "keys": {
+    "gc.auto": {
+      "previous": null,
+      "new": "0"
+    },
+    "maintenance.auto": {
+      "previous": null,
+      "new": "false"
+    }
+  },
+  "restore": "git config --local --unset each key when previous null, otherwise restore its previous value; no valid objects/refs changed"
+}

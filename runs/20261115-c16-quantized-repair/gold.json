@@ -1,0 +1,510 @@
+[
+  {
+    "id": "4e0256180e89",
+    "split": "dev",
+    "constraints": {
+      "budget": 48,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "B"
+    ]
+  },
+  {
+    "id": "a21822897a9c",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": 1,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "L"
+    ]
+  },
+  {
+    "id": "f79cab9b73d0",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 4,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "U"
+    ]
+  },
+  {
+    "id": "080d034c34b2",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        4
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "M"
+    ]
+  },
+  {
+    "id": "ffa9d668bbda",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        1
+      ],
+      "implications": []
+    },
+    "families": [
+      "F"
+    ]
+  },
+  {
+    "id": "b97cb5f56812",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    "families": [
+      "I"
+    ]
+  },
+  {
+    "id": "f60764a678d2",
+    "split": "dev",
+    "constraints": {
+      "budget": 74,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "I"
+    ]
+  },
+  {
+    "id": "d28fc0e8d61e",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": 3,
+      "max_count": null,
+      "required": [
+        6
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "L",
+      "M"
+    ]
+  },
+  {
+    "id": "fcec7afd3dd6",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 1,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [
+        3
+      ],
+      "implications": []
+    },
+    "families": [
+      "F",
+      "L",
+      "U"
+    ]
+  },
+  {
+    "id": "79769e445d63",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 1,
+      "required": [
+        1
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    "families": [
+      "I",
+      "M",
+      "U"
+    ]
+  },
+  {
+    "id": "38289dce9fa8",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "L"
+    ]
+  },
+  {
+    "id": "bc6455847de3",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 2,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": []
+    },
+    "families": [
+      "F",
+      "M",
+      "U"
+    ]
+  },
+  {
+    "id": "192394ff7b7a",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 3,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "families": [
+      "I",
+      "L",
+      "M"
+    ]
+  },
+  {
+    "id": "a84cf14c247d",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "U"
+    ]
+  },
+  {
+    "id": "2869335ff788",
+    "split": "test",
+    "constraints": {
+      "budget": 74,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        2
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "B",
+      "L",
+      "M",
+      "U"
+    ]
+  },
+  {
+    "id": "5c92952e6b23",
+    "split": "test",
+    "constraints": {
+      "budget": 70,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [
+        2
+      ],
+      "implications": []
+    },
+    "families": [
+      "B",
+      "F",
+      "L",
+      "U"
+    ]
+  },
+  {
+    "id": "cd5f7022ac2e",
+    "split": "test",
+    "constraints": {
+      "budget": 34,
+      "min_count": 1,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "I",
+      "L",
+      "U"
+    ]
+  },
+  {
+    "id": "bce63f435951",
+    "split": "test",
+    "constraints": {
+      "budget": 93,
+      "min_count": 3,
+      "max_count": null,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        4
+      ],
+      "implications": []
+    },
+    "families": [
+      "B",
+      "F",
+      "L",
+      "M"
+    ]
+  },
+  {
+    "id": "dcdad683f9dc",
+    "split": "test",
+    "constraints": {
+      "budget": 65,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        2
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          1,
+          5
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "I",
+      "L",
+      "M"
+    ]
+  },
+  {
+    "id": "37e4073ab724",
+    "split": "test",
+    "constraints": {
+      "budget": 50,
+      "min_count": 1,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        4
+      ],
+      "implications": [
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "L"
+    ]
+  },
+  {
+    "id": "e208889911d5",
+    "split": "test",
+    "constraints": {
+      "budget": 45,
+      "min_count": null,
+      "max_count": 2,
+      "required": [
+        4
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    },
+    "families": [
+      "B",
+      "F",
+      "M",
+      "U"
+    ]
+  },
+  {
+    "id": "0917fa453976",
+    "split": "test",
+    "constraints": {
+      "budget": 96,
+      "min_count": null,
+      "max_count": 3,
+      "required": [
+        3
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          6,
+          1
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "I",
+      "M",
+      "U"
+    ]
+  },
+  {
+    "id": "5d9702fb5f6c",
+    "split": "test",
+    "constraints": {
+      "budget": 123,
+      "min_count": 4,
+      "max_count": 4,
+      "required": [
+        3
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "I",
+      "L",
+      "M",
+      "U"
+    ]
+  },
+  {
+    "id": "54969ba6bb41",
+    "split": "test",
+    "constraints": {
+      "budget": 74,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [
+        6
+      ],
+      "implications": [
+        [
+          4,
+          3
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "L",
+      "U"
+    ]
+  }
+]

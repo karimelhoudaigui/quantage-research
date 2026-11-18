@@ -1,0 +1,65 @@
+{
+  "claim_id": "C15-OBSERVED-RECORDS-INDEPENDENT-AUDIT",
+  "mathematics": {
+    "assertion_tested": "Observed token records, prompt hashes, metadata and exact finite domains agree with the frozen independent reviewer annotations; final failed test has one flushed response and fifteen absent cases.",
+    "coefficient_domain": "exact integer finite truth tables; no inference",
+    "conventions": "Bit i selects item i; fast tokenizer used only to verify observed text/token records; no model loading, scoring or author labels.",
+    "inputs": [
+      "16 development responses and one partial-matrix test response",
+      "Frozen independent reviewer domains",
+      "Immutable recorded manifests and resource-stop evidence"
+    ],
+    "bounds": {
+      "dev_responses": 16,
+      "test_completed_responses": 1,
+      "n_max": 7
+    },
+    "non_claims": [
+      "No H15 comparison",
+      "No missing-case imputation",
+      "No causal attribution of resource slowdown",
+      "No comparison of population performance between development prompts"
+    ]
+  },
+  "execution_artifacts": [
+    "research/c15-observed-audit.py",
+    "research/c15-annotation-oracle/raw.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/test_cases.json",
+    "runs/20261114-c15-formulation-repair/instructions.v1.txt",
+    "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+    "runs/20261114-c15-formulation-repair/freeze-test-v2.json",
+    "runs/20261114-c15-formulation-repair/test-initial-resource-stop.json",
+    "runs/20261114-c15-formulation-repair/resource-diagnostic-during-initial.json",
+    "runs/20261114-c15-formulation-repair/dev-score-v2/metrics.json",
+    "runs/20261114-c15-formulation-repair/dev-score-v2/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/dev-feedback-v2/minimal.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v1/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/dev-initial-v1/manifest.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v1/generation.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/manifest.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/generation.json",
+    "runs/20261114-c15-formulation-repair/test-initial-v2/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/test-initial-v2/manifest.json",
+    "research/external/models/qwen2.5-0.5b-7ae5576/tokenizer.json",
+    "research/external/models/qwen2.5-0.5b-7ae5576/tokenizer_config.json",
+    "research/external/models/qwen2.5-0.5b-7ae5576/generation_config.json"
+  ],
+  "software": [
+    {
+      "name": "computation Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.20.3"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

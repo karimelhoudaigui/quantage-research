@@ -1,0 +1,12 @@
+{
+  "status": "failed_before_candidate_generation",
+  "recorded_at_utc": "2026-11-15T23:07:44.380436+00:00",
+  "created_local_date": "2026-11-16",
+  "command": "python3 -B runs/20261115-c23-compositional-repair/build_corpus.private.py",
+  "error": "TypeError: list indices must be integers or slices, not str",
+  "cause": "Historical reviewer gold uses both top-level list and object-with-cases formats; original history reader assumed object only.",
+  "candidates_generated": 0,
+  "public_files_created": 0,
+  "failed_source_sha256": "2e5b8a9562518e71dc3588650a04fb21b6dff49cf189a0dfa4492e3cdc9566cb",
+  "correction": "Normalize only historical annotation envelope shape; no model result or C23 data used."
+}

@@ -1,0 +1,25 @@
+{
+  "client_date": "2026-11-15",
+  "stage": "before first actual GGUF inference",
+  "sha256": {
+    "quantage/repair_llama_inference.py": "3be523c00c0578000112d4790156b2400f24c9ae144e98ab5900a999afb80432",
+    "quantage/repair_study_c16.py": "1a2a50b698a18230277679d9341a64c3874a92f4c297a1921990cc46b436fe32",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "quantage/repair_solvers.py": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+    "scripts/run_c16_phase.py": "038110c2b257d1eb1a6ee166e82822549b1914699d569abe37b9362188c42b17",
+    "tests/test_repair_llama_inference.py": "bb0e3f16d55df7fd427d723ccca90e9e5474107f486dc5aa38189719919701ac",
+    "runs/20261115-c16-quantized-repair/protocol.md": "b2c721f8a1b35ca3fe201d15b3de0c7ffff9e4c4e3a2c974717c3d7398f7f692",
+    "runs/20261115-c16-quantized-repair/acquisition.json": "f636ce91e4b0ec0b58ab2980b40902ea6a070dbcccfd32a7b466cc62582b14a3",
+    "runs/20261115-c16-quantized-repair/dev_cases.json": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3",
+    "runs/20261115-c16-quantized-repair/test_cases.json": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c",
+    "runs/20261115-c16-quantized-repair/gold.json": "3591f586f76f224ea806c79e843b55286e1a2bfcf234c9341f07c876f154505d",
+    "runs/20261115-c16-quantized-repair/instructions.v1.txt": "f7b81f2382bd5ada76d0af642f59231acbe57577b0aaab9fb27970f86997c989",
+    "runs/20261115-c16-quantized-repair/preflight-selection.json": "4f1dfa88f5f976521768a9189fa2319de9c8bf8631d7a2838b72f1dbff1bfa7c"
+  },
+  "software_fixture_tests": 16,
+  "independent_review": "partial static review by distinct author before quota; issues cleanup/probability-scope/Metal corrected; final changes self-reviewed by integrator",
+  "native_agents": "quota exhausted, no repeat requests; independent corpus annotation/oracle completed before quota",
+  "runtime_device_observation": "MTL0 Apple M2, from --list-devices; no inference yet"
+}

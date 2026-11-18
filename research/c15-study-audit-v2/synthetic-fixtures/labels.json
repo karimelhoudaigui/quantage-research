@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sA",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    }
+  },
+  {
+    "id": "sB",
+    "constraints": {
+      "budget": null,
+      "min_count": 1,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    }
+  },
+  {
+    "id": "sC",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    }
+  },
+  {
+    "id": "sD",
+    "constraints": {
+      "budget": 1,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    }
+  }
+]

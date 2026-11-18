@@ -1,0 +1,49 @@
+{
+  "claim_id": "C10-DEVELOPMENT-V4",
+  "mathematics": {
+    "assertion_tested": "Check v4 development correction on same observed C09 responses, preserving previous negative regressions and all raw generations.",
+    "coefficient_domain": "finite retrospective semantic decisions",
+    "conventions": "development regression, not reserved or population test",
+    "inputs": [
+      "16original C09responses and unchanged labels"
+    ],
+    "bounds": {
+      "cases": 16
+    },
+    "non_claims": [
+      "Not a new held-out result",
+      "Not universal semantic correctness",
+      "No new model inference performed by scorer"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/compact_v2.py",
+    "quantage/compact_v3.py",
+    "quantage/compact_v4.py",
+    "quantage/local_score.py",
+    "quantage/local_score_v4.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "runs/20261113-c10-regression-release/protocol.md",
+    "runs/20261113-c10-regression-release/amendment-v4.md",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "runs/20261113-c09-heldout-guard/gold.json",
+    "runs/20261113-c09-heldout-guard/generation/raw.jsonl"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "fixed recorded responses",
+    "seed": null
+  }
+}

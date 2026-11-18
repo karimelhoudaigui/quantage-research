@@ -1,0 +1,46 @@
+{
+  "full_test_planned": 16,
+  "paired_complete": 15,
+  "physical_attempted_calls": 64,
+  "completed_response_records": 63,
+  "unknown_guided_ids": [
+    "54969ba6bb41"
+  ],
+  "full_methods": {
+    "initial": {
+      "observed": 16,
+      "faithful": 1
+    },
+    "direct": {
+      "observed": 16,
+      "faithful": 1
+    },
+    "self": {
+      "observed": 16,
+      "faithful": 1
+    },
+    "guided": {
+      "observed": 15,
+      "faithful": 1
+    }
+  },
+  "guided_faithful_bounds": [
+    1,
+    2
+  ],
+  "guided_minus_self_bounds": [
+    0,
+    1
+  ],
+  "H16": "not_supported_for_any_missing_response",
+  "missing_values_imputed": false,
+  "scope": "finite bounds over unknown outcome, not a confidence interval; paired15 analysis descriptive after infrastructure failure",
+  "observed_physical_cost": {
+    "input_tokens": 45797,
+    "output_tokens": 11648,
+    "wall_seconds": 305.61973491799995,
+    "cpu_seconds": 0.5384340000000003
+  },
+  "cost_limits": "63 response sums; interrupted call/load/server CPU not fully recorded; row CPU is client only",
+  "independence": "integrator self-analysis using previously independent reference annotations"
+}

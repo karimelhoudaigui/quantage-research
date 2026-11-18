@@ -1,0 +1,202 @@
+{
+  "schema_version": 2,
+  "claim_id": "C06-BASELINES-ONLY",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-m",
+    "quantage.evaluation",
+    "--public",
+    "runs/20261113-c06-native-agents/public_cases.json",
+    "--gold",
+    "runs/20261113-c06-native-agents/private_gold.v2.json",
+    "--arms",
+    "runs/20261113-c06-native-agents/arms.json",
+    "--output",
+    "runs/20261113-c06-native-agents/results-baselines"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Evaluate only deterministic baselines on independently reviewed semantic labels; explicitly record absent native responses without scoring them.",
+    "coefficient_domain": "finite semantic actions, exact MIS optima, floating optical probabilities",
+    "conventions": "19 supported contracts, 13 required abstentions after pre-generation adjudication",
+    "inputs": [
+      "32 frozen cases in 16 opaque paired groups, two families"
+    ],
+    "bounds": {
+      "cases": 32,
+      "mis_n_max": 6,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "No native proposal performance measured",
+      "No prospective test of existing unseen traces",
+      "No population inference"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-13T17:38:16.285902+00:00",
+    "runtime_seconds": 0.078703,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "quantage/contracts.py",
+    "quantage/agent_pipeline.py",
+    "quantage/evaluation.py",
+    "runs/20261113-c06-native-agents/public_cases.json",
+    "runs/20261113-c06-native-agents/private_gold.v2.json",
+    "runs/20261113-c06-native-agents/arms.json",
+    "runs/20261113-c06-native-agents/protocol.md",
+    "runs/20261113-c06-native-agents/protocol-amendment.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "quantage/benchmark.py",
+      "sha256": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b",
+      "sha256_after": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b"
+    },
+    {
+      "path": "quantage/transferstudy.py",
+      "sha256": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+      "sha256_after": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333"
+    },
+    {
+      "path": "quantage/contracts.py",
+      "sha256": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "sha256_after": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef"
+    },
+    {
+      "path": "quantage/agent_pipeline.py",
+      "sha256": "5c6dbc21c93f0f87073f0a571f54fb11b621644bab953a082324f03959d20229",
+      "sha256_after": "5c6dbc21c93f0f87073f0a571f54fb11b621644bab953a082324f03959d20229"
+    },
+    {
+      "path": "quantage/evaluation.py",
+      "sha256": "802a3f3a55ef4688cb3ab6f492b43621581a389544d5f9a754d26e86c8a35be6",
+      "sha256_after": "802a3f3a55ef4688cb3ab6f492b43621581a389544d5f9a754d26e86c8a35be6"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/public_cases.json",
+      "sha256": "11c3c5b17fe8f3c0c9023c4fd8adb829dc8da739b0a4be4001213f6bdce1d0ae",
+      "sha256_after": "11c3c5b17fe8f3c0c9023c4fd8adb829dc8da739b0a4be4001213f6bdce1d0ae"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/private_gold.v2.json",
+      "sha256": "7824bb06651e61986d572d8fa3bf95a19872a2bf8437f7ec555368c645cb4d85",
+      "sha256_after": "7824bb06651e61986d572d8fa3bf95a19872a2bf8437f7ec555368c645cb4d85"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/arms.json",
+      "sha256": "16c18d55b90b86c7573a90d2442f40537eb3d63f8ff4f6202d57f99a362d88ad",
+      "sha256_after": "16c18d55b90b86c7573a90d2442f40537eb3d63f8ff4f6202d57f99a362d88ad"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/protocol.md",
+      "sha256": "f087e68f0db366745a2e435040e15dcdc2c5633b41fe11a69e407dd57a34558f",
+      "sha256_after": "f087e68f0db366745a2e435040e15dcdc2c5633b41fe11a69e407dd57a34558f"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/protocol-amendment.md",
+      "sha256": "5b6bb4005307506aca552e78077c81d8ea6f647884cfacd9e646e8ca47ee2787",
+      "sha256_after": "5b6bb4005307506aca552e78077c81d8ea6f647884cfacd9e646e8ca47ee2787"
+    }
+  ],
+  "output_directory": "runs/20261113-c06-native-agents/results-baselines",
+  "declared_results": [
+    "runs/20261113-c06-native-agents/results-baselines/raw.jsonl",
+    "runs/20261113-c06-native-agents/results-baselines/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c06-native-agents/results-baselines/stdout.txt",
+      "sha256": "40569f970eafeb45b096cac8fd6c839867ca69fcfdb62d1182a04e02a2ab2636",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/results-baselines/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/results-baselines/raw.jsonl",
+      "sha256": "0875d68a14386591aef744099d8073902431ff62fa9235c5264e94195b776db5",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/results-baselines/metrics.json",
+      "sha256": "46bee240b3e6bfa48c7e1b9fcac646b1407234a6772f3bd080f84902cf7a1131",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

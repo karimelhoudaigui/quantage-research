@@ -1,0 +1,466 @@
+{
+  "status": "completed_partial_evidence_audit",
+  "checked_on": "2026-11-16",
+  "python": "3.9.6",
+  "checks_passed": 223,
+  "independence": "Reviewer authored C19 corpus and C20 patch implementation. Separate literal replay and finite predicates; no production patch parser/scorer imported. Not blind or author-independent.",
+  "inventory": {
+    "planned_completion_cases": 2,
+    "attempted_case_ids": [
+      "29507bb778cc",
+      "417127d82203"
+    ],
+    "known_response_records": 1,
+    "known_faithful": 0,
+    "unknown_ids": [
+      "29507bb778cc"
+    ],
+    "full_pilot_faithful_bounds": [
+      0,
+      1
+    ],
+    "unknown_imputed": false,
+    "new_model_or_solver_executions": 0
+  },
+  "known_case": {
+    "id": "417127d82203",
+    "raw_patch": {
+      "diagnosis": "The constraint 'x1 - x2 <= 0' incorrectly prevents selecting entry 1 without entry 2. The original requirement states that selecting entry 2 requires also selecting entry 1, not the reverse. The constraint should be 'x2 - x1 <= 0' to enforce this requirement.",
+      "edits": [
+        {
+          "op": "replace_constraint",
+          "index": 5,
+          "row": "x2 - x1 <= 0"
+        }
+      ]
+    },
+    "initial_row": "x1-x2<=0",
+    "replacement_row": "x2 - x1 <= 0",
+    "materialized_authored_model": {
+      "formulation": "binary_ilp",
+      "variables": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "sense": "max",
+      "objective": [
+        33,
+        45,
+        27,
+        46
+      ],
+      "constraints": [
+        "x0+x1<=1",
+        "x0+x2<=1",
+        "x0+x3<=1",
+        "x1+x3<=1",
+        "x2+x3<=1",
+        "x2 - x1 <= 0",
+        "x0==1",
+        "x3==0",
+        "x0+x1+x2+x3<=2"
+      ]
+    },
+    "before": {
+      "faithful": false,
+      "stage": "finite_cube",
+      "assignments": 16,
+      "feasibility_mismatches": 1,
+      "objective_mismatches": 0,
+      "reference_feasible_count": 2,
+      "proposed_feasible_count": 1,
+      "feedback": {
+        "kind": "counterexamples",
+        "witnesses": [
+          {
+            "kind": "feasibility",
+            "x": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "expected_feasible": true,
+            "proposed_feasible": false
+          }
+        ]
+      },
+      "optimizer_set_equal": false,
+      "finite_optimization_equivalent": false,
+      "candidate_best": 33,
+      "candidate_optima": [
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "after": {
+      "faithful": false,
+      "stage": "finite_cube",
+      "assignments": 16,
+      "feasibility_mismatches": 1,
+      "objective_mismatches": 0,
+      "reference_feasible_count": 2,
+      "proposed_feasible_count": 1,
+      "feedback": {
+        "kind": "counterexamples",
+        "witnesses": [
+          {
+            "kind": "feasibility",
+            "x": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "expected_feasible": true,
+            "proposed_feasible": false
+          }
+        ]
+      },
+      "optimizer_set_equal": false,
+      "finite_optimization_equivalent": false,
+      "candidate_best": 33,
+      "candidate_optima": [
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "reference_feasible_masks": [
+      1,
+      3
+    ],
+    "reference_optimum": 78,
+    "reference_optimal_masks": [
+      3
+    ],
+    "unsupported_exclusions": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ]
+    ],
+    "residual_witness_row_evaluation": [
+      {
+        "index": 0,
+        "lhs": 2,
+        "op": "<=",
+        "rhs": 1,
+        "satisfied": false
+      },
+      {
+        "index": 1,
+        "lhs": 1,
+        "op": "<=",
+        "rhs": 1,
+        "satisfied": true
+      },
+      {
+        "index": 2,
+        "lhs": 1,
+        "op": "<=",
+        "rhs": 1,
+        "satisfied": true
+      },
+      {
+        "index": 3,
+        "lhs": 1,
+        "op": "<=",
+        "rhs": 1,
+        "satisfied": true
+      },
+      {
+        "index": 4,
+        "lhs": 0,
+        "op": "<=",
+        "rhs": 1,
+        "satisfied": true
+      },
+      {
+        "index": 5,
+        "lhs": -1,
+        "op": "<=",
+        "rhs": 0,
+        "satisfied": true
+      },
+      {
+        "index": 6,
+        "lhs": 1,
+        "op": "==",
+        "rhs": 1,
+        "satisfied": true
+      },
+      {
+        "index": 7,
+        "lhs": 0,
+        "op": "==",
+        "rhs": 0,
+        "satisfied": true
+      },
+      {
+        "index": 8,
+        "lhs": 2,
+        "op": "<=",
+        "rhs": 2,
+        "satisfied": true
+      }
+    ]
+  },
+  "unknown_case": {
+    "id": "29507bb778cc",
+    "request_input_ids_count": 1854,
+    "requested_output_cap": 1024,
+    "request_seed": 164844524,
+    "output_tokens": null,
+    "output_model": null,
+    "consumed_input_tokens": null,
+    "wall_seconds": null,
+    "cpu_seconds": null,
+    "cause": "unknown; no response, generation metadata or final runner manifest; captured process reconciliation empty"
+  },
+  "statuses": {
+    "startup_v1": {
+      "model": "partial_error",
+      "runner": "failed",
+      "completion_calls": 0,
+      "wall_seconds": 7.656352583,
+      "cpu_seconds": 5.71148
+    },
+    "unknown_v2": {
+      "runner_manifest": null,
+      "model_generation_metadata": null,
+      "raw_response_records": 0
+    },
+    "known_remaining_v3": {
+      "model": "completed",
+      "server_exit_status": 0,
+      "runner": "result-missing",
+      "runner_exit_status": 0,
+      "missing_results": [
+        "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/001.request.json",
+        "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/001.response.json"
+      ],
+      "missing_files_created_by_audit": false
+    }
+  },
+  "known_completion_cost": {
+    "responses": 1,
+    "input_tokens": 1537,
+    "output_tokens": 106,
+    "wall_seconds": 20.371954209,
+    "cpu_seconds": 0.03063000000000038
+  },
+  "known_case_historical_initial_plus_revision": {
+    "responses": 2,
+    "input_tokens": 2164,
+    "output_tokens": 208,
+    "wall_seconds": 26.839187084,
+    "cpu_seconds": 0.046424000000000465
+  },
+  "partial_pilot_known_responses_including_two_historical_initials": {
+    "responses": 3,
+    "input_tokens": 2896,
+    "output_tokens": 360,
+    "wall_seconds": 35.30870937500001,
+    "cpu_seconds": 0.05883900000000075
+  },
+  "known_phase_metadata": {
+    "wall_seconds": 50.097388667,
+    "load_seconds": 28.098784958,
+    "client_cpu_seconds": 6.263109,
+    "server_cpu_seconds": 5.566396,
+    "cpu_seconds": 11.829505000000001,
+    "input_tokens": 1537,
+    "output_tokens": 106,
+    "backend_requested": {
+      "cpu_threads": 4,
+      "device": "MTL0",
+      "gpu_layers": 99
+    },
+    "backend_observed": {
+      "device": "Metal",
+      "evidence_lines": [
+        "0.15.919.725 I load_tensors: offloaded 37/37 layers to GPU",
+        "0.15.924.461 I load_tensors:  MTL0_Mapped model buffer size =   486.87 MiB",
+        "0.15.924.462 I load_tensors:  MTL0_Mapped model buffer size =  3968.47 MiB"
+      ],
+      "offloaded_gpu_layers": 37,
+      "positive_metal_model_buffer": true,
+      "reported_total_layers": 37,
+      "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+    },
+    "context": 4096,
+    "max_new_tokens": 1024,
+    "diagnosis_character_cap": 768,
+    "server_command": [
+      "/Users/karimelhoudaigui/Downloads/quantage-research/research/external/c16-public/runtime/llama-b12359/llama-server",
+      "--model",
+      "/Users/karimelhoudaigui/Downloads/quantage-research/research/external/c22-public/models/Qwen3-8B-Q4_K_M.gguf",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "50419",
+      "--offline",
+      "--ctx-size",
+      "4096",
+      "--threads",
+      "4",
+      "--threads-batch",
+      "4",
+      "--batch-size",
+      "128",
+      "--ubatch-size",
+      "128",
+      "--n-gpu-layers",
+      "99",
+      "--device",
+      "MTL0",
+      "--parallel",
+      "1",
+      "--no-warmup",
+      "--no-context-shift",
+      "--cache-ram",
+      "0",
+      "--no-webui",
+      "--no-agent",
+      "--no-cache-prompt",
+      "--threads-http",
+      "1",
+      "--log-verbosity",
+      "4",
+      "--jinja",
+      "--chat-template-kwargs",
+      "{\"enable_thinking\":false}"
+    ],
+    "nonthinking_prompt_suffix_checked": true
+  },
+  "acquisition_elapsed_seconds": 64.563125459,
+  "separate_resource_management": {
+    "resource-management.json": {
+      "wall_seconds": 5.222098208999999,
+      "cpu_self_seconds": 0.4176869999999999,
+      "cpu_children_seconds": 1.9912489999999998,
+      "scope": "old closed tmp_pack Git garbage cleanup only, before inference; refs unchanged"
+    },
+    "resource-management-v2.json": {
+      "wall_seconds": 2.111280125,
+      "cpu_self_seconds": 0.30966099999999996,
+      "cpu_children_seconds": 0.22858699999999998,
+      "scope": "old closed tmp_pack Git garbage cleanup only, before inference; refs unchanged"
+    },
+    "resource-management-remaining.json": {
+      "wall_seconds": 4.917000000000116e-06,
+      "cpu_self_seconds": 2.9999999999960614e-06,
+      "cpu_children_seconds": 0.0,
+      "scope": "old closed tmp_pack Git garbage cleanup only, before inference; refs unchanged"
+    }
+  },
+  "cache_eviction": {
+    "pre_eviction_valid_manifest_count": 17,
+    "record_reused_not_rerun": true,
+    "restore_records": [
+      {
+        "sha256_before": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+        "physical_bytes": 2497280736,
+        "paths": [
+          "research/external/c19-public/models/Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf"
+        ],
+        "closed_by_lsof": true,
+        "restore_url": "https://huggingface.co/bartowski/Qwen_Qwen3-4B-Instruct-2507-GGUF/resolve/ae44f08e1392f39c0e474af10c3ff8355c8b6688/Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+        "restore_aliases": "download main path at exact SHA, then recreate listed hardlinks"
+      },
+      {
+        "sha256_before": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+        "physical_bytes": 1117320736,
+        "paths": [
+          "research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "runs/20261115-c16-quantized-repair/dev-preflight-v1/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "runs/20261115-c16-quantized-repair/dev-preflight-v2/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+        ],
+        "closed_by_lsof": true,
+        "restore_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "restore_aliases": "download main path at exact SHA, then recreate listed hardlinks"
+      }
+    ],
+    "scope": "unused public GGUF bytes only, including known aliases; raw/source/valid Gitobjects untouched; reproducibility requires public redownload to these paths"
+  },
+  "model_metadata": {
+    "repository": "Qwen/Qwen3-8B-GGUF",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "filename": "Qwen3-8B-Q4_K_M.gguf",
+    "sha256_declared": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "runtime_tag": "b12359",
+    "runtime_commit": "b1b770d90d94cad9e9ea5b993bdbc383a522fb28",
+    "large_model_bytes_rehashed_by_audit": false
+  },
+  "closed_nonthinking_prompt_suffix": "<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "input_sha256": {
+    "runs/20261115-c22-model-capacity/probe_cases.json": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+    "runs/20261115-c22-model-capacity/remaining_cases.json": "dbebf229d495ccfd49355c83fea2a0aff234b41bc9358a7425c00f20cf1e6696",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+    "runs/20261115-c19-instruct-repair/private_gold.review.json": "1775911ed0d9f7403b85a74768f6694b8e39ff00ee5db33df21d8eced737d192",
+    "research/c19-annotation-oracle/raw.json": "d67cf63fb01e427ffbca89530b025312127e8bbfb89c45fc5b599ec9cef2de6b",
+    "runs/20261115-c22-model-capacity/feedback.json": "738e181f88fe027ba5b3e33a111f5f207e42635b6384eb9973f94958e2d8bfa9",
+    "runs/20261115-c22-model-capacity/instructions.txt": "c6a0e8a7e1d634d508ffb41a886ee033bd13eb49bd9d6c7356fd80c89a682538",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/driver/generation.json": "8a12f80e45f64a700dcc89901131c7d5caaf1f26bca7e49be46c1e0b7c28d92f",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/manifest.json": "c93fa2519da6bebb4ef711258a68569b142e8f3350720c688246b8ae9af5ac63",
+    "runs/20261115-c22-model-capacity/execution-reconciliation-v2.json": "53e5cbc16ff6b3abedc8d14b7a063e059d98c1af48c3a09f3e316e2fd3b5d4ee",
+    "runs/20261115-c22-model-capacity/process-reconciliation-v2.json": "c04433e282f23b605a5ec2dd687423533b8d67738d3b42acb1bfd8f335c00e25",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/raw.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.request.json": "09795bf80374e72b50683cb4fc0efb33f0658b1ff2fcf77f689dd7233e964487",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.response.json": "399ea9e5ffcebc5d77361a7ff95171381ead00826352ba7af6eb44a64405093e",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.request.json": "390689693201e9cab3d3e37f14e50e3a7ac1ba8ed15951c5fa13f435ce369f25",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stderr.txt": "57d42d0cdd88d7e9048b02396dbb8fe11e5892d0937bbba42d15cc1ad5af9388",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/patch-schema.json": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/patch-grammar.gbnf": "82ce543af9f75e0e4c18780bf8e3851dad26db501df27ae74d22e5c873ba6d53",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.prompt.txt": "fb920a686fc3a7d7007e6912d6e36c3ad9f50782ebba8508cd2391321a37367a",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/raw.jsonl": "0b7096d39bbc14a3d701bf4f380b60c9c952b4ca6f0b8a4e6162696117b5d9f2",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.response.json": "60963762e60c943d525fb1cee98187957a638c49f664a852b5fd1c11356c8d3c",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.request.json": "d2d39e9841b3974080f67a084a7f57a2c37d49a4bf9355c60293e6b7e2accc13",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.template.response.json": "6f9b29819fc3207a482f4eedea7e7b1dd1732873df354f066182e6d98167a80d",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.template.request.json": "366575fe6e8e1b8be1396df5dee0d376ab4a8bd32781ca14e92f60709ad018ac",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/generation.json": "f7e1742130f77e4cc3b048be1b804f6b9e8d69e526c50426a6dc29eb4ea374d7",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/manifest.json": "d585afb72081ee1287863b513d54eda7f74d7f7fb49f19c386af545222dc411f",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/stdout.txt": "e337944a3b2bd7fc12a890ad92f06488506d5100a22fff9a7888b123e2829efb",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/patch-schema.json": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/patch-grammar.gbnf": "82ce543af9f75e0e4c18780bf8e3851dad26db501df27ae74d22e5c873ba6d53",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/server.stderr.txt": "51e80d89a912f316f99ccd082554d5636adb4fb3b38e890fbd0e03322771d9f7",
+    "runs/20261115-c22-model-capacity/acquisition.json": "d692962887055660f422ed425e2e26e5adbbb1f9df71a27f8e59824df207fdbf",
+    "runs/20261115-c22-model-capacity/resource-management.json": "5b313abc71cfd6bbc0511b40133037d0a5cd07706d2fd49edcd5975e854128c6",
+    "runs/20261115-c22-model-capacity/resource-management-v2.json": "842fcf684de4510bfa9cc24f75bb9fdb564113a5d2332969134376c4ed1cb004",
+    "runs/20261115-c22-model-capacity/resource-management-remaining.json": "dcab563f2a5d243b2e445d368f97b01522a35bce6451001628d2bc56e2807d7e",
+    "runs/20261115-c22-model-capacity/storage-additional-v2.json": "21e2387c321ec4dc075aed9f740f7a607f8f0860ab2c14bf648308ced10d1b61",
+    "research/c19-c21-validation-before-cache-eviction.json": "5b2e6481473f1839e6578aee04f98b4157d1eb5e3e768751d88a37cee25eddc9"
+  },
+  "hashes_after_equal_before": true,
+  "audit_wall_seconds": 0.008497000000000005,
+  "limits": [
+    "One actual attempted outcome is unknown, never counted as zero tokens, refusal or failure; no full cost or complete2case score.",
+    "Known instruction-direction correction is a local semantic improvement, while full model fidelity remains false.",
+    "Remaining process changed batch/microbatch to128 and used caffeinate; this is not an isolated model-size or latency comparison.",
+    "Loader placement and one completed call do not establish general8GiBfit, GPU-only execution, peak global RAM or future6144context viability.",
+    "Known runtime metadata and cache-eviction records read; no model bytes, installs, process operations, missing-file creation or raw regeneration.",
+    "No C24 generation/output or C23 test outcome read. Two historical posthoc development cases, no novelty/generalization/causal claim."
+  ]
+}

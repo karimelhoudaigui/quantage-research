@@ -1,0 +1,38 @@
+{
+  "run": "20261117-c27-quantized-kv-v2",
+  "protocol_file": "/Users/karimelhoudaigui/Downloads/quantage-research/runs/20261117-c27-quantized-kv-v2/protocol.md",
+  "preflight": {
+    "python_version": "3.11.15",
+    "py_compile": {
+      "status": "passed",
+      "files": [
+        "scripts/run_c27_repair.py",
+        "quantage/repair_second_round_q8_inference.py",
+        "tests/test_repair_second_round_q8.py"
+      ]
+    },
+    "tests": [
+      {
+        "command": "python -m unittest discover -s tests -p test_repair_second_round_q8.py -v",
+        "passed": 2
+      },
+      {
+        "command": "python -m unittest discover -s tests -p test_repair_patch.py -v",
+        "passed": 8
+      },
+      {
+        "command": "python -m unittest discover -s tests -p test_repair_llama_inference.py -v",
+        "passed": 16
+      }
+    ],
+    "c24_frozen_inputs_match": true,
+    "c26_log_reinterpreted_by_current_detector": {
+      "flash_attention_enabled": true,
+      "cache_type_k": "q8_0",
+      "cache_type_v": "q8_0",
+      "generation_requests_sent": 0
+    },
+    "wrapper_dry_run": "passed",
+    "provenance_runner_present": true
+  }
+}

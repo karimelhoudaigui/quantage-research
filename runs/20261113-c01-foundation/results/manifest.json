@@ -1,0 +1,152 @@
+{
+  "schema_version": 2,
+  "claim_id": "C01-FINITE",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-m",
+    "quantage.benchmark",
+    "foundation",
+    "--output",
+    "runs/20261113-c01-foundation/results"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "All optimum bitstrings agree for declared MIS inputs; ideal one-photon probabilities agree within 1e-12.",
+    "coefficient_domain": "exact integer QUBO; IEEE754 complex optical amplitudes",
+    "conventions": "See protocol; modes zero-indexed; angles radians",
+    "inputs": [
+      "all simple labelled graphs n=1..5, unit weights",
+      "100 seeded weighted graphs n=2..6",
+      "125 declared optical angle triples"
+    ],
+    "bounds": {
+      "n_max": 6,
+      "optical_cases": 125,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "Not a proof of agent generalization",
+      "No LLM or QPU performance",
+      "Not a hardware noise model"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "random.Random, Python 3.9.6",
+    "seed": 20261113
+  },
+  "run": {
+    "started_at": "2026-11-13T11:20:15.496288+00:00",
+    "runtime_seconds": 0.255544,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/benchmark.py",
+    "runs/20261113-c01-foundation/protocol.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "quantage/benchmark.py",
+      "sha256": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b",
+      "sha256_after": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b"
+    },
+    {
+      "path": "runs/20261113-c01-foundation/protocol.md",
+      "sha256": "10a8f286e99e5b355d330980d9083e90eabbbe71e5e3f715503fe077e12cf0f0",
+      "sha256_after": "10a8f286e99e5b355d330980d9083e90eabbbe71e5e3f715503fe077e12cf0f0"
+    }
+  ],
+  "output_directory": "runs/20261113-c01-foundation/results",
+  "declared_results": [
+    "runs/20261113-c01-foundation/results/raw.jsonl",
+    "runs/20261113-c01-foundation/results/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c01-foundation/results/stdout.txt",
+      "sha256": "55f7923cf7c592be19d118b94745764b9879cbf8da99da69e5b193f678d8df04",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c01-foundation/results/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c01-foundation/results/raw.jsonl",
+      "sha256": "1d22f5e2d8b4cf5a06eface5fada1acbc6c4875130cad87483fd017993cdfa79",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c01-foundation/results/metrics.json",
+      "sha256": "ef66dcc82af54caec34565fc7a94ddb303c5c09f6e094fa92807eb7f88bc9bae",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

@@ -1,0 +1,1878 @@
+[
+  {
+    "id": "a7cee13741d7",
+    "split": "test",
+    "constraints": {
+      "budget": 85,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        2
+      ],
+      "implications": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "families": "BFILM",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 1,
+      "feasible_masks": [
+        9
+      ],
+      "optimum": 87,
+      "optimal_masks": [
+        9
+      ],
+      "family_drop_checks": {
+        "B": {
+          "additional_count": 1,
+          "witness_mask": 11,
+          "witness": [
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 5,
+          "witness": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 3,
+          "witness": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 1,
+          "witness": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 1,
+          "witness_mask": 10,
+          "witness": [
+            0,
+            1,
+            0,
+            1
+          ]
+        }
+      },
+      "assignments": 16,
+      "design_seed": 2026111900,
+      "attempts": 1545,
+      "rejected_graph_or_data_collisions": 570,
+      "rejected_feasibility_or_family_activity": 974,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "3c3aeb08aafb",
+    "split": "test",
+    "constraints": {
+      "budget": 56,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        1
+      ],
+      "implications": [
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    "families": "BFILM",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 2,
+      "feasible_masks": [
+        12,
+        36
+      ],
+      "optimum": 92,
+      "optimal_masks": [
+        12
+      ],
+      "family_drop_checks": {
+        "B": {
+          "additional_count": 1,
+          "witness_mask": 44,
+          "witness": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        },
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 6,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 5,
+          "witness": [
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 4,
+          "witness": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 2,
+          "witness_mask": 24,
+          "witness": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        }
+      },
+      "assignments": 64,
+      "design_seed": 2026111901,
+      "attempts": 47,
+      "rejected_graph_or_data_collisions": 2,
+      "rejected_feasibility_or_family_activity": 44,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "312bdf4f360f",
+    "split": "test",
+    "constraints": {
+      "budget": 88,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        1
+      ],
+      "implications": [
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "families": "BFIM",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 3,
+      "feasible_masks": [
+        4,
+        12,
+        20
+      ],
+      "optimum": 103,
+      "optimal_masks": [
+        12
+      ],
+      "family_drop_checks": {
+        "B": {
+          "additional_count": 1,
+          "witness_mask": 13,
+          "witness": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 6,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 5,
+          "witness": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 4,
+          "witness_mask": 0,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "assignments": 32,
+      "design_seed": 2026111902,
+      "attempts": 10,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 9,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "433fb7624d1a",
+    "split": "test",
+    "constraints": {
+      "budget": 62,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        4
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": [
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    "families": "BFIM",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 2,
+      "feasible_masks": [
+        16,
+        20
+      ],
+      "optimum": 58,
+      "optimal_masks": [
+        20
+      ],
+      "family_drop_checks": {
+        "B": {
+          "additional_count": 5,
+          "witness_mask": 18,
+          "witness": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 17,
+          "witness": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 24,
+          "witness": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 8,
+          "witness_mask": 0,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "assignments": 128,
+      "design_seed": 2026111903,
+      "attempts": 3,
+      "rejected_graph_or_data_collisions": 1,
+      "rejected_feasibility_or_family_activity": 1,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "29507bb778cc",
+    "split": "test",
+    "constraints": {
+      "budget": 74,
+      "min_count": null,
+      "max_count": 3,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        2
+      ],
+      "implications": [
+        [
+          5,
+          4
+        ]
+      ]
+    },
+    "families": "BFIMU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 6,
+      "feasible_masks": [
+        2,
+        3,
+        10,
+        18,
+        19,
+        50
+      ],
+      "optimum": 129,
+      "optimal_masks": [
+        19
+      ],
+      "family_drop_checks": {
+        "B": {
+          "additional_count": 2,
+          "witness_mask": 11,
+          "witness": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "F": {
+          "additional_count": 3,
+          "witness_mask": 6,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 2,
+          "witness_mask": 34,
+          "witness": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "M": {
+          "additional_count": 11,
+          "witness_mask": 0,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 51,
+          "witness": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      },
+      "assignments": 64,
+      "design_seed": 2026111904,
+      "attempts": 5316,
+      "rejected_graph_or_data_collisions": 224,
+      "rejected_feasibility_or_family_activity": 5091,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "eca92fb0c776",
+    "split": "test",
+    "constraints": {
+      "budget": 58,
+      "min_count": null,
+      "max_count": 2,
+      "required": [
+        3
+      ],
+      "forbidden": [
+        4
+      ],
+      "implications": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "families": "BFIMU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 2,
+      "feasible_masks": [
+        8,
+        10
+      ],
+      "optimum": 67,
+      "optimal_masks": [
+        10
+      ],
+      "family_drop_checks": {
+        "B": {
+          "additional_count": 1,
+          "witness_mask": 9,
+          "witness": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 24,
+          "witness": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 12,
+          "witness": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 5,
+          "witness_mask": 0,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 14,
+          "witness": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ]
+        }
+      },
+      "assignments": 32,
+      "design_seed": 2026111905,
+      "attempts": 1,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 0,
+      "base_index_permutation": [
+        3,
+        2,
+        1,
+        0,
+        4
+      ]
+    }
+  },
+  {
+    "id": "765e3caadee5",
+    "split": "test",
+    "constraints": {
+      "budget": 52,
+      "min_count": null,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [
+        1
+      ],
+      "implications": [
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    "families": "BFIU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 15,
+      "feasible_masks": [
+        0,
+        1,
+        4,
+        5,
+        8,
+        9,
+        12,
+        16,
+        20,
+        24,
+        32,
+        33,
+        36,
+        40,
+        48
+      ],
+      "optimum": 110,
+      "optimal_masks": [
+        33
+      ],
+      "family_drop_checks": {
+        "B": {
+          "additional_count": 2,
+          "witness_mask": 17,
+          "witness": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "F": {
+          "additional_count": 3,
+          "witness_mask": 2,
+          "witness": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 3,
+          "witness_mask": 64,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 44,
+          "witness": [
+            0,
+            0,
+            1,
+            1,
+            0,
+            1,
+            0
+          ]
+        }
+      },
+      "assignments": 128,
+      "design_seed": 2026111906,
+      "attempts": 41,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 40,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "4cc6cc21f46a",
+    "split": "test",
+    "constraints": {
+      "budget": 37,
+      "min_count": null,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [
+        0
+      ],
+      "implications": [
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "families": "BFIU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 3,
+      "feasible_masks": [
+        0,
+        2,
+        4
+      ],
+      "optimum": 38,
+      "optimal_masks": [
+        2
+      ],
+      "family_drop_checks": {
+        "B": {
+          "additional_count": 1,
+          "witness_mask": 16,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 1,
+          "witness": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 8,
+          "witness": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 6,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      },
+      "assignments": 32,
+      "design_seed": 2026111907,
+      "attempts": 349,
+      "rejected_graph_or_data_collisions": 37,
+      "rejected_feasibility_or_family_activity": 311,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "66f7838312e1",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "families": "FILM",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 2,
+      "feasible_masks": [
+        6,
+        7
+      ],
+      "optimum": 81,
+      "optimal_masks": [
+        7
+      ],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 12,
+          "witness": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 5,
+          "witness": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 4,
+          "witness": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 1,
+          "witness_mask": 3,
+          "witness": [
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      },
+      "assignments": 16,
+      "design_seed": 2026111908,
+      "attempts": 2509,
+      "rejected_graph_or_data_collisions": 872,
+      "rejected_feasibility_or_family_activity": 1636,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "8c55da367b52",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 3,
+      "max_count": null,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "families": "FILM",
+    "intended_infeasible": true,
+    "author_check": {
+      "feasible_count": 0,
+      "feasible_masks": [],
+      "optimum": null,
+      "optimal_masks": [],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 2,
+          "witness_mask": 11,
+          "witness": [
+            1,
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 2,
+          "witness_mask": 19,
+          "witness": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 3,
+          "witness_mask": 2,
+          "witness": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 2,
+          "witness_mask": 49,
+          "witness": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            1
+          ]
+        }
+      },
+      "assignments": 64,
+      "design_seed": 2026111909,
+      "attempts": 1,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 0,
+      "base_index_permutation": [
+        1,
+        4,
+        5,
+        2,
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "409b79d93348",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    "families": "FILMU",
+    "intended_infeasible": true,
+    "author_check": {
+      "feasible_count": 0,
+      "feasible_masks": [],
+      "optimum": null,
+      "optimal_masks": [],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 12,
+          "witness": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 2,
+          "witness_mask": 6,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 4,
+          "witness": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 1,
+          "witness_mask": 18,
+          "witness": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 22,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ]
+        }
+      },
+      "assignments": 32,
+      "design_seed": 2026111910,
+      "attempts": 1,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 0,
+      "base_index_permutation": [
+        2,
+        1,
+        4,
+        3,
+        0
+      ]
+    }
+  },
+  {
+    "id": "2755ab981f66",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 4,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        2
+      ],
+      "implications": [
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    "families": "FILMU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 14,
+      "feasible_masks": [
+        3,
+        18,
+        19,
+        34,
+        35,
+        50,
+        51,
+        66,
+        67,
+        82,
+        83,
+        98,
+        99,
+        114
+      ],
+      "optimum": 154,
+      "optimal_masks": [
+        114
+      ],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 15,
+          "witness_mask": 6,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 7,
+          "witness_mask": 10,
+          "witness": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 2,
+          "witness": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 11,
+          "witness_mask": 17,
+          "witness": [
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 115,
+          "witness": [
+            1,
+            1,
+            0,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "assignments": 128,
+      "design_seed": 2026111911,
+      "attempts": 2,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 1,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "e6637cdda4dc",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [
+        0
+      ],
+      "implications": [
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    "families": "FILU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 5,
+      "feasible_masks": [
+        6,
+        10,
+        12,
+        36,
+        40
+      ],
+      "optimum": 97,
+      "optimal_masks": [
+        40
+      ],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 5,
+          "witness_mask": 3,
+          "witness": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 4,
+          "witness_mask": 18,
+          "witness": [
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 5,
+          "witness_mask": 0,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 2,
+          "witness_mask": 14,
+          "witness": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      },
+      "assignments": 64,
+      "design_seed": 2026111912,
+      "attempts": 3,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 2,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "88a560c8b3f6",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 1,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "families": "FILU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 2,
+      "feasible_masks": [
+        2,
+        4
+      ],
+      "optimum": 52,
+      "optimal_masks": [
+        4
+      ],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 8,
+          "witness": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 1,
+          "witness": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 0,
+          "witness": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 5,
+          "witness": [
+            1,
+            0,
+            1,
+            0
+          ]
+        }
+      },
+      "assignments": 16,
+      "design_seed": 2026111913,
+      "attempts": 35,
+      "rejected_graph_or_data_collisions": 14,
+      "rejected_feasibility_or_family_activity": 20,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "6e8232652580",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 3,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        5
+      ],
+      "implications": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "families": "FIMU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 10,
+      "feasible_masks": [
+        4,
+        5,
+        12,
+        13,
+        14,
+        20,
+        68,
+        69,
+        76,
+        84
+      ],
+      "optimum": 167,
+      "optimal_masks": [
+        84
+      ],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 5,
+          "witness_mask": 36,
+          "witness": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        "I": {
+          "additional_count": 4,
+          "witness_mask": 6,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 13,
+          "witness_mask": 0,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 4,
+          "witness_mask": 15,
+          "witness": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "assignments": 128,
+      "design_seed": 2026111914,
+      "attempts": 1,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 0,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "417127d82203",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 2,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "families": "FIMU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 2,
+      "feasible_masks": [
+        1,
+        3
+      ],
+      "optimum": 78,
+      "optimal_masks": [
+        3
+      ],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 9,
+          "witness": [
+            1,
+            0,
+            0,
+            1
+          ]
+        },
+        "I": {
+          "additional_count": 1,
+          "witness_mask": 5,
+          "witness": [
+            1,
+            0,
+            1,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 3,
+          "witness_mask": 0,
+          "witness": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 7,
+          "witness": [
+            1,
+            1,
+            1,
+            0
+          ]
+        }
+      },
+      "assignments": 16,
+      "design_seed": 2026111915,
+      "attempts": 2250,
+      "rejected_graph_or_data_collisions": 879,
+      "rejected_feasibility_or_family_activity": 1370,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "7c800233c771",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    },
+    "families": "FLMU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 2,
+      "feasible_masks": [
+        6,
+        10
+      ],
+      "optimum": 63,
+      "optimal_masks": [
+        6
+      ],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 3,
+          "witness": [
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 2,
+          "witness": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 1,
+          "witness_mask": 12,
+          "witness": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 14,
+          "witness": [
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "assignments": 16,
+      "design_seed": 2026111916,
+      "attempts": 650,
+      "rejected_graph_or_data_collisions": 236,
+      "rejected_feasibility_or_family_activity": 413,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "4dddb4cfc8db",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": []
+    },
+    "families": "FLMU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 3,
+      "feasible_masks": [
+        3,
+        5,
+        33
+      ],
+      "optimum": 96,
+      "optimal_masks": [
+        3
+      ],
+      "family_drop_checks": {
+        "F": {
+          "additional_count": 1,
+          "witness_mask": 9,
+          "witness": [
+            1,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 1,
+          "witness": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "M": {
+          "additional_count": 4,
+          "witness_mask": 6,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 2,
+          "witness_mask": 7,
+          "witness": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      "assignments": 64,
+      "design_seed": 2026111917,
+      "attempts": 7,
+      "rejected_graph_or_data_collisions": 1,
+      "rejected_feasibility_or_family_activity": 5,
+      "base_index_permutation": null
+    }
+  },
+  {
+    "id": "70cc302cf8a4",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        4
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    "families": "ILMU",
+    "intended_infeasible": true,
+    "author_check": {
+      "feasible_count": 0,
+      "feasible_masks": [],
+      "optimum": null,
+      "optimal_masks": [],
+      "family_drop_checks": {
+        "I": {
+          "additional_count": 2,
+          "witness_mask": 17,
+          "witness": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "L": {
+          "additional_count": 1,
+          "witness_mask": 16,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "M": {
+          "additional_count": 2,
+          "witness_mask": 5,
+          "witness": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 21,
+          "witness": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ]
+        }
+      },
+      "assignments": 32,
+      "design_seed": 2026111918,
+      "attempts": 1,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 0,
+      "base_index_permutation": [
+        4,
+        2,
+        0,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "id": "caf531e5abc9",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 4,
+      "max_count": 5,
+      "required": [
+        6
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    "families": "ILMU",
+    "intended_infeasible": false,
+    "author_check": {
+      "feasible_count": 11,
+      "feasible_masks": [
+        71,
+        83,
+        85,
+        86,
+        87,
+        99,
+        101,
+        103,
+        113,
+        115,
+        117
+      ],
+      "optimum": 248,
+      "optimal_masks": [
+        117
+      ],
+      "family_drop_checks": {
+        "I": {
+          "additional_count": 4,
+          "witness_mask": 102,
+          "witness": [
+            0,
+            1,
+            1,
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        "L": {
+          "additional_count": 12,
+          "witness_mask": 64,
+          "witness": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "M": {
+          "additional_count": 16,
+          "witness_mask": 15,
+          "witness": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        "U": {
+          "additional_count": 1,
+          "witness_mask": 119,
+          "witness": [
+            1,
+            1,
+            1,
+            0,
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "assignments": 128,
+      "design_seed": 2026111919,
+      "attempts": 1,
+      "rejected_graph_or_data_collisions": 0,
+      "rejected_feasibility_or_family_activity": 0,
+      "base_index_permutation": null
+    }
+  }
+]

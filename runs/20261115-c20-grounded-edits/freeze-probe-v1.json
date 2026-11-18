@@ -1,0 +1,26 @@
+{
+  "client_date": "2026-11-15",
+  "development_only": true,
+  "cases": 2,
+  "new_guided_calls": 2,
+  "initial_resampled": false,
+  "sha256": {
+    "scripts/run_c20_probe.py": "fe44870f2d64f4b78f969a0f6b29372b09caea6bffe26f7c8c65672064f8e1e0",
+    "scripts/continue_c19_comparison.py": "fdfe41dc24e3c09b17a89759ecf38fe672e8fbb42aa69783aaf9160efb9085a4",
+    "quantage/repair_patch_inference.py": "5e8afddfe5d366168757f2a62ecc624bcd141297561616eded882eb97a51946e",
+    "quantage/repair_patch_language.py": "69b2010c28b56f56e4d8b9c4d34445ac887f9edd5544dccef6fd51e6e8b9e4ab",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "tests/test_repair_patch.py": "b5f1b5bf36f2e82902a50c90aec20ef601bfb99d9e06f27f0fd9955374a44e29",
+    "runs/20261115-c20-grounded-edits/protocol.md": "fcaa04cc0337797220224a2816313f53d0c4e89776540da0812e42349ee5b60d",
+    "runs/20261115-c20-grounded-edits/probe_cases.json": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+    "runs/20261115-c20-grounded-edits/instructions.txt": "91c312b1c9116fbe685d7061e5fc5e8778b9c8c585d4722f9b90fb1ee675ac07",
+    "runs/20261115-c20-grounded-edits/implementation-notes.md": "a22b23a443c8f846310c5237a83b335c1cf2e6f5912efe3a40818f58bb16c274",
+    "runs/20261115-c20-grounded-edits/resource-management.json": "c1035637a59a503a53f8d3a8aef9a60324f6096a2af239c4d5482e9410867768",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+    "runs/20261115-c19-instruct-repair/test-feedback-v2/minimal.json": "7162bddf83622498e08638019e45c21ef1d81d350f2731c584f80720e8e32e9a",
+    "runs/20261115-c19-instruct-repair/acquisition.json": "a528cc7bb876ba5e02084e9593c2bba0b997b053ebbdd92c12345b8cf197b0f6"
+  }
+}

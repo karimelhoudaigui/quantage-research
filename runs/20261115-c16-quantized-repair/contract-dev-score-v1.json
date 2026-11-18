@@ -1,0 +1,60 @@
+{
+  "claim_id": "C16-QUANTIZED-REPAIR",
+  "mathematics": {
+    "assertion_tested": "dev score: actual authored multi-constraint binary ILPs, oracle feedback or finite scoring as applicable",
+    "coefficient_domain": "exact integer ILP; quantized Q4_K_M LLM; float64 HiGHS",
+    "conventions": "same shape schema, known primitive clauses, per-ID SHA256 seeds+round; trusted annotated oracle; no gold in inference",
+    "inputs": [
+      "runs/20261115-c16-quantized-repair/dev_cases.json"
+    ],
+    "bounds": {
+      "cases": 8,
+      "max_new_tokens": 384,
+      "context_tokens": 2048,
+      "n": [
+        4,
+        7
+      ],
+      "max_completion_seconds": 180
+    },
+    "non_claims": [
+      "No QPU, spending or free-text semantic guarantee",
+      "No isolated quantization/grammar causal effect",
+      "No population confidence interval or general novelty",
+      "Direct token probability is a pinned-API selection heuristic",
+      "Solver choice is ex-post profiling, cost of both included"
+    ]
+  },
+  "execution_artifacts": [
+    "scripts/run_c16_phase.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_language.py",
+    "runs/20261115-c16-quantized-repair/dev_cases.json",
+    "runs/20261115-c16-quantized-repair/instructions.v2.txt",
+    "runs/20261115-c16-quantized-repair/protocol.md",
+    "quantage/repair_study_c16.py",
+    "runs/20261115-c16-quantized-repair/gold.json",
+    "runs/20261115-c16-quantized-repair/dev-initial-v1/driver/raw.jsonl",
+    "quantage/repair_solvers.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "llama.cpp",
+      "version": "1.0.0-dev build12359 b1b770d90"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

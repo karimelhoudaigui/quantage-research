@@ -1,0 +1,38 @@
+[
+  {
+    "id": "765e3caadee5",
+    "language": "fr",
+    "intention": "On doit arrêter le portefeuille C19-7. Les 7 campagnes ont pour indices 0 à 6. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. L'indice 1 est interdit dans la sélection. Retenir l'indice 6 impose aussi de retenir l'indice 4 ; la réciproque n'est pas imposée. Le coût cumulé, somme des costs retenus, est limité à 52, borne incluse. Le nombre d'éléments retenus ne dépasse pas 2. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        49,
+        45,
+        24,
+        27,
+        43,
+        61,
+        25
+      ],
+      "costs": [
+        33,
+        33,
+        18,
+        14,
+        31,
+        16,
+        36
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    }
+  }
+]

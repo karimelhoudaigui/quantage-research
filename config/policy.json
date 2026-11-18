@@ -1,0 +1,15 @@
+{
+  "qpu_providers": [
+    "Pasqal",
+    "Quandela"
+  ],
+  "simulation_extensions": [
+    "Quobly SpinPulse"
+  ],
+  "other_french_providers": "Admettre apr\u00e8s v\u00e9rification documentaire de leurs capacit\u00e9s; ne pas pr\u00e9sumer acc\u00e8s QPU.",
+  "qpu_submission_enabled": false,
+  "external_spend_eur": 0,
+  "max_cycles_per_launch": 16,
+  "seconds_per_cycle": 1800,
+  "max_parallel_agents": 4
+}

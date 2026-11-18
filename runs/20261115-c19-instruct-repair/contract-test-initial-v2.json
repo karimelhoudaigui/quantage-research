@@ -1,0 +1,123 @@
+{
+  "claim_id": "C19-QUANTIZED-REPAIR",
+  "mathematics": {
+    "assertion_tested": "test initial: actual authored multi-constraint binary ILPs, oracle feedback or finite scoring as applicable",
+    "coefficient_domain": "exact integer ILP; quantized Q4_K_M LLM; float64 HiGHS",
+    "conventions": "same generic linear grammar, known primitive clauses, per-ID SHA256 seeds+round; trusted annotated oracle; no gold in inference",
+    "inputs": [
+      "runs/20261115-c19-instruct-repair/test_cases.json"
+    ],
+    "bounds": {
+      "cases": 20,
+      "max_new_tokens": 512,
+      "context_tokens": 4096,
+      "n": [
+        4,
+        7
+      ],
+      "max_completion_seconds": 180
+    },
+    "non_claims": [
+      "No QPU, spending or free-text semantic guarantee",
+      "No isolated quantization/grammar causal effect",
+      "No population confidence interval or general novelty",
+      "Direct token probability is a pinned-API selection heuristic",
+      "Solver choice is ex-post profiling, cost of both included"
+    ]
+  },
+  "execution_artifacts": [
+    "scripts/run_c19_phase_v2.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_language.py",
+    "runs/20261115-c19-instruct-repair/test_cases.json",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt",
+    "runs/20261115-c19-instruct-repair/protocol.md",
+    "runs/20261115-c19-instruct-repair/protocol-test.md",
+    "runs/20261115-c19-instruct-repair/freeze-test-v2.json",
+    "runs/20261115-c19-instruct-repair/annotation-agreement.json",
+    "quantage/repair_llama_linear.py",
+    "runs/20261115-c19-instruct-repair/acquisition.json",
+    "research/external/c19-public/models/Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "research/external/c16-public/runtime/llama-b12359/llama-mtmd-debug",
+    "research/external/c16-public/runtime/llama-b12359/llama-tokenize",
+    "research/external/c16-public/runtime/llama-b12359/llama-cli",
+    "research/external/c16-public/runtime/llama-b12359/llama-batched-bench",
+    "research/external/c16-public/runtime/llama-b12359/libggml-base.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-minicpmv-cli",
+    "research/external/c16-public/runtime/llama-b12359/libggml.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-connect",
+    "research/external/c16-public/runtime/llama-b12359/libggml-metal.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/LICENSE",
+    "research/external/c16-public/runtime/llama-b12359/libggml.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-blas.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-results",
+    "research/external/c16-public/runtime/llama-b12359/libmtmd.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-server-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-gguf-split",
+    "research/external/c16-public/runtime/llama-b12359/libggml-base.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-perplexity",
+    "research/external/c16-public/runtime/llama-b12359/llama-imatrix",
+    "research/external/c16-public/runtime/llama-b12359/libggml-rpc.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-fit-params",
+    "research/external/c16-public/runtime/llama-b12359/ggml-rpc-server",
+    "research/external/c16-public/runtime/llama-b12359/libggml-metal.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-qwen2vl-cli",
+    "research/external/c16-public/runtime/llama-b12359/libllama.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-blas.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-gemma3-cli",
+    "research/external/c16-public/runtime/llama-b12359/libmtmd.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-completion-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-bench-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-cpu.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-perplexity-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-cpu.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-rpc.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-mtmd-cli",
+    "research/external/c16-public/runtime/llama-b12359/ggml-metal-tuning",
+    "research/external/c16-public/runtime/llama-b12359/libggml-metal.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-cvector-generator",
+    "research/external/c16-public/runtime/llama-b12359/libllama-quantize-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-completion",
+    "research/external/c16-public/runtime/llama-b12359/libggml-cpu.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-bench",
+    "research/external/c16-public/runtime/llama-b12359/libggml-base.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-cli-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-blas.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libmtmd.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-common.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-server",
+    "research/external/c16-public/runtime/llama-b12359/libllama-batched-bench-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-llava-cli",
+    "research/external/c16-public/runtime/llama-b12359/libllama-common.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-common.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-tts",
+    "research/external/c16-public/runtime/llama-b12359/libggml.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-quantize",
+    "research/external/c16-public/runtime/llama-b12359/llama-export-lora",
+    "research/external/c16-public/runtime/llama-b12359/libllama-fit-params-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-rpc.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "llama.cpp",
+      "version": "1.0.0-dev build12359 b1b770d90"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "llama.cpp per-ID SHA256 first8hex + round offset",
+    "seed": 0
+  }
+}

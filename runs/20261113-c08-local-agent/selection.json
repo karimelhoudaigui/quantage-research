@@ -1,0 +1,39 @@
+{
+  "rule": "first four lexicographic group IDs per numerical-schema family; retain all paired cases, no label filtering",
+  "groups": {
+    "mis": [
+      "g_34499792cc04",
+      "g_4b208b3e66f2",
+      "g_5ad30e941c71",
+      "g_8866adac8bbd"
+    ],
+    "photon": [
+      "g_22d4cf66b0d1",
+      "g_48925fbab3e0",
+      "g_4f6cf303a9df",
+      "g_89d264b48647"
+    ]
+  },
+  "cases": 16,
+  "ids": [
+    "q_102ff810a069",
+    "q_19d11c70f915",
+    "q_26a31ac7003d",
+    "q_2c074443d82b",
+    "q_508994ad3b05",
+    "q_59406adaa7b5",
+    "q_6bf2519d6be0",
+    "q_7cf4e858e97b",
+    "q_947ea6516776",
+    "q_9a214e12ea8b",
+    "q_aab7987d440e",
+    "q_ba86bb306293",
+    "q_be0c1190deaa",
+    "q_ca9678cc7da3",
+    "q_d615a33b3e3a",
+    "q_fa5c340df7d4"
+  ],
+  "source_public_sha256": "11c3c5b17fe8f3c0c9023c4fd8adb829dc8da739b0a4be4001213f6bdce1d0ae",
+  "source_gold_sha256": "7824bb06651e61986d572d8fa3bf95a19872a2bf8437f7ec555368c645cb4d85",
+  "candidate_outputs_read": false
+}

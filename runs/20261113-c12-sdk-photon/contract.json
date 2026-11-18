@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "claim": "C12-SDK-PHOTON-GRID",
+  "assertion_tested": "486 declared ideal two-photon three-mode circuits/inputs agree with independent creation-operator/trigonometric oracle within1e-10; SDK negative probes documented",
+  "mode_count": 3,
+  "photon_count": 2,
+  "photons": "indistinguishable",
+  "observable": "photon_number_resolving_distribution",
+  "loss": 0,
+  "noise": false,
+  "postselection": false,
+  "a_b_c_grid": [
+    "0",
+    "pi/4",
+    "pi/2"
+  ],
+  "phi_grid": [
+    "0",
+    "pi/3",
+    "pi"
+  ],
+  "configurations": 81,
+  "evaluations": 486,
+  "outputs_per_evaluation": 6,
+  "tolerance": 1e-10,
+  "max_runtime_seconds": 180,
+  "negative_probe_timeout_seconds": 20,
+  "qpu_submission": false,
+  "external_purchase_eur": 0,
+  "independent_review": "pending",
+  "non_claims": [
+    "hardware access",
+    "QPU compatibility",
+    "LLM performance",
+    "quantum advantage",
+    "mathematical novelty",
+    "universal correctness"
+  ]
+}

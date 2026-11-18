@@ -1,0 +1,19 @@
+{
+  "kind": "post-hoc CLI integration and exact single-case raw replay",
+  "command": [
+    ".venv-local-llm/bin/python",
+    "-m",
+    "quantage.local_agent_cli",
+    "--request",
+    "examples/ambiguous-objective.json",
+    "--record-dir",
+    "runs/20261113-c10-regression-release/cli-ambiguous-objective-v4"
+  ],
+  "exit_code": 2,
+  "wall_seconds": 12.883099459,
+  "raw_response_reproduced_exactly": true,
+  "source_id": "q_ad48958b4f32",
+  "pipeline_status": "abstain",
+  "stage": "semantic_veto",
+  "cli_sha256": "77993c451b9e6c600ca031e24c659487736de6d3a54e5bb934d56db80a2f3473"
+}

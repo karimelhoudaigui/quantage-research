@@ -1,0 +1,67 @@
+{
+  "claim_id": "C13-SDK-RYDBERG-GRID",
+  "mathematics": {
+    "assertion_tested": "162 declared AnalogDevice constant-pulse sequences agree with separately constructed 4x4 finite-interaction Hamiltonian: H(t=0) within1e-10; probabilities within5e-3 including nominal-pulse/SDK-edge discrepancy; normalization within1e-8. Nine SDK constraint probes observed.",
+    "coefficient_domain": "complex floating point; C6 read from pinned installed Device specification, not fitted",
+    "conventions": "oracle gg,gr,rg,rr; SDK reversed; phases/rabi/detunings rad/us, positionsum,time ns convertedus; no modulation/noise/shots",
+    "inputs": [
+      "r in{6,10,14},Omega in{0,1,2},delta in{-1,0,1},phi in{0,pi/2},durationns in{100,500,1000}"
+    ],
+    "bounds": {
+      "evaluations": 162,
+      "atoms": 2,
+      "probability_tolerance": 0.005,
+      "hamiltonian_tolerance": 1e-10,
+      "normalization_tolerance": 1e-08
+    },
+    "non_claims": [
+      "QPU execution or accessibility",
+      "complete QPU-backend/layout compatibility",
+      "LLM generalization",
+      "quantum advantage",
+      "algorithmic novelty",
+      "population inference"
+    ]
+  },
+  "software": [
+    {
+      "name": "Python computation",
+      "version": "3.11.15"
+    },
+    {
+      "name": "pulser",
+      "version": "1.7.2"
+    },
+    {
+      "name": "pulser-simulation",
+      "version": "1.7.2"
+    },
+    {
+      "name": "qutip",
+      "version": "5.2.3"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.4"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "execution_artifacts": [
+    "quantage/sdk_rydberg.py",
+    "quantage/__init__.py",
+    "tests/test_sdk_rydberg.py",
+    "runs/20261113-c13-sdk-rydberg/protocol.md",
+    "runs/20261113-c13-sdk-rydberg/preregistration.json",
+    "runs/20261113-c13-sdk-rydberg/sources.json",
+    "runs/20261113-c13-sdk-rydberg/environment.json",
+    "runs/20261113-c13-sdk-rydberg/requirements-pulser.txt"
+  ]
+}

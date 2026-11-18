@@ -1,0 +1,98 @@
+{
+  "claim_id": "C22-ONE-OBSERVED-ONE-UNKNOWN",
+  "mathematics": {
+    "assertion_tested": "Exact literal replay and16point finite check of one conserved8Bpatch; independently distinguish one unobserved attempted completion from a pre-start guard and erroneous declared runner results.",
+    "coefficient_domain": "exact integers and reported floating point probabilities/times",
+    "conventions": "Use C19 reviewer annotations/oracle; parse model with separate stdlib interpreter, no production patch/scorer imports; unknown output metrics remain null.",
+    "inputs": [
+      "One conserved C22 completion, one serialized request without response",
+      "C19 historical initial and independent reviewer reference",
+      "Original manifests, reconciliation and cache provenance records"
+    ],
+    "bounds": {
+      "known_cases": 1,
+      "unknown_cases": 1,
+      "n_known": 4,
+      "assignments": 16,
+      "completion_cap": 1024,
+      "diagnosis_cap": 768,
+      "audit_internal_seconds": 60
+    },
+    "non_claims": [
+      "No model/runtime/solver execution or missing output creation",
+      "No full2case score, missing token imputation or global memory fit claim",
+      "No isolated checkpoint-size effect or independent author-blind review"
+    ]
+  },
+  "execution_artifacts": [
+    "research/c22-observed-review.py",
+    "research/c16-observed-audit.py",
+    "research/c19-annotation-oracle/raw.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/private_gold.review.json",
+    "research/c19-c21-validation-before-cache-eviction.json",
+    "runs/20261115-c22-model-capacity/acquisition.json",
+    "runs/20261115-c22-model-capacity/contract-probe-guided-v1.json",
+    "runs/20261115-c22-model-capacity/contract-probe-guided-v2.json",
+    "runs/20261115-c22-model-capacity/contract-probe-remaining-v3.json",
+    "runs/20261115-c22-model-capacity/execution-reconciliation-v2.json",
+    "runs/20261115-c22-model-capacity/feedback.json",
+    "runs/20261115-c22-model-capacity/freeze-probe-v1.json",
+    "runs/20261115-c22-model-capacity/freeze-probe-v2.json",
+    "runs/20261115-c22-model-capacity/freeze-remaining-v3.json",
+    "runs/20261115-c22-model-capacity/instructions.txt",
+    "runs/20261115-c22-model-capacity/preparation-incident.md",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/driver/generation.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/driver/patch-schema.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/manifest.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/stdout.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.prompt.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.request.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.request.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.response.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/patch-schema.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/raw.jsonl",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stdout.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/stdout.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/generation.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.prompt.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.request.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.response.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.template.request.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.template.response.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/patch-schema.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/raw.jsonl",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/server.stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/server.stdout.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/manifest.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/stdout.txt",
+    "runs/20261115-c22-model-capacity/probe_cases.json",
+    "runs/20261115-c22-model-capacity/process-reconciliation-v2.json",
+    "runs/20261115-c22-model-capacity/protocol.md",
+    "runs/20261115-c22-model-capacity/remaining-amendment.md",
+    "runs/20261115-c22-model-capacity/remaining_cases.json",
+    "runs/20261115-c22-model-capacity/resource-cleanup.jsonl",
+    "runs/20261115-c22-model-capacity/resource-management-remaining.json",
+    "runs/20261115-c22-model-capacity/resource-management-v2.json",
+    "runs/20261115-c22-model-capacity/resource-management.json",
+    "runs/20261115-c22-model-capacity/startup-incident-v1.json",
+    "runs/20261115-c22-model-capacity/storage-additional-v2.json",
+    "runs/20261115-c22-model-capacity/storage-additional.json",
+    "runs/20261115-c22-model-capacity/storage-preparation.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

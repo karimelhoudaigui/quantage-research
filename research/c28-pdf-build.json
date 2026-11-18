@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/Users/karimelhoudaigui/Downloads/quantage-research/research/external/tectonic/tectonic",
+    "--untrusted",
+    "--only-cached",
+    "--keep-logs",
+    "--makefile-rules",
+    "/Users/karimelhoudaigui/Downloads/quantage-research/paper/build-c28-v1/dependencies.mk",
+    "--outdir",
+    "/Users/karimelhoudaigui/Downloads/quantage-research/paper/build-c28-v1",
+    "/Users/karimelhoudaigui/Downloads/quantage-research/paper/build-c28-v1/main.tex"
+  ],
+  "binary_sha256": "b52b5a730e2b0b33087304f7720f649603953f270a6b1c88bb031e1ae01f7f9c",
+  "tex_sha256_before": "b93475382885a9353c2816217a84e6c87e0c99e7b96c14c804096bf82489de7e",
+  "tex_sha256_after": "b93475382885a9353c2816217a84e6c87e0c99e7b96c14c804096bf82489de7e",
+  "exit_code": 0,
+  "error": null,
+  "runtime_seconds": 0.9722169580054469,
+  "environment_scope": "PATH, LANG and local TECTONIC_CACHE_DIR only; no shell escape",
+  "outputs": {
+    "paper/build-c28-v1/stdout.txt": "095af66d9df214b1fa742612c8e93c78e7aae90fdf34a5661c6770c4913dc28d",
+    "paper/build-c28-v1/main.pdf": "40ccbe6e3471be898a4103298d56406437153fc71daa1fb64b999dea695b39c2",
+    "paper/build-c28-v1/dependencies.mk": "fa96b5c1f8e88d9dc19b1eb0324fcbac901484ce23d18f23ea7fd65e94d7244d",
+    "paper/build-c28-v1/main.tex": "b93475382885a9353c2816217a84e6c87e0c99e7b96c14c804096bf82489de7e",
+    "paper/build-c28-v1/stderr.txt": "5842f5c8051d38e9d014bd036df0168c516bb40424bd2a20aa1514b11a7a2518",
+    "paper/build-c28-v1/main.log": "a2bc7229006c9efc9f61192b718ed8d1018aa53655cf1e83592b52b2c9a649a9",
+    "paper/main.pdf": "40ccbe6e3471be898a4103298d56406437153fc71daa1fb64b999dea695b39c2"
+  },
+  "scope": "Compilation checks syntax and layout, not scientific truth or submission readiness."
+}

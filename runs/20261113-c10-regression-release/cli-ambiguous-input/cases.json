@@ -1,0 +1,16 @@
+[
+  {
+    "id": "local_request",
+    "request": {
+      "intent": "For a lossless coherent optical network, calculate the output probabilities. There is one input photon but its input mode has not been specified: it may be mode 0 or mode 1, and I do not authorize choosing either. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Apply R(a), exp(i*phi) on mode 1, then R(b); use radians.",
+      "data": {
+        "a": 0.67,
+        "b": 0.19,
+        "phi": -0.88,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "client_date": "2026-11-16",
+  "cases": 20,
+  "exact_contract_agreements": 20,
+  "differences": [],
+  "gold_basis": "reviewerpublic-onlycontracts; normalizedcontainer, originalsimmutable",
+  "sha256": {
+    "runs/20261115-c23-compositional-repair/test_cases.json": "fd8442be1df42c65bda00fb97a6d4627c638e69fea7211e0a8f3c8c9f8ae0ea1",
+    "runs/20261115-c23-compositional-repair/private_gold.author.json": "7aadec43fe1feee31aa063bac78b835f5f4f0eba0498913a751239665d39a8e5",
+    "runs/20261115-c23-compositional-repair/private_gold.review.json": "d874ff3b11a15d817a38a3c32698351a08512b80e8b3f11341fd7a7a9165f002",
+    "research/c23-annotation-review-freeze.json": "7919af3796c425b237b46acdc03d2c38600141390eac7e717ca04a81ab3a89e0"
+  },
+  "scope": "distinctauthor/reviewerroles, no human/modelindependence or populationguarantee"
+}

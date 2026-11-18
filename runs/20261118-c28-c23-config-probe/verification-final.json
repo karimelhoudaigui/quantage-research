@@ -1,0 +1,180 @@
+{
+  "cycle": "C28",
+  "cycle_status": "complete",
+  "gate_status": "blocked",
+  "gate_passed": false,
+  "integrity_checks_passed": true,
+  "integrity_failures": [],
+  "primary_outcome": "request_timeout_without_complete_response",
+  "interpretation": "The exact 180-second request bound expired before the client received a complete response. The driver recorded zero completed rows and no response file; this does not establish that zero tokens were sampled by the server.",
+  "measurements": {
+    "runner_seconds": 252.596639,
+    "driver_wall_seconds": 244.18168016600248,
+    "model_load_seconds": 56.01436783300596,
+    "request_timeout_seconds": 180.0,
+    "prompt_tokens_in_HTTP_request": 740,
+    "prompt_tokens_logged_by_server": 740,
+    "prompt_progress_tokens_logged": 640,
+    "prompt_progress_seconds": 126.05,
+    "client_recorded_output_tokens": 0,
+    "actual_generated_token_count": null
+  },
+  "runtime": {
+    "tag": "b12359",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "backend_requested": {
+      "cpu_threads": 4,
+      "device": "MTL0",
+      "gpu_layers": 30
+    },
+    "backend_observed": {
+      "device": "Metal",
+      "evidence_lines": [
+        "0.13.597.747 I load_tensors: offloaded 30/37 layers to GPU",
+        "0.13.604.403 I load_tensors:  MTL0_Mapped model buffer size =   486.87 MiB",
+        "0.13.604.404 I load_tensors:  MTL0_Mapped model buffer size =  3176.72 MiB"
+      ],
+      "offloaded_gpu_layers": 30,
+      "positive_metal_model_buffer": true,
+      "reported_total_layers": 37,
+      "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+    },
+    "flash_attention": "auto",
+    "cache_k": "f16",
+    "cache_v": "f16",
+    "server_reaped": true,
+    "server_exit_status": -9,
+    "cleanup_error": null,
+    "explicit_OOM_log_marker": false
+  },
+  "runner": {
+    "status": "failed",
+    "exit_status": 1,
+    "missing_results": [
+      "runs/20261118-c28-c23-config-probe/initial-v1/driver/http/000.response.json"
+    ],
+    "invalid_results": []
+  },
+  "checks": {
+    "frozen_sources_unchanged": {
+      "passed": true,
+      "details": []
+    },
+    "execution_contract_unchanged": {
+      "passed": true,
+      "details": "ede2137178226844dfa6d04bba23fd2929891a2f04385e61f29182b4306a067c"
+    },
+    "selected_case_matches_C19_development_source": {
+      "passed": true,
+      "details": {
+        "case_id": "765e3caadee5",
+        "n7_cases": 5,
+        "intention_characters": 653
+      }
+    },
+    "no_reserved_C23_corpus_or_gold_input": {
+      "passed": true,
+      "details": []
+    },
+    "pinned_runtime_default_help": {
+      "passed": true,
+      "details": null
+    },
+    "observed_C23_runtime_defaults": {
+      "passed": true,
+      "details": {
+        "flash_attn_auto": true,
+        "kv_k_f16": true,
+        "kv_v_f16": true
+      }
+    },
+    "requested_server_configuration": {
+      "passed": true,
+      "details": null
+    },
+    "Metal_tensor_offload_observed": {
+      "passed": true,
+      "details": {
+        "device": "Metal",
+        "evidence_lines": [
+          "0.13.597.747 I load_tensors: offloaded 30/37 layers to GPU",
+          "0.13.604.403 I load_tensors:  MTL0_Mapped model buffer size =   486.87 MiB",
+          "0.13.604.404 I load_tensors:  MTL0_Mapped model buffer size =  3176.72 MiB"
+        ],
+        "offloaded_gpu_layers": 30,
+        "positive_metal_model_buffer": true,
+        "reported_total_layers": 37,
+        "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+      }
+    },
+    "complete_parser_valid_EOS_response": {
+      "passed": false,
+      "details": {
+        "response_file_exists": false,
+        "raw_rows": 0,
+        "generation_status": "partial_error",
+        "completed": 0
+      }
+    },
+    "bounded_runner_completed": {
+      "passed": false,
+      "details": {
+        "started_at": "2026-11-18T15:35:08.968804+00:00",
+        "runtime_seconds": 252.596639,
+        "exit_status": 1,
+        "status": "failed",
+        "timeout_seconds": 1800.0,
+        "max_output_bytes": 8388608,
+        "resource_limits": {
+          "memory_bytes": null,
+          "cpu_seconds": null,
+          "max_cores": null,
+          "max_threads": 4
+        },
+        "missing_results": [
+          "runs/20261118-c28-c23-config-probe/initial-v1/driver/http/000.response.json"
+        ],
+        "invalid_results": []
+      }
+    },
+    "server_reaped_without_cleanup_error": {
+      "passed": true,
+      "details": null
+    },
+    "single_request_timeout_recorded": {
+      "passed": true,
+      "details": {
+        "error": "TimeoutError: signal 14: interrupted phase, preserve actual rows",
+        "request_timeout_seconds": 180.0
+      }
+    },
+    "explicit_OOM_log_marker": {
+      "passed": true,
+      "details": false
+    }
+  },
+  "c23_corpus_or_gold_inputs": [],
+  "audit_scope": "offline evidence audit; no model, network, corpus, or gold access",
+  "independent_review": "No separate reviewer; audit is by the integrator.",
+  "preliminary_checker": {
+    "file": "runs/20261118-c28-c23-config-probe/verification.json",
+    "superseded_by": "runs/20261118-c28-c23-config-probe/verification-final.json",
+    "false_positives": [
+      "Substring matching treated the C28 directory name as a C23 corpus path.",
+      "The first checker looked for filtered_help at the wrong JSON level."
+    ],
+    "gate_outcome_remains_blocked": true
+  },
+  "sha256": {
+    "runs/20261118-c28-c23-config-probe/freeze-v1.json": "dfad25b30954dea85132e7a1d6c4caf8df70600056189181592313cecedff79a",
+    "runs/20261118-c28-c23-config-probe/contract-initial-v1.json": "ede2137178226844dfa6d04bba23fd2929891a2f04385e61f29182b4306a067c",
+    "runs/20261118-c28-c23-config-probe/protocol.md": "2b4c8b8ca8f5451da113cf1fa40470c7d908d43428d87e4c913939e9034f503f",
+    "runs/20261118-c28-c23-config-probe/case.json": "5129c0d6fbeaceb427551043ef21bc8b8e35af17848cdf1c1ddc12d0cf63868b",
+    "runs/20261118-c28-c23-config-probe/initial-v1/manifest.json": "4ef580d28ddb80e23adaf46fb19a20a61695a41d66b51b2dc637083fdc4d355a",
+    "runs/20261118-c28-c23-config-probe/initial-v1/driver/generation.json": "4746b7b32d9b14fdb1fa01e43491e57a1c32e4dff30a2baae77c24b6757c7740",
+    "runs/20261118-c28-c23-config-probe/initial-v1/driver/http/000.request.json": "59962cd60b20fc86e79459414df82ea7c7f6fee5eaebf5e0074b37cad806a50a",
+    "runs/20261118-c28-c23-config-probe/initial-v1/driver/raw.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261118-c28-c23-config-probe/initial-v1/driver/server.stderr.txt": "c0a08e52f6f297fb5acb45d630053731797ecceaf6134e2caa2a7c850181e502"
+  },
+  "audit_script_sha256": "2d7647867f833da633273da14af4989282e81f2321c5cc18229591869c615b1e"
+}

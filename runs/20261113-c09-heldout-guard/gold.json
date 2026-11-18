@@ -1,0 +1,114 @@
+[
+  {
+    "id": "q_47eb07193267",
+    "expected_action": "propose",
+    "family": "mis",
+    "reason": "Valid two-vertex maximum-weight independent set.",
+    "canonical_intent": "Maximize the weight of an independent set."
+  },
+  {
+    "id": "q_2f2e839717d9",
+    "expected_action": "propose",
+    "family": "photon",
+    "reason": "Exactly the core single-photon, two-mode, coherent lossless circuit and probability observable.",
+    "canonical_intent": "Compute ideal single-photon output probabilities."
+  },
+  {
+    "id": "q_b8ccfcda3441",
+    "expected_action": "propose",
+    "family": "photon",
+    "reason": "Supported paraphrase with explicit source, ideality, observable and component order.",
+    "canonical_intent": "Compute ideal single-photon output probabilities."
+  },
+  {
+    "id": "q_e1e7124a8604",
+    "expected_action": "abstain",
+    "family": "photon",
+    "reason": "The requested complex-amplitude observable differs from core’s output probabilities.",
+    "canonical_intent": null
+  },
+  {
+    "id": "q_d201e47573a0",
+    "expected_action": "propose",
+    "family": "mis",
+    "reason": "Supported weighted MIS; vendor is a future interest, not a demand for hardware execution.",
+    "canonical_intent": "Maximize the weight of an independent set."
+  },
+  {
+    "id": "q_93b97a91759c",
+    "expected_action": "abstain",
+    "family": "mis",
+    "reason": "n=3 disagrees with the two weights; invalid data must not be repaired silently.",
+    "canonical_intent": null
+  },
+  {
+    "id": "q_8d4693aec7e5",
+    "expected_action": "propose",
+    "family": "mis",
+    "reason": "Valid maximum-weight independent-set task.",
+    "canonical_intent": "Maximize the weight of an independent set."
+  },
+  {
+    "id": "q_1d0d82d4a9b8",
+    "expected_action": "propose",
+    "family": "photon",
+    "reason": "Supported probability computation with a negative real rotation angle.",
+    "canonical_intent": "Compute ideal single-photon output probabilities."
+  },
+  {
+    "id": "q_c8460a41cbce",
+    "expected_action": "propose",
+    "family": "photon",
+    "reason": "The requested two-outcome ideal distribution equals the core output probabilities.",
+    "canonical_intent": "Compute ideal single-photon output probabilities."
+  },
+  {
+    "id": "q_044a69872b75",
+    "expected_action": "propose",
+    "family": "photon",
+    "reason": "Supported single-photon probability task, including a negative phase.",
+    "canonical_intent": "Compute ideal single-photon output probabilities."
+  },
+  {
+    "id": "q_7dc8bd369f02",
+    "expected_action": "abstain",
+    "family": "mis",
+    "reason": "The edge endpoint 4 lies outside the valid zero-based vertex range 0..3.",
+    "canonical_intent": null
+  },
+  {
+    "id": "q_ad48958b4f32",
+    "expected_action": "abstain",
+    "family": "mis",
+    "reason": "The objective is explicitly unresolved; canonicalizing to weighted MIS would silently resolve ambiguity.",
+    "canonical_intent": null
+  },
+  {
+    "id": "q_33cf35350c7a",
+    "expected_action": "abstain",
+    "family": "mis",
+    "reason": "Direction non précisée: optimiser peut minimiser ou maximiser; demander clarification au lieu de supposer maximum.",
+    "canonical_intent": null
+  },
+  {
+    "id": "q_b3da77afac4f",
+    "expected_action": "abstain",
+    "family": "photon",
+    "reason": "Two-photon input and photons=2 are outside the supported single-photon contract.",
+    "canonical_intent": null
+  },
+  {
+    "id": "q_e9c9eeaaec7d",
+    "expected_action": "propose",
+    "family": "mis",
+    "reason": "Valid independent-set objective expressed as conflict selection.",
+    "canonical_intent": "Maximize the weight of an independent set."
+  },
+  {
+    "id": "q_ea7fda3d1cde",
+    "expected_action": "abstain",
+    "family": "photon",
+    "reason": "Input mode is explicitly unresolved; choosing |1,0> would add a silent assumption.",
+    "canonical_intent": null
+  }
+]

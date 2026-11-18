@@ -1,0 +1,262 @@
+{
+  "schema_version": 2,
+  "claim_id": "C15-OBSERVED-RECORDS-INDEPENDENT-AUDIT",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    ".venv-local-llm/bin/python",
+    "research/c15-observed-audit-v2.py",
+    "--output",
+    "research/c15-observed-audit-v2/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "tokenizers",
+        "version": "0.20.3"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Observed token records, prompt hashes, metadata and exact finite domains agree with the frozen independent reviewer annotations; final failed test has one flushed response and fifteen absent cases.",
+    "coefficient_domain": "exact integer finite truth tables; no inference",
+    "conventions": "Bit i selects item i; fast tokenizer used only to verify observed text/token records; no model loading, scoring or author labels.",
+    "inputs": [
+      "16 development responses and one partial-matrix test response",
+      "Frozen independent reviewer domains",
+      "Immutable recorded manifests and resource-stop evidence"
+    ],
+    "bounds": {
+      "dev_responses": 16,
+      "test_completed_responses": 1,
+      "n_max": 7
+    },
+    "non_claims": [
+      "No H15 comparison",
+      "No missing-case imputation",
+      "No causal attribution of resource slowdown",
+      "No comparison of population performance between development prompts"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T13:25:29.273564+00:00",
+    "runtime_seconds": 0.347373,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c15-observed-audit-v2.py",
+    "research/c15-annotation-oracle/raw.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/test_cases.json",
+    "runs/20261114-c15-formulation-repair/instructions.v1.txt",
+    "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+    "runs/20261114-c15-formulation-repair/freeze-test-v2.json",
+    "runs/20261114-c15-formulation-repair/test-initial-resource-stop.json",
+    "runs/20261114-c15-formulation-repair/resource-diagnostic-during-initial.json",
+    "runs/20261114-c15-formulation-repair/dev-score-v2/metrics.json",
+    "runs/20261114-c15-formulation-repair/dev-score-v2/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/dev-feedback-v2/minimal.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v1/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/dev-initial-v1/manifest.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v1/generation.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/manifest.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/generation.json",
+    "runs/20261114-c15-formulation-repair/test-initial-v2/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/test-initial-v2/manifest.json",
+    "research/external/models/qwen2.5-0.5b-7ae5576/tokenizer.json",
+    "research/external/models/qwen2.5-0.5b-7ae5576/tokenizer_config.json",
+    "research/external/models/qwen2.5-0.5b-7ae5576/generation_config.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c15-observed-audit-v2.py",
+      "sha256": "2fb7c66cf1819b448afcfe5697df45b64ce536f39f68455f5867c83a68c56ee5",
+      "sha256_after": "2fb7c66cf1819b448afcfe5697df45b64ce536f39f68455f5867c83a68c56ee5"
+    },
+    {
+      "path": "research/c15-annotation-oracle/raw.json",
+      "sha256": "29d1dbc5c7b77a2a0ffff087859885ec1848543cd456979e20f799b21296b636",
+      "sha256_after": "29d1dbc5c7b77a2a0ffff087859885ec1848543cd456979e20f799b21296b636"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/private_gold.review.json",
+      "sha256": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+      "sha256_after": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+      "sha256": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b",
+      "sha256_after": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test_cases.json",
+      "sha256": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f",
+      "sha256_after": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/instructions.v1.txt",
+      "sha256": "a877d4f12978cbc2b92d75143451def6f7015cea60b968461b45ba8a9a73a9e1",
+      "sha256_after": "a877d4f12978cbc2b92d75143451def6f7015cea60b968461b45ba8a9a73a9e1"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+      "sha256": "f7b81f2382bd5ada76d0af642f59231acbe57577b0aaab9fb27970f86997c989",
+      "sha256_after": "f7b81f2382bd5ada76d0af642f59231acbe57577b0aaab9fb27970f86997c989"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/freeze-test-v2.json",
+      "sha256": "164f1447b9a8ce3aee4e45e3fd16b5fb7a5a6f960fca8761398a9c55f642f095",
+      "sha256_after": "164f1447b9a8ce3aee4e45e3fd16b5fb7a5a6f960fca8761398a9c55f642f095"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test-initial-resource-stop.json",
+      "sha256": "58c538ee37db187998611aeaca1f13844d5f0101116b6bf7c822aa2963ac3045",
+      "sha256_after": "58c538ee37db187998611aeaca1f13844d5f0101116b6bf7c822aa2963ac3045"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/resource-diagnostic-during-initial.json",
+      "sha256": "7fe281affd5e8080669127eba45f4d7d182dfef699336b1d82c25a9efe824cf9",
+      "sha256_after": "7fe281affd5e8080669127eba45f4d7d182dfef699336b1d82c25a9efe824cf9"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-score-v2/metrics.json",
+      "sha256": "12c16a8156441675138b3d0b457ac4df615da57364401042f673b48f580ba29b",
+      "sha256_after": "12c16a8156441675138b3d0b457ac4df615da57364401042f673b48f580ba29b"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-score-v2/raw.jsonl",
+      "sha256": "0358125b1d4c08243a16b994352a10cdc621734b66fab3cdfcac69f19c1a8c55",
+      "sha256_after": "0358125b1d4c08243a16b994352a10cdc621734b66fab3cdfcac69f19c1a8c55"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-feedback-v2/minimal.json",
+      "sha256": "e0d93ea003333337bcdc5b76c8e9753fa62b6a57106bb9b7b4b952fc24281b5c",
+      "sha256_after": "e0d93ea003333337bcdc5b76c8e9753fa62b6a57106bb9b7b4b952fc24281b5c"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v1/raw.jsonl",
+      "sha256": "c2058c263c2025f2ac99512f7528c94d311564bcd8f5ee2cb6991702fcd64f02",
+      "sha256_after": "c2058c263c2025f2ac99512f7528c94d311564bcd8f5ee2cb6991702fcd64f02"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v1/manifest.json",
+      "sha256": "9a5ecee8a3e6d07d4232e69f0c7605288cf4ddbb324850140a55e0d0d80d963e",
+      "sha256_after": "9a5ecee8a3e6d07d4232e69f0c7605288cf4ddbb324850140a55e0d0d80d963e"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v1/generation.json",
+      "sha256": "c03398f0a78960921a110303e119ba039d028f36e52c07195105d30d5f306248",
+      "sha256_after": "c03398f0a78960921a110303e119ba039d028f36e52c07195105d30d5f306248"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/raw.jsonl",
+      "sha256": "2699af9636455de495ed4563b72010248d57940a52c2ede2efa6d65e3f410dd1",
+      "sha256_after": "2699af9636455de495ed4563b72010248d57940a52c2ede2efa6d65e3f410dd1"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/manifest.json",
+      "sha256": "9a6e975a93cb8153d080907bb47e29010cdd7f0505f1874ffe9375dca732bb68",
+      "sha256_after": "9a6e975a93cb8153d080907bb47e29010cdd7f0505f1874ffe9375dca732bb68"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/generation.json",
+      "sha256": "c6801fa0b59ea4c6b959c7b06e82308bbaa1b8deab1820b95a87c8bbce5186b0",
+      "sha256_after": "c6801fa0b59ea4c6b959c7b06e82308bbaa1b8deab1820b95a87c8bbce5186b0"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test-initial-v2/raw.jsonl",
+      "sha256": "b9a69b7763949dfb7cf4fc9a18f863e984a98597a90fe078a8c70850658b5e3a",
+      "sha256_after": "b9a69b7763949dfb7cf4fc9a18f863e984a98597a90fe078a8c70850658b5e3a"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test-initial-v2/manifest.json",
+      "sha256": "f76714c1e7d551dc68dd675569addd6f83fe094905cb72b5aaa4df3fe7181dbb",
+      "sha256_after": "f76714c1e7d551dc68dd675569addd6f83fe094905cb72b5aaa4df3fe7181dbb"
+    },
+    {
+      "path": "research/external/models/qwen2.5-0.5b-7ae5576/tokenizer.json",
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "sha256_after": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+    },
+    {
+      "path": "research/external/models/qwen2.5-0.5b-7ae5576/tokenizer_config.json",
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "sha256_after": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+    },
+    {
+      "path": "research/external/models/qwen2.5-0.5b-7ae5576/generation_config.json",
+      "sha256": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+      "sha256_after": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6"
+    }
+  ],
+  "output_directory": "research/c15-observed-audit-v2",
+  "declared_results": [
+    "research/c15-observed-audit-v2/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c15-observed-audit-v2/stdout.txt",
+      "sha256": "2751f555f4e5d3056973bcabd80e215a9bd95090a756efe8e7465bddf386605a",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-observed-audit-v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-observed-audit-v2/raw.json",
+      "sha256": "159e9e79d95dfef243a12ca9431982e51ffd0665b0d40e9547e76bfe89e722be",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

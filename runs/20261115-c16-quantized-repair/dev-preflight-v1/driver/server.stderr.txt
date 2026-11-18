@@ -1,0 +1,13 @@
+0.00.498.202 I srv  llama_server: initializing ...
+0.00.498.209 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.501.401 I srv  init_listene: The UI is disabled
+0.00.501.403 I srv  init_listene: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.501.595 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.503.862 I srv    load_model: loading model '/Users/karimelhoudaigui/Downloads/quantage-research/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf'
+0.00.670.373 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.02.653.699 I cmn          init: llama threadpool init, n_threads = 4
+0.03.523.939 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 2048, kv_unified = 'false'
+0.03.530.727 W srv          init: --cache-idle-slots requires --cache-ram, disabling
+0.03.569.348 I srv  server_run_i: model loaded
+0.03.569.525 I srv  server_on_li: listening on http://127.0.0.1:62744
+0.03.658.878 I srv    operator(): operator(): cleaning up before exit...

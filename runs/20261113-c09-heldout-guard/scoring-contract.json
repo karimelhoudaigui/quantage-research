@@ -1,0 +1,50 @@
+{
+  "claim_id": "C09-RESERVED-GUARD",
+  "mathematics": {
+    "assertion_tested": "Compare no-veto and fixed bounded semantic veto on the same newly generated local contract proposals, on groups not generated in C08.",
+    "coefficient_domain": "finite semantic tasks; exact integer MIS and floating ideal probability outputs",
+    "conventions": "No new inference after scores, no repair of C08, reserved groups disjoint",
+    "inputs": [
+      "16 reserved cases with fixed independent-role labels",
+      "observed local compact-v2 proposals"
+    ],
+    "bounds": {
+      "cases": 16,
+      "conditions_on_same_response": 2,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "Not universal semantic entailment",
+      "Not statistical reliability across natural tasks",
+      "No physical device compatibility or quantum advantage"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/compact_v2.py",
+    "quantage/local_score.py",
+    "quantage/local_score_v2.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "runs/20261113-c09-heldout-guard/protocol.md",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "runs/20261113-c09-heldout-guard/gold.json",
+    "runs/20261113-c09-heldout-guard/generation/raw.jsonl",
+    "runs/20261113-c09-heldout-guard/generation/generation.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "scoring fixed observed responses",
+    "seed": null
+  }
+}

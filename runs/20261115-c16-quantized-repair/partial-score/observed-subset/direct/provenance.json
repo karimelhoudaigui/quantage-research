@@ -1,0 +1,7 @@
+{
+  "sources": [
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/raw.jsonl"
+  ],
+  "kind": "filtered actual observations; no generation",
+  "generation_metadata": "original whole-batch metadata kept at source; no per-subset loading/CPU allocated"
+}

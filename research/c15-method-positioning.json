@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-15",
+  "question": "Quels mécanismes de C15 préexistent à CEGIS, Self-Refine et aux vérificateurs de formulations d’optimisation ?",
+  "task_kind": [
+    "attribution",
+    "overlap classification",
+    "bounded novelty check"
+  ],
+  "project_inputs": [
+    {
+      "path": "research/state.md",
+      "sha256_observed": "a3fa01a1866121f97e08d8eb16cd44f693e5c6481d5f86508cb88158f74d047c",
+      "reading_scope": "État/protocole complets ou fiches bibliographiques ciblées ; pas de résultats C15"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/protocol.md",
+      "sha256_observed": "0cf77324a955ae1a2ac7fc9e3c3a6673f21c363421a12d5a97b8b4e6bf9a1805",
+      "reading_scope": "État/protocole complets ou fiches bibliographiques ciblées ; pas de résultats C15"
+    },
+    {
+      "path": "research/sources/index.json",
+      "sha256_observed": "45ad327b74e2dbd99f1ad76944e9824e9051d3e62bbddcb2f25f578119efd0c6",
+      "reading_scope": "État/protocole complets ou fiches bibliographiques ciblées ; pas de résultats C15"
+    },
+    {
+      "path": "research/c11-literature.md",
+      "sha256_observed": "3f650e5a58715a8f4bcd8a823e12f1954029fa90853c725b5e2291b4011f58f5",
+      "reading_scope": "État/protocole complets ou fiches bibliographiques ciblées ; pas de résultats C15"
+    },
+    {
+      "path": "research/c11-comparison.json",
+      "sha256_observed": "587273a5001616de2231870bf1197a096e1fda0fa53d050fe0508991afe360cf",
+      "reading_scope": "État/protocole complets ou fiches bibliographiques ciblées ; pas de résultats C15"
+    }
+  ],
+  "sources": [
+    {
+      "id": "solar-lezama-2006",
+      "title": "Combinatorial Sketching for Finite Programs",
+      "authors": [
+        "Armando Solar-Lezama",
+        "Liviu Tancau",
+        "Rastislav Bodik",
+        "Vijay Saraswat",
+        "Sanjit Seshia"
+      ],
+      "url": "https://people.csail.mit.edu/asolar/papers/Solar-LezamaTBSS06.pdf",
+      "version": "ASPLOS 2006, copie PDF hébergée par un auteur ; révision des octets non explicitée",
+      "identifier": "ASPLOS 2006, titre exact",
+      "passages_read": [
+        {
+          "locator": "§5.2, équation (5.1)",
+          "pdf_pages_1_based": [
+            7
+          ]
+        },
+        {
+          "locator": "§5.4, texte du solveur guidé par contre-exemples",
+          "pdf_pages_1_based": [
+            9
+          ]
+        }
+      ],
+      "extracted_mechanism": "Deux solveurs alternent synthèse et vérification ; les contre-exemples enrichissent les observations imposées.",
+      "hypotheses_relevant": [
+        "Domaines finis",
+        "Procédures SAT correctes et complètes sans arrêt de ressources",
+        "Candidat cohérent avec les observations accumulées"
+      ],
+      "source_status": "Décrit la procédure et justifie sa terminaison dans ce cadre fini.",
+      "c15_difference": "Le générateur LLM C15 n’impose pas ces observations et ne répare qu’une fois.",
+      "overlap_classification": "partial or adjacent result only",
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "retained_sha256": null,
+      "full_text_retained": false,
+      "extraction_status": "targeted_passages_read",
+      "checks_performed": {
+        "source_authentication": true,
+        "targeted_extraction": true,
+        "comparison_with_c15_protocol": true,
+        "software_reproduction": false
+      },
+      "implication_verdict": "verified",
+      "implication_scope": "Le mécanisme décrit dans extracted_mechanism préexiste ; aucune performance C15 ni nouveauté globale n’en découle."
+    },
+    {
+      "id": "solar-lezama-2009",
+      "title": "The Sketching Approach to Program Synthesis",
+      "authors": [
+        "Armando Solar-Lezama"
+      ],
+      "url": "https://people.csail.mit.edu/asolar/papers/Solar-Lezama09.pdf",
+      "metadata_url": "https://link.springer.com/chapter/10.1007/978-3-642-10672-9_3",
+      "version": "APLAS 2009, LNCS 5904, pp.4–13 ; copie auteur sans révision explicite",
+      "identifier": "doi:10.1007/978-3-642-10672-9_3",
+      "passages_read": [
+        {
+          "locator": "§4, texte autour de la figure 8",
+          "pdf_pages_1_based": [
+            7,
+            8
+          ],
+          "visual_figure_inspection": false
+        }
+      ],
+      "extracted_mechanism": "CEGIS couple synthèse inductive sur observations et validation, puis ajoute chaque témoin à ces observations.",
+      "hypotheses_relevant": [
+        "Spécification vérifiable",
+        "Synthétiseur satisfaisant les observations déjà accumulées"
+      ],
+      "source_status": "Présente et nomme le mécanisme CEGIS.",
+      "c15_difference": "C15 adapte cette idée sans transférer une garantie de progression ou de complétude.",
+      "overlap_classification": "partial or adjacent result only",
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "retained_sha256": null,
+      "full_text_retained": false,
+      "extraction_status": "targeted_passages_read",
+      "checks_performed": {
+        "source_authentication": true,
+        "targeted_extraction": true,
+        "comparison_with_c15_protocol": true,
+        "software_reproduction": false
+      },
+      "implication_verdict": "verified",
+      "implication_scope": "Le mécanisme décrit dans extracted_mechanism préexiste ; aucune performance C15 ni nouveauté globale n’en découle."
+    },
+    {
+      "id": "self-refine-neurips-2023",
+      "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+      "authors": [
+        "Aman Madaan et al."
+      ],
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/91edff07232fb1b55a505a9e9f6c0ff3-Paper-Conference.pdf",
+      "metadata_url": "https://proceedings.neurips.cc/paper_files/paper/2023/hash/91edff07232fb1b55a505a9e9f6c0ff3-Abstract-Conference.html",
+      "version": "Version publiée, Advances in Neural Information Processing Systems 36, NeurIPS 2023",
+      "identifier": "NeurIPS 2023 proceedings hash 91edff07232fb1b55a505a9e9f6c0ff3",
+      "passages_read": [
+        {
+          "locator": "§2, équations (1)–(4), algorithme 1",
+          "pdf_pages_1_based": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "locator": "Début de §3.1, protocole d’itération",
+          "pdf_pages_1_based": [
+            4
+          ]
+        }
+      ],
+      "extracted_mechanism": "Le même LLM produit la sortie, un feedback explicite puis une révision ; les étapes gardent un historique.",
+      "hypotheses_relevant": [
+        "Prompts de génération, feedback et révision distincts",
+        "Pas de certificat formel universel fourni par la procédure"
+      ],
+      "source_status": "Décrit une méthode et rapporte des expériences, non reproduites ici.",
+      "c15_difference": "Le bras auto C15 n’appelle pas une génération FEEDBACK distincte ; aucune reproduction de Self-Refine.",
+      "overlap_classification": "partial or adjacent result only",
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "retained_sha256": null,
+      "full_text_retained": false,
+      "extraction_status": "targeted_passages_read",
+      "checks_performed": {
+        "source_authentication": true,
+        "targeted_extraction": true,
+        "comparison_with_c15_protocol": true,
+        "software_reproduction": false
+      },
+      "implication_verdict": "verified",
+      "implication_scope": "Le mécanisme décrit dans extracted_mechanism préexiste ; aucune performance C15 ni nouveauté globale n’en découle."
+    },
+    {
+      "id": "verisimpl-v2",
+      "title": "VeriSimpl: Robust Optimization Modeling from Natural Language using Simplification-based Verification",
+      "authors": [
+        "Sumaya Abdul Rahman",
+        "Seckhen Ariel Andrade Cuellar",
+        "Ghani Raissov",
+        "Mohammad Raza"
+      ],
+      "url": "https://arxiv.org/html/2607.20474v2",
+      "version": "arXiv:2607.20474v2, 2026-09-22",
+      "identifier": "arxiv:2607.20474v2",
+      "passages_read": [
+        {
+          "locator": "§2, simplifications par contraintes et variables"
+        },
+        {
+          "locator": "§3, requêtes, algorithmes 1–3 et paragraphes Constraint/Variable/Type verification"
+        }
+      ],
+      "extracted_mechanism": "Des valuations du solveur alimentent des requêtes LLM ; les signaux classent les formulations, avec correction des types.",
+      "hypotheses_relevant": [
+        "Raisonnement LLM sur le texte initial",
+        "Requêtes diagnostiques sélectionnées, sans examen exhaustif du domaine"
+      ],
+      "source_status": "Décrit le dispositif et ses expériences, non reproduites ici.",
+      "c15_difference": "La référence annotée et exhaustive de C15 est une ressource distincte, plus forte que le jugement LLM des requêtes.",
+      "overlap_classification": "partial or adjacent result only",
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "retained_sha256": null,
+      "full_text_retained": false,
+      "extraction_status": "targeted_passages_read",
+      "checks_performed": {
+        "source_authentication": true,
+        "targeted_extraction": true,
+        "comparison_with_c15_protocol": true,
+        "software_reproduction": false
+      },
+      "implication_verdict": "verified",
+      "implication_scope": "Le mécanisme décrit dans extracted_mechanism préexiste ; aucune performance C15 ni nouveauté globale n’en découle."
+    },
+    {
+      "id": "sover-v1",
+      "title": "SOVER: Formal Certification of Optimization Reformulations via LLM-Assisted SMT Verification",
+      "authors": [
+        "Swapnil Bhattacharyya",
+        "Mayank Baranwal"
+      ],
+      "url": "https://arxiv.org/html/2609.00728v1",
+      "version": "arXiv:2609.00728v1, 2026-09-01",
+      "identifier": "arxiv:2609.00728v1",
+      "passages_read": [
+        {
+          "locator": "§3.1, définition d’équivalence des minimiseurs"
+        },
+        {
+          "locator": "§4.2–4.3, algorithme 1 et proposition 1"
+        },
+        {
+          "locator": "Annexe A.2, preuve de la proposition 1"
+        }
+      ],
+      "extracted_mechanism": "Le SMT cherche des écarts de faisabilité et d’ordre des objectifs entre modèles alignés ; UNSAT certifie les obligations.",
+      "hypotheses_relevant": [
+        "Modèles formels et mapping proposés",
+        "Même domaine après substitution",
+        "Même ordre faible sur toutes les paires faisables",
+        "Mapping bijectif pour conclure entre coordonnées initiales"
+      ],
+      "source_status": "Énonce et prouve une condition suffisante d’égalité des minimiseurs ; logiciels non audités ici.",
+      "c15_difference": "L’identité des valeurs C15 et son diagnostic d’optimiseurs ne reproduisent pas le test d’ordre de SOVER.",
+      "overlap_classification": "partial or adjacent result only",
+      "source_class": "primary",
+      "checked_on": "2026-11-15",
+      "retained_sha256": null,
+      "full_text_retained": false,
+      "extraction_status": "targeted_passages_read",
+      "checks_performed": {
+        "source_authentication": true,
+        "targeted_extraction": true,
+        "comparison_with_c15_protocol": true,
+        "software_reproduction": false
+      },
+      "implication_verdict": "verified",
+      "implication_scope": "Le mécanisme décrit dans extracted_mechanism préexiste ; aucune performance C15 ni nouveauté globale n’en découle."
+    }
+  ],
+  "source_selection": {
+    "existing_records_consulted": [
+      "research/sources/index.json",
+      "research/c11-literature.md",
+      "research/c11-comparison.json"
+    ],
+    "close_optimization_papers_selected": [
+      "verisimpl-v2",
+      "sover-v1"
+    ],
+    "not_reread_in_this_pass": [
+      "Opt-Verifier"
+    ],
+    "selection_reason": "Valuations diagnostiques pour VeriSimpl ; certification et critères d’équivalence pour SOVER."
+  },
+  "cache": {
+    "queried": true,
+    "present": false,
+    "written": false,
+    "retained_pdf_hashes": [],
+    "queries": [
+      "Solar-Lezama",
+      "Self-Refine",
+      "arxiv:2607.20474v2",
+      "arxiv:2609.00728v1"
+    ]
+  },
+  "search_scope": {
+    "web_queries": [
+      "Solar Lezama combinatorial sketching finite programs 2006 CEGIS pdf",
+      "Solar Lezama The sketching approach to program synthesis 2009 pdf",
+      "Self-Refine Iterative Refinement with Self-Feedback NeurIPS 2023 proceedings",
+      "\"The Sketching Approach to Program Synthesis\" 2009 4 13"
+    ],
+    "last_query_domains": [
+      "link.springer.com",
+      "people.csail.mit.edu"
+    ],
+    "versioned_direct_opens": [
+      "https://arxiv.org/html/2607.20474v2",
+      "https://arxiv.org/html/2609.00728v1"
+    ],
+    "languages": [
+      "English primary papers",
+      "French report"
+    ],
+    "date_horizon": "Sources explicitly requested, checked 2026-11-15",
+    "exhaustive": false,
+    "systematic_citation_graph": false,
+    "fresh_second_reviewer": false,
+    "coverage_gaps": [
+      "Pas de recherche globale des réparations LLM ni des benchmarks d’optimisation.",
+      "Pas de comparaison aux implémentations ou aux taux des articles.",
+      "Les voisins supplémentaires repérés dans les bibliographies ne sont pas vérifiés."
+    ]
+  },
+  "access_limits": [
+    {
+      "url": "https://doi.org/10.1145/1168857.1168907",
+      "observed": "DOI redirection inaccessible via web tool"
+    },
+    {
+      "url": "https://dl.acm.org/doi/10.1145/1168857.1168907",
+      "observed": "403 Forbidden ; copie auteur utilisée"
+    },
+    {
+      "url": "https://doi.org/10.1007/978-3-642-10672-9_3",
+      "observed": "DOI redirection inaccessible ; page Springer directe ensuite accessible"
+    }
+  ],
+  "comparison_inferences": [
+    {
+      "id": "bounded-cegis",
+      "status": "verified",
+      "source_ids": [
+        "solar-lezama-2006",
+        "solar-lezama-2009"
+      ],
+      "claim": "C15 reprend la structure candidat/contre-exemple/révision ; la correction unique et le générateur libre ne satisfont pas les hypothèses d’une synthèse inductive complète.",
+      "permitted_label": "Réparation bornée inspirée de CEGIS avec oracle fini annoté."
+    },
+    {
+      "id": "self-baseline",
+      "status": "verified",
+      "source_ids": [
+        "self-refine-neurips-2023"
+      ],
+      "claim": "L’auto-correction préenregistrée C15 ne contient pas le FEEDBACK séparé de Self-Refine.",
+      "permitted_label": "Révision non guidée ; aucune reproduction ou supériorité sur Self-Refine."
+    },
+    {
+      "id": "trusted-reference",
+      "status": "verified",
+      "source_ids": [
+        "verisimpl-v2"
+      ],
+      "claim": "L’oracle C15 suppose déjà un contrat annoté distinct ; sa correction ne prouve pas l’extraction générale du sens d’un texte libre."
+    },
+    {
+      "id": "criteria",
+      "status": "verified",
+      "source_ids": [
+        "sover-v1"
+      ],
+      "claim": "Valeurs identiques sur le cube, ordre des objectifs sur les paires faisables et égalité des optimiseurs sont trois critères distincts ; aucun score interarticle comparable n’est inféré."
+    }
+  ],
+  "novelty": {
+    "established": false,
+    "verdict": "unverified",
+    "mechanisms_preexisting": [
+      "Boucle candidat/contre-exemple/révision",
+      "Auto-révision LLM",
+      "Diagnostics de formulation via valuations",
+      "Certification de reformulations formelles"
+    ],
+    "scope_specific_features": [
+      "Domaine binaire exhaustif n=4..7",
+      "Une réparation et trois témoins maximum sans modèle corrigé",
+      "Combinaisons de clauses réservées au test",
+      "Comparaison bornée mesurant les régressions"
+    ],
+    "features_prove_novelty": false,
+    "possible_contribution": "Étude empirique bornée, conditionnée à l’exécution et à la revue ; aucun résultat acquis dans cette fiche.",
+    "forbidden_overclaims": [
+      "Première méthode",
+      "Nouvel algorithme CEGIS",
+      "Garantie de compréhension générale du texte",
+      "Reproduction ou supériorité sur Self-Refine/VeriSimpl/SOVER"
+    ]
+  },
+  "non_claims": [
+    "Aucun brut ou score des générations C15 consulté.",
+    "Aucune modification de papier, état, claims ou corpus.",
+    "Aucun code externe exécuté ni taux publié reproduit.",
+    "Aucun PDF complet retenu et aucun hash de source inventé."
+  ],
+  "review_provenance": {
+    "role": "c15_corpus, mission littérature distincte",
+    "prior_role": "Auteur du corpus C15 et restaurateur de provenance v2",
+    "independence_limit": "Pas une revue aveugle du corpus ni une indépendance de modèle démontrée.",
+    "skill": "mathbox:literature-check",
+    "quota_failure_observed": false
+  }
+}

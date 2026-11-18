@@ -1,0 +1,43 @@
+{
+  "b97cb5f56812": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": true,
+        "proposed_feasible": false
+      }
+    ]
+  }
+}

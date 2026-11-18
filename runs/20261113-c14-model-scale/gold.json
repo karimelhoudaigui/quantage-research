@@ -1,0 +1,322 @@
+[
+  {
+    "id": "q_2ba9e351a921d0b6",
+    "group_id": "g_409275700a524657",
+    "family": "photon",
+    "expected_action": "propose",
+    "expected_task": "ideal_single_photon_probabilities",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen photon core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "en"
+  },
+  {
+    "id": "q_0894b7b9fa9355dd",
+    "group_id": "g_151a240d98dd4f86",
+    "family": "photon",
+    "expected_action": "propose",
+    "expected_task": "ideal_single_photon_probabilities",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen photon core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "fr"
+  },
+  {
+    "id": "q_05c519957c9e240f",
+    "group_id": "g_3adee47af3349c27",
+    "family": "photon",
+    "expected_action": "propose",
+    "expected_task": "ideal_single_photon_probabilities",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen photon core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "fr"
+  },
+  {
+    "id": "q_ff0e71699a42a490",
+    "group_id": "g_29df0337a412530d",
+    "family": "mis",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "cardinality_lower",
+    "rationale": "A lower cardinality constraint is not represented by the frozen core.",
+    "language": "en"
+  },
+  {
+    "id": "q_8ba671c73e5cc3aa",
+    "group_id": "g_24050e90c433f247",
+    "family": "mis",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "different_objective",
+    "rationale": "Minimum cardinality is a different requested optimization problem.",
+    "language": "en"
+  },
+  {
+    "id": "q_0adef00af0db1c7c",
+    "group_id": "g_131354c5f207adf8",
+    "family": "mis",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "parity_constraint",
+    "rationale": "A parity condition is outside the current independent-set contract.",
+    "language": "en"
+  },
+  {
+    "id": "q_19e2214d33bbc33b",
+    "group_id": "g_27bc0ab8cd75aebe",
+    "family": "mis",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "cardinality_equality",
+    "rationale": "A fixed cardinality is additional and unsupported.",
+    "language": "fr"
+  },
+  {
+    "id": "q_4f29ad0581cf85d5",
+    "group_id": "g_01c89c44d0de876b",
+    "family": "photon",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "photon_number",
+    "rationale": "A two-photon input is outside the one-photon contract, despite unchanged data.",
+    "language": "en"
+  },
+  {
+    "id": "q_43e8e41aec9ec332",
+    "group_id": "g_131354c5f207adf8",
+    "family": "mis",
+    "expected_action": "propose",
+    "expected_task": "maximum_weight_independent_set",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen mis core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "en"
+  },
+  {
+    "id": "q_5eaef8109b83761a",
+    "group_id": "g_329a343da6b8ecc3",
+    "family": "mis",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "ambiguous_direction",
+    "rationale": "An explicit unresolved objective direction requires clarification.",
+    "language": "fr"
+  },
+  {
+    "id": "q_6b40e52367f2ac75",
+    "group_id": "g_01c89c44d0de876b",
+    "family": "photon",
+    "expected_action": "propose",
+    "expected_task": "ideal_single_photon_probabilities",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen photon core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "en"
+  },
+  {
+    "id": "q_49008697ff3611d1",
+    "group_id": "g_5150ff218377cdc0",
+    "family": "mis",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "objective_direction",
+    "rationale": "The objective direction is changed to minimization.",
+    "language": "en"
+  },
+  {
+    "id": "q_f9ff5870545681bc",
+    "group_id": "g_065cad1ac932432a",
+    "family": "photon",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "mixed_units",
+    "rationale": "The phase unit is changed and explicit conversion is disallowed.",
+    "language": "en"
+  },
+  {
+    "id": "q_00b3c53e4202843b",
+    "group_id": "g_0aeb8f58c81f025f",
+    "family": "mis",
+    "expected_action": "propose",
+    "expected_task": "maximum_weight_independent_set",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen mis core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "fr"
+  },
+  {
+    "id": "q_d8c01195c772969e",
+    "group_id": "g_29df0337a412530d",
+    "family": "mis",
+    "expected_action": "propose",
+    "expected_task": "maximum_weight_independent_set",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen mis core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "en"
+  },
+  {
+    "id": "q_2f490c5b68364e7b",
+    "group_id": "g_454888e93e2dc3aa",
+    "family": "photon",
+    "expected_action": "propose",
+    "expected_task": "ideal_single_photon_probabilities",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen photon core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "en"
+  },
+  {
+    "id": "q_c6b81f9d04f89d35",
+    "group_id": "g_137361849b1fb846",
+    "family": "mis",
+    "expected_action": "propose",
+    "expected_task": "maximum_weight_independent_set",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen mis core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "fr"
+  },
+  {
+    "id": "q_02c594cb789919cc",
+    "group_id": "g_3adee47af3349c27",
+    "family": "photon",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "observable_sampling",
+    "rationale": "A shot sequence is requested, not the deterministic probability output.",
+    "language": "fr"
+  },
+  {
+    "id": "q_4c100ec22f23e65a",
+    "group_id": "g_409275700a524657",
+    "family": "photon",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "input_mode",
+    "rationale": "The input mode is changed; future-provider context does not restore the fixed input contract.",
+    "language": "en"
+  },
+  {
+    "id": "q_be74f7c56ecd3e24",
+    "group_id": "g_27bc0ab8cd75aebe",
+    "family": "mis",
+    "expected_action": "propose",
+    "expected_task": "maximum_weight_independent_set",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen mis core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "fr"
+  },
+  {
+    "id": "q_106fe2d96670ffd6",
+    "group_id": "g_0881b1d63ba05923",
+    "family": "photon",
+    "expected_action": "propose",
+    "expected_task": "ideal_single_photon_probabilities",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen photon core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "fr"
+  },
+  {
+    "id": "q_2c6d3eed95403e94",
+    "group_id": "g_0aeb8f58c81f025f",
+    "family": "mis",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "weight_budget",
+    "rationale": "A new weight budget must be retained and is unsupported by core.",
+    "language": "fr"
+  },
+  {
+    "id": "q_c35e663fe01e7d48",
+    "group_id": "g_151a240d98dd4f86",
+    "family": "photon",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "loss_model",
+    "rationale": "The additional loss channel is explicitly required and unsupported.",
+    "language": "fr"
+  },
+  {
+    "id": "q_dd132be6c5652659",
+    "group_id": "g_137361849b1fb846",
+    "family": "mis",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "exclusive_required_pair",
+    "rationale": "An exactly-one constraint must not disappear during canonicalization.",
+    "language": "fr"
+  },
+  {
+    "id": "q_b1e9b00c2700f31a",
+    "group_id": "g_065cad1ac932432a",
+    "family": "photon",
+    "expected_action": "propose",
+    "expected_task": "ideal_single_photon_probabilities",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen photon core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "en"
+  },
+  {
+    "id": "q_faa4925ddd200c9c",
+    "group_id": "g_24050e90c433f247",
+    "family": "mis",
+    "expected_action": "propose",
+    "expected_task": "maximum_weight_independent_set",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen mis core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "en"
+  },
+  {
+    "id": "q_7febe5c47d6a29a1",
+    "group_id": "g_0881b1d63ba05923",
+    "family": "photon",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "component_order",
+    "rationale": "The specified temporal order moves the phase to the end.",
+    "language": "fr"
+  },
+  {
+    "id": "q_a2a28e693e34deda",
+    "group_id": "g_11804172c2fb25e8",
+    "family": "photon",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "loss_model",
+    "rationale": "A position-specific extra loss model is required and not supported.",
+    "language": "fr"
+  },
+  {
+    "id": "q_09e6c4977e7f418b",
+    "group_id": "g_329a343da6b8ecc3",
+    "family": "mis",
+    "expected_action": "propose",
+    "expected_task": "maximum_weight_independent_set",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen mis core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "fr"
+  },
+  {
+    "id": "q_47806031452472f1",
+    "group_id": "g_5150ff218377cdc0",
+    "family": "mis",
+    "expected_action": "propose",
+    "expected_task": "maximum_weight_independent_set",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen mis core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "en"
+  },
+  {
+    "id": "q_fe47c0e5fca60a77",
+    "group_id": "g_454888e93e2dc3aa",
+    "family": "photon",
+    "expected_action": "abstain",
+    "expected_task": null,
+    "changed_clause": "photon_number",
+    "rationale": "The explicit two-photon instruction is outside core and inconsistent with the retained single-photon data field.",
+    "language": "en"
+  },
+  {
+    "id": "q_580ad99c6cd84bc5",
+    "group_id": "g_11804172c2fb25e8",
+    "family": "photon",
+    "expected_action": "propose",
+    "expected_task": "ideal_single_photon_probabilities",
+    "changed_clause": null,
+    "rationale": "All required clauses match the frozen photon core contract; data are within its bounds. The request is a local reference, without inferred hardware entitlement.",
+    "language": "fr"
+  }
+]

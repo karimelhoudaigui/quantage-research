@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-15",
+  "phase": "test-initial-v1",
+  "status": "startup_resource_failure_before_model_generation",
+  "new_calls": 0,
+  "reason": "disk reserve <3GiB before serverstartup; fresh orphan Gitpack accumulation",
+  "original_manifest": "runs/20261115-c19-instruct-repair/test-initial-v1/manifest.json",
+  "original_manifest_sha256": "19701b62ac10c0e196f1c8238482dd47df0a785890abd0008ba31d71c121c054",
+  "resolution": "local Git maintenance automatic disabled with reversible keys, old closed temporary garbage cleaned; v2changes output paths ONLY, inference/prompt/corpus/scorer remain original frozen bytes",
+  "model_test_resampling": false
+}

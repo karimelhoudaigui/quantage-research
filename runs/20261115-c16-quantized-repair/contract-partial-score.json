@@ -1,0 +1,52 @@
+{
+  "claim_id": "C16-PARTIAL-REPAIR",
+  "mathematics": {
+    "assertion_tested": "Exact paired15 scores and finite bounds on H16 for16cases with1unknown guided response; no imputation",
+    "coefficient_domain": "integer binary ILPs",
+    "conventions": "post-incident descriptive paired subset; original choices and seeds unchanged",
+    "inputs": [
+      "63actual response records"
+    ],
+    "bounds": {
+      "planned_cases": 16,
+      "complete_pairs": 15,
+      "unknown": 1
+    },
+    "non_claims": [
+      "Not a complete16-case experiment",
+      "Self-analysis, not independent final review",
+      "No population confidence interval or efficacy claim"
+    ]
+  },
+  "execution_artifacts": [
+    "research/c16-partial-score.py",
+    "quantage/repair_study_c16.py",
+    "quantage/repair_model.py",
+    "quantage/repair_language.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py",
+    "runs/20261115-c16-quantized-repair/test_cases.json",
+    "runs/20261115-c16-quantized-repair/gold.json",
+    "runs/20261115-c16-quantized-repair/disk-incident-guided.json",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/raw.jsonl"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

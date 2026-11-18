@@ -1,0 +1,19 @@
+{
+  "claim_id": "C15-REVIEWER-FINITE-DOMAINS",
+  "mathematics": {
+    "assertion_tested": "Exact feasible binary masks and maximum integer weight for each of the 24 public C15 instances under the independently extracted frozen reviewer constraints.",
+    "coefficient_domain": "integers, exact arithmetic",
+    "conventions": "Binary bit i includes item i; edges are mutual exclusions; implication [a,b] is a implies b; only explicit textual cost and cardinality bounds apply.",
+    "inputs": ["24 public cases, 8 dev and 16 test", "Frozen independent reviewer annotations"],
+    "bounds": {"n_min": 4, "n_max": 7, "case_count": 24, "per_case_assignments_max": 128},
+    "non_claims": ["No inference or performance measurement", "No population or arbitrary-text guarantee", "No author gold or production solver read/imported"]
+  },
+  "execution_artifacts": [
+    "research/c15-annotation-oracle.py",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/test_cases.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json"
+  ],
+  "software": [{"name": "computation Python", "version": "3.9.6"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

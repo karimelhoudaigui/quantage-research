@@ -1,0 +1,16 @@
+{"completed": 1, "phase": "self", "id": "0917fa453976", "valid_schema": true, "tokens": 130}
+{"completed": 2, "phase": "self", "id": "192394ff7b7a", "valid_schema": true, "tokens": 145}
+{"completed": 3, "phase": "self", "id": "2869335ff788", "valid_schema": true, "tokens": 315}
+{"completed": 4, "phase": "self", "id": "37e4073ab724", "valid_schema": true, "tokens": 156}
+{"completed": 5, "phase": "self", "id": "38289dce9fa8", "valid_schema": false, "tokens": 384}
+{"completed": 6, "phase": "self", "id": "54969ba6bb41", "valid_schema": true, "tokens": 140}
+{"completed": 7, "phase": "self", "id": "5c92952e6b23", "valid_schema": true, "tokens": 147}
+{"completed": 8, "phase": "self", "id": "5d9702fb5f6c", "valid_schema": false, "tokens": 384}
+{"completed": 9, "phase": "self", "id": "79769e445d63", "valid_schema": true, "tokens": 153}
+{"completed": 10, "phase": "self", "id": "a84cf14c247d", "valid_schema": true, "tokens": 121}
+{"completed": 11, "phase": "self", "id": "bc6455847de3", "valid_schema": true, "tokens": 154}
+{"completed": 12, "phase": "self", "id": "bce63f435951", "valid_schema": true, "tokens": 119}
+{"completed": 13, "phase": "self", "id": "cd5f7022ac2e", "valid_schema": true, "tokens": 172}
+{"completed": 14, "phase": "self", "id": "dcdad683f9dc", "valid_schema": false, "tokens": 384}
+{"completed": 15, "phase": "self", "id": "e208889911d5", "valid_schema": true, "tokens": 160}
+{"completed": 16, "phase": "self", "id": "fcec7afd3dd6", "valid_schema": true, "tokens": 104}

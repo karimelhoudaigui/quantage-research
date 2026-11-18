@@ -1,0 +1,46 @@
+[
+  {
+    "id": "independent_review",
+    "status": "resolved_for_C05_and_gold",
+    "observed": "Quota temporairement disponible: auditeur distinct C05 a livré cas et rapports sur109cas; auteur/relecteur distincts C06 ont fixé les labels avant candidats. Quota ensuite épuisé.",
+    "consequence": "Indépendance d’auteur disponible pour ces scopes seulement; même modèle possible, scoring C06 auto-vérifié; aucune revue de candidat absent.",
+    "resume_when": "Quota disponible et nouvelle revue sur code, protocoles et données brutes figés.",
+    "previous_observed": "Trois sous-agents (littérature, matériel, dépôt) interrompus par une limite d'utilisation avant rapport final; revue reprise séquentiellement par l'intégrateur."
+  },
+  {
+    "id": "llm_experimental_arms",
+    "status": "resolved_for_local_hybrid",
+    "observed": "48réponses réelles produites localement C08/C09 à checkpoint/version fixes; aucun quota natif ou endpoint payant utilisé.",
+    "consequence": "Prototype hybride évalué sur MIS et photonique; bras natifs C06 et génération complète de coefficients restent non exécutés.",
+    "resume_when": "Voie locale disponible; nouvel élargissement exige protocole et données séparés.",
+    "previous_observed": "Aucun endpoint LLM expérimental autorisé/configuré dans le dépôt; pas de lecture de secrets, pas de boucle Codex imbriquée, pas de dépense externe autorisée."
+  },
+  {
+    "id": "qpu",
+    "status": "blocked_by_policy",
+    "observed": "config/policy.json désactive les soumissions QPU et autorise zéro dépense externe; aucun compte matériel interrogé.",
+    "consequence": "Aucune exécution physique ni calibration; faisabilité matérielle des instances reste non établie.",
+    "resume_when": "Autorisation explicite et vérification des droits, contrôles et instances."
+  },
+  {
+    "id": "latex_pdf",
+    "status": "blocked",
+    "observed": "pdflatex, latexmk et tectonic absents du PATH.",
+    "consequence": "Source LaTeX synchronisée et relue, compilation et PDF non vérifiés.",
+    "resume_when": "Distribution LaTeX disponible; aucune installation effectuée."
+  },
+  {
+    "id": "learned_policy",
+    "status": "deferred",
+    "observed": "Corpus de développement synthétique, pas de trajectoires LLM réelles ni étiquettes indépendantes.",
+    "consequence": "Pas d'entraînement ou de prétention de supériorité d'une politique apprise.",
+    "resume_when": "Données suffisantes avec splits par famille, langage et taille, puis baselines gelées."
+  },
+  {
+    "id": "existing_trace_location",
+    "status": "resolved",
+    "observed": "Traces publiques acquises et propres générations locales observées; aucun lien privé nécessaire.",
+    "consequence": "Ne plus demander de fichier à l’utilisateur pour cette étape; sources/provenances déjà enregistrées.",
+    "resume_when": "Résolu."
+  }
+]

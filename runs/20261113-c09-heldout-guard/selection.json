@@ -1,0 +1,33 @@
+{
+  "rule": "all C06 groups not shown in C08; no filtering by labels",
+  "case_ids": [
+    "q_044a69872b75",
+    "q_1d0d82d4a9b8",
+    "q_2f2e839717d9",
+    "q_33cf35350c7a",
+    "q_47eb07193267",
+    "q_7dc8bd369f02",
+    "q_8d4693aec7e5",
+    "q_93b97a91759c",
+    "q_ad48958b4f32",
+    "q_b3da77afac4f",
+    "q_b8ccfcda3441",
+    "q_c8460a41cbce",
+    "q_d201e47573a0",
+    "q_e1e7124a8604",
+    "q_e9c9eeaaec7d",
+    "q_ea7fda3d1cde"
+  ],
+  "group_ids": [
+    "g_974ec90ea8d9",
+    "g_9d880fadb7bf",
+    "g_a0d676088ac1",
+    "g_ac1851929703",
+    "g_b732e1f0362e",
+    "g_cd48e103d66d",
+    "g_d3f2bdd1114a",
+    "g_dcc7e0d23ab7"
+  ],
+  "disjoint_from_c08_groups": true,
+  "source_public_sha256": "11c3c5b17fe8f3c0c9023c4fd8adb829dc8da739b0a4be4001213f6bdce1d0ae"
+}

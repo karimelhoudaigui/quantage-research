@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Quel effet d'un schéma non redondant et d'un veto textuel sur les groupes non générés en C08 ?",
+  "next_action": "C10: corriger les défauts connus du prototype, préserver ce résultat réservé avec son erreur résiduelle, et décrire la validation suivante comme régression de développement."
+}

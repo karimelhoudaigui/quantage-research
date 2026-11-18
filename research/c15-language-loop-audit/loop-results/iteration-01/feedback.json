@@ -1,0 +1,6 @@
+{
+  "loop-software": {
+    "kind": "no_counterexample",
+    "message": "No discrepancy on the finite cube. Preserve all model fields."
+  }
+}

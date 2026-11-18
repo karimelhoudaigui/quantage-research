@@ -1,0 +1,71 @@
+{
+  "9e2a4c71": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "31d8b6f0": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  },
+  "a7f03d2c": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "68c1e9b4": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "c2b7460d": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "f40a8e53": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "0b5d97a2": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "7d139ac8": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "intent": "Compute ideal single-photon output probabilities.",
+  "data": {"a": 0.7853981633974483, "b": 0.7853981633974483, "phi": 0, "photons": 1, "modes": 2, "loss": 0}
+}

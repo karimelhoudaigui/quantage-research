@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "À moteur figé, comment couverture et fidélité changent-elles avec le parsing et les intentions ?",
+  "next_action": "Revue indépendante dès quota disponible; puis vrai benchmark LLM sur contrats inédits annotés, accès et budget à établir. Voir research/next-experiment.md."
+}

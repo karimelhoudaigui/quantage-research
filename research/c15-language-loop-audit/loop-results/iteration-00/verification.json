@@ -1,0 +1,33 @@
+{
+  "faithful": false,
+  "stage": "finite_cube",
+  "feedback": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          1,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  },
+  "assignments": 4,
+  "feasibility_mismatches": 2,
+  "objective_mismatches": 0,
+  "reference_feasible_count": 2,
+  "proposed_feasible_count": 4,
+  "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+}

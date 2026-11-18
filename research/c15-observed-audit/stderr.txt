@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/karimelhoudaigui/Downloads/quantage-research/research/c15-observed-audit.py", line 221, in <module>
+    if __name__=='__main__':main()
+  File "/Users/karimelhoudaigui/Downloads/quantage-research/research/c15-observed-audit.py", line 98, in main
+    assert manifest['command'][manifest['command'].index('--max-new-tokens')+1]=='384'
+ValueError: '--max-new-tokens' is not in list

@@ -1,0 +1,15 @@
+{
+  "free_bytes_initial": 7257059328,
+  "minimum_before_download": 8249008960,
+  "cache_evictions": [
+    {
+      "path": "research/external/c17-public-v2/models/Qwen3.5-2B-Q4_K_M.gguf",
+      "bytes": 1312165056,
+      "sha256_before": "a8b50de00b780c0f3c16f07cb041a1ecd678b6e22fd8cde91e57fe4b5031523b",
+      "lsof_closed": true,
+      "restore_url": "https://huggingface.co/SoAIHQ/Qwen3.5-2B-GGUF/resolve/377fa65bb36aa83414de1ab3b40f6f15b0324cdc/Qwen3.5-2B-Q4_K_M.gguf",
+      "scope": "unused public cache only; no raw/source/evidence removed"
+    }
+  ],
+  "free_bytes_after": 8506155008
+}

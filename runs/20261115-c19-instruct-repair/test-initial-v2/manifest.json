@@ -1,0 +1,854 @@
+{
+  "schema_version": 2,
+  "claim_id": "C19-QUANTIZED-REPAIR",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-m",
+    "quantage.repair_llama_linear",
+    "--cases",
+    "runs/20261115-c19-instruct-repair/test_cases.json",
+    "--instructions",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt",
+    "--phase",
+    "initial",
+    "--output",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver",
+    "--server-binary",
+    "research/external/c16-public/runtime/llama-b12359/llama-server",
+    "--model",
+    "research/external/c19-public/models/Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "--acquisition",
+    "runs/20261115-c19-instruct-repair/acquisition.json",
+    "--execute"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "llama.cpp",
+        "version": "1.0.0-dev build12359 b1b770d90"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.13.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "test initial: actual authored multi-constraint binary ILPs, oracle feedback or finite scoring as applicable",
+    "coefficient_domain": "exact integer ILP; quantized Q4_K_M LLM; float64 HiGHS",
+    "conventions": "same generic linear grammar, known primitive clauses, per-ID SHA256 seeds+round; trusted annotated oracle; no gold in inference",
+    "inputs": [
+      "runs/20261115-c19-instruct-repair/test_cases.json"
+    ],
+    "bounds": {
+      "cases": 20,
+      "max_new_tokens": 512,
+      "context_tokens": 4096,
+      "n": [
+        4,
+        7
+      ],
+      "max_completion_seconds": 180
+    },
+    "non_claims": [
+      "No QPU, spending or free-text semantic guarantee",
+      "No isolated quantization/grammar causal effect",
+      "No population confidence interval or general novelty",
+      "Direct token probability is a pinned-API selection heuristic",
+      "Solver choice is ex-post profiling, cost of both included"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "llama.cpp per-ID SHA256 first8hex + round offset",
+    "seed": 0
+  },
+  "run": {
+    "started_at": "2026-11-15T21:12:48.519624+00:00",
+    "runtime_seconds": 245.299274,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 1800.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 4
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/run_c19_phase_v2.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_language.py",
+    "runs/20261115-c19-instruct-repair/test_cases.json",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt",
+    "runs/20261115-c19-instruct-repair/protocol.md",
+    "runs/20261115-c19-instruct-repair/protocol-test.md",
+    "runs/20261115-c19-instruct-repair/freeze-test-v2.json",
+    "runs/20261115-c19-instruct-repair/annotation-agreement.json",
+    "quantage/repair_llama_linear.py",
+    "runs/20261115-c19-instruct-repair/acquisition.json",
+    "research/external/c19-public/models/Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+    "research/external/c16-public/runtime/llama-b12359/llama-mtmd-debug",
+    "research/external/c16-public/runtime/llama-b12359/llama-tokenize",
+    "research/external/c16-public/runtime/llama-b12359/llama-cli",
+    "research/external/c16-public/runtime/llama-b12359/llama-batched-bench",
+    "research/external/c16-public/runtime/llama-b12359/libggml-base.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-minicpmv-cli",
+    "research/external/c16-public/runtime/llama-b12359/libggml.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-connect",
+    "research/external/c16-public/runtime/llama-b12359/libggml-metal.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/LICENSE",
+    "research/external/c16-public/runtime/llama-b12359/libggml.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-blas.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-results",
+    "research/external/c16-public/runtime/llama-b12359/libmtmd.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-server-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-gguf-split",
+    "research/external/c16-public/runtime/llama-b12359/libggml-base.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-perplexity",
+    "research/external/c16-public/runtime/llama-b12359/llama-imatrix",
+    "research/external/c16-public/runtime/llama-b12359/libggml-rpc.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-fit-params",
+    "research/external/c16-public/runtime/llama-b12359/ggml-rpc-server",
+    "research/external/c16-public/runtime/llama-b12359/libggml-metal.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-qwen2vl-cli",
+    "research/external/c16-public/runtime/llama-b12359/libllama.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-blas.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-gemma3-cli",
+    "research/external/c16-public/runtime/llama-b12359/libmtmd.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-completion-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-bench-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-cpu.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-perplexity-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-cpu.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-rpc.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-mtmd-cli",
+    "research/external/c16-public/runtime/llama-b12359/ggml-metal-tuning",
+    "research/external/c16-public/runtime/llama-b12359/libggml-metal.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-cvector-generator",
+    "research/external/c16-public/runtime/llama-b12359/libllama-quantize-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-completion",
+    "research/external/c16-public/runtime/llama-b12359/libggml-cpu.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-bench",
+    "research/external/c16-public/runtime/llama-b12359/libggml-base.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-cli-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-blas.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libmtmd.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-common.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-server",
+    "research/external/c16-public/runtime/llama-b12359/libllama-batched-bench-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-llava-cli",
+    "research/external/c16-public/runtime/llama-b12359/libllama-common.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libllama-common.1.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-tts",
+    "research/external/c16-public/runtime/llama-b12359/libggml.1.0.0.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama-quantize",
+    "research/external/c16-public/runtime/llama-b12359/llama-export-lora",
+    "research/external/c16-public/runtime/llama-b12359/libllama-fit-params-impl.dylib",
+    "research/external/c16-public/runtime/llama-b12359/libggml-rpc.dylib",
+    "research/external/c16-public/runtime/llama-b12359/llama"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/run_c19_phase_v2.py",
+      "sha256": "99373eb7503d40ddb83c0a54f8da0c1a64df00ae8f2cd3763570f618d875a4c1",
+      "sha256_after": "99373eb7503d40ddb83c0a54f8da0c1a64df00ae8f2cd3763570f618d875a4c1"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test_cases.json",
+      "sha256": "742301bb909289baaf1f34f328032851aa1ca8b935ede5b34e4081aa903d223b",
+      "sha256_after": "742301bb909289baaf1f34f328032851aa1ca8b935ede5b34e4081aa903d223b"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/instructions.frozen.txt",
+      "sha256": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0",
+      "sha256_after": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/protocol.md",
+      "sha256": "69a96a13ae303038f7aaa3bacef24e23bb00d76f5795a4071c0dca7346b521ff",
+      "sha256_after": "69a96a13ae303038f7aaa3bacef24e23bb00d76f5795a4071c0dca7346b521ff"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/protocol-test.md",
+      "sha256": "0f07c7f2b76709ab7b883f0f6d18c5472fbf62ba83290746963519523ab9fa8c",
+      "sha256_after": "0f07c7f2b76709ab7b883f0f6d18c5472fbf62ba83290746963519523ab9fa8c"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/freeze-test-v2.json",
+      "sha256": "b4c49b188f93b88fce75e12840fb47ccb5f829a477579b979a8910e898f481e9",
+      "sha256_after": "b4c49b188f93b88fce75e12840fb47ccb5f829a477579b979a8910e898f481e9"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/annotation-agreement.json",
+      "sha256": "4f6bc1d64c121061b8aa9896ffc6aa87a3b70f809425a0e06f92e86fa65acf1f",
+      "sha256_after": "4f6bc1d64c121061b8aa9896ffc6aa87a3b70f809425a0e06f92e86fa65acf1f"
+    },
+    {
+      "path": "quantage/repair_llama_linear.py",
+      "sha256": "27da08e8c072ae711aaf8451e761ed91bea0bec421974626241503e74b4195be",
+      "sha256_after": "27da08e8c072ae711aaf8451e761ed91bea0bec421974626241503e74b4195be"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/acquisition.json",
+      "sha256": "a528cc7bb876ba5e02084e9593c2bba0b997b053ebbdd92c12345b8cf197b0f6",
+      "sha256_after": "a528cc7bb876ba5e02084e9593c2bba0b997b053ebbdd92c12345b8cf197b0f6"
+    },
+    {
+      "path": "research/external/c19-public/models/Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "sha256": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e",
+      "sha256_after": "2fde00ce69dd4899c70d020845e2638353015bba0fdf161b3eb965f2bca4464e"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-mtmd-debug",
+      "sha256": "55d7d8a2c89f60f8ea64a8b7b433487c50867be73592612cdaa1bbe2a30a126e",
+      "sha256_after": "55d7d8a2c89f60f8ea64a8b7b433487c50867be73592612cdaa1bbe2a30a126e"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-tokenize",
+      "sha256": "1f4ce2b478b228c6576f46bffb52d8ed88671f057c5b5e9c00b243bbe2c693db",
+      "sha256_after": "1f4ce2b478b228c6576f46bffb52d8ed88671f057c5b5e9c00b243bbe2c693db"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-cli",
+      "sha256": "bd106d493e17ed3e71239b9a0b85d70c19cba245c7e509381e9e0e99bef92d4a",
+      "sha256_after": "bd106d493e17ed3e71239b9a0b85d70c19cba245c7e509381e9e0e99bef92d4a"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-batched-bench",
+      "sha256": "b63a739e1e5b3a2e2a6fd096b7af4cc273127aebfe21ce0dcf8af1c24e1bc09e",
+      "sha256_after": "b63a739e1e5b3a2e2a6fd096b7af4cc273127aebfe21ce0dcf8af1c24e1bc09e"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-base.1.0.0.dylib",
+      "sha256": "27921afe159a36c5fdfd293da51beee0ae83587db99a8434241cd92fd4478e6a",
+      "sha256_after": "27921afe159a36c5fdfd293da51beee0ae83587db99a8434241cd92fd4478e6a"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-minicpmv-cli",
+      "sha256": "4baffe08bb410686ee032b1b2ff9a948bbde3fdc014dddf750f36978e3b40589",
+      "sha256_after": "4baffe08bb410686ee032b1b2ff9a948bbde3fdc014dddf750f36978e3b40589"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml.1.dylib",
+      "sha256": "7d3702e5e30ba6a7b342bee26496a018bc289d44c90c6c5627b75dd9862b2cde",
+      "sha256_after": "7d3702e5e30ba6a7b342bee26496a018bc289d44c90c6c5627b75dd9862b2cde"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-connect",
+      "sha256": "a2e54e1198276037f05882b5142641cd4c55c7fbdd748fcb10a4a8109c723d59",
+      "sha256_after": "a2e54e1198276037f05882b5142641cd4c55c7fbdd748fcb10a4a8109c723d59"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-metal.1.dylib",
+      "sha256": "e6cca52435be9682e2473ffa43123549590710c0e8d586e3e12360de80097e7f",
+      "sha256_after": "e6cca52435be9682e2473ffa43123549590710c0e8d586e3e12360de80097e7f"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/LICENSE",
+      "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "sha256_after": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml.dylib",
+      "sha256": "7d3702e5e30ba6a7b342bee26496a018bc289d44c90c6c5627b75dd9862b2cde",
+      "sha256_after": "7d3702e5e30ba6a7b342bee26496a018bc289d44c90c6c5627b75dd9862b2cde"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-blas.1.0.0.dylib",
+      "sha256": "8bfc2b86400db027c4d85571e838c149bd09e66093d707405f9be37fd51bdccc",
+      "sha256_after": "8bfc2b86400db027c4d85571e838c149bd09e66093d707405f9be37fd51bdccc"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-results",
+      "sha256": "8e13f7fad5bce8d1e96a6636096fd428cf2b3878d09425110d593adb2fe22639",
+      "sha256_after": "8e13f7fad5bce8d1e96a6636096fd428cf2b3878d09425110d593adb2fe22639"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libmtmd.dylib",
+      "sha256": "6707bc4f3e7c403b9416a1a1f18a694de4bfab0fbdd81156c91e776aac883c29",
+      "sha256_after": "6707bc4f3e7c403b9416a1a1f18a694de4bfab0fbdd81156c91e776aac883c29"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-server-impl.dylib",
+      "sha256": "1f027d62af4fb070413fe20b6e07e7c95520196592e58fceb2a2d84c6a992449",
+      "sha256_after": "1f027d62af4fb070413fe20b6e07e7c95520196592e58fceb2a2d84c6a992449"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-gguf-split",
+      "sha256": "f3b6363c0190aa161b522f04669c20f3605d73a6ea5f10f23431d03434e140a3",
+      "sha256_after": "f3b6363c0190aa161b522f04669c20f3605d73a6ea5f10f23431d03434e140a3"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-base.dylib",
+      "sha256": "27921afe159a36c5fdfd293da51beee0ae83587db99a8434241cd92fd4478e6a",
+      "sha256_after": "27921afe159a36c5fdfd293da51beee0ae83587db99a8434241cd92fd4478e6a"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-perplexity",
+      "sha256": "b0dc41a20d93d4803aee33472322a5d0a9455a36bb24bf84916134bf18520bdf",
+      "sha256_after": "b0dc41a20d93d4803aee33472322a5d0a9455a36bb24bf84916134bf18520bdf"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-imatrix",
+      "sha256": "6b9ad19f40695f7961bff014d8c689f17de2ae99fd0461c69861c03176a77f9f",
+      "sha256_after": "6b9ad19f40695f7961bff014d8c689f17de2ae99fd0461c69861c03176a77f9f"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-rpc.1.dylib",
+      "sha256": "565efd05cd9960542218c74b6249db43d18d30c81331ee6ce151e692f0096146",
+      "sha256_after": "565efd05cd9960542218c74b6249db43d18d30c81331ee6ce151e692f0096146"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-fit-params",
+      "sha256": "d82e77633af47929267b28744f6407059a45c4fd4ed80fb7d31d63eb0453ce2f",
+      "sha256_after": "d82e77633af47929267b28744f6407059a45c4fd4ed80fb7d31d63eb0453ce2f"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/ggml-rpc-server",
+      "sha256": "cc5945ecb7744b0e843acd44115d12729427d4b494820b79b519ebd3114ef8ce",
+      "sha256_after": "cc5945ecb7744b0e843acd44115d12729427d4b494820b79b519ebd3114ef8ce"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-metal.1.0.0.dylib",
+      "sha256": "e6cca52435be9682e2473ffa43123549590710c0e8d586e3e12360de80097e7f",
+      "sha256_after": "e6cca52435be9682e2473ffa43123549590710c0e8d586e3e12360de80097e7f"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-qwen2vl-cli",
+      "sha256": "9be4a36b2587c0216009b1ed59ac79b1e4dd2e885f326e8aeffac8aa37761d31",
+      "sha256_after": "9be4a36b2587c0216009b1ed59ac79b1e4dd2e885f326e8aeffac8aa37761d31"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama.1.dylib",
+      "sha256": "dfc60f3c5001e4cd75fd09dca393c4f825dcce3856709ff0faed57344aab6215",
+      "sha256_after": "dfc60f3c5001e4cd75fd09dca393c4f825dcce3856709ff0faed57344aab6215"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-blas.dylib",
+      "sha256": "8bfc2b86400db027c4d85571e838c149bd09e66093d707405f9be37fd51bdccc",
+      "sha256_after": "8bfc2b86400db027c4d85571e838c149bd09e66093d707405f9be37fd51bdccc"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-gemma3-cli",
+      "sha256": "f7f9126b0881654bdb4c9ceab6de40f42e31998fa0c775505b5979ef7e8e567e",
+      "sha256_after": "f7f9126b0881654bdb4c9ceab6de40f42e31998fa0c775505b5979ef7e8e567e"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libmtmd.1.dylib",
+      "sha256": "6707bc4f3e7c403b9416a1a1f18a694de4bfab0fbdd81156c91e776aac883c29",
+      "sha256_after": "6707bc4f3e7c403b9416a1a1f18a694de4bfab0fbdd81156c91e776aac883c29"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-completion-impl.dylib",
+      "sha256": "e69b6d2c8f4121645ec9b6e6c3452ad000b0563ec7604959b9333eb013ce735b",
+      "sha256_after": "e69b6d2c8f4121645ec9b6e6c3452ad000b0563ec7604959b9333eb013ce735b"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-bench-impl.dylib",
+      "sha256": "dcf7f5f8aac625017b199205bca57fd5ba3bf787478467f9ef2d418bcb60f4b6",
+      "sha256_after": "dcf7f5f8aac625017b199205bca57fd5ba3bf787478467f9ef2d418bcb60f4b6"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-cpu.1.0.0.dylib",
+      "sha256": "d33d9aba808ea37e279cfc696fcaf4ba63a4133f6e7559748148c5b961d2a319",
+      "sha256_after": "d33d9aba808ea37e279cfc696fcaf4ba63a4133f6e7559748148c5b961d2a319"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama.dylib",
+      "sha256": "dfc60f3c5001e4cd75fd09dca393c4f825dcce3856709ff0faed57344aab6215",
+      "sha256_after": "dfc60f3c5001e4cd75fd09dca393c4f825dcce3856709ff0faed57344aab6215"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-perplexity-impl.dylib",
+      "sha256": "6f2179d60e1a0aae2953629e9b8b02798066b3bc09b52efe2cdee552eb2d9b56",
+      "sha256_after": "6f2179d60e1a0aae2953629e9b8b02798066b3bc09b52efe2cdee552eb2d9b56"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-cpu.dylib",
+      "sha256": "d33d9aba808ea37e279cfc696fcaf4ba63a4133f6e7559748148c5b961d2a319",
+      "sha256_after": "d33d9aba808ea37e279cfc696fcaf4ba63a4133f6e7559748148c5b961d2a319"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-rpc.1.0.0.dylib",
+      "sha256": "565efd05cd9960542218c74b6249db43d18d30c81331ee6ce151e692f0096146",
+      "sha256_after": "565efd05cd9960542218c74b6249db43d18d30c81331ee6ce151e692f0096146"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-mtmd-cli",
+      "sha256": "edf7d4e7e313ce9918d857691ccc8fefb5555b1e0ec95763cb382c8b3bdf1e61",
+      "sha256_after": "edf7d4e7e313ce9918d857691ccc8fefb5555b1e0ec95763cb382c8b3bdf1e61"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/ggml-metal-tuning",
+      "sha256": "0c5c015b459833a54761aecaaf23020d3bb791f37fd483665acdd61282b1ac3b",
+      "sha256_after": "0c5c015b459833a54761aecaaf23020d3bb791f37fd483665acdd61282b1ac3b"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-metal.dylib",
+      "sha256": "e6cca52435be9682e2473ffa43123549590710c0e8d586e3e12360de80097e7f",
+      "sha256_after": "e6cca52435be9682e2473ffa43123549590710c0e8d586e3e12360de80097e7f"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-cvector-generator",
+      "sha256": "5e62fb81873a6c16fc2047de817e15b0f36fb3b9018889e7a5d0d52dbbadd667",
+      "sha256_after": "5e62fb81873a6c16fc2047de817e15b0f36fb3b9018889e7a5d0d52dbbadd667"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-quantize-impl.dylib",
+      "sha256": "4ec516c56d185f68f1be334bf28a25d4b19aeeafa456682397237b14c67578df",
+      "sha256_after": "4ec516c56d185f68f1be334bf28a25d4b19aeeafa456682397237b14c67578df"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-completion",
+      "sha256": "37bd17f568b4b9632f7ab998ccb9bf3e70af9aa037b60cfc832580634f92c5d6",
+      "sha256_after": "37bd17f568b4b9632f7ab998ccb9bf3e70af9aa037b60cfc832580634f92c5d6"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-cpu.1.dylib",
+      "sha256": "d33d9aba808ea37e279cfc696fcaf4ba63a4133f6e7559748148c5b961d2a319",
+      "sha256_after": "d33d9aba808ea37e279cfc696fcaf4ba63a4133f6e7559748148c5b961d2a319"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-bench",
+      "sha256": "e59efabeca809dceecbdf2547734603148184e6374518a4e8bc4e7990e9282eb",
+      "sha256_after": "e59efabeca809dceecbdf2547734603148184e6374518a4e8bc4e7990e9282eb"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-base.1.dylib",
+      "sha256": "27921afe159a36c5fdfd293da51beee0ae83587db99a8434241cd92fd4478e6a",
+      "sha256_after": "27921afe159a36c5fdfd293da51beee0ae83587db99a8434241cd92fd4478e6a"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-cli-impl.dylib",
+      "sha256": "4c600c6a2c8deb9ca38341edefab4184d97b68b9a3fd5edf0f3daafa32267704",
+      "sha256_after": "4c600c6a2c8deb9ca38341edefab4184d97b68b9a3fd5edf0f3daafa32267704"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-blas.1.dylib",
+      "sha256": "8bfc2b86400db027c4d85571e838c149bd09e66093d707405f9be37fd51bdccc",
+      "sha256_after": "8bfc2b86400db027c4d85571e838c149bd09e66093d707405f9be37fd51bdccc"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama.1.0.0.dylib",
+      "sha256": "dfc60f3c5001e4cd75fd09dca393c4f825dcce3856709ff0faed57344aab6215",
+      "sha256_after": "dfc60f3c5001e4cd75fd09dca393c4f825dcce3856709ff0faed57344aab6215"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libmtmd.1.0.0.dylib",
+      "sha256": "6707bc4f3e7c403b9416a1a1f18a694de4bfab0fbdd81156c91e776aac883c29",
+      "sha256_after": "6707bc4f3e7c403b9416a1a1f18a694de4bfab0fbdd81156c91e776aac883c29"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-common.1.0.0.dylib",
+      "sha256": "2a944a59202b6577e694b8d0feb7ecb00d0e48d66ebeb38d6df5d793b0e18aa0",
+      "sha256_after": "2a944a59202b6577e694b8d0feb7ecb00d0e48d66ebeb38d6df5d793b0e18aa0"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-server",
+      "sha256": "685941b8df982e4e205fd20492f9aaa9418f2d1224ba3d311a686abd0edb0439",
+      "sha256_after": "685941b8df982e4e205fd20492f9aaa9418f2d1224ba3d311a686abd0edb0439"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-batched-bench-impl.dylib",
+      "sha256": "cf6cf64dcab4686987844a1604a18c0c020948ba358bdade67ff8d56b689b570",
+      "sha256_after": "cf6cf64dcab4686987844a1604a18c0c020948ba358bdade67ff8d56b689b570"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-llava-cli",
+      "sha256": "9a77293c34faa94ae6955f9b1da3dca9fa55cf09fcd0fff87c96f5ec44b9d547",
+      "sha256_after": "9a77293c34faa94ae6955f9b1da3dca9fa55cf09fcd0fff87c96f5ec44b9d547"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-common.dylib",
+      "sha256": "2a944a59202b6577e694b8d0feb7ecb00d0e48d66ebeb38d6df5d793b0e18aa0",
+      "sha256_after": "2a944a59202b6577e694b8d0feb7ecb00d0e48d66ebeb38d6df5d793b0e18aa0"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-common.1.dylib",
+      "sha256": "2a944a59202b6577e694b8d0feb7ecb00d0e48d66ebeb38d6df5d793b0e18aa0",
+      "sha256_after": "2a944a59202b6577e694b8d0feb7ecb00d0e48d66ebeb38d6df5d793b0e18aa0"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-tts",
+      "sha256": "e64936e91881490486875475f6693f9c88458aee67f401e00f8631aa104b74ac",
+      "sha256_after": "e64936e91881490486875475f6693f9c88458aee67f401e00f8631aa104b74ac"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml.1.0.0.dylib",
+      "sha256": "7d3702e5e30ba6a7b342bee26496a018bc289d44c90c6c5627b75dd9862b2cde",
+      "sha256_after": "7d3702e5e30ba6a7b342bee26496a018bc289d44c90c6c5627b75dd9862b2cde"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-quantize",
+      "sha256": "e541eee3175b8fbde9c528c70563efdfb0de3e1e66b958c28d35b050ee078b70",
+      "sha256_after": "e541eee3175b8fbde9c528c70563efdfb0de3e1e66b958c28d35b050ee078b70"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama-export-lora",
+      "sha256": "5c97ccbbd50bdbba33cc0d329c4e1b45e665cbfcf634e8a4c44ba0be6ee5d060",
+      "sha256_after": "5c97ccbbd50bdbba33cc0d329c4e1b45e665cbfcf634e8a4c44ba0be6ee5d060"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libllama-fit-params-impl.dylib",
+      "sha256": "d40f87730651903ef6d8792df502af6344587da70ed34aadca59122e0d716890",
+      "sha256_after": "d40f87730651903ef6d8792df502af6344587da70ed34aadca59122e0d716890"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/libggml-rpc.dylib",
+      "sha256": "565efd05cd9960542218c74b6249db43d18d30c81331ee6ce151e692f0096146",
+      "sha256_after": "565efd05cd9960542218c74b6249db43d18d30c81331ee6ce151e692f0096146"
+    },
+    {
+      "path": "research/external/c16-public/runtime/llama-b12359/llama",
+      "sha256": "715e9a9290643f58ca69bd2161c36ebc93fcec8a0f6535fe2225807cf6704411",
+      "sha256_after": "715e9a9290643f58ca69bd2161c36ebc93fcec8a0f6535fe2225807cf6704411"
+    }
+  ],
+  "output_directory": "runs/20261115-c19-instruct-repair/test-initial-v2",
+  "declared_results": [
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/generation.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/server.stdout.txt",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/server.stderr.txt",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/form-grammar.gbnf",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/form-schema.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/000.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/000.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/001.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/001.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/002.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/002.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/003.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/003.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/004.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/004.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/005.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/005.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/006.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/006.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/007.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/007.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/008.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/008.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/009.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/009.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/010.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/010.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/011.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/011.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/012.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/012.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/013.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/013.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/014.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/014.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/015.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/015.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/016.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/016.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/017.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/017.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/018.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/018.response.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/019.request.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/019.response.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/stdout.txt",
+      "sha256": "7346005b777bb9c9eda2fa33640b101c13d68a855ea02ae0a2931385a5c16f73",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+      "sha256": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/generation.json",
+      "sha256": "189c31f0fe1ce9c6e835d2c7e80ab357840644b18ca786d3ed6615eab5a3441e",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/server.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/server.stderr.txt",
+      "sha256": "7cb43b3c949187fa0499ed4740f4c961217608289dfda40142241bb7483e6410",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/form-grammar.gbnf",
+      "sha256": "d5cc82246bc6f36bbdca08324bc9ffbd1d036af7414bc4d3e935c2b63bd897e7",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/form-schema.json",
+      "sha256": "0449ef2c5663fa723bdad28ac8b59ef51cd8593b6402f7f495af862142e4b09a",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/000.request.json",
+      "sha256": "c5ea569ca3b7b3f4361e26d99f024b2fa7f29545cc3fdc383c762059aa554aad",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/000.response.json",
+      "sha256": "bfd475c1e80293f22ce4c717d813f5ebd32f7ead9e06230647667b3e5ec0545c",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/001.request.json",
+      "sha256": "2e78b5b37941116da0a0c23ee438096e6bc0907f568ee979da14723c2827a932",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/001.response.json",
+      "sha256": "44580e2f8c77a81b83314a5998fff56046255218c6fd900ed58386c21fc3b487",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/002.request.json",
+      "sha256": "58b100fb69323390403d12839a4d34d820fc4482301ee7403aec3c549c94b66a",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/002.response.json",
+      "sha256": "fa713b6a932e14c3edbe937a2378506a11782137d4978d0718d352720ad25f37",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/003.request.json",
+      "sha256": "8eec6a7362a8b66e005990c3f0e5780d0b48dc705c88cabbcfd69fd24fa81fbf",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/003.response.json",
+      "sha256": "e5d359e5e12336d6ecd721766411dd3b807296f66573d015e1a30286a77312d9",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/004.request.json",
+      "sha256": "82ebb24dc6aa69be236053c01d616a43c4243533692bf71217e19508e914c4ff",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/004.response.json",
+      "sha256": "3f479ce9988fee5ff3e635acb64a2a76a6612e660bfc29a191906d9291dd3cd3",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/005.request.json",
+      "sha256": "25b8ec98fd7560df58d955d5ab742b1f4b3fd0e3bddc64b281a5203e623ce889",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/005.response.json",
+      "sha256": "64420a26d7c4b47746937e87e14a9d9657b92d203f2394747bbcfeb9562cfe27",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/006.request.json",
+      "sha256": "37ac56d4a17d189ffc858131965f2f5886a779019c4ed0d5df6ca11f222a7c5a",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/006.response.json",
+      "sha256": "7359c9768c4668dbfbaaeed07c5e0609cb69f9db1e39190fda9a157c573df1f5",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/007.request.json",
+      "sha256": "5be9c4a63b2370656e87187850e61252ab9d0df9cd5d5323f54c83e1f5153e29",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/007.response.json",
+      "sha256": "2360844a65d10e9566ed12ef68f6037b0f0ccd73c02d32f3e72b2ef0fd488326",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/008.request.json",
+      "sha256": "917df15f118f1adaaa0cfcce6f30fc2fb5eb329dc1a06d3b292e5b88568251f5",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/008.response.json",
+      "sha256": "92664962a08adc8354872d02d3daf1d9b47008648f70576f8af175b9351e83c6",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/009.request.json",
+      "sha256": "f311fc3ebccc2864b5550a912a6a762e801aa4ca0e915871b077c6d1f12d02c3",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/009.response.json",
+      "sha256": "8959c80daa3e05badf34cbaaa6602e5743d406c42442db59d21732a6271235be",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/010.request.json",
+      "sha256": "086f3a9bb3bb5babcdf85e7aac384f9af3e2f37fd1d0599b0169988fb9e4e6a3",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/010.response.json",
+      "sha256": "9f859996556eacb22151dd7bf1eebd088372a9379652bb1492fc0fa12cb27c70",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/011.request.json",
+      "sha256": "197e94a4627887f787ee1d553704efda2726de05c3eded120c42a2fe59742193",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/011.response.json",
+      "sha256": "71add34bd422c4d1941eb439702cf1dc96b4c7a006f3f360d5843dd1395abdb2",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/012.request.json",
+      "sha256": "9774aee8473f95dd5c5add2461ae3428d61466f087a2562660632694f8f20504",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/012.response.json",
+      "sha256": "048c3b380178b8f4a1ad5adcb4cf6ce752635761f9c9b47ed222075207c4759f",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/013.request.json",
+      "sha256": "e589b42f92a461fa2d607087ba062b038e033531240cfc33c176f573b1a40124",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/013.response.json",
+      "sha256": "dbbf86e1b9160035b488edb7670935329730b4388ebce13a049d062fff59c34b",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/014.request.json",
+      "sha256": "e434d5508ada014a4a801929f3aaedcdd7768b600643159410f643a233585bb6",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/014.response.json",
+      "sha256": "9cbc87642fb4f0964d495e28b32bd42bdf1d92c4bc73841f3084b94fe1397905",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/015.request.json",
+      "sha256": "534f69e9f62b49f6dfeb405368e76fe5ce8820c4aec2b94bcf9129968f06f01f",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/015.response.json",
+      "sha256": "2907752a14a9361e97bb2c4e14bf1eb32dfad849d3cc85842b490b358a5db274",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/016.request.json",
+      "sha256": "3ac136488adb76e8d74cb88a08ffe68d0731bea2784177759f01671552a811ac",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/016.response.json",
+      "sha256": "74aaba6c750c70c23241c083894108f0343403b92643f583ab0c9f0959c332a3",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/017.request.json",
+      "sha256": "136baf0f154c19caa5110552f67ba5aeb2946fb00fdcdef1d5b8b925d2c421e0",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/017.response.json",
+      "sha256": "ee4a949bdf32ffeaeee06acaaf147ebdf884540e3de151e9147a8546826d54fc",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/018.request.json",
+      "sha256": "044fad746201ce943969bea9eb8205a6f9c5307c795379bb13e8a4c6a47aac84",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/018.response.json",
+      "sha256": "a34b81ec5d5af38051f55746289bba56990a54eccfcb006b96ef0e6a4b20e44c",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/019.request.json",
+      "sha256": "3e296b780ecf50a9c13f66f6b7effe9b5883548f4211748155d6b52960815f5a",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/http/019.response.json",
+      "sha256": "2e6a355e7fce73f090e897bda65c4e175f166d16e01d44626e46ac6a2da9a457",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

@@ -1,0 +1,14 @@
+
+root ::= "{" ws "\"formulation\"" ws ":" ws "\"binary_ilp\"" ws "," ws "\"variables\"" ws ":" ws integers "," ws "\"sense\"" ws ":" ws "\"max\"" ws "," ws "\"objective\"" ws ":" ws integers "," ws "\"constraints\"" ws ":" ws rows "}" ws
+integers ::= "[" ws (integer ("," ws integer){0,7})? "]" ws
+integer ::= "-"? uint ws
+sign ::= "+" | "-"
+uint ::= "10000" | [0-9] | [1-9] [0-9]{0,3}
+variable ::= "x" [0-7]
+atom ::= variable | uint ("*" variable)?
+expression ::= sign? atom (s ("+" | "-") s atom){0,31}
+relation ::= "<=" | ">=" | "=="
+linear ::= "\"" s expression s relation s sign? uint s "\"" ws
+rows ::= "[" ws (linear ("," ws linear){0,31})? "]" ws
+s ::= [ ]{0,8}
+ws ::= [ \t\n\r]{0,20}

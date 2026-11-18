@@ -1,0 +1,62 @@
+{
+  "gate_passed": false,
+  "failures": [
+    "pinned runtime help does not support the preregistered defaults",
+    "C23 corpus or gold listed as a model input",
+    "bounded runner did not complete with all declared results",
+    "generation status differs from preregistration",
+    "generation completed differs from preregistration",
+    "driver or cleanup error is recorded",
+    "output token count is outside its registered cap",
+    "raw output does not contain exactly one response"
+  ],
+  "runner_status": "failed",
+  "runner_exit_status": 1,
+  "generation_status": "partial_error",
+  "server_exit_status": -9,
+  "server_reaped": true,
+  "backend_observed": {
+    "device": "Metal",
+    "evidence_lines": [
+      "0.13.597.747 I load_tensors: offloaded 30/37 layers to GPU",
+      "0.13.604.403 I load_tensors:  MTL0_Mapped model buffer size =   486.87 MiB",
+      "0.13.604.404 I load_tensors:  MTL0_Mapped model buffer size =  3176.72 MiB"
+    ],
+    "offloaded_gpu_layers": 30,
+    "positive_metal_model_buffer": true,
+    "reported_total_layers": 37,
+    "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+  },
+  "backend_requested": {
+    "cpu_threads": 4,
+    "device": "MTL0",
+    "gpu_layers": 30
+  },
+  "input_sha256": {
+    "scripts/run_c28_probe.py": "4cb8392c6e40ad5870fd6de70c873be85443abb4185741599d7f1f0de7547918",
+    "scripts/verify_c28_probe.py": "d93043b991f1307f9a84665ecc761509a0ee6e4593936dd89828bcff65cb5e16",
+    "quantage/repair_iterative_full_inference.py": "bad0cab4cb1f59465938a50987ff4e8ea68b255320e3d8248160f906125c7312",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "runs/20261118-c28-c23-config-probe/protocol.md": "2b4c8b8ca8f5451da113cf1fa40470c7d908d43428d87e4c913939e9034f503f",
+    "runs/20261118-c28-c23-config-probe/c23-gate-amendment.md": "c6e6139b09c970a3e342dff07808b21cb4e8601057a4a8958ab1f2e1af9aedae",
+    "runs/20261118-c28-c23-config-probe/case.json": "5129c0d6fbeaceb427551043ef21bc8b8e35af17848cdf1c1ddc12d0cf63868b",
+    "runs/20261115-c19-instruct-repair/test_cases.json": "742301bb909289baaf1f34f328032851aa1ca8b935ede5b34e4081aa903d223b",
+    "runs/20261115-c19-instruct-repair/protocol-test.md": "0f07c7f2b76709ab7b883f0f6d18c5472fbf62ba83290746963519523ab9fa8c",
+    "runs/20261115-c19-instruct-repair/test-corpus-provenance.md": "c3aeb3aca3fa582677d4f764cf4e99de30636513932533004aad64d92cd86df1",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0",
+    "runs/20261115-c22-model-capacity/acquisition.json": "d692962887055660f422ed425e2e26e5adbbb1f9df71a27f8e59824df207fdbf",
+    "runs/20261116-c25-partial-gpu/protocol.md": "c85c96dedba793bb7b4bfb568a2011e66e56e63b8206cb83a2cf85f67b446f90",
+    "runs/20261116-c25-partial-gpu/before-verification.json": "e26099e3d7b2454b3c9c7a9b571ae9c10c004ebdca422d32906f792d085a0fa4",
+    "runs/20261116-c25-partial-gpu/guided-round2-v1/manifest.json": "6562dcdeba39b777e25334c8ecccecd6eb79c4fded2c19b8e5e40ca1d9b732a1",
+    "runs/20261116-c25-partial-gpu/guided-round2-v1/driver/generation.json": "eaa54ea781fc89369716c7c6633cffc6c974da387ca17df7ea71c9fac67bfa5c",
+    "runs/20261117-c27-quantized-kv-v2/protocol.md": "c644cde4e5e5d99e03b60d64cfa2d169a2bcc36bccd071fc7c0edbcd17ea605e",
+    "runs/20261117-c27-quantized-kv-v2/summary.md": "e36a086b802001ca8ec720202d98254edc69171d8da51961031745105b581057",
+    "runs/20261117-c27-quantized-kv-v2/native-help.json": "4060187429fd8b280b717fd5bcf24a4d73a74519b8637744c14ccdc25c7a2d6a",
+    "research/c23-v2-code-notes.md": "5510933a2adaf5660b309aa0f7e8872ec3dbbaeead23691f3532d98a6500ad7a"
+  },
+  "c23_corpus_or_gold_inputs": [
+    "runs/20261118-c28-c23-config-probe/case.json"
+  ],
+  "claim_scope": "single development-case runtime gate only; not a fidelity or population result"
+}

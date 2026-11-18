@@ -1,0 +1,438 @@
+[
+  {
+    "id": "9e2a4c71",
+    "split": "dev",
+    "language": "fr",
+    "constraints": {
+      "budget": 8,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "Le texte plafonne la somme des costs à 8 ; aucune borne de cardinalité."
+  },
+  {
+    "id": "31d8b6f0",
+    "split": "dev",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "At least 2 projects ; aucun plafond de coût ou de cardinalité."
+  },
+  {
+    "id": "a7f03d2c",
+    "split": "dev",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "Au maximum 2 expériences ; aucun budget."
+  },
+  {
+    "id": "68c1e9b4",
+    "split": "dev",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        2,
+        5
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "Les items 2 et 5 doivent être sélectionnés."
+  },
+  {
+    "id": "c2b7460d",
+    "split": "dev",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        1
+      ],
+      "implications": []
+    },
+    "rationale": "Module 1 est indisponible et explicitement exclu."
+  },
+  {
+    "id": "f40a8e53",
+    "split": "dev",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "rationale": "Choisir 0 impose 3 ; le texte autorise explicitement 3 sans 0."
+  },
+  {
+    "id": "0b5d97a2",
+    "split": "dev",
+    "language": "en",
+    "constraints": {
+      "budget": 10,
+      "min_count": 2,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "Coût total au plus 10 et au moins 2 tâches."
+  },
+  {
+    "id": "7d139ac8",
+    "split": "dev",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [
+        2,
+        6
+      ],
+      "implications": []
+    },
+    "rationale": "Indices 2 et 6 interdits ; au plus 2 articles."
+  },
+  {
+    "id": "e84b2f19",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 10,
+      "min_count": 1,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "Entre 1 et 2 ateliers, bornes incluses ; coût total au plus 10."
+  },
+  {
+    "id": "4a6d90c3",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 10,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        4
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "At least 2 components ; component 4 compulsory ; spending 10 or less."
+  },
+  {
+    "id": "b91c5e72",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 11,
+      "min_count": 2,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        1,
+        4
+      ],
+      "implications": []
+    },
+    "rationale": "Au moins 2 options ; ni 1 ni 4 ; coût cumulé au plus 11."
+  },
+  {
+    "id": "23e8a6d0",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 12,
+      "min_count": 3,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    "rationale": "Au moins 3 propositions ; coût au plus 12 ; implications dirigées 0 vers 5 et 3 vers 6, sans réciproque."
+  },
+  {
+    "id": "d062f4b9",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 9,
+      "min_count": null,
+      "max_count": 2,
+      "required": [
+        3
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "Au plus 2 actions ; action 3 obligatoire ; costs plafonnés à 9."
+  },
+  {
+    "id": "5fc7a138",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 7,
+      "min_count": null,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    },
+    "rationale": "Item 0 interdit ; au plus 1 item ; coût total au plus 7."
+  },
+  {
+    "id": "8b2e6c40",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 10,
+      "min_count": null,
+      "max_count": 3,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    "rationale": "Au maximum 3 candidats et coût au plus 10 ; implications simples 1 vers 4 et 4 vers 6."
+  },
+  {
+    "id": "1c94d7a6",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 12,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        5
+      ],
+      "implications": []
+    },
+    "rationale": "Expérience 0 imposée, expérience 5 interdite ; coût au plus 12."
+  },
+  {
+    "id": "6e3a08f5",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 7,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "rationale": "Équipement 0 obligatoire et implication 0 vers 2 ; budget au plus 7. Ces clauses sont conservées même si leur combinaison est infaisable."
+  },
+  {
+    "id": "f7a1d269",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 9,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        2
+      ],
+      "implications": [
+        [
+          4,
+          2
+        ]
+      ]
+    },
+    "rationale": "Job 2 interdit ; prendre 4 impose 2 ; coût au plus 9. Ne pas remplacer les clauses explicites par leurs seules conséquences."
+  },
+  {
+    "id": "3d5b9e01",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 3,
+      "required": [
+        1
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "rationale": "Entre 2 et 3 opérations, inclusivement ; opération 1 imposée ; aucun budget dans le texte."
+  },
+  {
+    "id": "a063c8f2",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": 3,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        3,
+        5
+      ],
+      "implications": []
+    },
+    "rationale": "Au moins 3 entrées ; 0 obligatoire ; 3 et 5 interdites ; aucune borne de costs malgré la présence de données de coût."
+  },
+  {
+    "id": "74f20b8d",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": 1,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "rationale": "De 1 à 2 pièces inclusivement ; implication 0 vers 1, sans réciproque ; aucune borne de coût."
+  },
+  {
+    "id": "ce1964a7",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        4
+      ],
+      "implications": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    "rationale": "1 imposé, 4 interdit ; implications 1 vers 3 et 3 vers 4 à sens unique. Conserver la contradiction induite."
+  },
+  {
+    "id": "2f8c05e1",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 13,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        4
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    },
+    "rationale": "4 obligatoire, 0 interdit ; au moins 2 et au plus 2 options ; costs au plus 13."
+  },
+  {
+    "id": "905e3b6a",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 11,
+      "min_count": 3,
+      "max_count": 3,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        6
+      ],
+      "implications": [
+        [
+          2,
+          5
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "rationale": "2 obligatoire, 6 interdit ; exactement 3 via bornes 3 et 3 ; coût au plus 11 ; implications 2 vers 5 et 0 vers 3."
+  }
+]

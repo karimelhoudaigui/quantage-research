@@ -1,0 +1,672 @@
+{
+  "cases": [
+    {
+      "id": "0d1fcab20bbf",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": 94,
+        "min_count": 1,
+        "max_count": 3,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            4,
+            5
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      "families": [
+        "B",
+        "I",
+        "L",
+        "U"
+      ],
+      "rationale": "Coût au plus 94 ; au moins 1 et au plus 3 options. Conditional on 5 signifie 4 impose 5 ; les autres clauses sont 6 impose 3 et 2 impose 1."
+    },
+    {
+      "id": "12d7d632fc5a",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": 106,
+        "min_count": 3,
+        "max_count": 4,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "families": [
+        "B",
+        "I",
+        "L",
+        "U"
+      ],
+      "rationale": "Au plus 4 et au moins 3 possibilités ; coût au plus 106 ; implications énoncées 4 vers 2, 5 vers 0 et 1 vers 3."
+    },
+    {
+      "id": "1591c552ce60",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [
+          2
+        ],
+        "implications": [
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            6,
+            3
+          ]
+        ]
+      },
+      "families": [
+        "F",
+        "I"
+      ],
+      "rationale": "2 interdit. Les deux conditions 0 requiert 4 et 4 impose 0 sont deux clauses réciproques distinctes ; 6 impose 3. Aucun budget ou cardinalité."
+    },
+    {
+      "id": "29d2d2fc7ee8",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": 4,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "families": [
+        "I",
+        "U"
+      ],
+      "rationale": "Au plus 4 options ; 1 impose 3 ; 3 impose 4 ; la sélection de 3 étant conditional on 0, elle impose 0, sans réciproque."
+    },
+    {
+      "id": "2c5f03082098",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": 105,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "families": [
+        "B",
+        "I"
+      ],
+      "rationale": "Coût au plus 105 ; trois conséquences distinctes de la sélection de 1 : sélectionner 0, 2 et 3. Aucune autre borne."
+    },
+    {
+      "id": "3bb2d6807209",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": null,
+        "min_count": 2,
+        "max_count": 4,
+        "required": [
+          6
+        ],
+        "forbidden": [
+          0
+        ],
+        "implications": [
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      },
+      "families": [
+        "F",
+        "I",
+        "L",
+        "M",
+        "U"
+      ],
+      "rationale": "Au moins 2 et au plus 4 possibilités ; 6 obligatoire, 0 interdit ; 5 impose 1, 4 impose 1, 3 impose 2."
+    },
+    {
+      "id": "3f2da1e93197",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            1,
+            2
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      },
+      "families": [
+        "I"
+      ],
+      "rationale": "Trois seules clauses supplémentaires : 1 impose 2, 4 impose 5 et 2 impose 4. Conserver les arcs énoncés, sans ajouter leur fermeture transitive."
+    },
+    {
+      "id": "4d46af430e6c",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [
+          3
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            0,
+            5
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      "families": [
+        "I",
+        "M"
+      ],
+      "rationale": "3 obligatoire ; implications 0 vers 5, 2 vers 0 et 5 vers 2. Le cycle conserve ses trois clauses explicites."
+    },
+    {
+      "id": "59cc26171df7",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": 60,
+        "min_count": 2,
+        "max_count": 3,
+        "required": [
+          2
+        ],
+        "forbidden": [
+          1
+        ],
+        "implications": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            4,
+            5
+          ]
+        ]
+      },
+      "families": [
+        "B",
+        "F",
+        "I",
+        "L",
+        "M",
+        "U"
+      ],
+      "rationale": "1 interdit, 2 obligatoire ; au moins 2 et au plus 3 possibilités ; coût au plus 60 ; clauses réciproques 0 vers 6 et 6 vers 0, plus 4 vers 5."
+    },
+    {
+      "id": "819b31e9501a",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": 136,
+        "min_count": 3,
+        "max_count": null,
+        "required": [
+          3
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "families": [
+        "B",
+        "I",
+        "L",
+        "M"
+      ],
+      "rationale": "Au moins 3 possibilités ; 3 obligatoire ; coût au plus 136 ; 6 impose 0 et 5, tandis que 0 impose 2."
+    },
+    {
+      "id": "8c8fdcd7b6dd",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            0,
+            5
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            4
+          ]
+        ]
+      },
+      "families": [
+        "I"
+      ],
+      "rationale": "0 impose 5 ; 4 impose 1 ; 5 est conditional on 4, donc 5 impose 4. Aucune borne supplémentaire sur coût ou cardinalité."
+    },
+    {
+      "id": "a06c02d2e5f5",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [
+          1
+        ],
+        "implications": [
+          [
+            5,
+            6
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "families": [
+        "F",
+        "I"
+      ],
+      "rationale": "1 interdit ; 5 impose 6 ; 0 requiert 3 et 3 oblige 0 sont deux implications réciproques explicites."
+    },
+    {
+      "id": "bc03e3d47a10",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": 2,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      "families": [
+        "I",
+        "U"
+      ],
+      "rationale": "Au plus 2 possibilités ; 4 impose 0, 3 impose 4 et 4 impose 1. Ne pas remplacer ces clauses par des interdictions dérivées."
+    },
+    {
+      "id": "c616c3b27d14",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": 62,
+        "min_count": 2,
+        "max_count": 3,
+        "required": [
+          5
+        ],
+        "forbidden": [
+          2
+        ],
+        "implications": [
+          [
+            1,
+            0
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "families": [
+        "B",
+        "F",
+        "I",
+        "L",
+        "M",
+        "U"
+      ],
+      "rationale": "Coût au plus 62 ; cardinalité entre 2 et 3 ; 5 obligatoire, 2 interdit. Conditional on 0 donne 1 vers 0 ; 4 impose 3 ; 0 impose aussi 1."
+    },
+    {
+      "id": "c7b67c2417a6",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [
+          5
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            2,
+            1
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "families": [
+        "I",
+        "M"
+      ],
+      "rationale": "5 obligatoire. 2 est conditional on 1, donc 2 impose 1 ; puis 1 impose 0 et 0 impose 2. Cycle de trois clauses, aucune réciproque ajoutée."
+    },
+    {
+      "id": "c8e0347b6769",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": null,
+        "min_count": 1,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "families": [
+        "I",
+        "L"
+      ],
+      "rationale": "Au moins 1 option. La sélection de 3 est conditional on 2, donc 3 impose 2 ; 1 impose 2 et 0 impose 2. Aucune borne de coût."
+    },
+    {
+      "id": "d11c57a34450",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": null,
+        "min_count": 2,
+        "max_count": 4,
+        "required": [
+          2
+        ],
+        "forbidden": [
+          5
+        ],
+        "implications": [
+          [
+            6,
+            1
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            1
+          ]
+        ]
+      },
+      "families": [
+        "F",
+        "I",
+        "L",
+        "M",
+        "U"
+      ],
+      "rationale": "Au plus 4 et au moins 2 options ; 2 obligatoire, 5 interdit ; 6 impose 1, 3 impose 0 et 4 est conditional on 1, donc impose 1."
+    },
+    {
+      "id": "d394c4b72e6e",
+      "split": "test",
+      "language": "fr",
+      "constraints": {
+        "budget": null,
+        "min_count": 3,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            2,
+            1
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      "families": [
+        "I",
+        "L"
+      ],
+      "rationale": "Au moins 3 possibilités ; 2 impose 1, 0 impose 1 et 3 requiert 1. Aucune obligation d’un indice particulier ou borne de coût."
+    },
+    {
+      "id": "d7da9a72a703",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": 144,
+        "min_count": 5,
+        "max_count": null,
+        "required": [
+          2
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      "families": [
+        "B",
+        "I",
+        "L",
+        "M"
+      ],
+      "rationale": "2 obligatoire ; au moins 5 options ; coût au plus 144 ; 1 est conditional on 0, donc impose 0 ; 0 impose 5 ; 1 impose aussi 3."
+    },
+    {
+      "id": "f62f0c0bce93",
+      "split": "test",
+      "language": "en",
+      "constraints": {
+        "budget": 81,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "families": [
+        "B",
+        "I"
+      ],
+      "rationale": "Coût au plus 81 ; la sélection de 3 est conditional on 1, donc impose 1 ; elle impose également 4 et 0. Pas de cardinalité explicite."
+    }
+  ]
+}

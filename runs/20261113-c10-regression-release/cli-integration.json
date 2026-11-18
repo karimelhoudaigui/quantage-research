@@ -1,0 +1,44 @@
+{
+  "kind": "post-hoc integration and two-case replay, not new held-out evaluation",
+  "recorded_at_utc": "2026-11-13T18:43:37.997889+00:00",
+  "records": [
+    {
+      "command": [
+        ".venv-local-llm/bin/python",
+        "-m",
+        "quantage.local_agent_cli",
+        "--request",
+        "examples/freeform-photon.json",
+        "--record-dir",
+        "runs/20261113-c10-regression-release/cli-freeform-photon"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "wall_seconds": 13.730514042,
+      "source_C09_id": "q_c8460a41cbce",
+      "raw_response_reproduced_exactly": true,
+      "pipeline_status": "accepted",
+      "stage": "hybrid_pipeline"
+    },
+    {
+      "command": [
+        ".venv-local-llm/bin/python",
+        "-m",
+        "quantage.local_agent_cli",
+        "--request",
+        "examples/ambiguous-input.json",
+        "--record-dir",
+        "runs/20261113-c10-regression-release/cli-ambiguous-input"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "wall_seconds": 17.013682875,
+      "source_C09_id": "q_ea7fda3d1cde",
+      "raw_response_reproduced_exactly": true,
+      "pipeline_status": "abstain",
+      "stage": "semantic_veto"
+    }
+  ],
+  "source_version": "v3",
+  "source_sha256_observed_before_v4_change": "ef16da769ea5f22557392312d5622d7a68abdb1aefc9fcf2e2009770b2f127ed"
+}

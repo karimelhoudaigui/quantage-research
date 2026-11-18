@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "status": "completed_with_local_revisions",
+  "checked_on": "2026-11-15",
+  "manuscript_sha256": "87ce4ac74cb9126741de5e3c167fc877abe96482d08a5e39f28fd55522fbb531",
+  "source_files_sha256": {
+    "paper/article.md": "764fb57db0fe15154c67a4cc291934e829d609f3d100bcf576e2cd9d2fdccb9e",
+    "paper/main.tex": "87ce4ac74cb9126741de5e3c167fc877abe96482d08a5e39f28fd55522fbb531",
+    "paper/build-c19-v4/main.pdf": "f7d2b9ce16551eebc84478d59787e510d5d6015a7ac57eb2dd3851a190042aa6",
+    "paper/pdf-review-v4/text.txt": "af2943863e105d1cb7195c761e60735764dbb6d5add52362b944819303e8ef71"
+  },
+  "contract_sha256": null,
+  "preparation": "Manual inventory. User authorized only two review files, so no preparation helper/snapshot directory was written. Unit IDs null with exact manual line and PDFpage locators.",
+  "coverage": [
+    {
+      "pass_id": "corr-all",
+      "lanes": [
+        "correctness"
+      ],
+      "scope": "All sections; displayed ILP and fidelity formula, H19 arithmetic, tables and costs compared to existing audit without new data validation",
+      "unit_ids": [],
+      "context": [
+        "full article.md and main.tex, PDFv4 text and8PNGpages",
+        "existing C19 observed audit and primary-source positioning reviews"
+      ],
+      "executor": "/root/c15_corpus",
+      "method": "self-review",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": "No new subagent launch: parent reported other reviewers quota-exhausted. Separate sequential passes by the same non-blind executor; host did not expose confirmed model/settings."
+      }
+    },
+    {
+      "pass_id": "adversarial-all",
+      "lanes": [
+        "adversarial"
+      ],
+      "scope": "Empty feasible domains, objective-only regression, argmax-vs-domain distinction, invalid-candidate fallback",
+      "unit_ids": [],
+      "context": [
+        "full article.md and main.tex, PDFv4 text and8PNGpages",
+        "existing C19 observed audit and primary-source positioning reviews"
+      ],
+      "executor": "/root/c15_corpus",
+      "method": "self-review",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": "No new subagent launch: parent reported other reviewers quota-exhausted. Separate sequential passes by the same non-blind executor; host did not expose confirmed model/settings."
+      }
+    },
+    {
+      "pass_id": "exposition-all",
+      "lanes": [
+        "exposition"
+      ],
+      "scope": "Full8page narrative, tables, example and reproducibility route",
+      "unit_ids": [],
+      "context": [
+        "full article.md and main.tex, PDFv4 text and8PNGpages",
+        "existing C19 observed audit and primary-source positioning reviews"
+      ],
+      "executor": "/root/c15_corpus",
+      "method": "self-review",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": "No new subagent launch: parent reported other reviewers quota-exhausted. Separate sequential passes by the same non-blind executor; host did not expose confirmed model/settings."
+      }
+    },
+    {
+      "pass_id": "notation-all",
+      "lanes": [
+        "notation"
+      ],
+      "scope": "All equations, model notation and secondary metric definitions; visual hats/sums checked",
+      "unit_ids": [],
+      "context": [
+        "full article.md and main.tex, PDFv4 text and8PNGpages",
+        "existing C19 observed audit and primary-source positioning reviews"
+      ],
+      "executor": "/root/c15_corpus",
+      "method": "self-review",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": "No new subagent launch: parent reported other reviewers quota-exhausted. Separate sequential passes by the same non-blind executor; host did not expose confirmed model/settings."
+      }
+    },
+    {
+      "pass_id": "claims-all",
+      "lanes": [
+        "claims"
+      ],
+      "scope": "Abstract and conclusion vs negative H19, direct baseline, CEGIS/SelfRefine attribution, hardware limits and non-independence",
+      "unit_ids": [],
+      "context": [
+        "full article.md and main.tex, PDFv4 text and8PNGpages",
+        "existing C19 observed audit and primary-source positioning reviews"
+      ],
+      "executor": "/root/c15_corpus",
+      "method": "self-review",
+      "status": "complete",
+      "model_assignment": {
+        "assignment_source": null,
+        "requested_model": null,
+        "requested_reasoning": null,
+        "actual_model": null,
+        "actual_reasoning": null,
+        "fallback_reason": "No new subagent launch: parent reported other reviewers quota-exhausted. Separate sequential passes by the same non-blind executor; host did not expose confirmed model/settings."
+      }
+    }
+  ],
+  "issues": [
+    {
+      "id": "notation-all-F001",
+      "lane": "notation",
+      "title": "Définir la conjonction utilisée par la colonne équivalence d’optimisation",
+      "severity": "moderate",
+      "type": "undefined-symbol",
+      "confidence": 0.99,
+      "priority": "mustfix",
+      "location": "paper/article.md:37 et75–80; paper/main.tex:51 et114–128; PDFv4p.2 et4",
+      "quote": "Nous rapportons séparément l'égalité des domaines et de tous les ensembles d'optimiseurs.",
+      "secondary_quote": "| Méthode | Schéma valide /20 | Fidèle /20 | Équiv. optimisation /20 | Utilisable /20 |",
+      "analysis": "Le tableau13/15/13/14 correspond à la conjonction Dhat=D ET argmax(fhat,Dhat)=argmax(f,D), pas à la seule égalité des ensembles d’optimiseurs (15/16/15/15 dans l’audit). La phrase actuelle peut suggérer deux métriques séparées sans définir celle de la colonne. Le cas66f7838312e1 initial conserve son optimiseur mais a le mauvais domaine; caf531e5abc9 révisé garde domaine et optimiseurs mais change l’objectif. Les trois propriétés doivent rester distinctes. Aucun score ne change.",
+      "suggested_fix": "Ajouter avant le tableau la définition Eopt=(Dhat=D) et (argmax_Dhat fhat=argmax_D f), avec ensemble vide pour une référence infaisable; réserver un autre nom à optimizer_set_equal si rapporté.",
+      "unit_id": null,
+      "reviewer": "notation-all",
+      "evidence_status": "presentation",
+      "support": [
+        "research/c19-observed-review.json:methods",
+        "paper/article.md:33–37"
+      ]
+    },
+    {
+      "id": "claims-all-F001",
+      "lane": "claims",
+      "title": "Pointer la route de reproduction v2 et l’union auto réellement scorée",
+      "severity": "moderate",
+      "type": "undelivered-promise",
+      "confidence": 1.0,
+      "priority": "mustfix",
+      "location": "paper/article.md:178; paper/main.tex:286; PDFv4p.8",
+      "quote": "scripts/run_c19_phase.py lance une phase avec runner borné dans une destination neuve, sans écrasement.",
+      "analysis": "Le script cité est la routev1 : initial et feedback y visent test-*-v1. Les résultats publiés sontv2 et l’auto finale vient de test-self-union-v2 (13+7), assemblée puis scorée par continue_c19_comparison.py. Même le score générique du wrapperv2 vise test-self-v2 (13lignes) et ne suffit pas pour la comparaison complète. Les manifests conservent les bonnes commandes, ce qui limite la gravité; le guide textuel principal devrait mener directement au bon enregistrement, plutôt qu’à une voie historique.",
+      "suggested_fix": "Nommer scripts/run_c19_phase_v2.py pour les phasesactives, scripts/continue_c19_comparison.py pour la continuation et l’union, et test-score-v2/manifest.json pour l’argv de score incluant test-self-union-v2. Distinguer réévaluation des traces existantes et nouvelle inférence en destination neuve.",
+      "unit_id": null,
+      "reviewer": "claims-all",
+      "evidence_status": "presentation",
+      "support": [
+        "scripts/run_c19_phase.py:30–32,70–78",
+        "scripts/run_c19_phase_v2.py:30–32,70–78",
+        "scripts/continue_c19_comparison.py:85–97"
+      ]
+    },
+    {
+      "id": "adversarial-all-F001",
+      "lane": "adversarial",
+      "title": "Préciser le cas où les deux réponses sont invalides",
+      "severity": "minor",
+      "type": "degenerate-case",
+      "confidence": 1.0,
+      "priority": "suggestion",
+      "location": "paper/article.md:62–63; paper/main.tex:92–93; PDFv4p.4",
+      "quote": "| Auto-révision | Requête, proposition initiale, consigne générique | Seconde si valide au schéma; sinon première valide |",
+      "analysis": "Le tableau ne fixe pas explicitement la sortie si les deux candidats sont invalides. Le protocole complet et le code retiennent la seconde invalide. Tous les candidats C19 sont valides : aucun score, coût ou conclusion C19 ne dépend de cette branche. La précision sert à décrire une politique totalement déterminée, sans suggérer un fallback corrigé.",
+      "suggested_fix": "Compléter par « sinon seconde invalide » pour auto/guidée; indiquer que cette branche n’est pas rencontrée dans C19.",
+      "unit_id": null,
+      "reviewer": "adversarial-all",
+      "evidence_status": "presentation",
+      "support": [
+        "runs/20261115-c19-instruct-repair/protocol-test.md:Vérification et sélection",
+        "research/c19-observed-review.json:methods"
+      ]
+    }
+  ],
+  "summary": {
+    "mustfix": 2,
+    "suggestions": 1,
+    "critical": 0,
+    "major": 0,
+    "H19": "negative; 13guided-12self=1<4, regression1<=1",
+    "direct_vs_guided": "15>13, descriptive only",
+    "C20_in_manuscript_results": false
+  },
+  "reconciliation": {
+    "executor": "/root/c15_corpus",
+    "method": "self-review",
+    "model_assignment": {
+      "assignment_source": null,
+      "requested_model": null,
+      "requested_reasoning": null,
+      "actual_model": null,
+      "actual_reasoning": null,
+      "fallback_reason": "No new subagent launch: parent reported other reviewers quota-exhausted. Separate sequential passes by the same non-blind executor; host did not expose confirmed model/settings."
+    },
+    "entries": [
+      {
+        "finding_id": "notation-all-F001",
+        "disposition": "retained",
+        "reason": "Le tableau13/15/13/14 correspond à la conjonction Dhat=D ET argmax(fhat,Dhat)=argmax(f,D), pas à la seule égalité des ensembles d’optimiseurs (15/16/15/15 dans l’audit). La phrase actuelle peut suggérer deux métriques séparées sans définir celle de la colonne. Le cas66f7838312e1 initial conserve son optimiseur mais a le mauvais domaine; caf531e5abc9 révisé garde domaine et optimiseurs mais change l’objectif. Les trois propriétés doivent rester distinctes. Aucun score ne change.",
+        "checked_locations": [
+          "paper/article.md:37 et75–80; paper/main.tex:51 et114–128; PDFv4p.2 et4"
+        ],
+        "specialist_artifacts": [
+          "research/c19-observed-review.json:methods",
+          "paper/article.md:33–37"
+        ],
+        "final_concern_id": "notation-all-F001"
+      },
+      {
+        "finding_id": "claims-all-F001",
+        "disposition": "retained",
+        "reason": "Le script cité est la routev1 : initial et feedback y visent test-*-v1. Les résultats publiés sontv2 et l’auto finale vient de test-self-union-v2 (13+7), assemblée puis scorée par continue_c19_comparison.py. Même le score générique du wrapperv2 vise test-self-v2 (13lignes) et ne suffit pas pour la comparaison complète. Les manifests conservent les bonnes commandes, ce qui limite la gravité; le guide textuel principal devrait mener directement au bon enregistrement, plutôt qu’à une voie historique.",
+        "checked_locations": [
+          "paper/article.md:178; paper/main.tex:286; PDFv4p.8"
+        ],
+        "specialist_artifacts": [
+          "scripts/run_c19_phase.py:30–32,70–78",
+          "scripts/run_c19_phase_v2.py:30–32,70–78",
+          "scripts/continue_c19_comparison.py:85–97"
+        ],
+        "final_concern_id": "claims-all-F001"
+      },
+      {
+        "finding_id": "adversarial-all-F001",
+        "disposition": "retained",
+        "reason": "Le tableau ne fixe pas explicitement la sortie si les deux candidats sont invalides. Le protocole complet et le code retiennent la seconde invalide. Tous les candidats C19 sont valides : aucun score, coût ou conclusion C19 ne dépend de cette branche. La précision sert à décrire une politique totalement déterminée, sans suggérer un fallback corrigé.",
+        "checked_locations": [
+          "paper/article.md:62–63; paper/main.tex:92–93; PDFv4p.4"
+        ],
+        "specialist_artifacts": [
+          "runs/20261115-c19-instruct-repair/protocol-test.md:Vérification et sélection",
+          "research/c19-observed-review.json:methods"
+        ],
+        "final_concern_id": "adversarial-all-F001"
+      }
+    ],
+    "dismissed_leads": [
+      {
+        "topic": "PDF extraction appears to lose summation and hats",
+        "reason": "All displays visually checked on page02.png; sums and hats are present. Extraction loss is not a manuscript defect."
+      },
+      {
+        "topic": "Argmax-preserving objective regression could count as strict success",
+        "reason": "The full-cube primary formula and discussion explicitly reject it; strict/secondary scores are consistent."
+      },
+      {
+        "topic": "Observed positive repair could imply successful H19 or C20",
+        "reason": "Abstract/results explicitly call H19 unsatisfied; C20 and grounded edits are absent from the reviewed manuscript."
+      }
+    ]
+  },
+  "checked_artifacts_sha256": {
+    "paper/article.md": "764fb57db0fe15154c67a4cc291934e829d609f3d100bcf576e2cd9d2fdccb9e",
+    "paper/main.tex": "87ce4ac74cb9126741de5e3c167fc877abe96482d08a5e39f28fd55522fbb531",
+    "paper/build-c19-v4/main.pdf": "f7d2b9ce16551eebc84478d59787e510d5d6015a7ac57eb2dd3851a190042aa6",
+    "paper/pdf-review-v4/text.txt": "af2943863e105d1cb7195c761e60735764dbb6d5add52362b944819303e8ef71",
+    "research/c19-observed-review.json": "0ddb8d35f01c9ea8fe44636a14b496d665ef791fec01465696daf6f2054f059d",
+    "research/c15-method-positioning.json": "61673a38f668e21a7d1090fe181b43eb4243b5de64a0df8f2577a71aa2a8af58",
+    "research/c19-positioning-hardware.json": "343ed970f2a3fa7ee074a21e8ecaf5a1c71f69d6b8e1c194a391498c582841c4",
+    "runs/20261115-c19-instruct-repair/verification.md": "c9598044b84c99c7ee4574a1947783c690e9838e569de77ef01ebd620650b22d",
+    "scripts/run_c19_phase.py": "5250b567490e8e14184899451d11710620357999667551f8b9d606391f67d56a",
+    "scripts/run_c19_phase_v2.py": "99373eb7503d40ddb83c0a54f8da0c1a64df00ae8f2cd3763570f618d875a4c1",
+    "scripts/continue_c19_comparison.py": "fdfe41dc24e3c09b17a89759ecf38fe672e8fbb42aa69783aaf9160efb9085a4",
+    "paper/pdf-review-v4/page-01.png": "3c8b684c58f81688a71ce24744b713b222d332d26f9a912fabfe38659bc55c0a",
+    "paper/pdf-review-v4/page-02.png": "464154034422d0ef6f461e3e08898aa08d802ddaf288d74013a413315e8e01a2",
+    "paper/pdf-review-v4/page-03.png": "3056d8c406db51c384fa7149356461d6a8c79301fadcbbfe7ef9361f98615385",
+    "paper/pdf-review-v4/page-04.png": "1198dc0639210b8d17a97c28d5c92dd46167ad51b0d3148929a8ee08a043b587",
+    "paper/pdf-review-v4/page-05.png": "56aa0783f896d1a99f9dcd9d3c2bccf7560e6f725820f7b828b1baf8a743752c",
+    "paper/pdf-review-v4/page-06.png": "68785f0570fdd770b8ebaf79abdc2e381b52a5e5833a31971349111c74b36f34",
+    "paper/pdf-review-v4/page-07.png": "d18ab3e5f3e2254d4d44e83fb93a30c8dad32a044404ede8b5d2f37fdf2411c8",
+    "paper/pdf-review-v4/page-08.png": "370b6616ba07d0b533317bf7c04124c62374b75788f2179c6c3528054ba67845"
+  },
+  "source_changed_since_reviewed_snapshot": {
+    "paper/article.md": false,
+    "paper/main.tex": false,
+    "paper/build-c19-v4/main.pdf": false,
+    "paper/pdf-review-v4/text.txt": false
+  },
+  "limits": [
+    "Non-blind: reviewer authored C19 corpus, audited its observed scores, and authored C20 patch implementation. Not a new independent validation of data.",
+    "Existing audited score records reused; no model, solver, tokenization, new numerical experiment or PDF compilation executed.",
+    "PDF examined through existing PDFKit text and8existing PNGpages, not a newly generated rendering. Extraction loses some math glyphs, checked visually.",
+    "Citation calibration checked against existing primary-source reviews; no new browsing, exhaustive literature search or source theorem/code reproduction.",
+    "Historical SDK/C11-C18 numeric records are contextual and were not independently re-audited in this manuscript pass.",
+    "Review binds the listedv4source/PDFhashes; futurev5edits require their own limited follow-up."
+  ]
+}

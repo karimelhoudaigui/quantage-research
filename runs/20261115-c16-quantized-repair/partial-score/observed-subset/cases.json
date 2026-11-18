@@ -1,0 +1,474 @@
+[
+  {
+    "id": "fcec7afd3dd6",
+    "language": "fr",
+    "intention": "Composer une sélection pour le lot de décision C16-9. Les 4 expériences ont pour indices 0 à 3. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. L'indice 3 est interdit dans la sélection. Le nombre d'éléments retenus est au moins 1. Le nombre d'éléments retenus ne dépasse pas 1. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 4,
+      "weights": [
+        44,
+        53,
+        43,
+        24
+      ],
+      "costs": [
+        33,
+        28,
+        39,
+        39
+      ],
+      "edges": [
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "id": "79769e445d63",
+    "language": "en",
+    "intention": "The committee is assembling portfolio C16-10. There are 4 entries indexed from 0 to 3. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Select no more than 1 entries. Entry 1 is compulsory. Selecting entry 1 requires also selecting entry 2; the converse is not required. These are all the requirements; impose no additional restriction.",
+    "data": {
+      "n": 4,
+      "weights": [
+        21,
+        61,
+        52,
+        58
+      ],
+      "costs": [
+        14,
+        33,
+        29,
+        35
+      ],
+      "edges": [
+        [
+          0,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "38289dce9fa8",
+    "language": "fr",
+    "intention": "On doit arrêter le portefeuille C16-11. Les 4 projets ont pour indices 0 à 3. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. L'indice 3 est interdit dans la sélection. Retenir l'indice 1 impose aussi de retenir l'indice 3 ; la réciproque n'est pas imposée. Le nombre d'éléments retenus est au moins 2. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 4,
+      "weights": [
+        58,
+        34,
+        51,
+        30
+      ],
+      "costs": [
+        35,
+        22,
+        27,
+        28
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bc6455847de3",
+    "language": "en",
+    "intention": "The planning file is C16-12. There are 4 entries indexed from 0 to 3. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Entry 3 is forbidden. Select no more than 2 entries. Entry 0 is compulsory. These are all the requirements; impose no additional restriction.",
+    "data": {
+      "n": 4,
+      "weights": [
+        31,
+        47,
+        35,
+        18
+      ],
+      "costs": [
+        26,
+        19,
+        24,
+        31
+      ],
+      "edges": [
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "192394ff7b7a",
+    "language": "fr",
+    "intention": "Composer une sélection pour le lot de décision C16-13. Les 5 campagnes ont pour indices 0 à 4. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Le nombre d'éléments retenus est au moins 3. L'indice 0 doit obligatoirement être retenu. Retenir l'indice 0 impose aussi de retenir l'indice 3 ; la réciproque n'est pas imposée. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 5,
+      "weights": [
+        29,
+        29,
+        28,
+        47,
+        18
+      ],
+      "costs": [
+        23,
+        19,
+        15,
+        33,
+        31
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "a84cf14c247d",
+    "language": "en",
+    "intention": "The committee is assembling portfolio C16-14. There are 5 entries indexed from 0 to 4. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Entry 3 is forbidden. Selecting entry 1 requires also selecting entry 3; the converse is not required. Select no more than 1 entries. These are all the requirements; impose no additional restriction.",
+    "data": {
+      "n": 5,
+      "weights": [
+        20,
+        39,
+        61,
+        18,
+        38
+      ],
+      "costs": [
+        33,
+        34,
+        39,
+        26,
+        20
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "2869335ff788",
+    "language": "fr",
+    "intention": "On doit arrêter le portefeuille C16-15. Les 5 expériences ont pour indices 0 à 4. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Le nombre d'éléments retenus ne dépasse pas 2. L'indice 2 doit obligatoirement être retenu. Le coût cumulé, somme des costs retenus, est limité à 74, borne incluse. Le nombre d'éléments retenus est au moins 2. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 5,
+      "weights": [
+        24,
+        38,
+        18,
+        18,
+        31
+      ],
+      "costs": [
+        13,
+        15,
+        38,
+        28,
+        39
+      ],
+      "edges": [
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "5c92952e6b23",
+    "language": "en",
+    "intention": "The planning file is C16-16. There are 5 entries indexed from 0 to 4. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Entry 2 is forbidden. The sum of selected costs is at most 70, including the bound. Select no fewer than 2 entries. Select no more than 2 entries. These are all the requirements; impose no additional restriction.",
+    "data": {
+      "n": 5,
+      "weights": [
+        58,
+        18,
+        57,
+        31,
+        28
+      ],
+      "costs": [
+        15,
+        36,
+        23,
+        36,
+        18
+      ],
+      "edges": [
+        [
+          0,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "cd5f7022ac2e",
+    "language": "fr",
+    "intention": "Composer une sélection pour le lot de décision C16-17. Les 6 projets ont pour indices 0 à 5. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Le coût cumulé, somme des costs retenus, est limité à 34, borne incluse. Le nombre d'éléments retenus est au moins 1. Le nombre d'éléments retenus ne dépasse pas 1. Retenir l'indice 0 impose aussi de retenir l'indice 4 ; la réciproque n'est pas imposée. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 6,
+      "weights": [
+        55,
+        30,
+        32,
+        61,
+        55,
+        45
+      ],
+      "costs": [
+        14,
+        14,
+        16,
+        31,
+        35,
+        17
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bce63f435951",
+    "language": "en",
+    "intention": "The committee is assembling portfolio C16-18. There are 6 entries indexed from 0 to 5. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Select no fewer than 3 entries. Entry 1 is compulsory. Entry 4 is forbidden. The sum of selected costs is at most 93, including the bound. These are all the requirements; impose no additional restriction.",
+    "data": {
+      "n": 6,
+      "weights": [
+        40,
+        57,
+        56,
+        32,
+        55,
+        43
+      ],
+      "costs": [
+        19,
+        28,
+        29,
+        29,
+        14,
+        14
+      ],
+      "edges": [
+        [
+          0,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "dcdad683f9dc",
+    "language": "fr",
+    "intention": "On doit arrêter le portefeuille C16-19. Les 6 campagnes ont pour indices 0 à 5. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. L'indice 2 doit obligatoirement être retenu. Retenir l'indice 1 impose aussi de retenir l'indice 5 ; la réciproque n'est pas imposée. Le coût cumulé, somme des costs retenus, est limité à 65, borne incluse. Le nombre d'éléments retenus est au moins 2. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 6,
+      "weights": [
+        17,
+        41,
+        50,
+        51,
+        55,
+        41
+      ],
+      "costs": [
+        39,
+        16,
+        22,
+        17,
+        16,
+        29
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "37e4073ab724",
+    "language": "en",
+    "intention": "The planning file is C16-20. There are 6 entries indexed from 0 to 5. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Selecting entry 0 requires also selecting entry 4; the converse is not required. The sum of selected costs is at most 50, including the bound. Select no fewer than 1 entries. Entry 4 is forbidden. These are all the requirements; impose no additional restriction.",
+    "data": {
+      "n": 6,
+      "weights": [
+        56,
+        40,
+        19,
+        43,
+        46,
+        60
+      ],
+      "costs": [
+        23,
+        25,
+        16,
+        24,
+        17,
+        39
+      ],
+      "edges": [
+        [
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "e208889911d5",
+    "language": "fr",
+    "intention": "Composer une sélection pour le lot de décision C16-21. Les 7 expériences ont pour indices 0 à 6. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Le coût cumulé, somme des costs retenus, est limité à 45, borne incluse. Le nombre d'éléments retenus ne dépasse pas 2. L'indice 4 doit obligatoirement être retenu. L'indice 0 est interdit dans la sélection. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        58,
+        58,
+        31,
+        56,
+        35,
+        43,
+        48
+      ],
+      "costs": [
+        14,
+        27,
+        16,
+        28,
+        16,
+        13,
+        35
+      ],
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "0917fa453976",
+    "language": "en",
+    "intention": "The committee is assembling portfolio C16-22. There are 7 entries indexed from 0 to 6. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Select no more than 3 entries. Entry 3 is compulsory. Selecting entry 6 requires also selecting entry 1; the converse is not required. The sum of selected costs is at most 96, including the bound. These are all the requirements; impose no additional restriction.",
+    "data": {
+      "n": 7,
+      "weights": [
+        31,
+        32,
+        42,
+        17,
+        39,
+        48,
+        36
+      ],
+      "costs": [
+        28,
+        29,
+        13,
+        34,
+        36,
+        17,
+        17
+      ],
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "5d9702fb5f6c",
+    "language": "fr",
+    "intention": "On doit arrêter le portefeuille C16-23. Les 7 projets ont pour indices 0 à 6. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Le nombre d'éléments retenus ne dépasse pas 4. L'indice 3 doit obligatoirement être retenu. Retenir l'indice 4 impose aussi de retenir l'indice 5 ; la réciproque n'est pas imposée. Le coût cumulé, somme des costs retenus, est limité à 123, borne incluse. Le nombre d'éléments retenus est au moins 4. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        56,
+        29,
+        60,
+        18,
+        30,
+        53,
+        19
+      ],
+      "costs": [
+        33,
+        15,
+        39,
+        28,
+        14,
+        30,
+        18
+      ],
+      "edges": [
+        [
+          1,
+          3
+        ]
+      ]
+    }
+  }
+]

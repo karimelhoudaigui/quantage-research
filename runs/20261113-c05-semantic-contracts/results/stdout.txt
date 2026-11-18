@@ -1,0 +1,1 @@
+{"cases": 73, "proposal_cases": 67, "pipeline_boundaries": 6, "legacy": {"false_accept": 23, "false_reject": 0, "exceptions": 0}, "external": {"false_accept": 0, "false_reject": 0, "exceptions": 0}, "elapsed_seconds": 0.006081041999999998}

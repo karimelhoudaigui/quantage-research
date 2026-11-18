@@ -1,0 +1,160 @@
+{
+  "schema_version": 2,
+  "claim_id": "C16-DEVELOPMENT-UNION",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "scripts/merge_c16_development.py",
+    "--output",
+    "runs/20261115-c16-quantized-repair/dev-initial-v1"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Union of8actual development records from disjoint2+6batches; no generation/imputation",
+    "coefficient_domain": "record identities and token counts",
+    "conventions": "2v1+6v2, not a uniform-prompt development estimate",
+    "inputs": [
+      "eight development IDs"
+    ],
+    "bounds": {
+      "records": 8
+    },
+    "non_claims": [
+      "No new model calls or test results"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T16:11:28.463387+00:00",
+    "runtime_seconds": 0.0406,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/merge_c16_development.py",
+    "runs/20261115-c16-quantized-repair/dev_cases.json",
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/driver/generation.json",
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/manifest.json",
+    "runs/20261115-c16-quantized-repair/dev-remaining-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/dev-remaining-v1/driver/generation.json",
+    "runs/20261115-c16-quantized-repair/dev-remaining-v1/manifest.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/merge_c16_development.py",
+      "sha256": "311d1ab3b5eb4debb9570c8970d1acc4d38a940c470c7404c8d16a62cb8e6e23",
+      "sha256_after": "311d1ab3b5eb4debb9570c8970d1acc4d38a940c470c7404c8d16a62cb8e6e23"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev_cases.json",
+      "sha256": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3",
+      "sha256_after": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-preflight-v2/driver/raw.jsonl",
+      "sha256": "72d35841343ffe61b207d9d5e6b6087a83f870920c2f4c91e3b4d7f751fe6c7d",
+      "sha256_after": "72d35841343ffe61b207d9d5e6b6087a83f870920c2f4c91e3b4d7f751fe6c7d"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-preflight-v2/driver/generation.json",
+      "sha256": "23315ef5e3a8a2fe3f9a492f91a6fb62fab05b18ca46dac32fcf315167c9e1e0",
+      "sha256_after": "23315ef5e3a8a2fe3f9a492f91a6fb62fab05b18ca46dac32fcf315167c9e1e0"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-preflight-v2/manifest.json",
+      "sha256": "92aa24bfe20f6cc6e1625fbe5ac9b6c75a3911ac1c44c587159d16c8e2f3cb42",
+      "sha256_after": "92aa24bfe20f6cc6e1625fbe5ac9b6c75a3911ac1c44c587159d16c8e2f3cb42"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-remaining-v1/driver/raw.jsonl",
+      "sha256": "671796ef6f141e5414dca1558665dbeeda16d095cb5ec8b51f214f0ac98b5e83",
+      "sha256_after": "671796ef6f141e5414dca1558665dbeeda16d095cb5ec8b51f214f0ac98b5e83"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-remaining-v1/driver/generation.json",
+      "sha256": "f700f195567f92037de910202229f6743b6ef329152ae8d260fde0751e6f7c2f",
+      "sha256_after": "f700f195567f92037de910202229f6743b6ef329152ae8d260fde0751e6f7c2f"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-remaining-v1/manifest.json",
+      "sha256": "bb532bfdf95aeb3586024e4632708bc694d7f2d5a700478dba57b8e05fccfd74",
+      "sha256_after": "bb532bfdf95aeb3586024e4632708bc694d7f2d5a700478dba57b8e05fccfd74"
+    }
+  ],
+  "output_directory": "runs/20261115-c16-quantized-repair/dev-initial-v1",
+  "declared_results": [
+    "runs/20261115-c16-quantized-repair/dev-initial-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/dev-initial-v1/driver/generation.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-initial-v1/stdout.txt",
+      "sha256": "5bfc3b1851d38c72f64d1b924d1af23241365df21b128df1dc93f066364265b6",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-initial-v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-initial-v1/driver/raw.jsonl",
+      "sha256": "45cd7042335e161de2a77ec32f4c0a8c5e1ece1dc7358c9f86e1a37537d7a20b",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev-initial-v1/driver/generation.json",
+      "sha256": "300c6a324e0eef5341604ab606abfe9b2d8e81d25d0c7719a1bb70702552f11e",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

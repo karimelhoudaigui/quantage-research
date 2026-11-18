@@ -1,0 +1,504 @@
+{
+  "checked_on": "2026-11-14",
+  "recorded_at_utc": "2026-11-14T12:51:14.589935+00:00",
+  "python": "3.9.6",
+  "all_checks_passed": true,
+  "tests_run": 45,
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.056663083,
+      "stdout": "OK: 19 claims; 14 completed/blocked handoffs; truth requires scientific review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "scripts/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.137832375,
+      "stdout": "OK: 19 claims; 14 completed/blocked handoffs; truth requires scientific review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.43624491600000004,
+      "stdout": "['codex', 'exec', '-C', '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpjtu9zc3z', '--sandbox', 'workspace-write', '-'] 1\nCompleted 20261114T125114242738Z\nCompleted 20261114T125114244944Z\nCompleted 20261114T125114247721Z\n",
+      "stderr": "test_abstention_does_not_execute_model (test_agent_pipeline.AgentBoundary) ... ok\ntest_changed_data_and_false_hardware_claim (test_agent_pipeline.AgentBoundary) ... ok\ntest_original_semantics_is_not_certified (test_agent_pipeline.AgentBoundary) ... ok\ntest_paired_numeric_intervention (test_agent_pipeline.AgentBoundary) ... ok\ntest_two_families_execute_locally (test_agent_pipeline.AgentBoundary) ... ok\ntest_agreement_never_imputes_missing_or_invalid_proposal (test_c11_score.EvaluationBoundaries) ... ok\ntest_wrong_task_is_error_even_on_supported_case (test_c11_score.EvaluationBoundaries) ... ok\ntest_zero_reference_errors_cannot_confirm_reduction (test_c11_score.EvaluationBoundaries) ... ok\ntest_no_repair_and_explicit_abstention (test_compact_agent.Compact) ... ok\ntest_two_supported_contracts (test_compact_agent.Compact) ... ok\ntest_whole_single_code_fence_only (test_compact_agent.Compact) ... ok\ntest_nonredundant_task_and_no_silent_repair (test_compact_v2.CompactV2) ... ok\ntest_same_response_before_after_veto (test_compact_v2.CompactV2) ... ok\ntest_explicit_unknown_input_refused (test_compact_v3.CompactV3) ... ok\ntest_greatest_weight_synonym_without_relaxing_cardinality (test_compact_v3.CompactV3) ... ok\ntest_unresolved_direction_overrides_positive_words (test_compact_v4.CompactV4) ... ok\ntest_metadata_and_overflow_fail_before_execution (test_contracts.ExternalContracts) ... ok\ntest_optical_enums_and_tolerance (test_contracts.ExternalContracts) ... ok\ntest_output_equivalent_models_remain_admissible (test_contracts.ExternalContracts) ... ok\ntest_python_indices_and_boolean_indices_rejected (test_contracts.ExternalContracts) ... ok\ntest_unknown_sense_never_uses_max_default (test_contracts.ExternalContracts) ... ok\ntest_interference_and_global_phase (test_core.Contracts) ... ok\ntest_no_false_hardware_access (test_core.Contracts) ... ok\ntest_penalty_boundary_retains_all_optima (test_core.Contracts) ... ok\ntest_strict_input_validation (test_core.Contracts) ... ok\ntest_weighted_not_cardinality (test_core.Contracts) ... ok\ntest_counting_semantic_errors_separately_from_numeric (test_evaluation.Evaluation) ... ok\ntest_duplicate_or_missing_ids_rejected (test_evaluation.Evaluation) ... ok\ntest_missing_traces_are_not_scored_as_abstentions (test_evaluation.Evaluation) ... ok\ntest_pairing_missing_and_semantic_numeric_separation (test_local_score.LocalScore) ... ok\ntest_candidate_is_not_execution_permission (test_routing.Routing) ... ok\ntest_foreign_host_is_not_provider_nationality (test_routing.Routing) ... ok\ntest_blocked_stops_and_resume_refuses (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpez7hih6w/runs/20261114T125114223615Z\nReview previous run before resuming: previous run is blocked\nok\ntest_dry_run_never_executes (test_runner.Runner) ... ok\ntest_missing_handoff_lock_and_dirty (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpzndy3x3w/runs/20261114T125114234855Z\nReview previous run before resuming: [Errno 2] No such file or directory: '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpzndy3x3w/runs/20261114T125114234855Z/completion.json'\nReview and commit changes first.\nRunner lock exists; inspect the running process before removing it.\nok\ntest_success_resume_and_bound (test_runner.Runner) ... ok\ntest_timeout_and_missing_completion_stop (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmp1yjf5dgu/runs/20261114T125114258400Z\nStopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmp1yjf5dgu/runs/20261114T125114262267Z\nok\ntest_timeout_kills_group (test_runner.Runner) ... ok\ntest_validation_survives_python_optimization (test_runner.Runner) ... ok\ntest_bunching_has_bosonic_factor (test_sdk_photon.BosonicOracle) ... ok\ntest_colliding_input_normalization (test_sdk_photon.BosonicOracle) ... ok\ntest_recombined_phase_changes_interference (test_sdk_photon.BosonicOracle) ... ok\ntest_interaction_lifts_only_double_excitation (test_sdk_rydberg.RydbergOracle) ... ok\ntest_no_interaction_is_product_of_rabi_rotations (test_sdk_rydberg.RydbergOracle) ... ok\ntest_zero_drive_preserves_ground (test_sdk_rydberg.RydbergOracle) ... ok\n\n----------------------------------------------------------------------\nRan 45 tests in 0.249s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_results.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.12750683399999999,
+      "stdout": "OK: four raw datasets reaggregated; recorded input/output hashes and frozen engine checked. C01: 1324 evaluations, 1319 distinct requests (5 repeated MIS). Self-audit only.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_continuation.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.0689175,
+      "stdout": "OK: C05 independent 109-case replay, 73-case metrics and C06 32-case labels/baselines; no embedded code executed, no native performance imputed.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_local_agents.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07244920899999999,
+      "stdout": "OK: 48 real primary generations on32unique cases, disjoint group stages, token totals, finite numerical solutions, scores and manifests. Three exact raw-text CLI replays. Primary held-out errors preserved; v4 is development only.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_c11.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.466730333,
+      "stdout": "OK: 256 actual generations/128 new cases, labels/frozen history, model identities/tokens, all decision counts and numerical outputs; H1 negative preserved. Self-audit of C11 results; prior independent annotations/protocol review only.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_c14.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.048507417,
+      "stdout": "OK: C14 fixed matched subset, two failed/partial arms preserved, finite-vs-NaN diagnostics, one unique case, no missing-response imputations or H14 performance claim. Self-audit only.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/preflight_c11.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.27851258300000004,
+      "stdout": "{\"status\": \"passed\", \"cases\": 128, \"groups\": 64, \"actions\": {\"propose\": 64, \"abstain\": 64}, \"families\": {\"mis\": 64, \"photon\": 64}, \"languages\": {\"en\": 64, \"fr\": 64}, \"historical_files_checked_unchanged\": 184, \"old_public_request_files\": [\"runs/20261113-c01-foundation/results/raw.jsonl\", \"runs/20261113-c02-formulation/results/raw.jsonl\", \"runs/20261113-c04-transfer/cases.json\", \"runs/20261113-c04-transfer/results/raw.jsonl\", \"runs/20261113-c05-semantic-contracts/audit_cases.json\", \"runs/20261113-c05-semantic-contracts/results/raw.jsonl\", \"runs/20261113-c06-native-agents/inputs/mis.json\", \"runs/20261113-c06-native-agents/inputs/photon.json\", \"runs/20261113-c06-native-agents/public_cases.json\", \"runs/20261113-c06-native-agents/results-baselines/raw.jsonl\", \"runs/20261113-c08-local-agent/cases.json\", \"runs/20261113-c09-heldout-guard/cases.json\", \"runs/20261113-c10-regression-release/cli-ambiguous-input/cases.json\", \"runs/20261113-c10-regression-release/cli-ambiguous-objective-v4/cases.json\", \"runs/20261113-c10-regression-release/cli-freeform-photon/cases.json\"], \"old_requests_distinct\": 1385, \"old_texts_distinct\": 46, \"request_overlap\": 0, \"normalized_text_overlap\": 0, \"public_sha256\": \"d181acd855b9db47f53763ee8154a03a838e04683ec5bee8de137f04c9480a45\", \"gold_sha256\": \"fc59a965abecebef239f12d1ff93c7c98700512c17021226e7ac4b5b1c01b4eb\", \"limitations\": \"Exact/normalized text duplicate checks, not semantic or pretraining contamination proof.\"}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "quantage.c14_bfloat16_inference",
+        "--help"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06585170799999998,
+      "stdout": "usage: c14_bfloat16_inference.py [-h] --cases CASES --instructions\n                                 INSTRUCTIONS --model MODEL --model-manifest\n                                 MODEL_MANIFEST --output OUTPUT\n\noptional arguments:\n  -h, --help            show this help message and exit\n  --cases CASES\n  --instructions INSTRUCTIONS\n  --model MODEL\n  --model-manifest MODEL_MANIFEST\n  --output OUTPUT\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.03568670899999998,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c01-foundation/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.05684724999999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c02-formulation/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07197020799999998,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c03-routing/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06756241699999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c04-transfer/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06733687500000002,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c05-semantic-contracts/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.09117999999999998,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c06-native-agents/results-baselines/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.10101612500000001,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c08-local-agent/generation/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.10824862499999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c08-local-agent/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.08988133399999998,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c09-heldout-guard/generation/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.086149417,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c09-heldout-guard/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07441116600000003,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c10-regression-release/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.05244475000000004,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c10-regression-release/results-v4/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06173408300000005,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c11-frozen-transfer/generation-qwen/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06615199999999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c11-frozen-transfer/generation-smol/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.0644246249999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c11-frozen-transfer/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06805020800000006,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c11-frozen-transfer/results-primary/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.068938167,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c12-sdk-photon/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.05232554200000006,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c13-sdk-rydberg/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.05894454199999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c14-model-scale/generation/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04620808300000001,
+      "stdout": "valid evidence record (run status: failed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c14-model-scale/generation-bfloat16/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.046534166999999904,
+      "stdout": "valid evidence record (run status: failed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c14-model-scale/precision-bfloat16/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.045323709000000045,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ],
+  "provenance_records_validated": 21,
+  "recorded_run_statuses": {
+    "completed": 19,
+    "failed": 2
+  },
+  "failed_runs_expected": [
+    "runs/20261113-c14-model-scale/generation/manifest.json",
+    "runs/20261113-c14-model-scale/generation-bfloat16/manifest.json"
+  ],
+  "status_interpretation": "Valid provenance can describe failure. C14 failures/partial outputs are preserved, not counted as successful matrices. Float16 diagnostic standalone lacks observed-before hash and is not presented as v2.",
+  "manuscript_static_checks": {
+    "missing_claim_ids": [],
+    "unbalanced_environments": [],
+    "unclosed_environments": [],
+    "brace_balance": 0,
+    "brace_minimum": 0,
+    "math_dollar_delimiters_even": true,
+    "missing_figure_files": [],
+    "manuscript_pdf_compiled": false,
+    "standalone_figure_pdf_exported": true,
+    "available_latex_compilers": {
+      "pdflatex": null,
+      "tectonic": null,
+      "latexmk": null
+    },
+    "scope": "Static syntax, local consistency and source synchronization; not a compiled-PDF or mathematical proof certificate."
+  },
+  "artifact_hashes": {
+    "README.md": "680de0b12c06dc90cb08dc852501d4dfed4cc840fc8895a05bc5b1cf1485fe3a",
+    "paper/article.md": "63fbb2a3a88581c7bdf0b66c3d5875b2bd3b201f94d02a52a0c9f24574faeec6",
+    "paper/main.tex": "9758c57fc4f32bde706e6a833c6ae343af8b88af77b773c5b80f5d4895f5f087",
+    "research/state.md": "a3fa01a1866121f97e08d8eb16cd44f693e5c6481d5f86508cb88158f74d047c",
+    "research/claims.json": "b4a2b1a548cab1dc5299eefcdee5a2e454bae7ce23a45ac134d1826e5eade50e",
+    "research/maturity.json": "e5b28fb02d271d20690d6ce7500f8ae31967c3b39306e31c44d00061118a472e",
+    "research/c11-c14-review.md": "f0618387e8c0b8198797455425f516b873e9351eb8a53d76dd63141276e23192",
+    "quantage/__init__.py": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+    "quantage/__main__.py": "f1deb6741526a0dd2a9c7fef2d5fb4b307e42f687e1b4a996ba704964ee22ace",
+    "quantage/agent_pipeline.py": "5c6dbc21c93f0f87073f0a571f54fb11b621644bab953a082324f03959d20229",
+    "quantage/benchmark.py": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b",
+    "quantage/boundarystudy.py": "07e5cc2811f27455a493513fd850018f75408d3888bf6e6fc765abcf3c6370a4",
+    "quantage/c11_inference.py": "a57fd120df771ca6125529737d5a77ae7735e705fbbfeaf53ba51c52b2752ad6",
+    "quantage/c11_score.py": "4042958024addcbb0ae5a5c7b4c358db4b9a5a602863b6baa41d907386a65065",
+    "quantage/c14_bfloat16_inference.py": "3f777b2b3a607025e6386f06617da0c81af5b9e888b242d754ab159ff0fa0776",
+    "quantage/c14_inference.py": "4829b194ea8d6ab18bf9f89af6ecd089405a5f8edfaa9ba14b1d86e3b169f1ca",
+    "quantage/c14_precision_probe.py": "dc387ecde9e1c3b693570e2b84361956a452b3999c5775f7b6fd91a8018fee07",
+    "quantage/compact_agent.py": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+    "quantage/compact_v2.py": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d",
+    "quantage/compact_v3.py": "87f052487c4bb522b3e4d8580e9aa0199628f910a3e844a5085edc401c86db35",
+    "quantage/compact_v4.py": "1ad338864a35ce9a2af4f6ce91b2f5806ec3856dd56f2185adaa5e1a19c3c7e9",
+    "quantage/contracts.py": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+    "quantage/core.py": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+    "quantage/evaluation.py": "802a3f3a55ef4688cb3ab6f492b43621581a389544d5f9a754d26e86c8a35be6",
+    "quantage/faultstudy.py": "83f3e41bf087212a3fa7b605aff449b13f1575d29c3ef4e260d1a9188a7f4e1a",
+    "quantage/local_agent_cli.py": "77993c451b9e6c600ca031e24c659487736de6d3a54e5bb934d56db80a2f3473",
+    "quantage/local_inference.py": "4ce41105d350e1e41b26b8a569209ab4b5f4285b3f8f508ec2628ffaed35be65",
+    "quantage/local_inference_v2.py": "b24dda76ffd725595c8cf3ed94620be14bd44968754eb33520ebac35bc439f9a",
+    "quantage/local_score.py": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293",
+    "quantage/local_score_v2.py": "c4dd555a6af159ebac437de18f106e30f76c8a58a147e20373fbdbbe8d44edd6",
+    "quantage/local_score_v3.py": "ed4e2c400b85044e869826d8583060b94d960bf87a51b12efab1a11c03a73474",
+    "quantage/local_score_v4.py": "d9e919833e978ee7a1088c9d6c91d215a29494fa31bf224ff824c56c667b4952",
+    "quantage/proposal_cli.py": "1e20c03fa4fab2badcfabb15414af980a709de03c25045303cb5fd8f1f0a51e5",
+    "quantage/routing.py": "ffb64bc9e517f5ba4e01e9e60b07d57ed75c6f6192716e44d543aab86cb902c1",
+    "quantage/routingstudy.py": "1a421aa36857cca4c3cb1e4271c52c2301ec21a1b2bf15c2afefcb16c292849a",
+    "quantage/sdk_photon.py": "4edf91b7259cd28b8e8f7f7770de276bd04c7683c8e756c92344f9c1e9b7d1ce",
+    "quantage/sdk_rydberg.py": "499bf819b1b62e635c92913dd6005990e65b0b3a74cd1ab53ce10d86a3356109",
+    "quantage/transferstudy.py": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+    "quantage/verification.py": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+    "scripts/acquire_c11_model.py": "0e7352d68e71b850e047724f27551d0081e653d79f4d9acfbf8923c52a054b06",
+    "scripts/acquire_c14_model.py": "50993b4cd4f33c8a6d8ea295e882a09d7770a8fca111c5f958e708f5a3f0de59",
+    "scripts/acquire_local_model.py": "a10a96a066ba2bf97958c78e012b7e1c880c2d8dedf1835019b03c1cfe74ca2d",
+    "scripts/acquire_public_traces.py": "fd7aa85272f57fd8b744069f3d0dc6618127fb1eaa39297e9f4d7cb931363e2c",
+    "scripts/audit_c11.py": "2ca3c2a7afc23806c3b043dd6da4d412514f30e2ef826d052de98a65a8251591",
+    "scripts/audit_c14.py": "98bb74d8bdde9dd4d5e84623726b17b2d10fed2cd04592b144407effcbefa75b",
+    "scripts/audit_continuation.py": "2d3799d1e25cbbc83d0e8d75c720c73de1077526c9d581eac6e0880511d39fc0",
+    "scripts/audit_local_agents.py": "0915ccb6751f44b39d4185c7ee4180b6608de0bd61187b9b08b8ecee84b1a6d0",
+    "scripts/audit_results.py": "557a4d988c5d3e66667871830f96c429e0c94c582acd21cb8c2a951a7baa12c8",
+    "scripts/build_paper.py": "630401d4b29cce615d2cacc63d4e5bdc613fbb9f2ac1e8b850b1925836bd4c33",
+    "scripts/check.py": "868152b2a1085e3b6261e7678ef139a1aa9e02f429a89555fd80e0a3012359b2",
+    "scripts/plot_c11.py": "852eb9fc4c45e98b1e95e45a4076edf16df687208ac4e83c0fc5b611af33f0e2",
+    "scripts/preflight_c11.py": "f35ced6f0d524b235e6f93b87598519d506a35b016715aa78ec1d282f4259507",
+    "scripts/replay.py": "cadf169c67cdfa3b92613eda04ca64ecccfaed772aac9c897733379f4be5a5b5",
+    "scripts/run_cycles.py": "6249fa43c09decfa8ec644e6808e4ba05f56084cc044c69428eaed19655910fc"
+  },
+  "scientific_scope": {
+    "C11_actual_generations": 256,
+    "C11_unique_requests": 128,
+    "C11_groups": 64,
+    "C11_annotations": "two distinct roles,128/128 action/task agreement before generation; no proven model/human independence",
+    "C11_H1": "not supported in finite test, correct retention23/55",
+    "C12_actual_sdk_evaluations": 486,
+    "C13_actual_sdk_evaluations": 162,
+    "C14_complete_responses": {
+      "float16": 1,
+      "bfloat16": 1
+    },
+    "C14_unique_cases_with_response": 1,
+    "C14_H14": "unresolved, matrix incomplete, no imputations",
+    "independent_final_C11_C14_manuscript_review": false,
+    "independent_SDK_oracle_reviews": "C12 and C13 records delivered before quota",
+    "qpu_runs": 0,
+    "external_purchase_eur": 0,
+    "ready_for_submission": false
+  }
+}

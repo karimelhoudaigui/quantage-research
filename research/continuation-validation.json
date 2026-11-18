@@ -1,0 +1,188 @@
+{
+  "checked_on": "2026-11-13",
+  "host_recorded_at_utc": "2026-11-13T17:44:25.388932+00:00",
+  "python": "3.9.6",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04870058299999999,
+      "stdout": "OK: 10 claims; 6 completed/blocked handoffs; truth requires scientific review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "scripts/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.111844625,
+      "stdout": "OK: 10 claims; 6 completed/blocked handoffs; truth requires scientific review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.161469167,
+      "stdout": "['codex', 'exec', '-C', '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpnrdrvf0v', '--sandbox', 'workspace-write', '-'] 1\nCompleted 20261113T174425248723Z\nCompleted 20261113T174425249597Z\nCompleted 20261113T174425250681Z\n",
+      "stderr": "test_abstention_does_not_execute_model (test_agent_pipeline.AgentBoundary) ... ok\ntest_changed_data_and_false_hardware_claim (test_agent_pipeline.AgentBoundary) ... ok\ntest_original_semantics_is_not_certified (test_agent_pipeline.AgentBoundary) ... ok\ntest_paired_numeric_intervention (test_agent_pipeline.AgentBoundary) ... ok\ntest_two_families_execute_locally (test_agent_pipeline.AgentBoundary) ... ok\ntest_metadata_and_overflow_fail_before_execution (test_contracts.ExternalContracts) ... ok\ntest_optical_enums_and_tolerance (test_contracts.ExternalContracts) ... ok\ntest_output_equivalent_models_remain_admissible (test_contracts.ExternalContracts) ... ok\ntest_python_indices_and_boolean_indices_rejected (test_contracts.ExternalContracts) ... ok\ntest_unknown_sense_never_uses_max_default (test_contracts.ExternalContracts) ... ok\ntest_interference_and_global_phase (test_core.Contracts) ... ok\ntest_no_false_hardware_access (test_core.Contracts) ... ok\ntest_penalty_boundary_retains_all_optima (test_core.Contracts) ... ok\ntest_strict_input_validation (test_core.Contracts) ... ok\ntest_weighted_not_cardinality (test_core.Contracts) ... ok\ntest_counting_semantic_errors_separately_from_numeric (test_evaluation.Evaluation) ... ok\ntest_duplicate_or_missing_ids_rejected (test_evaluation.Evaluation) ... ok\ntest_missing_traces_are_not_scored_as_abstentions (test_evaluation.Evaluation) ... ok\ntest_candidate_is_not_execution_permission (test_routing.Routing) ... ok\ntest_foreign_host_is_not_provider_nationality (test_routing.Routing) ... ok\ntest_blocked_stops_and_resume_refuses (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmperv4uaq0/runs/20261113T174425237812Z\nReview previous run before resuming: previous run is blocked\nok\ntest_dry_run_never_executes (test_runner.Runner) ... ok\ntest_missing_handoff_lock_and_dirty (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpu_ixz1co/runs/20261113T174425243874Z\nReview previous run before resuming: [Errno 2] No such file or directory: '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpu_ixz1co/runs/20261113T174425243874Z/completion.json'\nReview and commit changes first.\nRunner lock exists; inspect the running process before removing it.\nok\ntest_success_resume_and_bound (test_runner.Runner) ... ok\ntest_timeout_and_missing_completion_stop (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpa3xl9vr5/runs/20261113T174425254316Z\nStopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpa3xl9vr5/runs/20261113T174425255636Z\nok\ntest_timeout_kills_group (test_runner.Runner) ... ok\ntest_validation_survives_python_optimization (test_runner.Runner) ... ok\n\n----------------------------------------------------------------------\nRan 27 tests in 0.031s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_results.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.107791833,
+      "stdout": "OK: four raw datasets reaggregated; recorded input/output hashes and frozen engine checked. C01: 1324 evaluations, 1319 distinct requests (5 repeated MIS). Self-audit only.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_continuation.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.049376458999999984,
+      "stdout": "OK: C05 independent 109-case replay, 73-case metrics and C06 32-case labels/baselines; no embedded code executed, no native performance imputed.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "quantage.proposal_cli",
+        "--help"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.141055333,
+      "stdout": "usage: proposal_cli.py [-h] --request REQUEST --proposal PROPOSAL\n                       [--schema-only]\n\noptional arguments:\n  -h, --help           show this help message and exit\n  --request REQUEST\n  --proposal PROPOSAL\n  --schema-only\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.102039833,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c01-foundation/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.116745292,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c02-formulation/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06658408300000002,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c03-routing/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04719541700000002,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c04-transfer/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04458483299999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c05-semantic-contracts/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.043649625000000025,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c06-native-agents/results-baselines/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04264562500000002,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ],
+  "static_manuscript_checks": {
+    "environments_matched": true,
+    "braces_balanced": true,
+    "citations_defined": true,
+    "unique_bibliography": true,
+    "claim_ids_in_both_articles": true
+  },
+  "all_executed_checks_passed": true,
+  "reviewed_artifact_hashes": {
+    "quantage/contracts.py": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+    "quantage/boundarystudy.py": "07e5cc2811f27455a493513fd850018f75408d3888bf6e6fc765abcf3c6370a4",
+    "quantage/agent_pipeline.py": "5c6dbc21c93f0f87073f0a571f54fb11b621644bab953a082324f03959d20229",
+    "quantage/evaluation.py": "802a3f3a55ef4688cb3ab6f492b43621581a389544d5f9a754d26e86c8a35be6",
+    "quantage/proposal_cli.py": "1e20c03fa4fab2badcfabb15414af980a709de03c25045303cb5fd8f1f0a51e5",
+    "scripts/audit_continuation.py": "2d3799d1e25cbbc83d0e8d75c720c73de1077526c9d581eac6e0880511d39fc0",
+    "runs/20261113-c05-semantic-contracts/external-contract-audit.json": "0862e4a0d6b315747149eea24495d4e1a16b110cdd910ee8d74bed4c85b5ae05",
+    "runs/20261113-c05-semantic-contracts/external-contract-review.md": "0407f48cc292ef43103144dbf80d4b7d3e70249a71e3d7b485e8f644c2cdc006"
+  },
+  "not_executed": [
+    "Native candidate evaluation: zero responses, usage limit",
+    "Existing trace evaluation: source path/link not yet provided",
+    "LaTeX compilation: compiler absent",
+    "No QPU or external paid inference"
+  ]
+}

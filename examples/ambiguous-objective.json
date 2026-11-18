@@ -1,0 +1,35 @@
+{
+  "intent": "Choose an independent subset of this graph. I have not decided whether the goal is greatest total weight or greatest number of vertices; treat that choice as unresolved rather than choosing for me.",
+  "data": {
+    "n": 5,
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        0,
+        4
+      ]
+    ],
+    "weights": [
+      2,
+      5,
+      3,
+      6,
+      4
+    ]
+  }
+}

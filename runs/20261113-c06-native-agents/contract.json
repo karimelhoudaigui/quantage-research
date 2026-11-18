@@ -1,0 +1,47 @@
+{
+  "claim_id": "C06-BASELINES-ONLY",
+  "mathematics": {
+    "assertion_tested": "Evaluate only deterministic baselines on independently reviewed semantic labels; explicitly record absent native responses without scoring them.",
+    "coefficient_domain": "finite semantic actions, exact MIS optima, floating optical probabilities",
+    "conventions": "19 supported contracts, 13 required abstentions after pre-generation adjudication",
+    "inputs": [
+      "32 frozen cases in 16 opaque paired groups, two families"
+    ],
+    "bounds": {
+      "cases": 32,
+      "mis_n_max": 6,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "No native proposal performance measured",
+      "No prospective test of existing unseen traces",
+      "No population inference"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "quantage/contracts.py",
+    "quantage/agent_pipeline.py",
+    "quantage/evaluation.py",
+    "runs/20261113-c06-native-agents/public_cases.json",
+    "runs/20261113-c06-native-agents/private_gold.v2.json",
+    "runs/20261113-c06-native-agents/arms.json",
+    "runs/20261113-c06-native-agents/protocol.md",
+    "runs/20261113-c06-native-agents/protocol-amendment.md"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

@@ -1,0 +1,304 @@
+[
+  {
+    "id": "local_mis",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "exhaustive_qubo",
+      "provider": "local",
+      "execution_kind": "local",
+      "claim": "exact_instance_optima"
+    },
+    "expected_acceptable": true,
+    "label_reason": "Exact local solver within implemented cap"
+  },
+  {
+    "id": "local_photon",
+    "problem": {
+      "family": "photon",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "single_photon_amplitudes",
+      "provider": "local",
+      "execution_kind": "local",
+      "claim": "ideal_probabilities"
+    },
+    "expected_acceptable": true,
+    "label_reason": "One photon ideal model only"
+  },
+  {
+    "id": "pasqal_candidate",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "pasqal_analog",
+      "provider": "Pasqal",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate"
+    },
+    "expected_acceptable": true,
+    "label_reason": "Candidate requires embedding, controls and account validation"
+  },
+  {
+    "id": "quandela_candidate",
+    "problem": {
+      "family": "photon",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "quandela_linear",
+      "provider": "Quandela",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate"
+    },
+    "expected_acceptable": true,
+    "label_reason": "Candidate requires convention and platform validation"
+  },
+  {
+    "id": "foreign_hosted_france",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "foreign_qpu",
+      "provider": "ForeignVendor",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate",
+      "host_country": "France"
+    },
+    "expected_acceptable": false,
+    "label_reason": "French host does not establish French provider"
+  },
+  {
+    "id": "pasqal_host_abroad",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "pasqal_analog",
+      "provider": "Pasqal",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate",
+      "host_country": "Canada"
+    },
+    "expected_acceptable": true,
+    "label_reason": "French provider criterion is distinct from host location"
+  },
+  {
+    "id": "wrong_modality_pasqal",
+    "problem": {
+      "family": "photon",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "pasqal_analog",
+      "provider": "Pasqal",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate"
+    },
+    "expected_acceptable": false,
+    "label_reason": "Project has no photonic-to-Rydberg compilation"
+  },
+  {
+    "id": "wrong_modality_quandela",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "quandela_linear",
+      "provider": "Quandela",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate"
+    },
+    "expected_acceptable": false,
+    "label_reason": "No MIS circuit or encoding documented in project"
+  },
+  {
+    "id": "arbitrary_qubo",
+    "problem": {
+      "family": "qubo",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "pasqal_analog",
+      "provider": "Pasqal",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate"
+    },
+    "expected_acceptable": false,
+    "label_reason": "Arbitrary QUBO is not established as native Rydberg program"
+  },
+  {
+    "id": "quantum_maxcut",
+    "problem": {
+      "family": "quantum_maxcut",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "pasqal_analog",
+      "provider": "Pasqal",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate"
+    },
+    "expected_acceptable": false,
+    "label_reason": "Quantum Max-Cut is not classical MIS/Max-Cut"
+  },
+  {
+    "id": "spinpulse_noise",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "spinpulse",
+      "provider": "local",
+      "execution_kind": "local",
+      "claim": "calibrated_pasqal_noise"
+    },
+    "expected_acceptable": false,
+    "label_reason": "No calibrated Pasqal noise model established"
+  },
+  {
+    "id": "physical_exact_probabilities",
+    "problem": {
+      "family": "photon",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "quandela_linear",
+      "provider": "Quandela",
+      "execution_kind": "physical",
+      "claim": "exact_probabilities"
+    },
+    "expected_acceptable": false,
+    "label_reason": "No exact QPU probabilities or account access established"
+  },
+  {
+    "id": "pasqal_ready",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "pasqal_analog",
+      "provider": "Pasqal",
+      "execution_kind": "physical",
+      "claim": "hardware_verified"
+    },
+    "expected_acceptable": false,
+    "label_reason": "No device or embedding validation or account access"
+  },
+  {
+    "id": "simulation_as_qpu",
+    "problem": {
+      "family": "photon",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "single_photon_amplitudes",
+      "provider": "local",
+      "execution_kind": "physical",
+      "claim": "ideal_probabilities"
+    },
+    "expected_acceptable": false,
+    "label_reason": "Local simulation cannot be relabelled physical"
+  },
+  {
+    "id": "oversize_local",
+    "problem": {
+      "family": "mis",
+      "n": 13
+    },
+    "proposal": {
+      "solver": "exhaustive_qubo",
+      "provider": "local",
+      "execution_kind": "local",
+      "claim": "exact_instance_optima"
+    },
+    "expected_acceptable": false,
+    "label_reason": "Implementation cap 12"
+  },
+  {
+    "id": "two_photons_local",
+    "problem": {
+      "family": "photon",
+      "photons": 2
+    },
+    "proposal": {
+      "solver": "single_photon_amplitudes",
+      "provider": "local",
+      "execution_kind": "local",
+      "claim": "ideal_probabilities"
+    },
+    "expected_acceptable": false,
+    "label_reason": "One-photon implementation cannot handle two photons"
+  },
+  {
+    "id": "unknown_local_solver",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "magic_exact_solver",
+      "provider": "local",
+      "execution_kind": "local",
+      "claim": "exact_instance_optima"
+    },
+    "expected_acceptable": false,
+    "label_reason": "Unimplemented solver is not admissible"
+  },
+  {
+    "id": "no_provider",
+    "problem": {
+      "family": "mis",
+      "n": 4
+    },
+    "proposal": {
+      "solver": "pasqal_analog",
+      "provider": null,
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate"
+    },
+    "expected_acceptable": false,
+    "label_reason": "No provenance supplied"
+  },
+  {
+    "id": "candidate_overclaim",
+    "problem": {
+      "family": "photon",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "quandela_linear",
+      "provider": "Quandela",
+      "execution_kind": "candidate",
+      "claim": "hardware_verified"
+    },
+    "expected_acceptable": false,
+    "label_reason": "Conditional lead is not a verified program"
+  },
+  {
+    "id": "quandela_host_unknown",
+    "problem": {
+      "family": "photon",
+      "photons": 1
+    },
+    "proposal": {
+      "solver": "quandela_linear",
+      "provider": "Quandela",
+      "execution_kind": "candidate",
+      "claim": "conditional_candidate"
+    },
+    "expected_acceptable": true,
+    "label_reason": "Host location is unknown; no claim of France execution"
+  }
+]

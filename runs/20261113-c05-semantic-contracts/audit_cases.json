@@ -1,0 +1,4880 @@
+{
+  "assertion_tested": "Evaluate fixed selected adversarial proposals through verify, plus hand controls and strict pipeline boundaries; no population false-acceptance rate inferred.",
+  "audited_files": [
+    "quantage/core.py",
+    "quantage/verification.py"
+  ],
+  "bounds": {
+    "cases": 73,
+    "external_calls": 0,
+    "mis_n_max": 3,
+    "qpu_calls": 0,
+    "randomness_used": false
+  },
+  "cases": [
+    {
+      "category": "proposal",
+      "id": "mis_unknown_sense",
+      "mode": "verify",
+      "model_updates": {
+        "linear": [
+          1,
+          2
+        ],
+        "quadratic": [
+          [
+            0,
+            1,
+            -3
+          ]
+        ],
+        "sense": "banana"
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_negative_index",
+      "mode": "verify",
+      "model_updates": {
+        "quadratic": [
+          [
+            0,
+            -1,
+            3
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_bool_index",
+      "mode": "verify",
+      "model_updates": {
+        "quadratic": [
+          [
+            0,
+            true,
+            3
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_large_index",
+      "mode": "verify",
+      "model_updates": {
+        "quadratic": [
+          [
+            0,
+            2,
+            3
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_too_negative_index",
+      "mode": "verify",
+      "model_updates": {
+        "quadratic": [
+          [
+            0,
+            -3,
+            3
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_float_index",
+      "mode": "verify",
+      "model_updates": {
+        "quadratic": [
+          [
+            0,
+            0.5,
+            3
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_wrong_kind",
+      "mode": "verify",
+      "model_updates": {
+        "kind": "garbage"
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_bool_coefficient",
+      "mode": "verify",
+      "model_updates": {
+        "linear": [
+          false,
+          -2
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_unused_penalty",
+      "mode": "verify",
+      "model_updates": {
+        "penalty": "not numeric"
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_extra_semantics",
+      "mode": "verify",
+      "model_updates": {
+        "extra_constraint": "select vertex 0"
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_constant_shift",
+      "mode": "verify",
+      "model_updates": {
+        "constant": 7
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "mis_positive_scaling",
+      "mode": "verify",
+      "model_updates": {
+        "linear": [
+          -3,
+          -6
+        ],
+        "penalty": 9,
+        "quadratic": [
+          [
+            0,
+            1,
+            9
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_constant_nan",
+      "mode": "verify",
+      "model_updates": {
+        "constant": {
+          "$float": "nan"
+        }
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_linear_nan",
+      "mode": "verify",
+      "model_updates": {
+        "linear": [
+          {
+            "$float": "nan"
+          },
+          -2
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_quadratic_nan",
+      "mode": "verify",
+      "model_updates": {
+        "quadratic": [
+          [
+            0,
+            1,
+            {
+              "$float": "nan"
+            }
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_penalty_nan",
+      "mode": "verify",
+      "model_updates": {
+        "penalty": {
+          "$float": "nan"
+        }
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_constant_inf",
+      "mode": "verify",
+      "model_updates": {
+        "constant": {
+          "$float": "inf"
+        }
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_linear_inf",
+      "mode": "verify",
+      "model_updates": {
+        "linear": [
+          {
+            "$float": "inf"
+          },
+          -2
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_quadratic_inf",
+      "mode": "verify",
+      "model_updates": {
+        "quadratic": [
+          [
+            0,
+            1,
+            {
+              "$float": "inf"
+            }
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_penalty_inf",
+      "mode": "verify",
+      "model_updates": {
+        "penalty": {
+          "$float": "inf"
+        }
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_constant_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "constant": {
+          "$float": "-inf"
+        }
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_linear_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "linear": [
+          {
+            "$float": "-inf"
+          },
+          -2
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_quadratic_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "quadratic": [
+          [
+            0,
+            1,
+            {
+              "$float": "-inf"
+            }
+          ]
+        ]
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "mis_penalty_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "penalty": {
+          "$float": "-inf"
+        }
+      },
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_unknown_order",
+      "mode": "verify",
+      "model_updates": {
+        "order": "garbage"
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_unknown_output",
+      "mode": "verify",
+      "model_updates": {
+        "output": "garbage"
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_string_coherent",
+      "mode": "verify",
+      "model_updates": {
+        "coherent": "false"
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_negative_phase_index",
+      "mode": "verify",
+      "model_updates": {
+        "phase_mode": -1
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_bool_phase_index",
+      "mode": "verify",
+      "model_updates": {
+        "phase_mode": true
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_bool_input_mode",
+      "mode": "verify",
+      "model_updates": {
+        "input_mode": false
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_large_phase_index",
+      "mode": "verify",
+      "model_updates": {
+        "phase_mode": 2
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_float_phase_index",
+      "mode": "verify",
+      "model_updates": {
+        "phase_mode": 0.5
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_unknown_input_mode",
+      "mode": "verify",
+      "model_updates": {
+        "input_mode": "garbage"
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_wrong_kind",
+      "mode": "verify",
+      "model_updates": {
+        "kind": "garbage"
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_global_phase",
+      "mode": "verify",
+      "model_updates": {
+        "global_phase": 1.234
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_incoherent",
+      "mode": "verify",
+      "model_updates": {
+        "coherent": false
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_unknown_enums_combined",
+      "mode": "verify",
+      "model_updates": {
+        "coherent": "false",
+        "order": "garbage",
+        "output": "garbage",
+        "phase_mode": -1
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_a_nan",
+      "mode": "verify",
+      "model_updates": {
+        "a": {
+          "$float": "nan"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_b_nan",
+      "mode": "verify",
+      "model_updates": {
+        "b": {
+          "$float": "nan"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_phi_nan",
+      "mode": "verify",
+      "model_updates": {
+        "phi": {
+          "$float": "nan"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_global_phase_nan",
+      "mode": "verify",
+      "model_updates": {
+        "global_phase": {
+          "$float": "nan"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_coherent_nan",
+      "mode": "verify",
+      "model_updates": {
+        "coherent": {
+          "$float": "nan"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_a_inf",
+      "mode": "verify",
+      "model_updates": {
+        "a": {
+          "$float": "inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_b_inf",
+      "mode": "verify",
+      "model_updates": {
+        "b": {
+          "$float": "inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_phi_inf",
+      "mode": "verify",
+      "model_updates": {
+        "phi": {
+          "$float": "inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_global_phase_inf",
+      "mode": "verify",
+      "model_updates": {
+        "global_phase": {
+          "$float": "inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_coherent_inf",
+      "mode": "verify",
+      "model_updates": {
+        "coherent": {
+          "$float": "inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_a_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "a": {
+          "$float": "-inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_b_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "b": {
+          "$float": "-inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_phi_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "phi": {
+          "$float": "-inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_global_phase_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "global_phase": {
+          "$float": "-inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "nonfinite",
+      "id": "photon_coherent_-inf",
+      "mode": "verify",
+      "model_updates": {
+        "coherent": {
+          "$float": "-inf"
+        }
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "proposal",
+      "id": "photon_unknown_input_on_balanced",
+      "mode": "verify",
+      "model_updates": {
+        "input_mode": 666
+      },
+      "request": {
+        "data": {
+          "a": 0.7853981633974483,
+          "b": 0,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "call_parameter",
+      "id": "photon_changed_angle_tolerance_{'$float': 'inf'}",
+      "mode": "verify",
+      "model_updates": {
+        "a": 1.1
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      },
+      "tolerance": {
+        "$float": "inf"
+      }
+    },
+    {
+      "category": "call_parameter",
+      "id": "photon_changed_angle_tolerance_{'$float': 'nan'}",
+      "mode": "verify",
+      "model_updates": {
+        "a": 1.1
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      },
+      "tolerance": {
+        "$float": "nan"
+      }
+    },
+    {
+      "category": "call_parameter",
+      "id": "photon_changed_angle_tolerance_-1",
+      "mode": "verify",
+      "model_updates": {
+        "a": 1.1
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      },
+      "tolerance": -1
+    },
+    {
+      "category": "call_parameter",
+      "id": "photon_changed_angle_tolerance_1e-12",
+      "mode": "verify",
+      "model_updates": {
+        "a": 1.1
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      },
+      "tolerance": 1e-12
+    },
+    {
+      "category": "normalized_problem",
+      "id": "photon_unknown_normalized_family",
+      "mode": "verify",
+      "model_updates": {},
+      "problem_updates": {
+        "family": "unsupported_family"
+      },
+      "request": {
+        "data": {
+          "a": 0.2,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "overflow",
+      "id": "mis_finite_inputs_infinite_energy",
+      "mode": "verify",
+      "model_updates": {
+        "constant": 1e+308,
+        "linear": [
+          1e+308
+        ],
+        "sense": "maximize"
+      },
+      "request": {
+        "data": {
+          "edges": [],
+          "n": 1,
+          "weights": [
+            1
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "hand_control",
+      "hand_expected_solutions": [
+        [
+          0,
+          1
+        ]
+      ],
+      "id": "control_mis_k2",
+      "mode": "verify",
+      "model_updates": {},
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "hand_control",
+      "hand_expected_solutions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "id": "control_mis_tied",
+      "mode": "verify",
+      "model_updates": {},
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            1
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "hand_control",
+      "hand_expected_solutions": [
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "id": "control_mis_star",
+      "mode": "verify",
+      "model_updates": {},
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "n": 3,
+          "weights": [
+            5,
+            1,
+            1
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "hand_control",
+      "hand_expected_probabilities": [
+        1,
+        0
+      ],
+      "id": "control_photon_identity",
+      "mode": "verify",
+      "model_updates": {},
+      "request": {
+        "data": {
+          "a": 0,
+          "b": 0,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "hand_control",
+      "hand_expected_probabilities": [
+        0,
+        1
+      ],
+      "id": "control_photon_swap",
+      "mode": "verify",
+      "model_updates": {},
+      "request": {
+        "data": {
+          "a": 1.5707963267948966,
+          "b": 0,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "hand_control",
+      "hand_expected_probabilities": [
+        0,
+        1
+      ],
+      "id": "control_photon_constructive",
+      "mode": "verify",
+      "model_updates": {},
+      "request": {
+        "data": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "hand_control",
+      "hand_expected_probabilities": [
+        1,
+        0
+      ],
+      "id": "control_photon_destructive",
+      "mode": "verify",
+      "model_updates": {},
+      "request": {
+        "data": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "loss": 0,
+          "modes": 2,
+          "phi": 3.141592653589793,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "hand_control",
+      "hand_expected_probabilities": [
+        0.5,
+        0.5
+      ],
+      "id": "control_photon_quarter_phase",
+      "mode": "verify",
+      "model_updates": {},
+      "request": {
+        "data": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "loss": 0,
+          "modes": 2,
+          "phi": 1.5707963267948966,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "pipeline_boundary",
+      "id": "pipeline_mis_bool_index",
+      "mode": "pipeline",
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              true
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "pipeline_boundary",
+      "id": "pipeline_mis_negative_index",
+      "mode": "pipeline",
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              -1
+            ]
+          ],
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "pipeline_boundary",
+      "id": "pipeline_mis_unknown_extra",
+      "mode": "pipeline",
+      "request": {
+        "data": {
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "extra_constraint": "select vertex 0",
+          "n": 2,
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "intent": "Maximize the weight of an independent set."
+      }
+    },
+    {
+      "category": "pipeline_boundary",
+      "id": "pipeline_photo_nan",
+      "mode": "pipeline",
+      "request": {
+        "data": {
+          "a": {
+            "$float": "nan"
+          },
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "pipeline_boundary",
+      "id": "pipeline_photo_inf",
+      "mode": "pipeline",
+      "request": {
+        "data": {
+          "a": {
+            "$float": "inf"
+          },
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    },
+    {
+      "category": "pipeline_boundary",
+      "id": "pipeline_photo_bool_angle",
+      "mode": "pipeline",
+      "request": {
+        "data": {
+          "a": false,
+          "b": 0.3,
+          "loss": 0,
+          "modes": 2,
+          "phi": 0.4,
+          "photons": 1
+        },
+        "intent": "Compute ideal single-photon output probabilities."
+      }
+    }
+  ],
+  "command_argv": [
+    "python3",
+    "-c",
+    "import json; from pathlib import Path; exec(json.loads(Path(\"runs/20261113-c05-semantic-contracts/audit_cases.json\").read_text())[\"replay_source\"])"
+  ],
+  "date_utc": "2026-11-13T13:17:01.432903+00:00",
+  "exit_status": 0,
+  "nonfinite_encoding": "A singleton {\"$float\":\"nan\"|\"inf\"|\"-inf\"} decodes to the named Python float; ordinary cases round-trip through strict JSON.",
+  "recorded_run": {
+    "input_hashes_after": {
+      "quantage/core.py": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "quantage/verification.py": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    "input_hashes_before": {
+      "quantage/core.py": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "quantage/verification.py": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "python": "3.9.6",
+    "results": [
+      {
+        "id": "mis_unknown_sense",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            1,
+            2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              -3
+            ]
+          ],
+          "sense": "banana"
+        },
+        "solution": {
+          "energy": 2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_negative_index",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              -1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_bool_index",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              true,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_large_index",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              2,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "exception": "IndexError",
+          "message": "tuple index out of range"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_too_negative_index",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              -3,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "exception": "IndexError",
+          "message": "tuple index out of range"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_float_index",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              0.5,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "exception": "TypeError",
+          "message": "tuple indices must be integers or slices, not float"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_wrong_kind",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "garbage",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "reason": "dimension/kind",
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_bool_coefficient",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            false,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_unused_penalty",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": "not numeric",
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_extra_semantics",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "extra_constraint": "select vertex 0",
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_constant_shift",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 7,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": 5,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_positive_scaling",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -3,
+            -6
+          ],
+          "penalty": 9,
+          "quadratic": [
+            [
+              0,
+              1,
+              9
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -6,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_constant_nan",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": {
+            "$float": "nan"
+          },
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "nan"
+          },
+          "solutions": [],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_linear_nan",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            {
+              "$float": "nan"
+            },
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "nan"
+          },
+          "solutions": [],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_quadratic_nan",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              {
+                "$float": "nan"
+              }
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "nan"
+          },
+          "solutions": [],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_penalty_nan",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": {
+            "$float": "nan"
+          },
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_constant_inf",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": {
+            "$float": "inf"
+          },
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "inf"
+          },
+          "solutions": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_linear_inf",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            {
+              "$float": "inf"
+            },
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "nan"
+          },
+          "solutions": [],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_quadratic_inf",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              {
+                "$float": "inf"
+              }
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "nan"
+          },
+          "solutions": [],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_penalty_inf",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": {
+            "$float": "inf"
+          },
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_constant_-inf",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": {
+            "$float": "-inf"
+          },
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "-inf"
+          },
+          "solutions": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_linear_-inf",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            {
+              "$float": "-inf"
+            },
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "nan"
+          },
+          "solutions": [],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_quadratic_-inf",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              {
+                "$float": "-inf"
+              }
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "nan"
+          },
+          "solutions": [],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": false
+        }
+      },
+      {
+        "id": "mis_penalty_-inf",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": {
+            "$float": "-inf"
+          },
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_unknown_order",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "garbage",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_unknown_output",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "garbage",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_string_coherent",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": "false",
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_negative_phase_index",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": -1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_bool_phase_index",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": true,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_bool_input_mode",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": false,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_large_phase_index",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 2,
+          "phi": 0.4
+        },
+        "solution": {
+          "exception": "IndexError",
+          "message": "list index out of range"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_float_phase_index",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 0.5,
+          "phi": 0.4
+        },
+        "solution": {
+          "exception": "TypeError",
+          "message": "list indices must be integers or slices, not float"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_unknown_input_mode",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": "garbage",
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.22117020844027974,
+            0.7788297915597203
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.5576595831194406,
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_wrong_kind",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "garbage",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "reason": "kind",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_global_phase",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 1.234,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_incoherent",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": false,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.8800922209273454,
+            0.11990777907265465
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.10126242936762508,
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_unknown_enums_combined",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": "false",
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "garbage",
+          "output": "garbage",
+          "phase_mode": -1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_a_nan",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": {
+            "$float": "nan"
+          },
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            {
+              "$float": "nan"
+            },
+            {
+              "$float": "nan"
+            }
+          ]
+        },
+        "verification": {
+          "max_abs_error": {
+            "$float": "nan"
+          },
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_b_nan",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": {
+            "$float": "nan"
+          },
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            {
+              "$float": "nan"
+            },
+            {
+              "$float": "nan"
+            }
+          ]
+        },
+        "verification": {
+          "max_abs_error": {
+            "$float": "nan"
+          },
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_phi_nan",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": {
+            "$float": "nan"
+          }
+        },
+        "solution": {
+          "probabilities": [
+            {
+              "$float": "nan"
+            },
+            {
+              "$float": "nan"
+            }
+          ]
+        },
+        "verification": {
+          "max_abs_error": {
+            "$float": "nan"
+          },
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_global_phase_nan",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": {
+            "$float": "nan"
+          },
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            {
+              "$float": "nan"
+            },
+            {
+              "$float": "nan"
+            }
+          ]
+        },
+        "verification": {
+          "max_abs_error": {
+            "$float": "nan"
+          },
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_coherent_nan",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": {
+            "$float": "nan"
+          },
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_a_inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": {
+            "$float": "inf"
+          },
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "exception": "ValueError",
+          "message": "math domain error"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_b_inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": {
+            "$float": "inf"
+          },
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "exception": "ValueError",
+          "message": "math domain error"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_phi_inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": {
+            "$float": "inf"
+          }
+        },
+        "solution": {
+          "probabilities": [
+            {
+              "$float": "nan"
+            },
+            {
+              "$float": "nan"
+            }
+          ]
+        },
+        "verification": {
+          "max_abs_error": {
+            "$float": "nan"
+          },
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_global_phase_inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": {
+            "$float": "inf"
+          },
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            {
+              "$float": "nan"
+            },
+            {
+              "$float": "nan"
+            }
+          ]
+        },
+        "verification": {
+          "max_abs_error": {
+            "$float": "nan"
+          },
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_coherent_inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": {
+            "$float": "inf"
+          },
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_a_-inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": {
+            "$float": "-inf"
+          },
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "exception": "ValueError",
+          "message": "math domain error"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_b_-inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": {
+            "$float": "-inf"
+          },
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "exception": "ValueError",
+          "message": "math domain error"
+        },
+        "verification": {
+          "reason": "malformed formulation",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_phi_-inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": {
+            "$float": "-inf"
+          }
+        },
+        "solution": {
+          "probabilities": [
+            {
+              "$float": "nan"
+            },
+            {
+              "$float": "nan"
+            }
+          ]
+        },
+        "verification": {
+          "max_abs_error": {
+            "$float": "nan"
+          },
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_global_phase_-inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": {
+            "$float": "-inf"
+          },
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            {
+              "$float": "nan"
+            },
+            {
+              "$float": "nan"
+            }
+          ]
+        },
+        "verification": {
+          "max_abs_error": {
+            "$float": "nan"
+          },
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_coherent_-inf",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": {
+            "$float": "-inf"
+          },
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_unknown_input_on_balanced",
+        "problem": {
+          "a": 0.7853981633974483,
+          "b": 0,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.7853981633974483,
+          "b": 0,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 666,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.4999999999999999,
+            0.5000000000000001
+          ]
+        },
+        "verification": {
+          "max_abs_error": 2.220446049250313e-16,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_changed_angle_tolerance_{'$float': 'inf'}",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 1.1,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.04690710809932205,
+            0.9530928919006778
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.7319226834603982,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "photon_changed_angle_tolerance_{'$float': 'nan'}",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 1.1,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.04690710809932205,
+            0.9530928919006778
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.7319226834603982,
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_changed_angle_tolerance_-1",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 1.1,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.04690710809932205,
+            0.9530928919006778
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.7319226834603982,
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_changed_angle_tolerance_1e-12",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 1.1,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.04690710809932205,
+            0.9530928919006778
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.7319226834603982,
+          "reason": "analytic probabilities and normalization",
+          "valid": false
+        }
+      },
+      {
+        "id": "photon_unknown_normalized_family",
+        "problem": {
+          "a": 0.2,
+          "b": 0.3,
+          "family": "unsupported_family",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0.4
+        },
+        "proposal": {
+          "a": 0.2,
+          "b": 0.3,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0.4
+        },
+        "solution": {
+          "probabilities": [
+            0.7788297915597203,
+            0.22117020844027974
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "mis_finite_inputs_infinite_energy",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [],
+          "family": "mis",
+          "n": 1,
+          "objective": "maximize_weight",
+          "weights": [
+            1
+          ]
+        },
+        "proposal": {
+          "constant": 1e+308,
+          "kind": "qubo",
+          "linear": [
+            1e+308
+          ],
+          "penalty": 2,
+          "quadratic": [],
+          "sense": "maximize"
+        },
+        "solution": {
+          "energy": {
+            "$float": "inf"
+          },
+          "solutions": [
+            [
+              1
+            ]
+          ],
+          "states_evaluated": 2
+        },
+        "verification": {
+          "oracle_value": 1,
+          "reason": "all optimal states compared",
+          "states_checked": 2,
+          "valid": true
+        }
+      },
+      {
+        "hand_control_pass": true,
+        "id": "control_mis_k2",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            2
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -2
+          ],
+          "penalty": 3,
+          "quadratic": [
+            [
+              0,
+              1,
+              3
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -2,
+          "solutions": [
+            [
+              0,
+              1
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 2,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "hand_control_pass": true,
+        "id": "control_mis_tied",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ]
+          ],
+          "family": "mis",
+          "n": 2,
+          "objective": "maximize_weight",
+          "weights": [
+            1,
+            1
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -1
+          ],
+          "penalty": 2,
+          "quadratic": [
+            [
+              0,
+              1,
+              2
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -1,
+          "solutions": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "states_evaluated": 4
+        },
+        "verification": {
+          "oracle_value": 1,
+          "reason": "all optimal states compared",
+          "states_checked": 4,
+          "valid": true
+        }
+      },
+      {
+        "hand_control_pass": true,
+        "id": "control_mis_star",
+        "problem": {
+          "constraints": "independent",
+          "domain": "binary",
+          "edges": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "family": "mis",
+          "n": 3,
+          "objective": "maximize_weight",
+          "weights": [
+            5,
+            1,
+            1
+          ]
+        },
+        "proposal": {
+          "constant": 0,
+          "kind": "qubo",
+          "linear": [
+            -5,
+            -1,
+            -1
+          ],
+          "penalty": 6,
+          "quadratic": [
+            [
+              0,
+              1,
+              6
+            ],
+            [
+              0,
+              2,
+              6
+            ]
+          ],
+          "sense": "minimize"
+        },
+        "solution": {
+          "energy": -5,
+          "solutions": [
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          "states_evaluated": 8
+        },
+        "verification": {
+          "oracle_value": 5,
+          "reason": "all optimal states compared",
+          "states_checked": 8,
+          "valid": true
+        }
+      },
+      {
+        "hand_control_error": 0.0,
+        "hand_control_pass": true,
+        "id": "control_photon_identity",
+        "problem": {
+          "a": 0,
+          "b": 0,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0
+        },
+        "proposal": {
+          "a": 0,
+          "b": 0,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0
+        },
+        "solution": {
+          "probabilities": [
+            1.0,
+            0.0
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "hand_control_error": 3.749399456654644e-33,
+        "hand_control_pass": true,
+        "id": "control_photon_swap",
+        "problem": {
+          "a": 1.5707963267948966,
+          "b": 0,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0
+        },
+        "proposal": {
+          "a": 1.5707963267948966,
+          "b": 0,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0
+        },
+        "solution": {
+          "probabilities": [
+            3.749399456654644e-33,
+            1.0
+          ]
+        },
+        "verification": {
+          "max_abs_error": 0.0,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "hand_control_error": 4.930380657631324e-32,
+        "hand_control_pass": true,
+        "id": "control_photon_constructive",
+        "problem": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 0
+        },
+        "proposal": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 0
+        },
+        "solution": {
+          "probabilities": [
+            4.930380657631324e-32,
+            1.0
+          ]
+        },
+        "verification": {
+          "max_abs_error": 4.930380657631324e-32,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "hand_control_error": 3.749399456654644e-33,
+        "hand_control_pass": true,
+        "id": "control_photon_destructive",
+        "problem": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 3.141592653589793
+        },
+        "proposal": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 3.141592653589793
+        },
+        "solution": {
+          "probabilities": [
+            1.0,
+            3.749399456654644e-33
+          ]
+        },
+        "verification": {
+          "max_abs_error": 3.749399456654644e-33,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "hand_control_error": 1.1102230246251565e-16,
+        "hand_control_pass": true,
+        "id": "control_photon_quarter_phase",
+        "problem": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "family": "photon",
+          "input": [
+            1,
+            0
+          ],
+          "loss": 0,
+          "modes": 2,
+          "observable": "probabilities",
+          "phi": 1.5707963267948966
+        },
+        "proposal": {
+          "a": 0.7853981633974483,
+          "b": 0.7853981633974483,
+          "coherent": true,
+          "global_phase": 0,
+          "input_mode": 0,
+          "kind": "linear_optics",
+          "order": "R_b P R_a",
+          "output": "probabilities",
+          "phase_mode": 1,
+          "phi": 1.5707963267948966
+        },
+        "solution": {
+          "probabilities": [
+            0.5000000000000001,
+            0.5000000000000001
+          ]
+        },
+        "verification": {
+          "max_abs_error": 1.6653345369377348e-16,
+          "reason": "analytic probabilities and normalization",
+          "valid": true
+        }
+      },
+      {
+        "id": "pipeline_mis_bool_index",
+        "pipeline": {
+          "reason": "invalid endpoint or self loop",
+          "status": "abstain"
+        }
+      },
+      {
+        "id": "pipeline_mis_negative_index",
+        "pipeline": {
+          "reason": "invalid endpoint or self loop",
+          "status": "abstain"
+        }
+      },
+      {
+        "id": "pipeline_mis_unknown_extra",
+        "pipeline": {
+          "reason": "MIS fields: n, edges, weights only",
+          "status": "abstain"
+        }
+      },
+      {
+        "id": "pipeline_photo_nan",
+        "pipeline": {
+          "reason": "finite real angles in radians required",
+          "status": "abstain"
+        }
+      },
+      {
+        "id": "pipeline_photo_inf",
+        "pipeline": {
+          "reason": "finite real angles in radians required",
+          "status": "abstain"
+        }
+      },
+      {
+        "id": "pipeline_photo_bool_angle",
+        "pipeline": {
+          "reason": "finite real angles in radians required",
+          "status": "abstain"
+        }
+      }
+    ],
+    "runtime_seconds": 0.0019980420000000054
+  },
+  "replay_source": "import copy, hashlib, json, math, platform, time\nfrom pathlib import Path\nfrom quantage.core import understand, formulate, solve_qubo, optical_probabilities, pipeline\nfrom quantage.verification import verify\npath = Path(\"runs/20261113-c05-semantic-contracts/audit_cases.json\")\ndoc = json.loads(path.read_text())\ndef decode(value):\n    if isinstance(value, dict):\n        if set(value) == {\"$float\"}: return float(value[\"$float\"])\n        return {k:decode(v) for k,v in value.items()}\n    if isinstance(value, list): return [decode(v) for v in value]\n    return value\ndef encode(value):\n    if isinstance(value, float) and not math.isfinite(value): return {\"$float\": \"nan\" if math.isnan(value) else \"inf\" if value > 0 else \"-inf\"}\n    if isinstance(value, dict): return {k:encode(v) for k,v in value.items()}\n    if isinstance(value, (list,tuple)): return [encode(v) for v in value]\n    return value\ndef hashes():\n    return {s:hashlib.sha256(Path(s).read_bytes()).hexdigest() for s in doc[\"audited_files\"]}\nstarted=time.perf_counter(); before=hashes(); rows=[]\nfor raw in doc[\"cases\"]:\n    case=decode(raw)\n    if case[\"mode\"] == \"pipeline\":\n        result={\"id\":case[\"id\"],\"pipeline\":pipeline(case[\"request\"])}\n    else:\n        problem=understand(case[\"request\"]); problem.update(case.get(\"problem_updates\",{}))\n        model=formulate(understand(case[\"request\"]));model.update(case.get(\"model_updates\",{}))\n        check=verify(problem,model,tolerance=case.get(\"tolerance\",1e-12))\n        try:\n            solution=solve_qubo(model) if problem[\"family\"] == \"mis\" else {\"probabilities\":optical_probabilities(model)}\n        except Exception as exc: solution={\"exception\":type(exc).__name__,\"message\":str(exc)}\n        result={\"id\":case[\"id\"],\"problem\":problem,\"proposal\":model,\"verification\":check,\"solution\":solution}\n        if \"hand_expected_solutions\" in case:\n            result[\"hand_control_pass\"] = solution.get(\"solutions\") == case[\"hand_expected_solutions\"]\n        if \"hand_expected_probabilities\" in case:\n            actual=solution.get(\"probabilities\",[])\n            result[\"hand_control_error\"] = max(abs(a-b) for a,b in zip(actual,case[\"hand_expected_probabilities\"]))\n            result[\"hand_control_pass\"] = len(actual)==2 and result[\"hand_control_error\"] <= 1e-12\n    rows.append(result)\nprint(json.dumps(encode({\"results\":rows,\"input_hashes_before\":before,\"input_hashes_after\":hashes(),\"runtime_seconds\":time.perf_counter()-started,\"python\":platform.python_version(),\"platform\":platform.platform()}),sort_keys=True,allow_nan=False))\n",
+  "repository_commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+  "repository_dirty": true,
+  "run_status": "completed",
+  "schema": "quantage-independent-adversarial-audit-v1"
+}

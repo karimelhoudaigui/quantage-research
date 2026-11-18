@@ -1,0 +1,600 @@
+{
+  "status": "observed_records_audited",
+  "phases": {
+    "dev-initial-v1": {
+      "observed": 8,
+      "planned": 8,
+      "missing_ids": [],
+      "schema_valid": 0,
+      "faithful": 0,
+      "eos": 7,
+      "token_limit": 1,
+      "completed_row_cost": {
+        "input_tokens": 4717,
+        "output_tokens": 1468,
+        "wall_seconds": 576.577539124,
+        "cpu_seconds": 287.126888
+      },
+      "wrapper_seconds": 594.62059,
+      "exit_status": 0,
+      "records": [
+        {
+          "id": "0b5d97a2",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 582,
+          "output_tokens": 155,
+          "finish_reason": "eos",
+          "wall_seconds": 25.694795958,
+          "cpu_seconds": 21.116166999999997
+        },
+        {
+          "id": "31d8b6f0",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 571,
+          "output_tokens": 49,
+          "finish_reason": "eos",
+          "wall_seconds": 5.337355416000001,
+          "cpu_seconds": 5.825164999999998
+        },
+        {
+          "id": "68c1e9b4",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 586,
+          "output_tokens": 230,
+          "finish_reason": "eos",
+          "wall_seconds": 24.118800416,
+          "cpu_seconds": 24.976241
+        },
+        {
+          "id": "7d139ac8",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 617,
+          "output_tokens": 273,
+          "finish_reason": "eos",
+          "wall_seconds": 74.15186987500002,
+          "cpu_seconds": 57.40027
+        },
+        {
+          "id": "9e2a4c71",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 588,
+          "output_tokens": 384,
+          "finish_reason": "token_limit",
+          "wall_seconds": 282.428057125,
+          "cpu_seconds": 108.37638599999998
+        },
+        {
+          "id": "a7f03d2c",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 606,
+          "output_tokens": 164,
+          "finish_reason": "eos",
+          "wall_seconds": 19.256247167000026,
+          "cpu_seconds": 19.46867900000001
+        },
+        {
+          "id": "c2b7460d",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 558,
+          "output_tokens": 83,
+          "finish_reason": "eos",
+          "wall_seconds": 12.118311167000002,
+          "cpu_seconds": 10.817632000000003
+        },
+        {
+          "id": "f40a8e53",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 609,
+          "output_tokens": 130,
+          "finish_reason": "eos",
+          "wall_seconds": 133.472102,
+          "cpu_seconds": 39.14634800000002
+        }
+      ],
+      "generation_metadata": {
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "python": "3.9.6",
+        "torch": "2.8.0",
+        "transformers": "4.45.2",
+        "dtype": "float32",
+        "device": "cpu",
+        "threads": 4,
+        "phase": "initial",
+        "sampling": {
+          "temperature": 0.2,
+          "top_p": 1.0,
+          "top_k": 50
+        },
+        "seed_rule": "first8hexsha256(id) + round index modulo2**32",
+        "max_new_tokens": 384,
+        "max_input_tokens": 4096,
+        "planned": 8,
+        "completed": 8,
+        "input_tokens": 4717,
+        "output_tokens": 1468,
+        "load_seconds": 4.812898083,
+        "wall_seconds": 584.295386916,
+        "cpu_seconds": 288.298423,
+        "peak_rss_native_units": 2241691648,
+        "status": "completed",
+        "error": null,
+        "network_during_inference": false,
+        "external_purchase_eur": 0,
+        "recorded_at_utc": "2026-11-14T22:54:13.169142+00:00"
+      }
+    },
+    "dev-initial-v2": {
+      "observed": 8,
+      "planned": 8,
+      "missing_ids": [],
+      "schema_valid": 1,
+      "faithful": 0,
+      "eos": 8,
+      "token_limit": 0,
+      "completed_row_cost": {
+        "input_tokens": 4517,
+        "output_tokens": 1108,
+        "wall_seconds": 313.93572666599994,
+        "cpu_seconds": 254.94369400000005
+      },
+      "wrapper_seconds": 330.798805,
+      "exit_status": 0,
+      "records": [
+        {
+          "id": "0b5d97a2",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 557,
+          "output_tokens": 138,
+          "finish_reason": "eos",
+          "wall_seconds": 63.034433041,
+          "cpu_seconds": 46.98623499999999
+        },
+        {
+          "id": "31d8b6f0",
+          "schema_valid": true,
+          "finite": {
+            "assignments": 32,
+            "feasibility_mismatches": 23,
+            "objective_mismatches": 0,
+            "proposed_feasible_count": 32,
+            "reference_feasible_count": 9,
+            "proposed_best": 31,
+            "reference_best": 17,
+            "witnesses": [
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "expected_feasible": false,
+                "proposed_feasible": true
+              },
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "expected_feasible": false,
+                "proposed_feasible": true
+              },
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "expected_feasible": false,
+                "proposed_feasible": true
+              }
+            ],
+            "faithful": false
+          },
+          "input_tokens": 546,
+          "output_tokens": 114,
+          "finish_reason": "eos",
+          "wall_seconds": 66.33394754199999,
+          "cpu_seconds": 49.045224000000005
+        },
+        {
+          "id": "68c1e9b4",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 561,
+          "output_tokens": 156,
+          "finish_reason": "eos",
+          "wall_seconds": 35.235653291000006,
+          "cpu_seconds": 29.973948000000007
+        },
+        {
+          "id": "7d139ac8",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 592,
+          "output_tokens": 168,
+          "finish_reason": "eos",
+          "wall_seconds": 29.378875125000008,
+          "cpu_seconds": 26.92029499999998
+        },
+        {
+          "id": "9e2a4c71",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 563,
+          "output_tokens": 126,
+          "finish_reason": "eos",
+          "wall_seconds": 16.761036125000004,
+          "cpu_seconds": 16.559388000000013
+        },
+        {
+          "id": "a7f03d2c",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 581,
+          "output_tokens": 139,
+          "finish_reason": "eos",
+          "wall_seconds": 20.591413750000015,
+          "cpu_seconds": 19.66467400000002
+        },
+        {
+          "id": "c2b7460d",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 533,
+          "output_tokens": 118,
+          "finish_reason": "eos",
+          "wall_seconds": 50.823580874999976,
+          "cpu_seconds": 38.553358
+        },
+        {
+          "id": "f40a8e53",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 584,
+          "output_tokens": 149,
+          "finish_reason": "eos",
+          "wall_seconds": 31.77678691699998,
+          "cpu_seconds": 27.240572000000014
+        }
+      ],
+      "generation_metadata": {
+        "model": "Qwen/Qwen2.5-0.5B-Instruct",
+        "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+        "python": "3.9.6",
+        "torch": "2.8.0",
+        "transformers": "4.45.2",
+        "dtype": "float32",
+        "device": "cpu",
+        "threads": 4,
+        "phase": "initial",
+        "sampling": {
+          "temperature": 0.2,
+          "top_p": 1.0,
+          "top_k": 50
+        },
+        "seed_rule": "first8hexsha256(id) + round index modulo2**32",
+        "max_new_tokens": 384,
+        "max_input_tokens": 4096,
+        "planned": 8,
+        "completed": 8,
+        "input_tokens": 4517,
+        "output_tokens": 1108,
+        "load_seconds": 7.1127555000000005,
+        "wall_seconds": 322.198322375,
+        "cpu_seconds": 256.43478999999996,
+        "peak_rss_native_units": 2119352320,
+        "status": "completed",
+        "error": null,
+        "network_during_inference": false,
+        "external_purchase_eur": 0,
+        "recorded_at_utc": "2026-11-15T13:04:55.359202+00:00"
+      }
+    },
+    "test-initial-v2": {
+      "observed": 1,
+      "planned": 16,
+      "missing_ids": [
+        "23e8a6d0",
+        "2f8c05e1",
+        "3d5b9e01",
+        "4a6d90c3",
+        "5fc7a138",
+        "6e3a08f5",
+        "74f20b8d",
+        "8b2e6c40",
+        "905e3b6a",
+        "a063c8f2",
+        "b91c5e72",
+        "ce1964a7",
+        "d062f4b9",
+        "e84b2f19",
+        "f7a1d269"
+      ],
+      "schema_valid": 0,
+      "faithful": 0,
+      "eos": 1,
+      "token_limit": 0,
+      "completed_row_cost": {
+        "input_tokens": 565,
+        "output_tokens": 203,
+        "wall_seconds": 483.21496775,
+        "cpu_seconds": 90.335203
+      },
+      "wrapper_seconds": 519.331055,
+      "exit_status": -15,
+      "records": [
+        {
+          "id": "1c94d7a6",
+          "schema_valid": false,
+          "finite": null,
+          "input_tokens": 565,
+          "output_tokens": 203,
+          "finish_reason": "eos",
+          "wall_seconds": 483.21496775,
+          "cpu_seconds": 90.335203
+        }
+      ],
+      "generation_metadata": "missing; not synthesized"
+    }
+  },
+  "source_and_output_hash_checks": {
+    "dev-initial-v1": {
+      "run_status": "completed",
+      "outputs": [
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev-initial-v1/stdout.txt",
+          "hash_verified": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev-initial-v1/stderr.txt",
+          "hash_verified": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev-initial-v1/raw.jsonl",
+          "hash_verified": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev-initial-v1/generation.json",
+          "hash_verified": true
+        }
+      ],
+      "inputs": [
+        {
+          "path": "quantage/repair_inference.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_model.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_feedback.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/instructions.v1.txt",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/protocol.md",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261113-c07-public-traces/model-acquisition.json",
+          "current_hash_matches": true
+        }
+      ]
+    },
+    "dev-initial-v2": {
+      "run_status": "completed",
+      "outputs": [
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/stdout.txt",
+          "hash_verified": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/stderr.txt",
+          "hash_verified": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/raw.jsonl",
+          "hash_verified": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/generation.json",
+          "hash_verified": true
+        }
+      ],
+      "inputs": [
+        {
+          "path": "quantage/repair_inference_v2.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_language.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_model.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_feedback.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/protocol.md",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/amendment-representation-v2.md",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261113-c07-public-traces/model-acquisition.json",
+          "current_hash_matches": true
+        }
+      ]
+    },
+    "test-initial-v2": {
+      "run_status": "failed",
+      "outputs": [
+        {
+          "path": "runs/20261114-c15-formulation-repair/test-initial-v2/stdout.txt",
+          "hash_verified": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/test-initial-v2/stderr.txt",
+          "hash_verified": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/test-initial-v2/raw.jsonl",
+          "hash_verified": true
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/run_c15_phase.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_model.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_feedback.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_language.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/test_cases.json",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/protocol.md",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261114-c15-formulation-repair/amendment-representation-v2.md",
+          "current_hash_matches": true
+        },
+        {
+          "path": "quantage/repair_inference_v2.py",
+          "current_hash_matches": true
+        },
+        {
+          "path": "runs/20261113-c07-public-traces/model-acquisition.json",
+          "current_hash_matches": true
+        }
+      ]
+    }
+  },
+  "independent_finite_result": {
+    "assignments": 32,
+    "feasibility_mismatches": 23,
+    "objective_mismatches": 0,
+    "proposed_feasible_count": 32,
+    "reference_feasible_count": 9,
+    "proposed_best": 31,
+    "reference_best": 17,
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ],
+    "faithful": false
+  },
+  "feedback_minimal_verified": true,
+  "timestamp_notes": [
+    {
+      "phase": "dev-initial-v1",
+      "utc_discrepancy_seconds": 6698.92434,
+      "interpretation": "UTC chronology and monotonic duration disagree; cause not established."
+    }
+  ],
+  "resource_stop_reconciliation": {
+    "pre_stop_inspection_count": 0,
+    "final_flushed_record_count": 1,
+    "unobserved_initial_cases": 15,
+    "generation_metadata": "missing",
+    "H15": "unresolved; no comparison phases"
+  },
+  "non_claims": [
+    "No inference executed by this audit.",
+    "No imputation of missing cases.",
+    "No causal v1/v2 performance claim.",
+    "Recorded host compression does not isolate the cause of runtime slowdown."
+  ]
+}

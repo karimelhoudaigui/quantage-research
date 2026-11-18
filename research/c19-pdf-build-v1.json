@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/Users/karimelhoudaigui/Downloads/quantage-research/research/external/tectonic/tectonic",
+    "--untrusted",
+    "--keep-logs",
+    "--makefile-rules",
+    "/Users/karimelhoudaigui/Downloads/quantage-research/paper/build-c19-v1/dependencies.mk",
+    "--outdir",
+    "/Users/karimelhoudaigui/Downloads/quantage-research/paper/build-c19-v1",
+    "/Users/karimelhoudaigui/Downloads/quantage-research/paper/main.tex"
+  ],
+  "binary_sha256": "b52b5a730e2b0b33087304f7720f649603953f270a6b1c88bb031e1ae01f7f9c",
+  "tex_sha256_before": "e12e1b2ee7b5e9fc7b637b01d187bf6559e1ac293525b564405ec93a417955a9",
+  "tex_sha256_after": "e12e1b2ee7b5e9fc7b637b01d187bf6559e1ac293525b564405ec93a417955a9",
+  "exit_code": 0,
+  "error": null,
+  "runtime_seconds": 91.530382666,
+  "environment_scope": "only PATH,LANG,TECTONIC_CACHE_DIR passed; cache local; no shell escape",
+  "outputs": {
+    "paper/build-c19-v1/stdout.txt": "ac34296be98069df377bd8a5a19832dac977eb9c719170b98d3822b74cef5e3e",
+    "paper/build-c19-v1/main.pdf": "961157db537593481529244aff52ab8af81a9c3aafef3f91fee153ed4f036b91",
+    "paper/build-c19-v1/dependencies.mk": "b8c089892705bc701b44a72d7ee8ed7096c911f18e3f46611726ba6500ad94db",
+    "paper/build-c19-v1/stderr.txt": "666846d92719ae01db1e786f9bfd22ee2c4751b0a2edf68d1b06215cbf2608d6",
+    "paper/build-c19-v1/main.log": "a830451e79bb03116ff03d391cbbc6035f6575a93745a4511078b92360fa391b"
+  },
+  "scope": "compilation checks syntax/layout only, not scientific truth or final refereeing"
+}

@@ -1,0 +1,38 @@
+{
+  "recorded_at_utc": "2026-11-13T17:38:16.087259+00:00",
+  "mechanism": "native collaboration tools, fresh fork_turns=none",
+  "model_exact": null,
+  "model_version": null,
+  "inference_seeds": null,
+  "tokens": null,
+  "session_cost_eur": null,
+  "external_purchase_eur": 0,
+  "attempted_tasks": [
+    {
+      "task": "/root/native_alone_mis",
+      "prompt_file": "runs/20261113-c06-native-agents/prompts/alone_mis.md",
+      "status": "errored_resource_limit",
+      "candidate_file_created": false
+    },
+    {
+      "task": "/root/native_alone_photon",
+      "prompt_file": "runs/20261113-c06-native-agents/prompts/alone_photon.md",
+      "status": "errored_resource_limit",
+      "candidate_file_created": false
+    }
+  ],
+  "observed_tool_error": "You have hit your usage limit; tool reported next availability Nov 18th, 2026 6:54 PM (timezone not exposed).",
+  "documented_arm_status": "not_attempted_after_resource_limit",
+  "user_selected_fallback": "existing LLM outputs",
+  "existing_trace_location": "pending user path or link; no source located yet",
+  "input_hashes": {
+    "runs/20261113-c06-native-agents/public_cases.json": "11c3c5b17fe8f3c0c9023c4fd8adb829dc8da739b0a4be4001213f6bdce1d0ae",
+    "runs/20261113-c06-native-agents/private_gold.v2.json": "7824bb06651e61986d572d8fa3bf95a19872a2bf8437f7ec555368c645cb4d85",
+    "runs/20261113-c06-native-agents/generation_instructions.md": "18418ca2e09d436b1fe308cac29cd094a563a5a239c908532e27675434fe4c67",
+    "runs/20261113-c06-native-agents/documents.md": "bae0b68fd2513d789e55487bf160b1b021539ef49ba9173d0082a80709405931",
+    "runs/20261113-c06-native-agents/prompts/alone_mis.md": "dc8639c51c3bea138eef0b44058b3056cbe10bf8d0938f48698ce6e4a3dbceb9",
+    "runs/20261113-c06-native-agents/prompts/alone_photon.md": "fdb11d64ff679d635b727064da48a94527ea9345bf39f66aca601ca3bb0ee73b",
+    "runs/20261113-c06-native-agents/prompts/documented_mis.md": "1ca56454242f39cb72f04664430551748b22e57b7f03b7a5feace6e67e027735",
+    "runs/20261113-c06-native-agents/prompts/documented_photon.md": "65b82344059728bba1cd46423acd1bd25b7ff92f1e4f918161545c838dcf29fd"
+  }
+}

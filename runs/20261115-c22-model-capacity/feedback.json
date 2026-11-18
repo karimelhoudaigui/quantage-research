@@ -1,0 +1,232 @@
+{
+  "29507bb778cc": {
+    "verdict": {
+      "kind": "counterexamples",
+      "witnesses": [
+        {
+          "kind": "feasibility",
+          "x": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "expected_feasible": false,
+          "proposed_feasible": true
+        },
+        {
+          "kind": "feasibility",
+          "x": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "expected_feasible": false,
+          "proposed_feasible": true
+        }
+      ]
+    },
+    "candidate_evaluations": [
+      {
+        "x": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 1,
+            "lhs": 42,
+            "op": "<=",
+            "rhs": 74,
+            "satisfied": true
+          },
+          {
+            "index": 2,
+            "lhs": 2,
+            "op": "<=",
+            "rhs": 3,
+            "satisfied": true
+          },
+          {
+            "index": 3,
+            "lhs": 1,
+            "op": "==",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 4,
+            "lhs": 0,
+            "op": "==",
+            "rhs": 0,
+            "satisfied": true
+          }
+        ],
+        "candidate_feasible": true,
+        "candidate_objective": 58
+      },
+      {
+        "x": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 1,
+            "lhs": 60,
+            "op": "<=",
+            "rhs": 74,
+            "satisfied": true
+          },
+          {
+            "index": 2,
+            "lhs": 3,
+            "op": "<=",
+            "rhs": 3,
+            "satisfied": true
+          },
+          {
+            "index": 3,
+            "lhs": 1,
+            "op": "==",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 4,
+            "lhs": 0,
+            "op": "==",
+            "rhs": 0,
+            "satisfied": true
+          }
+        ],
+        "candidate_feasible": true,
+        "candidate_objective": 119
+      }
+    ],
+    "gloss": "Witness 1: the REFERENCE REJECTS this assignment; YOUR CANDIDATE ACCEPTS it. The row evaluations describe YOUR candidate only. Witness 2: the REFERENCE REJECTS this assignment; YOUR CANDIDATE ACCEPTS it. The row evaluations describe YOUR candidate only."
+  },
+  "417127d82203": {
+    "verdict": {
+      "kind": "counterexamples",
+      "witnesses": [
+        {
+          "kind": "feasibility",
+          "x": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "expected_feasible": true,
+          "proposed_feasible": false
+        }
+      ]
+    },
+    "candidate_evaluations": [
+      {
+        "x": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "lhs": 2,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": false
+          },
+          {
+            "index": 1,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 2,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 3,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 4,
+            "lhs": 0,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 5,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 0,
+            "satisfied": false
+          },
+          {
+            "index": 6,
+            "lhs": 1,
+            "op": "==",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 7,
+            "lhs": 0,
+            "op": "==",
+            "rhs": 0,
+            "satisfied": true
+          },
+          {
+            "index": 8,
+            "lhs": 2,
+            "op": "<=",
+            "rhs": 2,
+            "satisfied": true
+          }
+        ],
+        "candidate_feasible": false,
+        "candidate_objective": 78
+      }
+    ],
+    "gloss": "Witness 1: the REFERENCE ACCEPTS this assignment; YOUR CANDIDATE REJECTS it. The row evaluations describe YOUR candidate only."
+  }
+}

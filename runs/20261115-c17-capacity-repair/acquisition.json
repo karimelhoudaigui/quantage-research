@@ -1,0 +1,8 @@
+{
+  "status": "running",
+  "runtime_reused": "runs/20261115-c16-quantized-repair/acquisition.json",
+  "model_execution": false,
+  "external_purchase_eur": 0,
+  "publisher": "SoAIHQ community quantization, source identity declared not reproduced",
+  "elapsed_seconds": 0.28574520800000003
+}

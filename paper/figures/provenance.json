@@ -1,0 +1,20 @@
+{
+  "command": [
+    "/opt/homebrew/bin/python3.11",
+    "scripts/plot_c11.py"
+  ],
+  "input": "runs/20261113-c11-frozen-transfer/results/metrics.json",
+  "sha256_before": "5d8214a7b73f231285fff79419347e0884615be1944ef8e5a84c3a9dfba85e1d",
+  "sha256_after": "5d8214a7b73f231285fff79419347e0884615be1944ef8e5a84c3a9dfba85e1d",
+  "script_sha256": "789119fce4812809a2e76fbc41ce8cd68e1bc90d836a4777474f41807a4c033a",
+  "software": {
+    "python": "3.11.15",
+    "matplotlib": "3.10.8"
+  },
+  "outputs": {
+    "paper/figures/c11-selective.pdf": "2141acd61b5a4eb1566f52b995a2186766fb8678b4f8c5d5fe5a59806db60cd3",
+    "paper/figures/c11-selective.png": "c04a9a75477572b4bd1eaa1373abeb1e05a5d388c2a349a60bc1ee9e3f33819f"
+  },
+  "scope": "descriptive finite counts; no interpolation, confidence interval or risk value at zero coverage",
+  "source_snapshot": "paper/figures/plot_c11-v1.py"
+}

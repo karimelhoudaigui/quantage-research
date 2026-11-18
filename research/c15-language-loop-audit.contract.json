@@ -1,0 +1,20 @@
+{
+  "claim_id": "C15-FRONTEND-EXACT-AUDIT",
+  "mathematics": {
+    "assertion_tested": "Generated affine comparisons preserve exact integer truth tables, forbidden syntax is rejected, authored fields are preserved, compiled reviewer models retain the independently enumerated public domains, and the bounded controller handles an explicitly injected software sequence.",
+    "coefficient_domain": "exact integers",
+    "conventions": "No eval; expected comparison values computed directly from separately specified coefficients. Loop callbacks are explicitly synthetic software evidence.",
+    "inputs": ["375 affine comparisons and handwritten syntax probes", "24 public cases and frozen reviewer annotations", "Injected two-response software fixture"],
+    "bounds": {"grid_per_comparison": 27, "public_n_max": 7, "public_cases": 24},
+    "non_claims": ["No LLM inference", "No real repair success rate", "No free-text certificate", "Reusable trace authentication limitation is reported, not resolved"]
+  },
+  "execution_artifacts": [
+    "research/c15-language-loop-audit.py", "research/c15-code-audit.py", "research/c15-annotation-oracle/raw.json",
+    "runs/20261114-c15-formulation-repair/dev_cases.json", "runs/20261114-c15-formulation-repair/test_cases.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json", "quantage/repair_model.py",
+    "quantage/repair_feedback.py", "quantage/repair_solvers.py", "quantage/repair_language.py", "quantage/repair_loop.py",
+    "quantage/repair_inference_v2.py", "quantage/repair_study_v2.py"
+  ],
+  "software": [{"name": "computation Python", "version": "3.9.6"}, {"name": "SciPy", "version": "1.13.1"}, {"name": "NumPy", "version": "1.26.4"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

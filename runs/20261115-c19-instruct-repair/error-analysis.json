@@ -1,0 +1,24 @@
+{
+  "scope": "posthoc descriptive analysis; manual clause categories, not preregistered metric or blind annotation",
+  "initial_errors": 7,
+  "guided_unchanged_models_on_initial_errors": [
+    "433fb7624d1a",
+    "29507bb778cc",
+    "eca92fb0c776",
+    "765e3caadee5",
+    "88a560c8b3f6",
+    "417127d82203"
+  ],
+  "classifications": {
+    "433fb7624d1a": "omitted_budget",
+    "eca92fb0c776": "omitted_budget",
+    "29507bb778cc": "omitted_implication",
+    "765e3caadee5": "wrong_implication_source",
+    "66f7838312e1": "omitted_lower_cardinality",
+    "88a560c8b3f6": "omitted_upper_cardinality",
+    "417127d82203": "wrong_implication_direction_and_extra_exclusion"
+  },
+  "repaired_feasible_case": "66f7838312e1",
+  "regression": "caf531e5abc9",
+  "next_discriminating_route": "explicit LLM-authored diagnosis and edits, no automatic gold correction; C19 now development for any new method"
+}

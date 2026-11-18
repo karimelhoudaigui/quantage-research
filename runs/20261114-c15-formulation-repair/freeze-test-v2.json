@@ -1,0 +1,66 @@
+{
+  "client_date": "2026-11-15",
+  "host_recorded_utc": "2026-11-15T13:06:16.025019+00:00",
+  "stage": "before any test LLM generation",
+  "code_frozen": true,
+  "no_further_prompt_revisions": true,
+  "counts": {
+    "development": 8,
+    "test": 16,
+    "test_signatures": 16
+  },
+  "dev_signatures": [
+    "B",
+    "BL",
+    "F",
+    "FU",
+    "I",
+    "L",
+    "M",
+    "U"
+  ],
+  "test_signatures": [
+    "BFI",
+    "BFILMU",
+    "BFL",
+    "BFLMU",
+    "BFM",
+    "BFU",
+    "BIL",
+    "BIM",
+    "BIU",
+    "BLM",
+    "BLU",
+    "BMU",
+    "FIM",
+    "FLM",
+    "ILU",
+    "LMU"
+  ],
+  "sha256": {
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_inference_v2.py": "704b551452a767dfc841165cd4a88c31e4177275fdea62a5184c80e061418cae",
+    "quantage/repair_solvers.py": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+    "quantage/repair_study_v2.py": "199e4e20cd75754509a0798c44b81dbe78bf94d1734d0f948c4a32079e1954b8",
+    "quantage/repair_loop.py": "2128dcbaaa1b79d65ff43053ce531c25492bb3d8531f98adcc295002b09ca488",
+    "scripts/run_c15_phase.py": "6396a7f25c66828954e760b6c93a79d5cfd190f889f2b50a993b679beb18011e",
+    "runs/20261114-c15-formulation-repair/dev_cases.json": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b",
+    "runs/20261114-c15-formulation-repair/test_cases.json": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f",
+    "runs/20261114-c15-formulation-repair/gold.json": "21fe525a57c12e698fb16d7aaba27dcdfd794a6a778aa1a46512182f6ec8dd8a",
+    "runs/20261114-c15-formulation-repair/private_gold.author.json": "fdead29381317c638d30a961aa0472a38f32f48a6f79d80b65a40a1f9acd9166",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+    "runs/20261114-c15-formulation-repair/instructions.v2.txt": "f7b81f2382bd5ada76d0af642f59231acbe57577b0aaab9fb27970f86997c989",
+    "runs/20261114-c15-formulation-repair/protocol.md": "0cf77324a955ae1a2ac7fc9e3c3a6673f21c363421a12d5a97b8b4e6bf9a1805",
+    "runs/20261114-c15-formulation-repair/amendment-representation-v2.md": "cb3c86d08d72a524c3116dfdc4bec46217f0965ba5597ae48ff784606a861186",
+    "runs/20261114-c15-formulation-repair/adjudication.json": "aa0ff593e1c7b8050d04935c62b7147ac46e13ca6f17505f149babbe132083b3"
+  },
+  "independent_pretest_reports": [
+    "research/c15-language-loop-audit/manifest.json",
+    "research/c15-study-audit-v2/manifest.json"
+  ],
+  "development_v1": "8/8 schema invalid; preserved",
+  "development_v2": "1/8 schema valid,0/8 faithful; preserved",
+  "scope": "unseen combinations of known primitives, convenience corpus, trusted reference; no population/novelty claim"
+}

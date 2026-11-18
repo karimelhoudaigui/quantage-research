@@ -1,0 +1,150 @@
+{
+  "schema_version": 2,
+  "claim_id": "C14-PRECISION-DIAGNOSTIC",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-local-llm/bin/python",
+    "-m",
+    "quantage.c14_precision_probe",
+    "--dtype",
+    "bfloat16",
+    "--output",
+    "runs/20261113-c14-model-scale/precision-bfloat16/result.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "torch",
+        "version": "2.8.0"
+      },
+      {
+        "name": "transformers",
+        "version": "4.45.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Count finite/NaN/inf first-prompt prefill logits in bfloat16 CPU, no generated answer",
+    "coefficient_domain": "bfloat16 model forward, float32 diagnostic logits",
+    "conventions": "same first C14 sorted public case and instruction as failedfloat16; evaluation mode",
+    "inputs": [
+      "one public prompt, identical checkpoint"
+    ],
+    "bounds": {
+      "forward_passes": 1,
+      "generation_calls": 0
+    },
+    "non_claims": [
+      "No semantic performance measured",
+      "No universal numerical guarantee"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-14T12:17:31.854616+00:00",
+    "runtime_seconds": 24.10409,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 300.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 4
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/c14_precision_probe.py",
+    "runs/20261113-c09-heldout-guard/instructions.md",
+    "runs/20261113-c14-model-scale/cases.json",
+    "runs/20261113-c14-model-scale/model-acquisition.json",
+    "runs/20261113-c14-model-scale/amendment-precision.md"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/c14_precision_probe.py",
+      "sha256": "dc387ecde9e1c3b693570e2b84361956a452b3999c5775f7b6fd91a8018fee07",
+      "sha256_after": "dc387ecde9e1c3b693570e2b84361956a452b3999c5775f7b6fd91a8018fee07"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/instructions.md",
+      "sha256": "872a5cb612628dbdc86c3f919526a5cf150e52423a2e3fca78356ec71b9eb185",
+      "sha256_after": "872a5cb612628dbdc86c3f919526a5cf150e52423a2e3fca78356ec71b9eb185"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/cases.json",
+      "sha256": "989f642f07aff255b100a9158823287d39afcd4b8863af59048ace6c3cb47a88",
+      "sha256_after": "989f642f07aff255b100a9158823287d39afcd4b8863af59048ace6c3cb47a88"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/model-acquisition.json",
+      "sha256": "68553800060fa14dcff2b544904e88bf061f9a33420c5cacd92dd7bd316b35d5",
+      "sha256_after": "68553800060fa14dcff2b544904e88bf061f9a33420c5cacd92dd7bd316b35d5"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/amendment-precision.md",
+      "sha256": "76dcdfbcd10cfd3c11fa79ba28c0b0ffc796c2febf9155b5a9e9f99626defa5e",
+      "sha256_after": "76dcdfbcd10cfd3c11fa79ba28c0b0ffc796c2febf9155b5a9e9f99626defa5e"
+    }
+  ],
+  "output_directory": "runs/20261113-c14-model-scale/precision-bfloat16",
+  "declared_results": [
+    "runs/20261113-c14-model-scale/precision-bfloat16/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c14-model-scale/precision-bfloat16/stdout.txt",
+      "sha256": "d6b129f80e195a6c2cad766a54cf5e6ef68c716f9105964576602b5f3a8163e6",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/precision-bfloat16/stderr.txt",
+      "sha256": "9ee2fb6125427ec9a60dee24e988415ca4021eb744446ced3e092ed884833742",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c14-model-scale/precision-bfloat16/result.json",
+      "sha256": "d6f3de069ad2d21aa4a2acf078b463c84c2a831806232c452ac10a3664dd4440",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

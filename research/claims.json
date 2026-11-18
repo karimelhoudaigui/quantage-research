@@ -1,0 +1,452 @@
+[
+  {
+    "id": "C01-FINITE",
+    "statement": "Sur 1199 instances MIS déclarées et 125 circuits idéaux à un photon, les sorties de la chaîne déterministe concordent avec les oracles: tous les optima MIS et probabilités à 1e-12.",
+    "status": "verified",
+    "evidence": [
+      "runs/20261113-c01-foundation/protocol.md",
+      "runs/20261113-c01-foundation/results/metrics.json",
+      "runs/20261113-c01-foundation/results/raw.jsonl",
+      "runs/20261113-c01-foundation/results/manifest.json"
+    ],
+    "verification_report": "runs/20261113-c01-foundation/verification.md",
+    "limitations": "Auto-revue non indépendante, corpus synthétique borné; aucune performance LLM, QPU ou généralisation. Égalité des optima, pas des coefficients."
+  },
+  {
+    "id": "C02-CERTIFICATES",
+    "statement": "Sur 2225 propositions synthétiques, 795 changent les sorties contractuelles; un contrôle d’une seule solution/normalisation accepte 267 erreurs, contre 0 pour l’oracle exhaustif déclaré.",
+    "status": "verified",
+    "evidence": [
+      "runs/20261113-c02-formulation/protocol.md",
+      "runs/20261113-c02-formulation/results/manifest.json",
+      "runs/20261113-c02-formulation/results/raw.jsonl",
+      "runs/20261113-c02-formulation/results/metrics.json"
+    ],
+    "verification_report": "runs/20261113-c02-formulation/verification.md",
+    "limitations": "Développement synthétique, définition des erreurs par l’oracle lui-même; pas un taux de détection LLM. Revue non indépendante. Certificat limité aux optima/probabilités de chaque instance."
+  },
+  {
+    "id": "C02-WEAK-SUFFICES",
+    "statement": "Contrôler une solution MIS optimale ou la normalisation des probabilités suffit à certifier une formulation fidèle.",
+    "status": "refuted",
+    "evidence": [
+      "runs/20261113-c02-formulation/verification.md",
+      "runs/20261113-c02-formulation/results/raw.jsonl"
+    ],
+    "limitations": "Réfutation par contre-exemples dans les contrats de cette campagne; ne s’étend pas à tous les types de certificats."
+  },
+  {
+    "id": "C03-ROUTING",
+    "statement": "Sur 20 propositions manuelles de routage, 14 non justifiées: les fausses acceptations passent de 13 (nom/localisation) à 4 (+modalité) puis 0 (+portée). Les 6 recommandations admissibles sont conservées.",
+    "status": "verified",
+    "evidence": [
+      "runs/20261113-c03-routing/protocol.md",
+      "runs/20261113-c03-routing/cases.json",
+      "runs/20261113-c03-routing/results/raw.jsonl",
+      "runs/20261113-c03-routing/results/metrics.json",
+      "runs/20261113-c03-routing/results/manifest.json"
+    ],
+    "verification_report": "runs/20261113-c03-routing/verification.md",
+    "limitations": "Règles testées sur annotations de leur auteur; recommandation conditionnelle, pas faisabilité physique établie. Revue non indépendante, aucune exécution QPU."
+  },
+  {
+    "id": "C04-SEMANTICS",
+    "statement": "Sur le défi manuel de 24 requêtes, le strict accepte 6 des 12 contrats équivalents et 0 des 12 hors contrat; les mots-clés acceptent 12 et 6 respectivement. Les 6 mauvaises interprétations obtiennent un certificat numérique valide.",
+    "status": "verified",
+    "evidence": [
+      "runs/20261113-c04-transfer/protocol.md",
+      "runs/20261113-c04-transfer/cases.json",
+      "runs/20261113-c04-transfer/results/raw.jsonl",
+      "runs/20261113-c04-transfer/results/metrics.json",
+      "runs/20261113-c04-transfer/results/manifest.json"
+    ],
+    "verification_report": "runs/20261113-c04-transfer/verification.md",
+    "limitations": "Défi conçu par l’auteur connaissant le parseur, données appariées, moteur figé; pas de test aveugle ni performance LLM. Auto-revue non indépendante."
+  },
+  {
+    "id": "C04-NUMERIC-SUFFICES",
+    "statement": "Un certificat numérique valide pour le problème normalisé suffit à certifier la fidélité de l’interprétation du texte initial.",
+    "status": "refuted",
+    "evidence": [
+      "runs/20261113-c04-transfer/verification.md",
+      "runs/20261113-c04-transfer/results/raw.jsonl"
+    ],
+    "limitations": "Contre-exemples explicites après canonicalisation par mots-clés. Cela ne réfute pas la possibilité de vérificateurs sémantiques additionnels."
+  },
+  {
+    "id": "C01-DISTINCT",
+    "statement": "C01 contient 1199 évaluations MIS mais 1194 requêtes MIS distinctes, et 125 requêtes optiques distinctes; cinq répétitions sont présentes.",
+    "status": "verified",
+    "evidence": [
+      "runs/20261113-c01-foundation/results/raw.jsonl",
+      "scripts/audit_results.py"
+    ],
+    "verification_report": "runs/20261113-c01-foundation/verification.md",
+    "limitations": "Comptage de requêtes sérialisées, pas de classes d’isomorphisme ni d’équivalence optique. Les paires et répétitions ne sont pas des observations statistiquement indépendantes."
+  },
+  {
+    "id": "C05-EXTERNAL-CONTRACT",
+    "status": "verified",
+    "statement": "Sur 67 propositions d’audit ciblées, la frontière explicite rejette les 23 acceptations de schéma invalides de verify direct et conserve 11 contrôles; une revue distincte concorde sur 109 cas ciblés.",
+    "evidence": [
+      "runs/20261113-c05-semantic-contracts/protocol.md",
+      "runs/20261113-c05-semantic-contracts/audit_cases.json",
+      "runs/20261113-c05-semantic-contracts/external-contract-audit.json",
+      "runs/20261113-c05-semantic-contracts/results/raw.jsonl",
+      "runs/20261113-c05-semantic-contracts/results/metrics.json",
+      "runs/20261113-c05-semantic-contracts/results/manifest.json"
+    ],
+    "verification_report": "runs/20261113-c05-semantic-contracts/external-contract-review.md",
+    "limitations": "Schéma externe QUBO entier et probabilités d’une instance; corpus adversarial fini. Auditeur distinct mais revue non aveugle et modèle potentiellement commun. Ne réfute pas les résultats C01–C04."
+  },
+  {
+    "id": "C05-LEGACY-EXTERNAL-SAFE",
+    "status": "refuted",
+    "statement": "Le verify historique valide à lui seul le schéma de toute proposition externe avant de certifier ses sorties.",
+    "evidence": [
+      "runs/20261113-c05-semantic-contracts/independent-audit.md",
+      "runs/20261113-c05-semantic-contracts/audit_cases.json"
+    ],
+    "limitations": "verify était appelé sur les modèles de son propre générateur. Les contre-exemples directs ne constituent pas une injection de modèle dans l’ancien pipeline."
+  },
+  {
+    "id": "C06-BASELINES-ONLY",
+    "status": "verified",
+    "statement": "Sur les 32 requêtes relues séparément (19 supportées,13 hors contrat), strict couvre0/19 avec0/13 fausses acceptations; mots-clés couvre9/19 avec5/13 fausses acceptations. Aucun candidat natif évalué.",
+    "evidence": [
+      "runs/20261113-c06-native-agents/protocol.md",
+      "runs/20261113-c06-native-agents/private_gold.v2.json",
+      "runs/20261113-c06-native-agents/gold-review.json",
+      "runs/20261113-c06-native-agents/annotation-revision.json",
+      "runs/20261113-c06-native-agents/results-baselines/raw.jsonl",
+      "runs/20261113-c06-native-agents/results-baselines/metrics.json",
+      "runs/20261113-c06-native-agents/results-baselines/manifest.json",
+      "runs/20261113-c06-native-agents/generation_record.json"
+    ],
+    "verification_report": "runs/20261113-c06-native-agents/verification.md",
+    "limitations": "Labels relus par rôle distinct, même famille de modèle possible, corpus apparié sans population naturelle. Question agents bloquée par quota et source de traces existantes encore inconnue."
+  },
+  {
+    "id": "C07-OPEN-RESOURCES",
+    "status": "verified",
+    "statement": "Ressources publiques acquises à révisions fixes : 12 fichiers de deux dépôts, 70 enregistrements PQID dont 51 codes non vides avec liaisons cohérentes, et checkpoint local Qwen2.5-0.5B dont le hash Safetensors correspond au LFS; smoke test hors ligne réel réussi.",
+    "evidence": [
+      "runs/20261113-c07-public-traces/protocol.md",
+      "runs/20261113-c07-public-traces/public-acquisition.json",
+      "runs/20261113-c07-public-traces/archive-inspection.json",
+      "runs/20261113-c07-public-traces/archive-joins.json",
+      "runs/20261113-c07-public-traces/model-acquisition.json",
+      "runs/20261113-c07-public-traces/local-smoke.json"
+    ],
+    "verification_report": "runs/20261113-c07-public-traces/verification.md",
+    "limitations": "Acquisition et cohérence interne seulement, modèles des archives déclarés par auteurs sans authentification fournisseur. Smoke test n’établit pas une performance agentique. Revue séquentielle de l’intégrateur; pas de coût CPU/énergie mesuré."
+  },
+  {
+    "id": "C08-LOCAL-EVALUATED",
+    "status": "verified",
+    "statement": "32 réponses réelles du checkpoint local de 0.49 milliard de paramètres sur 16 cas de deux familles : sans dossier, 5/10 contrats supportés couverts et 2/6 fausses acceptations; avec dossier, 4/10 et 2/6. Les réponses photoniques contredisent famille/tâche et sont refusées.",
+    "evidence": [
+      "runs/20261113-c08-local-agent/protocol.md",
+      "runs/20261113-c08-local-agent/selection.json",
+      "runs/20261113-c08-local-agent/generation/raw.jsonl",
+      "runs/20261113-c08-local-agent/generation/generation.json",
+      "runs/20261113-c08-local-agent/generation/manifest.json",
+      "runs/20261113-c08-local-agent/results/raw.jsonl",
+      "runs/20261113-c08-local-agent/results/metrics.json",
+      "runs/20261113-c08-local-agent/results/manifest.json"
+    ],
+    "verification_report": "runs/20261113-c08-local-agent/verification.md",
+    "limitations": "Agent hybride de compréhension LLM et formulation déterministe, pas génération complète de coefficients. Petit corpus synthétique apparié, annotations non humaines aveugles, métriques auto-vérifiées. Aucun gain statistique, fiabilité générale ou compatibilité QPU établi."
+  },
+  {
+    "id": "C09-RESERVED-GUARD",
+    "status": "verified",
+    "statement": "Sur 16 cas de groupes non générés C08, 16 propositions réelles v2 : contrôle données/numérique, couverture 7/9 supportés avec 3/7 fausses acceptations; ajout du veto, 5/9 avec 1/7. Deux erreurs retirées au coût de deux refus de demandes valides.",
+    "evidence": [
+      "runs/20261113-c09-heldout-guard/protocol.md",
+      "runs/20261113-c09-heldout-guard/selection.json",
+      "runs/20261113-c09-heldout-guard/generation/raw.jsonl",
+      "runs/20261113-c09-heldout-guard/generation/generation.json",
+      "runs/20261113-c09-heldout-guard/generation/manifest.json",
+      "runs/20261113-c09-heldout-guard/results/raw.jsonl",
+      "runs/20261113-c09-heldout-guard/results/metrics.json",
+      "runs/20261113-c09-heldout-guard/results/manifest.json"
+    ],
+    "verification_report": "runs/20261113-c09-heldout-guard/verification.md",
+    "limitations": "Petit test par groupes, pas population naturelle ni étude humaine aveugle. Veto et métriques auto-vérifiés; résultat réservé négatif conservé, aucune fiabilité générale."
+  },
+  {
+    "id": "C10-DEVELOPMENT-V4",
+    "status": "verified",
+    "statement": "Après consultation de C09, correction v4 en régression sur les mêmes 16 propositions : 7/9 supportés acceptés et 0/7 hors contrat; trois intégrations CLI reproduisent exactement leurs textes bruts avec statuts attendus.",
+    "evidence": [
+      "runs/20261113-c10-regression-release/protocol.md",
+      "runs/20261113-c10-regression-release/amendment-v4.md",
+      "runs/20261113-c10-regression-release/results/metrics.json",
+      "runs/20261113-c10-regression-release/results/manifest.json",
+      "runs/20261113-c10-regression-release/cli-integration.json",
+      "runs/20261113-c10-regression-release/cli-integration-v4.json",
+      "runs/20261113-c10-regression-release/results-v4/raw.jsonl",
+      "runs/20261113-c10-regression-release/results-v4/metrics.json",
+      "runs/20261113-c10-regression-release/results-v4/manifest.json"
+    ],
+    "verification_report": "runs/20261113-c10-regression-release/verification.md",
+    "limitations": "Validation post-hoc de développement, pas nouveau test réservé. V3 à une erreur et C09 à une erreur résiduelle conservés. Veto lexical borné, raison libre et fiabilité générale non certifiées."
+  },
+  {
+    "id": "C11-FROZEN-TRANSFER",
+    "status": "verified",
+    "statement": "Sur128 nouvelles requêtes en64groupes,256réponses de deux modèles locaux : Qwen+numérique accepte55supportées et44horscontrat; +v4,23et12. Smol0contrat conforme sous128tokens; consensus0acceptation.",
+    "evidence": [
+      "runs/20261113-c11-frozen-transfer/protocol.md",
+      "runs/20261113-c11-frozen-transfer/public_cases.json",
+      "runs/20261113-c11-frozen-transfer/private_gold.author.json",
+      "runs/20261113-c11-frozen-transfer/private_gold.review.json",
+      "runs/20261113-c11-frozen-transfer/adjudication.json",
+      "runs/20261113-c11-frozen-transfer/preflight.json",
+      "runs/20261113-c11-frozen-transfer/generation-qwen/raw.jsonl",
+      "runs/20261113-c11-frozen-transfer/generation-qwen/manifest.json",
+      "runs/20261113-c11-frozen-transfer/generation-smol/raw.jsonl",
+      "runs/20261113-c11-frozen-transfer/generation-smol/manifest.json",
+      "runs/20261113-c11-frozen-transfer/results/raw.jsonl",
+      "runs/20261113-c11-frozen-transfer/results/metrics.json",
+      "runs/20261113-c11-frozen-transfer/results/manifest.json"
+    ],
+    "verification_report": "runs/20261113-c11-frozen-transfer/verification.md",
+    "limitations": "Nouveau corpus de convenance apparié, données JSON et formulations déterministes. Annotations distinctes mais pas humaines aveugles; relecteur connaîtv4. Audit final de résultats non indépendant, quota épuisé. Pas de nouveauté ou population générale établie."
+  },
+  {
+    "id": "C11-RETENTION-HYPOTHESIS",
+    "status": "refuted",
+    "statement": "Sur le test C11 préenregistré, v4 retire au moins50% des erreurs de Qwen+numérique et conserve au moins90% de ses bonnes acceptations.",
+    "evidence": [
+      "runs/20261113-c11-frozen-transfer/protocol.md",
+      "runs/20261113-c11-frozen-transfer/results/metrics.json",
+      "runs/20261113-c11-frozen-transfer/results/raw.jsonl"
+    ],
+    "limitations": "Critère conjoint fini non satisfait : retrait72.7%,rétention41.8%. Ne réfute pas tout vérificateur sémantique ni toute approche agentique."
+  },
+  {
+    "id": "C12-SDK-PHOTON",
+    "status": "verified",
+    "statement": "Perceval1.3.1 réellement exécuté sur486évaluations3modes/2photons :2916probabilités concordent avec un oracle bosonique distinct à1e-10; erreurmaxauteur2.22e-16, revueorthogonale3.33e-16.",
+    "evidence": [
+      "runs/20261113-c12-sdk-photon/protocol.md",
+      "runs/20261113-c12-sdk-photon/results/raw.jsonl",
+      "runs/20261113-c12-sdk-photon/results/metrics.json",
+      "runs/20261113-c12-sdk-photon/results/manifest.json",
+      "runs/20261113-c12-sdk-photon/independent-review.json"
+    ],
+    "verification_report": "runs/20261113-c12-sdk-photon/independent-review.md",
+    "limitations": "Grille idéale finie, photons indistinguables sans bruit/perte; relecteur distinct mais non aveugle et sans indépendance de modèle prouvée. SDK accepté ne certifie pas machine physique ou généralisation agentique."
+  },
+  {
+    "id": "C13-SDK-RYDBERG",
+    "status": "verified",
+    "statement": "Pulser1.7.2/QuTiP5.2.3 réellement exécutés sur162programmes2atomes : écartmaxnominal/SDKprobas4.73e-4 sous5e-3 préenregistré; Hinitial6.12e-17 et normalisation1.61e-9 sousseuils.",
+    "evidence": [
+      "runs/20261113-c13-sdk-rydberg/protocol.md",
+      "runs/20261113-c13-sdk-rydberg/results/raw.jsonl",
+      "runs/20261113-c13-sdk-rydberg/results/metrics.json",
+      "runs/20261113-c13-sdk-rydberg/results/manifest.json",
+      "runs/20261113-c13-sdk-rydberg/independent-review.json"
+    ],
+    "verification_report": "runs/20261113-c13-sdk-rydberg/independent-review.md",
+    "limitations": "Modèle nominal constant, SDK temporel, contrôles Device partiels. Cause temporelle plausible non isolée; pas précisionglobale1e-10. Arrondi101ns→104ns etregistre sanslayout acceptés; aucune conformitéQPU/access/bruitPasqal établis."
+  },
+  {
+    "id": "C14-PRECISION-RUNTIME",
+    "status": "verified",
+    "statement": "Sur le premier prompt C14 et le checkpoint Qwen2.5-1.5B épinglé, le diagnostic CPU float16 observe151936logitsNaN et bfloat16observe151936logitsfinis. La comparaison sémantique32cas reste non résolue après arrêt anticipé du bras bfloat16 (une réponse49tokens en493.62s).",
+    "evidence": [
+      "runs/20261113-c14-model-scale/protocol.md",
+      "runs/20261113-c14-model-scale/amendment-precision.md",
+      "runs/20261113-c14-model-scale/model-acquisition.json",
+      "runs/20261113-c14-model-scale/generation/raw.jsonl",
+      "runs/20261113-c14-model-scale/generation/manifest.json",
+      "runs/20261113-c14-model-scale/probe-float16.json",
+      "runs/20261113-c14-model-scale/precision-bfloat16/result.json",
+      "runs/20261113-c14-model-scale/precision-bfloat16/manifest.json",
+      "runs/20261113-c14-model-scale/generation-bfloat16/raw.jsonl",
+      "runs/20261113-c14-model-scale/generation-bfloat16/manifest.json",
+      "runs/20261113-c14-model-scale/float16-interruption.json",
+      "runs/20261113-c14-model-scale/bfloat16-interruption.json"
+    ],
+    "verification_report": "runs/20261113-c14-model-scale/verification.md",
+    "limitations": "Un prompt et un runtime, pas résultat de capacité/généralisation. Diagnosticfloat16standalone sanshashavant observé; bfloat16provenancev2. Deuxconfigurations arrêtées, pas32observations;31réponses manquantes jamais imputées. Auto-revue, pas nouvel auditeur indépendant."
+  },
+  {
+    "id": "C15-AUTHORED-DEVELOPMENT",
+    "status": "verified",
+    "statement": "Qwen2.5-0.5B a produit16réponses réelles de développement pour des ILP complètes : v1 huit schémas invalides; v2 sept invalides et un modèle valide mais infidèle (23désaccords de faisabilité sur32affectations,0d'objectif). Deux solveurs concordent sur son optimum31, contre17pour la référence.",
+    "evidence": [
+      "runs/20261114-c15-formulation-repair/protocol.md",
+      "runs/20261114-c15-formulation-repair/amendment-representation-v2.md",
+      "runs/20261114-c15-formulation-repair/dev-initial-v1/raw.jsonl",
+      "runs/20261114-c15-formulation-repair/dev-initial-v2/raw.jsonl",
+      "runs/20261114-c15-formulation-repair/dev-score-v2/metrics.json",
+      "research/c15-observed-audit-v2/raw.json",
+      "research/c15-observed-audit-v2/manifest.json"
+    ],
+    "verification_report": "research/c15-observed-review.md",
+    "limitations": "Développement uniquement, un petit modèle et une graine par cas. Révision de représentation avant test. Rôles distincts mais pas indépendance humaine/de modèle prouvée. UTCv1 discordant malgré hashes conformes; temps monotones séparés. Aucune performance de réparation comparée ni généralisation."
+  },
+  {
+    "id": "C15-REPAIR-HYPOTHESIS",
+    "status": "inconclusive",
+    "statement": "Sur16cas test à combinaisons inédites, la correction guidée doit donner au moins3formulations fidèles de plus que l'auto-révision à deux appels et au plus1régression parmi les initiales fidèles.",
+    "evidence": [
+      "runs/20261114-c15-formulation-repair/protocol.md",
+      "runs/20261114-c15-formulation-repair/freeze-test-v2.json",
+      "runs/20261114-c15-formulation-repair/test-initial-v2/raw.jsonl",
+      "runs/20261114-c15-formulation-repair/test-initial-v2/manifest.json",
+      "runs/20261114-c15-formulation-repair/resource-stop-reconciliation.json"
+    ],
+    "verification_report": "research/c15-observed-review.md",
+    "limitations": "Comparatif non réalisé : test initial arrêté pour ressources avec1réponse EOS203tokens,15absentes, aucune seconde phase. Manifest failed-15, generation.jsonabsent. Aucun score comparatif ni imputation; arrêt anticipé ne réfute pas l'hypothèse."
+  },
+  {
+    "id": "C17-DEV-CAPACITY",
+    "status": "verified",
+    "statement": "Sur deux anciens cas de développement C16, Qwen3.5-2B Q4_K_M non-thinking produit deux ILP conformes au schéma mais aucune fidèle au cube entier.",
+    "evidence": [
+      "runs/20261115-c17-capacity-repair/protocol.md",
+      "research/c17-c18-capacity-audit-v2/raw.json",
+      "research/c17-c18-capacity-audit-v2/manifest.json"
+    ],
+    "verification_report": "research/c17-c18-capacity-review.md",
+    "limitations": "Pilote de développement n=2, auto-revue. Configurations distinctes, aucun effet causal de taille/raisonnement, pas de test ni QPU. C18 premier record HTTP récupéré sans temps client/mural connu ; incidents conservés."
+  },
+  {
+    "id": "C18-DEV-CAPACITY",
+    "status": "verified",
+    "statement": "Deux appels thinking du même 2B atteignent chacun1024tokens sans fermeture du raisonnement ni modèle final admissible sur ces deux cas de développement.",
+    "evidence": [
+      "runs/20261115-c18-thinking-repair/protocol.md",
+      "research/c17-c18-capacity-audit-v2/raw.json",
+      "research/c17-c18-capacity-audit-v2/manifest.json"
+    ],
+    "verification_report": "research/c17-c18-capacity-review.md",
+    "limitations": "Pilote de développement n=2, auto-revue. Configurations distinctes, aucun effet causal de taille/raisonnement, pas de test ni QPU. C18 premier record HTTP récupéré sans temps client/mural connu ; incidents conservés."
+  },
+  {
+    "id": "C16-OBSERVED-REPAIR",
+    "status": "verified",
+    "statement": "C16 conserve63réponses réelles/64tentatives : direct1/16,auto1/16,guidé1/15observé etunappel inconnu. Unique fidélité sur référence infaisable ; aucune réussite fidèle faisable ni réparation mathématique fidèle observée.50profils candidats/100sorties solveurs contrôlés par énumération distincte.",
+    "evidence": [
+      "runs/20261115-c16-quantized-repair/partial-score/metrics.json",
+      "runs/20261115-c16-quantized-repair/partial-score/paired-results/raw.jsonl",
+      "research/c16-observed-audit/raw.json",
+      "research/c16-observed-audit/manifest.json"
+    ],
+    "verification_report": "research/c16-observed-review.md",
+    "limitations": "Une observation perdue ENOSPC, aucun absent imputé. Relecteur distinct du scorer mais auteur du corpus et travaux driver antérieurs ; rôles non humains/modèles indépendants. Contradiction suffisante sur domaine vide ne démontre pas la compréhension des clauses."
+  },
+  {
+    "id": "C16-REPAIR-HYPOTHESIS",
+    "status": "refuted",
+    "statement": "H16 exige au moins3formulations fidèles supplémentaires guidée contre auto sur16cas et au plus1régression guidée ; même la meilleure issue de l’observation inconnue donne un gain maximal1, donc le critère fini échoue.",
+    "evidence": [
+      "runs/20261115-c16-quantized-repair/protocol.md",
+      "runs/20261115-c16-quantized-repair/partial-score/metrics.json",
+      "research/c16-observed-review.json"
+    ],
+    "verification_report": "research/c16-observed-review.md",
+    "limitations": "Réfutation du critère sur ce corpus/configuration, pas de toute méthode de vérification. Bornes logiques[0,1] sur résultat manquant, pas intervalle de confiance ni imputation."
+  },
+  {
+    "id": "C19-FULL-FORMULATION-REPAIR",
+    "status": "verified",
+    "statement": "80réponses réelles sur20nouveaux cas : initiale13/20,direct15/20,auto12/20,guidée13/20 fidèles. Sur17faisables10/12/9/10. La guidée répare une cardinalité omise sur66f7838312e1 et régresse une fois ;80profils/160sorties de solveurs concordent sur candidats.",
+    "evidence": [
+      "runs/20261115-c19-instruct-repair/protocol-test.md",
+      "runs/20261115-c19-instruct-repair/freeze-test-v2.json",
+      "runs/20261115-c19-instruct-repair/annotation-agreement.json",
+      "runs/20261115-c19-instruct-repair/test-score-v2/metrics.json",
+      "research/c19-observed-review.audit/raw.json",
+      "research/c19-observed-review.audit/manifest.json"
+    ],
+    "verification_report": "research/c19-observed-review.md",
+    "limitations": "Petit corpus synthétique, dix groupes/une graine, référenceannotée supposéefiable. Recalculdistinct du scorer mais auteur du corpus, pas aveugle/indépendant desdonnées. Trois domainesvides ne prouventpas lesclauses. Nettoyage disque concomitant etcoûtparent/énergie inconnus. AucunQPU/nouveauté générale."
+  },
+  {
+    "id": "C19-REPAIR-HYPOTHESIS",
+    "status": "refuted",
+    "statement": "H19 exige au moins4fidélités supplémentaires guidée contre auto et au plus1régression ; le test complet donne+1 et1régression, donc le critère échoue. Le direct15/20 dépasse ici le guidé13/20.",
+    "evidence": [
+      "runs/20261115-c19-instruct-repair/protocol-test.md",
+      "runs/20261115-c19-instruct-repair/test-score-v2/metrics.json",
+      "research/c19-observed-review.json"
+    ],
+    "verification_report": "research/c19-observed-review.md",
+    "limitations": "Critère fini uniquement, pas réfutation de tout vérificateur ou gain de population. Une correction guidée réelle existe, sans gain agrégé attendu ni supériorité sur génération directe."
+  },
+  {
+    "id": "C20-DEVELOPMENT-EDITS",
+    "status": "verified",
+    "statement": "Deux appels guidés réels à sortie diagnostic+éditions sur deux anciennes erreurs C19 :2patches valides,0formulation fidèle. Le premier laisse le modèle inchangé, le second laisse son domaine inchangé. Diagnostics de256caractères interrompus et auto-contradictoires.",
+    "evidence": [
+      "runs/20261115-c20-grounded-edits/protocol.md",
+      "runs/20261115-c20-grounded-edits/freeze-probe-v1.json",
+      "runs/20261115-c20-grounded-edits/probe-guided-v1/manifest.json",
+      "runs/20261115-c20-grounded-edits/probe-score-v1/metrics.json",
+      "research/c20-observed-review.json"
+    ],
+    "verification_report": "research/c20-observed-review.md",
+    "limitations": "Pilote de développement n=2 sélectionné après échecs C19, aucun gain/généralisation/effet causal établi. Auteur patch/corpus aussi relecteur, indépendance limitée ; rootreview8tests/source distincts. Coût initial réutilisé, énergie/session inconnues."
+  },
+  {
+    "id": "C21-DEVELOPMENT-CANDIDATE-TOOL",
+    "status": "verified",
+    "statement": "Deux réparations LLM réelles sur deux anciennes erreurs C19 : deux patches valides, une formulation fidèle. Le modèle ajoute littéralement x5-x4<=0 ; le second modèle conserve une implication inversée. Quatre sorties DFS/HiGHS concordent sur les candidats.",
+    "evidence": [
+      "runs/20261115-c21-tool-grounded-edits/protocol.md",
+      "runs/20261115-c21-tool-grounded-edits/probe-score-v1/metrics.json",
+      "research/c21-observed-review.json"
+    ],
+    "verification_report": "research/c21-observed-review.md",
+    "limitations": "Développement posthoc n=2 ; outil, gloss et budgets changés ensemble, aucun effet causal ni généralisation. Auteur corpus/appliqueur aussi relecteur, indépendance limitée. Coûts initiaux réutilisés mais attribués, énergie inconnue."
+  },
+  {
+    "id": "C22-PARTIAL-8B-DEVELOPMENT",
+    "status": "verified",
+    "statement": "Le pilote 8B a une réponse connue et une tentative inconnue. La réponse connue corrige le sens de l’implication 2→1 mais laisse une exclusion inventée : 0/1 fidèle connu, résultat du second cas inconnu.",
+    "evidence": [
+      "runs/20261115-c22-model-capacity/protocol.md",
+      "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/raw.jsonl",
+      "research/c22-observed-review.audit/raw.json",
+      "research/c22-observed-review.audit/manifest.json"
+    ],
+    "verification_report": "research/c22-observed-review.md",
+    "limitations": "Pilote partiel, pas score complet : aucun token, coût ou résultat imputé au cas interrompu. Runner de la réponse connue result-missing pour deux fichiers 001 déclarés en trop, conservé. Aucun gain de taille ou de généralisation établi ; revue non indépendante des données."
+  },
+  {
+    "id": "C27-Q8-KV-DEVELOPMENT-SECOND-REPAIR",
+    "status": "verified",
+    "statement": "Une unique génération Qwen3-8B locale sous Flash Attention et caches K/V q8_0 a produit 143 tokens complets sur l'état de développement C24. Rejeu littéral puis énumération exacte : état avant C27 non fidèle sur 1/16 affectations, modèle final fidèle sur 16/16. DFS et HiGHS concordent sur l'optimum 78 et la solution [1,1,0,0].",
+    "evidence": [
+      "runs/20261117-c27-quantized-kv-v2/protocol.md",
+      "runs/20261117-c27-quantized-kv-v2/guided-round2-v1/manifest.json",
+      "runs/20261117-c27-quantized-kv-v2/guided-round2-v1/driver/generation.json",
+      "runs/20261117-c27-quantized-kv-v2/guided-round2-v1/driver/raw.jsonl",
+      "runs/20261117-c27-quantized-kv-v2/verification.json"
+    ],
+    "verification_report": "runs/20261117-c27-quantized-kv-v2/verification.md",
+    "limitations": "Posthoc développement n=1; ne modifie pas le dénominateur C19 et n'établit ni effet causal du q8_0, ni généralisation, ni nouveauté. Runtime local; les logs indiquent reap mais code serveur -9. Ne satisfait pas le gate protocolaire C25, car la configuration diffère. Pas de QPU."
+  },
+  {
+    "id": "C28-C23-CONFIG-VIABILITY",
+    "status": "verified",
+    "statement": "Une tentative locale unique sur un cas n=7 non-C23 de développement, sous la configuration du driver C23, n'a pas satisfait le critère préenregistré : la limite de requête de 180 s a expiré avant une réponse complète, et le driver a enregistré zéro ligne achevée. Les logs attestent 30/37 couches sur Metal, Flash Attention auto et caches K/V f16; le nombre de tokens réellement générés mais non transmis est inconnu.",
+    "evidence": [
+      "runs/20261118-c28-c23-config-probe/protocol.md",
+      "runs/20261118-c28-c23-config-probe/freeze-v1.json",
+      "runs/20261118-c28-c23-config-probe/initial-v1/manifest.json",
+      "runs/20261118-c28-c23-config-probe/initial-v1/driver/generation.json",
+      "runs/20261118-c28-c23-config-probe/initial-v1/driver/server.stderr.txt",
+      "runs/20261118-c28-c23-config-probe/verification-final.json"
+    ],
+    "verification_report": "runs/20261118-c28-c23-config-probe/verification.md",
+    "limitations": "Un seul appel sur un cas de développement; aucune réponse complète, donc aucune mesure de fidélité. Aucun corpus C23 ou gold n'a été utilisé. Le compteur client à zéro ne signifie pas zéro token réellement généré. L'absence de marqueur OOM ne prouve pas une marge mémoire. Aucun retry, comparaison C23, performance de population ou résultat QPU."
+  }
+]

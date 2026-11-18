@@ -1,0 +1,22 @@
+{
+  "status": "frozen_before_author_comparison",
+  "timestamp_utc": "2026-11-15T20:44:45.488436+00:00",
+  "reviewer_role": "c15_audit",
+  "scope": "Manual extraction from the single public C19 test_cases.json only. No author gold, generator, provenance, protocol-test, prompt or response opened. No oracle computation performed before freeze.",
+  "counts": {
+    "test": 20
+  },
+  "artifacts": [
+    {
+      "path": "runs/20261115-c19-instruct-repair/test_cases.json",
+      "sha256": "742301bb909289baaf1f34f328032851aa1ca8b935ede5b34e4081aa903d223b"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/private_gold.review.json",
+      "sha256": "1775911ed0d9f7403b85a74768f6694b8e39ff00ee5db33df21d8eced737d192"
+    }
+  ],
+  "limits": [
+    "Distinct LLM role, no human blinding or distinct model independence established."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "client_date": "2026-11-16",
+  "free_bytes_after": 2198999040,
+  "additional_cache_evictions": [],
+  "global_GGUF_ignore_fixed": true,
+  "source": "research/snapshot-cache-ignore-erratum.json",
+  "scope": "oldclosedtmp_packcleanup only, no scientificraw/source removed"
+}

@@ -1,0 +1,32 @@
+{
+  "client_date": "2026-11-16",
+  "development_only": true,
+  "cases": 2,
+  "new_guided_calls": 2,
+  "initial_resampled": false,
+  "sha256": {
+    "scripts/run_c22_probe_v2.py": "9617869f5cee268d34e0f839e88790182e41e3ba2e6fcd366de92289fe3fa593",
+    "scripts/continue_c19_comparison.py": "fdfe41dc24e3c09b17a89759ecf38fe672e8fbb42aa69783aaf9160efb9085a4",
+    "quantage/repair_patch_scale_inference.py": "ae99264343b27391d1d6201541abcb9a52ea55e86eb464ae934b9dc57c87e523",
+    "quantage/repair_patch_tool_language.py": "ec0b66334b3fbac6ee2720f23d68450b1cd9b21c5d57c509260f9160c40359bc",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "quantage/repair_trace_feedback.py": "8ae1576b3abd974d084e74816e02ccab36f490f72678d59577750f41660e82cc",
+    "scripts/build_c21_feedback.py": "eec22c184b2fd2306527fbacb3287cb9d735d694ad265d3097deeb9f623ac5b5",
+    "tests/test_repair_patch.py": "b5f1b5bf36f2e82902a50c90aec20ef601bfb99d9e06f27f0fd9955374a44e29",
+    "runs/20261115-c22-model-capacity/protocol.md": "f3925def03f3699c0a023dde566fe953d01880abd58072d7c3d561c5559c49fc",
+    "runs/20261115-c22-model-capacity/probe_cases.json": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+    "runs/20261115-c22-model-capacity/instructions.txt": "c6a0e8a7e1d634d508ffb41a886ee033bd13eb49bd9d6c7356fd80c89a682538",
+    "research/c22-preflight-review.json": "99b16ad1377fb28ce41e4aed92c19f5b94621809266950751c7808ff69df0cc2",
+    "research/c22-model-candidate.json": "34c05844e8f08bda311bc2cdcf0c955dd5133cf1f128a30b8c220c704605b76a",
+    "runs/20261115-c22-model-capacity/storage-preparation.json": "5ce27d71e8a5b52191428dd546bf78aac2a4ed015799222448ddcdd7c15f1438",
+    "runs/20261115-c22-model-capacity/storage-additional-v2.json": "21e2387c321ec4dc075aed9f740f7a607f8f0860ab2c14bf648308ced10d1b61",
+    "runs/20261115-c22-model-capacity/startup-incident-v1.json": "9bb2968dce13f1c1dad2400a63dfb51a86051deaf9f38f0ae26886ec90080c3f",
+    "runs/20261115-c22-model-capacity/resource-management-v2.json": "842fcf684de4510bfa9cc24f75bb9fdb564113a5d2332969134376c4ed1cb004",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+    "runs/20261115-c22-model-capacity/feedback.json": "738e181f88fe027ba5b3e33a111f5f207e42635b6384eb9973f94958e2d8bfa9",
+    "runs/20261115-c22-model-capacity/acquisition.json": "d692962887055660f422ed425e2e26e5adbbb1f9df71a27f8e59824df207fdbf"
+  }
+}

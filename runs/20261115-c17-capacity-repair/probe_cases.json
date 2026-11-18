@@ -1,0 +1,68 @@
+[
+  {
+    "id": "080d034c34b2",
+    "language": "en",
+    "intention": "The planning file is C16-4. There are 7 entries indexed from 0 to 6. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Entry 4 is compulsory. These are all the requirements; impose no additional restriction.",
+    "data": {
+      "n": 7,
+      "weights": [
+        36,
+        52,
+        53,
+        33,
+        29,
+        34,
+        21
+      ],
+      "costs": [
+        29,
+        21,
+        22,
+        14,
+        22,
+        15,
+        24
+      ],
+      "edges": [
+        [
+          1,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "4e0256180e89",
+    "language": "fr",
+    "intention": "Composer une sélection pour le lot de décision C16-1. Les 4 campagnes ont pour indices 0 à 3. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Le coût cumulé, somme des costs retenus, est limité à 48, borne incluse. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 4,
+      "weights": [
+        53,
+        21,
+        29,
+        33
+      ],
+      "costs": [
+        20,
+        22,
+        35,
+        21
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  }
+]

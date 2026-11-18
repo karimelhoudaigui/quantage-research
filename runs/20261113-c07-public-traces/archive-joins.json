@@ -1,0 +1,13 @@
+{
+  "requests": 70,
+  "responses": 70,
+  "joined_unique_ids": 70,
+  "nonempty_generated_code": 51,
+  "cross_file_hash_equalities": {
+    "request_sha256": 70,
+    "model_input_sha256": 70,
+    "prompt_record_sha256": 70
+  },
+  "nonempty_code_matching_raw_provider_payload": 51,
+  "provenance_limit": "Internal consistency of publisher archive, not provider authentication or new inference."
+}

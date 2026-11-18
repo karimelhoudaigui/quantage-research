@@ -1,0 +1,6 @@
+{"completed": 1, "phase": "initial", "id": "a21822897a9c", "valid_schema": true, "tokens": 73}
+{"completed": 2, "phase": "initial", "id": "b97cb5f56812", "valid_schema": true, "tokens": 147}
+{"completed": 3, "phase": "initial", "id": "d28fc0e8d61e", "valid_schema": true, "tokens": 134}
+{"completed": 4, "phase": "initial", "id": "f60764a678d2", "valid_schema": false, "tokens": 119}
+{"completed": 5, "phase": "initial", "id": "f79cab9b73d0", "valid_schema": true, "tokens": 143}
+{"completed": 6, "phase": "initial", "id": "ffa9d668bbda", "valid_schema": true, "tokens": 120}

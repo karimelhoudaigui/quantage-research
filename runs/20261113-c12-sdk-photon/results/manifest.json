@@ -1,0 +1,192 @@
+{
+  "schema_version": 2,
+  "claim_id": "C12-SDK-PHOTON-GRID",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    ".venv-quantum-sdk/bin/python",
+    "-m",
+    "quantage.sdk_photon",
+    "--output",
+    "runs/20261113-c12-sdk-photon/results"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python computation",
+        "version": "3.11.15"
+      },
+      {
+        "name": "perceval-quandela",
+        "version": "1.3.1"
+      },
+      {
+        "name": "exqalibur",
+        "version": "1.4.2"
+      },
+      {
+        "name": "numpy",
+        "version": "2.4.6"
+      },
+      {
+        "name": "scipy",
+        "version": "1.17.1"
+      },
+      {
+        "name": "sympy",
+        "version": "1.14.0"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "For486declared circuits/inputs, all6output probabilities agree between Perceval SLOS and separately built normalized creation-operator oracle to1e-10; include HOM and input collisions. Six SDK negatives observed without assuming refusal.",
+    "coefficient_domain": "complex float64; trigonometric unitary; finite complete two-photon Fock space",
+    "conventions": "3modes;2indistinguishable photons; BS.Ry(theta=2a); PS mode1; temporal R01(a),PS1(phi),R12(b),R01(c); no loss/noise/postselection; number-resolving detection",
+    "inputs": [
+      "a,b,c in{0,pi/4,pi/2};phi in{0,pi/3,pi};all6input Fock states of sum2"
+    ],
+    "bounds": {
+      "modes": 3,
+      "photons": 2,
+      "configurations": 81,
+      "evaluations": 486,
+      "output_states": 6,
+      "absolute_tolerance": 1e-10
+    },
+    "non_claims": [
+      "mathematical novelty",
+      "QPU/hardware compatibility",
+      "physical execution",
+      "LLM generalization",
+      "natural-population inference",
+      "quantum advantage"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-13T19:57:58.956474+00:00",
+    "runtime_seconds": 40.021933,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 180.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/sdk_photon.py",
+    "quantage/__init__.py",
+    "tests/test_sdk_photon.py",
+    "requirements-quantum-sdk.txt",
+    "runs/20261113-c12-sdk-photon/protocol.md",
+    "runs/20261113-c12-sdk-photon/contract.json",
+    "runs/20261113-c12-sdk-photon/preregistration.json",
+    "runs/20261113-c12-sdk-photon/environment.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/sdk_photon.py",
+      "sha256": "4edf91b7259cd28b8e8f7f7770de276bd04c7683c8e756c92344f9c1e9b7d1ce",
+      "sha256_after": "4edf91b7259cd28b8e8f7f7770de276bd04c7683c8e756c92344f9c1e9b7d1ce"
+    },
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "tests/test_sdk_photon.py",
+      "sha256": "a5e1acf5ebf21275790c860a8984e40db14e912057c4a98d9d318f0940ccff39",
+      "sha256_after": "a5e1acf5ebf21275790c860a8984e40db14e912057c4a98d9d318f0940ccff39"
+    },
+    {
+      "path": "requirements-quantum-sdk.txt",
+      "sha256": "08bc1bee56555d57eba8c156f6444f711965962f4667f027b3d3a4da40fd0dd5",
+      "sha256_after": "08bc1bee56555d57eba8c156f6444f711965962f4667f027b3d3a4da40fd0dd5"
+    },
+    {
+      "path": "runs/20261113-c12-sdk-photon/protocol.md",
+      "sha256": "02bdcdd5330baec41960982754f430d3c03b8f58484c21c48f7b1be95597e6ba",
+      "sha256_after": "02bdcdd5330baec41960982754f430d3c03b8f58484c21c48f7b1be95597e6ba"
+    },
+    {
+      "path": "runs/20261113-c12-sdk-photon/contract.json",
+      "sha256": "ae831967004bc4a271c6892f493c79f420d5d071384ee5a13511eb37540b180d",
+      "sha256_after": "ae831967004bc4a271c6892f493c79f420d5d071384ee5a13511eb37540b180d"
+    },
+    {
+      "path": "runs/20261113-c12-sdk-photon/preregistration.json",
+      "sha256": "b11c63c4f0e01858359308a47de47183601d75f0df4465f294509917626bffcb",
+      "sha256_after": "b11c63c4f0e01858359308a47de47183601d75f0df4465f294509917626bffcb"
+    },
+    {
+      "path": "runs/20261113-c12-sdk-photon/environment.json",
+      "sha256": "33fd0b63e204f4437f6e77f27b54436d51cecfda84adb077ce3d6efc21d01e28",
+      "sha256_after": "33fd0b63e204f4437f6e77f27b54436d51cecfda84adb077ce3d6efc21d01e28"
+    }
+  ],
+  "output_directory": "runs/20261113-c12-sdk-photon/results",
+  "declared_results": [
+    "runs/20261113-c12-sdk-photon/results/raw.jsonl",
+    "runs/20261113-c12-sdk-photon/results/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c12-sdk-photon/results/stdout.txt",
+      "sha256": "d5b639836fa21a271d7873ac3bf4cacc8a1aa92885a7071689bb8a598991f69f",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c12-sdk-photon/results/stderr.txt",
+      "sha256": "0159138841be9cea6ab5a668c5ede0ef9130e0e565368174ccba5463c9cf4f2b",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c12-sdk-photon/results/raw.jsonl",
+      "sha256": "3727f1286b597cc17d677f302d76c4071f93d7f7ca0955db5cfb03e711666aee",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c12-sdk-photon/results/metrics.json",
+      "sha256": "31ce211c406dd3fd796ae8958ff103ff235ff7a8fe493ce87e69cda28ff88982",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

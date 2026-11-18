@@ -1,0 +1,12 @@
+{
+  "client_date": "2026-11-15",
+  "recorded_utc_host": "2026-11-15T13:14:55.403883+00:00",
+  "pid": 49110,
+  "command_observed": "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python -m quantage.repair_inference_v2 --cases runs/20261114-c15-formulation-repair/test_cases.json --instructions runs/20261114-c15-formulation-repair/instructions.v2.txt --phase initial --output runs/20261114-c15-formulation-repair/test-initial-v2 --max-new-tokens 384",
+  "signal": "SIGTERM",
+  "reason": "After over 400s without first response, heavy host memory compression and low residency observed; operator resource stop before 1800s limit, not a mathematical failure or model score. No other processes changed.",
+  "phase": "test initial",
+  "responses_observed_before_stop": 0,
+  "H15": "unresolved",
+  "next_action": "separate quantized runtime feasibility cycle; no C15 retry or parameter change"
+}

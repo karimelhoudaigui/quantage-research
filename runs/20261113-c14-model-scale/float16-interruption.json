@@ -1,0 +1,12 @@
+{
+  "recorded_at_utc": "2026-11-14T11:58:25.402131+00:00",
+  "reason": "First float16 CPU response repeats only exclamation tokens to the limit. Precision/runtime numerical failure suspected, not yet diagnosed; abort this configuration rather than treat it as model semantic performance.",
+  "completed_response_records_before_signal": 1,
+  "signal": "SIGTERM to exact C14 inference child only",
+  "pids": [
+    9880
+  ],
+  "preserved_directory": "runs/20261113-c14-model-scale/generation",
+  "signal_sent": true,
+  "previous_attempts": "sandbox process listing denied; exact executable pattern then missed macOS framework Python alias; no unrelated process signalled"
+}

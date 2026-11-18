@@ -1,0 +1,1 @@
+Exact affine/frontend and injected-loop software audit passed; trace reuse boundary limitation recorded.

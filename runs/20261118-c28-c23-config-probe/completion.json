@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "cycle": "C28",
+  "question": "Une génération initiale complète et parser-valide peut-elle être obtenue sur un cas n=7 de développement sous la configuration exacte du driver C23 ?",
+  "result_scope": "Un appel local sur un seul cas non-C23; le critère de passage n'est pas satisfait. Aucun résultat de fidélité mathématique ou de population.",
+  "claim_id": "C28-C23-CONFIG-VIABILITY",
+  "evidence": [
+    "protocol.md",
+    "c23-gate-amendment.md",
+    "freeze-v1.json",
+    "contract-initial-v1.json",
+    "initial-v1/manifest.json",
+    "initial-v1/driver/generation.json",
+    "initial-v1/driver/http/000.request.json",
+    "initial-v1/driver/server.stderr.txt",
+    "verification-final.json",
+    "verification.md",
+    "hardware-review.md",
+    "summary.md",
+    "paper/template-c19.md",
+    "paper/article.md",
+    "paper/main.tex",
+    "scripts/compile_c28_paper.py",
+    "research/c28-pdf-build.json"
+  ],
+  "hypothesis_status": "Gate C28 bloqué : la requête a expiré sans réponse complète; le nombre de tokens éventuellement produits mais non transmis est inconnu.",
+  "next_action": "Ne pas relancer C28 et ne pas lancer C23. Toute nouvelle tentative demande une décision prospective et un protocole distinct; conserver C19/H19 comme résultat principal et l'article comme document de travail.",
+  "created_at_utc": "2026-11-18"
+}

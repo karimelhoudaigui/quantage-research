@@ -1,0 +1,50 @@
+<|im_start|>system
+You edit a previous LLM-authored binary integer linear program for the original user request.
+The previous assistant response is a COMPLETE model produced earlier under different instructions.
+Read every original clause and numerical datum before making a literal edit.
+
+Return JSON only, in this order: diagnosis, edits.
+diagnosis is at most 768 printable ASCII characters. Briefly identify the actual discrepancy and the original clause that justifies an edit. Its text is not executed and cannot change the model.
+edits is a list of at most 32 explicit operations, in execution order. Use only these exact shapes:
+{"op":"add_constraint","row":"linear comparison"}
+{"op":"replace_constraint","index":0,"row":"linear comparison"}
+{"op":"delete_constraint","index":0}
+{"op":"set_objective","values":[integer coefficients]}
+{"op":"set_variables","values":[integer indices]}
+{"op":"replace_model","model":{"formulation":"binary_ilp","variables":[integer indices],"sense":"max","objective":[integer coefficients],"constraints":["linear comparisons"]}}
+
+Constraint indices are ZERO-BASED positions in the CURRENT constraints list. Each deletion shifts later indices. An addition appends one row. Replacement changes exactly one row. Earlier operations take effect before later operations. No row is automatically added, removed or corrected. Empty edits preserve the previous model exactly.
+Rows are complete mathematical strings using x0,x1,..., integers, +, -, optional integer multiplication, and one <=, >= or == comparison. Expand every sum; do not use ellipses. Generic limits are indices 0..7, absolute integers at most 10000, at most 32 rows and at most 8 entries per vector. The actual variables must be [0,1,...,n-1] expanded, and objective must contain n coefficients in input order.
+
+The only restrictions are those explicitly stated in the ORIGINAL request:
+- For each listed edge [i,j], its endpoints cannot both be selected: xi+xj<=1. Do not invent other edges.
+- A compulsory item i has xi==1. A forbidden item i has xi==0.
+- Selecting i requires j means xi-xj<=0. Do not reverse it or add its converse.
+- At least L entries means the full unweighted sum of all variables >=L; at most U means <=U.
+- A stated budget B means the full sum of input costs times their matching variables <=B. Without a stated budget, costs impose no restriction.
+- Maximize the full weights vector. The objective IS editable if you find a mismatch; preserve correct coefficients.
+
+If verifier feedback supplies a witness, substitute its bits into the CURRENT rows and objective, compare with its reported expected/proposed result, then reread the ORIGINAL clause before choosing edits. A witness need not reveal every error: inspect all clauses. Never infer a corrected clause solely from one witness. If feedback says no_counterexample, avoid gratuitous edits and still check the numerical data.
+Author all indices, coefficients, relations and bounds yourself. If the previous response cannot be edited as JSON, use replace_model and supply all five fields yourself. Return diagnosis and edits only, not a full model outside replace_model.
+
+An exact evaluation tool may list each of YOUR current rows at each witness, with lhs, relation, rhs and satisfied. These are not target constraints and contain no corrected target coefficient. Treat these arithmetic evaluations as authoritative. A row with satisfied=true is NOT violated. If the reference rejects but every candidate row is satisfied, search the original text for an omitted or weak requirement. If the reference accepts but your candidate rejects, identify unsupported or too-strong current rows. Distinguish these two directions explicitly. Keep the diagnosis concise; choose edits grounded in the original text.
+<|im_end|>
+<|im_start|>user
+{"intention": "Composer une sélection pour le lot de décision C19-5. Les 6 projets ont pour indices 0 à 5. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Retenir l'indice 5 impose aussi de retenir l'indice 4 ; la réciproque n'est pas imposée. Le coût cumulé, somme des costs retenus, est limité à 74, borne incluse. Le nombre d'éléments retenus ne dépasse pas 3. L'indice 1 doit obligatoirement être retenu. L'indice 2 est interdit dans la sélection. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.", "data": {"n": 6, "weights": [61, 30, 55, 21, 38, 28], "costs": [18, 29, 27, 37, 13, 13], "edges": [[2, 5]]}}<|im_end|>
+<|im_start|>assistant
+{
+  "formulation": "binary_ilp",
+  "variables": [0, 1, 2, 3, 4, 5],
+  "sense": "max",
+  "objective": [61, 30, 55, 21, 38, 28],
+  "constraints": [
+    "x2+x5<=1",
+    "18*x0+29*x1+27*x2+37*x3+13*x4+13*x5<=74",
+    "x0+x1+x2+x3+x4+x5<=3",
+    "x1==1",
+    "x2==0"
+  ]
+}<|im_end|>
+<|im_start|>user
+{"verifier_feedback": {"kind": "counterexamples", "witnesses": [{"kind": "feasibility", "x": [0, 1, 0, 0, 0, 1], "expected_feasible": false, "proposed_feasible": true}, {"kind": "feasibility", "x": [1, 1, 0, 0, 0, 1], "expected_feasible": false, "proposed_feasible": true}]}, "candidate_evaluation_tool": [{"x": [0, 1, 0, 0, 0, 1], "rows": [{"index": 0, "lhs": 1, "op": "<=", "rhs": 1, "satisfied": true}, {"index": 1, "lhs": 42, "op": "<=", "rhs": 74, "satisfied": true}, {"index": 2, "lhs": 2, "op": "<=", "rhs": 3, "satisfied": true}, {"index": 3, "lhs": 1, "op": "==", "rhs": 1, "satisfied": true}, {"index": 4, "lhs": 0, "op": "==", "rhs": 0, "satisfied": true}], "candidate_feasible": true, "candidate_objective": 58}, {"x": [1, 1, 0, 0, 0, 1], "rows": [{"index": 0, "lhs": 1, "op": "<=", "rhs": 1, "satisfied": true}, {"index": 1, "lhs": 60, "op": "<=", "rhs": 74, "satisfied": true}, {"index": 2, "lhs": 3, "op": "<=", "rhs": 3, "satisfied": true}, {"index": 3, "lhs": 1, "op": "==", "rhs": 1, "satisfied": true}, {"index": 4, "lhs": 0, "op": "==", "rhs": 0, "satisfied": true}], "candidate_feasible": true, "candidate_objective": 119}], "gloss": "Witness 1: the REFERENCE REJECTS this assignment; YOUR CANDIDATE ACCEPTS it. The row evaluations describe YOUR candidate only. Witness 2: the REFERENCE REJECTS this assignment; YOUR CANDIDATE ACCEPTS it. The row evaluations describe YOUR candidate only.", "instruction": "Use this verifier result to correct the previous model. Recheck ALL original clauses, not just the witness. The tool evaluates YOUR rows exactly, not the target rows. Distinguish reference and candidate verdicts. Use the original request to justify edits, then return diagnosis and explicit edits only."}<|im_end|>
+<|im_start|>assistant

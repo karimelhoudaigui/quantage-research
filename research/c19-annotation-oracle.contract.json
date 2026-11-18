@@ -1,0 +1,39 @@
+{
+  "claim_id": "C19-REVIEWER-FINITE-DOMAINS",
+  "mathematics": {
+    "assertion_tested": "Exact feasible binary masks and maximizing integer weight for20public C19 instances under independently frozen reviewer constraints, plus each stated-family removal domain.",
+    "coefficient_domain": "integers, exact arithmetic",
+    "conventions": "Binary bit i includes item i; edges are mutual exclusions; implication [a,b] is a implies b; only explicit textual cost and cardinality bounds apply.",
+    "inputs": [
+      "20 public test cases",
+      "Frozen independent reviewer constraints"
+    ],
+    "bounds": {
+      "n_min": 4,
+      "n_max": 7,
+      "case_count": 20,
+      "per_case_assignments_max": 128
+    },
+    "non_claims": [
+      "No inference or performance measurement",
+      "No population or arbitrary-text guarantee",
+      "No author gold or production solver read/imported"
+    ]
+  },
+  "execution_artifacts": [
+    "research/c19-annotation-oracle.py",
+    "runs/20261115-c19-instruct-repair/test_cases.json",
+    "runs/20261115-c19-instruct-repair/private_gold.review.json"
+  ],
+  "software": [
+    {
+      "name": "computation Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

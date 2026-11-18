@@ -1,0 +1,1178 @@
+{
+  "schema_version": 1,
+  "warning": "PRIVATE AUTHOR ANNOTATION: never pass this file or build_corpus.py to a model",
+  "cases": [
+    {
+      "id": "9e2a4c71",
+      "split": "dev",
+      "constraints": {
+        "budget": 8,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "B",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 7,
+        "optimal_weight": 14,
+        "optimal_selections": [
+          [
+            2,
+            3
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 3,
+            "example_added_selection": [
+              0,
+              2
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "31d8b6f0",
+      "split": "dev",
+      "constraints": {
+        "budget": null,
+        "min_count": 2,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "L",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 9,
+        "optimal_weight": 17,
+        "optimal_selections": [
+          [
+            0,
+            1,
+            4
+          ]
+        ],
+        "family_drop_checks": {
+          "L": {
+            "added_feasible_count": 6,
+            "example_added_selection": []
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "a7f03d2c",
+      "split": "dev",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": 2,
+        "required": [],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "U",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 19,
+        "optimal_weight": 20,
+        "optimal_selections": [
+          [
+            2,
+            4
+          ]
+        ],
+        "family_drop_checks": {
+          "U": {
+            "added_feasible_count": 8,
+            "example_added_selection": [
+              0,
+              1,
+              3
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "68c1e9b4",
+      "split": "dev",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [
+          2,
+          5
+        ],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "M",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 6,
+        "optimal_weight": 32,
+        "optimal_selections": [
+          [
+            1,
+            2,
+            3,
+            5
+          ]
+        ],
+        "family_drop_checks": {
+          "M": {
+            "added_feasible_count": 39,
+            "example_added_selection": []
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "c2b7460d",
+      "split": "dev",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [
+          1
+        ],
+        "implications": []
+      },
+      "families": "F",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 6,
+        "optimal_weight": 13,
+        "optimal_selections": [
+          [
+            2,
+            3
+          ]
+        ],
+        "family_drop_checks": {
+          "F": {
+            "added_feasible_count": 3,
+            "example_added_selection": [
+              0,
+              1
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "f40a8e53",
+      "split": "dev",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "families": "I",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 11,
+        "optimal_weight": 24,
+        "optimal_selections": [
+          [
+            0,
+            3,
+            4
+          ]
+        ],
+        "family_drop_checks": {
+          "I": {
+            "added_feasible_count": 4,
+            "example_added_selection": [
+              0
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "0b5d97a2",
+      "split": "dev",
+      "constraints": {
+        "budget": 10,
+        "min_count": 2,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "BL",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 13,
+        "optimal_weight": 21,
+        "optimal_selections": [
+          [
+            1,
+            2,
+            4
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 7,
+            "example_added_selection": [
+              0,
+              1,
+              2
+            ]
+          },
+          "L": {
+            "added_feasible_count": 7,
+            "example_added_selection": []
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "7d139ac8",
+      "split": "dev",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": 2,
+        "required": [],
+        "forbidden": [
+          2,
+          6
+        ],
+        "implications": []
+      },
+      "families": "UF",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 14,
+        "optimal_weight": 18,
+        "optimal_selections": [
+          [
+            0,
+            5
+          ]
+        ],
+        "family_drop_checks": {
+          "U": {
+            "added_feasible_count": 4,
+            "example_added_selection": [
+              0,
+              1,
+              4
+            ]
+          },
+          "F": {
+            "added_feasible_count": 11,
+            "example_added_selection": [
+              0,
+              2
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "e84b2f19",
+      "split": "test",
+      "constraints": {
+        "budget": 10,
+        "min_count": 1,
+        "max_count": 2,
+        "required": [],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "BLU",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 8,
+        "optimal_weight": 16,
+        "optimal_selections": [
+          [
+            1,
+            2
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0,
+              1
+            ]
+          },
+          "L": {
+            "added_feasible_count": 1,
+            "example_added_selection": []
+          },
+          "U": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0,
+              2,
+              3
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "4a6d90c3",
+      "split": "test",
+      "constraints": {
+        "budget": 10,
+        "min_count": 2,
+        "max_count": null,
+        "required": [
+          4
+        ],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "BLM",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 4,
+        "optimal_weight": 17,
+        "optimal_selections": [
+          [
+            1,
+            2,
+            4
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 4,
+            "example_added_selection": [
+              0,
+              2,
+              4
+            ]
+          },
+          "L": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              4
+            ]
+          },
+          "M": {
+            "added_feasible_count": 3,
+            "example_added_selection": [
+              0,
+              2
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "b91c5e72",
+      "split": "test",
+      "constraints": {
+        "budget": 11,
+        "min_count": 2,
+        "max_count": null,
+        "required": [],
+        "forbidden": [
+          1,
+          4
+        ],
+        "implications": []
+      },
+      "families": "BLF",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 3,
+        "optimal_weight": 18,
+        "optimal_selections": [
+          [
+            2,
+            3
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 2,
+            "example_added_selection": [
+              0,
+              3
+            ]
+          },
+          "L": {
+            "added_feasible_count": 5,
+            "example_added_selection": []
+          },
+          "F": {
+            "added_feasible_count": 12,
+            "example_added_selection": [
+              0,
+              1
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "23e8a6d0",
+      "split": "test",
+      "constraints": {
+        "budget": 12,
+        "min_count": 3,
+        "max_count": null,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            0,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      "families": "BLI",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 10,
+        "optimal_weight": 29,
+        "optimal_selections": [
+          [
+            0,
+            4,
+            5,
+            6
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0,
+              1,
+              5,
+              6
+            ]
+          },
+          "L": {
+            "added_feasible_count": 16,
+            "example_added_selection": []
+          },
+          "I": {
+            "added_feasible_count": 5,
+            "example_added_selection": [
+              0,
+              1,
+              6
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "d062f4b9",
+      "split": "test",
+      "constraints": {
+        "budget": 9,
+        "min_count": null,
+        "max_count": 2,
+        "required": [
+          3
+        ],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "BUM",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 3,
+        "optimal_weight": 14,
+        "optimal_selections": [
+          [
+            3,
+            4
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0,
+              3
+            ]
+          },
+          "U": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              1,
+              3,
+              4
+            ]
+          },
+          "M": {
+            "added_feasible_count": 8,
+            "example_added_selection": []
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "5fc7a138",
+      "split": "test",
+      "constraints": {
+        "budget": 7,
+        "min_count": null,
+        "max_count": 1,
+        "required": [],
+        "forbidden": [
+          0
+        ],
+        "implications": []
+      },
+      "families": "BUF",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 3,
+        "optimal_weight": 9,
+        "optimal_selections": [
+          [
+            3
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              1
+            ]
+          },
+          "U": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              2,
+              3
+            ]
+          },
+          "F": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "8b2e6c40",
+      "split": "test",
+      "constraints": {
+        "budget": 10,
+        "min_count": null,
+        "max_count": 3,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            6
+          ]
+        ]
+      },
+      "families": "BUI",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 20,
+        "optimal_weight": 25,
+        "optimal_selections": [
+          [
+            1,
+            4,
+            6
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 2,
+            "example_added_selection": [
+              0,
+              2,
+              3
+            ]
+          },
+          "U": {
+            "added_feasible_count": 2,
+            "example_added_selection": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          "I": {
+            "added_feasible_count": 17,
+            "example_added_selection": [
+              0,
+              1
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "1c94d7a6",
+      "split": "test",
+      "constraints": {
+        "budget": 12,
+        "min_count": null,
+        "max_count": null,
+        "required": [
+          0
+        ],
+        "forbidden": [
+          5
+        ],
+        "implications": []
+      },
+      "families": "BMF",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 5,
+        "optimal_weight": 20,
+        "optimal_selections": [
+          [
+            0,
+            3,
+            4
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0,
+              1,
+              4
+            ]
+          },
+          "M": {
+            "added_feasible_count": 8,
+            "example_added_selection": []
+          },
+          "F": {
+            "added_feasible_count": 3,
+            "example_added_selection": [
+              0,
+              1,
+              5
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "6e3a08f5",
+      "split": "test",
+      "constraints": {
+        "budget": 7,
+        "min_count": null,
+        "max_count": null,
+        "required": [
+          0
+        ],
+        "forbidden": [],
+        "implications": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "families": "BMI",
+      "author_check": {
+        "feasible": false,
+        "feasible_count": 0,
+        "optimal_weight": null,
+        "optimal_selections": [],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 2,
+            "example_added_selection": [
+              0,
+              2
+            ]
+          },
+          "M": {
+            "added_feasible_count": 6,
+            "example_added_selection": []
+          },
+          "I": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": "Required item 0 triggers item 2; their costs 5+4=9 exceed the budget 7."
+      }
+    },
+    {
+      "id": "f7a1d269",
+      "split": "test",
+      "constraints": {
+        "budget": 9,
+        "min_count": null,
+        "max_count": null,
+        "required": [],
+        "forbidden": [
+          2
+        ],
+        "implications": [
+          [
+            4,
+            2
+          ]
+        ]
+      },
+      "families": "BFI",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 5,
+        "optimal_weight": 13,
+        "optimal_selections": [
+          [
+            0,
+            3
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              1,
+              3
+            ]
+          },
+          "F": {
+            "added_feasible_count": 5,
+            "example_added_selection": [
+              0,
+              2
+            ]
+          },
+          "I": {
+            "added_feasible_count": 4,
+            "example_added_selection": [
+              0,
+              3,
+              4
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "3d5b9e01",
+      "split": "test",
+      "constraints": {
+        "budget": null,
+        "min_count": 2,
+        "max_count": 3,
+        "required": [
+          1
+        ],
+        "forbidden": [],
+        "implications": []
+      },
+      "families": "LUM",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 12,
+        "optimal_weight": 23,
+        "optimal_selections": [
+          [
+            1,
+            2,
+            3
+          ]
+        ],
+        "family_drop_checks": {
+          "L": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              1
+            ]
+          },
+          "U": {
+            "added_feasible_count": 3,
+            "example_added_selection": [
+              0,
+              1,
+              3,
+              5
+            ]
+          },
+          "M": {
+            "added_feasible_count": 10,
+            "example_added_selection": [
+              0,
+              3
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "a063c8f2",
+      "split": "test",
+      "constraints": {
+        "budget": null,
+        "min_count": 3,
+        "max_count": null,
+        "required": [
+          0
+        ],
+        "forbidden": [
+          3,
+          5
+        ],
+        "implications": []
+      },
+      "families": "LMF",
+      "author_check": {
+        "feasible": false,
+        "feasible_count": 0,
+        "optimal_weight": null,
+        "optimal_selections": [],
+        "family_drop_checks": {
+          "L": {
+            "added_feasible_count": 2,
+            "example_added_selection": [
+              0
+            ]
+          },
+          "M": {
+            "added_feasible_count": 5,
+            "example_added_selection": [
+              1,
+              2,
+              4
+            ]
+          },
+          "F": {
+            "added_feasible_count": 4,
+            "example_added_selection": [
+              0,
+              3,
+              5
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": "Required item 0 excludes 1, 2 and 4; forbidden items 3 and 5 leave only 0 and 6, fewer than the required 3."
+      }
+    },
+    {
+      "id": "74f20b8d",
+      "split": "test",
+      "constraints": {
+        "budget": null,
+        "min_count": 1,
+        "max_count": 2,
+        "required": [],
+        "forbidden": [],
+        "implications": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      "families": "LUI",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 6,
+        "optimal_weight": 16,
+        "optimal_selections": [
+          [
+            2,
+            3
+          ]
+        ],
+        "family_drop_checks": {
+          "L": {
+            "added_feasible_count": 1,
+            "example_added_selection": []
+          },
+          "U": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              1,
+              2,
+              3
+            ]
+          },
+          "I": {
+            "added_feasible_count": 3,
+            "example_added_selection": [
+              0
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "ce1964a7",
+      "split": "test",
+      "constraints": {
+        "budget": null,
+        "min_count": null,
+        "max_count": null,
+        "required": [
+          1
+        ],
+        "forbidden": [
+          4
+        ],
+        "implications": [
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ]
+      },
+      "families": "MFI",
+      "author_check": {
+        "feasible": false,
+        "feasible_count": 0,
+        "optimal_weight": null,
+        "optimal_selections": [],
+        "family_drop_checks": {
+          "M": {
+            "added_feasible_count": 3,
+            "example_added_selection": []
+          },
+          "F": {
+            "added_feasible_count": 2,
+            "example_added_selection": [
+              0,
+              1,
+              3,
+              4
+            ]
+          },
+          "I": {
+            "added_feasible_count": 6,
+            "example_added_selection": [
+              0,
+              1
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": "Required item 1 triggers 3, which triggers forbidden item 4; no binary selection satisfies all three clauses."
+      }
+    },
+    {
+      "id": "2f8c05e1",
+      "split": "test",
+      "constraints": {
+        "budget": 13,
+        "min_count": 2,
+        "max_count": 2,
+        "required": [
+          4
+        ],
+        "forbidden": [
+          0
+        ],
+        "implications": []
+      },
+      "families": "BLUMF",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 2,
+        "optimal_weight": 14,
+        "optimal_selections": [
+          [
+            3,
+            4
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              1,
+              4
+            ]
+          },
+          "L": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              4
+            ]
+          },
+          "U": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              3,
+              4,
+              5
+            ]
+          },
+          "M": {
+            "added_feasible_count": 5,
+            "example_added_selection": [
+              1,
+              3
+            ]
+          },
+          "F": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0,
+              4
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    },
+    {
+      "id": "905e3b6a",
+      "split": "test",
+      "constraints": {
+        "budget": 11,
+        "min_count": 3,
+        "max_count": 3,
+        "required": [
+          2
+        ],
+        "forbidden": [
+          6
+        ],
+        "implications": [
+          [
+            2,
+            5
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      },
+      "families": "BLUMFI",
+      "author_check": {
+        "feasible": true,
+        "feasible_count": 2,
+        "optimal_weight": 25,
+        "optimal_selections": [
+          [
+            2,
+            3,
+            5
+          ]
+        ],
+        "family_drop_checks": {
+          "B": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              2,
+              4,
+              5
+            ]
+          },
+          "L": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              2,
+              5
+            ]
+          },
+          "U": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              0,
+              2,
+              3,
+              5
+            ]
+          },
+          "M": {
+            "added_feasible_count": 2,
+            "example_added_selection": [
+              0,
+              3,
+              5
+            ]
+          },
+          "F": {
+            "added_feasible_count": 1,
+            "example_added_selection": [
+              2,
+              5,
+              6
+            ]
+          },
+          "I": {
+            "added_feasible_count": 4,
+            "example_added_selection": [
+              0,
+              2,
+              3
+            ]
+          }
+        },
+        "deliberate_infeasibility_reason": null
+      }
+    }
+  ]
+}

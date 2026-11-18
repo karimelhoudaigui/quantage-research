@@ -1,0 +1,38 @@
+{
+  "client_date": "2026-11-15",
+  "recorded_utc_host": "2026-11-15T16:12:20.736139+00:00",
+  "stage": "before any C16 test response",
+  "sha256": {
+    "quantage/repair_llama_inference.py": "463142b8d4070042643c1922d911976072fd1afb57ef44db4ed68c7604d6ecaf",
+    "quantage/repair_study_c16.py": "1a2a50b698a18230277679d9341a64c3874a92f4c297a1921990cc46b436fe32",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "quantage/repair_solvers.py": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+    "scripts/run_c16_phase.py": "f3736e908cca53a1411bbc96634a49f2b05d81293dfc2c689a4dce6f4de8e65a",
+    "scripts/run_c16_comparison.py": "f652f155db5720178bdb92cacb427690e9a27f6ddb4b7329c8a3b77462dd6f31",
+    "runs/20261115-c16-quantized-repair/protocol.md": "b2c721f8a1b35ca3fe201d15b3de0c7ffff9e4c4e3a2c974717c3d7398f7f692",
+    "runs/20261115-c16-quantized-repair/instructions.frozen.txt": "06967f5933c798a175b2e45f589d2a77d0ed8cf78a597fc920452f84b63898ea",
+    "runs/20261115-c16-quantized-repair/test_cases.json": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c",
+    "runs/20261115-c16-quantized-repair/dev_cases.json": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3",
+    "runs/20261115-c16-quantized-repair/gold.json": "3591f586f76f224ea806c79e843b55286e1a2bfcf234c9341f07c876f154505d",
+    "runs/20261115-c16-quantized-repair/private_gold.author.json": "3ffb3fb71f049c1d461afbeec233f43758f4ac5f08a488c327f0da47f52af665",
+    "runs/20261115-c16-quantized-repair/private_gold.review.json": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135",
+    "runs/20261115-c16-quantized-repair/adjudication.json": "7c0486be89d5b28370eb583a9705c412868ce3646cc48656b2cf49e8bc545474",
+    "runs/20261115-c16-quantized-repair/acquisition.json": "f636ce91e4b0ec0b58ab2980b40902ea6a070dbcccfd32a7b466cc62582b14a3",
+    "runs/20261115-c16-quantized-repair/amendment-preflight-instrumentation.md": "1f4b12acb5d69fbf475e3432fe553a00b1685b70f007dc655f1e19d3c94af4c1",
+    "runs/20261115-c16-quantized-repair/amendment-development-v2.md": "a146ba88c840f93e28a6ec26ef4b17cbac01f721ae7395c38f4e56aad3aed74f"
+  },
+  "development": {
+    "physical_calls": 8,
+    "prompt_versions": {
+      "v1": 2,
+      "v2": 6
+    },
+    "schema_valid": 7,
+    "faithful": 0
+  },
+  "no_more_prompt_or_code_changes": true,
+  "independent_review": "24labels and finite oracles independent; partial driver static review before quota; final code/score adaptation self-reviewed, software fixtures not model performance",
+  "hypothesis": "H16 guided-minus-self>=3 and guided regressions<=1"
+}

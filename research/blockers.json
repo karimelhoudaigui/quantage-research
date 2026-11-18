@@ -1,0 +1,60 @@
+[
+  {
+    "id": "independent_review",
+    "status": "available_for_annotations_and_sdk_then_quota_exhausted",
+    "observed": "C11 auteur/relecteur distincts et revue pré-exécution livrés; C12/C13 revues orthogonales livrées. Quota ensuite épuisé; nouvelle revue finale C11/C14/manuscrit absente.",
+    "consequence": "Scopes indépendants explicitement limités; auto-audit final des scores et du manuscrit par l’intégrateur, sans indépendance de modèle/humain prouvée.",
+    "resume_when": "Quota disponible et nouvelle revue sur code, protocoles et données brutes figés.",
+    "previous_observed": "Trois sous-agents (littérature, matériel, dépôt) interrompus par une limite d'utilisation avant rapport final; revue reprise séquentiellement par l'intégrateur."
+  },
+  {
+    "id": "llm_experimental_arms",
+    "status": "resolved_for_local_hybrid",
+    "observed": "C08/C09 :48réponses réelles; C11 :256réponses sur128nouveauxcas/deuxmodèles locaux. C14 :matrice32noncomplétée, traces partielles et diagnostics réels conservés.",
+    "consequence": "Évaluation compacte réelle, mais baselines fortes encore limitées; aucun coefficient complet généré par LLM ou performance imputée aux bras bloqués.",
+    "resume_when": "Voie locale disponible; nouvel élargissement exige protocole et données séparés.",
+    "previous_observed": "Aucun endpoint LLM expérimental autorisé/configuré dans le dépôt; pas de lecture de secrets, pas de boucle Codex imbriquée, pas de dépense externe autorisée."
+  },
+  {
+    "id": "qpu",
+    "status": "blocked_by_policy",
+    "observed": "config/policy.json désactive les soumissions QPU et autorise zéro dépense externe; aucun compte matériel interrogé.",
+    "consequence": "Aucune exécution physique ni calibration; faisabilité matérielle des instances reste non établie.",
+    "resume_when": "Autorisation explicite et vérification des droits, contrôles et instances."
+  },
+  {
+    "id": "latex_pdf",
+    "status": "blocked",
+    "observed": "pdflatex, latexmk et tectonic absents du PATH.",
+    "consequence": "Source LaTeX synchronisée et relue, compilation et PDF non vérifiés.",
+    "resume_when": "Distribution LaTeX disponible; aucune installation effectuée."
+  },
+  {
+    "id": "learned_policy",
+    "status": "deferred",
+    "observed": "Trajectoires compactes réelles et annotations de rôles distincts disponibles; volume/splits indépendants insuffisants pour une politique apprise et corpus non humain aveugle.",
+    "consequence": "Pas d'entraînement ou de prétention de supériorité d'une politique apprise.",
+    "resume_when": "Données suffisantes avec splits par famille, langage et taille, puis baselines gelées."
+  },
+  {
+    "id": "existing_trace_location",
+    "status": "resolved",
+    "observed": "Traces publiques acquises et propres générations locales observées; aucun lien privé nécessaire.",
+    "consequence": "Ne plus demander de fichier à l’utilisateur pour cette étape; sources/provenances déjà enregistrées.",
+    "resume_when": "Résolu."
+  },
+  {
+    "id": "c14_larger_cpu_runtime",
+    "status": "blocked",
+    "observed": "Qwen1.5B float16CPU :151936logitsNaN sur premierprompt; bfloat16 :logitsfinis puis49tokens en493.62s. Deuxconfigurations arrêtées aprèsune réponse chacune, sur le même cas; matrice32incomplète.",
+    "consequence": "Aucun score H14 ou gain de modèle plus grand établi. Les31réponses manquantes ne sont pas des abstentions; pas de retry supplémentaire C14.",
+    "resume_when": "Runtime et budget adaptés à8GiB, nouveau protocole comparatif complet; préserver les deux échecs."
+  },
+  {
+    "id": "scientific_originality",
+    "status": "open",
+    "observed": "17sources primaires proches couvrent déjà vérification sémantique, cohérence modulaire, risque sélectif, feedback SDK et audits de benchmarks.",
+    "consequence": "La contribution candidate reste un banc et une étude empirique bornés; aucune nouveauté mondiale ou maturité de soumission démontrée.",
+    "resume_when": "Contribution plus précisément différenciée et nouvelle expérience discriminante, revue d’antériorité et relecture disponibles."
+  }
+]

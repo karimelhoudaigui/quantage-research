@@ -1,0 +1,16 @@
+[
+  {
+    "id": "local_request",
+    "request": {
+      "intent": "Determine the ideal distribution of which output mode contains the photon. The input is one photon in mode 0 and none in mode 1; the two-mode circuit is coherent and lossless. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. First R(a), next a phase exp(i*phi) on mode 1, last R(b); parameters are radians.",
+      "data": {
+        "a": -0.21,
+        "b": 0.57,
+        "phi": 0.64,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  }
+]

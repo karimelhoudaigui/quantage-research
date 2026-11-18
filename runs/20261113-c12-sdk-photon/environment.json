@@ -1,0 +1,1161 @@
+{
+  "recorded_at_utc": "2026-11-13T19:57:35.219112+00:00",
+  "software": [
+    {
+      "name": "Python computation",
+      "version": "3.11.15"
+    },
+    {
+      "name": "perceval-quandela",
+      "version": "1.3.1"
+    },
+    {
+      "name": "exqalibur",
+      "version": "1.4.2"
+    },
+    {
+      "name": "numpy",
+      "version": "2.4.6"
+    },
+    {
+      "name": "scipy",
+      "version": "1.17.1"
+    },
+    {
+      "name": "sympy",
+      "version": "1.14.0"
+    }
+  ],
+  "installation_command": [
+    ".venv-quantum-sdk/bin/python",
+    "-m",
+    "pip",
+    "install",
+    "--disable-pip-version-check",
+    "--no-input",
+    "perceval-quandela==1.3.1"
+  ],
+  "installation_exit_code": 0,
+  "optional_sdk_source_hashes": [
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/__init__.py",
+      "sha256": "dfc5f931fa97bc14511692445632b9169b0222b8c368db0c08dc3ff2b39f1b1f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/__init__.py",
+      "sha256": "c46bfd1f19e9f572c8498cb3456d2d70ccb5957111b44e63ecedf46840ae3e80"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/abstract_algorithm.py",
+      "sha256": "a1093c73b44f6f44577ecba92949afcd45aa361c938edbb8224ac30a366488fa"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/analyzer.py",
+      "sha256": "b9b8b22a6c869f6b46c683ba629b9c0b929f9c3d798664a408f433b76b7d7589"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/processor_compatibility.py",
+      "sha256": "bbbd3f65eb1bd0956b8ecc81e2b00d2341190b29f27b923df544a65415ae1626"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/sampler.py",
+      "sha256": "370ffbc55de65fa462c3e11b6a5d2373dd7dfde2539b51dc52f67e3b3d30f2dc"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/tomography/__init__.py",
+      "sha256": "9e137d2602c571dbe83de8236ad0beb8a19a52ae4cb7ea71df6f00cedce3c8e4"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/tomography/abstract_process_tomography.py",
+      "sha256": "57fe3cd6086a181d3cbec3d9297487a52a0f49a02bf828a7213db2c33a7cfa1f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/tomography/tomography.py",
+      "sha256": "f03ef40256f2237cca3a8504ce43473ddc45b18bf850c25cafbe28bab0758b04"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/tomography/tomography_mle.py",
+      "sha256": "16a05bf199b7839637f004d251ebcdd447c79fc5884070e8cc8f9ef46217a98d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/algorithm/tomography/tomography_utils.py",
+      "sha256": "680ca6d7bc69a51681c7fb12e9fb833275e59f848b832afd7328cc2f8e57de68"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/__init__.py",
+      "sha256": "8f8ff77122b83fd38255ffeed098e77c840d62a7691ea8f8850bf1115e221a39"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_abstract_backends.py",
+      "sha256": "53f7c4db865c2e643b9ab461da0c71b2fbb9dc1a450ad917936ca0f4e25538f1"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_clifford2017.py",
+      "sha256": "8dad1b8f389f346bde1b902f21d74e1466eabb258aeb0e92f827ff745d27329b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_mps.py",
+      "sha256": "28c3fb979bd285f1ea4ff7de046df27216e07c9326e32fc85f3aa3043e10059b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_naive.py",
+      "sha256": "aaa26604b0866eeba61aaca80e83afe4df689711f4ce3bf965db1da74314ef4d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_naive_approx.py",
+      "sha256": "7736c8767f04dd09f26d513320f51ad5c1cf425aca732d7f53e79a601b080442"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_slap.py",
+      "sha256": "9af55792c2bd765adaba7f64135d084d4bd154b209e8b6b64ee032eeea632e84"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_slos.py",
+      "sha256": "7067904bd70635b136fb5bbb526ee90db64f7345aa1350c76c74a3981d40aa97"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_slos_exqalibur.py",
+      "sha256": "35855788a6a4877b1c4fed425f8da19e738bbb35edd49bb9167a116d1672ee17"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/backends/_stepper.py",
+      "sha256": "6d7933d05ea7b0d01f7ceea5ce17b458dd8c2ba92de79333422f3bb4f09660fe"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/__init__.py",
+      "sha256": "a9422d1f854ee984c3908447e8a2bf5c0614ca15f795292824373063f5be74bf"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/_decompose_perms.py",
+      "sha256": "13be192b1b5b0ad7adb757fb83ee7eb9a75e049e2ee80fc0f121effa358bf57b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/_mode_connector.py",
+      "sha256": "12b1855cae85d01ed962f44842fb07f3609fe52b48d4d0c6822c8534cd4d5d55"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/_pauli.py",
+      "sha256": "27c41df98d74b94a09353fc61c45daa661e29252db55a6d86a4afbcdce1f8a00"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/abstract_component.py",
+      "sha256": "715921486cbe42f25524609cd6f328b4883c6778817b69087104d70d9fe0fd12"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/compiled_circuit.py",
+      "sha256": "2711ca0e44cc2cf95f95ec2fc7a3cdf6eed2b72c186be74bc81702cc2cbbd942"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/component_catalog.py",
+      "sha256": "e3abe68ec6cda33fd3d1e1e46887bffbc550679acc521071357ef270129d8c0d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/__init__.py",
+      "sha256": "2ac9b8a92fef229922b75ed07cf07e83bb4115ff9f12cf471439f985215c944d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/_helpers/__init__.py",
+      "sha256": "c89542f0148721040ddd4b19b54b9da1531473455bc46e1870b0c39da1d6f049"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/_helpers/entanglement_qloq.py",
+      "sha256": "c2c3e065af7605464b0324989eac6d4b392818d36eb0d84807af293dd9e872b6"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/_helpers/rotations_qloq.py",
+      "sha256": "70d6e37f6b028cb85ef04442d2659afd60cdac7e3525e2e04eb72bcf492ffc3c"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/controlled_rotation_gates.py",
+      "sha256": "5a39778d4a9fe11ee1f40aa17ee9292f5e7f1d090f895ce3c71a858ef2bf63ec"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/gates_1qubit.py",
+      "sha256": "9cb63eff5d2d155b7bdb596ada4a220e9c1a0db1a3fc982ba70d7a57d6009efe"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/generic_2mode.py",
+      "sha256": "86eb14df64e3ad4ba5094150a797e1186fe75f8e0b639806ad58f647938c0797"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/heralded_cnot.py",
+      "sha256": "cc2882028199d920a91466932a9ab4803ecb29a58c17ea47b198afc8e46dfb49"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/heralded_cz.py",
+      "sha256": "b1c0bdee32442243ec9db27e286b96fcbb3769e91b51ddd58a5980cc86a17e8a"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/klm_cnot.py",
+      "sha256": "753360b1a22885ca35bd7da18a2a0006ad121a09a6a30591f9b7327581ec1fc5"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/mzi.py",
+      "sha256": "5462170ed97d1c7b765847ab8bc6659d93d801d2a425fe13a5948b69c7fcfaa2"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/postprocessed_ccz.py",
+      "sha256": "62d3ddb0d88b39103e04288d178b1eff61a0e48108cec095ec8c7ae974702b07"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/postprocessed_cnot.py",
+      "sha256": "d277393ce1c457ddff24e12bdf238351345706808101ba07c0de746d42bd6f51"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/postprocessed_cz.py",
+      "sha256": "6e7a8f832cff1c8bc259bf055a804f95ddf4de35a4f866d2fa634ab5da8d8a80"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/qloq_ansatz.py",
+      "sha256": "dbd039cec35420a4d33d78758a1756210bc5050040ea74d9d077dac4f5d0be6c"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/core_catalog/toffoli.py",
+      "sha256": "0146b6088ee62e4972c414fa21d632d5f7209bef2351fe76710aa9695c4f49a6"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/detector.py",
+      "sha256": "e368c0ec3eb19fd852dfd6be54a087d6d4b68efc493d0885710d21441ac8277d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/experiment.py",
+      "sha256": "a221a62d05642d574fae17cfd8177229d41cde47773e678069a26c195d628aa3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/feed_forward_configurator.py",
+      "sha256": "024395a8e52ca94752908f89a2dc43cdffbb8d05f4760548bdfaabbd21c17d14"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/generic_interferometer.py",
+      "sha256": "61ec726b7dfb612861657de4869c313e1794d31c7991d4fa4b8fbc75eca2753b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/linear_circuit.py",
+      "sha256": "c1980e30ea0887ed4601b2423b073f7a57167f79dd8c47ed6e94b58d31b2b34f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/non_unitary_components.py",
+      "sha256": "da7001057dd885f2c488ee2cb13fa788a859080097776c9b1440159bec35bfdb"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/port.py",
+      "sha256": "8696e823a695d68de68e0f39971561867ef934f612a8fc2a1a8cb28490fb49ae"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/source.py",
+      "sha256": "25faf24ffd5e5f34cafeac1f86784834edcf62db0b060a660f4a147327f51161"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/tomography_exp_configurer.py",
+      "sha256": "15b3e04ffb8c9f206c18c414d5a5e04d395d585fcb12dd57d42cdadc73d0e05f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/components/unitary_components.py",
+      "sha256": "2f4bacd1d3d5c919b32eaaf28d1881a5f49be608ffca4be2ee53886a149786df"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/error_mitigation/__init__.py",
+      "sha256": "5d37b7da1095b9abd328333d01ef62073b6bd2657bed505484c9e9a5bc6015b3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/__init__.py",
+      "sha256": "04c31be08c25e2ae140fc8e44c41474599f021ed16953dd1aa58f78ad1c6b557"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/abstract_config.py",
+      "sha256": "0c6f8add80423f10b180115ad2e02b6bb31a9b1f5abbce2af067411476d64ecb"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/kipu/__init__.py",
+      "sha256": "8e3c7f137ed2fed146ac5fe8fab698d31d013a5999aa5651ee7be3553a773014"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/kipu/kipu_communication_layer.py",
+      "sha256": "b3ae69002d8e5c06e63296cee8b99711a4a2b2b13a27c967b2ad7949361a38a3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/kipu/kipu_config.py",
+      "sha256": "9364c25746513001fe9a09b946e70885b5596dbb09ef3ba6aa162113ec1ab07d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/kipu/kipu_rpc_handler.py",
+      "sha256": "54bd929e2faca9720ddfd2728980b3f53342aa518a2f7c29d77e4cc02fd193ff"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/kipu/kipu_session.py",
+      "sha256": "6a9182761055b098a6eec6b989c7c854112718b72084133803a59280b1347b8f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/quandela/__init__.py",
+      "sha256": "56f0503dd1f45f12ffc885eb9bfd8a7c9b14aef8674576cec65b97c5dce7fb6c"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/quandela/quandela_communication_layer.py",
+      "sha256": "8bdeb1efb001fb54609e09e21e400a0d594474ef03b2986049cd4b8700cbf436"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/quandela/quandela_session.py",
+      "sha256": "a2c5774aedc0fa0491570b81a02af01909faa20a334c5ffea91b8ffe8579e358"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/quandela/remote_config.py",
+      "sha256": "7dd8a1bbf3c6d877319476c7d0b06b19f0d122405d6383a36f5badd3ceda561e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/quandela/rpc_handler.py",
+      "sha256": "e180eb583e38acc3583f982795085dd48f5a65f5395be7574f05fd70aadf6ff8"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/rpc_based_communication_layer.py",
+      "sha256": "c231b30995ee6d7213c5b9079b8e5e74bca8cd4f0bd25fa20ab0b534bcd965be"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/scaleway/__init__.py",
+      "sha256": "96a38ef358aea46fe6e2d7db485fed4d7a6ca4784bdba815243375f4be541980"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/scaleway/scaleway_communication_layer.py",
+      "sha256": "9fada94a9b9d278b3e40b471b13b0e4282e38ff4c02928864bef587cded4cf04"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/scaleway/scaleway_config.py",
+      "sha256": "a7e9c06cb84594194528cbd73cbfd22aaf3ee917746b1f513b1877c234af282e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/scaleway/scaleway_rpc_handler.py",
+      "sha256": "c8ad894f85ea2d7f358e5b6f875799e9c926ac33494d8b54819744330ba0eeeb"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/providers/scaleway/scaleway_session.py",
+      "sha256": "72621135b1e6d6536887c0424f92d799685dc808d42c867d780b0a39c9086c03"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/__init__.py",
+      "sha256": "ea78a7ab26c3d1289cd4187d3cd028adfcf358bfe576113c02d8e397128ac2ad"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/_density_matrix_utils.py",
+      "sha256": "14e56ea79abde85faf7559153cb6b600ac0f27ce55a1b1d4a3025dbc0b290de3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/_processor_utils.py",
+      "sha256": "8580f079e98cd80897687ba2ab82bfad79a8132bfc251dde22f2e8dfa6b78126"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/canvas/__init__.py",
+      "sha256": "d4e242ace28a83d72c20e0c73276e530b28331ddc7e94317c583e11dc0e23217"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/canvas/canvas.py",
+      "sha256": "dc851e1a4fbc17432b13b39f9a357e96cc00db56f1a6cb0137609d90993346bc"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/canvas/latex_canvas.py",
+      "sha256": "e07a7042876ba7024d56b07c4fbe0d32e45067649e61cd749603a1d18d5af588"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/canvas/mplot_canvas.py",
+      "sha256": "43c9f8087230dc2f62bdb04367939bede854da8cb6f978a5781a518e46341f2b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/canvas/svg_canvas.py",
+      "sha256": "1888344524dbecbfd6c8023333a7f351c23fb23ed5995649103246b284b97814"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/__init__.py",
+      "sha256": "b9b2a1d2917745025a280f6ddf15ab89b6b94848da6655fa1382b295e4baea8b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/_canvas_shapes.py",
+      "sha256": "4ef3d0d08e90856171485e92e7cf42aa8ec616f4ce5b137a893ddeaf38cec59d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/abstract_skin.py",
+      "sha256": "d3eb207fa473c7262dbc923140ecf3ffb77de5e2ccdedf75ad944e822c7b2f37"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/canvas_renderer.py",
+      "sha256": "dbe47b40ec01f23f7cbe214e8f4f9b47eab687c0117e6efe97d70ae512e491e3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/create_renderer.py",
+      "sha256": "6198741d9d5db56368d97a530e34ce3a65c445e3446501c4cf38096df6e9ef8c"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/debug_skin.py",
+      "sha256": "490ea73bfcd2e29ac7a13b1495e6e2d084a0dd4fabff89f3e7eb0ed470078e9c"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/display_config.py",
+      "sha256": "cee8cf61b24b96376e446a825245016370b4edec904795486f673c2ab3a82932"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/phys_skin.py",
+      "sha256": "ec7a0f347f7042897857d3e52d28332177fe02c105673f3d11c5ffaa616c2bb1"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/renderer_interface.py",
+      "sha256": "b0a3b03ed43df63cd89ed7e719ff94f8a43e2b4cb661ef69c190267169b45bbf"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/skin_common.py",
+      "sha256": "b9cc9133d3057b3f0f77bed261fc8c3f29db3cf74ce889c045724daa5d75e540"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/symb_skin.py",
+      "sha256": "5acc6288ea99ec28e8451431964dd227338cf96811fcacd9a2d882965b4b0824"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/circuit/text_renderer.py",
+      "sha256": "04e5dffef332e1168c574f4d2ad4029992d67aca6c4cdec2ce2411ad18222c8f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/drawsvg_wrapper.py",
+      "sha256": "0f2d002af9cfe762235a39b9b84ff9512701c8350c219c571f336508a4e759bd"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/format.py",
+      "sha256": "10f80c96efd14e73661e53e7dc826e7e309f92fc1733b014295c6041c3a85281"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/mplotlib_renderers/__init__.py",
+      "sha256": "99931b812ad51307ba1f458f1927c86c4967580acda26c2e4e9cdaeefa2ade2b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/mplotlib_renderers/_mplot_utils.py",
+      "sha256": "943bede9e53e0af45154f03c549b6617a2b32b361732fc0bcd59e0d4517bc374"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/mplotlib_renderers/density_matrix_renderer.py",
+      "sha256": "433281e5ea96d393e8fabdf9841305b4f469ba20d84998a3466ab584319d52b3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/mplotlib_renderers/graph_renderer.py",
+      "sha256": "06b4ce2d3ead59f2b904395875ec751a14eb4a048655ff7d313ae279eccac3e8"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/mplotlib_renderers/tomography_renderer.py",
+      "sha256": "3e7526b7ce223d2c93ccb05f21325ce8547aa000de90781de27f6d900723c1a4"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/rendering/pdisplay.py",
+      "sha256": "a43e2b851fccbd9eb5b019a69358d8d1f653b17dec46deea435c89a3d0809d14"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/__init__.py",
+      "sha256": "d851efad98e02dad04432079e6340a6d9475c178fd0ab567c69fa4e95eb0c66d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/abstract_computer.py",
+      "sha256": "71662bdd7c54cf66a052bb8dae36eda16ca348bbfc91c356c871713a69537703"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/async_getter.py",
+      "sha256": "e32c99e0d11c016b5a57d73feb9ec39c3504e56847a94b9036b013069ffc4551"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/check_cancel.py",
+      "sha256": "ef51becc83720ab1743bc1142601eb8a5da3e66f60b34afe6082a62606285a43"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/command.py",
+      "sha256": "8e85f0b9c521ccfc48917ecf4f5bc497c8b905ed0cb915f4fb35724c6775dbd5"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/communication_layer.py",
+      "sha256": "f8622ab5cd18fbe9724e0438001e14c224ccae5198de832d649963c382c9689e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/computation.py",
+      "sha256": "9ab53d9aa092b2b16e7e3cb93bbcbd5b0f046b9ea91de9d7b32db0b21c41315d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/computation_iterator.py",
+      "sha256": "c61d41c7960733b152408534b3aecb4a249fb94a61db5fff90038cdea10ff5e5"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/contraint_checker.py",
+      "sha256": "6efae4f72cb01ce898c706a8fe4b831d9e942dbfd9b5d37490aea2dc3d03b8b7"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/__init__.py",
+      "sha256": "28db37fa1adf84c8c9885c287f8e56d55c663fbd3e5bde2c616f55acee2bc8e6"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/_helpers/__init__.py",
+      "sha256": "99931b812ad51307ba1f458f1927c86c4967580acda26c2e4e9cdaeefa2ade2b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/_helpers/distinguishable_photon_mitigation.py",
+      "sha256": "668823f2880618f9334f73171e7881955ed66c208b391739cf8713eeffa0c1ec"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/_helpers/photon_recycling.py",
+      "sha256": "bfb33d106e11ca945f1a1a8d42306a9a1a05ab78c6704696f805220ff7616d83"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/abstract_mitigation.py",
+      "sha256": "4c9671d26e61836d1a7d15b3410fcff2e3dc9e536c47835e0599e215d0012c47"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/compilation_averaging.py",
+      "sha256": "cd449151062157c776e24c7038386cd587a429ab506ce71e6a4f64dbea9e2b25"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/detector_balancing.py",
+      "sha256": "c2100c9f29d315cea586327ac291dfe94f232f721c6e7cd5adb7beb496476fef"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/distinguishable_photon_mitigation.py",
+      "sha256": "7a924324effb1b105ac127778016df836a34e1f3fc8ca404df1cf682f5e379e8"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/imperfections.py",
+      "sha256": "69d7977706162109e9206f206b5270463de4b883b7a80bfc686dfde7b972e39e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/mitigation_factory.py",
+      "sha256": "b3a1a116e8bf1b186f4828f5e04c695ae641262155c38bf174dbef6d1b137da1"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/error_mitigation/photon_recycling.py",
+      "sha256": "7bf87f38c424aa61f7c31c74e42250699ea2c19a4280973911d542a7bbd71c9e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/execution.py",
+      "sha256": "1b507893da184c07f21aadc088776b35d39f2500a2c10095ead05e3f0667e8d1"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/execution_factory.py",
+      "sha256": "65956128bc317663760ecd6e7db5a9d377864e22db597a9a77292747998fb5f8"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/execution_group.py",
+      "sha256": "8fafd1f4140433d1eca741c7a3bc878d7b06a0aacc469768db8b9a5e6b70d314"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/execution_status.py",
+      "sha256": "2ab6b781d2e350a547abecf01d81b4eda6e8ce567433fc559c0337da2b05b95a"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/__init__.py",
+      "sha256": "0874c232444e4b60d6cb2a3f99a47c8fb527b70400f2f9e2aaa4624203cd36bf"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/abstract_processor.py",
+      "sha256": "1a7b83649db6fd858fcfab4aa97f7997e924d57939b1c4422a6c861ca475e0bc"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/job.py",
+      "sha256": "6cd0db41e4b136f33e48c00cdd6025f3c01d347a959c40ebffbbfde156010f7b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/job_group.py",
+      "sha256": "5dd4d2783fdf80b9015cb85b863ec991d13a650e8ba927f385a44b66c911a2ef"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/local_job.py",
+      "sha256": "46c6dfbd182f0621a0c6763644cba953d69636a43cdb4ea6490514ef84d66b7b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/parameter_iterator.py",
+      "sha256": "ca4ccf97cf7061cc9d5360a3a88765d08707191224b3ffd91b275822ac7d4d0d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/processor.py",
+      "sha256": "0c4688a7a8c6be9ab1c1cf3949e50e5b19b20d74f86b01bc6368fc86961cfa90"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/remote_job.py",
+      "sha256": "d9b47d433428bb632cf86103443a239e506a3a69196291c436239822a7b1ab0f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/remote_processor.py",
+      "sha256": "f791ed846819c6652df0521efdc230c2127380e1636242ea9605c3bdeced1af2"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/legacy/session.py",
+      "sha256": "652444cc8624ab9a69781b782b2d806d339bbe54da42d52f781ed889a99f52a4"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/local_computer.py",
+      "sha256": "4d8a8787e8eea53dd0bc97039310aa6efa6a7a004be8a9afc4df34d713c71d7b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/payload_generator.py",
+      "sha256": "4ec0652a2da9bcb3a01fd3543721511a1b5b614a67efa68d6a04e1abcca3af01"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/payload_updater.py",
+      "sha256": "c3f1a160bbddd7ac401879017525b303fe49ec8d0a064c263125b1e9469db3c6"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/platform_specs.py",
+      "sha256": "6c4752ab7db5b05bca75af447025bf398d9c1936d5339508f529826e6bc5bf52"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/remote_computer.py",
+      "sha256": "e1d320525b4518204a97c41c9b2e898b768e0e038c4e6c9db535c211fd481cb7"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/runtime/simulated_computer.py",
+      "sha256": "be656a042bab0deb4b8aac2d294f2f246b6c24ed2b8a7d3963e65ffa434ba131"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/__init__.py",
+      "sha256": "629cd2f749d3b434cef60a46cc0cb4c3236a3f6d5f73f87b33c447e80f2f4de3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_archive_serialization.py",
+      "sha256": "51628448e77ca509f731c92500501c5dca43c0bd4cb7c4a2c4e4f2440c981f3d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_circuit_serialization.py",
+      "sha256": "c05cb26c5af5272d0025ced8a15c338dc197e1f0eeb8c65da4004a7b88c1b017"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_component_deserialization.py",
+      "sha256": "c5acfce7865adc71fff99fea3898c2e312d800db6c0fabdd3a5d11930bc1d532"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_constants.py",
+      "sha256": "f79e0330dff0245566f3dee01c24d90127e11d733cad6a0f22bb324fc2ccd26a"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_detector_serialization.py",
+      "sha256": "2d193b97aecfdf082aceeb4119ba58d0f46ee2e1bbc65e3ddb67ca2f1afcf76f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_experiment_serialization.py",
+      "sha256": "2887b496e0af6774158f9311f14beacb1de48ff93e6ac78d1a8264373a5e56f7"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_matrix_serialization.py",
+      "sha256": "0004ff7bc5ed1c260a37043e5c1f007f3d37b30d2bbe51b34decd05e55ab1f44"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_parameter_serialization.py",
+      "sha256": "cabde55335b9dc28ad3fa3ff135589edfa490ecacb932f9a3b16da5fbf583390"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_port_deserialization.py",
+      "sha256": "73b5beacfc285f13cf587b6dc240fe4967e9ff9a16436d9a7dcc004c7c2d9ab8"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_serialized_containers.py",
+      "sha256": "4edc239d207f35a47a20678e6af9c1f2a6025d25af9ab2ee41c894bb336b68ff"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/_state_serialization.py",
+      "sha256": "fbd25ce12dd728b070d7b32b412eee0113f84bf2209a57cd29a9b38dff216571"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/deserialize.py",
+      "sha256": "60ca2fdf648d948e07d3d8bfd2be2002f5d30caf577c9a1c22f8bdcca684d823"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/__init__.py",
+      "sha256": "cb17f826b789035e414619cb5e4a8c6b0f99d1a882a8c0f8e3c1b5015e0fe2d5"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/abstract_serializer.py",
+      "sha256": "ce4c587a4ca07b144fdf6362a0c9164b577200877ab2366c58decb55e7b3609c"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/archive.py",
+      "sha256": "ea7fb7a5b0153a8d59906483ada668bae422b60c0837e956efd5afd5a36e68c7"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/class_registry.py",
+      "sha256": "b2ca26192a3c55fdd888d3cc166a77d339af89202a4b0b83d914591af5eb593e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/descriptors.py",
+      "sha256": "d99bfcca915d9237b0636c822d4446edef3acd5349e141e9a0030f9da11d6ea7"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/serialization.py",
+      "sha256": "99d67603dd7de6abdf07123be038ac661fe89af35553a220aca9423edad0231d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/serializers.py",
+      "sha256": "e0fa82b4fd40d926141303dc263bb523eb314ad74e48cd2cf8db11af64c8d40a"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/string_buffer.py",
+      "sha256": "3e0a4d9a88fa1d14b6f8d670048d10f016d9c744661bc57a82347f4f4a588a0e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/library/utils.py",
+      "sha256": "933ba5814f352ece9f2378e2d2f4815b019060ea7bc9640c212d93cd2b630a09"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/serialize.py",
+      "sha256": "a9f78e605866a0e4a15e68cb6637979dac672deb75abdd36127e51dbe6c620cf"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/serialization/serialize_binary.py",
+      "sha256": "dc512248f84666b4d42e4a2e244df47f7a890a551df81a3c409115bea2db4e05"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/__init__.py",
+      "sha256": "301a14c6c08ddf558d12e1cfa347bda2e04a4d5ec41183af50525fb0f8b4c007"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/_simulate_detectors.py",
+      "sha256": "726cac8572aadb9c24b7761c739188c51ae1efe5c1b2dc24190da52ac4863244"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/_simulator_utils.py",
+      "sha256": "e986c05dfe2918c6d865640daaa44868b6f51705ed7c6bed5c69e87205bad882"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/delay_simulator.py",
+      "sha256": "700cab0b38472eb79b6ec8223d08245aa7646e0f1b1cfadb6d6594ef8d360e7d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/feed_forward_simulator.py",
+      "sha256": "198bfa636137e44d7ac2d941e9b79556bf1430decc7a6aaaeaaae8912e2f3680"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/loss_simulator.py",
+      "sha256": "50d0fd5868783520ef4238a5e1430c65424580f1059997c3adee42ecf2989a9e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/noisy_sampling_simulator.py",
+      "sha256": "af4dbe95c7f71c1537fc4190348a5598127c18656f0cc4082d026c09eab2c32c"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/polarization_simulator.py",
+      "sha256": "0ddc08a389a31da5b453aa130e40ea8fbe554689a442f574b939e4f6553af0f1"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/simulator.py",
+      "sha256": "7ae32062b11099887a775c65c94f46de45db6eea2e361fda5f61a3d6b479c120"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/simulator_factory.py",
+      "sha256": "a4ccae2b240081d0289a4616a92ea0ef1df7853710a7e706989394407b4dad54"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/simulator_interface.py",
+      "sha256": "3313d97d584acec1243b862ea14ef3766930f113ac7a1b27bf91fb5956e7098e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/simulators/stepper.py",
+      "sha256": "204e4657f9c0893cc372be05a48ace90ec6284bf1030267fa445d2b701e71103"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/__init__.py",
+      "sha256": "e450aeca15789cbaddfd81eed4b30f0e6c6c8165169541febc5ad45605e5daab"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/_enums.py",
+      "sha256": "e6415444a7ea557d31ffa4a269e19700452daac0ee84340cca3cbfd9b7b36383"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/_random.py",
+      "sha256": "d56c9fc42986ee3e16f3d1110962044b3a91dcb7023315ca7db8a5aa21a2cea4"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/_validated_params.py",
+      "sha256": "bd617eee5adcf60ab0008c4547ec167a1924a1c7353e287404f78cd2b3977bad"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/algorithms/__init__.py",
+      "sha256": "71d9ede4435cce6d9d6e65d22bc7e19d92aa81c1dd152881ef282ab61cd28575"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/algorithms/circuit_optimizer.py",
+      "sha256": "11b348b95cfb485eaafafcd8793f1f4de3b838a16b028b690adc22d6629bf0da"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/algorithms/decomposition.py",
+      "sha256": "a16ca2e73e8b0a93c3d0a2819dac74eb0b6f53e85c59316cbce198127020d036"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/algorithms/match.py",
+      "sha256": "183cbf79c414f89e92de274c2eb636ea63be1f4c862a25b2a9a923be475efdad"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/algorithms/norm.py",
+      "sha256": "10d84620712df3c4f1ed4bebe1ff55fd033ebf68bc611704b583deca6e90a253"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/algorithms/optimize.py",
+      "sha256": "f4d116f3868ae9d856515ec1c47ad7cd48b7bfb9486d5b3d6d2526d55a578df3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/algorithms/simplification.py",
+      "sha256": "45bcfd4c0c5e81b494924c78bf56dafaaf6b0139170ee8467fba208f85c0e10e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/algorithms/solve.py",
+      "sha256": "b219d3691fffc8c5d9090f4c378f277e3dd392591ca0ceb8fc0375485d2a916f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/bsdistribution.py",
+      "sha256": "0b633b46783f539312df22a60b82fe11b11a9a3cb69c7d253d55fed482d8ad25"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/constants.py",
+      "sha256": "680e4ecda9e029077e8d5ce961fff4760d2150b3cee6296cb72b74384c9e2664"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/context_manager.py",
+      "sha256": "7b98051441cdafeab11033ae11dcc9162927cc1a35ef2482a089c377279628cd"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/conversion.py",
+      "sha256": "e99c2de68a6589308b5513cbb0bf5d52134c1d4d3529adcab5087bed2cbf7339"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/density_matrix.py",
+      "sha256": "497494228bf59c2c7432c050daff3c6cdac886f6a4111713e2d07fdcc1070de7"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/density_matrix_utils.py",
+      "sha256": "d34586953e1d113b59b5980582e7f24daedd13e3682b2c069e54f167304127b7"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/dist_metrics.py",
+      "sha256": "40c3015553d2f967f55c78831bfe43210ef8f9fe457b12f61cbc254772b2c1e3"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/format.py",
+      "sha256": "fea24e167a0694ab717a357961a4ac5f566787acd29901655ffc6b7eb436264e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/globals.py",
+      "sha256": "adfe86fc2b59b70b6ba83505c95e43fef269de3f369e35a31ae4b4f05589834d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/inspection.py",
+      "sha256": "41691d7143d17fbd136e088b74ddc48c34cf65d2a328d68a8670fa16cd0920a5"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/logging/__init__.py",
+      "sha256": "6442b5516a40fae9107e38a157216982709576c6179b295ee44485be2cfcaa90"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/logging/config.py",
+      "sha256": "bfc5a6a4d5f4359e623eadd595e7472023e4f9c497c0a704ec0d00ae8193f700"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/logging/loggers.py",
+      "sha256": "a15b1975a183520cabb80d21b0adf0377e9ddbab79f134a469756df6ef558c9b"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/logical_state.py",
+      "sha256": "b877450f104fe405455fd9440917bb1caa5254c887e4a415efe0c5bfed60d55f"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/matrix.py",
+      "sha256": "80f08972c6d726972025154aa806286ff5bfa86b0f556b252e7c6ebcf73068ef"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/min_photons.py",
+      "sha256": "ff9da3b74adcd48d4ed50b3a6f282cd7d818533782e53aff0ce65e8faf4b20ad"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/mlstr.py",
+      "sha256": "10f44f258f96bc363dd1c1293f4ac23747e565e2086c9a408062fb5184d70f80"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/noise_model.py",
+      "sha256": "9e8b730d972108725e1a3726b378026e7bfd00ca4385d7cf157cad0e5357b1c0"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/parameter.py",
+      "sha256": "56f59608114f53738ea9ce1cfc95ee05978c65a7f9dc7ae055cafdd0dd42ac81"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py",
+      "sha256": "7364cda5ab5f03b3f7a0de3ec9fcea157957fc71845d3911620a8f4570d0536d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/polarization.py",
+      "sha256": "f7a091e921e3c66164333c73775f9700c28eebf65f52b7cec53cf9976777e575"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/postselect.py",
+      "sha256": "2f68e737e0fed64d57641fc559cbb3243385f7c677a3d3687f204acadc8c3c22"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/progress_cb.py",
+      "sha256": "4929f2a2ecaf23c54cbbe8edbaa48c1d2c613dc8581143c06d08463424fa816d"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/qmath.py",
+      "sha256": "10a150f8c2fe8a9c1672d9d99f8342022719f73e2f5aa6ca8abdbdb96a884741"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/stategenerator.py",
+      "sha256": "7c774425e20dac96b0d21796b45f8eb056c6a447b3b0412f6d769095e02d87f2"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/states.py",
+      "sha256": "3913d2c6e6529b2edc23a1bfaede67432a0ac2042f98824813497d84ed97fbf9"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/versions/__init__.py",
+      "sha256": "6f615b638743ee07c7298fc3de22a511fc2cc68c20e8448f3673b78883ace09e"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/versions/metadata.py",
+      "sha256": "4971bda954349e5e9ea370fc71af756533e92d3d1d0aeaedf2c53f4a7233a6ae"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/versions/version_utils.py",
+      "sha256": "8b478473fa14f00151cdb455e6f573d547fd284fe3bc25d6ccbfb55c2e037a66"
+    },
+    {
+      "distribution": "perceval-quandela",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/perceval_quandela-1.3.1.dist-info/METADATA",
+      "sha256": "b5ad54ac7ab98c735cd74f7500f87239bff1c5990e1d82bfc540f69c2d83d8a6"
+    },
+    {
+      "distribution": "exqalibur",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/exqalibur-1.4.2.dist-info/METADATA",
+      "sha256": "09edb827ad23596de8b3c8f224d7a07b13d2fab3978b4b7bd4a7250033099150"
+    },
+    {
+      "distribution": "exqalibur",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/exqalibur/__init__.py",
+      "sha256": "6a6ac3b31ef4ebc06ef95c2fa0aed19516e9c72bbe4e59b05aea1f2055686690"
+    },
+    {
+      "distribution": "exqalibur",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/exqalibur/exqalibur.cpython-311-darwin.so",
+      "sha256": "b4687bc81b37cb447eb0c9c4fa89523da7feed8584a31ca74798ac3bcee06749"
+    },
+    {
+      "distribution": "exqalibur",
+      "file": ".venv-quantum-sdk/lib/python3.11/site-packages/exqalibur/serialization/circuit_pb2.py",
+      "sha256": "fa2928a2925ffd3364997d960bbd3281623401f14a88ce68d74b1a3556051e8b"
+    }
+  ],
+  "account_or_credentials_used": false,
+  "external_purchase_eur": 0,
+  "installation_time_and_total_network_bytes": "not instrumented; package manager/tool logs observed",
+  "sdk_imported_at_recording": false,
+  "python_optimization": 0
+}

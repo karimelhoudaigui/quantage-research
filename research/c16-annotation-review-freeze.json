@@ -1,0 +1,27 @@
+{
+  "status": "frozen_before_author_comparison_and_before_prompts_or_responses",
+  "timestamp_utc": "2026-11-15T13:29:09.701640+00:00",
+  "reviewer_role": "c15_audit",
+  "method": "Manual extraction from the 24 public intention texts only; no author labels, generator, provenance, C16 prompts or responses opened.",
+  "counts": {
+    "dev": 8,
+    "test": 16
+  },
+  "artifacts": [
+    {
+      "path": "runs/20261115-c16-quantized-repair/dev_cases.json",
+      "sha256": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/test_cases.json",
+      "sha256": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c"
+    },
+    {
+      "path": "runs/20261115-c16-quantized-repair/private_gold.review.json",
+      "sha256": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135"
+    }
+  ],
+  "limitations": [
+    "Separate LLM role, no human blinding or distinct model independence established."
+  ]
+}

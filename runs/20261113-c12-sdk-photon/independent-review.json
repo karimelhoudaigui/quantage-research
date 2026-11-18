@@ -1,0 +1,107 @@
+{
+  "reviewer": "/root/c11_audit",
+  "recorded_at_utc": "2026-11-13T20:23:42.771523+00:00",
+  "status": "finite_assertion_independently_checked",
+  "author_independence": "distinct author, not blind or model-independent",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_sdk_photon.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.084084167,
+      "stdout": "",
+      "stderr": "test_bunching_has_bosonic_factor (test_sdk_photon.BosonicOracle) ... ok\ntest_colliding_input_normalization (test_sdk_photon.BosonicOracle) ... ok\ntest_recombined_phase_changes_interference (test_sdk_photon.BosonicOracle) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.000s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c12-sdk-photon/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.095240458,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ],
+  "orthogonal_recalculation": {
+    "method": "explicit four-layer path sum and normalized 2x2 permanent, without importing quantage oracle or SDK",
+    "evaluations": 486,
+    "configurations": 81,
+    "probability_comparisons": 2916,
+    "max_abs_error_vs_sdk": 3.3306690738754696e-16,
+    "max_abs_error_vs_creation_operator_oracle": 2.220446049250313e-16,
+    "max_normalization_error": 4.440892098500626e-16,
+    "negative_sdk_probabilities": 0.0,
+    "elapsed_seconds": 0.055408541000000006
+  },
+  "sdk_probe_observations": [
+    {
+      "probe": "component_index",
+      "sdk_status": "rejected",
+      "phase": "construction",
+      "exception": "AssertionError",
+      "message": "Port range exceeds circuit size (received (2, 3) but maximum expected value is 2)"
+    },
+    {
+      "probe": "input_dimension",
+      "sdk_status": "rejected",
+      "phase": "set_input_state",
+      "exception": "AssertionError",
+      "message": "Circuit(3) and state(2) size mismatch"
+    },
+    {
+      "probe": "negative_occupation",
+      "sdk_status": "rejected",
+      "phase": "set_input_state",
+      "exception": "RuntimeError",
+      "message": "invalid photon count '-1' for mode 1"
+    },
+    {
+      "probe": "nonunitary",
+      "sdk_status": "rejected",
+      "phase": "construction",
+      "exception": "AssertionError",
+      "message": "U parameter must be a unitary matrix"
+    },
+    {
+      "probe": "three_photons",
+      "sdk_status": "accepted",
+      "phase": "prob_distribution",
+      "probability_sum": 1.0
+    },
+    {
+      "probe": "loss_component",
+      "sdk_status": "rejected",
+      "phase": "construction",
+      "exception": "AssertionError",
+      "message": "Only unitary components can compose a linear optics circuit, use Experiment for non-unitary"
+    }
+  ],
+  "probe_reexecuted": false,
+  "full_sdk_run_reexecuted": false,
+  "historical_outputs_modified": false,
+  "new_llm_generations": 0,
+  "qpu_jobs": 0,
+  "hardware_compatibility": "unverified",
+  "scope": "finite float64 circuit distribution agreement; no theorem of generic SDK correctness or agent generalization",
+  "artifact_hashes": {
+    "quantage/sdk_photon.py": "4edf91b7259cd28b8e8f7f7770de276bd04c7683c8e756c92344f9c1e9b7d1ce",
+    "tests/test_sdk_photon.py": "a5e1acf5ebf21275790c860a8984e40db14e912057c4a98d9d318f0940ccff39",
+    "runs/20261113-c12-sdk-photon/protocol.md": "02bdcdd5330baec41960982754f430d3c03b8f58484c21c48f7b1be95597e6ba",
+    "runs/20261113-c12-sdk-photon/results/manifest.json": "bdffb7cb0076310d87e5389f21d4bc13ac8084167cd50aee087ab4d750de066e",
+    "runs/20261113-c12-sdk-photon/results/raw.jsonl": "3727f1286b597cc17d677f302d76c4071f93d7f7ca0955db5cfb03e711666aee",
+    "runs/20261113-c12-sdk-photon/results/metrics.json": "31ce211c406dd3fd796ae8958ff103ff235ff7a8fe493ce87e69cda28ff88982"
+  }
+}

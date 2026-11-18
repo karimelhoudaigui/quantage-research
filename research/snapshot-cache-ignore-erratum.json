@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-16",
+  "before": {
+    "research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf": {
+      "ignored": true,
+      "output": ".gitignore:14:research/external/c16-public/\tresearch/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+    },
+    "runs/20261115-c16-quantized-repair/dev-preflight-v1/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf": {
+      "ignored": false,
+      "output": ""
+    },
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf": {
+      "ignored": false,
+      "output": ""
+    }
+  },
+  "after": {
+    "research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf": {
+      "ignored": true,
+      "output": ".gitignore:14:research/external/c16-public/\tresearch/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+    },
+    "runs/20261115-c16-quantized-repair/dev-preflight-v1/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf": {
+      "ignored": true,
+      "output": ".gitignore:24:*.gguf\truns/20261115-c16-quantized-repair/dev-preflight-v1/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+    },
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf": {
+      "ignored": true,
+      "output": ".gitignore:24:*.gguf\truns/20261115-c16-quantized-repair/dev-preflight-v2/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+    }
+  },
+  "gitignore_sha256": "47970d8143409744af382668fc5368a7de30bdef8c09f43f982d90e9cf864c2b",
+  "cache_data_removed": false,
+  "valid_Git_objects_removed": false,
+  "scope": "Two historical snapshot GGUF aliases were outside root-relative ignores; globalGGUFcache exclusion corrects eligibility. Causal contribution to prior temporary pack churn not isolated."
+}

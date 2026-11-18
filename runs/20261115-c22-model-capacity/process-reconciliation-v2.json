@@ -1,0 +1,5 @@
+{
+  "date": "2026-11-16",
+  "owned_repo_llama_processes": [],
+  "scope": "only commandnames/cwd checked globally; arguments read only for repository-owned llama-server, never printed"
+}

@@ -1,0 +1,185 @@
+{
+  "schema_version": 2,
+  "claim_id": "C15-FORMULATION-REPAIR",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-local-llm/bin/python",
+    "-m",
+    "quantage.repair_inference_v2",
+    "--cases",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "--instructions",
+    "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+    "--phase",
+    "initial",
+    "--output",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "torch",
+        "version": "2.8.0"
+      },
+      {
+        "name": "transformers",
+        "version": "4.45.2"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Actual development v2 algebraic-string ILP proposals; all eight v1 failures preserved; no test/reference labels read by inference",
+    "coefficient_domain": "typed integer ILP text, float32 CPU LLM",
+    "conventions": "samplingT0.2 topk50, fixed per-ID seeds,384token cap",
+    "inputs": [
+      "8 development public requests only"
+    ],
+    "bounds": {
+      "calls": 8,
+      "max_new_tokens": 384
+    },
+    "non_claims": [
+      "No test performance from development",
+      "No canonical-model assembly",
+      "No QPU"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "torch seed=sha256ID first8hex + round-offset, recorded per response",
+    "seed": 0
+  },
+  "run": {
+    "started_at": "2026-11-15T12:59:29.253242+00:00",
+    "runtime_seconds": 330.798805,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 1800.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 4
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/repair_inference_v2.py",
+    "quantage/repair_language.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+    "runs/20261114-c15-formulation-repair/protocol.md",
+    "runs/20261114-c15-formulation-repair/amendment-representation-v2.md",
+    "runs/20261113-c07-public-traces/model-acquisition.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/repair_inference_v2.py",
+      "sha256": "704b551452a767dfc841165cd4a88c31e4177275fdea62a5184c80e061418cae",
+      "sha256_after": "704b551452a767dfc841165cd4a88c31e4177275fdea62a5184c80e061418cae"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+      "sha256": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b",
+      "sha256_after": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+      "sha256": "f7b81f2382bd5ada76d0af642f59231acbe57577b0aaab9fb27970f86997c989",
+      "sha256_after": "f7b81f2382bd5ada76d0af642f59231acbe57577b0aaab9fb27970f86997c989"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/protocol.md",
+      "sha256": "0cf77324a955ae1a2ac7fc9e3c3a6673f21c363421a12d5a97b8b4e6bf9a1805",
+      "sha256_after": "0cf77324a955ae1a2ac7fc9e3c3a6673f21c363421a12d5a97b8b4e6bf9a1805"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/amendment-representation-v2.md",
+      "sha256": "cb3c86d08d72a524c3116dfdc4bec46217f0965ba5597ae48ff784606a861186",
+      "sha256_after": "cb3c86d08d72a524c3116dfdc4bec46217f0965ba5597ae48ff784606a861186"
+    },
+    {
+      "path": "runs/20261113-c07-public-traces/model-acquisition.json",
+      "sha256": "35177cc16490dff764a1e2930d433ac322e39a70cd02ebb58db08667ec98c060",
+      "sha256_after": "35177cc16490dff764a1e2930d433ac322e39a70cd02ebb58db08667ec98c060"
+    }
+  ],
+  "output_directory": "runs/20261114-c15-formulation-repair/dev-initial-v2",
+  "declared_results": [
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/raw.jsonl",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/generation.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/stdout.txt",
+      "sha256": "574501b6c922e7cf3549c77f583e696be8dfb96cfb99b1e94228f1fc0248f951",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/stderr.txt",
+      "sha256": "6025b50b0bae4f2000be425eb518a62d46f05b09cc1c029b3594a475c92f169e",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/raw.jsonl",
+      "sha256": "2699af9636455de495ed4563b72010248d57940a52c2ede2efa6d65e3f410dd1",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev-initial-v2/generation.json",
+      "sha256": "c6801fa0b59ea4c6b959c7b06e82308bbaa1b8deab1820b95a87c8bbce5186b0",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

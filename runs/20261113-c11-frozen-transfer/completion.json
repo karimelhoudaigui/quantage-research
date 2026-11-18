@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Le veto v4 figé réduit-il au moins la moitié des erreurs en conservant90% des bonnes acceptations sur de nouveaux groupes ?",
+  "next_action": "Renforcer les baselines et isoler les échecs de format/runtime dans C14; nouvelle validation sur corpus encore inédit et nouvelle méthode nécessiteront protocole et annotations séparés. Préserver le résultat négatif C11."
+}

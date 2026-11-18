@@ -1,0 +1,9 @@
+{
+  "id": "loop-software",
+  "public_cases_sha256": "d9a4fb6a4a15184694ba75fde13bc991ef018fed09e418a3d61d739fe100324b",
+  "reference_sha256": "a0894745487645c5ffc0118ec7819fbf7405c647b9083614c8f22068006b0d8f",
+  "instructions_sha256": "6493d0707ed5562ba785af592dc357cd844f3ffefbca02814a6680c73f8e757e",
+  "max_repairs": 3,
+  "time_budget_seconds": 1800.0,
+  "reference_scope": "trusted annotated contract; never an inference input"
+}

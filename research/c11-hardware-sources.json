@@ -1,0 +1,179 @@
+{
+  "checked_on": "2026-11-13",
+  "author_role": "/root/c11_hardware",
+  "scope": "Primary source review for SDK feasibility and compatibility levels; not experimental result or exhaustive hardware certification",
+  "sources": [
+    {
+      "id": "pulser-pypi",
+      "url": "https://pypi.org/project/pulser/",
+      "version": "Pulser 1.10.0",
+      "release_date": "2026-10-29",
+      "sections_consulted": "metadata; release files",
+      "extraction": "Python >=3.11; Apache-2.0; public wheel hash a76bf2c79bc2e99f5102f06ab482b3387c04293ad35017b178f8aad402583c27.",
+      "limitations": "No installation or execution performed by source check.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "perceval-pypi",
+      "url": "https://pypi.org/project/perceval-quandela/",
+      "version": "Perceval-Quandela 1.3.1",
+      "release_date": "2026-10-01",
+      "sections_consulted": "metadata; release files",
+      "extraction": "Python >=3.10,<3.15; MIT; wheel hash f69357674b1170d22daa9f8ab5cefa0d4600e851946131a4ead53451dfc23286.",
+      "limitations": "Version to pin in separate Python3.11 environment; actual runtime to record separately.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "pulser-releases",
+      "url": "https://github.com/pasqal-io/Pulser/releases",
+      "version": "Release changelogs v1.8.0 and v1.9.0",
+      "release_date": null,
+      "sections_consulted": "v1.8 changes; v1.9 deprecations",
+      "extraction": "Python3.9 support removed; QutipEmulator.run deprecated in1.9.",
+      "limitations": "GitHub page snapshot is behind PyPI1.10; not treated as current release metadata.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "pulser-quick",
+      "url": "https://docs.pasqal.com/pulser/quick_run_guide/",
+      "version": "Live quick run guide",
+      "release_date": null,
+      "sections_consulted": "installation; local emulator",
+      "extraction": "Local QutipBackendV2 requires no credentials; MockDevice is virtual.",
+      "limitations": "Unversioned docs; examples are not machine entitlement or fidelity evidence.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "pulser-hardware",
+      "url": "https://docs.pasqal.com/pulser/v1.8.0/hardware/",
+      "version": "Pulser1.8.0",
+      "release_date": null,
+      "sections_consulted": "Device; Channel; AnalogDevice",
+      "extraction": "Device and channel limits; AnalogDevice geometry2D, min spacing5um, radius38um,80atoms, global Rydberg, 4ns clock,16ns minimum, amplitude4pi rad/us, maxsequence6000ns; some layout constraints only QPU-enforced.",
+      "limitations": "Versioned documentary limits only; read installed Device spec before use. SDK success need not enforce runtime/QPU-specific conditions.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "pulser-sequence",
+      "url": "https://docs.pasqal.com/pulser/v1.9.1/sequence/",
+      "version": "Pulser1.9.1",
+      "release_date": null,
+      "sections_consulted": "Runtime Validation; Backend-specific validation",
+      "extraction": "Sequence rejects spacing below device limit; with_new_device may alter contents unless strict; backend-specific checks require mimic_qpu.",
+      "limitations": "No live QPU validation performed.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "pulser-register",
+      "url": "https://docs.pasqal.com/pulser/v1.9.1/register/",
+      "version": "Pulser1.9.1",
+      "release_date": null,
+      "sections_consulted": "register ordering; Rydberg interactions",
+      "extraction": "Register order fixes tensor order; coupling scales C6/r^6; arbitrary QUBO not implied by an input graph.",
+      "limitations": "Hamiltonian and geometry must be checked for selected device.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "pulser-conventions",
+      "url": "https://docs.pasqal.com/pulser/v1.9.1/conventions/",
+      "version": "Pulser1.9.1",
+      "release_date": null,
+      "sections_consulted": "States and Bases; measurement; driving",
+      "extraction": "Ground-rydberg uses |r>=(1,0), |g>=(0,1); measurement r->1, g->0; drives and detunings in angular-frequency conventions.",
+      "limitations": "Basis reversal can silently swap interpreted states; timings ns versus dynamics us must be translated.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "pulser-qpu",
+      "url": "https://docs.pasqal.com/pulser/v1.9.1/tutorials/qpu/",
+      "version": "Pulser1.9.1",
+      "release_date": null,
+      "sections_consulted": "preparation and validation",
+      "extraction": "QPU preparation separate from local emulation and includes backend/layout restrictions.",
+      "limitations": "No connection, account, credentials or QPU job used; page consulted only.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "pulser-backend",
+      "url": "https://docs.pasqal.com/pulser/tutorials/backends/",
+      "version": "Live docs",
+      "release_date": null,
+      "sections_consulted": "Execution on an Emulator",
+      "extraction": "Official local-emulator workflow available; QutipBackendV2 API preferred in newer releases.",
+      "limitations": "Unversioned page; exact installed1.7.2 API must be checked separately before execution.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "perceval-slos",
+      "url": "https://perceval.quandela.net/docs/v1.3/reference/backends/slos.html",
+      "version": "Perceval1.3",
+      "release_date": null,
+      "sections_consulted": "overview; set_circuit; set_input_state; prob_distribution",
+      "extraction": "SLOSBackend computes Fock distributions; input must be unannotated Fock state, no polarization; SLOS name now maps to C++ implementation and SLOS_LEGACY to Python.",
+      "limitations": "Instantiation pcvl.SLOSBackend avoids name ambiguity. No claims on hardware photon/mode thresholds from software caps.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "perceval-unitary",
+      "url": "https://perceval.quandela.net/docs/v1.3/reference/components/unitary_components.html",
+      "version": "Perceval1.3",
+      "release_date": null,
+      "sections_consulted": "Beam splitter conventions; Phase shifter; compute_unitary",
+      "extraction": "Ry(theta=2a) gives real rotationR(a); defaultRx has imaginary off-diagonal entries; PS(phi)=exp(i phi); parameters are radians.",
+      "limitations": "Readable HTML default-value table omits the common normalization factor; symbolic formula and compute_unitary are the load-bearing conventions.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "perceval-computer",
+      "url": "https://perceval.quandela.net/docs/v1.3/reference/runtime/computer.html",
+      "version": "Perceval1.3",
+      "release_date": null,
+      "sections_consulted": "Computer; SimulatedComputer",
+      "extraction": "Local simulation and remote HTTP acquisition share interface but remain different executions.",
+      "limitations": "C12 will use direct local backend only; no remote layer or account used.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    },
+    {
+      "id": "perceval-paper",
+      "url": "https://arxiv.org/html/2204.00602",
+      "version": "arXiv2204.00602v3; Quantum7:931(2023)",
+      "release_date": null,
+      "sections_consulted": "4.2.1 eq7;3.2.4",
+      "extraction": "Transition probability for indistinguishable Fock photons uses squared permanent divided by input/output factorials.",
+      "limitations": "C12 oracle will derive creation-operator expansion independently, not call SDK permanent or simulator; finite ideal calculation not quantum advantage.",
+      "access": "primary page text consulted",
+      "full_text_cached": false
+    }
+  ],
+  "failed_accesses": [
+    "Pulser/v1.10.0 versioned docs paths inaccessible by browser at check time; PyPI release metadata succeeds",
+    "Perceval v1.3 naive/backend and states paths cache miss; SLOS and components pages succeed",
+    "Historical PyPI1.6.6 and Perceval0.13.2 direct pages cache miss; not needed after discovery of local Python3.11"
+  ],
+  "local_read_only_inventory": {
+    "command": "/opt/homebrew/bin/python3.11: importlib.metadata versions, no SDK imported",
+    "python": "3.11.15",
+    "pulser": "1.7.2",
+    "pulser-core": "1.7.2",
+    "pulser-simulation": "1.7.2",
+    "qutip": "5.2.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "perceval-quandela": "not installed in that interpreter"
+  },
+  "qpu_jobs": 0,
+  "spend_eur": 0
+}

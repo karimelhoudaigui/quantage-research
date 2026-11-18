@@ -1,0 +1,10 @@
+{
+  "removed_only_closed_old_git_temporary_garbage": true,
+  "files": 94,
+  "bytes": 11871061096,
+  "refs_identical": true,
+  "count_objects_after": "count: 11265\nsize: 133.41 MiB\nin-pack: 0\npacks: 0\nsize-pack: 0 bytes\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0 bytes\n",
+  "stderr_after": "",
+  "free_bytes_after": 14295252992,
+  "source_audit": "research/disk-git-temp-audit.json"
+}

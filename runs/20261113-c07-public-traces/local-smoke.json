@@ -1,0 +1,28 @@
+{
+  "kind": "environment smoke only, not benchmark",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "transformers": "4.45.2",
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 4,
+  "load_seconds": 6.3357925,
+  "generation_seconds": 0.9360106249999998,
+  "input_tokens": 30,
+  "output_tokens": 6,
+  "raw_response": "{\"ready\": true}",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant."
+    },
+    {
+      "role": "user",
+      "content": "Reply with only the JSON object {\"ready\": true}."
+    }
+  ],
+  "do_sample": false,
+  "seed": 20261113
+}

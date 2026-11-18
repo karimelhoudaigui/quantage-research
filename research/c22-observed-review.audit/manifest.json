@@ -1,0 +1,466 @@
+{
+  "schema_version": 2,
+  "claim_id": "C22-ONE-OBSERVED-ONE-UNKNOWN",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-B",
+    "research/c22-observed-review.py",
+    "--output",
+    "research/c22-observed-review.audit/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact literal replay and16point finite check of one conserved8Bpatch; independently distinguish one unobserved attempted completion from a pre-start guard and erroneous declared runner results.",
+    "coefficient_domain": "exact integers and reported floating point probabilities/times",
+    "conventions": "Use C19 reviewer annotations/oracle; parse model with separate stdlib interpreter, no production patch/scorer imports; unknown output metrics remain null.",
+    "inputs": [
+      "One conserved C22 completion, one serialized request without response",
+      "C19 historical initial and independent reviewer reference",
+      "Original manifests, reconciliation and cache provenance records"
+    ],
+    "bounds": {
+      "known_cases": 1,
+      "unknown_cases": 1,
+      "n_known": 4,
+      "assignments": 16,
+      "completion_cap": 1024,
+      "diagnosis_cap": 768,
+      "audit_internal_seconds": 60
+    },
+    "non_claims": [
+      "No model/runtime/solver execution or missing output creation",
+      "No full2case score, missing token imputation or global memory fit claim",
+      "No isolated checkpoint-size effect or independent author-blind review"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-16T12:11:16.282566+00:00",
+    "runtime_seconds": 0.079275,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 70.0,
+    "max_output_bytes": 65536,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c22-observed-review.py",
+    "research/c16-observed-audit.py",
+    "research/c19-annotation-oracle/raw.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/private_gold.review.json",
+    "research/c19-c21-validation-before-cache-eviction.json",
+    "runs/20261115-c22-model-capacity/acquisition.json",
+    "runs/20261115-c22-model-capacity/contract-probe-guided-v1.json",
+    "runs/20261115-c22-model-capacity/contract-probe-guided-v2.json",
+    "runs/20261115-c22-model-capacity/contract-probe-remaining-v3.json",
+    "runs/20261115-c22-model-capacity/execution-reconciliation-v2.json",
+    "runs/20261115-c22-model-capacity/feedback.json",
+    "runs/20261115-c22-model-capacity/freeze-probe-v1.json",
+    "runs/20261115-c22-model-capacity/freeze-probe-v2.json",
+    "runs/20261115-c22-model-capacity/freeze-remaining-v3.json",
+    "runs/20261115-c22-model-capacity/instructions.txt",
+    "runs/20261115-c22-model-capacity/preparation-incident.md",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/driver/generation.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/driver/patch-schema.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/manifest.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v1/stdout.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.prompt.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.request.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.request.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.response.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/patch-schema.json",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/raw.jsonl",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stdout.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/stdout.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/generation.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.prompt.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.request.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.response.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.template.request.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.template.response.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/patch-schema.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/raw.jsonl",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/server.stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/server.stdout.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/manifest.json",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/stderr.txt",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/stdout.txt",
+    "runs/20261115-c22-model-capacity/probe_cases.json",
+    "runs/20261115-c22-model-capacity/process-reconciliation-v2.json",
+    "runs/20261115-c22-model-capacity/protocol.md",
+    "runs/20261115-c22-model-capacity/remaining-amendment.md",
+    "runs/20261115-c22-model-capacity/remaining_cases.json",
+    "runs/20261115-c22-model-capacity/resource-cleanup.jsonl",
+    "runs/20261115-c22-model-capacity/resource-management-remaining.json",
+    "runs/20261115-c22-model-capacity/resource-management-v2.json",
+    "runs/20261115-c22-model-capacity/resource-management.json",
+    "runs/20261115-c22-model-capacity/startup-incident-v1.json",
+    "runs/20261115-c22-model-capacity/storage-additional-v2.json",
+    "runs/20261115-c22-model-capacity/storage-additional.json",
+    "runs/20261115-c22-model-capacity/storage-preparation.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c22-observed-review.py",
+      "sha256": "ecf74ff57f0be9428154777d09b872993108950731ca8ab10082b72f9f66e189",
+      "sha256_after": "ecf74ff57f0be9428154777d09b872993108950731ca8ab10082b72f9f66e189"
+    },
+    {
+      "path": "research/c16-observed-audit.py",
+      "sha256": "3d8939f15bd201aba7b4228d30541600fcfeab0f081e71147b692c41d9a0c167",
+      "sha256_after": "3d8939f15bd201aba7b4228d30541600fcfeab0f081e71147b692c41d9a0c167"
+    },
+    {
+      "path": "research/c19-annotation-oracle/raw.json",
+      "sha256": "d67cf63fb01e427ffbca89530b025312127e8bbfb89c45fc5b599ec9cef2de6b",
+      "sha256_after": "d67cf63fb01e427ffbca89530b025312127e8bbfb89c45fc5b599ec9cef2de6b"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+      "sha256": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+      "sha256_after": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/private_gold.review.json",
+      "sha256": "1775911ed0d9f7403b85a74768f6694b8e39ff00ee5db33df21d8eced737d192",
+      "sha256_after": "1775911ed0d9f7403b85a74768f6694b8e39ff00ee5db33df21d8eced737d192"
+    },
+    {
+      "path": "research/c19-c21-validation-before-cache-eviction.json",
+      "sha256": "5b2e6481473f1839e6578aee04f98b4157d1eb5e3e768751d88a37cee25eddc9",
+      "sha256_after": "5b2e6481473f1839e6578aee04f98b4157d1eb5e3e768751d88a37cee25eddc9"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/acquisition.json",
+      "sha256": "d692962887055660f422ed425e2e26e5adbbb1f9df71a27f8e59824df207fdbf",
+      "sha256_after": "d692962887055660f422ed425e2e26e5adbbb1f9df71a27f8e59824df207fdbf"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/contract-probe-guided-v1.json",
+      "sha256": "488b7ed7371bcae87bff49928ef6c4d5f6e7aea2fe0028bd5b1f15b24a075880",
+      "sha256_after": "488b7ed7371bcae87bff49928ef6c4d5f6e7aea2fe0028bd5b1f15b24a075880"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/contract-probe-guided-v2.json",
+      "sha256": "b546311f8eac13657a9a110a1bb44913f02df798b7f98b8bf75045ddb39c5ab7",
+      "sha256_after": "b546311f8eac13657a9a110a1bb44913f02df798b7f98b8bf75045ddb39c5ab7"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/contract-probe-remaining-v3.json",
+      "sha256": "f6ccac624115519d3320d58c517f4f6f686d90a6e80f204d3e394dc157ec0780",
+      "sha256_after": "f6ccac624115519d3320d58c517f4f6f686d90a6e80f204d3e394dc157ec0780"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/execution-reconciliation-v2.json",
+      "sha256": "53e5cbc16ff6b3abedc8d14b7a063e059d98c1af48c3a09f3e316e2fd3b5d4ee",
+      "sha256_after": "53e5cbc16ff6b3abedc8d14b7a063e059d98c1af48c3a09f3e316e2fd3b5d4ee"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/feedback.json",
+      "sha256": "738e181f88fe027ba5b3e33a111f5f207e42635b6384eb9973f94958e2d8bfa9",
+      "sha256_after": "738e181f88fe027ba5b3e33a111f5f207e42635b6384eb9973f94958e2d8bfa9"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/freeze-probe-v1.json",
+      "sha256": "547467c9869c2b46f621823de80be97d630f41c14fb47fda83ed1236e4b046a6",
+      "sha256_after": "547467c9869c2b46f621823de80be97d630f41c14fb47fda83ed1236e4b046a6"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/freeze-probe-v2.json",
+      "sha256": "a6bcd2148bd41dfc2ef8f6e4ace40befd108f4e8a043fef2cc5176d013989d5c",
+      "sha256_after": "a6bcd2148bd41dfc2ef8f6e4ace40befd108f4e8a043fef2cc5176d013989d5c"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/freeze-remaining-v3.json",
+      "sha256": "610cf1938fd40298642c98a411e65d2e798db82f86b49f57e47282c35d227412",
+      "sha256_after": "610cf1938fd40298642c98a411e65d2e798db82f86b49f57e47282c35d227412"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/instructions.txt",
+      "sha256": "c6a0e8a7e1d634d508ffb41a886ee033bd13eb49bd9d6c7356fd80c89a682538",
+      "sha256_after": "c6a0e8a7e1d634d508ffb41a886ee033bd13eb49bd9d6c7356fd80c89a682538"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/preparation-incident.md",
+      "sha256": "361d45aa698c5e8a9b8db0a9bd5dcb7b76a994be41caf3e7c0b595ea70b11786",
+      "sha256_after": "361d45aa698c5e8a9b8db0a9bd5dcb7b76a994be41caf3e7c0b595ea70b11786"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v1/driver/generation.json",
+      "sha256": "8a12f80e45f64a700dcc89901131c7d5caaf1f26bca7e49be46c1e0b7c28d92f",
+      "sha256_after": "8a12f80e45f64a700dcc89901131c7d5caaf1f26bca7e49be46c1e0b7c28d92f"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v1/driver/patch-schema.json",
+      "sha256": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554",
+      "sha256_after": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v1/manifest.json",
+      "sha256": "c93fa2519da6bebb4ef711258a68569b142e8f3350720c688246b8ae9af5ac63",
+      "sha256_after": "c93fa2519da6bebb4ef711258a68569b142e8f3350720c688246b8ae9af5ac63"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v1/stderr.txt",
+      "sha256": "61545c742639ed179b48b299517188877da5fd9038f68c39015adf4371c804c7",
+      "sha256_after": "61545c742639ed179b48b299517188877da5fd9038f68c39015adf4371c804c7"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v1/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.prompt.txt",
+      "sha256": "fb920a686fc3a7d7007e6912d6e36c3ad9f50782ebba8508cd2391321a37367a",
+      "sha256_after": "fb920a686fc3a7d7007e6912d6e36c3ad9f50782ebba8508cd2391321a37367a"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.request.json",
+      "sha256": "09795bf80374e72b50683cb4fc0efb33f0658b1ff2fcf77f689dd7233e964487",
+      "sha256_after": "09795bf80374e72b50683cb4fc0efb33f0658b1ff2fcf77f689dd7233e964487"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.request.json",
+      "sha256": "390689693201e9cab3d3e37f14e50e3a7ac1ba8ed15951c5fa13f435ce369f25",
+      "sha256_after": "390689693201e9cab3d3e37f14e50e3a7ac1ba8ed15951c5fa13f435ce369f25"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.response.json",
+      "sha256": "399ea9e5ffcebc5d77361a7ff95171381ead00826352ba7af6eb44a64405093e",
+      "sha256_after": "399ea9e5ffcebc5d77361a7ff95171381ead00826352ba7af6eb44a64405093e"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/driver/patch-schema.json",
+      "sha256": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554",
+      "sha256_after": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/driver/raw.jsonl",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stderr.txt",
+      "sha256": "57d42d0cdd88d7e9048b02396dbb8fe11e5892d0937bbba42d15cc1ad5af9388",
+      "sha256_after": "57d42d0cdd88d7e9048b02396dbb8fe11e5892d0937bbba42d15cc1ad5af9388"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-guided-v2/stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/generation.json",
+      "sha256": "f7e1742130f77e4cc3b048be1b804f6b9e8d69e526c50426a6dc29eb4ea374d7",
+      "sha256_after": "f7e1742130f77e4cc3b048be1b804f6b9e8d69e526c50426a6dc29eb4ea374d7"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.prompt.txt",
+      "sha256": "5e5156bfc4c7220576d9b5d990f867012174b402be8dab4dbbc55b39ce39b5df",
+      "sha256_after": "5e5156bfc4c7220576d9b5d990f867012174b402be8dab4dbbc55b39ce39b5df"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.request.json",
+      "sha256": "d2d39e9841b3974080f67a084a7f57a2c37d49a4bf9355c60293e6b7e2accc13",
+      "sha256_after": "d2d39e9841b3974080f67a084a7f57a2c37d49a4bf9355c60293e6b7e2accc13"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.response.json",
+      "sha256": "60963762e60c943d525fb1cee98187957a638c49f664a852b5fd1c11356c8d3c",
+      "sha256_after": "60963762e60c943d525fb1cee98187957a638c49f664a852b5fd1c11356c8d3c"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.template.request.json",
+      "sha256": "366575fe6e8e1b8be1396df5dee0d376ab4a8bd32781ca14e92f60709ad018ac",
+      "sha256_after": "366575fe6e8e1b8be1396df5dee0d376ab4a8bd32781ca14e92f60709ad018ac"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/http/000.template.response.json",
+      "sha256": "6f9b29819fc3207a482f4eedea7e7b1dd1732873df354f066182e6d98167a80d",
+      "sha256_after": "6f9b29819fc3207a482f4eedea7e7b1dd1732873df354f066182e6d98167a80d"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/patch-schema.json",
+      "sha256": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554",
+      "sha256_after": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/raw.jsonl",
+      "sha256": "0b7096d39bbc14a3d701bf4f380b60c9c952b4ca6f0b8a4e6162696117b5d9f2",
+      "sha256_after": "0b7096d39bbc14a3d701bf4f380b60c9c952b4ca6f0b8a4e6162696117b5d9f2"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/server.stderr.txt",
+      "sha256": "51e80d89a912f316f99ccd082554d5636adb4fb3b38e890fbd0e03322771d9f7",
+      "sha256_after": "51e80d89a912f316f99ccd082554d5636adb4fb3b38e890fbd0e03322771d9f7"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/server.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/manifest.json",
+      "sha256": "d585afb72081ee1287863b513d54eda7f74d7f7fb49f19c386af545222dc411f",
+      "sha256_after": "d585afb72081ee1287863b513d54eda7f74d7f7fb49f19c386af545222dc411f"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe-remaining-v3/stdout.txt",
+      "sha256": "e337944a3b2bd7fc12a890ad92f06488506d5100a22fff9a7888b123e2829efb",
+      "sha256_after": "e337944a3b2bd7fc12a890ad92f06488506d5100a22fff9a7888b123e2829efb"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/probe_cases.json",
+      "sha256": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+      "sha256_after": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/process-reconciliation-v2.json",
+      "sha256": "c04433e282f23b605a5ec2dd687423533b8d67738d3b42acb1bfd8f335c00e25",
+      "sha256_after": "c04433e282f23b605a5ec2dd687423533b8d67738d3b42acb1bfd8f335c00e25"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/protocol.md",
+      "sha256": "f3925def03f3699c0a023dde566fe953d01880abd58072d7c3d561c5559c49fc",
+      "sha256_after": "f3925def03f3699c0a023dde566fe953d01880abd58072d7c3d561c5559c49fc"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/remaining-amendment.md",
+      "sha256": "912faee76d9884dae474a17ac5e7505576d3ba96569b17ac4e2e7f74ebf276d1",
+      "sha256_after": "912faee76d9884dae474a17ac5e7505576d3ba96569b17ac4e2e7f74ebf276d1"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/remaining_cases.json",
+      "sha256": "dbebf229d495ccfd49355c83fea2a0aff234b41bc9358a7425c00f20cf1e6696",
+      "sha256_after": "dbebf229d495ccfd49355c83fea2a0aff234b41bc9358a7425c00f20cf1e6696"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/resource-cleanup.jsonl",
+      "sha256": "804fd3b28a74d1b20a4eea8421bb44c3d0ae936b3448b36469efee35174172cd",
+      "sha256_after": "804fd3b28a74d1b20a4eea8421bb44c3d0ae936b3448b36469efee35174172cd"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/resource-management-remaining.json",
+      "sha256": "dcab563f2a5d243b2e445d368f97b01522a35bce6451001628d2bc56e2807d7e",
+      "sha256_after": "dcab563f2a5d243b2e445d368f97b01522a35bce6451001628d2bc56e2807d7e"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/resource-management-v2.json",
+      "sha256": "842fcf684de4510bfa9cc24f75bb9fdb564113a5d2332969134376c4ed1cb004",
+      "sha256_after": "842fcf684de4510bfa9cc24f75bb9fdb564113a5d2332969134376c4ed1cb004"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/resource-management.json",
+      "sha256": "5b313abc71cfd6bbc0511b40133037d0a5cd07706d2fd49edcd5975e854128c6",
+      "sha256_after": "5b313abc71cfd6bbc0511b40133037d0a5cd07706d2fd49edcd5975e854128c6"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/startup-incident-v1.json",
+      "sha256": "9bb2968dce13f1c1dad2400a63dfb51a86051deaf9f38f0ae26886ec90080c3f",
+      "sha256_after": "9bb2968dce13f1c1dad2400a63dfb51a86051deaf9f38f0ae26886ec90080c3f"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/storage-additional-v2.json",
+      "sha256": "21e2387c321ec4dc075aed9f740f7a607f8f0860ab2c14bf648308ced10d1b61",
+      "sha256_after": "21e2387c321ec4dc075aed9f740f7a607f8f0860ab2c14bf648308ced10d1b61"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/storage-additional.json",
+      "sha256": "0c06e803b8bf11a8c7d9bd66c0b8ba91bb906caf114fa3f4ab60740fe0ab655d",
+      "sha256_after": "0c06e803b8bf11a8c7d9bd66c0b8ba91bb906caf114fa3f4ab60740fe0ab655d"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/storage-preparation.json",
+      "sha256": "5ce27d71e8a5b52191428dd546bf78aac2a4ed015799222448ddcdd7c15f1438",
+      "sha256_after": "5ce27d71e8a5b52191428dd546bf78aac2a4ed015799222448ddcdd7c15f1438"
+    }
+  ],
+  "output_directory": "research/c22-observed-review.audit",
+  "declared_results": [
+    "research/c22-observed-review.audit/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c22-observed-review.audit/stdout.txt",
+      "sha256": "b368c4401530d7f68f780cb26939fa781f9155fe2acefffddc0fbc39ce14ef4a",
+      "kind": "log"
+    },
+    {
+      "path": "research/c22-observed-review.audit/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c22-observed-review.audit/raw.json",
+      "sha256": "24e33b8a7a945a72a7418fced1c11f72027ff0b3416a936eeb714dac021debae",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

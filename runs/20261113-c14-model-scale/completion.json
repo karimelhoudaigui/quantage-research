@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "question": "Un modèle local plus grand améliore-t-il la fidélité brute sur32cas appariés C11 dans les ressources autorisées ?",
+  "next_action": "Reprendre une comparaison complète avec runtime et budget adaptés à8GiB. Préserver les échecs float16 et les traces bfloat16 partielles; H14 reste non résolue. Aucune nouvelle tentative dans ce cycle."
+}

@@ -1,0 +1,26 @@
+
+root ::= "{" ws "\"diagnosis\"" ws ":" ws diagnosis "," ws "\"edits\"" ws ":" ws edits "}" ws
+diagnosis ::= "\"" ([\x20-\x21\x23-\x5B\x5D-\x7E] | "\\" ["\\]){0,768} "\"" ws
+edits ::= "[" ws (edit ("," ws edit){0,31})? "]" ws
+edit ::= add | replace | delete | objective | variables | model
+add ::= "{" ws "\"op\"" ws ":" ws "\"add_constraint\"" ws "," ws "\"row\"" ws ":" ws linear "}" ws
+replace ::= "{" ws "\"op\"" ws ":" ws "\"replace_constraint\"" ws "," ws "\"index\"" ws ":" ws index "," ws "\"row\"" ws ":" ws linear "}" ws
+delete ::= "{" ws "\"op\"" ws ":" ws "\"delete_constraint\"" ws "," ws "\"index\"" ws ":" ws index "}" ws
+objective ::= "{" ws "\"op\"" ws ":" ws "\"set_objective\"" ws "," ws "\"values\"" ws ":" ws integers "}" ws
+variables ::= "{" ws "\"op\"" ws ":" ws "\"set_variables\"" ws "," ws "\"values\"" ws ":" ws indices "}" ws
+model ::= "{" ws "\"op\"" ws ":" ws "\"replace_model\"" ws "," ws "\"model\"" ws ":" ws complete "}" ws
+complete ::= "{" ws "\"formulation\"" ws ":" ws "\"binary_ilp\"" ws "," ws "\"variables\"" ws ":" ws indices "," ws "\"sense\"" ws ":" ws "\"max\"" ws "," ws "\"objective\"" ws ":" ws integers "," ws "\"constraints\"" ws ":" ws rows "}" ws
+indices ::= "[" ws ([0-7] ws ("," ws [0-7] ws){0,7})? "]" ws
+index ::= ([0-9] | [12] [0-9] | "3" [01]) ws
+integers ::= "[" ws (integer ("," ws integer){0,7})? "]" ws
+integer ::= "-"? uint ws
+sign ::= "+" | "-"
+uint ::= "10000" | [0-9] | [1-9] [0-9]{0,3}
+variable ::= "x" [0-7]
+atom ::= variable | uint ("*" variable)?
+expression ::= sign? atom (s ("+" | "-") s atom){0,31}
+relation ::= "<=" | ">=" | "=="
+linear ::= "\"" s expression s relation s sign? uint s "\"" ws
+rows ::= "[" ws (linear ("," ws linear){0,31})? "]" ws
+s ::= [ ]{0,8}
+ws ::= [ \t\n\r]{0,20}

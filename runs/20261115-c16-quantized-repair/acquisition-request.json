@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "scripts/acquire_c16_runtime.py",
+    "--output",
+    "research/external/c16-public"
+  ],
+  "source_sha256_before": "f85771de783c6f9577b18bc0668778dd08cd596973b8d1e655a7cbc88a596c75",
+  "purpose": "official public quantized model and runtime acquisition only; no model execution; resource route separate from C15"
+}

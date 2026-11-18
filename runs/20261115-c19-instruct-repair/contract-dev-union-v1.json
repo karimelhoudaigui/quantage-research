@@ -1,0 +1,43 @@
+{
+  "claim_id": "C19-DEV-UNION",
+  "mathematics": {
+    "assertion_tested": "Union exactly8previously generated development records,2arbitrary-string grammar plus6linear grammar, never impute or regenerate",
+    "coefficient_domain": "raw recorded Q4_K_M output",
+    "conventions": "mixed grammar, same oldC16dev, not uniform estimate",
+    "inputs": [
+      "scripts/merge_c19_development.py",
+      "runs/20261115-c19-instruct-repair/dev_cases.json",
+      "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/raw.jsonl",
+      "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/generation.json",
+      "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/raw.jsonl",
+      "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/generation.json"
+    ],
+    "bounds": {
+      "records": 8,
+      "new_calls": 0
+    },
+    "non_claims": [
+      "Not test",
+      "Not independent audit"
+    ]
+  },
+  "execution_artifacts": [
+    "scripts/merge_c19_development.py",
+    "runs/20261115-c19-instruct-repair/dev_cases.json",
+    "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/generation.json",
+    "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/generation.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

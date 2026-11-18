@@ -1,0 +1,98 @@
+{
+  "417127d82203": {
+    "verdict": {
+      "kind": "counterexamples",
+      "witnesses": [
+        {
+          "kind": "feasibility",
+          "x": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "expected_feasible": true,
+          "proposed_feasible": false
+        }
+      ]
+    },
+    "candidate_evaluations": [
+      {
+        "x": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "rows": [
+          {
+            "index": 0,
+            "lhs": 2,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": false
+          },
+          {
+            "index": 1,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 2,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 3,
+            "lhs": 1,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 4,
+            "lhs": 0,
+            "op": "<=",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 5,
+            "lhs": -1,
+            "op": "<=",
+            "rhs": 0,
+            "satisfied": true
+          },
+          {
+            "index": 6,
+            "lhs": 1,
+            "op": "==",
+            "rhs": 1,
+            "satisfied": true
+          },
+          {
+            "index": 7,
+            "lhs": 0,
+            "op": "==",
+            "rhs": 0,
+            "satisfied": true
+          },
+          {
+            "index": 8,
+            "lhs": 2,
+            "op": "<=",
+            "rhs": 2,
+            "satisfied": true
+          }
+        ],
+        "candidate_feasible": false,
+        "candidate_objective": 78
+      }
+    ],
+    "gloss": "Witness 1: the REFERENCE ACCEPTS this assignment; YOUR CANDIDATE REJECTS it. The row evaluations describe YOUR candidate only."
+  }
+}

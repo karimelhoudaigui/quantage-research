@@ -1,0 +1,414 @@
+[
+  {
+    "id": "9e2a4c71",
+    "split": "dev",
+    "constraints": {
+      "budget": 8,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "B"
+  },
+  {
+    "id": "31d8b6f0",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "L"
+  },
+  {
+    "id": "a7f03d2c",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "U"
+  },
+  {
+    "id": "68c1e9b4",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        2,
+        5
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "M"
+  },
+  {
+    "id": "c2b7460d",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        1
+      ],
+      "implications": []
+    },
+    "families": "F"
+  },
+  {
+    "id": "f40a8e53",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "families": "I"
+  },
+  {
+    "id": "0b5d97a2",
+    "split": "dev",
+    "constraints": {
+      "budget": 10,
+      "min_count": 2,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "BL"
+  },
+  {
+    "id": "7d139ac8",
+    "split": "dev",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [
+        2,
+        6
+      ],
+      "implications": []
+    },
+    "families": "UF"
+  },
+  {
+    "id": "e84b2f19",
+    "split": "test",
+    "constraints": {
+      "budget": 10,
+      "min_count": 1,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "BLU"
+  },
+  {
+    "id": "4a6d90c3",
+    "split": "test",
+    "constraints": {
+      "budget": 10,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        4
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "BLM"
+  },
+  {
+    "id": "b91c5e72",
+    "split": "test",
+    "constraints": {
+      "budget": 11,
+      "min_count": 2,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        1,
+        4
+      ],
+      "implications": []
+    },
+    "families": "BLF"
+  },
+  {
+    "id": "23e8a6d0",
+    "split": "test",
+    "constraints": {
+      "budget": 12,
+      "min_count": 3,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    "families": "BLI"
+  },
+  {
+    "id": "d062f4b9",
+    "split": "test",
+    "constraints": {
+      "budget": 9,
+      "min_count": null,
+      "max_count": 2,
+      "required": [
+        3
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "BUM"
+  },
+  {
+    "id": "5fc7a138",
+    "split": "test",
+    "constraints": {
+      "budget": 7,
+      "min_count": null,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    },
+    "families": "BUF"
+  },
+  {
+    "id": "8b2e6c40",
+    "split": "test",
+    "constraints": {
+      "budget": 10,
+      "min_count": null,
+      "max_count": 3,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    "families": "BUI"
+  },
+  {
+    "id": "1c94d7a6",
+    "split": "test",
+    "constraints": {
+      "budget": 12,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        5
+      ],
+      "implications": []
+    },
+    "families": "BMF"
+  },
+  {
+    "id": "6e3a08f5",
+    "split": "test",
+    "constraints": {
+      "budget": 7,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "families": "BMI"
+  },
+  {
+    "id": "f7a1d269",
+    "split": "test",
+    "constraints": {
+      "budget": 9,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [
+        2
+      ],
+      "implications": [
+        [
+          4,
+          2
+        ]
+      ]
+    },
+    "families": "BFI"
+  },
+  {
+    "id": "3d5b9e01",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 3,
+      "required": [
+        1
+      ],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": "LUM"
+  },
+  {
+    "id": "a063c8f2",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 3,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        3,
+        5
+      ],
+      "implications": []
+    },
+    "families": "LMF"
+  },
+  {
+    "id": "74f20b8d",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": 1,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "families": "LUI"
+  },
+  {
+    "id": "ce1964a7",
+    "split": "test",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        4
+      ],
+      "implications": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    "families": "MFI"
+  },
+  {
+    "id": "2f8c05e1",
+    "split": "test",
+    "constraints": {
+      "budget": 13,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        4
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    },
+    "families": "BLUMF"
+  },
+  {
+    "id": "905e3b6a",
+    "split": "test",
+    "constraints": {
+      "budget": 11,
+      "min_count": 3,
+      "max_count": 3,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        6
+      ],
+      "implications": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    },
+    "families": "BLUMFI"
+  }
+]

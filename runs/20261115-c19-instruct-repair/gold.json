@@ -1,0 +1,574 @@
+[
+  {
+    "id": "a7cee13741d7",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 85,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        2
+      ],
+      "implications": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "L",
+      "M"
+    ],
+    "rationale": "Coût au plus 85 ; au moins 2 éléments ; 0 obligatoire, 2 interdit ; 1 impose 3 seulement."
+  },
+  {
+    "id": "3c3aeb08aafb",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 56,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        1
+      ],
+      "implications": [
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "L",
+      "M"
+    ],
+    "rationale": "Au moins 2 entrées ; 2 obligatoire, 1 interdit ; 0 impose 4 ; coût au plus 56."
+  },
+  {
+    "id": "312bdf4f360f",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 88,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        1
+      ],
+      "implications": [
+        [
+          0,
+          3
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "M"
+    ],
+    "rationale": "1 interdit ; 0 impose 3 ; coût au plus 88 ; 2 obligatoire. Aucune cardinalité dans le texte."
+  },
+  {
+    "id": "433fb7624d1a",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 62,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        4
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": [
+        [
+          3,
+          1
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "M"
+    ],
+    "rationale": "3 impose 1 ; coût au plus 62 ; 4 obligatoire ; 0 interdit. Aucune borne de cardinalité."
+  },
+  {
+    "id": "29507bb778cc",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 74,
+      "min_count": null,
+      "max_count": 3,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        2
+      ],
+      "implications": [
+        [
+          5,
+          4
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "M",
+      "U"
+    ],
+    "rationale": "5 impose 4 ; coût au plus 74 ; au plus 3 éléments ; 1 obligatoire ; 2 interdit."
+  },
+  {
+    "id": "eca92fb0c776",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 58,
+      "min_count": null,
+      "max_count": 2,
+      "required": [
+        3
+      ],
+      "forbidden": [
+        4
+      ],
+      "implications": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "M",
+      "U"
+    ],
+    "rationale": "Coût au plus 58 ; au plus 2 entrées ; 3 obligatoire et 4 interdit ; 2 impose 1."
+  },
+  {
+    "id": "765e3caadee5",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": 52,
+      "min_count": null,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [
+        1
+      ],
+      "implications": [
+        [
+          6,
+          4
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "U"
+    ],
+    "rationale": "1 interdit ; 6 impose 4 ; coût au plus 52 ; au plus 2 éléments. Aucune obligation."
+  },
+  {
+    "id": "4cc6cc21f46a",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": 37,
+      "min_count": null,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [
+        0
+      ],
+      "implications": [
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    "families": [
+      "B",
+      "F",
+      "I",
+      "U"
+    ],
+    "rationale": "3 impose 0 ; coût au plus 37 ; au plus 1 entrée ; 0 interdit. Conserver l’implication explicite."
+  },
+  {
+    "id": "66f7838312e1",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": null,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "L",
+      "M"
+    ],
+    "rationale": "Au moins 2 éléments ; 2 obligatoire ; 3 interdit ; 0 impose 1. Aucun budget malgré les données costs."
+  },
+  {
+    "id": "8c55da367b52",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": 3,
+      "max_count": null,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "L",
+      "M"
+    ],
+    "rationale": "1 obligatoire ; 3 interdit ; 4 impose 5 ; au moins 3 entrées ; aucun budget."
+  },
+  {
+    "id": "409b79d93348",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          1,
+          4
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "L",
+      "M",
+      "U"
+    ],
+    "rationale": "Au moins et au plus 2 éléments ; 2 obligatoire ; 3 interdit. Les deux clauses 1 impose 4 et 4 impose 1 sont énoncées : conserver deux implications."
+  },
+  {
+    "id": "2755ab981f66",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 4,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        2
+      ],
+      "implications": [
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "L",
+      "M",
+      "U"
+    ],
+    "rationale": "Au plus 4 et au moins 2 entrées ; 1 obligatoire ; 2 interdit ; 3 impose 2, sans réciproque."
+  },
+  {
+    "id": "e6637cdda4dc",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [],
+      "forbidden": [
+        0
+      ],
+      "implications": [
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "L",
+      "U"
+    ],
+    "rationale": "Au moins et au plus 2 éléments ; 0 interdit ; 4 impose 0 ; aucune obligation ou borne de coût."
+  },
+  {
+    "id": "88a560c8b3f6",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": 1,
+      "max_count": 1,
+      "required": [],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          0,
+          2
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "L",
+      "U"
+    ],
+    "rationale": "Au plus 1 et au moins 1 entrée ; 3 interdit ; 0 impose 2 ; aucun budget."
+  },
+  {
+    "id": "6e8232652580",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 3,
+      "required": [
+        2
+      ],
+      "forbidden": [
+        5
+      ],
+      "implications": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "M",
+      "U"
+    ],
+    "rationale": "5 interdit ; 1 impose 3 ; au plus 3 éléments ; 2 obligatoire ; aucune borne inférieure ou de coût."
+  },
+  {
+    "id": "417127d82203",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": 2,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": [
+        [
+          2,
+          1
+        ]
+      ]
+    },
+    "families": [
+      "F",
+      "I",
+      "M",
+      "U"
+    ],
+    "rationale": "2 impose 1 ; au plus 2 entrées ; 0 obligatoire ; 3 interdit ; pas de budget."
+  },
+  {
+    "id": "7c800233c771",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        1
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    },
+    "families": [
+      "F",
+      "L",
+      "M",
+      "U"
+    ],
+    "rationale": "Au moins et au plus 2 éléments ; 1 obligatoire ; 0 interdit ; aucune implication ou borne de coût."
+  },
+  {
+    "id": "4dddb4cfc8db",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        3
+      ],
+      "implications": []
+    },
+    "families": [
+      "F",
+      "L",
+      "M",
+      "U"
+    ],
+    "rationale": "Au plus et au moins 2 entrées ; 0 obligatoire ; 3 interdit ; aucune implication ou borne de coût."
+  },
+  {
+    "id": "70cc302cf8a4",
+    "split": "test",
+    "language": "fr",
+    "constraints": {
+      "budget": null,
+      "min_count": 2,
+      "max_count": 2,
+      "required": [
+        4
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          0,
+          2
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    "families": [
+      "I",
+      "L",
+      "M",
+      "U"
+    ],
+    "rationale": "4 obligatoire ; 0 impose 2 et 2 impose 0 sont deux clauses explicites ; au moins et au plus 2 éléments ; aucune interdiction ou borne de coût."
+  },
+  {
+    "id": "caf531e5abc9",
+    "split": "test",
+    "language": "en",
+    "constraints": {
+      "budget": null,
+      "min_count": 4,
+      "max_count": 5,
+      "required": [
+        6
+      ],
+      "forbidden": [],
+      "implications": [
+        [
+          5,
+          0
+        ]
+      ]
+    },
+    "families": [
+      "I",
+      "L",
+      "M",
+      "U"
+    ],
+    "rationale": "5 impose 0 ; au moins 4 et au plus 5 entrées ; 6 obligatoire ; aucune interdiction ou borne de coût."
+  }
+]

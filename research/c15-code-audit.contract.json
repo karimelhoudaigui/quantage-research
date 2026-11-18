@@ -1,0 +1,54 @@
+{
+  "claim_id": "C15-CODE-FINITE-AUDIT",
+  "mathematics": {
+    "assertion_tested": "Finite certificate discrepancy counts, deterministic capped witnesses and real DFS/HiGHS outputs agree with independent reviewer semantics on every public C15 instance and explicit candidate mutations.",
+    "coefficient_domain": "exact integers for table verification; HiGHS floating MILP cross-checked against exact domains",
+    "conventions": "1 includes item i; unit-indexed ordered variables; each binary cube exhausted; implication a=>b; no author annotation read.",
+    "inputs": [
+      "24 public instances",
+      "Frozen reviewer constraints and independent domains",
+      "Production model verifier and solvers"
+    ],
+    "bounds": {
+      "cases": 24,
+      "n_min": 4,
+      "n_max": 7,
+      "assignment_count_per_case_max": 128,
+      "HiGHS_limit_seconds": 2
+    },
+    "non_claims": [
+      "No inference",
+      "No scoring of LLM traces",
+      "Audit-only canonical ILPs are not made available to inference",
+      "No theorem for arbitrary text"
+    ]
+  },
+  "execution_artifacts": [
+    "research/c15-code-audit.py",
+    "research/c15-annotation-oracle/raw.json",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/test_cases.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json",
+    "quantage/repair_model.py",
+    "quantage/repair_solvers.py"
+  ],
+  "software": [
+    {
+      "name": "computation Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    },
+    {
+      "name": "NumPy",
+      "version": "1.26.4"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

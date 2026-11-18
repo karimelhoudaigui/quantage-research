@@ -1,0 +1,34 @@
+[
+  {
+    "id": "b97cb5f56812",
+    "language": "fr",
+    "intention": "Le comité prépare le programme C16-6. Les 5 modules ont pour indices 0 à 4. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Retenir l'indice 4 impose aussi de retenir l'indice 0 ; la réciproque n'est pas imposée. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 5,
+      "weights": [
+        28,
+        61,
+        50,
+        24,
+        23
+      ],
+      "costs": [
+        27,
+        18,
+        21,
+        35,
+        21
+      ],
+      "edges": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ]
+    }
+  }
+]

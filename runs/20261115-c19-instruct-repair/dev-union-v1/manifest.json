@@ -1,0 +1,155 @@
+{
+  "schema_version": 2,
+  "claim_id": "C19-DEV-UNION",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "scripts/merge_c19_development.py",
+    "--output",
+    "runs/20261115-c19-instruct-repair/dev-union-v1"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Union exactly8previously generated development records,2arbitrary-string grammar plus6linear grammar, never impute or regenerate",
+    "coefficient_domain": "raw recorded Q4_K_M output",
+    "conventions": "mixed grammar, same oldC16dev, not uniform estimate",
+    "inputs": [
+      "scripts/merge_c19_development.py",
+      "runs/20261115-c19-instruct-repair/dev_cases.json",
+      "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/raw.jsonl",
+      "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/generation.json",
+      "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/raw.jsonl",
+      "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/generation.json"
+    ],
+    "bounds": {
+      "records": 8,
+      "new_calls": 0
+    },
+    "non_claims": [
+      "Not test",
+      "Not independent audit"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T20:43:31.283175+00:00",
+    "runtime_seconds": 0.038983,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/merge_c19_development.py",
+    "runs/20261115-c19-instruct-repair/dev_cases.json",
+    "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/generation.json",
+    "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/generation.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/merge_c19_development.py",
+      "sha256": "d6868b8200a2cabb0c9b34f5180ba94a4e08b1db2a7ed5feda79cfb9ebd5150a",
+      "sha256_after": "d6868b8200a2cabb0c9b34f5180ba94a4e08b1db2a7ed5feda79cfb9ebd5150a"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/dev_cases.json",
+      "sha256": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3",
+      "sha256_after": "7fa915cda7f7522ec069bcee6c30130a76dba601095c92a9e72585e6c232a3c3"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/raw.jsonl",
+      "sha256": "b2d98b5a44c5fc8f72c4df279024cae75cf716410f7ee087e50c22bb14fec138",
+      "sha256_after": "b2d98b5a44c5fc8f72c4df279024cae75cf716410f7ee087e50c22bb14fec138"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/capacity-probe-v1/driver/generation.json",
+      "sha256": "7f87ee3391c673a32605754fb929d72b4e2f966cc4037d387f780173c47d5eb0",
+      "sha256_after": "7f87ee3391c673a32605754fb929d72b4e2f966cc4037d387f780173c47d5eb0"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/raw.jsonl",
+      "sha256": "2c42d29f2c06ba879095262bbaf38b2a6323df0f63df5895b344dc44ae1bb5b6",
+      "sha256_after": "2c42d29f2c06ba879095262bbaf38b2a6323df0f63df5895b344dc44ae1bb5b6"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/development-remaining-v1/driver/generation.json",
+      "sha256": "afcdc8b45bd8b4d5b2de96716eab2145e504324ab11d5976594426d18f5a71be",
+      "sha256_after": "afcdc8b45bd8b4d5b2de96716eab2145e504324ab11d5976594426d18f5a71be"
+    }
+  ],
+  "output_directory": "runs/20261115-c19-instruct-repair/dev-union-v1",
+  "declared_results": [
+    "runs/20261115-c19-instruct-repair/dev-union-v1/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/dev-union-v1/driver/generation.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261115-c19-instruct-repair/dev-union-v1/stdout.txt",
+      "sha256": "5bfc3b1851d38c72f64d1b924d1af23241365df21b128df1dc93f066364265b6",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/dev-union-v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/dev-union-v1/driver/raw.jsonl",
+      "sha256": "68ce8642b8cdc23cf0df5a865ddfe5cc50ddbfede4051dfaaacffe1c8409bc43",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/dev-union-v1/driver/generation.json",
+      "sha256": "3dd7534128e62e82a5358574413806d30ec78f2926b7ed31e9d6cc48fd11e598",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

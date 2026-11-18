@@ -1,0 +1,496 @@
+{
+  "status": "completed",
+  "checked_on": "2026-11-15",
+  "python": "3.9.6",
+  "independence": "Not independent of C20 patch author/C19 corpus author; replay uses independent stdlib AST/cube helpers and reviewer labels, no production patch/scorer imports.",
+  "checks_passed": 655,
+  "response_records": 2,
+  "actual_http_pairs": 2,
+  "candidate_row_evaluations_checked": 19,
+  "solver_results_checked": 4,
+  "bounds": {
+    "wall_seconds": 60,
+    "n": [
+      6,
+      4
+    ],
+    "max_new_tokens": 1024,
+    "diagnosis_max_ascii": 768,
+    "max_context": 4096,
+    "new_model_solver_executions": 0
+  },
+  "conclusion": {
+    "valid_patches": 2,
+    "faithful_initial": 0,
+    "faithful_after": 1,
+    "usable": 1,
+    "no_isolated_causal_effect": true
+  },
+  "cases": [
+    {
+      "id": "29507bb778cc",
+      "n": 6,
+      "diagnosis": "The original constraint for edge [2,5] is correctly stated as x2+x5<=1, but the witness shows that assignments like [0,1,0,0,0,1] and [1,1,0,0,0,1] violate feasibility. However, in both cases, x2=0 and x5=1, which satisfies x2+x5<=1. The real issue is that the assignment [1,1,0,0,0,1] violates the condition that retaining index 5 requires retaining index 4 (xi-xj<=0 for i=5, j=4). This dependency is missing in the model. The original request states that 'retenir l'indice 5 impose aussi de retenir l'indice 4', which must be enforced as x5 - x4 <= 0. This constraint was omitted.",
+      "diagnosis_length": 583,
+      "operations": [
+        {
+          "op": "add_constraint",
+          "row": "x5 - x4 <= 0",
+          "literal_change": true
+        }
+      ],
+      "literal_model_unchanged": false,
+      "before": {
+        "faithful": false,
+        "stage": "finite_cube",
+        "assignments": 64,
+        "feasibility_mismatches": 2,
+        "objective_mismatches": 0,
+        "reference_feasible_count": 6,
+        "proposed_feasible_count": 8,
+        "feedback": {
+          "kind": "counterexamples",
+          "witnesses": [
+            {
+              "kind": "feasibility",
+              "x": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "expected_feasible": false,
+              "proposed_feasible": true
+            },
+            {
+              "kind": "feasibility",
+              "x": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "expected_feasible": false,
+              "proposed_feasible": true
+            }
+          ]
+        },
+        "optimizer_set_equal": true,
+        "finite_optimization_equivalent": false,
+        "candidate_best": 129,
+        "candidate_optima": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "after": {
+        "faithful": true,
+        "stage": "finite_cube",
+        "assignments": 64,
+        "feasibility_mismatches": 0,
+        "objective_mismatches": 0,
+        "reference_feasible_count": 6,
+        "proposed_feasible_count": 6,
+        "feedback": {
+          "kind": "no_counterexample",
+          "message": "No discrepancy on the finite cube. Preserve all model fields."
+        },
+        "optimizer_set_equal": true,
+        "finite_optimization_equivalent": true,
+        "candidate_best": 129,
+        "candidate_optima": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_optimum": 129,
+      "reference_feasible_count": 6,
+      "tool_evaluations_recomputed": [
+        {
+          "x": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "rows": [
+            {
+              "index": 0,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 1,
+              "lhs": 42,
+              "op": "<=",
+              "rhs": 74,
+              "satisfied": true
+            },
+            {
+              "index": 2,
+              "lhs": 2,
+              "op": "<=",
+              "rhs": 3,
+              "satisfied": true
+            },
+            {
+              "index": 3,
+              "lhs": 1,
+              "op": "==",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 4,
+              "lhs": 0,
+              "op": "==",
+              "rhs": 0,
+              "satisfied": true
+            }
+          ],
+          "candidate_feasible": true,
+          "candidate_objective": 58
+        },
+        {
+          "x": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "rows": [
+            {
+              "index": 0,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 1,
+              "lhs": 60,
+              "op": "<=",
+              "rhs": 74,
+              "satisfied": true
+            },
+            {
+              "index": 2,
+              "lhs": 3,
+              "op": "<=",
+              "rhs": 3,
+              "satisfied": true
+            },
+            {
+              "index": 3,
+              "lhs": 1,
+              "op": "==",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 4,
+              "lhs": 0,
+              "op": "==",
+              "rhs": 0,
+              "satisfied": true
+            }
+          ],
+          "candidate_feasible": true,
+          "candidate_objective": 119
+        }
+      ],
+      "gloss": "Witness 1: the REFERENCE REJECTS this assignment; YOUR CANDIDATE ACCEPTS it. The row evaluations describe YOUR candidate only. Witness 2: the REFERENCE REJECTS this assignment; YOUR CANDIDATE ACCEPTS it. The row evaluations describe YOUR candidate only.",
+      "returned_original_feasible": true,
+      "returned_original_optimal": true
+    },
+    {
+      "id": "417127d82203",
+      "n": 4,
+      "diagnosis": "The witness [1,1,0,0] violates constraint index 0 (x0+x1<=1) and index 5 (x1-x2<=0) when evaluated. Original clause requires incompatibility between edges [1,3] and [2,3], and selecting 2 requires selecting 1. However, x1=1, x2=0 violates 'x1 - x2 <= 0' (selecting 1 without selecting 2). The constraint 'x1 - x2 <= 0' must be enforced, but the witness shows it fails in the model. The original requirement 'selecting entry 2 requires also selecting entry 1' is correctly captured as x1 - x2 <= 0, but the model incorrectly allows x1=1 and x2=0, which violates this. The constraint must be fixed to ensure x1 - x2 <= 0 is satisfied when x1=1 and x2=0. The model already has this constraint but fails on evaluation; thus, the constraint must be preserved and verified.",
+      "diagnosis_length": 767,
+      "operations": [
+        {
+          "op": "replace_constraint",
+          "index": 5,
+          "before": "x1-x2<=0",
+          "after": "x1-x2<=0",
+          "literal_change": false
+        }
+      ],
+      "literal_model_unchanged": true,
+      "before": {
+        "faithful": false,
+        "stage": "finite_cube",
+        "assignments": 16,
+        "feasibility_mismatches": 1,
+        "objective_mismatches": 0,
+        "reference_feasible_count": 2,
+        "proposed_feasible_count": 1,
+        "feedback": {
+          "kind": "counterexamples",
+          "witnesses": [
+            {
+              "kind": "feasibility",
+              "x": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "expected_feasible": true,
+              "proposed_feasible": false
+            }
+          ]
+        },
+        "optimizer_set_equal": false,
+        "finite_optimization_equivalent": false,
+        "candidate_best": 33,
+        "candidate_optima": [
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "after": {
+        "faithful": false,
+        "stage": "finite_cube",
+        "assignments": 16,
+        "feasibility_mismatches": 1,
+        "objective_mismatches": 0,
+        "reference_feasible_count": 2,
+        "proposed_feasible_count": 1,
+        "feedback": {
+          "kind": "counterexamples",
+          "witnesses": [
+            {
+              "kind": "feasibility",
+              "x": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "expected_feasible": true,
+              "proposed_feasible": false
+            }
+          ]
+        },
+        "optimizer_set_equal": false,
+        "finite_optimization_equivalent": false,
+        "candidate_best": 33,
+        "candidate_optima": [
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "reference_optimum": 78,
+      "reference_feasible_count": 2,
+      "tool_evaluations_recomputed": [
+        {
+          "x": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "rows": [
+            {
+              "index": 0,
+              "lhs": 2,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": false
+            },
+            {
+              "index": 1,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 2,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 3,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 4,
+              "lhs": 0,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 5,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 0,
+              "satisfied": false
+            },
+            {
+              "index": 6,
+              "lhs": 1,
+              "op": "==",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 7,
+              "lhs": 0,
+              "op": "==",
+              "rhs": 0,
+              "satisfied": true
+            },
+            {
+              "index": 8,
+              "lhs": 2,
+              "op": "<=",
+              "rhs": 2,
+              "satisfied": true
+            }
+          ],
+          "candidate_feasible": false,
+          "candidate_objective": 78
+        }
+      ],
+      "gloss": "Witness 1: the REFERENCE ACCEPTS this assignment; YOUR CANDIDATE REJECTS it. The row evaluations describe YOUR candidate only.",
+      "returned_original_feasible": true,
+      "returned_original_optimal": false
+    }
+  ],
+  "new_generation_cost": {
+    "responses": 2,
+    "input_tokens": 3383,
+    "output_tokens": 471,
+    "wall_seconds": 33.809191833,
+    "cpu_seconds": 0.03406100000000034
+  },
+  "historical_initial_plus_revision_cost": {
+    "responses": 4,
+    "input_tokens": 4742,
+    "output_tokens": 725,
+    "wall_seconds": 48.745946999000004,
+    "cpu_seconds": 0.062270000000000714
+  },
+  "phase_metadata": {
+    "wall_seconds": 56.283345292,
+    "load_seconds": 21.168952459,
+    "client_cpu_seconds": 2.9873730000000003,
+    "server_cpu_seconds": 13.552415,
+    "cpu_seconds": 16.539788,
+    "context": 4096,
+    "max_new_tokens": 1024,
+    "backend_requested": {
+      "cpu_threads": 4,
+      "device": "MTL0",
+      "gpu_layers": 99
+    },
+    "backend_observed": {
+      "device": "Metal",
+      "evidence_lines": [
+        "0.16.012.367 I load_tensors: offloaded 37/37 layers to GPU",
+        "0.16.012.457 I load_tensors:  MTL0_Mapped model buffer size =  2375.91 MiB"
+      ],
+      "offloaded_gpu_layers": 37,
+      "positive_metal_model_buffer": true,
+      "reported_total_layers": 37,
+      "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+    }
+  },
+  "resource_management": {
+    "wall_seconds": 7.819828,
+    "cpu_self_seconds": 0.9201099999999999,
+    "cpu_children_seconds": 2.9598899999999997,
+    "scope": "old closed tmp_pack Git garbage cleanup only, before inference; refs unchanged"
+  },
+  "materialization_wall_seconds": 0.0011684579999999833,
+  "verification_wall_seconds": 0.0012023750000000194,
+  "portfolio_seconds": 0.404831792,
+  "input_sha256": {
+    "runs/20261115-c21-tool-grounded-edits/probe_cases.json": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+    "runs/20261115-c19-instruct-repair/private_gold.review.json": "1775911ed0d9f7403b85a74768f6694b8e39ff00ee5db33df21d8eced737d192",
+    "research/c19-annotation-oracle/raw.json": "d67cf63fb01e427ffbca89530b025312127e8bbfb89c45fc5b599ec9cef2de6b",
+    "runs/20261115-c21-tool-grounded-edits/feedback.json": "738e181f88fe027ba5b3e33a111f5f207e42635b6384eb9973f94958e2d8bfa9",
+    "runs/20261115-c19-instruct-repair/test-feedback-v2/minimal.json": "7162bddf83622498e08638019e45c21ef1d81d350f2731c584f80720e8e32e9a",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/raw.jsonl": "90b887b61b2a5b074139ca1ce17faf7dfc1b0853b5c1fdc52558643383aefc7d",
+    "runs/20261115-c21-tool-grounded-edits/probe-score-v1/raw.jsonl": "f5b87ffc58d03001b8b8bf30c1085ac778e4d198fc05ab1afcd61adcd7b143b8",
+    "runs/20261115-c21-tool-grounded-edits/instructions.txt": "c6a0e8a7e1d634d508ffb41a886ee033bd13eb49bd9d6c7356fd80c89a682538",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/http/000.response.json": "97f09e3b5e2caa7e25d4e8ca934473ca5cc9c5dee779e13f1cf065b333d86f04",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/http/000.request.json": "e10a6187dae499c386aaccd887251065bc6347d991624ec2099de63a80619c60",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/http/000.template.response.json": "d96c99293a795a7fbb75693b002a2bd7a6fdf326fb11a90e0b0988b3495a6d80",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/http/000.template.request.json": "390689693201e9cab3d3e37f14e50e3a7ac1ba8ed15951c5fa13f435ce369f25",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/http/001.response.json": "3f86cacf9f4af541a8037e7deabc88adac710b0db86d21df4662f15fc0b2ccf0",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/http/001.request.json": "46e2496e6749f73a1c09b416f0f46d36bc3adcd1c6ec3325a681df23b67b6836",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/http/001.template.response.json": "5a17a553880a0497d796b8034af0c3cd695055b8912bf83568c87e9bd75d0b9a",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/http/001.template.request.json": "366575fe6e8e1b8be1396df5dee0d376ab4a8bd32781ca14e92f60709ad018ac",
+    "runs/20261115-c21-tool-grounded-edits/probe-score-v1/metrics.json": "f086dcd984e987bc648f847883ebc0086f9b9863ed6858021287ee2d0c055173",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/generation.json": "8024856709f5da4796b8ece1615c7822cdb6b0472b0c4318053303e10b671b11",
+    "runs/20261115-c21-tool-grounded-edits/resource-management.json": "0a63d2e89a6dfe820d9c9fda3555e5b4577a2988ccff655d68f77eaaa2bd3a06",
+    "runs/20261115-c21-tool-grounded-edits/freeze-probe-v1.json": "c92516802795fff7d98e46ea10d75860233b9ad4c376a8fab6fb7b2ff383dbc3",
+    "scripts/run_c21_probe.py": "2479c38379f5ca0935cbc91f96d193e6d3ec293c4bc2e22aab7a576ec1fb9685",
+    "scripts/continue_c19_comparison.py": "fdfe41dc24e3c09b17a89759ecf38fe672e8fbb42aa69783aaf9160efb9085a4",
+    "quantage/repair_patch_tool_inference.py": "4f210d294e3de107cde9f52c3133ad652c7fe00df2957df864aead7c5256cee4",
+    "quantage/repair_patch_tool_language.py": "ec0b66334b3fbac6ee2720f23d68450b1cd9b21c5d57c509260f9160c40359bc",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "quantage/repair_trace_feedback.py": "8ae1576b3abd974d084e74816e02ccab36f490f72678d59577750f41660e82cc",
+    "scripts/build_c21_feedback.py": "eec22c184b2fd2306527fbacb3287cb9d735d694ad265d3097deeb9f623ac5b5",
+    "tests/test_repair_patch.py": "b5f1b5bf36f2e82902a50c90aec20ef601bfb99d9e06f27f0fd9955374a44e29",
+    "runs/20261115-c21-tool-grounded-edits/protocol.md": "0c321bf2ba98ccb2c0f8c01e3f320c2948204939dc47763bff946c3d2e59a642",
+    "runs/20261115-c21-tool-grounded-edits/preflight-review.json": "d80945b04a7532153e2cf972cb4ec8d01db6ce2f63d2bf6f1296c9f65230735f",
+    "runs/20261115-c19-instruct-repair/acquisition.json": "a528cc7bb876ba5e02084e9593c2bba0b997b053ebbdd92c12345b8cf197b0f6",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/manifest.json": "b0d03d3ea63860a80e03fc232eb6dfc7500bd0fd178caafd6f3d18e21e590606",
+    "runs/20261115-c21-tool-grounded-edits/probe-score-v1/manifest.json": "5f89cde527d8063c37e0e9f429be1a41a99c7ee9e51694931c447c2211e17329"
+  },
+  "hashes_after_equal_before": true,
+  "audit_helper_sha256": "3d8939f15bd201aba7b4228d30541600fcfeab0f081e71147b692c41d9a0c167",
+  "audit_wall_seconds": 0.026351458,
+  "provenance": "Bounded inline Python3 -B stdlib, SIGALRM60s. No new model/solver execution. Only requested review JSON and Markdown written; no extra source or run directory.",
+  "limits": [
+    "Same two posthoc C19/C20 development probes and historical initial records; not heldout.",
+    "Tool arithmetic, English gloss,1024token cap and768ASCII diagnosis cap changed together versus C20; no effect attributed to one factor.",
+    "Observed add and replace operations replayed literally; diagnostic text not a reasoning certificate.",
+    "Model/runtime not downloaded, loaded or reverified beyond frozen small metadata/source hashes; no population, novelty or QPU claim."
+  ]
+}

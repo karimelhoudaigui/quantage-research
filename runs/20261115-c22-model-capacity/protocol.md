@@ -1,0 +1,9 @@
+# C22 official 8B capacity pilot, before acquisition/inference
+
+2026-11-15. C21 4B repaired1/2 old development cases with exact own-row traces but still reverses one implication. Test official Qwen3-8B Q4_K_M, enable_thinking=false. This is another checkpoint/quantization/version, not an isolated parameter-count effect. Two new guided calls total, same2old cases, never regenerate initial4B responses. Same C21 tool feedback/instructions,1024outputtokens including768ASCII diagnosis,4096context, T.7p.8k20, SHAID+1seed,180seconds/call,480seconds runner. b12359,MTL0,4CPUthreads, one owned GPU server only. Require3GiB atstartup/1GiB between calls. Stop on failure and preserve partial/missing outcomes without imputation. 8GiBfit not presumed.
+
+Official Qwen/Qwen3-8B-GGUF commit7c41481f57cb95916b40956ab2f0b139b296d974, Qwen3-8B-Q4_K_M.gguf,5027783488bytes,LFSsha d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785. No official Q3 in that pinned inventory. Download this public file only, no auth/external purchase. Reuse pinned official native runtime acquiredC16. Verify metadata and fullbytes before execution; record observed GPUplacement, not GPU-only claim.
+
+Prepare storage by bounded cleanup of old/closed Gittemporary garbage only, refs and validobjects untouched. Ifneeded, evict only unused public C17GGUF after fullSHA/lsofclosed checks and record exactrestoreURL. No raw scientific outputs or source removed. Require filesize+3GiB before download; otherwise stop before acquisition. Download/storage/load/parent costs separate from completion timings.
+
+Descriptive comparison on2posthoc development errors only, not generalization/novelty or isolated causal effect. Ifcapacityviable, preregister newtest with3ormore implication clauses (oldercases had atmost2), newdata and separate annotations, matched budgets before any testcall. NoQPU,spending,push,publication or external message.

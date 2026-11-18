@@ -1,0 +1,18 @@
+{
+  "date": "2026-11-15",
+  "cases": 20,
+  "exact_contract_agreements": 20,
+  "differences": [],
+  "gold_basis": "independently extracted reviewer contracts, normalized container only; originals preserved",
+  "inputs_sha256": {
+    "runs/20261115-c19-instruct-repair/test_cases.json": "742301bb909289baaf1f34f328032851aa1ca8b935ede5b34e4081aa903d223b",
+    "runs/20261115-c19-instruct-repair/private_gold.author.json": "32590e6dae74fe0494e22ec794ec7da1633db2dc8a8cfd5ec33abef898c4c695",
+    "runs/20261115-c19-instruct-repair/private_gold.review.json": "1775911ed0d9f7403b85a74768f6694b8e39ff00ee5db33df21d8eced737d192",
+    "runs/20261115-c19-instruct-repair/gold.json": "aed7b458522d9f4f1855c8412a78a5c4c9c0641facec56b3274238b1386dc483",
+    "research/c19-annotation-review-freeze.json": "4f1aebffb2f01a7f6622d78757d903a552510da912b475de02b8b0c8e801fba0"
+  },
+  "independence": "distinct author/reviewer roles, review public-only before freeze; not independent human/model",
+  "independent_integer_domain_agreements": 20,
+  "independent_optima_agreements": 20,
+  "oracle_manifest": "research/c19-annotation-oracle/manifest.json"
+}

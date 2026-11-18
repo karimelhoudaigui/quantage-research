@@ -1,0 +1,88 @@
+{
+  "purpose": "Source snapshot for historical C15 prototype v2, no inference and no new scientific execution",
+  "original_manifest": "research/c15-code-audit-v2/manifest.json",
+  "reconstructed_model_expected_sha256": "d929c7b14cc8a67154c74d54c586a084950b1abb5ece0b1def1ed933d5bf498c",
+  "current_model_observed_sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+  "current_feedback_observed_sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+  "artifacts": [
+    {
+      "path": "research/c15-code-audit.py",
+      "role": "input",
+      "sha256": "d4ef992bc18e456789c46b611c8c6964e7b4a89c27ee84581514b50ee4072953",
+      "source": "exact_hash_archived_copy_from_research/c15-code-audit-source-v2.py"
+    },
+    {
+      "path": "research/c15-annotation-oracle/raw.json",
+      "role": "input",
+      "sha256": "29d1dbc5c7b77a2a0ffff087859885ec1848543cd456979e20f799b21296b636",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+      "role": "input",
+      "sha256": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test_cases.json",
+      "role": "input",
+      "sha256": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/private_gold.review.json",
+      "role": "input",
+      "sha256": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "role": "input",
+      "sha256": "d929c7b14cc8a67154c74d54c586a084950b1abb5ece0b1def1ed933d5bf498c",
+      "source": "exact_hash_reconstruction"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "role": "input",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "research/c15-code-audit-v2/stdout.txt",
+      "role": "output",
+      "sha256": "dc9a37352e36654600d3513251065270fcb54f8cab28cb90c3a5edd477e69bac",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "research/c15-code-audit-v2/stderr.txt",
+      "role": "output",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "research/c15-code-audit-v2/raw.json",
+      "role": "output",
+      "sha256": "dd893f306fd2bbf277db2e63c57fe781592d40a049b753068c1e4d439389efe3",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "quantage/__init__.py",
+      "role": "observed_package_initializer",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "source": "observed_original_byte_copy"
+    },
+    {
+      "path": "research/c15-code-audit-v2/manifest.json",
+      "role": "unchanged_original_manifest",
+      "sha256": "3a386dee669b675c6f341264b41f6c8475905ba12b1765521bbc5a1231fdaad0",
+      "source": "observed_original_byte_copy"
+    }
+  ],
+  "limits": [
+    "Historical input repair_model.py is reconstructed from the original core and known textual extension, not recovered from a Git commit.",
+    "Its exact bytes are authenticated by matching the pre-existing v2 manifest SHA-256.",
+    "Historical audit script is copied from research/c15-code-audit-source-v2.py after independent archiving; its SHA-256 matches the pre-existing v2 manifest.",
+    "The additional package initializer was observed when constructing the snapshot and is not historically pinned by the v2 manifest.",
+    "Scientific code is not rerun here; preserved output bytes and historical input hashes are validated only."
+  ]
+}

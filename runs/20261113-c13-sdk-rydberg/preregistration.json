@@ -1,0 +1,7 @@
+{
+  "recorded_at_utc": "2026-11-13T20:06:04.934716+00:00",
+  "stage": "before any Pulser/QuTiP import or execution",
+  "files": {
+    "runs/20261113-c13-sdk-rydberg/protocol.md": "cf9aed2da6e78ec90ca7d48d7ae05f3ed2e2a5fd3e5ae8c3ec470a9e0a68226d"
+  }
+}

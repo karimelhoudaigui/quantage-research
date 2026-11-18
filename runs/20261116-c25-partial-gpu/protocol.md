@@ -1,0 +1,7 @@
+# C25 prospective partialGPU resource configuration,2026-11-16
+
+C24 atctx6144/GPU99/batch128 failed during FIRSTpromptubatch with explicit MetalInsufficientMemory; no proposition was generated. Its request/errorresponse/logs/failedmanifest stay unchanged. The observed memory breakdown was model4455MiB,context864,compute53,87MiB free of5461recommended. This is a localLLM resource failure, not mathematical or QPU failure.
+
+ONE new second-repair attempt in this NEWconfiguration only:GPU_LAYERS30,CPUthreads4,ctx6144,batch128,KVf16unchanged,1024outputincluding768ASCIIdiagnosis,SHAID+2,T.7p.8k20. Same official8BGGUF,b12359,prompt,typedcurrentstate andfeedback copied fromC24. No initial/firstpatch resampling; no failed response fabricated. CPU/GPUplacement can change numerical results/timing; no isolated causal sizeeffect.480soutergroupwatchdog/caffeinate,onlyoneownedserver. Resource lifecycle uses independently reviewed boundedTERM2/KILLreap10 class. No fitpromise.
+
+After response,replayallliteralstates fromactual4Binitial+actual8Bpatch1+newpatch2,enumerateoriginaln4cube and execute2finalsolvers. Attributecosts to reused and newcalls, include C24failedattempt separately and C22firstunknown asunknown. This is posthocdevelopment,nottransfer/naturallanguagecertificate. Any C23test must freeze3calls/arm,2repairs,6144/1024/GPU30 forALLarms beforemodelcalls. NoQPU,spending,push/publication/externalmessage.

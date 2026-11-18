@@ -1,0 +1,45 @@
+{
+  "concordance": true,
+  "selected_solver": "enumeration_dfs",
+  "selected_solver_seconds": 2.2666000000001046e-05,
+  "objective": 3,
+  "solution": [
+    1,
+    0
+  ],
+  "solvers": [
+    {
+      "solver": "enumeration_dfs",
+      "status": "optimal",
+      "objective": 3,
+      "solution": [
+        1,
+        0
+      ],
+      "all_optima": [
+        [
+          1,
+          0
+        ]
+      ],
+      "visited_leaves": 4,
+      "seconds": 2.2666000000001046e-05
+    },
+    {
+      "solver": "scipy_highs_milp",
+      "status": "optimal",
+      "objective": 3,
+      "solution": [
+        1,
+        0
+      ],
+      "raw_status": 0,
+      "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+      "time_limit_seconds": 2.0,
+      "raw_min_objective": -3.0,
+      "seconds": 0.859233833
+    }
+  ],
+  "comparison_error": null,
+  "total_portfolio_seconds": 0.859270375
+}

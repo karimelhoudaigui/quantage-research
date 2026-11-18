@@ -1,0 +1,163 @@
+{
+  "schema_version": 2,
+  "claim_id": "C04-SEMANTICS",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-m",
+    "quantage.transferstudy",
+    "--cases",
+    "runs/20261113-c04-transfer/cases.json",
+    "--output",
+    "runs/20261113-c04-transfer/results"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Measure contract-equivalent coverage and false acceptance on 24 labelled semantic/data challenge requests with frozen numerical engine.",
+    "coefficient_domain": "exact integer optima and floating ideal probabilities; manual semantic labels",
+    "conventions": "Full task equivalence, not just a numerically certified normalized problem",
+    "inputs": [
+      "24 frozen cases, generated with seed 20261114 before evaluation"
+    ],
+    "bounds": {
+      "cases": 24,
+      "mis_n_max": 8,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "No blind generalization test",
+      "No learned agent evaluated",
+      "No proof of natural-language correctness"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "Evaluation reads frozen corpus; corpus generation uses random.Random seed 20261114",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-13T11:30:30.271688+00:00",
+    "runtime_seconds": 0.086991,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": 30,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "runs/20261113-c04-transfer/protocol.md",
+    "runs/20261113-c04-transfer/cases.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "quantage/benchmark.py",
+      "sha256": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b",
+      "sha256_after": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b"
+    },
+    {
+      "path": "quantage/transferstudy.py",
+      "sha256": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+      "sha256_after": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333"
+    },
+    {
+      "path": "runs/20261113-c04-transfer/protocol.md",
+      "sha256": "a7e154bdd3e874907c880faec5ab251979d4cc51f503205300e3bfac6463912b",
+      "sha256_after": "a7e154bdd3e874907c880faec5ab251979d4cc51f503205300e3bfac6463912b"
+    },
+    {
+      "path": "runs/20261113-c04-transfer/cases.json",
+      "sha256": "64bf3bfe4f365600bff83824e5d04df6c5c64e1d1b64f2256662a1d2963077b3",
+      "sha256_after": "64bf3bfe4f365600bff83824e5d04df6c5c64e1d1b64f2256662a1d2963077b3"
+    }
+  ],
+  "output_directory": "runs/20261113-c04-transfer/results",
+  "declared_results": [
+    "runs/20261113-c04-transfer/results/raw.jsonl",
+    "runs/20261113-c04-transfer/results/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c04-transfer/results/stdout.txt",
+      "sha256": "e742b443063943b75dff8efadf77fe62390eff7c61dc58908e1529d3909db8d9",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c04-transfer/results/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c04-transfer/results/raw.jsonl",
+      "sha256": "dbfa1ecdddbbc2d000a4b360464e6252d4317de802107b9e4c8ca7aea18613f8",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c04-transfer/results/metrics.json",
+      "sha256": "2f4247218f0e95c507e1fdf52f5386c1fd4cb8e68c5dd8a814cd793724af1ace",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "The POSIX CPU-time limit is per process, not an aggregate descendant budget."
+  ]
+}

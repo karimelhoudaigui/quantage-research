@@ -1,0 +1,229 @@
+{
+  "python": "3.9.6 (default, Apr 30 2025, 02:07:17) \n[Clang 17.0.0 (clang-1700.0.13.5)]",
+  "platform": "macOS-26.2-arm64-arm-64bit",
+  "git_head": "fee83eb4575198e3e142d41c621300b4d11361d8",
+  "files": [
+    {
+      "path": "scripts/build_paper.py",
+      "sha256": "630401d4b29cce615d2cacc63d4e5bdc613fbb9f2ac1e8b850b1925836bd4c33",
+      "size_bytes": 30733,
+      "control_chars": [
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 11214,
+          "line_lf": 137,
+          "context_repr": "' et le risque sélectif sont :\\n\\n$$C=\\x0crac{sum_i A_i}{N},qquad R=\\x0crac{sum_i A_i L_i}{sum_i A_i}.$$\\n\\nLe risqu'"
+        },
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 11241,
+          "line_lf": 137,
+          "context_repr": "' :\\n\\n$$C=\\x0crac{sum_i A_i}{N},qquad R=\\x0crac{sum_i A_i L_i}{sum_i A_i}.$$\\n\\nLe risque est non défini si aucune '"
+        },
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 13686,
+          "line_lf": 159,
+          "context_repr": "' des deux permutations :\\n\\n$$P(s|t)=\\x0crac{|U_{i_1j_1}U_{i_2j_2}+U_{i_1j_2}U_{i_2j_1}|^2}{prod_k s_k!prod_k '"
+        },
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 14138,
+          "line_lf": 165,
+          "context_repr": "\"onserve l'interaction finie :\\n\\n$$H=\\x0crac{Omega}{2}sum_{j=0}^1(e^{iphi}|r_j\\nanglelangle g_j|+e^{-iphi}|g_j\\n\""
+        },
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 14246,
+          "line_lf": 167,
+          "context_repr": "'lelangle r_j|)-deltasum_{j=0}^1n_j+\\x0crac{C_6}{r^6}n_0n_1.$$\\n\\nNous prenons $\\\\hbar=1$. Les amplitudes/detuni'"
+        }
+      ],
+      "display_candidates": [
+        {
+          "line_lf": 35,
+          "repr": "\"    pattern = r'(\\\\$[^$]+\\\\$|`[^`]+`|\\\\[[^\\\\]]+\\\\]\\\\([^)]+\\\\)|\\\\*\\\\*[^*]+\\\\*\\\\*)'\""
+        },
+        {
+          "line_lf": 45,
+          "repr": "\"            match = re.fullmatch(r'\\\\[([^\\\\]]+)\\\\]\\\\(([^)]+)\\\\)', token)\""
+        },
+        {
+          "line_lf": 63,
+          "repr": "\"            match = re.fullmatch(r'!\\\\[([^\\\\]]+)\\\\]\\\\(([^)]+)\\\\)', line)\""
+        },
+        {
+          "line_lf": 93,
+          "repr": "\"        elif line.startswith('$$') and line.endswith('$$'):\""
+        },
+        {
+          "line_lf": 94,
+          "repr": "\"            out.append(r'\\\\[' + line[2:-2] + r'\\\\]')\""
+        },
+        {
+          "line_lf": 137,
+          "repr": "'$$C=\\x0crac{sum_i A_i}{N},qquad R=\\x0crac{sum_i A_i L_i}{sum_i A_i}.$$'"
+        },
+        {
+          "line_lf": 145,
+          "repr": "'$$Q(x)=-sum_iw_ix_i+Psum_{(i,j)in E}x_ix_j,qquad P=1+max_iw_i.$$'"
+        },
+        {
+          "line_lf": 147,
+          "repr": "\"Chaque arête est comptée une fois. Retirer un sommet choisi avec $d_igeq1$ voisins choisis change l'énergie de $w_i-Pd_i<0$. Tout minimiseur est donc indépendant; sur les ensembles indépendants, minimiser $Q$ maximise le poids. Cet argument uniforme n'est pas une revendication de nouveauté; le cadre Ising est documenté par [Lucas, 2014](https://doi.org/10.3389/fphy.2014.00005). Le certificat fini compare tous les optima pour les instances bornées. Il ne vérifie pas une contrainte textuelle omise, et une QUBO abstraite n'est pas automatiquement un Hamiltonien Pasqal réalisable. Max-Cut classique et Quantum Max-Cut ne sont pas assimilés à ce contrat.\""
+        },
+        {
+          "line_lf": 153,
+          "repr": "'$$R(t)=\\\\begin{pmatrix}\\\\cos t&-\\\\sin t\\\\\\\\\\\\sin t&\\\\cos t\\\\end{pmatrix}.$$'"
+        },
+        {
+          "line_lf": 159,
+          "repr": "'$$P(s|t)=\\x0crac{|U_{i_1j_1}U_{i_2j_2}+U_{i_1j_2}U_{i_2j_1}|^2}{prod_k s_k!prod_k t_k!}.$$'"
+        },
+        {
+          "line_lf": 165,
+          "repr": "'$$H=\\x0crac{Omega}{2}sum_{j=0}^1(e^{iphi}|r_j'"
+        },
+        {
+          "line_lf": 167,
+          "repr": "'anglelangle r_j|)-deltasum_{j=0}^1n_j+\\x0crac{C_6}{r^6}n_0n_1.$$'"
+        }
+      ]
+    },
+    {
+      "path": "paper/article.md",
+      "sha256": "63fbb2a3a88581c7bdf0b66c3d5875b2bd3b201f94d02a52a0c9f24574faeec6",
+      "size_bytes": 26036,
+      "control_chars": [
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 6411,
+          "line_lf": 36,
+          "context_repr": "' et le risque sélectif sont :\\n\\n$$C=\\x0crac{sum_i A_i}{N},qquad R=\\x0crac{sum_i A_i L_i}{sum_i A_i}.$$\\n\\nLe risqu'"
+        },
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 6438,
+          "line_lf": 36,
+          "context_repr": "' :\\n\\n$$C=\\x0crac{sum_i A_i}{N},qquad R=\\x0crac{sum_i A_i L_i}{sum_i A_i}.$$\\n\\nLe risque est non défini si aucune '"
+        },
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 8883,
+          "line_lf": 58,
+          "context_repr": "' des deux permutations :\\n\\n$$P(s|t)=\\x0crac{|U_{i_1j_1}U_{i_2j_2}+U_{i_1j_2}U_{i_2j_1}|^2}{prod_k s_k!prod_k '"
+        },
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 9335,
+          "line_lf": 64,
+          "context_repr": "\"onserve l'interaction finie :\\n\\n$$H=\\x0crac{Omega}{2}sum_{j=0}^1(e^{iphi}|r_j\\nanglelangle g_j|+e^{-iphi}|g_j\\n\""
+        },
+        {
+          "codepoint": "U+000C",
+          "byte_offset": 9443,
+          "line_lf": 66,
+          "context_repr": "'lelangle r_j|)-deltasum_{j=0}^1n_j+\\x0crac{C_6}{r^6}n_0n_1.$$\\n\\nNous prenons $\\\\hbar=1$. Les amplitudes/detuni'"
+        }
+      ],
+      "display_candidates": [
+        {
+          "line_lf": 36,
+          "repr": "'$$C=\\x0crac{sum_i A_i}{N},qquad R=\\x0crac{sum_i A_i L_i}{sum_i A_i}.$$'"
+        },
+        {
+          "line_lf": 44,
+          "repr": "'$$Q(x)=-sum_iw_ix_i+Psum_{(i,j)in E}x_ix_j,qquad P=1+max_iw_i.$$'"
+        },
+        {
+          "line_lf": 46,
+          "repr": "\"Chaque arête est comptée une fois. Retirer un sommet choisi avec $d_igeq1$ voisins choisis change l'énergie de $w_i-Pd_i<0$. Tout minimiseur est donc indépendant; sur les ensembles indépendants, minimiser $Q$ maximise le poids. Cet argument uniforme n'est pas une revendication de nouveauté; le cadre Ising est documenté par [Lucas, 2014](https://doi.org/10.3389/fphy.2014.00005). Le certificat fini compare tous les optima pour les instances bornées. Il ne vérifie pas une contrainte textuelle omise, et une QUBO abstraite n'est pas automatiquement un Hamiltonien Pasqal réalisable. Max-Cut classique et Quantum Max-Cut ne sont pas assimilés à ce contrat.\""
+        },
+        {
+          "line_lf": 52,
+          "repr": "'$$R(t)=\\\\begin{pmatrix}\\\\cos t&-\\\\sin t\\\\\\\\\\\\sin t&\\\\cos t\\\\end{pmatrix}.$$'"
+        },
+        {
+          "line_lf": 58,
+          "repr": "'$$P(s|t)=\\x0crac{|U_{i_1j_1}U_{i_2j_2}+U_{i_1j_2}U_{i_2j_1}|^2}{prod_k s_k!prod_k t_k!}.$$'"
+        },
+        {
+          "line_lf": 64,
+          "repr": "'$$H=\\x0crac{Omega}{2}sum_{j=0}^1(e^{iphi}|r_j'"
+        },
+        {
+          "line_lf": 66,
+          "repr": "'anglelangle r_j|)-deltasum_{j=0}^1n_j+\\x0crac{C_6}{r^6}n_0n_1.$$'"
+        }
+      ]
+    },
+    {
+      "path": "paper/main.tex",
+      "sha256": "9758c57fc4f32bde706e6a833c6ae343af8b88af77b773c5b80f5d4895f5f087",
+      "size_bytes": 27393,
+      "control_chars": [],
+      "display_candidates": [
+        {
+          "line_lf": 61,
+          "repr": "'\\\\[Q(x)=-sum_iw_ix_i+Psum_{(i,j)in E}x_ix_j,qquad P=1+max_iw_i.\\\\]'"
+        },
+        {
+          "line_lf": 63,
+          "repr": "\"Chaque arête est comptée une fois. Retirer un sommet choisi avec $d_igeq1$ voisins choisis change l'énergie de $w_i-Pd_i<0$. Tout minimiseur est donc indépendant; sur les ensembles indépendants, minimiser $Q$ maximise le poids. Cet argument uniforme n'est pas une revendication de nouveauté; le cadre Ising est documenté par \\\\href{\\\\detokenize{https://doi.org/10.3389/fphy.2014.00005}}{Lucas, 2014}. Le certificat fini compare tous les optima pour les instances bornées. Il ne vérifie pas une contrainte textuelle omise, et une QUBO abstraite n'est pas automatiquement un Hamiltonien Pasqal réalisable. Max-Cut classique et Quantum Max-Cut ne sont pas assimilés à ce contrat.\""
+        },
+        {
+          "line_lf": 69,
+          "repr": "'\\\\[R(t)=\\\\begin{pmatrix}\\\\cos t&-\\\\sin t\\\\\\\\\\\\sin t&\\\\cos t\\\\end{pmatrix}.\\\\]'"
+        }
+      ]
+    }
+  ],
+  "compilers": {
+    "pdflatex": null,
+    "xelatex": null,
+    "lualatex": null,
+    "tectonic": null
+  },
+  "template": {
+    "ast_line": 102,
+    "contains_literal_backslash_frac": false,
+    "contains_ff": true,
+    "contains_cr": false,
+    "md_equals_template_dynamic": "not_evaluated_no_mutation"
+  },
+  "conversion_probe": {
+    "markdown_display_delimiters": 10,
+    "tex_display_open": 2,
+    "tex_display_close": 2,
+    "tex_escaped_double_dollars": 6,
+    "bad_display_fragment_repr": "'\\n\\\\$\\\\$C=\\nrac\\\\{sum\\\\_i A\\\\_i\\\\}\\\\{N\\\\},qquad R=\\nrac\\\\{sum\\\\_i A\\\\_i L\\\\_i\\\\}\\\\{sum\\\\_i A\\\\_i\\\\}.\\\\$\\\\$\\n'",
+    "good_display_fragment_repr": "'\\n\\\\[C=\\\\frac{\\\\sum_i A_i}{N},\\\\qquad R=\\\\frac{\\\\sum_i A_i L_i}{\\\\sum_i A_i}.\\\\]\\n'",
+    "command_expectations": {
+      "coverage": [
+        "frac",
+        "sum",
+        "qquad"
+      ],
+      "mis": [
+        "sum",
+        "in",
+        "qquad",
+        "max"
+      ],
+      "boson": [
+        "frac",
+        "prod"
+      ],
+      "rydberg": [
+        "frac",
+        "Omega",
+        "sum",
+        "phi",
+        "rangle",
+        "langle",
+        "delta"
+      ]
+    },
+    "scope": "read-only reproduction of current latex() from parsed function AST, no builder main() execution"
+  }
+}

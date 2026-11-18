@@ -1,0 +1,48 @@
+<|im_start|>system
+The n entries are AVAILABLE OPTIONS; n is NOT a required selection count.
+Only the listed pairs in data.edges are exclusions, never all possible pairs.
+An item index named compulsory/required means xi==1, not a cost budget.
+Costs are descriptive data: use a budget only if the request states a budget.
+Do not invent lower cardinalities from the number of available options.
+You write a binary integer linear program for the NEXT request.
+Return JSON only, in this order: formulation, variables, sense, objective, constraints.
+Use formulation "binary_ilp", sense "max", variables [0,1,...,n-1] expanded,
+and objective equal to the FULL weights list in input order.
+constraints is a FLAT list of mathematical strings. Every term uses x0,x1,... .
+
+Include ONLY restrictions actually stated in the request:
+- For EACH edge [i,j], write "xi+xj<=1" with actual indices.
+- Required/compulsory item i: "xi==1". Forbidden item i: "xi==0".
+- If i implies j: "xi-xj<=0".
+- At least L items: expand "x0+x1+...>=L".
+- At most U items: expand "x0+x1+...<=U".
+- Budget B: expand ALL costs, "c0*x0+c1*x1+...<=B".
+Never use weights in a budget. Never invent a budget or implications.
+Copy every edge and translate every stated clause, including contradictory ones.
+No solving, explanation, ellipsis, extra constraints, extra keys, sum() or refusal.
+
+Format example only: n3, weights[8,5,3], costs[2,4,1], edge[0,2], budget4:
+{"formulation":"binary_ilp","variables":[0,1,2],"sense":"max","objective":[8,5,3],"constraints":["x0+x2<=1","2*x0+4*x1+1*x2<=4"]}
+Use the NEXT request's actual values, not this example.
+<|im_end|>
+<|im_start|>user
+{"intention": "The committee is assembling portfolio C19-18. There are 6 entries indexed from 0 to 5. Assign a binary x_i to every entry, with x_i=1 exactly when entry i is selected. Maximize the sum of the selected weights. Every pair in edges is an incompatibility: never select both of its endpoints. Select no more than 2 entries. Entry 0 is compulsory. Entry 3 is forbidden. Select no fewer than 2 entries. These are all the requirements; impose no additional restriction.", "data": {"n": 6, "weights": [61, 35, 18, 54, 53, 21], "costs": [17, 28, 37, 23, 14, 26], "edges": [[0, 4], [1, 5], [2, 4]]}}<|im_end|>
+<|im_start|>assistant
+{
+  "formulation": "binary_ilp",
+  "variables": [0, 1, 2, 3, 4, 5],
+  "sense": "max",
+  "objective": [61, 35, 18, 54, 53, 21],
+  "constraints": [
+    "x0+x4<=1",
+    "x1+x5<=1",
+    "x2+x4<=1",
+    "x0==1",
+    "x3==0",
+    "x0+x1+x2+x3+x4+x5>=2",
+    "x0+x1+x2+x3+x4+x5<=2"
+  ]
+}<|im_end|>
+<|im_start|>user
+Review the previous model against every original clause and numerical datum. Correct omissions, wrong coefficients or format. Return the COMPLETE revised JSON model only.<|im_end|>
+<|im_start|>assistant

@@ -1,0 +1,110 @@
+{
+  "checked_on": "2026-11-13",
+  "recorded_at_utc": "2026-11-13T18:06:15.800629+00:00",
+  "files": [
+    {
+      "repository": "QuantBlockchain/quantum-circuit-vision",
+      "commit": "63885ce9004d649f792e4323d713a62ef47ea419",
+      "path": "research/external/public-traces/quantum-circuit-vision/LICENSE",
+      "source_url": "https://raw.githubusercontent.com/QuantBlockchain/quantum-circuit-vision/63885ce9004d649f792e4323d713a62ef47ea419/LICENSE",
+      "bytes": 1094,
+      "sha256": "25ec5256122b9b061e9fcb8aface026584c7349791d8fb7f4fb073236a6fad97"
+    },
+    {
+      "repository": "QuantBlockchain/quantum-circuit-vision",
+      "commit": "63885ce9004d649f792e4323d713a62ef47ea419",
+      "path": "research/external/public-traces/quantum-circuit-vision/dataset/README.md",
+      "source_url": "https://raw.githubusercontent.com/QuantBlockchain/quantum-circuit-vision/63885ce9004d649f792e4323d713a62ef47ea419/dataset/README.md",
+      "bytes": 5963,
+      "sha256": "926e69e73ccceeefaf9c72327efa6ee4137064549ca72b287a5d0608d7d79174"
+    },
+    {
+      "repository": "QuantBlockchain/quantum-circuit-vision",
+      "commit": "63885ce9004d649f792e4323d713a62ef47ea419",
+      "path": "research/external/public-traces/quantum-circuit-vision/dataset/experiment_results/README.md",
+      "source_url": "https://raw.githubusercontent.com/QuantBlockchain/quantum-circuit-vision/63885ce9004d649f792e4323d713a62ef47ea419/dataset/experiment_results/README.md",
+      "bytes": 920,
+      "sha256": "a391887d8b07754933a863e541ca428d91aada410faa1ea9ee6d63728cb47c2a"
+    },
+    {
+      "repository": "QuantBlockchain/quantum-circuit-vision",
+      "commit": "63885ce9004d649f792e4323d713a62ef47ea419",
+      "path": "research/external/public-traces/quantum-circuit-vision/dataset/experiment_results/raw/claude-haiku-4.5_bv_A04_single_rx_raw.txt",
+      "source_url": "https://raw.githubusercontent.com/QuantBlockchain/quantum-circuit-vision/63885ce9004d649f792e4323d713a62ef47ea419/dataset/experiment_results/raw/claude-haiku-4.5_bv_A04_single_rx_raw.txt",
+      "bytes": 866,
+      "sha256": "ffa56f5fa8f2f8ecd89dcb03c706bf78553285f3de171e4f044b2c5e486e593c"
+    },
+    {
+      "repository": "QuantBlockchain/quantum-circuit-vision",
+      "commit": "63885ce9004d649f792e4323d713a62ef47ea419",
+      "path": "research/external/public-traces/quantum-circuit-vision/dataset/experiment_results/raw/claude-haiku-4.5_bv_A05_single_ry_raw.txt",
+      "source_url": "https://raw.githubusercontent.com/QuantBlockchain/quantum-circuit-vision/63885ce9004d649f792e4323d713a62ef47ea419/dataset/experiment_results/raw/claude-haiku-4.5_bv_A05_single_ry_raw.txt",
+      "bytes": 870,
+      "sha256": "ca24b225a0150723933bbd4641c8d4b0a4d261595231df9a58db8b700dc68076"
+    },
+    {
+      "repository": "QuantBlockchain/quantum-circuit-vision",
+      "commit": "63885ce9004d649f792e4323d713a62ef47ea419",
+      "path": "research/external/public-traces/quantum-circuit-vision/dataset/experiment_results/raw/claude-haiku-4.5_bv_A06_single_rz_raw.txt",
+      "source_url": "https://raw.githubusercontent.com/QuantBlockchain/quantum-circuit-vision/63885ce9004d649f792e4323d713a62ef47ea419/dataset/experiment_results/raw/claude-haiku-4.5_bv_A06_single_rz_raw.txt",
+      "bytes": 857,
+      "sha256": "fdd7ab0e550fc5e68cc293f9c4f811b228129b1b119414fb5e8ddd892b83c4dd"
+    },
+    {
+      "repository": "Elias-Abebe-Gasparini/PQID-Bench",
+      "commit": "f4bafb4ce96569dbffe82c2e44f142a81e4ee27e",
+      "path": "research/external/public-traces/PQID-Bench/LICENSE.md",
+      "source_url": "https://raw.githubusercontent.com/Elias-Abebe-Gasparini/PQID-Bench/f4bafb4ce96569dbffe82c2e44f142a81e4ee27e/LICENSE.md",
+      "bytes": 1198,
+      "sha256": "8d2df3f87410782d800de5ae20aea026d5026d86641675494d4b0f8375bb144e"
+    },
+    {
+      "repository": "Elias-Abebe-Gasparini/PQID-Bench",
+      "commit": "f4bafb4ce96569dbffe82c2e44f142a81e4ee27e",
+      "path": "research/external/public-traces/PQID-Bench/LICENSES/CC-BY-4.0.txt",
+      "source_url": "https://raw.githubusercontent.com/Elias-Abebe-Gasparini/PQID-Bench/f4bafb4ce96569dbffe82c2e44f142a81e4ee27e/LICENSES/CC-BY-4.0.txt",
+      "bytes": 17099,
+      "sha256": "5e9ae21254a0a6e9b431bd796c92454639bb5bd7c135f456dc0e38bee2d37ada"
+    },
+    {
+      "repository": "Elias-Abebe-Gasparini/PQID-Bench",
+      "commit": "f4bafb4ce96569dbffe82c2e44f142a81e4ee27e",
+      "path": "research/external/public-traces/PQID-Bench/LICENSES/MIT.txt",
+      "source_url": "https://raw.githubusercontent.com/Elias-Abebe-Gasparini/PQID-Bench/f4bafb4ce96569dbffe82c2e44f142a81e4ee27e/LICENSES/MIT.txt",
+      "bytes": 1078,
+      "sha256": "14cb714257c45a5b3bf70788d4dbaff9d31305fd892610e5fe243c0cb17bc64e"
+    },
+    {
+      "repository": "Elias-Abebe-Gasparini/PQID-Bench",
+      "commit": "f4bafb4ce96569dbffe82c2e44f142a81e4ee27e",
+      "path": "research/external/public-traces/PQID-Bench/artifacts/pqid_bench_external_generation_prompts.jsonl",
+      "source_url": "https://raw.githubusercontent.com/Elias-Abebe-Gasparini/PQID-Bench/f4bafb4ce96569dbffe82c2e44f142a81e4ee27e/artifacts/pqid_bench_external_generation_prompts.jsonl",
+      "bytes": 120062,
+      "sha256": "a833ef8b50c5270a6e0720ea28fcf6cfe7fe39774e3955a9c30f33887c9824e4"
+    },
+    {
+      "repository": "Elias-Abebe-Gasparini/PQID-Bench",
+      "commit": "f4bafb4ce96569dbffe82c2e44f142a81e4ee27e",
+      "path": "research/external/public-traces/PQID-Bench/artifacts/external_model_batches/responses/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_responses.jsonl",
+      "source_url": "https://raw.githubusercontent.com/Elias-Abebe-Gasparini/PQID-Bench/f4bafb4ce96569dbffe82c2e44f142a81e4ee27e/artifacts/external_model_batches/responses/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_responses.jsonl",
+      "bytes": 179323,
+      "sha256": "a3d8e600495081ccf726a0d39c9cce13a78c8b5d4b279e52a00c5687f0b70240"
+    },
+    {
+      "repository": "Elias-Abebe-Gasparini/PQID-Bench",
+      "commit": "f4bafb4ce96569dbffe82c2e44f142a81e4ee27e",
+      "path": "research/external/public-traces/PQID-Bench/artifacts/external_model_batches/requests/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_requests.jsonl",
+      "source_url": "https://raw.githubusercontent.com/Elias-Abebe-Gasparini/PQID-Bench/f4bafb4ce96569dbffe82c2e44f142a81e4ee27e/artifacts/external_model_batches/requests/huggingface_or_local_qwen_qwen2_5-coder-7b-instruct_requests.jsonl",
+      "bytes": 225316,
+      "sha256": "6fbb424be5d632b294522c4d2be95641f9c51cb7411854c078532d24fc8da382"
+    }
+  ],
+  "total_bytes": 554646,
+  "executed_remote_code": false,
+  "provider_calls": 0,
+  "limits": [
+    "Publisher-declared model identity, not provider authentication",
+    "QCV MIT dataset; PQID scoped licenses and third-party/provider terms retained",
+    "No claim that archived tasks match C06, no evaluation performed by downloader"
+  ]
+}

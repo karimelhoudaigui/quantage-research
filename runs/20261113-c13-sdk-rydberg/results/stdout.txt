@@ -1,0 +1,1 @@
+{"evaluations": 162, "max_probability_error": 0.000472652807212981, "max_hamiltonian_error": 6.123233995736766e-17, "max_normalization_error": 1.611415334501487e-09, "elapsed_seconds": 21.815239042043686, "qpu_jobs": 0}

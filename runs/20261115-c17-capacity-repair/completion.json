@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Un modèle quantifié 2B non-thinking sait-il formuler les contraintes sur deux anciens cas de développement ?",
+  "next_action": "Poursuivre la baseline instruct4B distincte C19 ; ne pas régénérer les deux observations C17."
+}

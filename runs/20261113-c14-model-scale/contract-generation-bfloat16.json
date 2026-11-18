@@ -1,0 +1,56 @@
+{
+  "claim_id": "C14-LARGER-DELAYED-ARM",
+  "mathematics": {
+    "assertion_tested": "32 actual local delayed-model proposals on a deterministic matched C11 subset; no gold read",
+    "coefficient_domain": "bfloat16 CPU checkpoint and JSON text after finite-prefill precondition",
+    "conventions": "same frozen C09 prompt, v2 parse, greedy128-token maximum",
+    "inputs": [
+      "32 requests in16groups, four groups per family/language stratum"
+    ],
+    "bounds": {
+      "requests": 32,
+      "new_tokens": 128,
+      "internal_wall_seconds": 1650
+    },
+    "non_claims": [
+      "Not a new independent corpus",
+      "No isolated causal size effect: dtype differs",
+      "No QPU",
+      "Float16 failure retained separately; comparison is exploratory"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/c14_bfloat16_inference.py",
+    "quantage/compact_v2.py",
+    "quantage/compact_agent.py",
+    "quantage/core.py",
+    "quantage/contracts.py",
+    "quantage/verification.py",
+    "runs/20261113-c09-heldout-guard/instructions.md",
+    "runs/20261113-c14-model-scale/cases.json",
+    "runs/20261113-c14-model-scale/selection.json",
+    "runs/20261113-c14-model-scale/model-acquisition.json",
+    "runs/20261113-c14-model-scale/protocol.md",
+    "runs/20261113-c14-model-scale/amendment-precision.md",
+    "runs/20261113-c14-model-scale/precision-bfloat16/result.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0"
+    },
+    {
+      "name": "transformers",
+      "version": "4.45.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "torch seed, greedy no sampling",
+    "seed": 20261113
+  }
+}

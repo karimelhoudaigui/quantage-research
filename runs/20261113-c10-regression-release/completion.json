@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Peut-on corriger les défauts connus et livrer un prototype local traçable sans réécrire les résultats réservés ?",
+  "next_action": "Employer le prototype dans sa portée bornée; pour la recherche suivante, constituer de nouveaux groupes annotés séparément et tester le veto v4 figé sans ajustement sur leurs sorties."
+}

@@ -1,0 +1,18 @@
+{
+  "result": {
+    "status": "abstain",
+    "stage": "semantic_veto",
+    "assessment": {
+      "passed": false,
+      "reasons": [
+        "objective direction explicitly unresolved"
+      ],
+      "scope": "bounded development veto v4, not universal semantic certification"
+    }
+  },
+  "raw_model_response": "{\"action\": \"propose\", \"task\": \"maximum_weight_independent_set\", \"reason\": \"The user has not made a decision about the goal (greatest total weight or greatest number of vertices).\"}",
+  "input_tokens": 400,
+  "output_tokens": 44,
+  "record_directory": "runs/20261113-c10-regression-release/cli-ambiguous-objective-v4",
+  "scope": "local research prototype, heuristic semantic veto, no QPU"
+}

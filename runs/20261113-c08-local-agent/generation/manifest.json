@@ -1,0 +1,222 @@
+{
+  "schema_version": 2,
+  "claim_id": "C08-LOCAL-AGENT",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    ".venv-local-llm/bin/python",
+    "-m",
+    "quantage.local_inference",
+    "--cases",
+    "runs/20261113-c08-local-agent/cases.json",
+    "--instructions",
+    "runs/20261113-c08-local-agent/instructions.md",
+    "--documents",
+    "runs/20261113-c06-native-agents/documents.md",
+    "--model",
+    "research/external/models/qwen2.5-0.5b-7ae5576",
+    "--model-manifest",
+    "runs/20261113-c07-public-traces/model-acquisition.json",
+    "--output",
+    "runs/20261113-c08-local-agent/generation"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "torch",
+        "version": "2.8.0"
+      },
+      {
+        "name": "transformers",
+        "version": "4.45.2"
+      },
+      {
+        "name": "tokenizers",
+        "version": "0.20.3"
+      },
+      {
+        "name": "safetensors",
+        "version": "0.6.2"
+      },
+      {
+        "name": "huggingface-hub",
+        "version": "0.36.0"
+      },
+      {
+        "name": "numpy",
+        "version": "1.26.4"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Observe actual compact contract proposals from a pinned local LLM on16 fixed cases of two families, with and without documentation; preserve every response for later labelled evaluation.",
+    "coefficient_domain": "Text generation and finite structured contracts; exact integer downstream MIS and floating ideal probabilities",
+    "conventions": "Hybrid LLM semantic proposal, deterministic formulation, fixed local reference selection. Gold not read by generator.",
+    "inputs": [
+      "16 cases in8paired groups selected without labels",
+      "pinned0.49B Safetensors checkpoint, verified LFS hash"
+    ],
+    "bounds": {
+      "cases": 16,
+      "arms": 2,
+      "max_output_tokens_per_call": 192,
+      "max_input_tokens": 4096,
+      "wall_seconds": 1500
+    },
+    "non_claims": [
+      "No learned policy training",
+      "No full coefficient-generation LLM baseline",
+      "No hardware compatibility proof",
+      "No claim of blinded population generalization"
+    ]
+  },
+  "randomness": {
+    "used": true,
+    "generator": "torch.manual_seed; greedy do_sample=false",
+    "seed": 20261113
+  },
+  "run": {
+    "started_at": "2026-11-13T18:08:37.173354+00:00",
+    "runtime_seconds": 384.173884,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 1500.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 4
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/local_inference.py",
+    "runs/20261113-c08-local-agent/protocol.md",
+    "runs/20261113-c08-local-agent/instructions.md",
+    "runs/20261113-c08-local-agent/cases.json",
+    "runs/20261113-c06-native-agents/documents.md",
+    "runs/20261113-c07-public-traces/model-acquisition.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "quantage/contracts.py",
+      "sha256": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "sha256_after": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef"
+    },
+    {
+      "path": "quantage/compact_agent.py",
+      "sha256": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+      "sha256_after": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323"
+    },
+    {
+      "path": "quantage/local_inference.py",
+      "sha256": "4ce41105d350e1e41b26b8a569209ab4b5f4285b3f8f508ec2628ffaed35be65",
+      "sha256_after": "4ce41105d350e1e41b26b8a569209ab4b5f4285b3f8f508ec2628ffaed35be65"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/protocol.md",
+      "sha256": "a914d30b65b55b5b1fd326567faadb6beb3f36fae8796df46aad163ccc009ba4",
+      "sha256_after": "a914d30b65b55b5b1fd326567faadb6beb3f36fae8796df46aad163ccc009ba4"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/instructions.md",
+      "sha256": "cfe5df37415e9567d13e5e3919a3384ce9eb8e071007586d7ec21e149dd9d215",
+      "sha256_after": "cfe5df37415e9567d13e5e3919a3384ce9eb8e071007586d7ec21e149dd9d215"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/cases.json",
+      "sha256": "a0c9830b4c73a26ad3c95766c492518cd013f3c2b721b5ee40d4a0b2153287f7",
+      "sha256_after": "a0c9830b4c73a26ad3c95766c492518cd013f3c2b721b5ee40d4a0b2153287f7"
+    },
+    {
+      "path": "runs/20261113-c06-native-agents/documents.md",
+      "sha256": "bae0b68fd2513d789e55487bf160b1b021539ef49ba9173d0082a80709405931",
+      "sha256_after": "bae0b68fd2513d789e55487bf160b1b021539ef49ba9173d0082a80709405931"
+    },
+    {
+      "path": "runs/20261113-c07-public-traces/model-acquisition.json",
+      "sha256": "35177cc16490dff764a1e2930d433ac322e39a70cd02ebb58db08667ec98c060",
+      "sha256_after": "35177cc16490dff764a1e2930d433ac322e39a70cd02ebb58db08667ec98c060"
+    }
+  ],
+  "output_directory": "runs/20261113-c08-local-agent/generation",
+  "declared_results": [
+    "runs/20261113-c08-local-agent/generation/raw.jsonl",
+    "runs/20261113-c08-local-agent/generation/generation.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c08-local-agent/generation/stdout.txt",
+      "sha256": "2b29df9a063dbcdc245bacbf479527a5dd6cacd40c8abecee834527004eb6e67",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/generation/stderr.txt",
+      "sha256": "9ee2fb6125427ec9a60dee24e988415ca4021eb744446ced3e092ed884833742",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/generation/raw.jsonl",
+      "sha256": "6829bf74b9b5b65a3578d1101000685626a660b010c736a39c8919a32dd2edf0",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/generation/generation.json",
+      "sha256": "5d8f2385c902ae64aa519b2b5fe4e1ca404635a719f15db4c34a8c2be2e1a580",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

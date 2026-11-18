@@ -1,0 +1,9 @@
+{
+  "client_date": "2026-11-16",
+  "new_completion_calls": 0,
+  "status": "disk_guard_before_server_startup",
+  "error": "OSError: disk reserve below 3GiB before model startup; no generation attempted",
+  "old_manifest_sha256": "c93fa2519da6bebb4ef711258a68569b142e8f3350720c688246b8ae9af5ac63",
+  "inference_code_prompt_model_changed": false,
+  "new_output_directory": "probe-guided-v2"
+}

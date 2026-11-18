@@ -1,0 +1,16 @@
+{"completed": 1, "id": "q_044a69872b75", "arm": "nonredundant", "tokens": 55, "seconds": 4.83, "parse_valid": true}
+{"completed": 2, "id": "q_1d0d82d4a9b8", "arm": "nonredundant", "tokens": 37, "seconds": 3.83, "parse_valid": true}
+{"completed": 3, "id": "q_2f2e839717d9", "arm": "nonredundant", "tokens": 87, "seconds": 5.808, "parse_valid": true}
+{"completed": 4, "id": "q_33cf35350c7a", "arm": "nonredundant", "tokens": 66, "seconds": 3.952, "parse_valid": true}
+{"completed": 5, "id": "q_47eb07193267", "arm": "nonredundant", "tokens": 44, "seconds": 2.936, "parse_valid": true}
+{"completed": 6, "id": "q_7dc8bd369f02", "arm": "nonredundant", "tokens": 31, "seconds": 2.169, "parse_valid": true}
+{"completed": 7, "id": "q_8d4693aec7e5", "arm": "nonredundant", "tokens": 40, "seconds": 2.779, "parse_valid": true}
+{"completed": 8, "id": "q_93b97a91759c", "arm": "nonredundant", "tokens": 43, "seconds": 8.154, "parse_valid": true}
+{"completed": 9, "id": "q_ad48958b4f32", "arm": "nonredundant", "tokens": 44, "seconds": 5.22, "parse_valid": true}
+{"completed": 10, "id": "q_b3da77afac4f", "arm": "nonredundant", "tokens": 61, "seconds": 6.308, "parse_valid": false}
+{"completed": 11, "id": "q_b8ccfcda3441", "arm": "nonredundant", "tokens": 38, "seconds": 3.189, "parse_valid": true}
+{"completed": 12, "id": "q_c8460a41cbce", "arm": "nonredundant", "tokens": 43, "seconds": 8.213, "parse_valid": true}
+{"completed": 13, "id": "q_d201e47573a0", "arm": "nonredundant", "tokens": 47, "seconds": 6.426, "parse_valid": true}
+{"completed": 14, "id": "q_e1e7124a8604", "arm": "nonredundant", "tokens": 55, "seconds": 12.297, "parse_valid": true}
+{"completed": 15, "id": "q_e9c9eeaaec7d", "arm": "nonredundant", "tokens": 31, "seconds": 9.295, "parse_valid": true}
+{"completed": 16, "id": "q_ea7fda3d1cde", "arm": "nonredundant", "tokens": 120, "seconds": 40.188, "parse_valid": true}

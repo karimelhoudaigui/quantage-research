@@ -1,0 +1,14 @@
+{
+  "faithful": true,
+  "stage": "finite_cube",
+  "feedback": {
+    "kind": "no_counterexample",
+    "message": "No discrepancy on the finite cube. Preserve all model fields."
+  },
+  "assignments": 4,
+  "feasibility_mismatches": 0,
+  "objective_mismatches": 0,
+  "reference_feasible_count": 2,
+  "proposed_feasible_count": 2,
+  "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+}

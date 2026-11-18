@@ -1,0 +1,254 @@
+{
+  "evaluations": 486,
+  "configurations": 81,
+  "output_probabilities_compared": 2916,
+  "max_probability_error": 2.220446049250313e-16,
+  "max_unitary_error": 1.1102230246251565e-16,
+  "max_normalization_error": 4.440892098500626e-16,
+  "tolerance": 1e-10,
+  "hom": {
+    "evaluation": 166,
+    "angles": {
+      "a": 0.7853981633974483,
+      "b": 0,
+      "c": 0,
+      "phi": 0
+    },
+    "input": [
+      1,
+      1,
+      0
+    ],
+    "probabilities": [
+      {
+        "output": [
+          0,
+          0,
+          2
+        ],
+        "oracle": 0.0,
+        "sdk": 0.0
+      },
+      {
+        "output": [
+          0,
+          1,
+          1
+        ],
+        "oracle": 0.0,
+        "sdk": 0.0
+      },
+      {
+        "output": [
+          0,
+          2,
+          0
+        ],
+        "oracle": 0.5000000000000001,
+        "sdk": 0.5
+      },
+      {
+        "output": [
+          1,
+          0,
+          1
+        ],
+        "oracle": 0.0,
+        "sdk": 0.0
+      },
+      {
+        "output": [
+          1,
+          1,
+          0
+        ],
+        "oracle": 4.930380657631324e-32,
+        "sdk": 0.0
+      },
+      {
+        "output": [
+          2,
+          0,
+          0
+        ],
+        "oracle": 0.5000000000000001,
+        "sdk": 0.5
+      }
+    ],
+    "max_probability_error": 1.1102230246251565e-16,
+    "unitary_error": 0.0,
+    "normalization_error": 2.220446049250313e-16,
+    "status": "passed",
+    "sdk_accepted": true,
+    "specific_hardware_compatible": "unverified",
+    "qpu_executed": false
+  },
+  "sdk_probes": [
+    {
+      "probe": "component_index",
+      "sdk_status": "rejected",
+      "phase": "construction",
+      "exception": "AssertionError",
+      "message": "Port range exceeds circuit size (received (2, 3) but maximum expected value is 2)",
+      "stderr": "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n",
+      "command": [
+        "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/bin/python",
+        "-m",
+        "quantage.sdk_photon",
+        "--probe",
+        "component_index"
+      ]
+    },
+    {
+      "probe": "input_dimension",
+      "sdk_status": "rejected",
+      "phase": "set_input_state",
+      "exception": "AssertionError",
+      "message": "Circuit(3) and state(2) size mismatch",
+      "stderr": "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n",
+      "command": [
+        "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/bin/python",
+        "-m",
+        "quantage.sdk_photon",
+        "--probe",
+        "input_dimension"
+      ]
+    },
+    {
+      "probe": "negative_occupation",
+      "sdk_status": "rejected",
+      "phase": "set_input_state",
+      "exception": "RuntimeError",
+      "message": "invalid photon count '-1' for mode 1",
+      "stderr": "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n",
+      "command": [
+        "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/bin/python",
+        "-m",
+        "quantage.sdk_photon",
+        "--probe",
+        "negative_occupation"
+      ]
+    },
+    {
+      "probe": "nonunitary",
+      "sdk_status": "rejected",
+      "phase": "construction",
+      "exception": "AssertionError",
+      "message": "U parameter must be a unitary matrix",
+      "stderr": "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n",
+      "command": [
+        "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/bin/python",
+        "-m",
+        "quantage.sdk_photon",
+        "--probe",
+        "nonunitary"
+      ]
+    },
+    {
+      "probe": "three_photons",
+      "sdk_status": "accepted",
+      "phase": "prob_distribution",
+      "probability_sum": 1.0,
+      "states": {
+        "|1,1,1>": 1.0
+      },
+      "stderr": "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n",
+      "command": [
+        "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/bin/python",
+        "-m",
+        "quantage.sdk_photon",
+        "--probe",
+        "three_photons"
+      ]
+    },
+    {
+      "probe": "loss_component",
+      "sdk_status": "rejected",
+      "phase": "construction",
+      "exception": "AssertionError",
+      "message": "Only unitary components can compose a linear optics circuit, use Experiment for non-unitary",
+      "stderr": "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'\n  warnings.warn(UserWarning(f\"{exc}\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.\n  warnings.warn(UserWarning(f\"Can't read or write in default folder {self._directory}.\"))\n/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.\n  warnings.warn(UserWarning(f\"Using temp folder {self._directory}.\"))\n",
+      "command": [
+        "/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/bin/python",
+        "-m",
+        "quantage.sdk_photon",
+        "--probe",
+        "loss_component"
+      ]
+    }
+  ],
+  "contract_probes": [
+    {
+      "probe": "valid",
+      "accepted": true,
+      "expected": true,
+      "reason": null
+    },
+    {
+      "probe": "dimension",
+      "accepted": false,
+      "expected": false,
+      "reason": "input dimension"
+    },
+    {
+      "probe": "negative",
+      "accepted": false,
+      "expected": false,
+      "reason": "nonnegative integer occupations"
+    },
+    {
+      "probe": "three_photons",
+      "accepted": false,
+      "expected": false,
+      "reason": "exactly2photons"
+    },
+    {
+      "probe": "loss",
+      "accepted": false,
+      "expected": false,
+      "reason": "loss unsupported"
+    },
+    {
+      "probe": "noise",
+      "accepted": false,
+      "expected": false,
+      "reason": "noise unsupported"
+    },
+    {
+      "probe": "boolean",
+      "accepted": false,
+      "expected": false,
+      "reason": "nonnegative integer occupations"
+    },
+    {
+      "probe": "nan",
+      "accepted": false,
+      "expected": false,
+      "reason": "finite angles in radians"
+    },
+    {
+      "probe": "threshold",
+      "accepted": false,
+      "expected": false,
+      "reason": "observable unsupported"
+    }
+  ],
+  "software": {
+    "python": "3.11.15",
+    "perceval-quandela": "1.3.1",
+    "exqalibur": "1.4.2",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "backend_type": "perceval.backends._slos.SLOSBackend",
+  "python_optimization": 0,
+  "elapsed_seconds": 39.60721316700801,
+  "cpu_seconds": 1.661093,
+  "qpu_jobs": 0,
+  "external_purchase_eur": 0,
+  "specific_hardware_compatible": "unverified",
+  "independence": "distinct implementation oracle by author; independent reviewer pending",
+  "randomness": false,
+  "sampling": "fixed complete parameter grid; no natural population or independent samples"
+}

@@ -1,0 +1,1 @@
+{"completed": 1, "id": "q_00b3c53e4202843b", "arm": "nonredundant", "tokens": 128, "seconds": 59.414, "parse_valid": false}

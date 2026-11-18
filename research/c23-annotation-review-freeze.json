@@ -1,0 +1,27 @@
+{
+  "status": "frozen_before_any_other_C23_read",
+  "timestamp_utc": "2026-11-16T10:59:02.729098+00:00",
+  "reviewer_role": "c15_audit",
+  "scope": "Manual extraction from the single public test_cases.json only. No C23 author, generator, provenance, plan/protocol, private status, prompts or responses opened. No oracle or model executed.",
+  "counts": {
+    "cases": 20,
+    "language": {
+      "fr": 10,
+      "en": 10
+    },
+    "explicit_implication_clauses": 60
+  },
+  "artifacts": [
+    {
+      "path": "runs/20261115-c23-compositional-repair/test_cases.json",
+      "sha256": "fd8442be1df42c65bda00fb97a6d4627c638e69fea7211e0a8f3c8c9f8ae0ea1"
+    },
+    {
+      "path": "runs/20261115-c23-compositional-repair/private_gold.review.json",
+      "sha256": "d874ff3b11a15d817a38a3c32698351a08512b80e8b3f11341fd7a7a9165f002"
+    }
+  ],
+  "limits": [
+    "Separate LLM role; no human-blinded or distinct-model annotation independence demonstrated."
+  ]
+}

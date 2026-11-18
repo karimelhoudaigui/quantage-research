@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "question": "Le retour d'un vérificateur améliore-t-il la fidélité de formulations LLM sur des combinaisons inédites, à budget comparable ?",
+  "next_action": "Poursuivre C16 distinct avec runtime quantifié et nouveaux cas; conserver16dev et1test/15absents C15, H15nonrésolue. Ne pas relancer ou adapter le test C15."
+}

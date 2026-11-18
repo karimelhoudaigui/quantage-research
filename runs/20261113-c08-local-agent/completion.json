@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Quel comportement de couverture/erreurs pour un agent hybride local sur deux familles, avec et sans dossier ?",
+  "next_action": "C09: tester le schéma non redondant et le veto textuel préenregistré sur les groupes C06 non générés en C08, sans réparer ni réécrire ces réponses."
+}

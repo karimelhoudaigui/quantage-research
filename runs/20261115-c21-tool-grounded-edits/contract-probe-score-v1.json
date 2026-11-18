@@ -1,0 +1,52 @@
+{
+  "claim_id": "C21-DEV-TOOL-PATCH",
+  "mathematics": {
+    "assertion_tested": "Replay2actual tool-grounded patches; ownrowtrace adds no target coefficients; finite cube and2real solvers per valid candidate",
+    "coefficient_domain": "exact binary integer ILP, float64HiGHS",
+    "conventions": "2posthoc development cases,1024cap differs fromprevious512, no isolatedcausalclaim",
+    "inputs": [
+      "runs/20261115-c21-tool-grounded-edits/probe_cases.json"
+    ],
+    "bounds": {
+      "cases": 2,
+      "new_calls": 0
+    },
+    "non_claims": [
+      "Not heldout",
+      "No gainconfirmation/generalization",
+      "NoQPU/spending"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/repair_patch_tool_study.py",
+    "quantage/repair_patch_tool_language.py",
+    "quantage/repair_trace_feedback.py",
+    "quantage/repair_language.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py",
+    "runs/20261115-c21-tool-grounded-edits/probe_cases.json",
+    "runs/20261115-c21-tool-grounded-edits/instructions.txt",
+    "runs/20261115-c21-tool-grounded-edits/resource-management.json",
+    "runs/20261115-c21-tool-grounded-edits/feedback.json",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/raw.jsonl",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/generation.json",
+    "runs/20261115-c19-instruct-repair/gold.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

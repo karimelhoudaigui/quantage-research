@@ -1,0 +1,82 @@
+{
+  "checked_on": "2026-11-14",
+  "ready_for_submission": false,
+  "criteria": [
+    {
+      "criterion": "Original contribution differentiated from closest primary work",
+      "status": "not_established",
+      "evidence": [
+        "research/c11-comparison.json",
+        "research/c11-literature-extension.json",
+        "research/c11-novelty-second-pass.md"
+      ],
+      "gap": "Candidate dataset/study; verification/orchestration/selectiveprediction mechanisms have close predecessors."
+    },
+    {
+      "criterion": "Falsifiable question actually tested",
+      "status": "met_in_finite_scope",
+      "evidence": [
+        "runs/20261113-c11-frozen-transfer/protocol.md",
+        "runs/20261113-c11-frozen-transfer/results/metrics.json"
+      ],
+      "result": "H1/H3 not supported; negative results preserved, H2 finite counterexamples."
+    },
+    {
+      "criterion": "Independent relevant test",
+      "status": "partly_met",
+      "evidence": [
+        "runs/20261113-c11-frozen-transfer/adjudication.json",
+        "runs/20261113-c11-frozen-transfer/preflight.json"
+      ],
+      "gap": "New paired groups and distinct annotation roles; no human blind annotation or proven model independence; reviewer knewv4."
+    },
+    {
+      "criterion": "Sufficiently strong baselines",
+      "status": "not_met",
+      "evidence": [
+        "runs/20261113-c11-frozen-transfer/results/metrics.json",
+        "runs/20261113-c14-model-scale/completion.json"
+      ],
+      "gap": "Two tiny models only complete; larger delayedarm blocked by numerical/runtime cost. No measured solver portfolio."
+    },
+    {
+      "criterion": "Actual reproducible experiments",
+      "status": "met_in_scoped_experiments",
+      "evidence": [
+        "scripts/audit_c11.py",
+        "runs/20261113-c12-sdk-photon/independent-review.md",
+        "runs/20261113-c13-sdk-rydberg/independent-review.md"
+      ],
+      "gap": "C14 failed/partial records have explicitly missing metadata; no full larger-model comparison."
+    },
+    {
+      "criterion": "Negative results/uncertainty/limits recorded",
+      "status": "met",
+      "evidence": [
+        "research/state.md",
+        "paper/article.md"
+      ],
+      "scope": "Finite convenience corpus, no unsupported population confidenceinterval."
+    },
+    {
+      "criterion": "Software/hardware validity at claimed level",
+      "status": "met_for_local_sdk_only",
+      "evidence": [
+        "runs/20261113-c12-sdk-photon/results/manifest.json",
+        "runs/20261113-c13-sdk-rydberg/results/manifest.json"
+      ],
+      "gap": "No specific-QPU compatibility, backend access or calibration claim; no QPU needed/authorized for current claims."
+    },
+    {
+      "criterion": "Coherent independently reviewed manuscript",
+      "status": "partly_met",
+      "evidence": [
+        "paper/article.md",
+        "paper/main.tex",
+        "paper/archive/"
+      ],
+      "gap": "Restructured and self-reviewed; no new independent finalreferee and no manuscript PDF compilation."
+    }
+  ],
+  "next_priority": "Clause-grounded verifier and stronger practical baseline on new groups, with independent annotation/review after resources restored; C11/C14 become development for new method."
+}

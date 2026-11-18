@@ -1,0 +1,4 @@
+{
+  "intent": "Maximize the weight of an independent set.",
+  "data": {"n": 3, "edges": [[0, 1], [0, 2]], "weights": [5, 1, 1]}
+}

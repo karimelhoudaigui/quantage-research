@@ -1,0 +1,215 @@
+{
+  "schema_version": 2,
+  "claim_id": "C09-RESERVED-GUARD",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-m",
+    "quantage.local_score_v2",
+    "--cases",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "--gold",
+    "runs/20261113-c09-heldout-guard/gold.json",
+    "--responses",
+    "runs/20261113-c09-heldout-guard/generation/raw.jsonl",
+    "--output",
+    "runs/20261113-c09-heldout-guard/results"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Compare no-veto and fixed bounded semantic veto on the same newly generated local contract proposals, on groups not generated in C08.",
+    "coefficient_domain": "finite semantic tasks; exact integer MIS and floating ideal probability outputs",
+    "conventions": "No new inference after scores, no repair of C08, reserved groups disjoint",
+    "inputs": [
+      "16 reserved cases with fixed independent-role labels",
+      "observed local compact-v2 proposals"
+    ],
+    "bounds": {
+      "cases": 16,
+      "conditions_on_same_response": 2,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "Not universal semantic entailment",
+      "Not statistical reliability across natural tasks",
+      "No physical device compatibility or quantum advantage"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "scoring fixed observed responses",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-13T18:36:36.146590+00:00",
+    "runtime_seconds": 0.077279,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/compact_v2.py",
+    "quantage/local_score.py",
+    "quantage/local_score_v2.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "runs/20261113-c09-heldout-guard/protocol.md",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "runs/20261113-c09-heldout-guard/gold.json",
+    "runs/20261113-c09-heldout-guard/generation/raw.jsonl",
+    "runs/20261113-c09-heldout-guard/generation/generation.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "quantage/contracts.py",
+      "sha256": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "sha256_after": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef"
+    },
+    {
+      "path": "quantage/compact_agent.py",
+      "sha256": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+      "sha256_after": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323"
+    },
+    {
+      "path": "quantage/compact_v2.py",
+      "sha256": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d",
+      "sha256_after": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d"
+    },
+    {
+      "path": "quantage/local_score.py",
+      "sha256": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293",
+      "sha256_after": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293"
+    },
+    {
+      "path": "quantage/local_score_v2.py",
+      "sha256": "c4dd555a6af159ebac437de18f106e30f76c8a58a147e20373fbdbbe8d44edd6",
+      "sha256_after": "c4dd555a6af159ebac437de18f106e30f76c8a58a147e20373fbdbbe8d44edd6"
+    },
+    {
+      "path": "quantage/benchmark.py",
+      "sha256": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b",
+      "sha256_after": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b"
+    },
+    {
+      "path": "quantage/transferstudy.py",
+      "sha256": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+      "sha256_after": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/protocol.md",
+      "sha256": "299eabbd464ca82aa7a00b5980517a58020f896cf367bbb27310f396da40b132",
+      "sha256_after": "299eabbd464ca82aa7a00b5980517a58020f896cf367bbb27310f396da40b132"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/cases.json",
+      "sha256": "f7c754c80433ace90db0538a0ae3494856dd964edfd46ec08c62bf38ab100b38",
+      "sha256_after": "f7c754c80433ace90db0538a0ae3494856dd964edfd46ec08c62bf38ab100b38"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/gold.json",
+      "sha256": "343b1d4896e91b3d641d5f782e492137daae6836e0ad4450383d97e3953fdb67",
+      "sha256_after": "343b1d4896e91b3d641d5f782e492137daae6836e0ad4450383d97e3953fdb67"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/generation/raw.jsonl",
+      "sha256": "0f7939e1c390ab289232669faea1eaa1b0569a9aca0b5e590c485f6cc6367944",
+      "sha256_after": "0f7939e1c390ab289232669faea1eaa1b0569a9aca0b5e590c485f6cc6367944"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/generation/generation.json",
+      "sha256": "46d2f22d705580a3b1aa00f1a374a997dba6f13d403d4fecb38f106085d7a787",
+      "sha256_after": "46d2f22d705580a3b1aa00f1a374a997dba6f13d403d4fecb38f106085d7a787"
+    }
+  ],
+  "output_directory": "runs/20261113-c09-heldout-guard/results",
+  "declared_results": [
+    "runs/20261113-c09-heldout-guard/results/raw.jsonl",
+    "runs/20261113-c09-heldout-guard/results/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c09-heldout-guard/results/stdout.txt",
+      "sha256": "0e97dad70abac091ebad3e5cc44e92d6ec5283c6a33cbc4c25c8e0b1e0acaf0b",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/results/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/results/raw.jsonl",
+      "sha256": "314d1f07470c2e9dcc398cd1d62a5381d3a48366ee8b533e757069a0ec3c2237",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c09-heldout-guard/results/metrics.json",
+      "sha256": "05ee4176f4b8be5c279d1743332c3e53b99e57bf12ceda066910c43d5fc2188f",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

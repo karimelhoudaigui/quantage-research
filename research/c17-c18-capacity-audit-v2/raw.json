@@ -1,0 +1,176 @@
+{
+  "C17": {
+    "cases": [
+      {
+        "id": "080d034c34b2",
+        "output_tokens": 361,
+        "finish_reason": "eos",
+        "schema_valid": true,
+        "verification": {
+          "faithful": false,
+          "stage": "finite_cube",
+          "feedback": {
+            "kind": "counterexamples",
+            "witnesses": [
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  0
+                ],
+                "expected_feasible": true,
+                "proposed_feasible": false
+              },
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  0,
+                  1
+                ],
+                "expected_feasible": true,
+                "proposed_feasible": false
+              },
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  1,
+                  1,
+                  0
+                ],
+                "expected_feasible": true,
+                "proposed_feasible": false
+              }
+            ]
+          },
+          "assignments": 128,
+          "feasibility_mismatches": 48,
+          "objective_mismatches": 0,
+          "reference_feasible_count": 48,
+          "proposed_feasible_count": 0,
+          "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+        },
+        "wall_seconds": 9.938232333,
+        "client_cpu_seconds": 0.008578000000000197
+      },
+      {
+        "id": "4e0256180e89",
+        "output_tokens": 94,
+        "finish_reason": "eos",
+        "schema_valid": true,
+        "verification": {
+          "faithful": false,
+          "stage": "finite_cube",
+          "feedback": {
+            "kind": "counterexamples",
+            "witnesses": [
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "expected_feasible": true,
+                "proposed_feasible": false
+              },
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  0,
+                  1
+                ],
+                "expected_feasible": true,
+                "proposed_feasible": false
+              },
+              {
+                "kind": "feasibility",
+                "x": [
+                  0,
+                  0,
+                  1,
+                  0
+                ],
+                "expected_feasible": true,
+                "proposed_feasible": false
+              }
+            ]
+          },
+          "assignments": 16,
+          "feasibility_mismatches": 7,
+          "objective_mismatches": 0,
+          "reference_feasible_count": 7,
+          "proposed_feasible_count": 0,
+          "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+        },
+        "wall_seconds": 2.7312713340000023,
+        "client_cpu_seconds": 0.006519999999999859
+      }
+    ],
+    "faithful": 0,
+    "schema_valid": 2,
+    "new_model_calls": 0
+  },
+  "C18": {
+    "cases": [
+      {
+        "id": "080d034c34b2",
+        "output_tokens": 1024,
+        "finish_reason": "token_limit",
+        "schema_valid": false,
+        "verification": {
+          "faithful": false,
+          "stage": "schema",
+          "feedback": {
+            "kind": "schema",
+            "detail": "one closing thinking marker required before final JSON"
+          },
+          "feasibility_mismatches": null,
+          "objective_mismatches": null,
+          "assignments": 0
+        },
+        "wall_seconds": null,
+        "client_cpu_seconds": null
+      },
+      {
+        "id": "4e0256180e89",
+        "output_tokens": 1024,
+        "finish_reason": "token_limit",
+        "schema_valid": false,
+        "verification": {
+          "faithful": false,
+          "stage": "schema",
+          "feedback": {
+            "kind": "schema",
+            "detail": "one closing thinking marker required before final JSON"
+          },
+          "feasibility_mismatches": null,
+          "objective_mismatches": null,
+          "assignments": 0
+        },
+        "wall_seconds": 19.943084458,
+        "client_cpu_seconds": 0.010148999999999964
+      }
+    ],
+    "faithful": 0,
+    "schema_valid": 0,
+    "new_model_calls": 0
+  },
+  "scope": "Integrator self-review on known development only; C18 first response recovered from original HTTP, wall/clientCPU unknown; no model comparison or test result."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "completed",
+  "planned": 20,
+  "completed": 20,
+  "phase": "self",
+  "aggregate_of": [
+    "runs/20261115-c19-instruct-repair/test-self-v2/driver",
+    "runs/20261115-c19-instruct-repair/test-self-remaining-inference-v2/driver"
+  ],
+  "scope": "actual13+7responses, no retry; two serverloads and interrupted infrastructure phase retained; wallCPU includes original unsuccessful process",
+  "input_tokens": 16688,
+  "output_tokens": 2291,
+  "wall_seconds": 234.42808070900003,
+  "cpu_seconds": 58.707825,
+  "load_seconds": 41.124582376000006,
+  "client_cpu_seconds": 6.4435720000000005,
+  "server_cpu_seconds": 52.264253
+}

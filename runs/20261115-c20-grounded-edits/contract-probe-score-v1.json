@@ -1,0 +1,50 @@
+{
+  "claim_id": "C20-DEVELOPMENT-PATCH-SCORE",
+  "mathematics": {
+    "assertion_tested": "Replay two actual patches atomically from exact initial text, check original annotated cube and execute2solvers per valid candidate",
+    "coefficient_domain": "exact integer ILP withfloat64HiGHS",
+    "conventions": "diagnostic text unverified, no gold in patch compiler, selected after previous failures",
+    "inputs": [
+      "runs/20261115-c20-grounded-edits/probe_cases.json"
+    ],
+    "bounds": {
+      "cases": 2,
+      "new_calls": 0
+    },
+    "non_claims": [
+      "Not heldout/independent generalization",
+      "No causal split of diagnosis/patch/prompt",
+      "NoQPU"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/repair_patch_study.py",
+    "quantage/repair_patch_language.py",
+    "quantage/repair_language.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py",
+    "runs/20261115-c20-grounded-edits/probe_cases.json",
+    "runs/20261115-c20-grounded-edits/instructions.txt",
+    "runs/20261115-c20-grounded-edits/resource-management.json",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/raw.jsonl",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/generation.json",
+    "runs/20261115-c19-instruct-repair/gold.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

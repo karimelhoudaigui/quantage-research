@@ -1,0 +1,27 @@
+Translate ALL clauses into an explicit binary integer linear program.
+Return ONLY one JSON object. Exactly these five keys:
+formulation, variables, sense, objective, constraints.
+
+- formulation is "binary_ilp": every variable is binary.
+- variables lists every item index: [0,1,2,...,n-1], no repetitions.
+- sense is "max".
+- objective is the explicit list of the input weights, one coefficient per variable.
+- constraints is a list of MATHEMATICAL STRINGS, one inequality or equality each.
+Use variable symbols x0,x1,...,x(n-1) and actual integer coefficients.
+Write every term explicitly. No sum(), ellipsis, prose, solution, refusal or extra key.
+
+Rules for individual clauses:
+exclusion [i,j] -> "xi+xj<=1" with the actual indices.
+budget b -> sum(cost_i*xi)<=b, expanding ALL n terms and actual costs.
+minimum l items -> sum(xi)>=l; maximum u items -> sum(xi)<=u.
+required item i -> "xi==1"; forbidden i -> "xi==0".
+if i selected implies j selected -> "xi-xj<=0".
+Do not confuse weights (objective) and costs (budget).
+Read the whole original request and include every stated clause.
+Even an infeasible problem needs its full model.
+
+Illustrative format: n4, weights[4,2,3,5], costs[2,1,2,3],
+exclusion[0,2], budget4:
+{"formulation":"binary_ilp","variables":[0,1,2,3],"sense":"max","objective":[4,2,3,5],"constraints":["x0+x2<=1","2*x0+1*x1+2*x2+3*x3<=4"]}
+
+Use actual n, weights, costs, exclusions and constraints from the next input.

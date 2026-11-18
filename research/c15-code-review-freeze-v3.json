@@ -1,0 +1,34 @@
+{
+  "status": "reviewed_before_test_inference",
+  "timestamp_utc": "2026-11-14T20:25:20.303716+00:00",
+  "manifest": "research/c15-code-audit-v3/manifest.json",
+  "run_status": "completed",
+  "reviewed_code": [
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "sha256_after": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_inference.py",
+      "sha256": "e6f5f9f51ee0fd3fcc79632b99b93eb80efb72d745b2187e8060cb5f362a71a7",
+      "sha256_after": "e6f5f9f51ee0fd3fcc79632b99b93eb80efb72d745b2187e8060cb5f362a71a7"
+    }
+  ],
+  "limitations": [
+    "No LLM generated or scored by this reviewer.",
+    "New scorer and actual generation outputs require a subsequent independent audit.",
+    "Developer prompt can be revised only within its preregistered allowance before final test freeze."
+  ],
+  "result": "No unresolved blocking issue in the reviewed model, feedback, inference or solver implementations for the preregistered C15 domain."
+}

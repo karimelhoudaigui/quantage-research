@@ -1,0 +1,132 @@
+{
+  "schema_version": 2,
+  "claim_id": "C23-REVIEWER-COMPOSITIONAL-DOMAINS",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "research/c23-annotation-oracle.py",
+    "--output",
+    "research/c23-annotation-oracle.output/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact feasible domains and all maximum-weight masks for20public C23 instances under independently frozen reviewer labels; remove exclusions E/all stated families and every individual implication and exclusion.",
+    "coefficient_domain": "integers, exact arithmetic",
+    "conventions": "Binary bit i includes item i; edges are mutual exclusions; implication [a,b] is a implies b; only explicit textual cost and cardinality bounds apply.",
+    "inputs": [
+      "20 public test cases",
+      "Frozen independent reviewer constraints"
+    ],
+    "bounds": {
+      "n_min": 6,
+      "n_max": 7,
+      "case_count": 20,
+      "per_case_assignments_max": 128,
+      "individual_implication_removals": 60
+    },
+    "non_claims": [
+      "No inference or performance measurement",
+      "No population or arbitrary-text guarantee",
+      "No author gold or production solver read/imported"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-16T11:01:21.263961+00:00",
+    "runtime_seconds": 0.081544,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c23-annotation-oracle.py",
+    "runs/20261115-c23-compositional-repair/test_cases.json",
+    "runs/20261115-c23-compositional-repair/private_gold.review.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c23-annotation-oracle.py",
+      "sha256": "343c45b17be0a0efa112d35cad9237c2eb3f03b1225d8fbf99efbdcc43223684",
+      "sha256_after": "343c45b17be0a0efa112d35cad9237c2eb3f03b1225d8fbf99efbdcc43223684"
+    },
+    {
+      "path": "runs/20261115-c23-compositional-repair/test_cases.json",
+      "sha256": "fd8442be1df42c65bda00fb97a6d4627c638e69fea7211e0a8f3c8c9f8ae0ea1",
+      "sha256_after": "fd8442be1df42c65bda00fb97a6d4627c638e69fea7211e0a8f3c8c9f8ae0ea1"
+    },
+    {
+      "path": "runs/20261115-c23-compositional-repair/private_gold.review.json",
+      "sha256": "d874ff3b11a15d817a38a3c32698351a08512b80e8b3f11341fd7a7a9165f002",
+      "sha256_after": "d874ff3b11a15d817a38a3c32698351a08512b80e8b3f11341fd7a7a9165f002"
+    }
+  ],
+  "output_directory": "research/c23-annotation-oracle.output",
+  "declared_results": [
+    "research/c23-annotation-oracle.output/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c23-annotation-oracle.output/stdout.txt",
+      "sha256": "5986f38b020647fd3a711ecbe4875eea65d6cf227ee6e8c662430f2b4e826079",
+      "kind": "log"
+    },
+    {
+      "path": "research/c23-annotation-oracle.output/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c23-annotation-oracle.output/raw.json",
+      "sha256": "8f000b0f298b72d65d2e2f4f47afa9bb4f2cb916bf0d7abe61ea7eaf90f42c2e",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

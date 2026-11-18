@@ -1,0 +1,11 @@
+{
+  "client_date": "2026-11-15",
+  "recorded_utc_host": "2026-11-15T16:20:34.182573+00:00",
+  "path": "research/external/models/qwen2.5-1.5b-989aa79/model.safetensors",
+  "bytes": 3087467144,
+  "sha256_verified": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+  "pinned_source": "runs/20261113-c14-model-scale/model-acquisition.json",
+  "reason": "No-space failure during C16; reclaim only project-owned public model cache from stopped C14; historical raw/results/metadata retained",
+  "restoration_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/resolve/989aa7980e4cf806f80c7fef2b1adb7bc71aa306/model.safetensors",
+  "free_before_bytes": 339746816
+}

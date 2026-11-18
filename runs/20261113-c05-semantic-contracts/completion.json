@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Comment valider explicitement les propositions externes avant certificat fini ?",
+  "next_action": "Utiliser la frontière auditée pour les traces réelles C06; aucune modification des anciens inputs hashés."
+}

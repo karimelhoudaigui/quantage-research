@@ -1,0 +1,28 @@
+{
+  "status": "frozen_before_author_comparison",
+  "timestamp_utc": "2026-11-14T18:46:43.223213+00:00",
+  "reviewer_role": "c15_audit",
+  "method": "Manual semantic extraction from public intention only; no author gold, corpus generator or provenance file read.",
+  "artifacts": [
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+      "sha256": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test_cases.json",
+      "sha256": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/private_gold.review.json",
+      "sha256": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2"
+    }
+  ],
+  "counts": {
+    "dev": 8,
+    "test": 16
+  },
+  "independence_limits": [
+    "Separate agent role; same model family and shared project context possible.",
+    "Not a blinded human annotation."
+  ]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "4e0256180e89",
+    "language": "fr",
+    "intention": "Composer une sélection pour le lot de décision C16-1. Les 4 campagnes ont pour indices 0 à 3. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Le coût cumulé, somme des costs retenus, est limité à 48, borne incluse. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.",
+    "data": {
+      "n": 4,
+      "weights": [
+        53,
+        21,
+        29,
+        33
+      ],
+      "costs": [
+        20,
+        22,
+        35,
+        21
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  }
+]

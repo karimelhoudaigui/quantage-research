@@ -1,0 +1,31 @@
+{
+  "mode": "self-review after equation-heavy manuscript update",
+  "sources": [
+    "paper/article.md",
+    "paper/main.tex"
+  ],
+  "routine_edits": [
+    "Unicodefont coverage",
+    "breakable inlineJSON and filepaths",
+    "table labels and French singular agreement"
+  ],
+  "mathematical_token_corrections": [],
+  "substantive_clarifications": [
+    "Optimizationequivalence means domain equality AND allargmax equality, perauditedmethod",
+    "Activev2/13+7union reproduction documented"
+  ],
+  "math_displays": 4,
+  "pdf_build": "research/c19-pdf-build-v5.json",
+  "pdf_pages": 8,
+  "visual_inspection": "root equations/table/example pages, separate reviewer v4all8pages; final5adds localmethod/reproductionclarifications",
+  "unresolved": [
+    "one underfullbox cosmetic spacing",
+    "novelty and submissionreadiness notestablished"
+  ],
+  "sha256": {
+    "paper/article.md": "5885eaeb83add4a8d7cc9a190f5f139f9099225f50a78d5fa0f54b678fbea50e",
+    "paper/main.tex": "42ac4cf173a528d76d0471f74dea1d08aba7bf975dc78044e9b531b79043e309",
+    "paper/main.pdf": "dc1ce5cf0c6a8e6cfac77862199d360b875d8c45726bd78bd0bc0d4694fbac92"
+  },
+  "scope": "typography andlocal consistency, not scientificrefereeing or new theorem validation"
+}

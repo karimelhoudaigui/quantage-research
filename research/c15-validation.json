@@ -1,0 +1,128 @@
+{
+  "client_date": "2026-11-15",
+  "scope": "C15 immutable primary and historical isolated-source snapshots; failures remain failures",
+  "manifest_checks": [
+    {
+      "manifest": "runs/20261114-c15-formulation-repair/dev-feedback-v2/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "runs/20261114-c15-formulation-repair/dev-initial-v1/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "runs/20261114-c15-formulation-repair/dev-initial-v2/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "runs/20261114-c15-formulation-repair/dev-score-v2/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "runs/20261114-c15-formulation-repair/test-initial-v2/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "failed",
+      "stdout": "valid evidence record (run status: failed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-annotation-oracle/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-code-audit/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-code-audit-v2/manifest.json",
+      "root": "research/c15-code-audit-v2/source-snapshot",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-code-audit-v3/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-language-loop-audit/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-observed-audit/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "failed",
+      "stdout": "valid evidence record (run status: failed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-observed-audit-v2/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-study-audit/manifest.json",
+      "root": "research/c15-study-audit/source-snapshot",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    },
+    {
+      "manifest": "research/c15-study-audit-v2/manifest.json",
+      "root": ".",
+      "exit_code": 0,
+      "run_status": "completed",
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review",
+      "stderr": ""
+    }
+  ],
+  "all_manifest_integrity_checks_pass": true,
+  "observed_test_checkpoint": {
+    "unittests": 89,
+    "pass": 89,
+    "scope": "before new C16 driver tests; source not a theorem certificate"
+  },
+  "paper_pdf_compiled": false,
+  "comparison_H15": "unresolved",
+  "C15_completion": "blocked",
+  "C16": "active distinct route"
+}

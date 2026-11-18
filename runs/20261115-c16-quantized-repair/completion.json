@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Le retour du vérificateur améliore-t-il la fidélité sur16combinaisons inédites, à deux appels par bras ?",
+  "next_action": "Préserver le résultat partiel négatif C16 et sa revue ; terminer C19distinct avec modèle instruct4B et20nouvelles instances, sans adapter les tests après scores."
+}

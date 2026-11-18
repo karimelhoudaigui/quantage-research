@@ -1,0 +1,73 @@
+{
+  "claim_id": "C08-LOCAL-AGENT",
+  "mathematics": {
+    "assertion_tested": "Observe actual compact contract proposals from a pinned local LLM on16 fixed cases of two families, with and without documentation; preserve every response for later labelled evaluation.",
+    "coefficient_domain": "Text generation and finite structured contracts; exact integer downstream MIS and floating ideal probabilities",
+    "conventions": "Hybrid LLM semantic proposal, deterministic formulation, fixed local reference selection. Gold not read by generator.",
+    "inputs": [
+      "16 cases in8paired groups selected without labels",
+      "pinned0.49B Safetensors checkpoint, verified LFS hash"
+    ],
+    "bounds": {
+      "cases": 16,
+      "arms": 2,
+      "max_output_tokens_per_call": 192,
+      "max_input_tokens": 4096,
+      "wall_seconds": 1500
+    },
+    "non_claims": [
+      "No learned policy training",
+      "No full coefficient-generation LLM baseline",
+      "No hardware compatibility proof",
+      "No claim of blinded population generalization"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/local_inference.py",
+    "runs/20261113-c08-local-agent/protocol.md",
+    "runs/20261113-c08-local-agent/instructions.md",
+    "runs/20261113-c08-local-agent/cases.json",
+    "runs/20261113-c06-native-agents/documents.md",
+    "runs/20261113-c07-public-traces/model-acquisition.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0"
+    },
+    {
+      "name": "transformers",
+      "version": "4.45.2"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.20.3"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.6.2"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.36.0"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "torch.manual_seed; greedy do_sample=false",
+    "seed": 20261113
+  }
+}

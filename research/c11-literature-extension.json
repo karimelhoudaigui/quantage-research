@@ -1,0 +1,51 @@
+{
+  "checked_on": "2026-11-14",
+  "reviewer": "root integrator, following independent literature role firstpass",
+  "sources": [
+    {
+      "id": "qcoder-2025",
+      "title": "QCoder Benchmark: Bridging Language Generation and Quantum Hardware through Simulator-Based Feedback",
+      "version": "INLG2025, pp743–752, archival PDF",
+      "url": "https://aclanthology.org/2025.inlg-main.43.pdf",
+      "sections_consulted": "§3.1–3.2 and title/author metadata",
+      "checked_on": "2026-11-14",
+      "result_used": "Prompts include supported gates/depth; staged runtime, gate, depth and state checks with simulator feedback; original collection has58contest tasks and human solutions.",
+      "project_relation": "Hardware-aware code-feedback benchmarks already exist; no novelty for addingSDKchecks alone.",
+      "limits": "No external performance reproduced; no QPUaccess or FrenchSDKscope inferred.",
+      "overlap": "partial or adjacent result only"
+    },
+    {
+      "id": "qtestbench-2026",
+      "title": "QTestBench: A Test Framework for Evaluating LLM-Generated Quantum Code",
+      "version": "arXiv2610.13811v1,9Oct2026",
+      "url": "https://arxiv.org/html/2610.13811v1",
+      "sections_consulted": "§III-A to III-E and definitionsES/CS/BDS/TQS",
+      "checked_on": "2026-11-14",
+      "result_used": "Generated tests are compared to independent benchmark checkers; correct acceptance and bug rejection are distinct, with undefined measures when no wrong probes.",
+      "project_relation": "Independent oracle evaluation, failure to discriminate despite executable tests and syntheticmutants are already studied.",
+      "limits": "PennyLane/Qiskit settings; metrics not directly compared with C11 selectiverisk; no external results replayed.",
+      "overlap": "partial or adjacent result only"
+    },
+    {
+      "id": "quantum-leap-audit-2026",
+      "title": "Benchmarking the Quantum Leap: Auditing LLM Evaluation for Quantum Code Generation",
+      "version": "arXiv2610.28678v1,19Oct2026",
+      "url": "https://arxiv.org/html/2610.28678v1",
+      "sections_consulted": "§3.2–3.4, audit/sensitivity scope and appendix headings",
+      "checked_on": "2026-11-14",
+      "result_used": "Separates output validity, judge-scored results, evaluator sensitivity, observed budgeted union coverage and paired statistical comparisons; defective evaluators require revalidation.",
+      "project_relation": "Auditingharnesses and separatingexecutability/semanticvalidity/hardwareclaims is priorwork, not ournewtheory.",
+      "limits": "Its67-task judge-scored collection namedQCoder differs from the58-task simulator original; identity/version must be resolved before numericalcomparison. Noexternal leaderboard figure imported.",
+      "overlap": "partial or adjacent result only"
+    }
+  ],
+  "queries": [
+    "quantum agents semanticverification benchmarkPulserPerceval",
+    "natural language quantumPulser benchmark",
+    "quantumcode benchmark semanticcorrectnesshardwareconstraints",
+    "quantumintentverificationmultiagentbenchmark"
+  ],
+  "horizon": "2026-11-14",
+  "novelty_established": false,
+  "scope": "Targeted webqueries and primarymethods; not exhaustive, no external replication or globalabsenceproof"
+}

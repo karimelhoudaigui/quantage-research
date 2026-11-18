@@ -1,0 +1,37 @@
+{
+  "sA": {
+    "kind": "no_counterexample",
+    "message": "No discrepancy on the finite cube. Preserve all model fields."
+  },
+  "sB": {
+    "kind": "schema",
+    "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+  },
+  "sC": {
+    "kind": "no_counterexample",
+    "message": "No discrepancy on the finite cube. Preserve all model fields."
+  },
+  "sD": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          1,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  }
+}

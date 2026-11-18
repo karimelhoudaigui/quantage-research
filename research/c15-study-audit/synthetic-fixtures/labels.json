@@ -1,0 +1,62 @@
+[
+  {
+    "id": "sA",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "synthetic-software-fixture"
+    ]
+  },
+  {
+    "id": "sB",
+    "constraints": {
+      "budget": null,
+      "min_count": 1,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "synthetic-software-fixture"
+    ]
+  },
+  {
+    "id": "sC",
+    "constraints": {
+      "budget": null,
+      "min_count": null,
+      "max_count": null,
+      "required": [
+        0
+      ],
+      "forbidden": [
+        0
+      ],
+      "implications": []
+    },
+    "families": [
+      "synthetic-software-fixture"
+    ]
+  },
+  {
+    "id": "sD",
+    "constraints": {
+      "budget": 1,
+      "min_count": null,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "families": [
+      "synthetic-software-fixture"
+    ]
+  }
+]

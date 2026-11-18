@@ -1,0 +1,25 @@
+{
+  "loop-software": {
+    "kind": "counterexamples",
+    "witnesses": [
+      {
+        "kind": "feasibility",
+        "x": [
+          0,
+          0
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      },
+      {
+        "kind": "feasibility",
+        "x": [
+          1,
+          1
+        ],
+        "expected_feasible": false,
+        "proposed_feasible": true
+      }
+    ]
+  }
+}

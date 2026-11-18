@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Le feedback exact améliore-t-il la fidélité de formulations complètes sur20cas à combinaisons inédites, à budget comparable ?",
+  "next_action": "C20 développement : diagnostic et patch explicites produits par le modèle, sans correction automatique, sur deux anciens cas C19. Ne pas requalifier C19 comme test réservé après adaptation."
+}

@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-11-13T20:08:21.965612+00:00",
+  "author_sha256": "310346755ab71381b44a0458a072451ae5a33e271c3180941071e9e2144886ca",
+  "review_sha256": "3660c3f0787f030231f3cf404e7d75dd0abd59564c8eef6ad10ce2916391c235",
+  "compared_fields": [
+    "expected_action",
+    "expected_task",
+    "family",
+    "language",
+    "group_id"
+  ],
+  "action_agreements": 128,
+  "disagreements": [],
+  "semantic_adjudications": [],
+  "normalization": "short task names mis/photon translated bijectively to frozen TASKS; no semantic label changed",
+  "category_policy": "author clause category retained; independent reviewer rationale retained separately; lexical category names are not action disagreements",
+  "gold_sha256": "fc59a965abecebef239f12d1ff93c7c98700512c17021226e7ac4b5b1c01b4eb",
+  "limitations": "distinct agent authors, not human blind gold; reviewer knew historical v4; no demonstrated model independence"
+}

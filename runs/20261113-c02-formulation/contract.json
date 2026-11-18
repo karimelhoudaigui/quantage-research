@@ -1,0 +1,42 @@
+{
+  "claim_id": "C02-CERTIFICATES",
+  "mathematics": {
+    "assertion_tested": "Measure false acceptance and false rejection of fixed synthetic formulation mutations on the declared development cases.",
+    "coefficient_domain": "exact integer optima; floating probabilities",
+    "conventions": "instance-level equivalence of all optima or probabilities within 1e-12",
+    "inputs": [
+      "75 unit-weight graphs n<=4",
+      "100 weighted graphs from C01",
+      "125 optical grid triples"
+    ],
+    "bounds": {
+      "mutations_mis": 7,
+      "mutations_photon": 8,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "Not LLM error detection rates",
+      "Not universal formulation equivalence",
+      "Not independent review"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/benchmark.py",
+    "quantage/faultstudy.py",
+    "runs/20261113-c02-formulation/protocol.md"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "random.Random",
+    "seed": 20261113
+  }
+}

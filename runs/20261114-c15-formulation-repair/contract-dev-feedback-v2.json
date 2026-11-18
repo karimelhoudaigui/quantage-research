@@ -1,0 +1,63 @@
+{
+  "claim_id": "C15-FORMULATION-REPAIR",
+  "mathematics": {
+    "assertion_tested": "dev feedback: explicit authored binary ILPs; independent annotated finite-cube fidelity, minimal feedback or actual local inference as applicable",
+    "coefficient_domain": "exact integer ILP, float32 CPU inference, float64 HiGHS",
+    "conventions": "Qwen2.5-0.5B, T0.2 topk50, fixed per-ID seeds; same initial shared; no gold in inference",
+    "inputs": [
+      "runs/20261114-c15-formulation-repair/dev_cases.json"
+    ],
+    "bounds": {
+      "cases": 8,
+      "max_new_tokens": 384,
+      "max_input_tokens": 4096,
+      "n": [
+        4,
+        7
+      ],
+      "witnesses": 3
+    },
+    "non_claims": [
+      "No QPU or spending",
+      "No population generalization or novelty proof",
+      "Reference annotations are trusted; no free-text semantic certificate",
+      "Solver choice is ex-post profiling including both solver costs"
+    ]
+  },
+  "execution_artifacts": [
+    "scripts/run_c15_phase.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_language.py",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/instructions.v2.txt",
+    "runs/20261114-c15-formulation-repair/protocol.md",
+    "runs/20261114-c15-formulation-repair/amendment-representation-v2.md",
+    "quantage/repair_study_v2.py",
+    "runs/20261114-c15-formulation-repair/gold.json",
+    "runs/20261114-c15-formulation-repair/dev-initial-v2/raw.jsonl"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0"
+    },
+    {
+      "name": "transformers",
+      "version": "4.45.2"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

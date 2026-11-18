@@ -1,0 +1,9 @@
+{
+  "iteration": 1,
+  "reused_initial": false,
+  "schema_valid": true,
+  "faithful": false,
+  "generation_seconds": 23.714777750000003,
+  "verification_seconds": 0.00048387500000046657,
+  "feedback_kind": "counterexamples"
+}

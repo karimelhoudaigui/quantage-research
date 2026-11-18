@@ -1,0 +1,146 @@
+{
+  "schema_version": 2,
+  "claim_id": "C16-SCORER-SOFTWARE",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "research/c16-study-self-audit.py",
+    "--output",
+    "research/c16-study-self-audit"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.13.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Adapt unchanged independent C15 fixture expectations to C16 scorer H16/context/cost scope; no LLM performance",
+    "coefficient_domain": "integer n2 fixtures",
+    "conventions": "synthetic log probabilities/times, actual local solvers",
+    "inputs": [
+      "4 synthetic software cases, 16 synthetic records"
+    ],
+    "bounds": {
+      "cases": 4
+    },
+    "non_claims": [
+      "No LLM results",
+      "Integrator self-check of adaptation, not independent final review"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T16:05:04.348061+00:00",
+    "runtime_seconds": 0.901874,
+    "exit_status": 1,
+    "status": "failed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [
+      "research/c16-study-self-audit/raw.json"
+    ],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c16-study-self-audit.py",
+    "quantage/repair_study_c16.py",
+    "quantage/repair_model.py",
+    "quantage/repair_language.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c16-study-self-audit.py",
+      "sha256": "095846b1b97d45ceed8b64f18ae241ff2e888751068ecff54e27b17618a8418f",
+      "sha256_after": "095846b1b97d45ceed8b64f18ae241ff2e888751068ecff54e27b17618a8418f"
+    },
+    {
+      "path": "quantage/repair_study_c16.py",
+      "sha256": "1a2a50b698a18230277679d9341a64c3874a92f4c297a1921990cc46b436fe32",
+      "sha256_after": "1a2a50b698a18230277679d9341a64c3874a92f4c297a1921990cc46b436fe32"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "sha256_after": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+    }
+  ],
+  "output_directory": "research/c16-study-self-audit",
+  "declared_results": [
+    "research/c16-study-self-audit/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c16-study-self-audit/stdout.txt",
+      "sha256": "552da9c1951ec6e69e6be549b9d8d0d3e5b111bb593346a4f7cac5f9cfe1b069",
+      "kind": "log"
+    },
+    {
+      "path": "research/c16-study-self-audit/stderr.txt",
+      "sha256": "019d7db5bf83c81b5b9be9f895eb025ad3ac38eff061fdcfb361bb9577c922a5",
+      "kind": "log"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": false
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": false
+    }
+  ],
+  "result": "Run failed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them.",
+    "Declared results were not produced: research/c16-study-self-audit/raw.json"
+  ]
+}

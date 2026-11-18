@@ -1,0 +1,34 @@
+<|im_start|>system
+The n entries are AVAILABLE OPTIONS; n is NOT a required selection count.
+Only the listed pairs in data.edges are exclusions, never all possible pairs.
+An item index named compulsory/required means xi==1, not a cost budget.
+Costs are descriptive data: use a budget only if the request states a budget.
+Do not invent lower cardinalities from the number of available options.
+You write a binary integer linear program for the NEXT request.
+Return JSON only, in this order: formulation, variables, sense, objective, constraints.
+Use formulation "binary_ilp", sense "max", variables [0,1,...,n-1] expanded,
+and objective equal to the FULL weights list in input order.
+constraints is a FLAT list of mathematical strings. Every term uses x0,x1,... .
+
+Include ONLY restrictions actually stated in the request:
+- For EACH edge [i,j], write "xi+xj<=1" with actual indices.
+- Required/compulsory item i: "xi==1". Forbidden item i: "xi==0".
+- If i implies j: "xi-xj<=0".
+- At least L items: expand "x0+x1+...>=L".
+- At most U items: expand "x0+x1+...<=U".
+- Budget B: expand ALL costs, "c0*x0+c1*x1+...<=B".
+Never use weights in a budget. Never invent a budget or implications.
+Copy every edge and translate every stated clause, including contradictory ones.
+No solving, explanation, ellipsis, extra constraints, extra keys, sum() or refusal.
+
+Format example only: n3, weights[8,5,3], costs[2,4,1], edge[0,2], budget4:
+{"formulation":"binary_ilp","variables":[0,1,2],"sense":"max","objective":[8,5,3],"constraints":["x0+x2<=1","2*x0+4*x1+1*x2<=4"]}
+Use the NEXT request's actual values, not this example.
+<|im_end|>
+<|im_start|>user
+{"intention": "Le comité prépare le programme C16-6. Les 5 modules ont pour indices 0 à 4. Définir x_i dans {0,1}, où 1 indique que l'indice i est retenu. L'objectif est le maximum de la somme des weights des éléments retenus. Chaque paire de edges est une incompatibilité : ses deux indices ne peuvent pas être retenus ensemble. Retenir l'indice 4 impose aussi de retenir l'indice 0 ; la réciproque n'est pas imposée. Les conditions énumérées sont exhaustives; aucune autre restriction n'est demandée.", "data": {"n": 5, "weights": [28, 61, 50, 24, 23], "costs": [27, 18, 21, 35, 21], "edges": [[1, 2], [1, 3]]}}<|im_end|>
+<|im_start|>assistant
+{"formulation":"binary_ilp","variables":[0,1,2,3,4],"sense":"max","objective":[28,61,50,24,23],"constraints":["x1+x2<=1","x1+x3<=1","x4>=1"]}<|im_end|>
+<|im_start|>user
+{"verifier_feedback": {"kind": "counterexamples", "witnesses": [{"kind": "feasibility", "x": [0, 0, 0, 0, 0], "expected_feasible": true, "proposed_feasible": false}, {"kind": "feasibility", "x": [0, 0, 0, 0, 1], "expected_feasible": false, "proposed_feasible": true}, {"kind": "feasibility", "x": [0, 0, 0, 1, 0], "expected_feasible": true, "proposed_feasible": false}]}, "instruction": "Use this verifier result to correct the previous model. Recheck ALL original clauses, not just the witness. Return COMPLETE revised JSON only."}<|im_end|>
+<|im_start|>assistant

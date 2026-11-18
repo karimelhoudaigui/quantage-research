@@ -1,0 +1,142 @@
+[
+  {
+    "id": "optimization",
+    "status": "active",
+    "questions": [
+      "MIS et graphes géométriques",
+      "QUBO avec contraintes et pénalités",
+      "ordonnancement et allocation",
+      "Max-Cut classique et Quantum Max-Cut séparés"
+    ],
+    "next_action": "C28 est clos, gate bloqué : la requête unique sous la configuration C23 a expiré à 180 s sans réponse complète. Ne pas relancer C28 ni lancer C23. Toute nouvelle tentative demande une décision prospective et un protocole révisé; conserver C19/H19 comme résultat principal.",
+    "completed_cycles": [
+      "C01",
+      "C02",
+      "C04",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C27",
+      "C28"
+    ],
+    "active_cycle": "C23"
+  },
+  {
+    "id": "chemistry",
+    "status": "proposed",
+    "questions": [
+      "Hamiltoniens moléculaires réduits",
+      "préparation d’états et VQE",
+      "observables et coût des mesures"
+    ],
+    "next_action": "Choisir une instance minimale et vérifier littérature et compatibilité matérielle.",
+    "deferred_reason": "Priorité au contrat agentique commun; littérature spécialisée et oracle de cette famille non encore établis."
+  },
+  {
+    "id": "many_body",
+    "status": "active",
+    "questions": [
+      "Ising/Rydberg et dynamique",
+      "préparation d’états",
+      "corrélations et transitions sur petites tailles"
+    ],
+    "next_action": "Isoler la représentation temporelle Pulser et l’arrondi de durée; la dynamique deux atomes est validée seulement aux tolérances finies, aucune généralisation agentique.",
+    "completed_cycles": [
+      "C13"
+    ]
+  },
+  {
+    "id": "quantum_learning",
+    "status": "proposed",
+    "questions": [
+      "noyaux quantiques",
+      "apprentissage sur graphes",
+      "baselines et coût d’échantillonnage"
+    ],
+    "next_action": "Choisir une instance minimale et vérifier littérature et compatibilité matérielle.",
+    "deferred_reason": "Priorité au contrat agentique commun; littérature spécialisée et oracle de cette famille non encore établis."
+  },
+  {
+    "id": "photonics",
+    "status": "active",
+    "questions": [
+      "circuits Perceval",
+      "échantillonnage et observables",
+      "encodages et post-sélection"
+    ],
+    "next_action": "Conserver la validation SDK 3 modes/2 photons; évaluer des agents sur un nouveau contrat multiphotonique et ses contraintes de plateforme, avec nouvelles annotations.",
+    "completed_cycles": [
+      "C01",
+      "C02",
+      "C04",
+      "C12"
+    ]
+  },
+  {
+    "id": "linear_algebra",
+    "status": "proposed",
+    "questions": [
+      "petits systèmes linéaires",
+      "hypothèses de chargement des données",
+      "estimation d’observables et coût de lecture"
+    ],
+    "next_action": "Choisir une instance minimale et vérifier littérature et compatibilité matérielle.",
+    "deferred_reason": "Priorité au contrat agentique commun; littérature spécialisée et oracle de cette famille non encore établis."
+  },
+  {
+    "id": "error_control",
+    "status": "proposed",
+    "questions": [
+      "mitigation et estimation",
+      "petits codes de correction",
+      "contrôles nécessaires et faisabilité réelle"
+    ],
+    "next_action": "Choisir une instance minimale et vérifier littérature et compatibilité matérielle.",
+    "deferred_reason": "Priorité au contrat agentique commun; littérature spécialisée et oracle de cette famille non encore établis."
+  },
+  {
+    "id": "agent_learning",
+    "status": "active",
+    "questions": [
+      "benchmark de formulations",
+      "sélection de solveurs",
+      "critique et entraînement sur trajectoires"
+    ],
+    "next_action": "C28 est clos comme pilote de viabilité bloqué : timeout de requête après 180 s, aucune réponse complète. Ne pas relancer C28 ni lancer le corpus réservé C23 sans nouvelle décision prospective et protocole révisé. C19 reste négatif; C20–C22, C27 et C28 sont du développement.",
+    "priority": "highest",
+    "completed_cycles": [
+      "C01",
+      "C02",
+      "C03",
+      "C04",
+      "C05",
+      "C07",
+      "C08",
+      "C09",
+      "C10",
+      "C11",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C27",
+      "C28"
+    ],
+    "blockers": [
+      "Le gate C28 de viabilité sous la configuration C23 a échoué au critère de réponse complète; aucun retry autorisé par le protocole",
+      "Comparaison réservée C23 non exécutée et bloquée",
+      "Contribution scientifique à différencier des antériorités proches"
+    ],
+    "blocked_cycles": [
+      "C06",
+      "C14",
+      "C23"
+    ],
+    "active_cycle": "C23"
+  }
+]

@@ -1,0 +1,199 @@
+{
+  "schema_version": 2,
+  "claim_id": "C20-DEVELOPMENT-PATCH-SCORE",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-m",
+    "quantage.repair_patch_study",
+    "--output",
+    "runs/20261115-c20-grounded-edits/probe-score-v1"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.13.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Replay two actual patches atomically from exact initial text, check original annotated cube and execute2solvers per valid candidate",
+    "coefficient_domain": "exact integer ILP withfloat64HiGHS",
+    "conventions": "diagnostic text unverified, no gold in patch compiler, selected after previous failures",
+    "inputs": [
+      "runs/20261115-c20-grounded-edits/probe_cases.json"
+    ],
+    "bounds": {
+      "cases": 2,
+      "new_calls": 0
+    },
+    "non_claims": [
+      "Not heldout/independent generalization",
+      "No causal split of diagnosis/patch/prompt",
+      "NoQPU"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T22:32:21.482162+00:00",
+    "runtime_seconds": 0.498997,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 4
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/repair_patch_study.py",
+    "quantage/repair_patch_language.py",
+    "quantage/repair_language.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py",
+    "runs/20261115-c20-grounded-edits/probe_cases.json",
+    "runs/20261115-c20-grounded-edits/instructions.txt",
+    "runs/20261115-c20-grounded-edits/resource-management.json",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/raw.jsonl",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/generation.json",
+    "runs/20261115-c19-instruct-repair/gold.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/repair_patch_study.py",
+      "sha256": "6a4ee6976b42038d95a206de4e63ce229754d3a36e806284f95613c3562361c5",
+      "sha256_after": "6a4ee6976b42038d95a206de4e63ce229754d3a36e806284f95613c3562361c5"
+    },
+    {
+      "path": "quantage/repair_patch_language.py",
+      "sha256": "69b2010c28b56f56e4d8b9c4d34445ac887f9edd5544dccef6fd51e6e8b9e4ab",
+      "sha256_after": "69b2010c28b56f56e4d8b9c4d34445ac887f9edd5544dccef6fd51e6e8b9e4ab"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "sha256_after": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+    },
+    {
+      "path": "runs/20261115-c20-grounded-edits/probe_cases.json",
+      "sha256": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+      "sha256_after": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3"
+    },
+    {
+      "path": "runs/20261115-c20-grounded-edits/instructions.txt",
+      "sha256": "91c312b1c9116fbe685d7061e5fc5e8778b9c8c585d4722f9b90fb1ee675ac07",
+      "sha256_after": "91c312b1c9116fbe685d7061e5fc5e8778b9c8c585d4722f9b90fb1ee675ac07"
+    },
+    {
+      "path": "runs/20261115-c20-grounded-edits/resource-management.json",
+      "sha256": "c1035637a59a503a53f8d3a8aef9a60324f6096a2af239c4d5482e9410867768",
+      "sha256_after": "c1035637a59a503a53f8d3a8aef9a60324f6096a2af239c4d5482e9410867768"
+    },
+    {
+      "path": "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/raw.jsonl",
+      "sha256": "ecb31751d0b51727cc7bf778263eb89ae63a8b17f2362cd039129d71ceb4cfdc",
+      "sha256_after": "ecb31751d0b51727cc7bf778263eb89ae63a8b17f2362cd039129d71ceb4cfdc"
+    },
+    {
+      "path": "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/generation.json",
+      "sha256": "fb914aecce85f193273ffdde943c5d693d1cff06dda41a206f81ad0e1055bc70",
+      "sha256_after": "fb914aecce85f193273ffdde943c5d693d1cff06dda41a206f81ad0e1055bc70"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/gold.json",
+      "sha256": "aed7b458522d9f4f1855c8412a78a5c4c9c0641facec56b3274238b1386dc483",
+      "sha256_after": "aed7b458522d9f4f1855c8412a78a5c4c9c0641facec56b3274238b1386dc483"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+      "sha256": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+      "sha256_after": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3"
+    }
+  ],
+  "output_directory": "runs/20261115-c20-grounded-edits/probe-score-v1",
+  "declared_results": [
+    "runs/20261115-c20-grounded-edits/probe-score-v1/raw.jsonl",
+    "runs/20261115-c20-grounded-edits/probe-score-v1/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261115-c20-grounded-edits/probe-score-v1/stdout.txt",
+      "sha256": "e0bb678876b509955d4ad0be6876637031eeaabac8e5683c6139755ea09c53a7",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c20-grounded-edits/probe-score-v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c20-grounded-edits/probe-score-v1/raw.jsonl",
+      "sha256": "b97576eaeefd5ed340ff692157a0ca7db48b9a824afa92b812a202f91b8006de",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c20-grounded-edits/probe-score-v1/metrics.json",
+      "sha256": "90074949b4d512435016f29396973087e4744c34bc8d05a46ad4d94daf22c718",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

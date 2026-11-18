@@ -1,0 +1,32 @@
+{
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+  "python": "3.9.6",
+  "torch": "2.8.0",
+  "transformers": "4.45.2",
+  "dtype": "float32",
+  "device": "cpu",
+  "threads": 4,
+  "phase": "initial",
+  "sampling": {
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "top_k": 50
+  },
+  "seed_rule": "first8hexsha256(id) + round index modulo2**32",
+  "max_new_tokens": 384,
+  "max_input_tokens": 4096,
+  "planned": 8,
+  "completed": 8,
+  "input_tokens": 4717,
+  "output_tokens": 1468,
+  "load_seconds": 4.812898083,
+  "wall_seconds": 584.295386916,
+  "cpu_seconds": 288.298423,
+  "peak_rss_native_units": 2241691648,
+  "status": "completed",
+  "error": null,
+  "network_during_inference": false,
+  "external_purchase_eur": 0,
+  "recorded_at_utc": "2026-11-14T22:54:13.169142+00:00"
+}

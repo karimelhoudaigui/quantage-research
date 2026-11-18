@@ -1,0 +1,204 @@
+{
+  "schema_version": 2,
+  "claim_id": "C08-LOCAL-EVALUATED",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-m",
+    "quantage.local_score",
+    "--cases",
+    "runs/20261113-c08-local-agent/cases.json",
+    "--gold",
+    "runs/20261113-c08-local-agent/gold.json",
+    "--responses",
+    "runs/20261113-c08-local-agent/generation/raw.jsonl",
+    "--output",
+    "runs/20261113-c08-local-agent/results"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Score the real completed local compact-contract responses against fixed labels, compare two baselines, and distinguish semantic mistakes from numerical validity.",
+    "coefficient_domain": "finite semantic decisions; exact integer MIS and floating ideal probabilities downstream",
+    "conventions": "Same16paired cases, two generation conditions, no missing-response imputation or regenerated candidates",
+    "inputs": [
+      "frozen labelled16-case subset",
+      "observed local generation records"
+    ],
+    "bounds": {
+      "cases": 16,
+      "conditions": 2,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "No population performance inference",
+      "No quantum advantage",
+      "No full coefficient-generation LLM benchmark",
+      "No independent model-family annotation"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "scoring fixed observed responses",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-13T18:20:58.606874+00:00",
+    "runtime_seconds": 0.078529,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/local_score.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "runs/20261113-c08-local-agent/protocol.md",
+    "runs/20261113-c08-local-agent/cases.json",
+    "runs/20261113-c08-local-agent/gold.json",
+    "runs/20261113-c08-local-agent/generation/raw.jsonl",
+    "runs/20261113-c08-local-agent/generation/generation.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "quantage/contracts.py",
+      "sha256": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "sha256_after": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef"
+    },
+    {
+      "path": "quantage/compact_agent.py",
+      "sha256": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+      "sha256_after": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323"
+    },
+    {
+      "path": "quantage/local_score.py",
+      "sha256": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293",
+      "sha256_after": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293"
+    },
+    {
+      "path": "quantage/benchmark.py",
+      "sha256": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b",
+      "sha256_after": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b"
+    },
+    {
+      "path": "quantage/transferstudy.py",
+      "sha256": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+      "sha256_after": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/protocol.md",
+      "sha256": "a914d30b65b55b5b1fd326567faadb6beb3f36fae8796df46aad163ccc009ba4",
+      "sha256_after": "a914d30b65b55b5b1fd326567faadb6beb3f36fae8796df46aad163ccc009ba4"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/cases.json",
+      "sha256": "a0c9830b4c73a26ad3c95766c492518cd013f3c2b721b5ee40d4a0b2153287f7",
+      "sha256_after": "a0c9830b4c73a26ad3c95766c492518cd013f3c2b721b5ee40d4a0b2153287f7"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/gold.json",
+      "sha256": "6d184f60aa1f5adb1318fed386e8ff6cdbd24a0b01f6ba8a1fb42606e16753d2",
+      "sha256_after": "6d184f60aa1f5adb1318fed386e8ff6cdbd24a0b01f6ba8a1fb42606e16753d2"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/generation/raw.jsonl",
+      "sha256": "6829bf74b9b5b65a3578d1101000685626a660b010c736a39c8919a32dd2edf0",
+      "sha256_after": "6829bf74b9b5b65a3578d1101000685626a660b010c736a39c8919a32dd2edf0"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/generation/generation.json",
+      "sha256": "5d8f2385c902ae64aa519b2b5fe4e1ca404635a719f15db4c34a8c2be2e1a580",
+      "sha256_after": "5d8f2385c902ae64aa519b2b5fe4e1ca404635a719f15db4c34a8c2be2e1a580"
+    }
+  ],
+  "output_directory": "runs/20261113-c08-local-agent/results",
+  "declared_results": [
+    "runs/20261113-c08-local-agent/results/raw.jsonl",
+    "runs/20261113-c08-local-agent/results/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c08-local-agent/results/stdout.txt",
+      "sha256": "e0372703760a7bb23e108084921a3cf8851a327718586a6f2f140c26ef9778fd",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/results/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/results/raw.jsonl",
+      "sha256": "5174d291df58dbd2b2c45a2628adf120a96c371dfd44bee0e26af2e10efd900e",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c08-local-agent/results/metrics.json",
+      "sha256": "81600c26322d99a771b0c679cba7148ccc8aad84cf627d55d7abc6f2c29cb509",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

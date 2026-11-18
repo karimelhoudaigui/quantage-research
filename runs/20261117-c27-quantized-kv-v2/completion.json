@@ -1,0 +1,22 @@
+{
+  "status": "complete",
+  "cycle": "C27",
+  "question": "Une génération locale Qwen3-8B complète avec Flash Attention et caches K/V q8_0 permet-elle d'auditer un second patch sur l'état de développement C24 ?",
+  "result_scope": "Un appel sur un seul cas posthoc; résultat mathématique exact seulement sur ses 16 affectations.",
+  "claim_id": "C27-Q8-KV-DEVELOPMENT-SECOND-REPAIR",
+  "evidence": [
+    "protocol.md",
+    "guided-round2-v1/manifest.json",
+    "guided-round2-v1/driver/generation.json",
+    "guided-round2-v1/driver/raw.jsonl",
+    "verification.json",
+    "verification.md",
+    "solver-selection.md",
+    "hardware-review.md",
+    "literature-review.md",
+    "summary.md"
+  ],
+  "hypothesis_status": "Aucun effet causal du cache, gain généralisable ou nouveauté méthodologique établi.",
+  "next_action": "Ne pas lancer C23 : son gate protocolaire C25 n'est pas satisfait. Toute modification du gate exige un amendement prospectif et une décision explicite.",
+  "created_at_utc": "2026-11-18"
+}

@@ -1,0 +1,4352 @@
+{
+  "audit_status": "completed",
+  "computation": "independent stdlib interpretation and exact finite enumeration; no production scorer/parser/verifier/solver imported",
+  "bounds": {
+    "cases": 16,
+    "max_n": 7,
+    "max_cube": 128,
+    "timeout_seconds": 60
+  },
+  "checks_passed": 26863,
+  "inventory": {
+    "attempted_calls": 64,
+    "conserved_responses": 63,
+    "http_pairs_checked": 63,
+    "paired_cases": 15,
+    "unknown_guided_ids": [
+      "54969ba6bb41"
+    ],
+    "unknown_output_never_imputed": true,
+    "unknown_request_input_tokens": 940
+  },
+  "methods": {
+    "initial": {
+      "all": {
+        "observed": 16,
+        "schema_valid": 13,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 3
+      },
+      "feasible": {
+        "observed": 13,
+        "schema_valid": 11,
+        "faithful": 0,
+        "finite_optimization_equivalent": 0,
+        "optimizer_set_equal": 2
+      },
+      "infeasible": {
+        "observed": 3,
+        "schema_valid": 2,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 1
+      },
+      "fr": {
+        "observed": 8,
+        "schema_valid": 5,
+        "faithful": 0,
+        "finite_optimization_equivalent": 0,
+        "optimizer_set_equal": 1
+      },
+      "en": {
+        "observed": 8,
+        "schema_valid": 8,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 2
+      },
+      "faithful_ids": [
+        "79769e445d63"
+      ],
+      "repairs_from_initial": 0,
+      "regressions_from_initial": 0
+    },
+    "direct": {
+      "all": {
+        "observed": 16,
+        "schema_valid": 15,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 3
+      },
+      "feasible": {
+        "observed": 13,
+        "schema_valid": 13,
+        "faithful": 0,
+        "finite_optimization_equivalent": 0,
+        "optimizer_set_equal": 2
+      },
+      "infeasible": {
+        "observed": 3,
+        "schema_valid": 2,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 1
+      },
+      "fr": {
+        "observed": 8,
+        "schema_valid": 7,
+        "faithful": 0,
+        "finite_optimization_equivalent": 0,
+        "optimizer_set_equal": 1
+      },
+      "en": {
+        "observed": 8,
+        "schema_valid": 8,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 2
+      },
+      "faithful_ids": [
+        "79769e445d63"
+      ],
+      "repairs_from_initial": 0,
+      "regressions_from_initial": 0
+    },
+    "self": {
+      "all": {
+        "observed": 16,
+        "schema_valid": 13,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 3
+      },
+      "feasible": {
+        "observed": 13,
+        "schema_valid": 11,
+        "faithful": 0,
+        "finite_optimization_equivalent": 0,
+        "optimizer_set_equal": 2
+      },
+      "infeasible": {
+        "observed": 3,
+        "schema_valid": 2,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 1
+      },
+      "fr": {
+        "observed": 8,
+        "schema_valid": 5,
+        "faithful": 0,
+        "finite_optimization_equivalent": 0,
+        "optimizer_set_equal": 1
+      },
+      "en": {
+        "observed": 8,
+        "schema_valid": 8,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 2
+      },
+      "faithful_ids": [
+        "79769e445d63"
+      ],
+      "repairs_from_initial": 0,
+      "regressions_from_initial": 0
+    },
+    "guided": {
+      "all": {
+        "observed": 15,
+        "schema_valid": 12,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 3
+      },
+      "feasible": {
+        "observed": 12,
+        "schema_valid": 10,
+        "faithful": 0,
+        "finite_optimization_equivalent": 0,
+        "optimizer_set_equal": 2
+      },
+      "infeasible": {
+        "observed": 3,
+        "schema_valid": 2,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 1
+      },
+      "fr": {
+        "observed": 8,
+        "schema_valid": 5,
+        "faithful": 0,
+        "finite_optimization_equivalent": 0,
+        "optimizer_set_equal": 1
+      },
+      "en": {
+        "observed": 7,
+        "schema_valid": 7,
+        "faithful": 1,
+        "finite_optimization_equivalent": 1,
+        "optimizer_set_equal": 2
+      },
+      "faithful_ids": [
+        "79769e445d63"
+      ],
+      "repairs_from_initial": 0,
+      "regressions_from_initial": 0
+    }
+  },
+  "guided_faithful_bounds": [
+    1,
+    2
+  ],
+  "guided_minus_self_bounds": [
+    0,
+    1
+  ],
+  "H16_gain_at_least_3_possible": false,
+  "physical_observed_cost": {
+    "responses": 63,
+    "input_tokens": 45797,
+    "output_tokens": 11648,
+    "wall_seconds": 305.61973491799995,
+    "cpu_seconds": 0.5384340000000003
+  },
+  "known_response_cost_per_arm_with_shared_initial": {
+    "direct": {
+      "responses": 32,
+      "input_tokens": 19054,
+      "output_tokens": 5835,
+      "wall_seconds": 132.51468257900007,
+      "cpu_seconds": 0.23945300000000036
+    },
+    "self": {
+      "responses": 32,
+      "input_tokens": 22449,
+      "output_tokens": 5953,
+      "wall_seconds": 156.579994086,
+      "cpu_seconds": 0.27070700000000003
+    },
+    "guided": {
+      "responses": 31,
+      "input_tokens": 23348,
+      "output_tokens": 5430,
+      "wall_seconds": 138.99424366700003,
+      "cpu_seconds": 0.2260139999999995
+    }
+  },
+  "paired_15_cost_per_arm": {
+    "direct": {
+      "responses": 30,
+      "input_tokens": 17860,
+      "output_tokens": 5558,
+      "wall_seconds": 125.80685137100004,
+      "cpu_seconds": 0.22408100000000042
+    },
+    "self": {
+      "responses": 30,
+      "input_tokens": 21077,
+      "output_tokens": 5673,
+      "wall_seconds": 149.058245877,
+      "cpu_seconds": 0.2618609999999999
+    },
+    "guided": {
+      "responses": 30,
+      "input_tokens": 22751,
+      "output_tokens": 5290,
+      "wall_seconds": 135.810593417,
+      "cpu_seconds": 0.2205159999999995
+    }
+  },
+  "feedback_wall_seconds": 0.004222543000000002,
+  "solver_evidence": {
+    "recorded_portfolios_checked": 50,
+    "recorded_solver_runs_checked": 100,
+    "total_portfolio_seconds": 1.1203230840000005,
+    "selected_solver_seconds": 0.008825249999999035,
+    "new_solver_runs": 0
+  },
+  "complete_phase_metadata": [
+    {
+      "trace": "initial",
+      "status": "completed",
+      "completed": 16,
+      "input_tokens": 9527,
+      "output_tokens": 2785,
+      "wall_seconds": 74.901149292,
+      "load_seconds": 12.72354925,
+      "client_cpu_seconds": 1.439401,
+      "server_cpu_seconds": 59.407920000000004,
+      "cpu_seconds": 60.847321,
+      "backend_requested": {
+        "cpu_threads": 4,
+        "device": "MTL0",
+        "gpu_layers": 99
+      },
+      "backend_observed": {
+        "device": "Metal",
+        "evidence_lines": [
+          "0.07.711.134 I load_tensors: offloaded 29/29 layers to GPU",
+          "0.07.712.126 I load_tensors:  MTL0_Mapped model buffer size =   182.57 MiB",
+          "0.07.712.127 I load_tensors:  MTL0_Mapped model buffer size =   752.12 MiB"
+        ],
+        "offloaded_gpu_layers": 29,
+        "positive_metal_model_buffer": true,
+        "reported_total_layers": 29,
+        "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+      },
+      "runtime_tag": "b12359",
+      "runtime_commit": "b1b770d90d94cad9e9ea5b993bdbc383a522fb28",
+      "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9"
+    },
+    {
+      "trace": "direct",
+      "status": "completed",
+      "completed": 16,
+      "input_tokens": 9527,
+      "output_tokens": 3050,
+      "wall_seconds": 75.659979084,
+      "load_seconds": 3.925562625,
+      "client_cpu_seconds": 1.374784,
+      "server_cpu_seconds": 72.114532,
+      "cpu_seconds": 73.489316,
+      "backend_requested": {
+        "cpu_threads": 4,
+        "device": "MTL0",
+        "gpu_layers": 99
+      },
+      "backend_observed": {
+        "device": "Metal",
+        "evidence_lines": [
+          "0.01.665.774 I load_tensors: offloaded 29/29 layers to GPU",
+          "0.01.665.778 I load_tensors:  MTL0_Mapped model buffer size =   182.57 MiB",
+          "0.01.665.779 I load_tensors:  MTL0_Mapped model buffer size =   752.12 MiB"
+        ],
+        "offloaded_gpu_layers": 29,
+        "positive_metal_model_buffer": true,
+        "reported_total_layers": 29,
+        "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+      },
+      "runtime_tag": "b12359",
+      "runtime_commit": "b1b770d90d94cad9e9ea5b993bdbc383a522fb28",
+      "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9"
+    },
+    {
+      "trace": "self",
+      "status": "completed",
+      "completed": 16,
+      "input_tokens": 12922,
+      "output_tokens": 3168,
+      "wall_seconds": 101.58682441699999,
+      "load_seconds": 4.1373989170000005,
+      "client_cpu_seconds": 1.4157419999999998,
+      "server_cpu_seconds": 79.77787,
+      "cpu_seconds": 81.19361199999999,
+      "backend_requested": {
+        "cpu_threads": 4,
+        "device": "MTL0",
+        "gpu_layers": 99
+      },
+      "backend_observed": {
+        "device": "Metal",
+        "evidence_lines": [
+          "0.02.036.312 I load_tensors: offloaded 29/29 layers to GPU",
+          "0.02.036.326 I load_tensors:  MTL0_Mapped model buffer size =   182.57 MiB",
+          "0.02.036.326 I load_tensors:  MTL0_Mapped model buffer size =   752.12 MiB"
+        ],
+        "offloaded_gpu_layers": 29,
+        "positive_metal_model_buffer": true,
+        "reported_total_layers": 29,
+        "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+      },
+      "runtime_tag": "b12359",
+      "runtime_commit": "b1b770d90d94cad9e9ea5b993bdbc383a522fb28",
+      "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9"
+    },
+    {
+      "trace": "guided-continuation",
+      "status": "completed",
+      "completed": 10,
+      "input_tokens": 8929,
+      "output_tokens": 1560,
+      "wall_seconds": 42.719459917,
+      "load_seconds": 4.548905375,
+      "client_cpu_seconds": 1.368643,
+      "server_cpu_seconds": 29.272657,
+      "cpu_seconds": 30.641299999999998,
+      "backend_requested": {
+        "cpu_threads": 4,
+        "device": "MTL0",
+        "gpu_layers": 99
+      },
+      "backend_observed": {
+        "device": "Metal",
+        "evidence_lines": [
+          "0.02.533.054 I load_tensors: offloaded 29/29 layers to GPU",
+          "0.02.533.073 I load_tensors:  MTL0_Mapped model buffer size =   182.57 MiB",
+          "0.02.533.074 I load_tensors:  MTL0_Mapped model buffer size =   752.12 MiB"
+        ],
+        "offloaded_gpu_layers": 29,
+        "positive_metal_model_buffer": true,
+        "reported_total_layers": 29,
+        "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+      },
+      "runtime_tag": "b12359",
+      "runtime_commit": "b1b770d90d94cad9e9ea5b993bdbc383a522fb28",
+      "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9"
+    }
+  ],
+  "complete_phase_process_cpu_seconds_lower_bound": 246.17154899999997,
+  "limits": [
+    "One attempted guided response lost after ENOSPC; its outcome, generated tokens and process cost are unknown.",
+    "Client row CPU excludes server CPU; only four phase process records survive. No energy or monetary estimate.",
+    "Strict fidelity compares all cube objective values, including infeasible assignments; both-empty feasible domains can be extensionally equal.",
+    "All recorded solver answers checked against exact candidate optima; no fresh HiGHS execution or original timing reproduction.",
+    "Token probabilities are pinned API scores after sampling; grammar branch affects normalization. Direct selection is heuristic.",
+    "This role did not author the C16 scoring module or reviewer labels, but authored early C16 inference infrastructure and other corpora. Role independence is limited; no human/model-family blindness claim.",
+    "No C19 response read; no population guarantee, quantum run, causal model/quantization claim or novelty claim."
+  ],
+  "cases": [
+    {
+      "id": "fcec7afd3dd6",
+      "language": "fr",
+      "n": 4,
+      "reference": {
+        "feasible_masks": [
+          1,
+          2,
+          4
+        ],
+        "feasible_count": 3,
+        "max_weight": 53,
+        "optimal_masks": [
+          2
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 1,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 3,
+            "proposed_feasible_count": 2,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 53,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 1,
+          "phase": "direct",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 3,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 3,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 97,
+            "candidate_optima": [
+              [
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 1,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 3,
+            "proposed_feasible_count": 2,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 53,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 1,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 3,
+            "proposed_feasible_count": 2,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 53,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "79769e445d63",
+      "language": "en",
+      "n": 4,
+      "reference": {
+        "feasible_masks": [],
+        "feasible_count": 0,
+        "max_weight": null,
+        "optimal_masks": []
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": true,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 0,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "no_counterexample",
+              "message": "No discrepancy on the finite cube. Preserve all model fields."
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": true,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "direct": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": true,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 0,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "no_counterexample",
+              "message": "No discrepancy on the finite cube. Preserve all model fields."
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": true,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": true,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 0,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "no_counterexample",
+              "message": "No discrepancy on the finite cube. Preserve all model fields."
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": true,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": true,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 0,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "no_counterexample",
+              "message": "No discrepancy on the finite cube. Preserve all model fields."
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": true,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "38289dce9fa8",
+      "language": "fr",
+      "n": 4,
+      "reference": {
+        "feasible_masks": [],
+        "feasible_count": 0,
+        "max_weight": null,
+        "optimal_masks": []
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "direct": {
+          "index": 1,
+          "phase": "direct",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "bc6455847de3",
+      "language": "en",
+      "n": 4,
+      "reference": {
+        "feasible_masks": [
+          1,
+          3,
+          5
+        ],
+        "feasible_count": 3,
+        "max_weight": 78,
+        "optimal_masks": [
+          3
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 5,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 3,
+            "proposed_feasible_count": 6,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 78,
+            "candidate_optima": [
+              [
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 5,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 3,
+            "proposed_feasible_count": 6,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 78,
+            "candidate_optima": [
+              [
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 5,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 3,
+            "proposed_feasible_count": 6,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 78,
+            "candidate_optima": [
+              [
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 16,
+            "feasibility_mismatches": 5,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 3,
+            "proposed_feasible_count": 6,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 78,
+            "candidate_optima": [
+              [
+                1,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "192394ff7b7a",
+      "language": "fr",
+      "n": 5,
+      "reference": {
+        "feasible_masks": [],
+        "feasible_count": 0,
+        "max_weight": null,
+        "optimal_masks": []
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 4,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 29,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 1,
+          "phase": "direct",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 4,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 29,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 4,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 29,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 4,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 0,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 29,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "a84cf14c247d",
+      "language": "en",
+      "n": 5,
+      "reference": {
+        "feasible_masks": [
+          0,
+          1,
+          4,
+          16
+        ],
+        "feasible_count": 4,
+        "max_weight": 61,
+        "optimal_masks": [
+          4
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 2,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 38,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 2,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 38,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 2,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 38,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 2,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 38,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "2869335ff788",
+      "language": "fr",
+      "n": 5,
+      "reference": {
+        "feasible_masks": [
+          5,
+          6
+        ],
+        "feasible_count": 2,
+        "max_weight": 56,
+        "optimal_masks": [
+          6
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 2,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 2,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "direct": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 2,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 2,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 2,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 2,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 2,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 2,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "5c92952e6b23",
+      "language": "en",
+      "n": 5,
+      "reference": {
+        "feasible_masks": [
+          3,
+          17,
+          18,
+          24
+        ],
+        "feasible_count": 4,
+        "max_weight": 86,
+        "optimal_masks": [
+          17
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 6,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 59,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 6,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 59,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 6,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 59,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 32,
+            "feasibility_mismatches": 6,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 4,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 59,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "cd5f7022ac2e",
+      "language": "fr",
+      "n": 6,
+      "reference": {
+        "feasible_masks": [
+          2,
+          4,
+          8,
+          32
+        ],
+        "feasible_count": 4,
+        "max_weight": 61,
+        "optimal_masks": [
+          8
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 5,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 1,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 55,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 1,
+          "phase": "direct",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 6,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 8,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 106,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                1,
+                0,
+                1
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 4,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 5,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 1,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 55,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "bce63f435951",
+      "language": "en",
+      "n": 6,
+      "reference": {
+        "feasible_masks": [
+          7,
+          11,
+          14,
+          38,
+          42
+        ],
+        "feasible_count": 5,
+        "max_weight": 156,
+        "optimal_masks": [
+          38
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 17,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 5,
+            "proposed_feasible_count": 22,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 211,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 17,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 5,
+            "proposed_feasible_count": 22,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 211,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 17,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 5,
+            "proposed_feasible_count": 22,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 211,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 17,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 5,
+            "proposed_feasible_count": 22,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 211,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                1,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "dcdad683f9dc",
+      "language": "fr",
+      "n": 6,
+      "reference": {
+        "feasible_masks": [
+          12,
+          20,
+          28,
+          36
+        ],
+        "feasible_count": 4,
+        "max_weight": 156,
+        "optimal_masks": [
+          28
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "direct": {
+          "index": 1,
+          "phase": "direct",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 12,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": 12,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": true,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 156,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 4,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "37e4073ab724",
+      "language": "en",
+      "n": 6,
+      "reference": {
+        "feasible_masks": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          32
+        ],
+        "feasible_count": 7,
+        "max_weight": 83,
+        "optimal_masks": [
+          10
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 8,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 7,
+            "proposed_feasible_count": 15,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 99,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 8,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 7,
+            "proposed_feasible_count": 15,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 99,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 7,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 7,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 64,
+            "feasibility_mismatches": 8,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 7,
+            "proposed_feasible_count": 15,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 99,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "e208889911d5",
+      "language": "fr",
+      "n": 7,
+      "reference": {
+        "feasible_masks": [
+          16,
+          18,
+          20,
+          24,
+          48
+        ],
+        "feasible_count": 5,
+        "max_weight": 93,
+        "optimal_masks": [
+          18
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 11,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 5,
+            "proposed_feasible_count": 8,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 58,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 1,
+          "phase": "direct",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 3,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 5,
+            "proposed_feasible_count": 8,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 136,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 4,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 5,
+            "proposed_feasible_count": 1,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 35,
+            "candidate_optima": [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 11,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 5,
+            "proposed_feasible_count": 8,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 58,
+            "candidate_optima": [
+              [
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "0917fa453976",
+      "language": "en",
+      "n": 7,
+      "reference": {
+        "feasible_masks": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          24,
+          28,
+          40,
+          41,
+          42,
+          56,
+          74
+        ],
+        "feasible_count": 14,
+        "max_weight": 104,
+        "optimal_masks": [
+          56
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 15,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 14,
+            "proposed_feasible_count": 1,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 126,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 1,
+          "phase": "direct",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 14,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 14,
+            "proposed_feasible_count": 0,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 15,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 14,
+            "proposed_feasible_count": 1,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 126,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 15,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 14,
+            "proposed_feasible_count": 1,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": true,
+                  "proposed_feasible": false
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 126,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                1,
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "5d9702fb5f6c",
+      "language": "fr",
+      "n": 7,
+      "reference": {
+        "feasible_masks": [
+          57,
+          60,
+          77,
+          105,
+          108,
+          120
+        ],
+        "feasible_count": 6,
+        "max_weight": 161,
+        "optimal_masks": [
+          60
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 6,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "direct": {
+          "index": 1,
+          "phase": "direct",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 44,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 6,
+            "proposed_feasible_count": 40,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 188,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                1,
+                0,
+                0,
+                1,
+                1
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 6,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        },
+        "guided": {
+          "index": 1,
+          "phase": "guided",
+          "assessment": {
+            "faithful": false,
+            "stage": "schema",
+            "assignments": 0,
+            "feasibility_mismatches": null,
+            "objective_mismatches": null,
+            "feedback": {
+              "kind": "schema",
+              "message": "Invalid JSON or documented model schema. Rebuild a complete binary_ilp object with variables,sense,objective,constraints and explicit integer rows."
+            },
+            "reference_feasible_count": 6,
+            "proposed_feasible_count": null,
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": null,
+            "candidate_optima": []
+          }
+        }
+      },
+      "guided_unknown": false
+    },
+    {
+      "id": "54969ba6bb41",
+      "language": "en",
+      "n": 7,
+      "reference": {
+        "feasible_masks": [
+          3,
+          6,
+          9,
+          10,
+          12,
+          24,
+          33,
+          34,
+          36
+        ],
+        "feasible_count": 9,
+        "max_weight": 103,
+        "optimal_masks": [
+          33
+        ]
+      },
+      "methods": {
+        "initial": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 9,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 9,
+            "proposed_feasible_count": 18,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 112,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "direct": {
+          "index": 0,
+          "phase": "initial",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 9,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 9,
+            "proposed_feasible_count": 18,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 112,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        },
+        "self": {
+          "index": 1,
+          "phase": "self",
+          "assessment": {
+            "faithful": false,
+            "stage": "finite_cube",
+            "assignments": 128,
+            "feasibility_mismatches": 9,
+            "objective_mismatches": 0,
+            "reference_feasible_count": 9,
+            "proposed_feasible_count": 18,
+            "feedback": {
+              "kind": "counterexamples",
+              "witnesses": [
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                },
+                {
+                  "kind": "feasibility",
+                  "x": [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                  ],
+                  "expected_feasible": false,
+                  "proposed_feasible": true
+                }
+              ]
+            },
+            "optimizer_set_equal": false,
+            "finite_optimization_equivalent": false,
+            "candidate_best": 112,
+            "candidate_optima": [
+              [
+                1,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0
+              ]
+            ]
+          }
+        }
+      },
+      "guided_unknown": true
+    }
+  ],
+  "input_sha256": {
+    "research/c16-annotation-oracle/raw.json": "f9f8275cf7114cc9521f122de9fd8067af4611bda6baa57d582d053bf6bee065",
+    "runs/20261115-c16-quantized-repair/disk-incident-guided.json": "b8601e02f5b2d8acc2ddc0e08a5adafaad4b5c9d6154f2037d59b2725a49861c",
+    "runs/20261115-c16-quantized-repair/instructions.frozen.txt": "06967f5933c798a175b2e45f589d2a77d0ed8cf78a597fc920452f84b63898ea",
+    "runs/20261115-c16-quantized-repair/partial-score/metrics.json": "5e28041c4f9f9a793556235bc319ba4bf0b2afb2b92d2340b7dde1cc0119e3c3",
+    "runs/20261115-c16-quantized-repair/partial-score/paired-results/raw.jsonl": "9b55ab7ee49c3c7bb27e9a5000833f8af951b0d1f1324481302fb0282c8f696e",
+    "runs/20261115-c16-quantized-repair/private_gold.review.json": "5c6faeb1d54dc989e789cbc64d7a45d14e6dc9e97208c7dcb1147f0c6cb6f135",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/generation.json": "c1c43e3028a246969e2c7b34ab67850c087529b5c37b632ab975d7649c54253f",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/000.request.json": "dd455606fdd071659dd5597c04845ab0c17f54e0ae3360814df1b899e75499dc",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/000.response.json": "b95c2e377e3975e5c26657057c365d1dace9929f53fcf04b68081445051c8ab5",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/001.request.json": "5014ca5a5c215e0ba481c32c33c49609565bb38220740cef95e01b9d5dbf9575",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/001.response.json": "f01454857e2bfdd6ab6947d934c95cd80a220a32c4946fc0c1826249c1687d5b",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/002.request.json": "3fc16a7cd7774fbb813ad09e6cdd89d9450756dc7abeb865e3791f97dfcc3b57",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/002.response.json": "5f7f020a460b363e63497e6ef1193cf2802230582e5c3f7946a8fb282a0cfc96",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/003.request.json": "b224a4d89b86f38a5bc6ed5582943b6a91e29ec212a47c027b504bc3cde975e0",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/003.response.json": "b50f7c536ad2680c1d3a3d74556496dab44b296e822cb2e3d75a2882e04469a3",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/004.request.json": "95aedad2b6a3346c660294430647036f8a9c8f597ab4fdcc64aae9f254c7c394",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/004.response.json": "21bfca48a50fb7857a10cf56a4bffaf81ba26464c06e715c145f5540ca88e49c",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/005.request.json": "b1076249cd80203ac1189080caa8324a0db6c18ba3249b071e3482b47c4d7200",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/005.response.json": "8c7c20a1bdb5d6bfc98f8f9f7a9c87094d12bfdcaa77f969efbe0e0c23ce676a",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/006.request.json": "7fc2660511308fc6a84cc5e09179532ba7f52d36febb9a9f27920f85ac4ea78b",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/006.response.json": "4134a955b8d4293351da1cd62a3b9648b10d55a50866b7e6042a2ae5dc47fe82",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/007.request.json": "15bc844c02467b8eecc5e2b3d6082bb4128e8c6591198b19c88f4b735bf46b1f",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/007.response.json": "8533f2be07fafcc6ca9f329d4442156ccd4672d2ac614426bb8ad7b543d9fbb0",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/008.request.json": "d94b6f557534f5c98b1f5a5949c7dcd4d93c3de04b138e030f785ae46a59a792",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/008.response.json": "b3358bad6555e5b8fbfeeb862a3d59d676e6af2b40ecc132104af92db150a71a",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/009.request.json": "846d0d12a2e99430ccbc6149ec87138fab04177c4c954b8f04e5abe0ca9419d1",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/009.response.json": "186ac0e4e813bdaad97e798f78fa68306f2a59b3185b2d7c6c2ba79fbf38c7bc",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/010.request.json": "c5213567a1928ef0ace0ac72134d693ff8b7bf7221dfabb02dae66f05649a410",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/010.response.json": "d05b6cad9e69ccbe65573388a890ebc1355bf1d4dcc5c501dc25864fa4a212e5",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/011.request.json": "5fef879d186392d6e2c03251c1eb140c5ee65954f51d4f0612f1b251d8754ab5",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/011.response.json": "1377825ea83391dc60f4499e29f7274b890105f1bf46fff63035a4efc7035c96",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/012.request.json": "3fd133d6ab3e20da2b521bf8a7fed0339da3aac32e1810fde6532e92e9f9d7cd",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/012.response.json": "05c393c889cf923b66f3e8e426f171e70e8e5e3fcc7b22d64196ee3d8581daf1",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/013.request.json": "fe4c6ab94cd67be9c776e0fb5dc4a80b08724f563a2e8753ea433a092b292991",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/013.response.json": "cc97e11394d1b21877885d06dfcc88ab94732f2838a3c94c4c43f4208e5ca48d",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/014.request.json": "0bb85ae527e65ab5406bec2ecbc18abd8e3aa9e14eb9dce99557bda9798a63e7",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/014.response.json": "1e76a6da5657eb0099abbb565f1b01d2e79d62c2fbbd5c2aa011e18cef7ed0d8",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/015.request.json": "316738362441d05aed030016ad6d6ed8d15fe5f457ef4a2a578ce343a5e384f4",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/http/015.response.json": "a24749cf02047617287ca17774d2dae145b52c83cd58b417db834c8f1ac11be0",
+    "runs/20261115-c16-quantized-repair/test-direct-v1/driver/raw.jsonl": "aadb3b1efdb9c697ba72b4dc8ee17009fea9446be7556a41c314c2c6c6b65316",
+    "runs/20261115-c16-quantized-repair/test-feedback-v1/minimal.json": "3c3b318a27e775311c32e5d844060a4dfe62f6f960e1fd51e520a96a8c858472",
+    "runs/20261115-c16-quantized-repair/test-feedback-v1/reports.jsonl": "927cb608324478b4db6abf42b64dbf30cd61318603448c34df276d2b1a82ab69",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/generation.json": "7d18e586e54f4272fbdbaf1dd7dc47d98339da3f332827f12a017ba17475d99d",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/000.request.json": "0980067ab070b7d18ea5f00da33fd35a1a8c8b14644df1c822cd3205539022ef",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/000.response.json": "0a8143554788a33b41a80c9a987bd88684de2e7f590fad23db9ec3f3f4f398f2",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/001.request.json": "0484ea9a5ef6d5dd4560b5b7e4582eb0b8ac142640752904d460b1ffa7ce0470",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/001.response.json": "2aa9c2f05db8598e956465be632120aefdb2dfef9088c5ab4bb2719b9fcd4dfb",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/002.request.json": "a8314e167315a525a317f246a285c0cc88040c5b9000ee30da6b2b6a80cc14c1",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/002.response.json": "017328d90e49d6f29abc316f60feb7c05e31244e33405ef615702cfb32bbbd47",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/003.request.json": "cf0a89e54f0785c088e6465e244eabd24c06d838cc577093a97ad69053e7ba8e",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/003.response.json": "5439743711ed9401495d25bd9ff0771e4229281e750bb87ee4b94203a25d38c6",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/004.request.json": "9ee03e208c7c1745aab0146da3ed4fd71953ac0ecc114a7659a2b48a5a2263e2",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/004.response.json": "b97588fc5ba5918aeed625538d87a92f2ed8fef6f71ed8d8543af15a8f4a275c",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/005.request.json": "b05e37f6b7a48dd8c796e12cab736c16d17fb41b4d260dd0c20343437dac9704",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/005.response.json": "04b8d8a3ff837f3d3900610c348c8252fbddf20af29f6772f0d89cec7959d53d",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/006.request.json": "9462b707673bbd9bbcce60d5739c116ffdc484104b28784ff61213709531b00d",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/006.response.json": "207a53b4116463ef3e591f09c500205356dbf835219d527119e160342afc9487",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/007.request.json": "222d7eee3b6aaebad9b4b727d9f7778c3dc90f5a697006c0f8aa3fa41b5b06d3",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/007.response.json": "0d356493f17f7c206efca6fd8084f36a61d5e9e82313559d38f36dd21e75199e",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/008.request.json": "2518bd7ba80abbe4672d93bfc5188c2ca306cb630f07b28768165e0cddb2555f",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/008.response.json": "5fffcc2196774e3a44e9db58b576e8e240bc288f1c2d710d5a1cdd89cd271489",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/009.request.json": "35271de0ed171a9131d7c199bc7d20770d6ef10232c3d6364db87c24cc547762",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/http/009.response.json": "af3b54c86af6255fb63ce75db98f0437178163c458ad684c35bc404173281105",
+    "runs/20261115-c16-quantized-repair/test-guided-continuation-v1/driver/raw.jsonl": "0cbab993b857d0623c1b6eb2b7809c0c445d8f8e36219feb5654087b5a292c36",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/000.request.json": "6877db47706a3da769ac4ea5c596144aa276bafe5c38dc31158820f0b59f29b2",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/000.response.json": "f971ef098a938c586a85f598925de57fe5a4f29d13a5a884228e5b2216480e91",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/001.request.json": "c910cd69c385edc0263cb4e0d97b75fd809dfb72b64c60c2384c8b98969df19e",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/001.response.json": "03d2e4d972b86eae166e1bc4c5795406c9ec2a9825fae2245dfff2704fbdcd8d",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/002.request.json": "5a199fc332ef3134ce291026e199d3c2341a54c59b111ce3e3933bda99e3bfe4",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/002.response.json": "338a6e95444b072d5f1722b76f313788eca0dd4f4902a75cedc4945345f1206d",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/003.request.json": "56be772130f15e8fde52593d875ff8ab75547c767519ff231cc7401dd53c78aa",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/003.response.json": "2f3afe359f8a7d17742cf900f7a397edfe37942692e1ba7c01b06ea1fee02c80",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/004.request.json": "c6c2cd45053ff0f01e2870203f1caf7c5e749c8f7ac4f7cb31e12c29a819dfdb",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/004.response.json": "af10f09600ad389db7a3b10ef1c22938b97b52cd6498fb4c6a07e7d30aca7592",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/http/005.request.json": "148f26703f7e1f851e2dc595b8725dd7ec705794df1dde74e0a2ea02651b8851",
+    "runs/20261115-c16-quantized-repair/test-guided-v1/driver/raw.jsonl": "d60d262c20d4c3c5bd309c594f16006891ab90b816f11403ab952a3e97021b5c",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/generation.json": "7f882007f1707df3465a5c89d864cf33f88069568dd2b8dfd10f470d9d84142b",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/000.request.json": "87d5a43bf1c68d26885d72a2e6e62ab98fbf2d33828ad33c692a289ab97aee01",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/000.response.json": "d0b968de1fe0570ce520cb8013e6bc00fa3bfe5686b7d20b17d98959fe0d5d11",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/001.request.json": "18850d0b962724ecd99b6ba6b417356804bb1317a030623c14adc04c716c0c6d",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/001.response.json": "5d37420104e4509b44675848326b58e47a51839e09fe53a0d8103a769f704551",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/002.request.json": "3adca3b1674d09172e490e1249a0f5c547ac64780b74c042fcab965d06f2f55a",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/002.response.json": "572db9ac44e93e982d0c6af954a5869881933c506766a5e9900e3a2a69776166",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/003.request.json": "acfd8c1de86ad14842975064079e101dbd78f59eedea989bda9277281b8cac39",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/003.response.json": "97b33b513d9feb916affaca2f6b2b404f0088e2f6884876ada265a1a3e3019aa",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/004.request.json": "bb7c50d97148a62c8a26f542dada84e337beacd34699ac73b9bfc22ffcd2466a",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/004.response.json": "ee288c7e08cd0943aa9f0169e4c61f8b794865cda529f839e67666b6c2cb4254",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/005.request.json": "fa641c1d46192cc856b54620756955c2d5614c8d1e2da46d51ce868ea8b661c3",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/005.response.json": "0a10375c828f2562f424d3390c06feb7e42ab225e3db9f3d177cd96ef9a6449a",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/006.request.json": "af999390f0b97330365c3ebd7ed2b657abec0431c91f4c8449a876750495ab67",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/006.response.json": "8af77331658086b2a0846c7ec9b6fbc8a7b627786cb8fa1ab6f7040861622b3b",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/007.request.json": "8a04c713d95d417250b76a269e9d1f78bac738923231ddbc40470e99ebebf28a",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/007.response.json": "ba76a14c88df1951675639a71f5f0e9efa45be3ef9e3e18a478d19f5bd269477",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/008.request.json": "c3853b0f61b03134eb8a82e1396b6a46e8ae43debfd0caae04d59c40eefda6ae",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/008.response.json": "07cabede5121c155d8494156df0da2df7b204f875d572728e31be8455b639ae6",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/009.request.json": "55806a1b6840a4077c6e576b4fe4b9419ae44129b4c02d856443613ba5b71652",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/009.response.json": "781c21a30d1065f4482c50cf90829618be0c96d49256160df7fd0160b570908e",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/010.request.json": "ec54a672da554839202f1e2d3ffc835460a293fad53848dc25e686b85e20412b",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/010.response.json": "d987a0df002b1780a9959e8acca5efbf8e7f064eba5a040837778605d8ab5be1",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/011.request.json": "09adc7293738dc1d99c180eb82a17e1dfe564e58d77fab4100c5b11c1c742fdc",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/011.response.json": "9247c3f58a7879d394d3f80f7a72a794f4a9ea6bcf112edb56815477cb6bffcf",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/012.request.json": "fc5e04a658278c19ff75e3a2139a79d22926771cfae0e4c5e570ff11b6808a75",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/012.response.json": "7d040c0ad80e67e968c1db30b3c1acb749c7097d4ee1141078f964722f638397",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/013.request.json": "47d16a2dca4cb71e63564c60bb4b58e030ba58682d85209af2ef3ab12a36314a",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/013.response.json": "972a13b3920fd7c67743873812af661c0af16019fd6e6d1720d40a49e193e0e0",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/014.request.json": "477a0054a62ce6c7586c1dcafd33a0beeb94540c6dde936bda3e4c7d2d369bce",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/014.response.json": "33bf36d48857f48710e9f9c6fc543b76b05ab656f2a315ccff485376a4b5ed40",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/015.request.json": "9b8ca4dff34bcd21d2ad32e93cf3718d329010d183e986dbbf49878db9cdaa23",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/http/015.response.json": "ca2a1b26fe4bcc6e8989f620eff3d8d459c548d9c45c14b025f64fc8bf5536b0",
+    "runs/20261115-c16-quantized-repair/test-initial-v1/driver/raw.jsonl": "81796dc3d9e1ed619965c6aa3608d4d544c3403a1e7bd9786c933b051a9a2e8f",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/generation.json": "6a9a46304a20fc3d4278632e1816b044aba69582a4030f18a577f6de997a1f1e",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/000.request.json": "235cbeac82139263ca2686aa70e5596c3e7a4dd911de2ed0468962669b40524c",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/000.response.json": "6ef26c4dc36c0d97f9b29ba642907608fb56c5566f2400e28e5e2686eaba7533",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/001.request.json": "23438fc3ba5b5a437c7066a8db8362671be26110af955986d4c96fd5a2e6b960",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/001.response.json": "e291dc126be3957b2a0cf405a01e95cfcf669553eff3297d6a67fd98e6fe09f0",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/002.request.json": "0d3d1e378a668f3d86c2fbe0d63b81a02c679e5859694fa10ca029f9afaf740c",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/002.response.json": "ced3b19c71f4afb513ac9bb4fa27f3ed5cd0e9b87b15c8dbd0d6afa64773858b",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/003.request.json": "65ecf1ce89faa858b58a3af20d6aa3113cf3e17f4d122b16e93122e7bb250efe",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/003.response.json": "5ab36a8ea1da48965ee59230fcbaf4171b5a8c56d8328db4b3a831c767e47d66",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/004.request.json": "0de6ce512cc2fec2f6903fa190a5c8d501f87eb3581f0f91937e1ae8c41706e2",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/004.response.json": "205b586fa7d7a2636e034aa906f34acab4a0e853e307cf93ad753379be3acf4e",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/005.request.json": "f4890fe7459828b018b329e0e9c861c3e5754a8db0794dee4d28145c75b867d2",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/005.response.json": "eb8d985af382314e62e32daff00be28898f4b22eca27e45bf96f0feae48b6a03",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/006.request.json": "6d3a823c5ca8286e58688b45fc488a89a50a6435a09d85b952d53bb6c1e7672b",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/006.response.json": "8fffb5346798de64f47e08b48bba1f48f26d87f2ae4fb7d2c332447d6a1fcde5",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/007.request.json": "901f798ec85a46d2d118b22473b40a1642b95905e60a66df7ab89c88ad8787f4",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/007.response.json": "6817ca85483b0e9bc86e130cfab1b0aa9e150054f2e13409354834a856767f0a",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/008.request.json": "a32b4f9f9a3bac217719fbe23d3f0a233bc6890be328ec3a7d7aeb9a04c5f7b7",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/008.response.json": "068fcb7c6c7a42ddf66b9646815a35210d07701353cc0dbf2274fffa83d47e90",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/009.request.json": "5bb31d9fc40cc5a54ec8bf8be5fbd9ea0f86af8050564b0fb5144a2be3635fdd",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/009.response.json": "d9596289b8dd9787b4149a26ecec8ad7bbae5fd102d13e35b43e86ac6d5679aa",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/010.request.json": "4de95e44a50980ecc5fcae69fb0ed6923650986dc278d6e76279de8c18c2702d",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/010.response.json": "19aa0b5385f408a24ed3f71effeabffe2810c0120c14ebcf210c71933895b068",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/011.request.json": "3069c17cd0aea235a84ca9437e8e1aa2554a39819660aadc8cec50edccbd7f5b",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/011.response.json": "d035a50a487228d010320986e9a373603f34a196e18ed63bdffcd8a06e4a8581",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/012.request.json": "af60fdb6c4432b34abc385d2fa7ddd5e6746d6ae6b75c5ce41dcd31c6ef5b9ce",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/012.response.json": "e9731287423147ac55a7b89913508bcd180fbe95899ea519e91d050d1e48ee14",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/013.request.json": "6fabeeb4fcbf0e0e64099eb188252b62e99bd69f584c4a30b0c83f231adff673",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/013.response.json": "99b1c65e6d2960e4989ead07931a735bfc01b948d2bb0c4cd0bc21817f2f290d",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/014.request.json": "97522ad0790142cd2096f870ae371e64150ab6b9626cf3c5415c3a815305b826",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/014.response.json": "5b1b11bee0d5808519a37602c20232e3ba01ef045805f97b7aff730fc10b34cb",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/015.request.json": "e8d1bf6b6319fec57a1f435fe27be4e110a62f94d214e5d112620329655fb78e",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/http/015.response.json": "00b03061261b665bf647e9bd9b4bc927438ff66d4d0d90929275d52040f72dc1",
+    "runs/20261115-c16-quantized-repair/test-self-v1/driver/raw.jsonl": "a7aa35b6b8747905a47af8cf4436ec616d5431c4233ee894fa253ff3855205dc",
+    "runs/20261115-c16-quantized-repair/test_cases.json": "d62f745775946817ed59b37d6e8f1e25bbbb24d9bdccd4e74ad95a7bd8c1429c"
+  }
+}

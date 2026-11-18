@@ -1,0 +1,19 @@
+{
+  "completed_self_calls": 13,
+  "completion_http_requests": 13,
+  "completion_http_responses": 13,
+  "next_call_not_attempted": true,
+  "never_attempted_ids": [
+    "7c800233c771",
+    "88a560c8b3f6",
+    "8c55da367b52",
+    "a7cee13741d7",
+    "caf531e5abc9",
+    "e6637cdda4dc",
+    "eca92fb0c776"
+  ],
+  "old_manifest": "runs/20261115-c19-instruct-repair/test-self-v2/manifest.json",
+  "old_manifest_sha256": "b3e71e22a42741c69753406abedad0e81be9e2cb227d0b2897252ab401c47de8",
+  "no_model_inputs_changed": true,
+  "resource_management": "bounded1800s background cleanup of old>=120s closed tmp_pack Git garbage, max20files/45s; refs and validobjects preserved; concurrent host load, not a latencybenchmark"
+}

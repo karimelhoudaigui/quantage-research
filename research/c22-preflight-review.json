@@ -1,0 +1,138 @@
+{
+  "status": "prospective_review_passed_for_two_development_probes",
+  "timestamp_utc": "2026-11-15T23:00:01.506211+00:00",
+  "scope": "Static source/diff/protocol review plus seven standalone prefix-predicate probes; no model, server, download, cleanup, tokenization or inference executed by reviewer.",
+  "artifacts": [
+    {
+      "path": "quantage/repair_patch_scale_inference.py",
+      "sha256": "ae99264343b27391d1d6201541abcb9a52ea55e86eb464ae934b9dc57c87e523"
+    },
+    {
+      "path": "quantage/repair_patch_tool_inference.py",
+      "sha256": "4f210d294e3de107cde9f52c3133ad652c7fe00df2957df864aead7c5256cee4"
+    },
+    {
+      "path": "quantage/repair_patch_tool_language.py",
+      "sha256": "ec0b66334b3fbac6ee2720f23d68450b1cd9b21c5d57c509260f9160c40359bc"
+    },
+    {
+      "path": "quantage/repair_trace_feedback.py",
+      "sha256": "8ae1576b3abd974d084e74816e02ccab36f490f72678d59577750f41660e82cc"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/protocol.md",
+      "sha256": "f3925def03f3699c0a023dde566fe953d01880abd58072d7c3d561c5559c49fc"
+    },
+    {
+      "path": "research/c22-model-candidate.md",
+      "sha256": "cad77ce2433b95d2a01eaca2bafa35a8c4473eaf22fa864c8d5e7a3c5aaeb007"
+    },
+    {
+      "path": "runs/20261115-c22-model-capacity/acquisition.json",
+      "sha256": "d692962887055660f422ed425e2e26e5adbbb1f9df71a27f8e59824df207fdbf"
+    }
+  ],
+  "guard": {
+    "status": "tightened_before_any_8B_completion",
+    "checks": [
+      {
+        "name": "closed_empty",
+        "expected": true,
+        "observed": true
+      },
+      {
+        "name": "no_assistant",
+        "expected": false,
+        "observed": false
+      },
+      {
+        "name": "open",
+        "expected": false,
+        "observed": false
+      },
+      {
+        "name": "nonempty",
+        "expected": false,
+        "observed": false
+      },
+      {
+        "name": "prefix_text",
+        "expected": false,
+        "observed": false
+      },
+      {
+        "name": "suffix_text",
+        "expected": false,
+        "observed": false
+      },
+      {
+        "name": "two_blocks",
+        "expected": false,
+        "observed": false
+      }
+    ],
+    "meaning": "No open generated thinking block or auxiliary reasoning request is admitted by this path; no claim about latent cognition."
+  },
+  "protocol": {
+    "max_new_guided_calls": 2,
+    "reused_initials": "same two old C21 development initial responses; no regeneration",
+    "max_output_tokens": 1024,
+    "diagnosis_ascii_character_cap": 768,
+    "context_tokens": 4096,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0,
+    "completion_seconds": 180,
+    "required_outer_runner_seconds": 480,
+    "startup_disk_reserve_GiB": 3,
+    "between_call_disk_reserve_GiB": 1
+  },
+  "acquisition": {
+    "status_reported": "completed",
+    "repository": "Qwen/Qwen3-8B-GGUF",
+    "commit": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "file": "Qwen3-8B-Q4_K_M.gguf",
+    "bytes_reported": 5027783488,
+    "sha256_expected": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "sha256_observed_in_acquisition": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "independent_full_GGUF_rehash_performed_by_reviewer": false,
+    "execution_driver_rehashes_full_bytes_before_server": true,
+    "runtime_tag": "b12359",
+    "runtime_commit": "b1b770d90d94cad9e9ea5b993bdbc383a522fb28"
+  },
+  "findings": [
+    {
+      "severity": "resolved_before_run",
+      "issue": "Original suffix predicate did not require assistant marker or forbid prefix text.",
+      "resolution": "Current explicit marker plus fullmatch of the entire final suffix closes the gap."
+    },
+    {
+      "severity": "scope",
+      "issue": "Module itself is generic over supplied cases and has1650s internal phase/1800s backup watchdog; caller must bind exactly2public cases and480s outer process-group runner."
+    },
+    {
+      "severity": "minor",
+      "issue": "One max_new_tokens ValueError says1..512 although the validated constant is1024; actual bound and recorded metadata are1024."
+    },
+    {
+      "severity": "provenance",
+      "issue": "copied_driver_sha256 denotes an older ancestor, so immediate C21/C22 source hashes above are the concrete comparison evidence."
+    }
+  ],
+  "limits": [
+    "No8GiB memory fit, latency, repair success or directionality result established.",
+    "This comparison changes checkpoint family/training/quantization as well as parameter count; no isolated capacity effect.",
+    "Old posthoc development errors are not a reserved test.",
+    "Candidate-row arithmetic is extra oracle-assisted diagnostic context, not target rows or a canonical patch."
+  ],
+  "next_action": "Root may run exactly the two protocol-authorized guided probes through a480s process-group runner, retaining all partials and checking the observed native suffix before each completion; stop on failure."
+}

@@ -1,0 +1,13 @@
+{
+  "dtype": "bfloat16",
+  "case_id": "q_00b3c53e4202843b",
+  "vocabulary_logits": 151936,
+  "finite_logits": 151936,
+  "nan_logits": 0,
+  "infinite_logits": 0,
+  "argmax_token_id": 4913,
+  "argmax_text": "{\"",
+  "wall_seconds": 21.231853625,
+  "generation_calls": 0,
+  "scope": "prefill diagnostic on same input, not model semantic performance"
+}

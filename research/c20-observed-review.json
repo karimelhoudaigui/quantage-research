@@ -1,0 +1,573 @@
+{
+  "status": "completed",
+  "checked_on": "2026-11-15",
+  "python": "3.9.6",
+  "independence": "Not independent of patch author or corpus author. Separate literal replay and finite predicates use no production patch parser/scorer imports. Prior C19 reviewer annotations/oracle reused.",
+  "bounds": {
+    "wall_timeout_seconds": 60,
+    "calls": 2,
+    "n": [
+      6,
+      4
+    ],
+    "max_assignments_per_cube": 64,
+    "new_model_or_solver_executions": 0
+  },
+  "checks_passed": 615,
+  "response_records": 2,
+  "actual_completion_http_pairs_checked": 2,
+  "recorded_solver_results_checked": 4,
+  "new_generation_cost": {
+    "responses": 2,
+    "input_tokens": 2352,
+    "output_tokens": 415,
+    "wall_seconds": 28.690225166999998,
+    "cpu_seconds": 0.03213100000000013
+  },
+  "historical_initial_plus_revision_cost": {
+    "responses": 4,
+    "input_tokens": 3711,
+    "output_tokens": 669,
+    "wall_seconds": 43.626980333,
+    "cpu_seconds": 0.060340000000000504
+  },
+  "generation_phase": {
+    "wall_seconds": 48.92513025,
+    "load_seconds": 19.017570959,
+    "client_cpu_seconds": 3.111328,
+    "server_cpu_seconds": 9.541885,
+    "cpu_seconds": 12.653213000000001,
+    "backend_requested": {
+      "cpu_threads": 4,
+      "device": "MTL0",
+      "gpu_layers": 99
+    },
+    "backend_observed": {
+      "device": "Metal",
+      "evidence_lines": [
+        "0.07.702.767 I load_tensors: offloaded 37/37 layers to GPU",
+        "0.07.710.940 I load_tensors:  MTL0_Mapped model buffer size =  2375.91 MiB"
+      ],
+      "offloaded_gpu_layers": 37,
+      "positive_metal_model_buffer": true,
+      "reported_total_layers": 37,
+      "scope": "loader tensor placement evidence, not a claim of GPU-only execution or memory fit"
+    },
+    "patch_interpretation": "literal_sequential_patch_v1_then_linear_constraint_strings_v2"
+  },
+  "resource_management": {
+    "wall_seconds": 5.38690025,
+    "cpu_self_seconds": 0.515121,
+    "cpu_children_seconds": 2.970689,
+    "scope": "old closed tmp_pack Git garbage cleanup only, before inference; refs unchanged"
+  },
+  "materialization_wall_seconds": 0.001766498999999963,
+  "verification_wall_seconds": 0.0011992079999999933,
+  "portfolio_seconds": 0.395571875,
+  "cases": [
+    {
+      "id": "29507bb778cc",
+      "n": 6,
+      "diagnosis": "The witness [0,1,0,0,0,1] violates the edge constraint [2,5] because x2=0 and x5=1, but edge [2,5] requires x2+x5<=1; however, in this case x2=0 and x5=1, which satisfies x2+x5<=1. The real issue is that the witness [0,1,0,0,0,1] violates the compulsory re",
+      "diagnosis_length": 256,
+      "edits": [
+        {
+          "index": 0,
+          "before": "x2+x5<=1",
+          "after": "x2+x5<=1",
+          "literal_change": false
+        },
+        {
+          "index": 1,
+          "before": "18*x0+29*x1+27*x2+37*x3+13*x4+13*x5<=74",
+          "after": "18*x0+29*x1+27*x2+37*x3+13*x4+13*x5<=74",
+          "literal_change": false
+        },
+        {
+          "index": 2,
+          "before": "x0+x1+x2+x3+x4+x5<=3",
+          "after": "x0+x1+x2+x3+x4+x5<=3",
+          "literal_change": false
+        },
+        {
+          "index": 3,
+          "before": "x1==1",
+          "after": "x1==1",
+          "literal_change": false
+        },
+        {
+          "index": 4,
+          "before": "x2==0",
+          "after": "x2==0",
+          "literal_change": false
+        }
+      ],
+      "authored_model_unchanged": true,
+      "candidate_domain_unchanged": true,
+      "before": {
+        "faithful": false,
+        "stage": "finite_cube",
+        "assignments": 64,
+        "feasibility_mismatches": 2,
+        "objective_mismatches": 0,
+        "reference_feasible_count": 6,
+        "proposed_feasible_count": 8,
+        "feedback": {
+          "kind": "counterexamples",
+          "witnesses": [
+            {
+              "kind": "feasibility",
+              "x": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "expected_feasible": false,
+              "proposed_feasible": true
+            },
+            {
+              "kind": "feasibility",
+              "x": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "expected_feasible": false,
+              "proposed_feasible": true
+            }
+          ]
+        },
+        "optimizer_set_equal": true,
+        "finite_optimization_equivalent": false,
+        "candidate_best": 129,
+        "candidate_optima": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "after": {
+        "faithful": false,
+        "stage": "finite_cube",
+        "assignments": 64,
+        "feasibility_mismatches": 2,
+        "objective_mismatches": 0,
+        "reference_feasible_count": 6,
+        "proposed_feasible_count": 8,
+        "feedback": {
+          "kind": "counterexamples",
+          "witnesses": [
+            {
+              "kind": "feasibility",
+              "x": [
+                0,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "expected_feasible": false,
+              "proposed_feasible": true
+            },
+            {
+              "kind": "feasibility",
+              "x": [
+                1,
+                1,
+                0,
+                0,
+                0,
+                1
+              ],
+              "expected_feasible": false,
+              "proposed_feasible": true
+            }
+          ]
+        },
+        "optimizer_set_equal": true,
+        "finite_optimization_equivalent": false,
+        "candidate_best": 129,
+        "candidate_optima": [
+          [
+            1,
+            1,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      },
+      "reference_optimum": 129,
+      "reference_optimal_masks": [
+        19
+      ],
+      "reference_feasible_count": 6,
+      "witness_evaluations": [
+        {
+          "x": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "expected_feasible": false,
+          "candidate_feasible": true,
+          "candidate_objective": 58,
+          "candidate_rows": [
+            {
+              "index": 0,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 1,
+              "lhs": 42,
+              "op": "<=",
+              "rhs": 74,
+              "satisfied": true
+            },
+            {
+              "index": 2,
+              "lhs": 2,
+              "op": "<=",
+              "rhs": 3,
+              "satisfied": true
+            },
+            {
+              "index": 3,
+              "lhs": 1,
+              "op": "==",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 4,
+              "lhs": 0,
+              "op": "==",
+              "rhs": 0,
+              "satisfied": true
+            }
+          ]
+        },
+        {
+          "x": [
+            1,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "expected_feasible": false,
+          "candidate_feasible": true,
+          "candidate_objective": 119,
+          "candidate_rows": [
+            {
+              "index": 0,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 1,
+              "lhs": 60,
+              "op": "<=",
+              "rhs": 74,
+              "satisfied": true
+            },
+            {
+              "index": 2,
+              "lhs": 3,
+              "op": "<=",
+              "rhs": 3,
+              "satisfied": true
+            },
+            {
+              "index": 3,
+              "lhs": 1,
+              "op": "==",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 4,
+              "lhs": 0,
+              "op": "==",
+              "rhs": 0,
+              "satisfied": true
+            }
+          ]
+        }
+      ],
+      "returned_solution_reference_feasible": true,
+      "returned_solution_reference_optimal": true,
+      "attributable_initial_plus_revision_cost": {
+        "responses": 2,
+        "input_tokens": 2011,
+        "output_tokens": 454,
+        "wall_seconds": 27.739668750000003,
+        "cpu_seconds": 0.0287980000000001
+      }
+    },
+    {
+      "id": "417127d82203",
+      "n": 4,
+      "diagnosis": "The witness [1,1,0,0] violates the edge constraint [x0+x3<=1] because x0=1 and x3=0, but x0=1 and x3=0 satisfies x0+x3<=1. However, the witness is marked as infeasible, which contradicts the original requirement that [1,3] is an incompatibility. The pair (",
+      "diagnosis_length": 256,
+      "edits": [
+        {
+          "index": 3,
+          "before": "x1+x3<=1",
+          "after": "x0+x3<=1",
+          "literal_change": true
+        }
+      ],
+      "authored_model_unchanged": false,
+      "candidate_domain_unchanged": true,
+      "before": {
+        "faithful": false,
+        "stage": "finite_cube",
+        "assignments": 16,
+        "feasibility_mismatches": 1,
+        "objective_mismatches": 0,
+        "reference_feasible_count": 2,
+        "proposed_feasible_count": 1,
+        "feedback": {
+          "kind": "counterexamples",
+          "witnesses": [
+            {
+              "kind": "feasibility",
+              "x": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "expected_feasible": true,
+              "proposed_feasible": false
+            }
+          ]
+        },
+        "optimizer_set_equal": false,
+        "finite_optimization_equivalent": false,
+        "candidate_best": 33,
+        "candidate_optima": [
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "after": {
+        "faithful": false,
+        "stage": "finite_cube",
+        "assignments": 16,
+        "feasibility_mismatches": 1,
+        "objective_mismatches": 0,
+        "reference_feasible_count": 2,
+        "proposed_feasible_count": 1,
+        "feedback": {
+          "kind": "counterexamples",
+          "witnesses": [
+            {
+              "kind": "feasibility",
+              "x": [
+                1,
+                1,
+                0,
+                0
+              ],
+              "expected_feasible": true,
+              "proposed_feasible": false
+            }
+          ]
+        },
+        "optimizer_set_equal": false,
+        "finite_optimization_equivalent": false,
+        "candidate_best": 33,
+        "candidate_optima": [
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "reference_optimum": 78,
+      "reference_optimal_masks": [
+        3
+      ],
+      "reference_feasible_count": 2,
+      "witness_evaluations": [
+        {
+          "x": [
+            1,
+            1,
+            0,
+            0
+          ],
+          "expected_feasible": true,
+          "candidate_feasible": false,
+          "candidate_objective": 78,
+          "candidate_rows": [
+            {
+              "index": 0,
+              "lhs": 2,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": false
+            },
+            {
+              "index": 1,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 2,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 3,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 4,
+              "lhs": 0,
+              "op": "<=",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 5,
+              "lhs": 1,
+              "op": "<=",
+              "rhs": 0,
+              "satisfied": false
+            },
+            {
+              "index": 6,
+              "lhs": 1,
+              "op": "==",
+              "rhs": 1,
+              "satisfied": true
+            },
+            {
+              "index": 7,
+              "lhs": 0,
+              "op": "==",
+              "rhs": 0,
+              "satisfied": true
+            },
+            {
+              "index": 8,
+              "lhs": 2,
+              "op": "<=",
+              "rhs": 2,
+              "satisfied": true
+            }
+          ]
+        }
+      ],
+      "returned_solution_reference_feasible": true,
+      "returned_solution_reference_optimal": false,
+      "attributable_initial_plus_revision_cost": {
+        "responses": 2,
+        "input_tokens": 1700,
+        "output_tokens": 215,
+        "wall_seconds": 15.887311582999999,
+        "cpu_seconds": 0.0315420000000004
+      }
+    }
+  ],
+  "input_sha256": {
+    "runs/20261115-c20-grounded-edits/probe_cases.json": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+    "runs/20261115-c19-instruct-repair/private_gold.review.json": "1775911ed0d9f7403b85a74768f6694b8e39ff00ee5db33df21d8eced737d192",
+    "research/c19-annotation-oracle/raw.json": "d67cf63fb01e427ffbca89530b025312127e8bbfb89c45fc5b599ec9cef2de6b",
+    "runs/20261115-c19-instruct-repair/test-feedback-v2/minimal.json": "7162bddf83622498e08638019e45c21ef1d81d350f2731c584f80720e8e32e9a",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/raw.jsonl": "ecb31751d0b51727cc7bf778263eb89ae63a8b17f2362cd039129d71ceb4cfdc",
+    "runs/20261115-c20-grounded-edits/probe-score-v1/raw.jsonl": "b97576eaeefd5ed340ff692157a0ca7db48b9a824afa92b812a202f91b8006de",
+    "runs/20261115-c20-grounded-edits/instructions.txt": "91c312b1c9116fbe685d7061e5fc5e8778b9c8c585d4722f9b90fb1ee675ac07",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/http/000.response.json": "c9e0f4c97a2dc353eeea43e8a1060685ffd3c840e973c3efc527c17be5fcf0e0",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/http/000.request.json": "1df52db870c06f5f0bcde20ddb56b4cfc260b00516865e1ed46ed04719fd8441",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/http/000.template.response.json": "2e0335f73735e46cbe2a980a3ecd57e61f939e06f3769baeeab1cf926bcc3a8c",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/http/000.template.request.json": "6364276350830354567927d587c328d08ef42b8d72ec88e6ab0a9220a21d7471",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/http/001.response.json": "a0bc1119dcfd63a981621b972619631ed129e72e6f9ca2dc37544f5a4088724e",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/http/001.request.json": "23d25930cd5f8097f2f08d38709d893dfbf496129f6695203094d72857d14cf7",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/http/001.template.response.json": "2bb105aa06657a62b0bbda1dc0207a9574966fd6aa921ff5c9c16efff9833823",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/http/001.template.request.json": "922ac5da604f99c2903aa4210fde46066b53b9ed598b0fd6a86cb1d4e2f7706d",
+    "runs/20261115-c20-grounded-edits/probe-score-v1/metrics.json": "90074949b4d512435016f29396973087e4744c34bc8d05a46ad4d94daf22c718",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/driver/generation.json": "fb914aecce85f193273ffdde943c5d693d1cff06dda41a206f81ad0e1055bc70",
+    "runs/20261115-c20-grounded-edits/resource-management.json": "c1035637a59a503a53f8d3a8aef9a60324f6096a2af239c4d5482e9410867768",
+    "runs/20261115-c20-grounded-edits/freeze-probe-v1.json": "bf286edb71113aa976b55fa75aad3429fdf384e61047870a9db7f15e2763eb68",
+    "scripts/run_c20_probe.py": "fe44870f2d64f4b78f969a0f6b29372b09caea6bffe26f7c8c65672064f8e1e0",
+    "scripts/continue_c19_comparison.py": "fdfe41dc24e3c09b17a89759ecf38fe672e8fbb42aa69783aaf9160efb9085a4",
+    "quantage/repair_patch_inference.py": "5e8afddfe5d366168757f2a62ecc624bcd141297561616eded882eb97a51946e",
+    "quantage/repair_patch_language.py": "69b2010c28b56f56e4d8b9c4d34445ac887f9edd5544dccef6fd51e6e8b9e4ab",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "tests/test_repair_patch.py": "b5f1b5bf36f2e82902a50c90aec20ef601bfb99d9e06f27f0fd9955374a44e29",
+    "runs/20261115-c20-grounded-edits/protocol.md": "fcaa04cc0337797220224a2816313f53d0c4e89776540da0812e42349ee5b60d",
+    "runs/20261115-c20-grounded-edits/implementation-notes.md": "a22b23a443c8f846310c5237a83b335c1cf2e6f5912efe3a40818f58bb16c274",
+    "runs/20261115-c19-instruct-repair/acquisition.json": "a528cc7bb876ba5e02084e9593c2bba0b997b053ebbdd92c12345b8cf197b0f6",
+    "runs/20261115-c20-grounded-edits/probe-guided-v1/manifest.json": "0b4bdc17a1b1ff5b09e46a295ae7a16842e1b0fedd8f58f4b4fd611822adefef",
+    "runs/20261115-c20-grounded-edits/probe-score-v1/manifest.json": "ac121e64446a89911340a880b94ae882d77696764eed864bd1530c176631c9a8"
+  },
+  "input_hashes_after_equal_before": true,
+  "audit_wall_seconds": 0.08390725,
+  "provenance": "Bounded inline Python3 -B stdlib check, SIGALRM60s. Reused research/c16-observed-audit.py only for independent AST/cube predicates; no production parser/scorer imports. Only this JSON and companion Markdown authorized, so no extra script/run directory created.",
+  "limits": [
+    "Two posthoc development probes, selected after C19 outcomes; no heldout or causal/generalization claim.",
+    "Both diagnoses reach the256ASCIIcharacter cap and end midphrase despite EOS below512tokens; diagnostic truth was not grammar-validated.",
+    "All observed edits are replace_constraint; this audit does not establish correctness of unused operations on arbitrary patches.",
+    "Runtime/checkpoint acquisition not rerun; chosen-token scores are pinned-API heuristics, not global grammar-conditioned probabilities.",
+    "CPU of cleanup recorded separately before inference; energy/full session/development/annotation cost remain unknown.",
+    "No C21 source, proposal or output read."
+  ],
+  "audit_helper_sha256": "3d8939f15bd201aba7b4228d30541600fcfeab0f081e71147b692c41d9a0c167",
+  "conclusion": {
+    "valid_patches": 2,
+    "faithful_after": 0,
+    "literal_noop_cases": [
+      "29507bb778cc"
+    ],
+    "domain_unchanged_cases": [
+      "29507bb778cc",
+      "417127d82203"
+    ],
+    "diagnoses_at_ascii_cap": 2,
+    "diagnostic_assessment": "Both first allege a violation of a row they subsequently acknowledge is satisfied; second confuses proposed-infeasible with the expected feasibility. No literal inequality0+1>1 was emitted.",
+    "development_only": true
+  }
+}

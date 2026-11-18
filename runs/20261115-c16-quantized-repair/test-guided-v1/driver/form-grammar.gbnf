@@ -1,0 +1,7 @@
+
+root ::= "{" ws "\"formulation\"" ws ":" ws "\"binary_ilp\"" ws "," ws "\"variables\"" ws ":" ws integers "," ws "\"sense\"" ws ":" ws "\"max\"" ws "," ws "\"objective\"" ws ":" ws integers "," ws "\"constraints\"" ws ":" ws strings "}" ws
+integers ::= "[" ws (integer ("," ws integer)*)? "]" ws
+integer ::= "-"? ("0" | [1-9] [0-9]*) ws
+strings ::= "[" ws (string ("," ws string)*)? "]" ws
+string ::= "\"" ([^"\\\x00-\x1F] | "\\" (["\\/bfnrt] | "u" [0-9a-fA-F]{4}))* "\"" ws
+ws ::= [ \t\n\r]{0,20}

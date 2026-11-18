@@ -1,0 +1,18 @@
+{
+  "result": {
+    "status": "abstain",
+    "stage": "semantic_veto",
+    "assessment": {
+      "passed": false,
+      "reasons": [
+        "unsupported, conflicting or unresolved clause"
+      ],
+      "scope": "bounded development veto, not universal semantic certification"
+    }
+  },
+  "raw_model_response": "{\n  \"action\": \"propose\",\n  \"task\": \"ideal_single_photon_probabilities\",\n  \"reason\": \"The task requires calculating ideal single-photon probabilities for two different modes (mode 0 and mode 1). The provided data includes the complex amplitude R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]], which can be used to apply R(a), exp(i*phi) on mode 1, and finally R(b). However, the task does not specify the input mode, so we cannot proceed without additional information.\"\n}",
+  "input_tokens": 439,
+  "output_tokens": 120,
+  "record_directory": "runs/20261113-c10-regression-release/cli-ambiguous-input",
+  "scope": "local research prototype, heuristic semantic veto, no QPU"
+}

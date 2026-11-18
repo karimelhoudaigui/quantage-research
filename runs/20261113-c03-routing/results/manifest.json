@@ -1,0 +1,156 @@
+{
+  "schema_version": 2,
+  "claim_id": "C03-ROUTING",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "-m",
+    "quantage.routingstudy",
+    "--cases",
+    "runs/20261113-c03-routing/cases.json",
+    "--policy",
+    "config/policy.json",
+    "--output",
+    "runs/20261113-c03-routing/results"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Measure documentary false acceptance of 20 labelled solver recommendations under three rule ablations.",
+    "coefficient_domain": "finite labelled proposals",
+    "conventions": "Accepting a conditional candidate is distinct from authorizing its execution.",
+    "inputs": [
+      "20 manually labelled proposals in cases.json"
+    ],
+    "bounds": {
+      "cases": 20
+    },
+    "non_claims": [
+      "No physical feasibility established",
+      "No account access tested",
+      "No LLM accuracy measured"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-13T11:28:11.577836+00:00",
+    "runtime_seconds": 0.048964,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/routing.py",
+    "quantage/routingstudy.py",
+    "runs/20261113-c03-routing/protocol.md",
+    "runs/20261113-c03-routing/cases.json",
+    "config/policy.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/__init__.py",
+      "sha256": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+      "sha256_after": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e"
+    },
+    {
+      "path": "quantage/routing.py",
+      "sha256": "ffb64bc9e517f5ba4e01e9e60b07d57ed75c6f6192716e44d543aab86cb902c1",
+      "sha256_after": "ffb64bc9e517f5ba4e01e9e60b07d57ed75c6f6192716e44d543aab86cb902c1"
+    },
+    {
+      "path": "quantage/routingstudy.py",
+      "sha256": "1a421aa36857cca4c3cb1e4271c52c2301ec21a1b2bf15c2afefcb16c292849a",
+      "sha256_after": "1a421aa36857cca4c3cb1e4271c52c2301ec21a1b2bf15c2afefcb16c292849a"
+    },
+    {
+      "path": "runs/20261113-c03-routing/protocol.md",
+      "sha256": "c1ba0a005b83cfeb88e7fc4918f34e75c0c24debad8de1bf8b185cc0a1b3f8ed",
+      "sha256_after": "c1ba0a005b83cfeb88e7fc4918f34e75c0c24debad8de1bf8b185cc0a1b3f8ed"
+    },
+    {
+      "path": "runs/20261113-c03-routing/cases.json",
+      "sha256": "2d3c6b77c102421f683d7dd049c5d7a348640899f11b6420ffc8c462c8f45ce3",
+      "sha256_after": "2d3c6b77c102421f683d7dd049c5d7a348640899f11b6420ffc8c462c8f45ce3"
+    },
+    {
+      "path": "config/policy.json",
+      "sha256": "bf40f7dc349b1e22468e14e4d31ce34f5e17c21f8e45459d71bb062e3fd0fc7b",
+      "sha256_after": "bf40f7dc349b1e22468e14e4d31ce34f5e17c21f8e45459d71bb062e3fd0fc7b"
+    }
+  ],
+  "output_directory": "runs/20261113-c03-routing/results",
+  "declared_results": [
+    "runs/20261113-c03-routing/results/raw.jsonl",
+    "runs/20261113-c03-routing/results/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c03-routing/results/stdout.txt",
+      "sha256": "7c916fdfb8adf98b40175ab489014f052e598b52a6037c9044591da6678be44c",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c03-routing/results/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c03-routing/results/raw.jsonl",
+      "sha256": "fb886bdeef56062ec97b89086acf4dfa4d7246e1837c8d29ec588a4aee746014",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c03-routing/results/metrics.json",
+      "sha256": "880c315d655b4fce2782c75bd38585e2fce5e12dcd8ac3b3f7b27e69728ac302",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "claim_id": "C11-FROZEN-TRANSFER",
+  "mathematics": {
+    "assertion_tested": "One actual local compact-contract proposal per public C11 request; no gold read, no score or hardware claim from generation",
+    "coefficient_domain": "JSON text and fixed float32 CPU checkpoint",
+    "conventions": "C09 instruction and v2 parser; greedy decoding, 128 new-token cap",
+    "inputs": [
+      "128 author/reviewer-annotated public requests, semantic groups disjoint from development"
+    ],
+    "bounds": {
+      "requests": 128,
+      "new_tokens": 128,
+      "input_tokens": 4096,
+      "internal_wall_seconds": 1650
+    },
+    "non_claims": [
+      "No semantic correctness inferred from parse success",
+      "No population inference",
+      "No physical run",
+      "Missing generations are not abstentions"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/c11_inference.py",
+    "quantage/compact_v2.py",
+    "quantage/compact_agent.py",
+    "quantage/core.py",
+    "quantage/contracts.py",
+    "quantage/verification.py",
+    "runs/20261113-c09-heldout-guard/instructions.md",
+    "runs/20261113-c11-frozen-transfer/public_cases.json",
+    "runs/20261113-c11-frozen-transfer/frozen-inputs.json",
+    "runs/20261113-c11-frozen-transfer/protocol.md",
+    "runs/20261113-c11-frozen-transfer/model-smol.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0"
+    },
+    {
+      "name": "transformers",
+      "version": "4.45.2"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "torch greedy deterministic seed (no sampling)",
+    "seed": 20261113
+  }
+}

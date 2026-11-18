@@ -1,0 +1,670 @@
+[
+  {
+    "id": "0d1fcab20bbf",
+    "language": "en",
+    "intention": "Determine the selected studies for file 0d1fcab20bbf. There are 7 options with indices 0 through 6. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. The sum of costs[i] over selected options must be at most 94, including equality. Selection of option 4 is conditional on selection of option 5. Selecting option 6 requires selecting option 3. At least 1 options must be selected in total. If option 2 is selected, option 1 must also be selected. Select no more than 3 options in total. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 7,
+      "weights": [
+        20,
+        56,
+        26,
+        51,
+        47,
+        36,
+        23
+      ],
+      "costs": [
+        30,
+        22,
+        13,
+        38,
+        28,
+        20,
+        34
+      ],
+      "edges": [
+        [
+          0,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "12d7d632fc5a",
+    "language": "fr",
+    "intention": "Déterminez le sous-ensemble des études pour le dossier 12d7d632fc5a. Il existe 7 possibilités, d'indices 0 à 6. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. Il est permis de choisir au plus 4 possibilités au total. Le nombre total de possibilités choisies doit être au moins 3. La sélection de la possibilité 4 requiert celle de la possibilité 2. La somme des coûts costs[i] des possibilités choisies doit être au plus 106, égalité autorisée. Choisir la possibilité 5 oblige à choisir aussi la possibilité 0. Si la possibilité 1 est retenue, la possibilité 3 doit également être retenue. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        38,
+        22,
+        22,
+        58,
+        43,
+        40,
+        55
+      ],
+      "costs": [
+        19,
+        22,
+        21,
+        38,
+        13,
+        27,
+        25
+      ],
+      "edges": [
+        [
+          1,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "1591c552ce60",
+    "language": "en",
+    "intention": "Assemble the set of missions for file 1591c552ce60. There are 7 options with indices 0 through 6. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. Selection of option 0 is conditional on selection of option 4. If option 4 is selected, option 0 must also be selected. Selecting option 6 requires selecting option 3. Option 2 is forbidden. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 7,
+      "weights": [
+        46,
+        53,
+        19,
+        59,
+        23,
+        30,
+        30
+      ],
+      "costs": [
+        17,
+        28,
+        21,
+        29,
+        14,
+        20,
+        18
+      ],
+      "edges": [
+        [
+          0,
+          5
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "29d2d2fc7ee8",
+    "language": "en",
+    "intention": "Choose the campaigns to retain for file 29d2d2fc7ee8. There are 6 options with indices 0 through 5. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. If option 1 is selected, option 3 must also be selected. Select no more than 4 options in total. Selecting option 3 requires selecting option 4. Selection of option 3 is conditional on selection of option 0. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 6,
+      "weights": [
+        55,
+        40,
+        42,
+        29,
+        53,
+        32
+      ],
+      "costs": [
+        28,
+        24,
+        31,
+        14,
+        19,
+        26
+      ],
+      "edges": [
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "2c5f03082098",
+    "language": "fr",
+    "intention": "Établissez la liste des expériences pour le dossier 2c5f03082098. Il existe 6 possibilités, d'indices 0 à 5. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. La somme des coûts costs[i] des possibilités choisies doit être au plus 105, égalité autorisée. La sélection de la possibilité 1 requiert celle de la possibilité 0. Choisir la possibilité 1 oblige à choisir aussi la possibilité 2. Si la possibilité 1 est retenue, la possibilité 3 doit également être retenue. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 6,
+      "weights": [
+        36,
+        19,
+        61,
+        58,
+        41,
+        49
+      ],
+      "costs": [
+        38,
+        27,
+        13,
+        27,
+        19,
+        16
+      ],
+      "edges": [
+        [
+          0,
+          5
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "3bb2d6807209",
+    "language": "fr",
+    "intention": "Planifiez les démonstrations retenues pour le dossier 3bb2d6807209. Il existe 7 possibilités, d'indices 0 à 6. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. Choisir la possibilité 5 oblige à choisir aussi la possibilité 1. Le nombre total de possibilités choisies doit être au moins 2. La possibilité 0 est interdite. La sélection de la possibilité 4 requiert celle de la possibilité 1. Il est permis de choisir au plus 4 possibilités au total. Si la possibilité 3 est retenue, la possibilité 2 doit également être retenue. La possibilité 6 doit être choisie. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        23,
+        55,
+        53,
+        54,
+        60,
+        33,
+        22
+      ],
+      "costs": [
+        23,
+        27,
+        13,
+        17,
+        31,
+        21,
+        25
+      ],
+      "edges": [
+        [
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "3f2da1e93197",
+    "language": "fr",
+    "intention": "Préparez le portefeuille de projets pour le dossier 3f2da1e93197. Il existe 6 possibilités, d'indices 0 à 5. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. La sélection de la possibilité 1 requiert celle de la possibilité 2. Si la possibilité 4 est retenue, la possibilité 5 doit également être retenue. Choisir la possibilité 2 oblige à choisir aussi la possibilité 4. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 6,
+      "weights": [
+        41,
+        18,
+        60,
+        38,
+        53,
+        55
+      ],
+      "costs": [
+        37,
+        34,
+        16,
+        38,
+        28,
+        35
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "4d46af430e6c",
+    "language": "fr",
+    "intention": "Arrêtez le programme des ateliers pour le dossier 4d46af430e6c. Il existe 6 possibilités, d'indices 0 à 5. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. Si la possibilité 0 est retenue, la possibilité 5 doit également être retenue. La sélection de la possibilité 2 requiert celle de la possibilité 0. Choisir la possibilité 5 oblige à choisir aussi la possibilité 2. La possibilité 3 doit être choisie. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 6,
+      "weights": [
+        27,
+        48,
+        29,
+        54,
+        18,
+        26
+      ],
+      "costs": [
+        27,
+        29,
+        20,
+        22,
+        29,
+        15
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "59cc26171df7",
+    "language": "fr",
+    "intention": "Fixez le portefeuille des propositions pour le dossier 59cc26171df7. Il existe 7 possibilités, d'indices 0 à 6. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. Si la possibilité 0 est retenue, la possibilité 6 doit également être retenue. La possibilité 1 est interdite. Il est permis de choisir au plus 3 possibilités au total. Choisir la possibilité 6 oblige à choisir aussi la possibilité 0. Le nombre total de possibilités choisies doit être au moins 2. La possibilité 2 doit être choisie. La sélection de la possibilité 4 requiert celle de la possibilité 5. La somme des coûts costs[i] des possibilités choisies doit être au plus 60, égalité autorisée. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        37,
+        45,
+        17,
+        43,
+        33,
+        50,
+        29
+      ],
+      "costs": [
+        13,
+        20,
+        18,
+        24,
+        36,
+        15,
+        14
+      ],
+      "edges": [
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "819b31e9501a",
+    "language": "fr",
+    "intention": "Sélectionnez les activités du dossier pour le dossier 819b31e9501a. Il existe 7 possibilités, d'indices 0 à 6. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. Choisir la possibilité 6 oblige à choisir aussi la possibilité 0. Si la possibilité 6 est retenue, la possibilité 5 doit également être retenue. La sélection de la possibilité 0 requiert celle de la possibilité 2. Le nombre total de possibilités choisies doit être au moins 3. La possibilité 3 doit être choisie. La somme des coûts costs[i] des possibilités choisies doit être au plus 136, égalité autorisée. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        60,
+        21,
+        55,
+        28,
+        40,
+        29,
+        47
+      ],
+      "costs": [
+        38,
+        23,
+        25,
+        15,
+        22,
+        28,
+        30
+      ],
+      "edges": [
+        [
+          2,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "8c8fdcd7b6dd",
+    "language": "en",
+    "intention": "Prepare a portfolio of projects for file 8c8fdcd7b6dd. There are 6 options with indices 0 through 5. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. Selecting option 0 requires selecting option 5. If option 4 is selected, option 1 must also be selected. Selection of option 5 is conditional on selection of option 4. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 6,
+      "weights": [
+        43,
+        37,
+        38,
+        53,
+        43,
+        22
+      ],
+      "costs": [
+        26,
+        15,
+        34,
+        18,
+        22,
+        15
+      ],
+      "edges": [
+        [
+          0,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "a06c02d2e5f5",
+    "language": "fr",
+    "intention": "Constituez le lot de missions pour le dossier a06c02d2e5f5. Il existe 7 possibilités, d'indices 0 à 6. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. Si la possibilité 5 est retenue, la possibilité 6 doit également être retenue. La possibilité 1 est interdite. La sélection de la possibilité 0 requiert celle de la possibilité 3. Choisir la possibilité 3 oblige à choisir aussi la possibilité 0. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        38,
+        24,
+        26,
+        34,
+        27,
+        46,
+        57
+      ],
+      "costs": [
+        38,
+        25,
+        20,
+        29,
+        14,
+        34,
+        22
+      ],
+      "edges": [
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "bc03e3d47a10",
+    "language": "fr",
+    "intention": "Choisissez les campagnes à retenir pour le dossier bc03e3d47a10. Il existe 6 possibilités, d'indices 0 à 5. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. La sélection de la possibilité 4 requiert celle de la possibilité 0. Si la possibilité 3 est retenue, la possibilité 4 doit également être retenue. Choisir la possibilité 4 oblige à choisir aussi la possibilité 1. Il est permis de choisir au plus 2 possibilités au total. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 6,
+      "weights": [
+        47,
+        21,
+        28,
+        46,
+        41,
+        38
+      ],
+      "costs": [
+        33,
+        35,
+        30,
+        35,
+        32,
+        14
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "c616c3b27d14",
+    "language": "en",
+    "intention": "Fix the portfolio of proposals for file c616c3b27d14. There are 7 options with indices 0 through 6. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. The sum of costs[i] over selected options must be at most 62, including equality. At least 2 options must be selected in total. Selection of option 1 is conditional on selection of option 0. Selecting option 4 requires selecting option 3. Select no more than 3 options in total. If option 0 is selected, option 1 must also be selected. Option 2 is forbidden. Option 5 must be selected. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 7,
+      "weights": [
+        59,
+        29,
+        32,
+        44,
+        32,
+        18,
+        33
+      ],
+      "costs": [
+        15,
+        13,
+        13,
+        15,
+        38,
+        13,
+        13
+      ],
+      "edges": [
+        [
+          5,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "c7b67c2417a6",
+    "language": "en",
+    "intention": "Finalize the schedule of workshops for file c7b67c2417a6. There are 6 options with indices 0 through 5. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. Selection of option 2 is conditional on selection of option 1. If option 1 is selected, option 0 must also be selected. Selecting option 0 requires selecting option 2. Option 5 must be selected. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 6,
+      "weights": [
+        49,
+        53,
+        46,
+        51,
+        21,
+        53
+      ],
+      "costs": [
+        15,
+        14,
+        23,
+        20,
+        22,
+        18
+      ],
+      "edges": [
+        [
+          0,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "c8e0347b6769",
+    "language": "en",
+    "intention": "Decide which interventions to support for file c8e0347b6769. There are 6 options with indices 0 through 5. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. Selection of option 3 is conditional on selection of option 2. Selecting option 1 requires selecting option 2. If option 0 is selected, option 2 must also be selected. At least 1 options must be selected in total. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 6,
+      "weights": [
+        32,
+        56,
+        39,
+        60,
+        56,
+        26
+      ],
+      "costs": [
+        13,
+        24,
+        36,
+        27,
+        20,
+        25
+      ],
+      "edges": [
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    }
+  },
+  {
+    "id": "d11c57a34450",
+    "language": "en",
+    "intention": "Plan the retained demonstrations for file d11c57a34450. There are 7 options with indices 0 through 6. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. Select no more than 4 options in total. Option 5 is forbidden. If option 6 is selected, option 1 must also be selected. At least 2 options must be selected in total. Selecting option 3 requires selecting option 0. Option 2 must be selected. Selection of option 4 is conditional on selection of option 1. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 7,
+      "weights": [
+        24,
+        35,
+        55,
+        28,
+        60,
+        41,
+        37
+      ],
+      "costs": [
+        15,
+        37,
+        17,
+        17,
+        29,
+        31,
+        26
+      ],
+      "edges": [
+        [
+          4,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "d394c4b72e6e",
+    "language": "fr",
+    "intention": "Décidez quelles interventions financer pour le dossier d394c4b72e6e. Il existe 6 possibilités, d'indices 0 à 5. Chaque variable x_i est binaire; x_i=1 signifie que la possibilité i est choisie. Maximiser la somme des valeurs weights[i] des possibilités choisies. Les données edges énumèrent les seules incompatibilités : pour chacune de ces paires, ses deux indices ne peuvent pas être choisis simultanément. Choisir la possibilité 2 oblige à choisir aussi la possibilité 1. Si la possibilité 0 est retenue, la possibilité 1 doit également être retenue. La sélection de la possibilité 3 requiert celle de la possibilité 1. Le nombre total de possibilités choisies doit être au moins 3. Ces restrictions sont exhaustives : ne pas ajouter de condition qui ne soit pas énoncée.",
+    "data": {
+      "n": 6,
+      "weights": [
+        23,
+        34,
+        22,
+        29,
+        54,
+        46
+      ],
+      "costs": [
+        23,
+        15,
+        37,
+        17,
+        39,
+        33
+      ],
+      "edges": [
+        [
+          1,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "d7da9a72a703",
+    "language": "en",
+    "intention": "Select the activities for review for file d7da9a72a703. There are 7 options with indices 0 through 6. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. Selection of option 1 is conditional on selection of option 0. If option 0 is selected, option 5 must also be selected. Option 2 must be selected. At least 5 options must be selected in total. Selecting option 1 requires selecting option 3. The sum of costs[i] over selected options must be at most 144, including equality. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 7,
+      "weights": [
+        57,
+        30,
+        47,
+        40,
+        51,
+        20,
+        55
+      ],
+      "costs": [
+        37,
+        21,
+        23,
+        31,
+        19,
+        32,
+        32
+      ],
+      "edges": [
+        [
+          2,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "id": "f62f0c0bce93",
+    "language": "en",
+    "intention": "Set the programme of experiments for file f62f0c0bce93. There are 6 options with indices 0 through 5. Every variable x_i is binary; x_i=1 means that option i is selected. Maximize the sum of weights[i] over the selected options. The edges data list the only incompatibilities: the two indices of each such pair cannot both be selected. Selection of option 3 is conditional on selection of option 1. If option 3 is selected, option 4 must also be selected. Selecting option 3 requires selecting option 0. The sum of costs[i] over selected options must be at most 81, including equality. These requirements are exhaustive: do not add any condition that is not stated.",
+    "data": {
+      "n": 6,
+      "weights": [
+        48,
+        27,
+        29,
+        51,
+        30,
+        18
+      ],
+      "costs": [
+        16,
+        32,
+        39,
+        14,
+        14,
+        35
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    }
+  }
+]

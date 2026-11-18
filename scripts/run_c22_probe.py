@@ -1,0 +1,22 @@
+"""Two prospective actual patch calls on explicitly reused development inputs."""
+import hashlib,json,resource,subprocess,sys,time
+from pathlib import Path
+from scripts import continue_c19_comparison as housekeeping
+ROOT=Path(__file__).resolve().parents[1];RUN=Path('runs/20261115-c22-model-capacity');OLD=Path('runs/20261115-c19-instruct-repair')
+# Housekeeping is outside the timed inference phase, with its own measured cost.
+housekeeping.RUN=RUN
+wall=time.perf_counter();before=resource.getrusage(resource.RUSAGE_SELF);children=resource.getrusage(resource.RUSAGE_CHILDREN)
+housekeeping.tidy()
+after=resource.getrusage(resource.RUSAGE_SELF);done=resource.getrusage(resource.RUSAGE_CHILDREN)
+cleanup={'wall_seconds':time.perf_counter()-wall,'cpu_self_seconds':after.ru_utime+after.ru_stime-before.ru_utime-before.ru_stime,'cpu_children_seconds':done.ru_utime+done.ru_stime-children.ru_utime-children.ru_stime,'scope':'old closed tmp_pack Git garbage cleanup only, before inference; refs unchanged'}
+(RUN/'resource-management.json').write_text(json.dumps(cleanup,indent=2)+'\n')
+a=json.loads((RUN/'acquisition.json').read_text());rt=Path('research/external/c16-public/runtime');model='research/external/c22-public/models/Qwen3-8B-Q4_K_M.gguf'
+art=['scripts/run_c22_probe.py','scripts/continue_c19_comparison.py','quantage/repair_patch_scale_inference.py','quantage/repair_patch_tool_language.py','quantage/repair_language.py','quantage/repair_model.py','quantage/repair_feedback.py','quantage/repair_trace_feedback.py','scripts/build_c21_feedback.py','tests/test_repair_patch.py',str(RUN/'protocol.md'),str(RUN/'probe_cases.json'),str(RUN/'instructions.txt'),'research/c22-preflight-review.json','research/c22-model-candidate.json',str(RUN/'storage-preparation.json'),str(RUN/'resource-management.json'),str(OLD/'instructions.frozen.txt'),str(OLD/'test-initial-v2/driver/raw.jsonl'),str(RUN/'feedback.json'),str(RUN/'acquisition.json'),model]+[str(rt/x['path']) for x in a['runtime_extraction']['files']]
+small=[p for p in art if not p.startswith('research/external/')]
+freeze=RUN/'freeze-probe-v1.json';assert not freeze.exists();freeze.write_text(json.dumps({'client_date':'2026-11-16','development_only':True,'cases':2,'new_guided_calls':2,'initial_resampled':False,'sha256':{p:hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in small}},indent=2)+'\n');art+=[str(freeze)]
+cp=RUN/'contract-probe-guided-v1.json';assert not cp.exists();cp.write_text(json.dumps({'claim_id':'C22-PATCH-DEV-PROBE','mathematics':{'assertion_tested':'Two actual1024-token diagnosis+literal-edits guided responses to previous wrong C19initials, now development only','coefficient_domain':'exact binary integer ILP; generic atomic edits; Q4_K_M LLM','conventions':'no gold/path in inference, no automatic coefficient/row repair; allnumbers/edits authored; candidate row tool adds no target coefficients; initialSHAID+1 sampler unchanged','inputs':[str(RUN/'probe_cases.json')],'bounds':{'cases':2,'max_output_tokens':1024,'context':4096,'completion_seconds':180,'runner_seconds':480},'non_claims':['Not heldout or confirmed gain','No isolated diagnosis/patch causal effect','NoQPU/spending']},'execution_artifacts':art,'software':[{'name':'Python','version':'3.9.6'},{'name':'llama.cpp','version':'b12359'}],'randomness':{'used':True,'generator':'per-ID SHA256 first8hex +1','seed':1}},indent=2)+'\n')
+out=RUN/'probe-guided-v1';cmd=[sys.executable,'/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/run_experiment.py','--root',str(ROOT),'--contract',str(cp),'--output',str(out),'--timeout','480','--max-threads','4']
+for p in art:cmd+=['--input',p]
+for p in ['raw.jsonl','generation.json','patch-schema.json','patch-grammar.gbnf','http/000.request.json','http/000.response.json','http/001.request.json','http/001.response.json']:cmd+=['--result',str(out/'driver'/p)]
+cmd+=['--',sys.executable,'-m','quantage.repair_patch_scale_inference','--cases',str(RUN/'probe_cases.json'),'--instructions',str(RUN/'instructions.txt'),'--initial-instructions',str(OLD/'instructions.frozen.txt'),'--initial',str(OLD/'test-initial-v2/driver/raw.jsonl'),'--feedback',str(RUN/'feedback.json'),'--phase','guided','--output',str(out/'driver'),'--server-binary',str(rt/'llama-b12359/llama-server'),'--model',model,'--acquisition',str(RUN/'acquisition.json'),'--execute']
+raise SystemExit(subprocess.call(cmd))

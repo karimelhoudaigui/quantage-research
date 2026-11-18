@@ -1,0 +1,20 @@
+{
+  "claim_id": "C15-STUDY-SOFTWARE-AUDIT",
+  "mathematics": {
+    "assertion_tested": "Hand-specified synthetic software fixtures give the expected selector decisions, exact discrepancy counts, strata, repairs/regressions and cost accounting.",
+    "coefficient_domain": "exact integer ILP domains; floating timing bookkeeping compared within standard isclose tolerance",
+    "conventions": "Four artificial n=2 cases; one infeasible; predetermined fake generations explicitly marked synthetic; no LLM executed.",
+    "inputs": ["Handwritten synthetic fixtures encoded in the audit script", "Production offline scorer, verifier, feedback helper and solvers"],
+    "bounds": {"cases": 4, "n": 2, "synthetic_record_count": 16},
+    "non_claims": ["No performance evidence", "No real H15 result", "No public held-out response inspected or generated"]
+  },
+  "execution_artifacts": [
+    "research/c15-study-audit.py",
+    "quantage/repair_study.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py"
+  ],
+  "software": [{"name": "computation Python", "version": "3.9.6"}, {"name": "SciPy", "version": "1.13.1"}, {"name": "NumPy", "version": "1.26.4"}],
+  "randomness": {"used": false, "generator": "", "seed": null}
+}

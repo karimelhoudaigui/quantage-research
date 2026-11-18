@@ -1,0 +1,8 @@
+{
+  "scope": "integrator review, candidate-only exact rows;3hand checks and2actual feedback constructions, no model call",
+  "hand_checks_passed": 3,
+  "cases": 2,
+  "no_target_coefficient_or_row_in_feedback": true,
+  "logical_flags_unchanged_from_C19": true,
+  "intervention_limits": "newgloss/rowtrace/outputcap/diagnosislength together, no causal attribution on2development cases"
+}

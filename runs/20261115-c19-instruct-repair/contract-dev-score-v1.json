@@ -1,0 +1,46 @@
+{
+  "claim_id": "C19-DEV-CAPACITY",
+  "mathematics": {
+    "assertion_tested": "Score8actual previous development records, no test or new calls",
+    "coefficient_domain": "exact integer ILP and float64milp",
+    "conventions": "Mixed2firstgrammar/6linear grammar, not uniform estimate;2real solvers for every valid candidate",
+    "inputs": [
+      "runs/20261115-c19-instruct-repair/dev_cases.json"
+    ],
+    "bounds": {
+      "cases": 8,
+      "max_tokens": 512,
+      "context": 4096
+    },
+    "non_claims": [
+      "Not test/generalization",
+      "Integrator self-score"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/repair_study_c19.py",
+    "quantage/repair_model.py",
+    "quantage/repair_language.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py",
+    "runs/20261115-c19-instruct-repair/dev-union-v1/driver/raw.jsonl",
+    "runs/20261115-c19-instruct-repair/dev_cases.json",
+    "runs/20261115-c16-quantized-repair/gold.json",
+    "runs/20261115-c19-instruct-repair/dev-union-v1/driver/generation.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

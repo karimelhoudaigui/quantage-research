@@ -1,0 +1,45 @@
+{
+  "claim_id": "C14-PRECISION-DIAGNOSTIC",
+  "mathematics": {
+    "assertion_tested": "Count finite/NaN/inf first-prompt prefill logits in bfloat16 CPU, no generated answer",
+    "coefficient_domain": "bfloat16 model forward, float32 diagnostic logits",
+    "conventions": "same first C14 sorted public case and instruction as failedfloat16; evaluation mode",
+    "inputs": [
+      "one public prompt, identical checkpoint"
+    ],
+    "bounds": {
+      "forward_passes": 1,
+      "generation_calls": 0
+    },
+    "non_claims": [
+      "No semantic performance measured",
+      "No universal numerical guarantee"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/c14_precision_probe.py",
+    "runs/20261113-c09-heldout-guard/instructions.md",
+    "runs/20261113-c14-model-scale/cases.json",
+    "runs/20261113-c14-model-scale/model-acquisition.json",
+    "runs/20261113-c14-model-scale/amendment-precision.md"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0"
+    },
+    {
+      "name": "transformers",
+      "version": "4.45.2"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  }
+}

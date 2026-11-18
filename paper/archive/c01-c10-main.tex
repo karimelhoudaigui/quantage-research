@@ -1,0 +1,338 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\title{Certificats de sortie, fidélité sémantique et admissibilité du solveur}
+\author{QuantAge -- document de travail}
+\date{13 novembre 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Nous construisons un banc déterministe pour étudier les contrôles d'une chaîne
+intention, problème, formulation et solveur. Deux familles, le MIS pondéré et
+l'interférométrie idéale à un photon, permettent de séparer compréhension du
+contrat, préservation des sorties et justification du solveur. Des expériences
+locales montrent les limites de contrôles faibles et du parsing par mots-clés.
+Après les baselines, C08--C09 évaluent 48 réponses réelles d'un petit LLM local, sur étapes séparées par groupes. Aucun SDK quantique ou QPU; compréhension LLM puis formulation déterministe. Nouveauté, généralisation agentique
+et avantage quantique ne sont pas établis.
+\end{abstract}
+
+\section{Question et travaux proches}
+Quelle est la portée d'un certificat sur la chaîne complète ?
+NL4Opt évalue déjà les entités et la représentation intermédiaire des problèmes
+d'optimisation \cite{nl4opt}; OptiMUS distingue extraction, formulation et code
+\cite{optimus}. Notre analyse est adjacente à ces travaux, sans revendication
+de nouveauté. La revue est ciblée, pas exhaustive. Les versions et sections
+consultées figurent dans \path{research/sources/index.json}.
+Les huit axes sont comparés dans \path{research/opportunity-map.md};
+deux bancs aux oracles peu coûteux sont retenus. La littérature spécialisée
+des six autres axes reste à approfondir.
+
+\section{Contrats et méthodes}
+La baseline stricte reçoit une intention contrôlée et des données JSON.
+Exactement deux phrases sont reconnues (voir \path{examples/});
+les champs et domaines sont validés, les inconnues provoquent une abstention.
+Ce parseur strict ne comprend pas le langage naturel général.
+Les bras LLM C08--C10 reçoivent un texte libre et les mêmes données
+structurées, puis proposent un contrat compact.
+La chaîne formule, vérifie les sorties et sélectionne un solveur local.
+La revue des propositions matérielles est un module évalué séparément,
+sans compilation physique. Fidélité de l'interprétation, certificat numérique
+d'une instance et admissibilité documentaire sont trois questions distinctes.
+
+Pour un graphe simple non orienté à poids entiers strictement positifs,
+le MIS maximise $\sum_i w_i x_i$ sous $x_i+x_j\leq1$ sur chaque arête,
+$x_i\in\{0,1\}$. La QUBO minimise
+\[
+ Q(x)=-\sum_i w_i x_i+P\sum_{(i,j)\in E}x_i x_j,
+ \qquad P=1+\max_i w_i .
+\]
+Chaque arête est comptée une fois. Retirer un sommet sélectionné ayant
+$d_i\geq1$ voisins sélectionnés change l'énergie de $w_i-Pd_i<0$.
+Tout minimiseur est donc indépendant; sur les indépendants, $Q$ est l'opposé
+du poids. Le cas non pondéré est classique \cite{lucas}; l'argument pondéré
+ci-dessus est direct.
+Sur $K_2$ avec $w_0=w_1=P=1$, les états $01$, $10$ et $11$ minimisent
+tous $Q=-1$: une borne non stricte peut laisser un optimum infaisable.
+
+Le contrat optique fait entrer un photon en mode 0 d'un circuit idéal
+à deux modes:
+\[
+ U=R(b)\operatorname{diag}(1,e^{i\phi})R(a),\qquad
+ R(t)=\begin{pmatrix}\cos t&-\sin t\\\sin t&\cos t\end{pmatrix}.
+\]
+Les angles sont en radians, sans pertes, bruit, post-sélection ou shots.
+La propagation d'amplitudes est comparée à l'oracle développé
+\[
+ p_0=\cos^2a\cos^2b+\sin^2a\sin^2b
+ -2\cos a\sin a\cos b\sin b\cos\phi,\qquad p_1=1-p_0,
+\]
+avec tolérance absolue $10^{-12}$.
+Notre $R(t)$ correspond à \texttt{BS.Ry(theta=2t)} dans Perceval 1.3,
+pas au composant par défaut \cite{components}. Traduction documentaire,
+sans exécution du SDK. Les hypothèses de source et de détection comptent
+au-delà du modèle idéal \cite{perceval}.
+
+Les références fortes sont l'énumération des sous-ensembles faisables et
+l'oracle optique analytique. Le glouton est une heuristique complémentaire.
+Les autres comparaisons sont déterministes: une seule solution/normalisation,
+identité syntaxique, revue de modalité/portée, parsing strict/mots-clés.
+Les mutations sont synthétiques, jamais des sorties LLM.
+
+\section{Protocole et résultats}
+Les expériences numériques possèdent un protocole antérieur au run, un contrat, des lignes
+brutes, des agrégats et un manifest v2: commandes, versions, commit,
+empreintes avant/après et durées. C07 conserve des manifestes d'acquisition et
+de smoke distincts. Base Git \texttt{fee83eb}, arbre modifié durant la campagne.
+C01--C04 utilisent Python 3.9.6 et sa bibliothèque standard, limite de
+60 secondes par expérience; les générations locales ultérieures ont des
+dépendances et budgets propres. Aucun entraînement.
+C01--C03 sont du développement; C04 gèle le moteur et change tailles, angles
+et textes. Le défi C04 est écrit par l'auteur connaissant le parseur et ses
+paires partagent les données numériques: pas un test aveugle.
+
+\begin{center}
+\begin{tabular}{l p{9cm}}
+Cycle & Résultat observé et claim\\ \hline
+C01 & 1199 évaluations MIS (1194 distinctes), 125 cas optiques.
+Tous les optima concordent; erreur optique maximale
+$2.22\times10^{-16}$ (C01-FINITE, C01-DISTINCT).\\
+C02 & 2225 mutations, dont 795 effectives.
+267 erreurs acceptées par contrôle faible; 0 par oracle complet
+(C02-CERTIFICATES).\\
+C03 & 20 recommandations, dont 14 non justifiées:
+13, puis 4, puis 0 fausses acceptations avec contrôles nom, modalité, portée.
+Six recommandations admissibles conservées (C03-ROUTING).\\
+C04 & 24 requêtes dont 12 équivalentes:
+strict, couverture 6/12 et 0/12 cas hors contrat acceptés;
+mots-clés, couverture 12/12 et 6/12 cas hors contrat acceptés
+(C04-SEMANTICS).\\ \hline
+\end{tabular}
+\end{center}
+
+C01 recense les 1099 graphes simples étiquetés de tailles 1 à 5 à poids
+unitaires, puis 100 graphes pondérés de tailles 2 à 6, seed 20261113.
+Cinq requêtes MIS se répètent. Les optima sont comparés sur 36346 états
+binaires. Le glouton est sous-optimal sur 4 évaluations, écart absolu maximal 2.
+La grille optique contient 125 triplets prescrits. Aucune inférence vers une
+population d'instances réelles.
+
+C02 emploie les graphes de tailles au plus 4 et les graphes pondérés de C01:
+sept mutations MIS et huit optiques. Le contrôle faible manque 90 erreurs MIS
+et 177 optiques sur 795 changements effectifs. Les 1430 autres propositions
+préservent les sorties et sont acceptées par l'oracle complet.
+Le zéro d'erreur de ce dernier dépend de l'oracle qui définit l'erreur,
+sans mesure indépendante de détection LLM.
+Constante, rescaling positif et phase globale peuvent préserver le contrat.
+Inverser les rotations, changer le signe de $\phi$ ou déplacer la phase sur
+l'autre mode conserve ici les probabilités: le certificat ne distingue
+pas les circuits ou amplitudes. Suffisance des contrôles faibles réfutée
+par contre-exemples (C02-WEAK-SUFFICES).
+
+C03 utilise des labels manuels: admissible signifie recommandation locale
+ou candidat conditionnel documenté, pas faisabilité physique établie.
+Une QUBO abstraite n'est pas automatiquement un programme Pasqal;
+les interactions dépendent de la géométrie \cite{register}, et Device
+n'est pas QPU \cite{hardware}. Simulation et acquisition distante restent
+distinctes chez Quandela \cite{computer}.
+Nationalité du fournisseur et lieu d'exécution sont distincts.
+Aucun droit de compte vérifié, aucune permission physique.
+SpinPulse n'est ni utilisé ni assimilé au bruit Pasqal.
+
+C04 utilise seed 20261114, trois MIS de tailles 7, 8, 8 et trois nouveaux
+triplets optiques. Le strict refuse les six paraphrases équivalentes.
+Les mots-clés acceptent six intentions changées, dont les sorties obtiennent
+néanmoins un certificat numérique après la mauvaise interprétation.
+Suffisance du certificat pour vérifier l'intention réfutée
+(C04-NUMERIC-SUFFICES).
+
+\section{Propositions externes et collecte réelle: C05--C06}
+L'audit distinct C05 trouve 23 acceptations de schéma invalides dans
+67 appels directs à l'ancien vérificateur: sens inconnu, indices Python
+négatifs ou booléens, métadonnées non finies ignorées.
+C05-LEGACY-EXTERNAL-SAFE est réfuté. Le CLI qui construit ses propres modèles
+refuse déjà six entrées invalides; aucun résultat C01--C04 n'est réfuté.
+La nouvelle frontière \path{quantage/contracts.py} valide problème, types,
+indices, enums, tolérance et métadonnées avant l'oracle fini. Elle rejette
+les 23 acceptations invalides et conserve 11 contrôles.
+Un auteur distinct vérifie 109 cas, dont 42 supplémentaires: 81 rejets de
+schéma, 4 rejets numériques et 24 acceptations attendues, sans divergence
+(C05-EXTERNAL-CONTRACT). Domaine QUBO externe entier; revue non aveugle,
+indépendance de modèle non établie; anciens fichiers hashés conservés.
+
+C06 contient 32 requêtes écrites par un autre rôle puis relues séparément
+avant candidats. Accord sur 31 actions; ambiguïté de direction du mot
+«optimiser» arbitrée en abstention, versions initiales conservées.
+Labels finaux: 19 contrats supportés et 13 abstentions.
+Strict: couverture 0/19, erreurs 0/13; mots-clés: couverture 9/19,
+erreurs 5/13, risque parmi les 14 acceptations 5/14.
+Les 14 sorties acceptées obtiennent un certificat numérique valide
+(C06-BASELINES-ONLY). Annotations d'agents, pas étude humaine aveugle.
+
+Deux tâches natives en contextes neufs ont échoué par quota avant réponse;
+le bras documenté n'est ensuite pas lancé. Zéro candidat natif évalué,
+aucune performance imputée aux bras absents. Cycle C06 \texttt{blocked}
+pour sa question centrale, malgré baselines locales exécutées.
+Prompts et échecs conservés dans \path{generation_record.json} du cycle.
+L'utilisateur autorise ensuite la recherche publique: C07 acquiert des archives
+et C08--C09 génèrent localement sous des protocoles distincts. Les archives ne
+remplacent pas les candidats natifs manquants. \path{quantage/agent_pipeline.py}
+et \path{quantage/evaluation.py} traitent les propositions enregistrées;
+les labels ne sont pas lus pendant leur exécution.
+
+\section{Ressources ouvertes: C07}
+Douze fichiers publics QCV et PQID-Bench sont acquis à commits fixes,
+avec licences et empreintes. L'archive Qwen2.5-Coder-7B de PQID contient
+70 enregistrements, 51 codes non vides liés aux payloads et 19 sans code;
+les 70 requêtes/réponses partagent trois hashes de liaison.
+Déclarations des auteurs sans authentification fournisseur; aucun code
+externe exécuté et aucun score QuantAge sur ces archives.
+Sources: \url{https://github.com/QuantBlockchain/quantum-circuit-vision} et
+\url{https://github.com/Elias-Abebe-Gasparini/PQID-Bench}.
+Un modèle distinct Qwen2.5-0.5B-Instruct, Apache-2.0, révision
+\texttt{7ae557604adf67be50417f59c2c2f167def9a775}, est acquis:
+9 fichiers, 999 602 607 octets, hash des poids Safetensors égal au LFS.
+Source: \url{https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct}.
+Smoke test CPU hors ligne réel: JSON ready=true, sans cas scientifique.
+Faisabilité locale seulement (C07-OPEN-RESOURCES), pas performance agentique.
+Le benchmark C08 préenregistre un agent hybride à contrat compact,
+formulation déterministe et référence locale; il ne rebaptise pas les bras
+natifs manquants C06.
+
+\section{Premier pilote local: C08}
+Avant génération, quatre premiers groupes lexicographiques par famille C06
+sont retenus: 16 cas, 8 par famille, 10 supportés et 6 hors contrat, sans filtrage
+sur labels. Aucun entraînement. Le LLM propose action, famille, tâche et raison;
+le contrôleur copie les données, formule et choisit une référence locale.
+Pas de génération de tous les coefficients ni compatibilité physique validée.
+Même checkpoint Qwen0.5B, CPU float32, 4 threads, torch 2.8.0,
+Transformers 4.45.2, seed 20261113, greedy, 192 nouveaux tokens maximum.
+32 réponses réelles avec messages, fins, tokens et temps; labels non lus.
+
+\begin{center}
+\begin{tabular}{lrrr}
+Méthode & Couverts /10 & Erreurs /6 & Risque parmi acceptations\\ \hline
+Strict &0&0&non défini\\
+Mots-clés &3&1&1/4\\
+Hybride sans dossier &5&2&2/7\\
+Hybride avec dossier &4&2&2/6\\ \hline
+\end{tabular}
+\end{center}
+Les deux mauvaises interprétations MIS de chaque bras obtiennent un certificat
+numérique valide. Les huit réponses photoniques de chaque bras portent
+family=mis et une tâche photonique; elles sont refusées, dont 5 supportées.
+Deux réponses MIS documentées utilisent une tâche inconnue. Contradictions de
+schéma conservées, pas nécessairement JSON syntaxiquement invalide.
+Aucune réparation; aucune abstention explicite parmi les réponses conformes.
+Les refus du contrôleur ne valent pas compréhension (C08-LOCAL-EVALUATED).
+
+Sur 16 paires, le dossier perd une acceptation correcte et ne corrige aucune
+mauvaise acceptation; 18 642 tokens d'entrée contre 8 146, 216.75 s de génération
+contre 152.76 s observées. Total 378.40 s avec chargement, 26 788 tokens d'entrée,
+2015 de sortie. Achat externe 0, coût machine/énergie/développement non mesuré;
+pas d'inférence statistique ou budget d'entrée égal.
+Le résultat négatif motive C09: schéma non redondant et veto textuel borné,
+sur groupes C06 non générés en C08. C08 est développement pour cette révision;
+pas fusion des deux étapes en test aveugle unique.
+
+\section{Groupes réservés et correction du prototype: C09--C10}
+C09 retire la famille redondante, garde le checkpoint et génère une réponse
+par requête sur les huit autres groupes C06: 16 cas, 9 supportés, 7 hors contrat.
+Schéma action/tâche/raison; mêmes propositions avec puis sans veto textuel
+borné fixé avant réponses, sans gold. Marqueurs de direction, poids,
+contraintes, observable, unités et phase, pas entailment universel.
+\begin{center}
+\begin{tabular}{lrrr}
+Méthode & Couverts /9 & Erreurs /7 & Risque\\ \hline
+Strict &0&0&non défini\\
+Mots-clés &6&4&4/10\\
+Hybride sans veto &7&3&3/10\\
+Même réponse avec veto &5&1&1/6\\ \hline
+\end{tabular}
+\end{center}
+Deux erreurs retirées et deux acceptations correctes perdues
+(C09-RESERVED-GUARD). L'entrée explicitement inconnue passe encore:
+la présence de mode 0 ne prouve pas son choix. La raison du LLM reconnaît
+l'information manquante, mais l'action propose l'exécution; le certificat
+numérique passe pour l'entrée choisie par défaut. Faux refus sur les synonymes
+\emph{greatest value} et \emph{distribution}.
+Avant veto, MIS 4/4 supportés et 2/4 hors contrat acceptés, photon 3/5 et 1/3;
+après, MIS 3/4 et 0/4, photon 2/5 et 1/3. Exécution des deux familles réelle,
+fiabilité générale non établie.
+16 générations complètes, 6 702 tokens d'entrée, 842 de sortie, 130.58 s avec
+chargement. Une abstention avec tâche non nulle est rejetée au schéma;
+aucune abstention conforme. Avant/après veto réutilise les mêmes générations.
+C08 et C09 diffèrent de cas: pas isolement causal de l'effet du schéma entre
+étapes. Groupes disjoints de génération, pas preuve d'absence de contamination
+pré-entraînement.
+
+C10 corrige après consultation: synonymes et entrée inconnue traités,
+mais v3 ouvre un objectif non résolu entre poids et nombre de sommets.
+Cette erreur reste archivée. V4 donne priorité à l'objectif non résolu:
+7/9 supportés et 0/7 hors contrat sur les mêmes propositions connues,
+deux refus de supportées (C10-DEVELOPMENT-V4). MIS 4/4 et 0/4,
+photon 3/5 et 0/3. \textbf{Régression de développement, pas nouveau test réservé.}
+Le résultat primaire C09 conserve son erreur.
+CLI final: intention JSON, vrai contrat LLM hors ligne, veto v4, copie des
+données, formulation, certificat et référence locale. Trois smokes connus
+reproduisent les textes et statuts attendus: distribution photonique acceptée,
+entrée et objectif inconnus refusés. Pas nouveaux cas indépendants ou preuve
+inter-matériels; raisons libres et compatibilité QPU non certifiées.
+
+\section{Limites, coût et suite}
+C01--C04 sont auto-revus; C05 a ensuite un auditeur distinct et C06 un
+auteur de corpus et un relecteur distincts de l’intégrateur. Même famille
+de modèle possible, état du projet visible: pas indépendance de modèle
+ni annotation humaine aveugle. Le quota interrompt de nouveau les candidats.
+Les zéros d'erreur sont limités aux jeux finis déclarés.
+Corpus synthétiques de convenance avec répétitions et paires:
+pas d'intervalle de confiance pour une population naturelle non définie,
+pas de score de confiance ou de calibration probabiliste.
+
+Les temps mesurent les processus locaux, pas le coût complet de conception,
+raisonnement, documentation ou session.
+C08--C09 disposent de 48 réponses locales sur 32 requêtes uniques dans 16 groupes; aucun job QPU ou achat externe; coût de session
+non mesuré. Les bras où le LLM propose tous les coefficients et la politique apprise
+restent non exécutés; seuls les contrats compacts hybrides sont évalués; reprise dans \path{research/blockers.json}.
+Source LaTeX synchronisée et relue mais aucun compilateur disponible,
+donc aucun PDF validé.
+
+Ressources et prototype disponibles. Prochain test: nouveaux groupes annotés
+séparément, v4 figé, sans correction après consultation. Tous les groupes C06
+sont maintenant développement pour les versions futures. Archives publiques:
+complément rétrospectif distinct. Comparer les mêmes sorties
+avant/après vérification, séparer fidélité de l'intention, sortie et portée
+matérielle, enregistrer modèle/version, tokens, latence et coût.
+Geler les textes par groupes sémantiques et réserver familles et tailles;
+ne pas entraîner sur C04 après consultation puis le présenter comme test.
+Revue indépendante du nouveau veto et des scores nécessaire dès quota disponible.
+Les modèles multiphotoniques et autres axes restent proposés.
+
+\begin{thebibliography}{9}
+\bibitem{nl4opt} R. Ramamonjison et al.
+NL4Opt Competition: Formulating Optimization Problems Based on Their
+Natural Language Descriptions. PMLR 220:189--203, 2023 (compétition 2022).
+\url{https://proceedings.mlr.press/v220/ramamonjison23a/ramamonjison23a.pdf}.
+\bibitem{optimus} A. AhmadiTeshnizi et al.
+OptiMUS-0.3: Using large language models to model and solve optimization
+problems at scale. arXiv:2407.19633v4, 26 juin 2026, sections 4 et 5.3.
+\url{https://arxiv.org/html/2407.19633v4}.
+\bibitem{lucas} A. Lucas. Ising formulations of many NP problems.
+Frontiers in Physics 2:5, 2014, section 4.2.
+\url{https://doi.org/10.3389/fphy.2014.00005}.
+\bibitem{perceval} N. Heurtel et al.
+Perceval: A Software Platform for Discrete Variable Photonic Quantum
+Computing. Quantum 7:931, 2023; arXiv:2204.00602v3.
+\url{https://arxiv.org/html/2204.00602}.
+\bibitem{components} Quandela. Perceval 1.3, Unitary Components,
+Beam Splitter conventions.
+\url{https://perceval.quandela.net/docs/v1.3/reference/components/unitary_components.html}.
+\bibitem{register} Pasqal. Pulser 1.8.0, Register and Rydberg-Atom Interactions.
+\url{https://docs.pasqal.com/pulser/v1.8.0/register/}.
+\bibitem{hardware} Pasqal. Pulser 1.8.0, Hardware specifications.
+\url{https://docs.pasqal.com/pulser/v1.8.0/hardware/}.
+\bibitem{computer} Quandela. Perceval 1.3, Computer.
+\url{https://perceval.quandela.net/docs/v1.3/reference/runtime/computer.html}.
+\end{thebibliography}
+\end{document}

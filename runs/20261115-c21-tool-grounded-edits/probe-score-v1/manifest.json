@@ -1,0 +1,211 @@
+{
+  "schema_version": 2,
+  "claim_id": "C21-DEV-TOOL-PATCH",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-m",
+    "quantage.repair_patch_tool_study",
+    "--output",
+    "runs/20261115-c21-tool-grounded-edits/probe-score-v1"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.13.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Replay2actual tool-grounded patches; ownrowtrace adds no target coefficients; finite cube and2real solvers per valid candidate",
+    "coefficient_domain": "exact binary integer ILP, float64HiGHS",
+    "conventions": "2posthoc development cases,1024cap differs fromprevious512, no isolatedcausalclaim",
+    "inputs": [
+      "runs/20261115-c21-tool-grounded-edits/probe_cases.json"
+    ],
+    "bounds": {
+      "cases": 2,
+      "new_calls": 0
+    },
+    "non_claims": [
+      "Not heldout",
+      "No gainconfirmation/generalization",
+      "NoQPU/spending"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T22:41:37.525713+00:00",
+    "runtime_seconds": 0.482261,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 120.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 4
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/repair_patch_tool_study.py",
+    "quantage/repair_patch_tool_language.py",
+    "quantage/repair_trace_feedback.py",
+    "quantage/repair_language.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py",
+    "runs/20261115-c21-tool-grounded-edits/probe_cases.json",
+    "runs/20261115-c21-tool-grounded-edits/instructions.txt",
+    "runs/20261115-c21-tool-grounded-edits/resource-management.json",
+    "runs/20261115-c21-tool-grounded-edits/feedback.json",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/raw.jsonl",
+    "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/generation.json",
+    "runs/20261115-c19-instruct-repair/gold.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/repair_patch_tool_study.py",
+      "sha256": "0fb9c6ec00495501bde4d6353e3ff19d0a609dee126fb2ac354d41241e632dd9",
+      "sha256_after": "0fb9c6ec00495501bde4d6353e3ff19d0a609dee126fb2ac354d41241e632dd9"
+    },
+    {
+      "path": "quantage/repair_patch_tool_language.py",
+      "sha256": "ec0b66334b3fbac6ee2720f23d68450b1cd9b21c5d57c509260f9160c40359bc",
+      "sha256_after": "ec0b66334b3fbac6ee2720f23d68450b1cd9b21c5d57c509260f9160c40359bc"
+    },
+    {
+      "path": "quantage/repair_trace_feedback.py",
+      "sha256": "8ae1576b3abd974d084e74816e02ccab36f490f72678d59577750f41660e82cc",
+      "sha256_after": "8ae1576b3abd974d084e74816e02ccab36f490f72678d59577750f41660e82cc"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "sha256_after": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/probe_cases.json",
+      "sha256": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3",
+      "sha256_after": "8fd6bce09815dbd72d0f1d4c863c4ca562e7d78a34ccbd859daa13bd87d157f3"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/instructions.txt",
+      "sha256": "c6a0e8a7e1d634d508ffb41a886ee033bd13eb49bd9d6c7356fd80c89a682538",
+      "sha256_after": "c6a0e8a7e1d634d508ffb41a886ee033bd13eb49bd9d6c7356fd80c89a682538"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/resource-management.json",
+      "sha256": "0a63d2e89a6dfe820d9c9fda3555e5b4577a2988ccff655d68f77eaaa2bd3a06",
+      "sha256_after": "0a63d2e89a6dfe820d9c9fda3555e5b4577a2988ccff655d68f77eaaa2bd3a06"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/feedback.json",
+      "sha256": "738e181f88fe027ba5b3e33a111f5f207e42635b6384eb9973f94958e2d8bfa9",
+      "sha256_after": "738e181f88fe027ba5b3e33a111f5f207e42635b6384eb9973f94958e2d8bfa9"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/raw.jsonl",
+      "sha256": "90b887b61b2a5b074139ca1ce17faf7dfc1b0853b5c1fdc52558643383aefc7d",
+      "sha256_after": "90b887b61b2a5b074139ca1ce17faf7dfc1b0853b5c1fdc52558643383aefc7d"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/probe-guided-v1/driver/generation.json",
+      "sha256": "8024856709f5da4796b8ece1615c7822cdb6b0472b0c4318053303e10b671b11",
+      "sha256_after": "8024856709f5da4796b8ece1615c7822cdb6b0472b0c4318053303e10b671b11"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/gold.json",
+      "sha256": "aed7b458522d9f4f1855c8412a78a5c4c9c0641facec56b3274238b1386dc483",
+      "sha256_after": "aed7b458522d9f4f1855c8412a78a5c4c9c0641facec56b3274238b1386dc483"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+      "sha256": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+      "sha256_after": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3"
+    }
+  ],
+  "output_directory": "runs/20261115-c21-tool-grounded-edits/probe-score-v1",
+  "declared_results": [
+    "runs/20261115-c21-tool-grounded-edits/probe-score-v1/raw.jsonl",
+    "runs/20261115-c21-tool-grounded-edits/probe-score-v1/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/probe-score-v1/stdout.txt",
+      "sha256": "66b4718e50758a0a3337dc87e2d769ccf616dca944c54999a6b27c92a7022417",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/probe-score-v1/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/probe-score-v1/raw.jsonl",
+      "sha256": "f5b87ffc58d03001b8b8bf30c1085ac778e4d198fc05ab1afcd61adcd7b143b8",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c21-tool-grounded-edits/probe-score-v1/metrics.json",
+      "sha256": "f086dcd984e987bc648f847883ebc0086f9b9863ed6858021287ee2d0c055173",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

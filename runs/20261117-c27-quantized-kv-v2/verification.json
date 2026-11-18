@@ -1,0 +1,189 @@
+{
+  "status": "verified",
+  "claim_id": "C27-Q8-KV-DEVELOPMENT-SECOND-REPAIR",
+  "scope": "one posthoc development case; not held-out evidence or a population estimate",
+  "case_id": "417127d82203",
+  "lineage": {
+    "initial_source": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+    "first_patch_source": "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/raw.jsonl",
+    "current_state_source": "runs/20261116-c24-second-repair/states.json",
+    "new_patch_source": "runs/20261117-c27-quantized-kv-v2/guided-round2-v1/driver/raw.jsonl",
+    "exact_literal_replay": true,
+    "new_initial_sampled": false
+  },
+  "verification": {
+    "initial_4b": {
+      "faithful": false,
+      "stage": "finite_cube",
+      "feedback": {
+        "kind": "counterexamples",
+        "witnesses": [
+          {
+            "kind": "feasibility",
+            "x": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "expected_feasible": true,
+            "proposed_feasible": false
+          }
+        ]
+      },
+      "assignments": 16,
+      "feasibility_mismatches": 1,
+      "objective_mismatches": 0,
+      "reference_feasible_count": 2,
+      "proposed_feasible_count": 1,
+      "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+    },
+    "after_first_8b_patch": {
+      "faithful": false,
+      "stage": "finite_cube",
+      "feedback": {
+        "kind": "counterexamples",
+        "witnesses": [
+          {
+            "kind": "feasibility",
+            "x": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "expected_feasible": true,
+            "proposed_feasible": false
+          }
+        ]
+      },
+      "assignments": 16,
+      "feasibility_mismatches": 1,
+      "objective_mismatches": 0,
+      "reference_feasible_count": 2,
+      "proposed_feasible_count": 1,
+      "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+    },
+    "before_c27": {
+      "faithful": false,
+      "stage": "finite_cube",
+      "feedback": {
+        "kind": "counterexamples",
+        "witnesses": [
+          {
+            "kind": "feasibility",
+            "x": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "expected_feasible": true,
+            "proposed_feasible": false
+          }
+        ]
+      },
+      "assignments": 16,
+      "feasibility_mismatches": 1,
+      "objective_mismatches": 0,
+      "reference_feasible_count": 2,
+      "proposed_feasible_count": 1,
+      "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+    },
+    "after_c27": {
+      "faithful": true,
+      "stage": "finite_cube",
+      "feedback": {
+        "kind": "no_counterexample",
+        "message": "No discrepancy on the finite cube. Preserve all model fields."
+      },
+      "assignments": 16,
+      "feasibility_mismatches": 0,
+      "objective_mismatches": 0,
+      "reference_feasible_count": 2,
+      "proposed_feasible_count": 2,
+      "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+    }
+  },
+  "final_solver_portfolio": {
+    "concordance": true,
+    "selected_solver": "enumeration_dfs",
+    "selected_solver_seconds": 5.287499516271055e-05,
+    "objective": 78,
+    "solution": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "solvers": [
+      {
+        "solver": "enumeration_dfs",
+        "status": "optimal",
+        "objective": 78,
+        "solution": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "all_optima": [
+          [
+            1,
+            1,
+            0,
+            0
+          ]
+        ],
+        "visited_leaves": 16,
+        "seconds": 5.287499516271055e-05
+      },
+      {
+        "solver": "scipy_highs_milp",
+        "status": "optimal",
+        "objective": 78,
+        "solution": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "raw_status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "time_limit_seconds": 2.0,
+        "raw_min_objective": -78.0,
+        "seconds": 0.7548302919894923
+      }
+    ],
+    "comparison_error": null,
+    "total_portfolio_seconds": 0.7549085000064224
+  },
+  "environment": {
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "platform": "macOS-26.2-arm64-arm-64bit",
+    "scipy": "1.17.1",
+    "command": "python scripts/audit_c27.py",
+    "started_at_utc": "2026-11-18T15:00:08.527320+00:00",
+    "model_invocations": 0,
+    "network_requests": 0
+  },
+  "input_sha256": {
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+    "runs/20261115-c22-model-capacity/probe-remaining-v3/driver/raw.jsonl": "0b7096d39bbc14a3d701bf4f380b60c9c952b4ca6f0b8a4e6162696117b5d9f2",
+    "runs/20261115-c19-instruct-repair/gold.json": "aed7b458522d9f4f1855c8412a78a5c4c9c0641facec56b3274238b1386dc483",
+    "runs/20261116-c24-second-repair/states.json": "16f9c2891fc91e9ce8b6ddfb24e53cdd52f8bd2585917346f97b8a43ced291cd",
+    "runs/20261116-c24-second-repair/public_case.json": "dbebf229d495ccfd49355c83fea2a0aff234b41bc9358a7425c00f20cf1e6696",
+    "runs/20261117-c27-quantized-kv-v2/guided-round2-v1/driver/raw.jsonl": "bcd01c13187a43bd8fee291ed1714c444542de51e5168bbccaf1b80cd2b1c10b",
+    "runs/20261117-c27-quantized-kv-v2/protocol.md": "c644cde4e5e5d99e03b60d64cfa2d169a2bcc36bccd071fc7c0edbcd17ea605e",
+    "runs/20261117-c27-quantized-kv-v2/freeze-round2-v1.json": "d1ad7d097428927952d9f12168ae1eb3316bb227f11d1e51bebac707089bfb8c",
+    "runs/20261117-c27-quantized-kv-v2/guided-round2-v1/manifest.json": "82b5173fc461438b4787ba7f24f523e013e99022816b18107d9a7f228eb61485",
+    "runs/20261117-c27-quantized-kv-v2/guided-round2-v1/driver/generation.json": "eea7876ef486821e1ade78aa62ddcb5a2abec8b9ff8b29238b0a7aed4a648f08"
+  },
+  "source_sha256": {
+    "scripts/audit_c27.py": "18aaaa6a1496de75e0e1b5733381895ec7113758d1ea6aafecf0332ada3cab5d",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_patch_tool_language.py": "ec0b66334b3fbac6ee2720f23d68450b1cd9b21c5d57c509260f9160c40359bc",
+    "quantage/repair_solvers.py": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+  }
+}

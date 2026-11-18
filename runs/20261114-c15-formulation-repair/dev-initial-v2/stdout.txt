@@ -1,0 +1,8 @@
+{"completed": 1, "phase": "initial", "id": "0b5d97a2", "valid_schema": false, "tokens": 138}
+{"completed": 2, "phase": "initial", "id": "31d8b6f0", "valid_schema": true, "tokens": 114}
+{"completed": 3, "phase": "initial", "id": "68c1e9b4", "valid_schema": false, "tokens": 156}
+{"completed": 4, "phase": "initial", "id": "7d139ac8", "valid_schema": false, "tokens": 168}
+{"completed": 5, "phase": "initial", "id": "9e2a4c71", "valid_schema": false, "tokens": 126}
+{"completed": 6, "phase": "initial", "id": "a7f03d2c", "valid_schema": false, "tokens": 139}
+{"completed": 7, "phase": "initial", "id": "c2b7460d", "valid_schema": false, "tokens": 118}
+{"completed": 8, "phase": "initial", "id": "f40a8e53", "valid_schema": false, "tokens": 149}

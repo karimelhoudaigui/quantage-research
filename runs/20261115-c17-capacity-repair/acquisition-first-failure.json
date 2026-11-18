@@ -1,0 +1,8 @@
+{
+  "source_record": "acquisition.json",
+  "observed_parent_exit": 1,
+  "stage": "disk reserve assertion before download",
+  "model_calls": 0,
+  "original_record_incomplete_status": "running",
+  "continuation": "old public cache verified and evicted; separate acquisition-v2 directory; no model output retry"
+}

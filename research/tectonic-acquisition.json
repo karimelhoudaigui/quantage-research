@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-15",
+  "tag": "tectonic@0.17.0",
+  "url": "https://github.com/tectonic-typesetting/tectonic/releases/download/tectonic%400.17.0/tectonic-0.17.0-aarch64-apple-darwin.tar.gz",
+  "archive_sha256": "a3f1cac7c5678f01661a92212f58480ae3b0634115d880dbc59e2953ded45667",
+  "archive_bytes": 21704674,
+  "binary_sha256": "b52b5a730e2b0b33087304f7720f649603953f270a6b1c88bb031e1ae01f7f9c",
+  "elapsed_seconds": 4.815198916,
+  "release_metadata": "research/tectonic-release.json",
+  "scope": "official release binary; one selected regular tar member extracted locally; no system installation",
+  "cache_env": "TECTONIC_CACHE_DIR will point inside workspace"
+}

@@ -1,0 +1,12 @@
+{
+  "rule": "first two lexicographic IDs, no generation scores",
+  "ids": [
+    "080d034c34b2",
+    "4e0256180e89"
+  ],
+  "planned_calls": 2,
+  "remaining_development_initials": 6,
+  "max_new_tokens": 384,
+  "max_input_tokens": 2048,
+  "max_call_seconds": 180
+}

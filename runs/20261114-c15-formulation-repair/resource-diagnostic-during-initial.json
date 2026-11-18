@@ -1,0 +1,9 @@
+{
+  "client_date": "2026-11-15",
+  "recorded_utc_host": "2026-11-15T13:12:30.955100+00:00",
+  "command": [
+    "vm_stat"
+  ],
+  "raw_output": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                3329.\nPages active:                             70452.\nPages inactive:                           63388.\nPages speculative:                         6231.\nPages throttled:                              0.\nPages wired down:                        145811.\nPages purgeable:                              0.\n\"Translation faults\":               14925998379.\nPages copy-on-write:                  166848728.\nPages zero filled:                   2145006900.\nPages reactivated:                   5133385701.\nPages purged:                         308466116.\nFile-backed pages:                        52662.\nAnonymous pages:                          87409.\nPages stored in compressor:             3013984.\nPages occupied by compressor:            197089.\nDecompressions:                      7499939432.\nCompressions:                        7861999081.\nPageins:                              574199862.\nPageouts:                               7441035.\nSwapins:                              785256720.\nSwapouts:                             802729668.\n",
+  "scope": "observational host resource diagnostic during bounded test initial inference; cumulative counters are not deltas or an energy/cost measurement; no other process altered"
+}

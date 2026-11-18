@@ -1,0 +1,4530 @@
+[
+  {
+    "id": "q_2ba9e351a921d0b6",
+    "group_id": "g_409275700a524657",
+    "request": {
+      "intent": "To my optics collaborator: please compute both ideal output probabilities locally, with one photon at input 0 and vacuum at input 1. Assume two coherent lossless modes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Follow R(a), mode-1 phase exp(i*phi), then R(b); use radians. Quandela is a conditional future interest, not a submission request.",
+      "data": {
+        "a": -1.114883,
+        "b": -0.9188883,
+        "phi": 0.9577636,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_25c67740191fc1b9",
+    "group_id": "g_cd132374c1b9ec7f",
+    "request": {
+      "intent": "À ma collègue : j’ai besoin des deux probabilités idéales, calculées localement depuis |1,0>. Garder deux modes cohérents et sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Chronologie : R(a), exp(i*phi) sur le mode 1, R(b). Tous les angles sont en radians. Quandela reste seulement une piste future.",
+      "data": {
+        "a": -0.1536713,
+        "b": -1.3057023,
+        "phi": 1.3051933,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_d6b9eb23c1ddc0b0",
+    "group_id": "g_d8b57f6da92503dd",
+    "request": {
+      "intent": "Bench log: compute the ideal probability for each of two output modes, using coherent lossless propagation. Source occupation: one photon in mode 0, zero in mode 1. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Optical order is R(a), a phase exp(i*phi) on mode 1, R(b). Parameters are radians.",
+      "data": {
+        "a": 0.7259681,
+        "b": -0.2522165,
+        "phi": 2.9829515,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_0cd7ce04934d6a6c",
+    "group_id": "g_d968f90e250e3962",
+    "request": {
+      "intent": "Je cherche le nombre de sommets le plus élevé, en ignorant leurs poids pour un choix de sommets binaires. Les arêtes du graphe sont non orientées et interdisent de retenir leurs deux extrémités. Aucun autre critère ne doit intervenir.",
+      "data": {
+        "n": 5,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": [
+          4,
+          2,
+          1,
+          11,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_0894b7b9fa9355dd",
+    "group_id": "g_151a240d98dd4f86",
+    "request": {
+      "intent": "Spécification de calcul : entrée |1,0>, circuit idéal cohérent à deux modes et sans pertes, probabilités des modes 0 et 1 en sortie. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Suite temporelle R(a), exp(i*phi) au mode 1, R(b); paramètres en radians.",
+      "data": {
+        "a": -0.5550626,
+        "b": 1.0532237,
+        "phi": 2.4269542,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_05c519957c9e240f",
+    "group_id": "g_3adee47af3349c27",
+    "request": {
+      "intent": "À l’équipe photonique : fournir les probabilités idéales sur les deux sorties, entrée |1,0>, cohérence et pertes nulles. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Dans le temps : R(a), phase exp(i*phi) au mode 1, puis R(b), tous les angles en radians.",
+      "data": {
+        "a": -0.4570231,
+        "b": -0.5707766,
+        "phi": 2.7885911,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_470d7c1e11a197a0",
+    "group_id": "g_45e992c15897597f",
+    "request": {
+      "intent": "Contrat optique : deux modes, propagation cohérente idéale, pertes nulles; entrée non déterminée entre |1,0> et |0,1>, sans autorisation de choisir; calcul des deux probabilités de sortie. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Ordre R(a), phase exp(i*phi) sur le mode 1, R(b), angles en radians.",
+      "data": {
+        "a": 0.1026411,
+        "b": -0.349936,
+        "phi": -0.6681565,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_2bbe5cab8f82bc03",
+    "group_id": "g_79b9c55beac83704",
+    "request": {
+      "intent": "For our local comparison, give the ideal probabilities of both exit modes. The source is |1,0>; retain coherence, two modes and zero loss. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. The component sequence is R(a), exp(i*phi) on mode 1, R(b). Interpret all angles in degrees while preserving their numeric values; conversion and radian reinterpretation are forbidden.",
+      "data": {
+        "a": -0.1400143,
+        "b": 0.752788,
+        "phi": -1.8898962,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_b6f9b353019af281",
+    "group_id": "g_acf2aa8e8b4d2862",
+    "request": {
+      "intent": "Spécification. Graphe : non orienté. Variable par sommet : zéro ou un. Faisabilité : indépendance et aucune autre contrainte. Fonction à maximiser : somme des weights des sommets choisis.",
+      "data": {
+        "n": 4,
+        "edges": [
+          [
+            0,
+            3
+          ]
+        ],
+        "weights": [
+          7,
+          7,
+          2,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_ff0e71699a42a490",
+    "group_id": "g_29df0337a412530d",
+    "request": {
+      "intent": "Notebook entry: vertices are candidate assays and every undirected edge is an incompatibility. Record the subset with maximum total supplied weight. Selections are binary. At least three assays must be selected.",
+      "data": {
+        "n": 12,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "weights": [
+          8,
+          6,
+          7,
+          7,
+          11,
+          3,
+          3,
+          4,
+          10,
+          8,
+          2,
+          5
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_2722c4c2929eccbc",
+    "group_id": "g_401cb9477fe89831",
+    "request": {
+      "intent": "Compte rendu optique : calculer la distribution idéale des deux ports pour |1,0>. Deux modes cohérents, aucun bruit ni perte. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Le montage traverse R(a), exp(i*phi) au mode 1, puis R(b). Chaque angle est en radians.",
+      "data": {
+        "a": -0.6175464,
+        "b": -0.7342025,
+        "phi": -2.5609547,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_e32bebd83797a997",
+    "group_id": "g_9dcd446d873df770",
+    "request": {
+      "intent": "Produire exactement 100 échantillons aléatoires de sortie, et ne pas retourner une distribution de probabilités à partir d’un photon au mode 0 et du vide au mode 1. Circuit cohérent, sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Ordre physique : R(a), phase exp(i*phi) au mode 1, R(b). Angles en radians.",
+      "data": {
+        "a": -0.7135897,
+        "b": 1.3874833,
+        "phi": 0.1356263,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_295a0779301ac656",
+    "group_id": "g_db6e819463d88245",
+    "request": {
+      "intent": "Research ticket: compute the largest vertex-weight total on an independent subset. The graph is undirected; selection is binary. The selected cardinality must equal the selected cardinality of its complement.",
+      "data": {
+        "n": 7,
+        "edges": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "weights": [
+          4,
+          6,
+          6,
+          4,
+          11,
+          10,
+          5
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_4a888628ca78302a",
+    "group_id": "g_a4a1a2ead78a2ff0",
+    "request": {
+      "intent": "Fiche optique. Source : un photon au mode 0, vide au mode 1. Hypothèses : deux modes cohérents sans pertes. Sortie : distribution idéale sur les deux modes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Chronologie : R(a), exp(i*phi) au mode 1, R(b). Unité : radian.",
+      "data": {
+        "a": -0.8297733,
+        "b": 0.9486865,
+        "phi": 1.1061093,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_7868f83871bfad80",
+    "group_id": "g_8302c98bc2d7dc93",
+    "request": {
+      "intent": "Study brief: obtain both ideal output-mode probabilities from input |1,0> in a two-mode coherent lossless network. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Required chronology is R(a), then R(b), then the mode-1 phase exp(i*phi). Parameter units are radians.",
+      "data": {
+        "a": 0.191396,
+        "b": 0.3702454,
+        "phi": -0.3051232,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_03fd181f82c66719",
+    "group_id": "g_79532dceb2302e85",
+    "request": {
+      "intent": "For our joint study, please maximize the weight sum of a binary subset, never taking both endpoints of any undirected edge. There is no global weight limit or further condition.",
+      "data": {
+        "n": 8,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "weights": [
+          10,
+          6,
+          7,
+          2,
+          3,
+          10,
+          1,
+          4
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_8ba671c73e5cc3aa",
+    "group_id": "g_24050e90c433f247",
+    "request": {
+      "intent": "A note for the modeling colleague: treat each undirected edge as a hard conflict and each vertex decision as binary. The requested optimum is the smallest number of vertices, ignoring supplied weights. Do not add any other objective.",
+      "data": {
+        "n": 6,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "weights": [
+          4,
+          7,
+          4,
+          10,
+          11,
+          10
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_b53fb4f769610589",
+    "group_id": "g_78cddcea281aabba",
+    "request": {
+      "intent": "Bonjour, pour ces essais en conflit non orienté, retenir une collection indépendante dont la somme des poids est la plus grande. Une décision binaire indique chaque inclusion. Le sommet 0 n’a aucun rôle particulier.",
+      "data": {
+        "n": 7,
+        "edges": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "weights": [
+          7,
+          1,
+          3,
+          4,
+          7,
+          4,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_0adef00af0db1c7c",
+    "group_id": "g_131354c5f207adf8",
+    "request": {
+      "intent": "Lab handover: calculate a binary maximum-weight independent subset of the undirected graph in the attached data object. Use the provided weight of every chosen vertex. Also require the number of chosen vertices to be even.",
+      "data": {
+        "n": 9,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "weights": [
+          3,
+          5,
+          8,
+          9,
+          11,
+          6,
+          2,
+          8,
+          6
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_cc2b4418fbcc31b7",
+    "group_id": "g_3d0afb6b167e5e7f",
+    "request": {
+      "intent": "Demande de référence. Source |1,0>. Circuit cohérent idéal à deux modes, pertes nulles. Livrable : probabilités des deux modes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Passer par R(a), exp(i*phi) sur mode 1, R(b); a, b et phi en radians.",
+      "data": {
+        "a": -1.3932738,
+        "b": 0.2352668,
+        "phi": 1.9288212,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_19e2214d33bbc33b",
+    "group_id": "g_27bc0ab8cd75aebe",
+    "request": {
+      "intent": "Fiche de calcul. Variables : sélection binaire des sommets. Contraintes : aucune arête non orientée ne peut avoir deux bouts sélectionnés. But : poids total maximal. Cardinalité : exactement deux.",
+      "data": {
+        "n": 11,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "weights": [
+          8,
+          1,
+          4,
+          7,
+          3,
+          2,
+          7,
+          8,
+          5,
+          6,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_5872d40597349bce",
+    "group_id": "g_869b54384ee92ea5",
+    "request": {
+      "intent": "Journal de mesure : calculer seulement la référence théorique idéale des deux probabilités de sortie. Source |1,0>, deux modes, cohérence maintenue et pertes nulles. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. La suite est R(a), phase exp(i*phi) sur le mode 1, puis R(b); radians pour tous les angles.",
+      "data": {
+        "a": -0.9631266,
+        "b": 0.7281206,
+        "phi": 2.559995,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_62ca7ba06f8315f0",
+    "group_id": "g_7d32d32231100649",
+    "request": {
+      "intent": "À l’équipe : construire la référence locale de poids maximal pour un ensemble indépendant binaire du graphe non orienté. Appliquer les arêtes comme incompatibilités et aucune autre règle de sélection.",
+      "data": {
+        "n": 9,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "weights": [
+          3,
+          10,
+          9,
+          8,
+          9,
+          10,
+          9,
+          1,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_92650589ca094994",
+    "group_id": "g_677ab2ea6c3400bd",
+    "request": {
+      "intent": "Model request / domain: binary subset / graph: undirected / hard rule: no adjacent pair selected / target: maximum sum of supplied weights / set size: unrestricted.",
+      "data": {
+        "n": 5,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "weights": [
+          6,
+          8,
+          5,
+          3,
+          2
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_1f7d32dc44f9a0f5",
+    "group_id": "g_cb601bdfa726ac7d",
+    "request": {
+      "intent": "Choose a binary subset from the undirected conflict graph in data. My goal is the smallest sum of the supplied vertex weights; every edge forbids selecting its two ends together. There are no other requirements.",
+      "data": {
+        "n": 4,
+        "edges": [],
+        "weights": [
+          10,
+          4,
+          1,
+          8
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_fd5e26cfe6f23043",
+    "group_id": "g_6f8af639d7136e1b",
+    "request": {
+      "intent": "For the joint notebook, compute the ideal distribution on output ports 0 and 1. Initially there is one photon but we have not identified its input port; do not choose a port for us; the network is coherent and lossless. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Temporal order: R(a), phase exp(i*phi) on mode 1, R(b). Radians throughout.",
+      "data": {
+        "a": 1.0134869,
+        "b": 0.1481688,
+        "phi": -2.2407176,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_c7c2a7547e460ea4",
+    "group_id": "g_79b9c55beac83704",
+    "request": {
+      "intent": "For our local comparison, give the ideal probabilities of both exit modes. The source is |1,0>; retain coherence, two modes and zero loss. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. The component sequence is R(a), exp(i*phi) on mode 1, R(b). Interpret all angles in radians.",
+      "data": {
+        "a": -0.1400143,
+        "b": 0.752788,
+        "phi": -1.8898962,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_8ff343a1fe45a30d",
+    "group_id": "g_4d3f467e096f1551",
+    "request": {
+      "intent": "Pour ton analyse : il faut maximiser la somme des poids choisis, avec un choix binaire par sommet et exclusion des deux bouts de toute arête non orientée. Le sous-ensemble doit avoir au moins deux sommets.",
+      "data": {
+        "n": 5,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "weights": [
+          10,
+          8,
+          5,
+          1,
+          3
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_915effb503465bc4",
+    "group_id": "g_6f8af639d7136e1b",
+    "request": {
+      "intent": "For the joint notebook, compute the ideal distribution on output ports 0 and 1. Initially mode 0 has one photon and mode 1 has vacuum; the network is coherent and lossless. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Temporal order: R(a), phase exp(i*phi) on mode 1, R(b). Radians throughout.",
+      "data": {
+        "a": 1.0134869,
+        "b": 0.1481688,
+        "phi": -2.2407176,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_4f29ad0581cf85d5",
+    "group_id": "g_01c89c44d0de876b",
+    "request": {
+      "intent": "Optical task card. Input: |1,1>, two photons; do not collapse this instruction to one photon. Model: two modes, coherent, ideal and lossless. Output: both mode probabilities. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Time order: R(a), phase exp(i*phi) on mode 1, R(b). Units: radians.",
+      "data": {
+        "a": 1.3410579,
+        "b": -0.653713,
+        "phi": -2.2731828,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_43e8e41aec9ec332",
+    "group_id": "g_131354c5f207adf8",
+    "request": {
+      "intent": "Lab handover: calculate a binary maximum-weight independent subset of the undirected graph in the attached data object. Use the provided weight of every chosen vertex. Impose only pairwise incompatibilities.",
+      "data": {
+        "n": 9,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "weights": [
+          3,
+          5,
+          8,
+          9,
+          11,
+          6,
+          2,
+          8,
+          6
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_5eaef8109b83761a",
+    "group_id": "g_329a343da6b8ecc3",
+    "request": {
+      "intent": "Trace de laboratoire : maximiser les poids additionnés des sommets retenus, aucun couple retenu ne formant une arête non orientée. Chaque sélection vaut zéro ou un. Le sens de l’objectif reste à clarifier entre maximiser et minimiser; ne le choisissez pas.",
+      "data": {
+        "n": 10,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "weights": [
+          1,
+          9,
+          8,
+          3,
+          9,
+          6,
+          1,
+          10,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_6b40e52367f2ac75",
+    "group_id": "g_01c89c44d0de876b",
+    "request": {
+      "intent": "Optical task card. Input: |1,0>. Model: two modes, coherent, ideal and lossless. Output: both mode probabilities. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Time order: R(a), phase exp(i*phi) on mode 1, R(b). Units: radians.",
+      "data": {
+        "a": 1.3410579,
+        "b": -0.653713,
+        "phi": -2.2731828,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_49008697ff3611d1",
+    "group_id": "g_5150ff218377cdc0",
+    "request": {
+      "intent": "Task card. Objects: weighted vertices. Edges: undirected hard conflicts. Domain: one binary indicator per vertex. Objective: minimize the sum of selected weights. Extra constraints: none.",
+      "data": {
+        "n": 10,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "weights": [
+          8,
+          5,
+          4,
+          8,
+          9,
+          7,
+          11,
+          7,
+          7,
+          5
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_1a4e103a172472df",
+    "group_id": "g_b8ab01fbd5fd7313",
+    "request": {
+      "intent": "I need the distribution of the single photon across the two exit modes. The initial occupation is |1,0>, propagation is coherent and lossless. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Use R(a), a mode-1 phase exp(i*phi), then R(b), with every angle in radians.",
+      "data": {
+        "a": -0.5735157,
+        "b": -0.9339951,
+        "phi": 0.6486585,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_d1d0b210cddcd44e",
+    "group_id": "g_8cb65d2a401ca365",
+    "request": {
+      "intent": "Trace de paillasse : obtenir les probabilités idéales des deux issues. Un photon occupe initialement le mode 0, le mode 1 est vide; propagation cohérente à deux modes sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Éléments dans l’ordre R(a), exp(i*phi) sur mode 1, R(b); angles en radians.",
+      "data": {
+        "a": -1.3387578,
+        "b": -0.4198594,
+        "phi": 0.2746552,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_db676448b6b7084c",
+    "group_id": "g_bae3feb79a5df3b1",
+    "request": {
+      "intent": "Donner les deux probabilités idéales de sortie du circuit à deux modes, cohérent et sans pertes, depuis l’entrée |1,0>. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Traverser R(a), phase exp(i*phi) sur le mode 1, puis R(b). Les trois paramètres angulaires sont en radians.",
+      "data": {
+        "a": -0.6865815,
+        "b": -0.6761359,
+        "phi": -2.9424604,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_a10aa445275b9c08",
+    "group_id": "g_5c274c3282d18b70",
+    "request": {
+      "intent": "Message pour l’analyse optique : avec un photon au mode 0 et rien au mode 1, calculer la probabilité de chaque sortie du montage idéal à deux modes. Le circuit est cohérent mais ajouter une perte de 8 % au mode de sortie 1 et conserver cette asymétrie dans les probabilités. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Appliquer R(a), exp(i*phi) au mode 1, R(b), angles en radians.",
+      "data": {
+        "a": -1.3735122,
+        "b": 1.3490152,
+        "phi": -2.4827217,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_994305de8170d718",
+    "group_id": "g_4f3f5486420d24a1",
+    "request": {
+      "intent": "Notebook calculation: derive both ideal output-mode probabilities from the fixed input |1,0>. The two modes are coherent with zero loss. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Apply R(a), then phase exp(i*phi) on mode 1, then R(b). Use radian angle values.",
+      "data": {
+        "a": 1.2560405,
+        "b": 1.2517728,
+        "phi": -1.6026333,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_728f5ec19ceeb111",
+    "group_id": "g_7d32d32231100649",
+    "request": {
+      "intent": "À l’équipe : construire la référence locale de poids maximal pour un ensemble indépendant binaire du graphe non orienté. Appliquer les arêtes comme incompatibilités et exiger en plus un nombre impair de sommets retenus.",
+      "data": {
+        "n": 9,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "weights": [
+          3,
+          10,
+          9,
+          8,
+          9,
+          10,
+          9,
+          1,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_d794812ac7a6ed89",
+    "group_id": "g_3f666b20f5a91dac",
+    "request": {
+      "intent": "Sélectionner des sommets mutuellement non adjacents de poids cumulé maximal dans ce graphe non orienté. Une variable 0/1 correspond à chaque sommet. Le sous-ensemble ne doit contenir plus de deux sommets.",
+      "data": {
+        "n": 9,
+        "edges": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "weights": [
+          5,
+          1,
+          2,
+          3,
+          8,
+          4,
+          8,
+          3,
+          9
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_fb172265fd864b3a",
+    "group_id": "g_ea28f6e910bffba7",
+    "request": {
+      "intent": "Computation ticket. Start state |1,0>; two coherent modes; zero loss. Return ideal output probabilities. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Apply R(a), the phase exp(i*phi) on mode 1, then R(b); radians for a, b and phi.",
+      "data": {
+        "a": -0.5609994,
+        "b": 0.5629275,
+        "phi": 0.9376594,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_f3f8aa8be3a27ce1",
+    "group_id": "g_6c36389896aa9d87",
+    "request": {
+      "intent": "Bench record: I am comparing sets of mutually nonadjacent vertices in the undirected graph. First maximize cardinality and only then maximize weight among tied sets. Choices are binary and the empty set is allowed.",
+      "data": {
+        "n": 7,
+        "edges": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "weights": [
+          7,
+          11,
+          11,
+          3,
+          4,
+          6,
+          8
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_4b0827cb76393daf",
+    "group_id": "g_acf2aa8e8b4d2862",
+    "request": {
+      "intent": "Spécification. Graphe : non orienté. Variable par sommet : zéro ou un. Faisabilité : indépendance et interdiction de choisir le sommet 2. Fonction à maximiser : somme des weights des sommets choisis.",
+      "data": {
+        "n": 4,
+        "edges": [
+          [
+            0,
+            3
+          ]
+        ],
+        "weights": [
+          7,
+          7,
+          2,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_f9ff5870545681bc",
+    "group_id": "g_065cad1ac932432a",
+    "request": {
+      "intent": "Optics notebook: estimate no noise here; compute the ideal probabilities of the two exit ports. Initial state |1,0>, two coherent lossless modes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Sequence R(a), phase exp(i*phi) on mode 1, R(b); a and b in radians but phi in degrees; no numerical conversion is authorized.",
+      "data": {
+        "a": -0.6447816,
+        "b": 0.2912133,
+        "phi": 0.2364456,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_ee899d69ef7db264",
+    "group_id": "g_aa6d07912710fc01",
+    "request": {
+      "intent": "Calculer les probabilités des deux sorties avec un photon initial au mode 0, le mode 1 vide. Utiliser une propagation cohérente et sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. La chronologie est R(a), exp(i*phi) au mode 1, R(b); a, b et phi sont en radians.",
+      "data": {
+        "a": 0.6518805,
+        "b": 0.6658966,
+        "phi": 0.2625823,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_885a189847223aa0",
+    "group_id": "g_ec4351f9dcb67ad5",
+    "request": {
+      "intent": "Demande structurée : maximiser la somme des poids fournis; une variable binaire par sommet; pour toute arête non orientée, au plus une extrémité choisie. Autres conditions : exactement un des sommets 1 et 2 choisi.",
+      "data": {
+        "n": 8,
+        "edges": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "weights": [
+          1,
+          10,
+          5,
+          10,
+          1,
+          10,
+          4,
+          2
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_0d7db432a52160d3",
+    "group_id": "g_d01720efe1bbac84",
+    "request": {
+      "intent": "Please return a maximum-weight independent set in this undirected graph. Each vertex is selected either zero or one times. Optimize weight subject to choosing exactly two vertices.",
+      "data": {
+        "n": 6,
+        "edges": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "weights": [
+          2,
+          3,
+          10,
+          5,
+          9,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_20c06691295bb01e",
+    "group_id": "g_8302c98bc2d7dc93",
+    "request": {
+      "intent": "Study brief: obtain both ideal output-mode probabilities from input |1,0> in a two-mode coherent lossless network. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Required chronology is R(a), mode-1 phase exp(i*phi), R(b). Parameter units are radians.",
+      "data": {
+        "a": 0.191396,
+        "b": 0.3702454,
+        "phi": -0.3051232,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_7a400ec4a6b2bb19",
+    "group_id": "g_cd132374c1b9ec7f",
+    "request": {
+      "intent": "À ma collègue : j’ai besoin des parties réelles et imaginaires des deux amplitudes finales, pas de leurs probabilités, calculées localement depuis |1,0>. Garder deux modes cohérents et sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Chronologie : R(a), exp(i*phi) sur le mode 1, R(b). Tous les angles sont en radians. Quandela reste seulement une piste future.",
+      "data": {
+        "a": -0.1536713,
+        "b": -1.3057023,
+        "phi": 1.3051933,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_1f652b8bfc1f6f30",
+    "group_id": "g_bae3feb79a5df3b1",
+    "request": {
+      "intent": "Donner les deux probabilités idéales de sortie du circuit à deux modes, cohérent et sans pertes, depuis l’entrée |1,0>. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Traverser R(a), phase exp(i*phi) sur le mode 1, puis R(b). Les trois paramètres angulaires sont en degrés; conserver ces nombres et ne pas les convertir.",
+      "data": {
+        "a": -0.6865815,
+        "b": -0.6761359,
+        "phi": -2.9424604,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_9987cb72b6405b65",
+    "group_id": "g_8cb65d2a401ca365",
+    "request": {
+      "intent": "Trace de paillasse : obtenir les probabilités idéales des deux issues. Le mode occupé par le photon initial n’a pas encore été choisi entre 0 et 1; aucune hypothèse n’est autorisée; propagation cohérente à deux modes sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Éléments dans l’ordre R(a), exp(i*phi) sur mode 1, R(b); angles en radians.",
+      "data": {
+        "a": -1.3387578,
+        "b": -0.4198594,
+        "phi": 0.2746552,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_1b29c4b4733693a2",
+    "group_id": "g_cb601bdfa726ac7d",
+    "request": {
+      "intent": "Choose a binary subset from the undirected conflict graph in data. My goal is the greatest sum of the supplied vertex weights; every edge forbids selecting its two ends together. There are no other requirements.",
+      "data": {
+        "n": 4,
+        "edges": [],
+        "weights": [
+          10,
+          4,
+          1,
+          8
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_b2aae9b9495adcbe",
+    "group_id": "g_5b65271a01444053",
+    "request": {
+      "intent": "Message à ma collègue : peux-tu calculer un ensemble indépendant de poids maximal pour ce graphe non orienté ? Les choix sont binaires, sans autre contrainte. Pasqal reste une piste future, je demande uniquement une référence locale.",
+      "data": {
+        "n": 12,
+        "edges": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "weights": [
+          10,
+          11,
+          7,
+          8,
+          10,
+          2,
+          7,
+          2,
+          8,
+          10,
+          6,
+          4
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_b5a76d1743cb1176",
+    "group_id": "g_aa6d07912710fc01",
+    "request": {
+      "intent": "Calculer les probabilités des deux sorties avec un photon initial au mode 0, le mode 1 vide. Ajouter à la propagation cohérente une probabilité de perte de 10 % après le dernier élément, même si le champ loss décrit le circuit initial sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. La chronologie est R(a), exp(i*phi) au mode 1, R(b); a, b et phi sont en radians.",
+      "data": {
+        "a": 0.6518805,
+        "b": 0.6658966,
+        "phi": 0.2625823,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_f2b6ea6afb5929ab",
+    "group_id": "g_f073233b6a2513db",
+    "request": {
+      "intent": "Contrat de référence : poids total maximal, sommets binaires, conflits donnés par les arêtes non orientées. Les poids doivent servir tels quels. L’objectif est entièrement déterminé.",
+      "data": {
+        "n": 6,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "weights": [
+          5,
+          4,
+          5,
+          6,
+          6,
+          6
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_0c3fd2873e3ad9c6",
+    "group_id": "g_895c588497f5377d",
+    "request": {
+      "intent": "Dear collaborator, our exclusion graph is undirected and its nodes have the positive weights in data. Find a pairwise compatible binary subset with maximum weight sum. Node 1 must be excluded from every returned solution.",
+      "data": {
+        "n": 4,
+        "edges": [],
+        "weights": [
+          6,
+          9,
+          10,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_b20644edd5e43d29",
+    "group_id": "g_9dcd446d873df770",
+    "request": {
+      "intent": "Obtenir la loi de probabilité idéale sur les deux sorties à partir d’un photon au mode 0 et du vide au mode 1. Circuit cohérent, sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Ordre physique : R(a), phase exp(i*phi) au mode 1, R(b). Angles en radians.",
+      "data": {
+        "a": -0.7135897,
+        "b": 1.3874833,
+        "phi": 0.1356263,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_00b3c53e4202843b",
+    "group_id": "g_0aeb8f58c81f025f",
+    "request": {
+      "intent": "Cahier de paillasse : un sommet représente une mesure, une arête non orientée une incompatibilité. Retenir un poids total maximal sans paire incompatible, avec des décisions binaires. Aucun plafond de poids supplémentaire.",
+      "data": {
+        "n": 4,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": [
+          11,
+          6,
+          4,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_fc6b30f829c45291",
+    "group_id": "g_ec4351f9dcb67ad5",
+    "request": {
+      "intent": "Demande structurée : maximiser la somme des poids fournis; une variable binaire par sommet; pour toute arête non orientée, au plus une extrémité choisie. Autres conditions : aucune.",
+      "data": {
+        "n": 8,
+        "edges": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "weights": [
+          1,
+          10,
+          5,
+          10,
+          1,
+          10,
+          4,
+          2
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_e23e541137a75c65",
+    "group_id": "g_b8ab01fbd5fd7313",
+    "request": {
+      "intent": "I need the complex final amplitude in each of the two exit modes, rather than probabilities. The initial occupation is |1,0>, propagation is coherent and lossless. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Use R(a), a mode-1 phase exp(i*phi), then R(b), with every angle in radians.",
+      "data": {
+        "a": -0.5735157,
+        "b": -0.9339951,
+        "phi": 0.6486585,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_5e55022439cb3525",
+    "group_id": "g_895c588497f5377d",
+    "request": {
+      "intent": "Dear collaborator, our exclusion graph is undirected and its nodes have the positive weights in data. Find a pairwise compatible binary subset with maximum weight sum. All nodes remain eligible for selection.",
+      "data": {
+        "n": 4,
+        "edges": [],
+        "weights": [
+          6,
+          9,
+          10,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_d8c01195c772969e",
+    "group_id": "g_29df0337a412530d",
+    "request": {
+      "intent": "Notebook entry: vertices are candidate assays and every undirected edge is an incompatibility. Record the subset with maximum total supplied weight. Selections are binary. There is no assay quota.",
+      "data": {
+        "n": 12,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            11
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            4,
+            11
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            11
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "weights": [
+          8,
+          6,
+          7,
+          7,
+          11,
+          3,
+          3,
+          4,
+          10,
+          8,
+          2,
+          5
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_057d2fae115cb4e9",
+    "group_id": "g_bff657ee6ce019de",
+    "request": {
+      "intent": "Experiment log: data lists undirected exclusion edges between weighted tests. Compute the maximum sum of weights of a conflict-free subset. A test is wholly included or wholly omitted; there are no additional constraints.",
+      "data": {
+        "n": 5,
+        "edges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "weights": [
+          2,
+          5,
+          5,
+          6,
+          10
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_2f490c5b68364e7b",
+    "group_id": "g_454888e93e2dc3aa",
+    "request": {
+      "intent": "Calculate the ideal two-output probability distribution for the coherent, lossless optical device. The incoming state is |1,0>. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Time order: R(a), phase exp(i*phi) on mode 1, R(b). Angles in data are radians.",
+      "data": {
+        "a": 1.1839961,
+        "b": 1.1648789,
+        "phi": 1.147706,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_7cd422a33e29642c",
+    "group_id": "g_cfd76ee5bfb30bf8",
+    "request": {
+      "intent": "I want the largest possible total vertex weight with no selected undirected edge. Use binary selection variables and no further constraints. I have not decided between total weight and cardinality; keep this objective choice unresolved.",
+      "data": {
+        "n": 10,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "weights": [
+          5,
+          5,
+          1,
+          3,
+          8,
+          9,
+          6,
+          11,
+          11,
+          2
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_c6b81f9d04f89d35",
+    "group_id": "g_137361849b1fb846",
+    "request": {
+      "intent": "Journal expérimental : chercher un ensemble indépendant de poids total maximal. Le graphe des incompatibilités est non orienté, les choix sont binaires. Tous les groupes de sommets sont permis tant qu’ils sont indépendants.",
+      "data": {
+        "n": 8,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "weights": [
+          2,
+          6,
+          9,
+          8,
+          10,
+          4,
+          4,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_02c594cb789919cc",
+    "group_id": "g_3adee47af3349c27",
+    "request": {
+      "intent": "À l’équipe photonique : fournir une chaîne de 50 détections simulées aléatoirement, sans retourner les probabilités, entrée |1,0>, cohérence et pertes nulles. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Dans le temps : R(a), phase exp(i*phi) au mode 1, puis R(b), tous les angles en radians.",
+      "data": {
+        "a": -0.4570231,
+        "b": -0.5707766,
+        "phi": 2.7885911,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_4c100ec22f23e65a",
+    "group_id": "g_409275700a524657",
+    "request": {
+      "intent": "To my optics collaborator: please compute both ideal output probabilities locally, with one photon at input 1 and vacuum at input 0. Assume two coherent lossless modes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Follow R(a), mode-1 phase exp(i*phi), then R(b); use radians. Quandela is a conditional future interest, not a submission request.",
+      "data": {
+        "a": -1.114883,
+        "b": -0.9188883,
+        "phi": 0.9577636,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_4ec122a6367d70e3",
+    "group_id": "g_8261aee3d0d2bcb3",
+    "request": {
+      "intent": "Maximiser la somme des poids sur un ensemble indépendant du graphe non orienté fourni. Chaque sommet est un choix binaire, sans autre obligation. Je veux seulement un ensemble maximal par inclusion, même si sa somme est inférieure au maximum.",
+      "data": {
+        "n": 11,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "weights": [
+          10,
+          4,
+          4,
+          4,
+          10,
+          5,
+          1,
+          4,
+          10,
+          6,
+          3
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_29f689b8132afefa",
+    "group_id": "g_54b4ac33825c3b11",
+    "request": {
+      "intent": "Please compute ideal probabilities at both output modes. Start with vacuum in mode 0 and one photon in mode 1, in a coherent lossless two-mode circuit. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Apply R(a), then exp(i*phi) on mode 1, and finally R(b). All three angles are radians.",
+      "data": {
+        "a": 0.8324704,
+        "b": -1.2574625,
+        "phi": 2.2609976,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_b3956ccad778f0ec",
+    "group_id": "g_3f666b20f5a91dac",
+    "request": {
+      "intent": "Sélectionner des sommets mutuellement non adjacents de poids cumulé maximal dans ce graphe non orienté. Une variable 0/1 correspond à chaque sommet. La taille du sous-ensemble est libre.",
+      "data": {
+        "n": 9,
+        "edges": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "weights": [
+          5,
+          1,
+          2,
+          3,
+          8,
+          4,
+          8,
+          3,
+          9
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_768dba0c8e86fd02",
+    "group_id": "g_fbabf2164dfbbc54",
+    "request": {
+      "intent": "Reference specification / source: |1,0> / network: coherent, ideal, lossless, two modes / result: probability of each output. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Execute in time R(a), exp(i*phi) on mode 1, R(b). All angles use radians.",
+      "data": {
+        "a": -0.0802431,
+        "b": -0.3039623,
+        "phi": 1.6238198,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_d3f2fd87666e61e0",
+    "group_id": "g_79532dceb2302e85",
+    "request": {
+      "intent": "For our joint study, please maximize the weight sum of a binary subset, never taking both endpoints of any undirected edge. The total selected weight must additionally be at most 7.",
+      "data": {
+        "n": 8,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "weights": [
+          10,
+          6,
+          7,
+          2,
+          3,
+          10,
+          1,
+          4
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_be74f7c56ecd3e24",
+    "group_id": "g_27bc0ab8cd75aebe",
+    "request": {
+      "intent": "Fiche de calcul. Variables : sélection binaire des sommets. Contraintes : aucune arête non orientée ne peut avoir deux bouts sélectionnés. But : poids total maximal. Cardinalité : libre.",
+      "data": {
+        "n": 11,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "weights": [
+          8,
+          1,
+          4,
+          7,
+          3,
+          2,
+          7,
+          8,
+          5,
+          6,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_106fe2d96670ffd6",
+    "group_id": "g_0881b1d63ba05923",
+    "request": {
+      "intent": "Pour notre échange : déterminer les probabilités idéales des modes de sortie 0 et 1 pour une source |1,0>. Propager de façon cohérente, sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. La source voit R(a), la phase exp(i*phi) sur le mode 1, puis R(b). Les nombres fournis sont des radians.",
+      "data": {
+        "a": -0.9204358,
+        "b": 0.7294386,
+        "phi": 1.4894623,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_4bde931106e6911e",
+    "group_id": "g_6c36389896aa9d87",
+    "request": {
+      "intent": "Bench record: I am comparing sets of mutually nonadjacent vertices in the undirected graph. Rank them only by the sum of given weights and return the maximum. Choices are binary and the empty set is allowed.",
+      "data": {
+        "n": 7,
+        "edges": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "weights": [
+          7,
+          11,
+          11,
+          3,
+          4,
+          6,
+          8
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_6ed342c35e9da445",
+    "group_id": "g_cfd76ee5bfb30bf8",
+    "request": {
+      "intent": "I want the largest possible total vertex weight with no selected undirected edge. Use binary selection variables and no further constraints. Resolve the objective in favor of total weight.",
+      "data": {
+        "n": 10,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "weights": [
+          5,
+          5,
+          1,
+          3,
+          8,
+          9,
+          6,
+          11,
+          11,
+          2
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_650e2bb18072cacd",
+    "group_id": "g_845b11c2a2b9676d",
+    "request": {
+      "intent": "Find both ideal exit probabilities for one photon whose input mode is not determined; do not decide between input 0 and input 1. Keep the two-mode transformation coherent and without loss. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. The photon encounters R(a), then exp(i*phi) on mode 1, then R(b). Use radians.",
+      "data": {
+        "a": -0.9521207,
+        "b": 0.0750532,
+        "phi": 0.9847941,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_bd74923f0701b7dd",
+    "group_id": "g_db6e819463d88245",
+    "request": {
+      "intent": "Research ticket: compute the largest vertex-weight total on an independent subset. The graph is undirected; selection is binary. There are no order or count constraints.",
+      "data": {
+        "n": 7,
+        "edges": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "weights": [
+          4,
+          6,
+          6,
+          4,
+          11,
+          10,
+          5
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_616a16d71c7c0443",
+    "group_id": "g_ea28f6e910bffba7",
+    "request": {
+      "intent": "Computation ticket. Start state |1,0>; two coherent modes; zero loss. Return the two complex output amplitudes, including their phases, instead of probabilities. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Apply R(a), the phase exp(i*phi) on mode 1, then R(b); radians for a, b and phi.",
+      "data": {
+        "a": -0.5609994,
+        "b": 0.5629275,
+        "phi": 0.9376594,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_2c6d3eed95403e94",
+    "group_id": "g_0aeb8f58c81f025f",
+    "request": {
+      "intent": "Cahier de paillasse : un sommet représente une mesure, une arête non orientée une incompatibilité. Retenir un poids total maximal sans paire incompatible, avec des décisions binaires. Imposer aussi un poids total inférieur ou égal à 5.",
+      "data": {
+        "n": 4,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": [
+          11,
+          6,
+          4,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_771b7008bb7c6d7a",
+    "group_id": "g_a4a1a2ead78a2ff0",
+    "request": {
+      "intent": "Fiche optique. Source : un photon au mode 0, vide au mode 1. Hypothèses : deux modes cohérents sans pertes. Sortie : distribution idéale sur les deux modes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Chronologie : exp(i*phi) au mode 1, R(a), R(b). Unité : radian.",
+      "data": {
+        "a": -0.8297733,
+        "b": 0.9486865,
+        "phi": 1.1061093,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_cd413afb6527f415",
+    "group_id": "g_8261aee3d0d2bcb3",
+    "request": {
+      "intent": "Maximiser la somme des poids sur un ensemble indépendant du graphe non orienté fourni. Chaque sommet est un choix binaire, sans autre obligation. Seule la meilleure somme importe.",
+      "data": {
+        "n": 11,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "weights": [
+          10,
+          4,
+          4,
+          4,
+          10,
+          5,
+          1,
+          4,
+          10,
+          6,
+          3
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_9e0b8e9c346a6f08",
+    "group_id": "g_51809b868a384536",
+    "request": {
+      "intent": "Analysis specification: choose an independent vertex subset of the supplied undirected graph; indicators are binary. Maximize its supplied total weight. Eligibility rules: only the graph conflicts.",
+      "data": {
+        "n": 12,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "weights": [
+          6,
+          1,
+          6,
+          4,
+          2,
+          11,
+          4,
+          2,
+          6,
+          10,
+          7,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_3e1bb836e9013038",
+    "group_id": "g_47b5f41c1a87b882",
+    "request": {
+      "intent": "Trouver un sous-ensemble de poids maximal parmi les sommets du graphe non orienté fourni. Le choix est binaire et deux voisins ne peuvent être pris ensemble. Tous les sommets sont admissibles.",
+      "data": {
+        "n": 7,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "weights": [
+          3,
+          10,
+          1,
+          5,
+          4,
+          11,
+          6
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_8e5ed883027912e1",
+    "group_id": "g_869b54384ee92ea5",
+    "request": {
+      "intent": "Journal de mesure : calculer seulement la référence théorique idéale des deux probabilités de sortie. Source |1,0>, deux modes, cohérence maintenue et pertes nulles. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. La suite est d’abord phase exp(i*phi) sur le mode 1, puis R(a), et ensuite R(b); radians pour tous les angles.",
+      "data": {
+        "a": -0.9631266,
+        "b": 0.7281206,
+        "phi": 2.559995,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_1dfd9652ae66aced",
+    "group_id": "g_677ab2ea6c3400bd",
+    "request": {
+      "intent": "Model request / domain: binary subset / graph: undirected / hard rule: no adjacent pair selected / target: maximum sum of supplied weights / set size: at most one selected vertex.",
+      "data": {
+        "n": 5,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "weights": [
+          6,
+          8,
+          5,
+          3,
+          2
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_e7fef89b7ccc1fe6",
+    "group_id": "g_45e992c15897597f",
+    "request": {
+      "intent": "Contrat optique : deux modes, propagation cohérente idéale, pertes nulles; entrée fixée à |1,0>; calcul des deux probabilités de sortie. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Ordre R(a), phase exp(i*phi) sur le mode 1, R(b), angles en radians.",
+      "data": {
+        "a": 0.1026411,
+        "b": -0.349936,
+        "phi": -0.6681565,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_0b7622fc4c02ebbc",
+    "group_id": "g_401cb9477fe89831",
+    "request": {
+      "intent": "Compte rendu optique : calculer la distribution idéale des deux ports pour |1,0>. Deux modes cohérents, une probabilité de perte finale de 20 % à ajouter au montage de base et à inclure dans les résultats. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Le montage traverse R(a), exp(i*phi) au mode 1, puis R(b). Chaque angle est en radians.",
+      "data": {
+        "a": -0.6175464,
+        "b": -0.7342025,
+        "phi": -2.5609547,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_c35e663fe01e7d48",
+    "group_id": "g_151a240d98dd4f86",
+    "request": {
+      "intent": "Spécification de calcul : entrée |1,0>, circuit idéal cohérent à deux modes et avec une perte de 12 % à ajouter après R(b), à inclure même si data.loss vaut zéro pour le circuit initial, probabilités des modes 0 et 1 en sortie. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Suite temporelle R(a), exp(i*phi) au mode 1, R(b); paramètres en radians.",
+      "data": {
+        "a": -0.5550626,
+        "b": 1.0532237,
+        "phi": 2.4269542,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_66cfae12a751451f",
+    "group_id": "g_9807653662f4f499",
+    "request": {
+      "intent": "Note de protocole : les sommets portent les gains dans weights. Une arête non orientée interdit la sélection conjointe. Obtenir le gain cumulé maximal avec une décision binaire par sommet. Aucun lien logique supplémentaire.",
+      "data": {
+        "n": 6,
+        "edges": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "weights": [
+          11,
+          6,
+          1,
+          2,
+          4,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_a8b2fd88991fda9e",
+    "group_id": "g_d01720efe1bbac84",
+    "request": {
+      "intent": "Please return a maximum-weight independent set in this undirected graph. Each vertex is selected either zero or one times. Optimize weight without any restriction on the number chosen.",
+      "data": {
+        "n": 6,
+        "edges": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "weights": [
+          2,
+          3,
+          10,
+          5,
+          9,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_dd132be6c5652659",
+    "group_id": "g_137361849b1fb846",
+    "request": {
+      "intent": "Journal expérimental : chercher un ensemble indépendant de poids total maximal. Le graphe des incompatibilités est non orienté, les choix sont binaires. Parmi les sommets 0 et 1, exactement un doit être sélectionné.",
+      "data": {
+        "n": 8,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "weights": [
+          2,
+          6,
+          9,
+          8,
+          10,
+          4,
+          4,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_793ab4c10f1eef64",
+    "group_id": "g_73f9e21ee6d5d1fa",
+    "request": {
+      "intent": "Experimental note: return ideal probabilities for the two final modes, not a hardware acquisition. Inject |1,0> into a coherent lossless circuit. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Use R(a), mode-1 phase exp(i*phi), R(b), with a, b and phi in radians.",
+      "data": {
+        "a": 1.2419299,
+        "b": 1.3011521,
+        "phi": -0.4844632,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_14d128ba61c1e860",
+    "group_id": "g_d8b57f6da92503dd",
+    "request": {
+      "intent": "Bench log: compute the ideal probability for each of two output modes, using coherent lossless propagation. Source occupation must instead be |2,0>: two photons in mode 0; retain this explicit source requirement. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Optical order is R(a), a phase exp(i*phi) on mode 1, R(b). Parameters are radians.",
+      "data": {
+        "a": 0.7259681,
+        "b": -0.2522165,
+        "phi": 2.9829515,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_b1e9b00c2700f31a",
+    "group_id": "g_065cad1ac932432a",
+    "request": {
+      "intent": "Optics notebook: estimate no noise here; compute the ideal probabilities of the two exit ports. Initial state |1,0>, two coherent lossless modes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Sequence R(a), phase exp(i*phi) on mode 1, R(b); all angles in radians.",
+      "data": {
+        "a": -0.6447816,
+        "b": 0.2912133,
+        "phi": 0.2364456,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_faa4925ddd200c9c",
+    "group_id": "g_24050e90c433f247",
+    "request": {
+      "intent": "A note for the modeling colleague: treat each undirected edge as a hard conflict and each vertex decision as binary. The requested optimum is the highest total supplied weight. Do not add any other objective.",
+      "data": {
+        "n": 6,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "weights": [
+          4,
+          7,
+          4,
+          10,
+          11,
+          10
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_24302aa205e09f23",
+    "group_id": "g_78cddcea281aabba",
+    "request": {
+      "intent": "Bonjour, pour ces essais en conflit non orienté, retenir une collection indépendante dont la somme des poids est la plus grande. Une décision binaire indique chaque inclusion. Si le sommet 0 est retenu, le sommet 2 doit également l’être.",
+      "data": {
+        "n": 7,
+        "edges": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "weights": [
+          7,
+          1,
+          3,
+          4,
+          7,
+          4,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_35f01f937da979db",
+    "group_id": "g_73f9e21ee6d5d1fa",
+    "request": {
+      "intent": "Experimental note: return the argument (phase angle) of each final complex amplitude, rather than output probabilities, not a hardware acquisition. Inject |1,0> into a coherent lossless circuit. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Use R(a), mode-1 phase exp(i*phi), R(b), with a, b and phi in radians.",
+      "data": {
+        "a": 1.2419299,
+        "b": 1.3011521,
+        "phi": -0.4844632,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_c47ef2f32bbdd01b",
+    "group_id": "g_3d0afb6b167e5e7f",
+    "request": {
+      "intent": "Demande de référence. Source |3,0> : trois photons dans le mode 0, cette instruction remplace le champ photons de base. Circuit cohérent idéal à deux modes, pertes nulles. Livrable : probabilités des deux modes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Passer par R(a), exp(i*phi) sur mode 1, R(b); a, b et phi en radians.",
+      "data": {
+        "a": -1.3932738,
+        "b": 0.2352668,
+        "phi": 1.9288212,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_7febe5c47d6a29a1",
+    "group_id": "g_0881b1d63ba05923",
+    "request": {
+      "intent": "Pour notre échange : déterminer les probabilités idéales des modes de sortie 0 et 1 pour une source |1,0>. Propager de façon cohérente, sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. La source voit R(a), puis R(b), et enfin la phase exp(i*phi) sur le mode 1. Les nombres fournis sont des radians.",
+      "data": {
+        "a": -0.9204358,
+        "b": 0.7294386,
+        "phi": 1.4894623,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_64ed0a2bfa1f4ada",
+    "group_id": "g_a6696e6d86562a5b",
+    "request": {
+      "intent": "Je demande les probabilités idéales dans les deux modes de sortie pour une entrée |1,0>. Le système à deux modes est cohérent et sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Appliquer successivement R(a), une phase exp(i*phi) au mode 1, puis R(b). Unités : radians.",
+      "data": {
+        "a": -1.1304711,
+        "b": -1.0754408,
+        "phi": 1.4779707,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_26887edbe3ceb102",
+    "group_id": "g_47b5f41c1a87b882",
+    "request": {
+      "intent": "Trouver un sous-ensemble de poids maximal parmi les sommets du graphe non orienté fourni. Le choix est binaire et deux voisins ne peuvent être pris ensemble. Le sommet 0 doit obligatoirement être retenu.",
+      "data": {
+        "n": 7,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "weights": [
+          3,
+          10,
+          1,
+          5,
+          4,
+          11,
+          6
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_c064f6a41406bc56",
+    "group_id": "g_fbabf2164dfbbc54",
+    "request": {
+      "intent": "Reference specification / source: |1,0> / network: coherent, ideal, lossless, two modes / result: probability of each output. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Execute in time R(a), exp(i*phi) on mode 1, R(b). All angles use turns, with one turn equal to a full revolution; do not convert the supplied values.",
+      "data": {
+        "a": -0.0802431,
+        "b": -0.3039623,
+        "phi": 1.6238198,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_f76f650274f838e7",
+    "group_id": "g_51809b868a384536",
+    "request": {
+      "intent": "Analysis specification: choose an independent vertex subset of the supplied undirected graph; indicators are binary. Maximize its supplied total weight. Eligibility rules: graph conflicts plus mandatory inclusion of vertex 2.",
+      "data": {
+        "n": 12,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            10
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            8,
+            11
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "weights": [
+          6,
+          1,
+          6,
+          4,
+          2,
+          11,
+          4,
+          2,
+          6,
+          10,
+          7,
+          1
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_15aaa8f8ba0045f8",
+    "group_id": "g_bff657ee6ce019de",
+    "request": {
+      "intent": "Experiment log: data lists undirected exclusion edges between weighted tests. Compute the maximum sum of weights of a conflict-free subset. A test may instead be selected in any real fraction from zero to one; there are no additional constraints.",
+      "data": {
+        "n": 5,
+        "edges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "weights": [
+          2,
+          5,
+          5,
+          6,
+          10
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_99058527612afa68",
+    "group_id": "g_97a01e097b073f45",
+    "request": {
+      "intent": "Dear colleague, take the ideal two-mode coherent circuit without loss and the input |1,0>. Report a probability for each exit. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. First perform R(a), then phase exp(i*phi) on mode 1, and last R(b). Angles supplied are radians.",
+      "data": {
+        "a": 0.4521062,
+        "b": 0.090057,
+        "phi": -2.040041,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_cf74445fef15f19c",
+    "group_id": "g_4d3f467e096f1551",
+    "request": {
+      "intent": "Pour ton analyse : il faut maximiser la somme des poids choisis, avec un choix binaire par sommet et exclusion des deux bouts de toute arête non orientée. Le sous-ensemble n’a pas de borne de taille.",
+      "data": {
+        "n": 5,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "weights": [
+          10,
+          8,
+          5,
+          1,
+          3
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_eb630771cd7047f4",
+    "group_id": "g_9807653662f4f499",
+    "request": {
+      "intent": "Note de protocole : les sommets portent les gains dans weights. Une arête non orientée interdit la sélection conjointe. Obtenir le gain cumulé maximal avec une décision binaire par sommet. La sélection du sommet 0 impose aussi celle du sommet 1.",
+      "data": {
+        "n": 6,
+        "edges": [
+          [
+            1,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "weights": [
+          11,
+          6,
+          1,
+          2,
+          4,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_a2a28e693e34deda",
+    "group_id": "g_11804172c2fb25e8",
+    "request": {
+      "intent": "Cahier optique : l’entrée est |1,0> et nous voulons les probabilités idéales des deux ports. Les deux modes restent cohérents et le circuit reçoit en plus une perte de 5 % après R(a), qui doit être modélisée sans changer les valeurs de data. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. R(a) précède exp(i*phi) au mode 1, qui précède R(b). Paramètres en radians.",
+      "data": {
+        "a": 0.1314496,
+        "b": -0.791991,
+        "phi": 2.3664055,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_12089970319d8ba5",
+    "group_id": "g_5b65271a01444053",
+    "request": {
+      "intent": "Message à ma collègue : peux-tu calculer un ensemble indépendant de poids maximal pour ce graphe non orienté ? Les choix sont binaires, avec l’obligation de retenir le sommet 1. Pasqal reste une piste future, je demande uniquement une référence locale.",
+      "data": {
+        "n": 12,
+        "edges": [
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            10
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            2,
+            10
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            11
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "weights": [
+          10,
+          11,
+          7,
+          8,
+          10,
+          2,
+          7,
+          2,
+          8,
+          10,
+          6,
+          4
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_09e6c4977e7f418b",
+    "group_id": "g_329a343da6b8ecc3",
+    "request": {
+      "intent": "Trace de laboratoire : maximiser les poids additionnés des sommets retenus, aucun couple retenu ne formant une arête non orientée. Chaque sélection vaut zéro ou un. Le sens de l’objectif est fixé à maximiser.",
+      "data": {
+        "n": 10,
+        "edges": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "weights": [
+          1,
+          9,
+          8,
+          3,
+          9,
+          6,
+          1,
+          10,
+          4,
+          5
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_47806031452472f1",
+    "group_id": "g_5150ff218377cdc0",
+    "request": {
+      "intent": "Task card. Objects: weighted vertices. Edges: undirected hard conflicts. Domain: one binary indicator per vertex. Objective: maximize the sum of selected weights. Extra constraints: none.",
+      "data": {
+        "n": 10,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "weights": [
+          8,
+          5,
+          4,
+          8,
+          9,
+          7,
+          11,
+          7,
+          7,
+          5
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_c36e272ab6e182ce",
+    "group_id": "g_5c274c3282d18b70",
+    "request": {
+      "intent": "Message pour l’analyse optique : avec un photon au mode 0 et rien au mode 1, calculer la probabilité de chaque sortie du montage idéal à deux modes. Le circuit est cohérent et sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Appliquer R(a), exp(i*phi) au mode 1, R(b), angles en radians.",
+      "data": {
+        "a": -1.3735122,
+        "b": 1.3490152,
+        "phi": -2.4827217,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_12e04ecc24f14896",
+    "group_id": "g_7fb0f343bdbe4246",
+    "request": {
+      "intent": "To the analysis team: please maximize the total supplied vertex weight over a binary independent set of this undirected graph. The set must contain exactly three vertices. Keep this as a local classical reference; Pasqal is only a possible future candidate.",
+      "data": {
+        "n": 11,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "weights": [
+          3,
+          9,
+          4,
+          1,
+          6,
+          8,
+          2,
+          11,
+          11,
+          1,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_fd0f6359f644fb7d",
+    "group_id": "g_d968f90e250e3962",
+    "request": {
+      "intent": "Je cherche le poids total le plus élevé pour un choix de sommets binaires. Les arêtes du graphe sont non orientées et interdisent de retenir leurs deux extrémités. Aucun autre critère ne doit intervenir.",
+      "data": {
+        "n": 5,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "weights": [
+          4,
+          2,
+          1,
+          11,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_8a4d7d7f37ef7f07",
+    "group_id": "g_c0a281c4b643d4df",
+    "request": {
+      "intent": "For these weighted vertices, maximize the sum retained under binary choices and pairwise exclusions given by undirected edges. No vertex is singled out for special treatment.",
+      "data": {
+        "n": 8,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "weights": [
+          8,
+          6,
+          11,
+          9,
+          3,
+          10,
+          6,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_6123c446a200747e",
+    "group_id": "g_a6696e6d86562a5b",
+    "request": {
+      "intent": "Je demande les probabilités idéales dans les deux modes de sortie pour une entrée |1,0>. Le système à deux modes est cohérent et sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Appliquer successivement R(a), puis R(b), et seulement ensuite la phase exp(i*phi) au mode 1. Unités : radians.",
+      "data": {
+        "a": -1.1304711,
+        "b": -1.0754408,
+        "phi": 1.4779707,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_54e0709a9fc57699",
+    "group_id": "g_f073233b6a2513db",
+    "request": {
+      "intent": "Contrat de référence : poids total maximal, sommets binaires, conflits donnés par les arêtes non orientées. Les poids doivent servir tels quels. L’objectif reste indécis entre poids total et nombre de sommets; demander une clarification.",
+      "data": {
+        "n": 6,
+        "edges": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "weights": [
+          5,
+          4,
+          5,
+          6,
+          6,
+          6
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_fe47c0e5fca60a77",
+    "group_id": "g_454888e93e2dc3aa",
+    "request": {
+      "intent": "Calculate the ideal two-output probability distribution for the coherent, lossless optical device. Override the incoming occupation: one photon enters each mode, |1,1>; do not replace this two-photon question by a single-photon one. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Time order: R(a), phase exp(i*phi) on mode 1, R(b). Angles in data are radians.",
+      "data": {
+        "a": 1.1839961,
+        "b": 1.1648789,
+        "phi": 1.147706,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_279131676da5007f",
+    "group_id": "g_7fb0f343bdbe4246",
+    "request": {
+      "intent": "To the analysis team: please maximize the total supplied vertex weight over a binary independent set of this undirected graph. No requirement concerns how many vertices are chosen. Keep this as a local classical reference; Pasqal is only a possible future candidate.",
+      "data": {
+        "n": 11,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "weights": [
+          3,
+          9,
+          4,
+          1,
+          6,
+          8,
+          2,
+          11,
+          11,
+          1,
+          11
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_9b07971a06f7b2c9",
+    "group_id": "g_97a01e097b073f45",
+    "request": {
+      "intent": "Dear colleague, take the ideal two-mode coherent circuit without loss and the input |0,2>, overriding the single-photon field: two photons in the second mode. Report a probability for each exit. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. First perform R(a), then phase exp(i*phi) on mode 1, and last R(b). Angles supplied are radians.",
+      "data": {
+        "a": 0.4521062,
+        "b": 0.090057,
+        "phi": -2.040041,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_26395ae2d2eb971b",
+    "group_id": "g_c0a281c4b643d4df",
+    "request": {
+      "intent": "For these weighted vertices, maximize the sum retained under binary choices and pairwise exclusions given by undirected edges. Vertex 0 is forbidden, even if its weight would improve the total.",
+      "data": {
+        "n": 8,
+        "edges": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "weights": [
+          8,
+          6,
+          11,
+          9,
+          3,
+          10,
+          6,
+          7
+        ]
+      }
+    }
+  },
+  {
+    "id": "q_5674c55cbae2463f",
+    "group_id": "g_845b11c2a2b9676d",
+    "request": {
+      "intent": "Find both ideal exit probabilities for one photon prepared in input mode 0, with input mode 1 empty. Keep the two-mode transformation coherent and without loss. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. The photon encounters R(a), then exp(i*phi) on mode 1, then R(b). Use radians.",
+      "data": {
+        "a": -0.9521207,
+        "b": 0.0750532,
+        "phi": 0.9847941,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_c4f8234db887db18",
+    "group_id": "g_54b4ac33825c3b11",
+    "request": {
+      "intent": "Please compute ideal probabilities at both output modes. Start with one photon in mode 0 and vacuum in mode 1, in a coherent lossless two-mode circuit. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Apply R(a), then exp(i*phi) on mode 1, and finally R(b). All three angles are radians.",
+      "data": {
+        "a": 0.8324704,
+        "b": -1.2574625,
+        "phi": 2.2609976,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_7de4768c56642273",
+    "group_id": "g_4f3f5486420d24a1",
+    "request": {
+      "intent": "Notebook calculation: derive both ideal output-mode probabilities from the fixed input |1,0>. The two modes are coherent with zero loss. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. Apply R(a), then phase exp(i*phi) on mode 1, then R(b). Use degree angle values for a and b and radians for phi; do not convert any values in data.",
+      "data": {
+        "a": 1.2560405,
+        "b": 1.2517728,
+        "phi": -1.6026333,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  },
+  {
+    "id": "q_580ad99c6cd84bc5",
+    "group_id": "g_11804172c2fb25e8",
+    "request": {
+      "intent": "Cahier optique : l’entrée est |1,0> et nous voulons les probabilités idéales des deux ports. Les deux modes restent cohérents et le circuit est sans pertes. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. R(a) précède exp(i*phi) au mode 1, qui précède R(b). Paramètres en radians.",
+      "data": {
+        "a": 0.1314496,
+        "b": -0.791991,
+        "phi": 2.3664055,
+        "photons": 1,
+        "modes": 2,
+        "loss": 0
+      }
+    }
+  }
+]

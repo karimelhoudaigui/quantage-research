@@ -1,0 +1,13 @@
+{
+  "recorded_at_utc": "2026-11-14T12:34:40.153679+00:00",
+  "reason": "Resource stop: first complete49-token BF16 answer took493.62s; matrix32 is impractical under the1650s invocation budget. Preserve partial observations; no performance or H14 conclusion.",
+  "observed_responses": 1,
+  "planned_responses": 32,
+  "observed_generation_wall_seconds": 493.622494125,
+  "estimated_32_at_first_response_rate_seconds": 15795.919812,
+  "estimate_scope": "linear projection, not a measured complete run",
+  "pids": [
+    13335
+  ],
+  "signal_sent": "SIGTERM to exact inference child"
+}

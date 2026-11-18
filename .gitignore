@@ -1,0 +1,32 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+.venv-local-llm/
+research/external/models/
+.runner.lock
+runs/*/codex.log
+*.aux
+*.log
+*.out
+
+.venv-quantum-sdk/
+research/external/c16-public/
+research/external/c17-public/
+research/external/c17-public-v2/
+research/external/c19-public/
+
+research/external/tectonic/
+research/external/public-traces/
+
+research/external/c22-public/
+
+# Public model caches, including hardlinks inside historical source snapshots.
+*.gguf
+
+# Local manuscript builds and rendered review pages are reproducible outputs.
+paper/build-*/
+paper/pdf-review-*/
+
+# Source snapshots keep source manifests; copied third-party runtimes are local-only.
+runs/**/source-snapshot/research/external/

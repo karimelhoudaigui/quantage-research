@@ -1,0 +1,48 @@
+{
+  "claim_id": "C10-DEVELOPMENT-REGRESSION",
+  "mathematics": {
+    "assertion_tested": "Test targeted prototype corrections on already observed C09 responses, preserving original raw traces and primary held-out results.",
+    "coefficient_domain": "finite regression decisions; exact integer and floating downstream certificates",
+    "conventions": "Post-hoc development regression only, no new held-out claim or inferred model call",
+    "inputs": [
+      "same16raw C09responses, unchanged labels"
+    ],
+    "bounds": {
+      "cases": 16,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "Not a new held-out or generalization result",
+      "Not a universal semantic verifier",
+      "Not proof of practical hardware compatibility"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/compact_v2.py",
+    "quantage/compact_v3.py",
+    "quantage/local_score.py",
+    "quantage/local_score_v3.py",
+    "quantage/benchmark.py",
+    "quantage/transferstudy.py",
+    "runs/20261113-c10-regression-release/protocol.md",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "runs/20261113-c09-heldout-guard/gold.json",
+    "runs/20261113-c09-heldout-guard/generation/raw.jsonl"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": "recorded-response regression",
+    "seed": null
+  }
+}

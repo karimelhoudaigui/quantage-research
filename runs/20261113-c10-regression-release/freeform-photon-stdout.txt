@@ -1,0 +1,66 @@
+{
+  "result": {
+    "status": "accepted",
+    "stage": "hybrid_pipeline",
+    "problem": {
+      "family": "photon",
+      "a": -0.21,
+      "b": 0.57,
+      "phi": 0.64,
+      "input": [
+        1,
+        0
+      ],
+      "modes": 2,
+      "loss": 0,
+      "observable": "probabilities"
+    },
+    "formulation": {
+      "kind": "linear_optics",
+      "a": -0.21,
+      "b": 0.57,
+      "phi": 0.64,
+      "phase_mode": 1,
+      "input_mode": 0,
+      "order": "R_b P R_a",
+      "global_phase": 0,
+      "coherent": true,
+      "output": "probabilities"
+    },
+    "verification": {
+      "valid": true,
+      "max_abs_error": 1.1102230246251565e-16,
+      "reason": "analytic probabilities and normalization",
+      "stage": "finite_output",
+      "scope": "this normalized instance only"
+    },
+    "route": {
+      "solver": "single_photon_amplitudes",
+      "execution": "local_ideal_float_simulation",
+      "quantum_candidate": "Quandela",
+      "hardware_readiness": "unverified",
+      "qpu_submitted": false,
+      "conditions": [
+        "component convention translation",
+        "platform constraints and access",
+        "shots and imperfections"
+      ]
+    },
+    "solution": {
+      "probabilities": [
+        0.8392406281505306,
+        0.1607593718494692
+      ]
+    },
+    "original_intent": "Determine the ideal distribution of which output mode contains the photon. The input is one photon in mode 0 and none in mode 1; the two-mode circuit is coherent and lossless. R(t) = [[cos(t), -sin(t)], [sin(t), cos(t)]]. First R(a), next a phase exp(i*phi) on mode 1, last R(b); parameters are radians.",
+    "semantic_certificate": false,
+    "provenance": "LLM compact contract, deterministic formulation and solver",
+    "schema": "compact-v3-development",
+    "semantic_guard": "bounded development veto applied"
+  },
+  "raw_model_response": "{\"action\": \"propose\", \"task\": \"ideal_single_photon_probabilities\", \"reason\": \"The task requires an ideal single-photon probability distribution for each mode, which is not provided.\"}",
+  "input_tokens": 436,
+  "output_tokens": 43,
+  "record_directory": "runs/20261113-c10-regression-release/cli-freeform-photon",
+  "scope": "local research prototype, heuristic semantic veto, no QPU"
+}

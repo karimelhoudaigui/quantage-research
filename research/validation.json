@@ -1,0 +1,180 @@
+{
+  "checked_on": "2026-11-13",
+  "host_recorded_at_utc": "2026-11-13T11:41:47.164159+00:00",
+  "python": "3.9.6",
+  "base_commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "scripts/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.108173667,
+      "stdout": "OK: 7 claims; 4 completed/blocked handoffs; truth requires scientific review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-O",
+        "scripts/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.28898762499999997,
+      "stdout": "OK: 7 claims; 4 completed/blocked handoffs; truth requires scientific review.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.38309283400000005,
+      "stdout": "['codex', 'exec', '-C', '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpwwslajvx', '--sandbox', 'workspace-write', '-'] 1\nCompleted 20261113T114146305882Z\nCompleted 20261113T114146306881Z\nCompleted 20261113T114146308572Z\n",
+      "stderr": "test_interference_and_global_phase (test_core.Contracts) ... ok\ntest_no_false_hardware_access (test_core.Contracts) ... ok\ntest_penalty_boundary_retains_all_optima (test_core.Contracts) ... ok\ntest_strict_input_validation (test_core.Contracts) ... ok\ntest_weighted_not_cardinality (test_core.Contracts) ... ok\ntest_candidate_is_not_execution_permission (test_routing.Routing) ... ok\ntest_foreign_host_is_not_provider_nationality (test_routing.Routing) ... ok\ntest_blocked_stops_and_resume_refuses (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpqccrbkdc/runs/20261113T114146290650Z\nReview previous run before resuming: previous run is blocked\nok\ntest_dry_run_never_executes (test_runner.Runner) ... ok\ntest_missing_handoff_lock_and_dirty (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmp6ub2bb99/runs/20261113T114146299382Z\nReview previous run before resuming: [Errno 2] No such file or directory: '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmp6ub2bb99/runs/20261113T114146299382Z/completion.json'\nReview and commit changes first.\nRunner lock exists; inspect the running process before removing it.\nok\ntest_success_resume_and_bound (test_runner.Runner) ... ok\ntest_timeout_and_missing_completion_stop (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmptdcooyhh/runs/20261113T114146314224Z\nStopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmptdcooyhh/runs/20261113T114146321667Z\nok\ntest_timeout_kills_group (test_runner.Runner) ... ok\ntest_validation_survives_python_optimization (test_runner.Runner) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.048s\n\nOK\n"
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/audit_results.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.29032541700000003,
+      "stdout": "OK: four raw datasets reaggregated; recorded input/output hashes and frozen engine checked. C01: 1324 evaluations, 1319 distinct requests (5 repeated MIS). Self-audit only.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/replay.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.089937417,
+      "stdout": "Reproduced 20261113-c01-foundation all rows and metrics excluding elapsed_seconds\nReproduced 20261113-c02-formulation all rows and metrics excluding elapsed_seconds\nReproduced 20261113-c03-routing all rows and metrics excluding elapsed_seconds\nReproduced 20261113-c04-transfer all rows and metrics excluding elapsed_seconds\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/run_cycles.py",
+        "--cycles",
+        "1",
+        "--dry-run"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07214758399999999,
+      "stdout": "['codex', 'exec', '-C', '/Users/karimelhoudaigui/Downloads/quantage-research', '--sandbox', 'workspace-write', '-'] 1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "quantage",
+        "examples/mis.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06251283299999999,
+      "stdout": "{\n  \"status\": \"solved\",\n  \"problem\": {\n    \"family\": \"mis\",\n    \"n\": 3,\n    \"edges\": [\n      [\n        0,\n        1\n      ],\n      [\n        0,\n        2\n      ]\n    ],\n    \"weights\": [\n      5,\n      1,\n      1\n    ],\n    \"objective\": \"maximize_weight\",\n    \"domain\": \"binary\",\n    \"constraints\": \"independent\"\n  },\n  \"formulation\": {\n    \"kind\": \"qubo\",\n    \"linear\": [\n      -5,\n      -1,\n      -1\n    ],\n    \"quadratic\": [\n      [\n        0,\n        1,\n        6\n      ],\n      [\n        0,\n        2,\n        6\n      ]\n    ],\n    \"constant\": 0,\n    \"sense\": \"minimize\",\n    \"penalty\": 6\n  },\n  \"verification\": {\n    \"valid\": true,\n    \"reason\": \"all optimal states compared\",\n    \"oracle_value\": 5,\n    \"states_checked\": 8\n  },\n  \"route\": {\n    \"solver\": \"exhaustive_qubo\",\n    \"execution\": \"local_classical_exact\",\n    \"quantum_candidate\": \"Pasqal\",\n    \"hardware_readiness\": \"unverified\",\n    \"qpu_submitted\": false,\n    \"conditions\": [\n      \"geometric embedding\",\n      \"interaction errors and controls\",\n      \"device and account access\"\n    ]\n  },\n  \"solution\": {\n    \"energy\": -5,\n    \"solutions\": [\n      [\n        1,\n        0,\n        0\n      ]\n    ],\n    \"states_evaluated\": 8\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "-m",
+        "quantage",
+        "examples/photon.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06020225000000001,
+      "stdout": "{\n  \"status\": \"solved\",\n  \"problem\": {\n    \"family\": \"photon\",\n    \"a\": 0.7853981633974483,\n    \"b\": 0.7853981633974483,\n    \"phi\": 0,\n    \"input\": [\n      1,\n      0\n    ],\n    \"modes\": 2,\n    \"loss\": 0,\n    \"observable\": \"probabilities\"\n  },\n  \"formulation\": {\n    \"kind\": \"linear_optics\",\n    \"a\": 0.7853981633974483,\n    \"b\": 0.7853981633974483,\n    \"phi\": 0,\n    \"phase_mode\": 1,\n    \"input_mode\": 0,\n    \"order\": \"R_b P R_a\",\n    \"global_phase\": 0,\n    \"coherent\": true,\n    \"output\": \"probabilities\"\n  },\n  \"verification\": {\n    \"valid\": true,\n    \"max_abs_error\": 4.930380657631324e-32,\n    \"reason\": \"analytic probabilities and normalization\"\n  },\n  \"route\": {\n    \"solver\": \"single_photon_amplitudes\",\n    \"execution\": \"local_ideal_float_simulation\",\n    \"quantum_candidate\": \"Quandela\",\n    \"hardware_readiness\": \"unverified\",\n    \"qpu_submitted\": false,\n    \"conditions\": [\n      \"component convention translation\",\n      \"platform constraints and access\",\n      \"shots and imperfections\"\n    ]\n  },\n  \"solution\": {\n    \"probabilities\": [\n      4.930380657631324e-32,\n      1.0\n    ]\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07857591599999991,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c01-foundation/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.07894079199999993,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c02-formulation/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.08651108299999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c03-routing/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06859791699999995,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c04-transfer/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06719724999999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ],
+  "static_manuscript_checks": {
+    "matched_environments": true,
+    "balanced_braces": true,
+    "all_citations_defined": true,
+    "unique_bibliography_keys": true,
+    "all_claims_in_both_articles": true,
+    "latex_compiler_available": false,
+    "pdf_compiled": false
+  },
+  "all_executed_checks_passed": true,
+  "limitations": [
+    "Self-review, not independent validation",
+    "No PDF build: no LaTeX compiler",
+    "No nested Codex or QPU/LLM benchmark calls",
+    "Replay excludes only elapsed_seconds from comparison"
+  ]
+}

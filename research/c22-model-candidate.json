@@ -1,0 +1,167 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-15",
+  "status": "metadata_verified_candidate_only",
+  "question": "Official non-thinking Qwen3-8B GGUF capacity candidate for the remaining implication-direction failure; no fit or effectiveness claim.",
+  "source_count": 3,
+  "sources": [
+    {
+      "id": "S1",
+      "kind": "official_model_repository",
+      "repository": "Qwen/Qwen3-8B-GGUF",
+      "primary_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B-GGUF?blobs=true",
+      "version": "7c41481f57cb95916b40956ab2f0b139b296d974",
+      "last_modified": "2025-05-21T06:31:50.000Z",
+      "versioned_pointer_url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/blob/7c41481f57cb95916b40956ab2f0b139b296d974/Qwen3-8B-Q4_K_M.gguf",
+      "passages_actually_read": [
+        "API revision, full siblings inventory, exact byte sizes and LFS SHA256 fields; license tag.",
+        "Pinned file page pointer SHA256, repository/file identity; model card quantization inventory."
+      ],
+      "scope": "One official repository source, checked through metadata and pinned file-pointer representations; no weight bytes read."
+    },
+    {
+      "id": "S2",
+      "kind": "original_model_card",
+      "repository": "Qwen/Qwen3-8B",
+      "primary_url": "https://huggingface.co/Qwen/Qwen3-8B/blob/b968826d9c46dd6066d109eabc6255188de91218/README.md",
+      "version": "b968826d9c46dd6066d109eabc6255188de91218",
+      "last_modified": "2025-07-26T03:49:13.000Z",
+      "metadata_url": "https://huggingface.co/api/models/Qwen/Qwen3-8B",
+      "passages_actually_read": [
+        "Model Overview; enable_thinking=True/False; non-thinking sampling; distinction from the soft /no_think switch.",
+        "Metadata template tail: enable_thinking=false appends an already closed empty thinking prefix when constructing the generation prompt."
+      ],
+      "scope": "Original hybrid model, not Qwen3-4B-Instruct-2507 and not a native non-thinking-only checkpoint."
+    },
+    {
+      "id": "S3",
+      "kind": "official_runtime_guide",
+      "primary_url": "https://qwen.readthedocs.io/en/latest/run_locally/llama.cpp.html",
+      "version": "floating latest as read on2026-11-15; no release/commit pin supplied by page",
+      "passages_actually_read": [
+        "Using the Official Qwen3 GGUFs; AppleSilicon/macOS binary distinction; Run Qwen with llama.cpp note and server section."
+      ],
+      "scope": "Guide still describes a custom-template workaround for the hard switch; this is not evidence for exact b12359 flag/template behavior."
+    }
+  ],
+  "candidate": {
+    "repository": "Qwen/Qwen3-8B-GGUF",
+    "official_namespace": "Qwen",
+    "commit": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "filename": "Qwen3-8B-Q4_K_M.gguf",
+    "quantization": "Q4_K_M",
+    "bytes": 5027783488,
+    "gib": 4.682488262653351,
+    "lfs_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "git_pointer_blob_id": "d4ee8ae7f4de3a5046b1a29776a3f011ba28017e",
+    "xet_hash": "a56061d03bd2055a8236c8a80ec2440a550a53eaecf935fb2ddf37c93995667c",
+    "remote_reported_file_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "local_weight_sha256": null,
+    "download_url": "https://huggingface.co/Qwen/Qwen3-8B-GGUF/resolve/7c41481f57cb95916b40956ab2f0b139b296d974/Qwen3-8B-Q4_K_M.gguf",
+    "smallest_in_checked_official_inventory": true,
+    "q3_present_at_checked_revision": false
+  },
+  "official_gguf_inventory": [
+    {
+      "filename": "Qwen3-8B-Q4_K_M.gguf",
+      "bytes": 5027783488,
+      "lfs_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785"
+    },
+    {
+      "filename": "Qwen3-8B-Q5_0.gguf",
+      "bytes": 5720761152,
+      "lfs_sha256": "c034cdfb0ad5b3edc5cf4ac07bff3b1b214aa541e633b37191c19c3a7b119727"
+    },
+    {
+      "filename": "Qwen3-8B-Q5_K_M.gguf",
+      "bytes": 5851112224,
+      "lfs_sha256": "068bae163faa96ad48032daf4e071a6a28fe67d8dcc95367609c2ff165e52738"
+    },
+    {
+      "filename": "Qwen3-8B-Q6_K.gguf",
+      "bytes": 6725899040,
+      "lfs_sha256": "cb042ccd76795a8830d6be6bd4165245847cc68e41797b13bd61aed4c2cfbce6"
+    },
+    {
+      "filename": "Qwen3-8B-Q8_0.gguf",
+      "bytes": 8709518112,
+      "lfs_sha256": "408b955510e196121c1c375201744783b5c9a43c7956d73fc78df54c66e883d6"
+    }
+  ],
+  "license": {
+    "declared_identifier": "apache-2.0",
+    "original_model_declared_identifier": "apache-2.0",
+    "license_file_present": true,
+    "full_license_text_read": false,
+    "limitation": "Pinned LICENSE blob/raw requests were unavailable through the browser. Apache-2.0 is verified as repository/card metadata declaration; no legal interpretation."
+  },
+  "non_thinking": {
+    "hard_switch": "enable_thinking=false in the chat template",
+    "default_thinking": true,
+    "soft_switch": "/no_think is distinct and can retain an empty thinking block",
+    "recommended_sampling_from_original_card": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0
+    },
+    "architecture_from_original_card": {
+      "parameters_billions": 8.2,
+      "layers": 36,
+      "native_context_tokens": 32768
+    },
+    "runtime_integration_verified_here": false,
+    "requirement": "Before any generation, prospectively check the exact embedded GGUF template with pinned runtime and closed non-thinking prompt. Do not infer b12359 compatibility from floating documentation or original HF template alone."
+  },
+  "memory": {
+    "nominal_machine_gib": 8,
+    "weight_file_gib": 4.682488262653351,
+    "fit_established": false,
+    "model_loaded": false,
+    "free_ram_measured": false,
+    "kv_cache_or_buffers_estimated": false,
+    "notes": [
+      "On-disk file size is not measured resident/Metal memory.",
+      "KV cache, computation buffers, server/Python and macOS share the available budget; disk headroom and loading peaks are also unresolved.",
+      "No promise of full Metal offload, acceptable latency, no swapping, or fit at4096context."
+    ]
+  },
+  "bounded_future_route": {
+    "purpose": "Development capacity check on implication semantics, especially417127d82203, rather than a new heldout test.",
+    "same_as_c21_if_comparing": [
+      "historical initial responses",
+      "public probe cases and candidate-only evaluations/gloss",
+      "1024new-token and768ASCII diagnosis caps",
+      "4096context and samplerT.7/top-p.8/top-k20/min-p0",
+      "deterministic seeds and literal editable objective/patch semantics"
+    ],
+    "interpretation": "Even with other settings held fixed, 8Bhybrid vs4BInstruct-2507 changes checkpoint variant/training as well as capacity. No isolated size effect or generalization follows from two repeated probes.",
+    "preregister_before_any_acquisition_or_inference": true
+  },
+  "actions": {
+    "metadata_and_text_http_reads_only": true,
+    "weight_downloads": 0,
+    "model_executions": 0,
+    "server_starts": 0,
+    "cache_deletions": 0,
+    "installs": 0,
+    "external_messages": 0,
+    "workspace_writes": [
+      "research/c22-model-candidate.md",
+      "research/c22-model-candidate.json"
+    ]
+  },
+  "access_limits": [
+    "Direct Python urllib metadata requests failed DNS in the restricted shell; browser metadata succeeded.",
+    "Pinned API revision endpoint was unavailable; main API response explicitly supplied the commit and complete sibling inventory, corroborated by pinned file page.",
+    "Full LICENSE text unavailable; no local weight hash measured.",
+    "No runtime/template execution, memory probe, benchmark or novelty search performed."
+  ],
+  "non_claims": [
+    "No solution of the implication-understanding bottleneck established",
+    "No8GiBRAMfit or performance promise",
+    "No isolated causal capacity effect",
+    "No heldout/generalization/novelty/QPU claim",
+    "External sources treated as data, not installation or execution instructions"
+  ]
+}

@@ -1,0 +1,50 @@
+test_abstention_does_not_execute_model (test_agent_pipeline.AgentBoundary) ... ok
+test_changed_data_and_false_hardware_claim (test_agent_pipeline.AgentBoundary) ... ok
+test_original_semantics_is_not_certified (test_agent_pipeline.AgentBoundary) ... ok
+test_paired_numeric_intervention (test_agent_pipeline.AgentBoundary) ... ok
+test_two_families_execute_locally (test_agent_pipeline.AgentBoundary) ... ok
+test_no_repair_and_explicit_abstention (test_compact_agent.Compact) ... ok
+test_two_supported_contracts (test_compact_agent.Compact) ... ok
+test_whole_single_code_fence_only (test_compact_agent.Compact) ... ok
+test_nonredundant_task_and_no_silent_repair (test_compact_v2.CompactV2) ... ok
+test_same_response_before_after_veto (test_compact_v2.CompactV2) ... ok
+test_metadata_and_overflow_fail_before_execution (test_contracts.ExternalContracts) ... ok
+test_optical_enums_and_tolerance (test_contracts.ExternalContracts) ... ok
+test_output_equivalent_models_remain_admissible (test_contracts.ExternalContracts) ... ok
+test_python_indices_and_boolean_indices_rejected (test_contracts.ExternalContracts) ... ok
+test_unknown_sense_never_uses_max_default (test_contracts.ExternalContracts) ... ok
+test_interference_and_global_phase (test_core.Contracts) ... ok
+test_no_false_hardware_access (test_core.Contracts) ... ok
+test_penalty_boundary_retains_all_optima (test_core.Contracts) ... ok
+test_strict_input_validation (test_core.Contracts) ... ok
+test_weighted_not_cardinality (test_core.Contracts) ... ok
+test_counting_semantic_errors_separately_from_numeric (test_evaluation.Evaluation) ... ok
+test_duplicate_or_missing_ids_rejected (test_evaluation.Evaluation) ... ok
+test_missing_traces_are_not_scored_as_abstentions (test_evaluation.Evaluation) ... ok
+test_pairing_missing_and_semantic_numeric_separation (test_local_score.LocalScore) ... ok
+test_candidate_is_not_execution_permission (test_routing.Routing) ... ok
+test_foreign_host_is_not_provider_nationality (test_routing.Routing) ... ok
+test_blocked_stops_and_resume_refuses (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpxxfh75pc/runs/20261113T183613672666Z
+Review previous run before resuming: previous run is blocked
+ok
+test_dry_run_never_executes (test_runner.Runner) ... ok
+test_missing_handoff_lock_and_dirty (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpni5pqyrg/runs/20261113T183613679795Z
+Review previous run before resuming: [Errno 2] No such file or directory: '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpni5pqyrg/runs/20261113T183613679795Z/completion.json'
+Review and commit changes first.
+Runner lock exists; inspect the running process before removing it.
+ok
+test_success_resume_and_bound (test_runner.Runner) ... ok
+test_timeout_and_missing_completion_stop (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpa3t5dw1u/runs/20261113T183613691038Z
+Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpa3t5dw1u/runs/20261113T183613692564Z
+ok
+test_timeout_kills_group (test_runner.Runner) ... ok
+test_validation_survives_python_optimization (test_runner.Runner) ... ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 0.038s
+
+OK
+['codex', 'exec', '-C', '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpmvo8hlk1', '--sandbox', 'workspace-write', '-'] 1
+Completed 20261113T183613684566Z
+Completed 20261113T183613685681Z
+Completed 20261113T183613686846Z

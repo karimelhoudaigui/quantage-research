@@ -1,0 +1,24 @@
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'
+  warnings.warn(UserWarning(f"{exc}"))
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+  warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+  warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'
+  warnings.warn(UserWarning(f"{exc}"))
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+  warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+  warnings.warn(UserWarning(f"Using temp folder {self._directory}."))
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/karimelhoudaigui/.cache/fontconfig
+	/Users/karimelhoudaigui/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:108: UserWarning: [Errno 1] Operation not permitted: '/Users/karimelhoudaigui/Library/Application Support/perceval-quandela'
+  warnings.warn(UserWarning(f"{exc}"))
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:71: UserWarning: Can't read or write in default folder /Users/karimelhoudaigui/Library/Application Support/perceval-quandela.
+  warnings.warn(UserWarning(f"Can't read or write in default folder {self._directory}."))
+/Users/karimelhoudaigui/Downloads/quantage-research/.venv-quantum-sdk/lib/python3.11/site-packages/perceval/utils/persistent_data.py:73: UserWarning: Using temp folder /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T.
+  warnings.warn(UserWarning(f"Using temp folder {self._directory}."))

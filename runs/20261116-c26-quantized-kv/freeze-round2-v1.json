@@ -1,0 +1,28 @@
+{
+  "client_date": "2026-11-16",
+  "development_only": true,
+  "new_guided_call_budget": 1,
+  "initial_resampled": false,
+  "state_source": "runs/20261116-c24-second-repair/states.json",
+  "sha256": {
+    "scripts/run_c26_repair.py": "4216cbaaa2d5dc4bd652a90a546ce51a5c957a2fb9c10af024085e3917964932",
+    "quantage/repair_second_round_q8_inference.py": "61fb63237bb95fafdcf9c92145620b868d02cd547bd7b238dd9283f345af6ed2",
+    "quantage/repair_iterative_patch_inference.py": "567fc2031df62434d544c68dd14d0e51070df911d02195d8bd7ab2ef67eee2bd",
+    "quantage/repair_iterative_state.py": "749e5450a159de77fe6cd6ca64a2cd2b48abe78d1db3a55f89bfc2d5c249b7d2",
+    "quantage/repair_patch_tool_language.py": "ec0b66334b3fbac6ee2720f23d68450b1cd9b21c5d57c509260f9160c40359bc",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_model.py": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "quantage/repair_trace_feedback.py": "8ae1576b3abd974d084e74816e02ccab36f490f72678d59577750f41660e82cc",
+    "runs/20261116-c26-quantized-kv/protocol.md": "43570ef3d6e8d5ec807d96c4f1f1f8620ff4083ce456778fcaaed2cf5dd5e027",
+    "runs/20261116-c26-quantized-kv/native-help.json": "4060187429fd8b280b717fd5bcf24a4d73a74519b8637744c14ccdc25c7a2d6a",
+    "runs/20261116-c26-quantized-kv/code-checks.json": "3a6685d85837b0f5844339713ce640dfe71e49a0177d30f9a3f59eb650a91765",
+    "runs/20261116-c24-second-repair/public_case.json": "dbebf229d495ccfd49355c83fea2a0aff234b41bc9358a7425c00f20cf1e6696",
+    "runs/20261116-c24-second-repair/instructions.txt": "79760c20a11b690382384fb98140227ff816c292fd432adf2a73c86c3e83964e",
+    "runs/20261116-c24-second-repair/states.json": "16f9c2891fc91e9ce8b6ddfb24e53cdd52f8bd2585917346f97b8a43ced291cd",
+    "runs/20261116-c24-second-repair/feedback.json": "50b05e8ae6ba70489dedc425b568888bca38e9aa65732c771145cf3c824af824",
+    "runs/20261116-c24-second-repair/before-verification.json": "e26099e3d7b2454b3c9c7a9b571ae9c10c004ebdca422d32906f792d085a0fa4",
+    "runs/20261116-c24-second-repair/freeze-round2-v1.json": "f4aae57d05d634c0c409689c6ea6df29948ee4de1452c9978b4ae1fbb842c854",
+    "runs/20261115-c22-model-capacity/acquisition.json": "d692962887055660f422ed425e2e26e5adbbb1f9df71a27f8e59824df207fdbf"
+  }
+}

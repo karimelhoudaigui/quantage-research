@@ -1,0 +1,226 @@
+{
+  "date": "2026-11-15",
+  "scope": "metadata only; old600s closed files classified garbage by Git, no contents read",
+  "lsof_exit": 1,
+  "open_temp_paths": [],
+  "candidates": [
+    {
+      "path": ".git/objects/pack/tmp_pack_0cWBXZ",
+      "bytes": 88342540,
+      "mtime_ns": 1794775550818024178,
+      "inode": 54740053,
+      "age_seconds": 1026.351292848587
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_0rcACh",
+      "bytes": 206176268,
+      "mtime_ns": 1794775147077337233,
+      "inode": 54738322,
+      "age_seconds": 1430.0919797420502
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_1M1Nnn",
+      "bytes": 194641932,
+      "mtime_ns": 1794775192360120338,
+      "inode": 54738476,
+      "age_seconds": 1384.8091967105865
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_3IcMcL",
+      "bytes": 163446796,
+      "mtime_ns": 1794775184210251875,
+      "inode": 54738428,
+      "age_seconds": 1392.9590651988983
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_4mWxC8",
+      "bytes": 139460620,
+      "mtime_ns": 1794775666494816512,
+      "inode": 54740387,
+      "age_seconds": 910.6745004653931
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_9Dvxkk",
+      "bytes": 198967308,
+      "mtime_ns": 1794775225403254137,
+      "inode": 54738628,
+      "age_seconds": 1351.7660629749298
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_BDWNRv",
+      "bytes": 178257932,
+      "mtime_ns": 1794775315228384352,
+      "inode": 54739568,
+      "age_seconds": 1261.940932750702
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_Bgy5Wk",
+      "bytes": 204865548,
+      "mtime_ns": 1794775422558617329,
+      "inode": 54739809,
+      "age_seconds": 1154.6106996536255
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_COkrmx",
+      "bytes": 193724428,
+      "mtime_ns": 1794775725581356286,
+      "inode": 54741127,
+      "age_seconds": 851.5879607200623
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_FRWtax",
+      "bytes": 203685900,
+      "mtime_ns": 1794775742064269451,
+      "inode": 54741165,
+      "age_seconds": 835.1050474643707
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_FZl25a",
+      "bytes": 205914124,
+      "mtime_ns": 1794775613152066024,
+      "inode": 54740272,
+      "age_seconds": 964.0172510147095
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_GOrMn4",
+      "bytes": 195035148,
+      "mtime_ns": 1794775217251809592,
+      "inode": 54738547,
+      "age_seconds": 1359.9175074100494
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_Ji7SlM",
+      "bytes": 177340428,
+      "mtime_ns": 1794775644366325965,
+      "inode": 54740339,
+      "age_seconds": 932.8029911518097
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_Kr1DDf",
+      "bytes": 203816972,
+      "mtime_ns": 1794775433420478007,
+      "inode": 54739836,
+      "age_seconds": 1143.7488389015198
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_LvhvS9",
+      "bytes": 165806092,
+      "mtime_ns": 1794775310091418770,
+      "inode": 54739456,
+      "age_seconds": 1267.0778982639313
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_Ow2Ta0",
+      "bytes": 179568652,
+      "mtime_ns": 1794775556429165552,
+      "inode": 54740069,
+      "age_seconds": 1020.7401514053345
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_RLY9tw",
+      "bytes": 197001228,
+      "mtime_ns": 1794775179040829200,
+      "inode": 54738410,
+      "age_seconds": 1398.1284878253937
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_SkdUN4",
+      "bytes": 181796876,
+      "mtime_ns": 1794775511994612461,
+      "inode": 54739980,
+      "age_seconds": 1065.1747045516968
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_XMjW7z",
+      "bytes": 205914124,
+      "mtime_ns": 1794775600942712690,
+      "inode": 54740205,
+      "age_seconds": 976.2266042232513
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_ZNWEZr",
+      "bytes": 184418316,
+      "mtime_ns": 1794775491720387248,
+      "inode": 54739938,
+      "age_seconds": 1085.4489297866821
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_Zzy29d",
+      "bytes": 188743692,
+      "mtime_ns": 1794775290421172975,
+      "inode": 54738846,
+      "age_seconds": 1286.7481441497803
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_dtGUuT",
+      "bytes": 193200140,
+      "mtime_ns": 1794775417386105658,
+      "inode": 54739792,
+      "age_seconds": 1159.7832112312317
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_fZtkPz",
+      "bytes": 199884812,
+      "mtime_ns": 1794775651868100095,
+      "inode": 54740361,
+      "age_seconds": 925.301216840744
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_fzT2CR",
+      "bytes": 133824524,
+      "mtime_ns": 1794775353474644334,
+      "inode": 54739708,
+      "age_seconds": 1223.6946725845337
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_l5UCj9",
+      "bytes": 204865548,
+      "mtime_ns": 1794775340192631953,
+      "inode": 54739665,
+      "age_seconds": 1236.9766850471497
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_lgSN8m",
+      "bytes": 203816972,
+      "mtime_ns": 1794775566501012867,
+      "inode": 54740113,
+      "age_seconds": 1010.6683042049408
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_nRsr09",
+      "bytes": 145621004,
+      "mtime_ns": 1794775348363261521,
+      "inode": 54739687,
+      "age_seconds": 1228.8060555458069
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_nZQ4Zi",
+      "bytes": 206045196,
+      "mtime_ns": 1794775091479523466,
+      "inode": 54738239,
+      "age_seconds": 1485.689793586731
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_paSAhf",
+      "bytes": 177602572,
+      "mtime_ns": 1794775047784152287,
+      "inode": 54738164,
+      "age_seconds": 1529.3851647377014
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_rhLfe1",
+      "bytes": 186908684,
+      "mtime_ns": 1794775524168755039,
+      "inode": 54740003,
+      "age_seconds": 1053.000561952591
+    },
+    {
+      "path": ".git/objects/pack/tmp_pack_scY5df",
+      "bytes": 201850892,
+      "mtime_ns": 1794775572520275971,
+      "inode": 54740136,
+      "age_seconds": 1004.6490409374237
+    }
+  ],
+  "candidate_bytes": 5710545268
+}

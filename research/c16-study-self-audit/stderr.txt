@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/karimelhoudaigui/Downloads/quantage-research/research/c16-study-self-audit.py", line 180, in <module>
+    main()
+  File "/Users/karimelhoudaigui/Downloads/quantage-research/research/c16-study-self-audit.py", line 128, in main
+    assert observed == dict(load_seconds=(phase_index+1)/2, process_wall_seconds=4*(phase_index+1)+(phase_index+1)/2, wrapper_wall_seconds=4*(phase_index+1)+(phase_index+1)/2+1)
+AssertionError

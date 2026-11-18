@@ -1,0 +1,32 @@
+{
+  "checked_on": "2026-11-13",
+  "primary_docs": [
+    {
+      "url": "https://docs.pasqal.com/pulser/v1.7.2/hardware/",
+      "version": "1.7.2",
+      "sections_consulted": "AnalogDevice; Device; Channels",
+      "extraction": "Geometry/control limits and distinction of backend-only layout conditions."
+    },
+    {
+      "url": "https://docs.pasqal.com/pulser/v1.7.2/conventions/",
+      "version": "1.7.2",
+      "sections_consulted": "ground-rydberg basis; measurement order; driving and interactions",
+      "extraction": "SDK basis r=(1,0),g=(0,1),r->bit1; Hdrive/interaction and units."
+    },
+    {
+      "url": "https://docs.pasqal.com/pulser/v1.7.2/sequence/",
+      "version": "1.7.2",
+      "sections_consulted": "construction; runtime validation; backend validation",
+      "extraction": "Sequence checks selected device during construction, not all QPU-backend conditions."
+    }
+  ],
+  "local_primary_source_read_without_import": [
+    "pulser_simulation/simulation.py get_hamiltonian,run,from_sequence",
+    "pulser_simulation/simresults.py get_final_state"
+  ],
+  "cache_miss": [
+    "version1.7.2 QutipEmulator API page",
+    "version1.7.2 backend tutorial"
+  ],
+  "source_excerpt_copied": false
+}

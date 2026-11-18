@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "tests",
+    "-p",
+    "test_sdk_*.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.401982083,
+  "stdout": "",
+  "stderr": "test_bunching_has_bosonic_factor (test_sdk_photon.BosonicOracle) ... ok\ntest_colliding_input_normalization (test_sdk_photon.BosonicOracle) ... ok\ntest_recombined_phase_changes_interference (test_sdk_photon.BosonicOracle) ... ok\ntest_interaction_lifts_only_double_excitation (test_sdk_rydberg.RydbergOracle) ... ok\ntest_no_interaction_is_product_of_rabi_rotations (test_sdk_rydberg.RydbergOracle) ... ok\ntest_zero_drive_preserves_ground (test_sdk_rydberg.RydbergOracle) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.281s\n\nOK\n",
+  "scope": "6 analytic implementation checks, no additional SDK science or QPU"
+}

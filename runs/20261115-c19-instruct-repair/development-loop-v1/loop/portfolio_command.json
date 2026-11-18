@@ -1,0 +1,8 @@
+[
+  "/Library/Developer/CommandLineTools/usr/bin/python3",
+  "-m",
+  "quantage.repair_loop_linear",
+  "_portfolio",
+  "/Users/karimelhoudaigui/Downloads/quantage-research/runs/20261115-c19-instruct-repair/development-loop-v1/loop/final_model.json",
+  "/Users/karimelhoudaigui/Downloads/quantage-research/runs/20261115-c19-instruct-repair/development-loop-v1/loop/portfolio.json"
+]

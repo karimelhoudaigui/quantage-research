@@ -1,0 +1,35 @@
+{
+  "client_date": "2026-11-16",
+  "completed_response_records": 0,
+  "attempted_unknown_ids": [
+    "29507bb778cc"
+  ],
+  "never_attempted_ids": [
+    "417127d82203"
+  ],
+  "native_completion_requests": 1,
+  "native_completion_responses": 0,
+  "generation_metadata_missing": true,
+  "final_runner_manifest_missing": true,
+  "owned_llama_processes_after": [],
+  "process_check": "process-reconciliation-v2.json",
+  "interruption_cause": "unknown, no timing or output reconstructed",
+  "sha256_observed_after_interruption": {
+    "runs/20261115-c22-model-capacity/probe-guided-v2/stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stderr.txt": "57d42d0cdd88d7e9048b02396dbb8fe11e5892d0937bbba42d15cc1ad5af9388",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/patch-schema.json": "4442eac1de4efbece4999674053ae1b0e591eb27bf3a135215400da97de23554",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/server.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/patch-grammar.gbnf": "82ce543af9f75e0e4c18780bf8e3851dad26db501df27ae74d22e5c873ba6d53",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/raw.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.response.json": "399ea9e5ffcebc5d77361a7ff95171381ead00826352ba7af6eb44a64405093e",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.template.request.json": "390689693201e9cab3d3e37f14e50e3a7ac1ba8ed15951c5fa13f435ce369f25",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.prompt.txt": "fb920a686fc3a7d7007e6912d6e36c3ad9f50782ebba8508cd2391321a37367a",
+    "runs/20261115-c22-model-capacity/probe-guided-v2/driver/http/000.request.json": "09795bf80374e72b50683cb4fc0efb33f0658b1ff2fcf77f689dd7233e964487"
+  },
+  "nonclaims": [
+    "No zero-output assertion; generated tokens unknown",
+    "No completed before/after envelope invented",
+    "No resampling of attempted case"
+  ]
+}

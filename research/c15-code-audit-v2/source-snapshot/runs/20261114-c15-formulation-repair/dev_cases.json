@@ -1,0 +1,298 @@
+[
+  {
+    "id": "9e2a4c71",
+    "language": "fr",
+    "intention": "Pour ces quatre dossiers numérotés de 0 à 3, x_i vaut 1 si le dossier i est retenu et 0 sinon. Maximiser la somme des weights des dossiers retenus. Chaque paire donnée dans edges est une exclusion : on ne peut retenir ses deux dossiers. La somme des costs retenus doit être au plus 8. Il n'y a pas d'autre contrainte.",
+    "data": {
+      "n": 4,
+      "weights": [
+        9,
+        5,
+        8,
+        6
+      ],
+      "costs": [
+        7,
+        2,
+        4,
+        3
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "id": "31d8b6f0",
+    "language": "en",
+    "intention": "Use a binary decision x_i for each of the five projects, indexed 0 through 4: 1 selects it and 0 leaves it out. The objective is the largest possible total of selected weights. Any pair in edges is incompatible, so its two projects cannot both be selected. We need at least 2 projects. No other restrictions apply.",
+    "data": {
+      "n": 5,
+      "weights": [
+        4,
+        10,
+        6,
+        8,
+        3
+      ],
+      "costs": [
+        2,
+        7,
+        4,
+        3,
+        1
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "a7f03d2c",
+    "language": "fr",
+    "intention": "Parmi les six expériences 0, 1, 2, 3, 4 et 5, retenir au maximum 2 expériences. Associer à chacune une variable binaire x_i égale à 1 exactement quand elle est retenue. Les deux indices de toute paire de edges ne doivent jamais être retenus ensemble. Chercher le maximum de la somme des weights retenus, sans autre contrainte.",
+    "data": {
+      "n": 6,
+      "weights": [
+        7,
+        2,
+        11,
+        5,
+        9,
+        4
+      ],
+      "costs": [
+        4,
+        1,
+        6,
+        3,
+        5,
+        2
+      ],
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "68c1e9b4",
+    "language": "en",
+    "intention": "Select a portfolio from items numbered 0 to 6. Items 2 and 5 must be in the portfolio. Let x_i be binary, with x_i=1 meaning item i is chosen. Every pair in edges forbids taking both endpoints. Maximize the sum of weights of the chosen items. These are all the requirements.",
+    "data": {
+      "n": 7,
+      "weights": [
+        6,
+        12,
+        4,
+        9,
+        5,
+        7,
+        3
+      ],
+      "costs": [
+        3,
+        6,
+        2,
+        5,
+        4,
+        1,
+        2
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "c2b7460d",
+    "language": "en",
+    "intention": "There are four candidate modules, indexed from 0. A binary variable x_i records whether module i is installed. Choose the modules with maximum total weight, counting only installed modules. For each pair listed in edges, at most one of the two modules can be installed. Module 1 is unavailable and must be excluded. No further constraints are imposed.",
+    "data": {
+      "n": 4,
+      "weights": [
+        6,
+        13,
+        5,
+        8
+      ],
+      "costs": [
+        2,
+        5,
+        1,
+        4
+      ],
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    }
+  },
+  {
+    "id": "f40a8e53",
+    "language": "fr",
+    "intention": "On décide pour chacun des objets 0 à 4 s'il est choisi : x_i est binaire et vaut 1 dans ce cas. Choisir l'objet 0 oblige à choisir aussi l'objet 3 ; choisir 3 seul reste autorisé. Toute paire de edges interdit de choisir simultanément ses deux objets. L'objectif est de maximiser la somme des weights des objets choisis. Aucune autre condition ne s'ajoute.",
+    "data": {
+      "n": 5,
+      "weights": [
+        12,
+        5,
+        8,
+        3,
+        9
+      ],
+      "costs": [
+        6,
+        2,
+        4,
+        1,
+        5
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    }
+  },
+  {
+    "id": "0b5d97a2",
+    "language": "en",
+    "intention": "Plan a selection of the six tasks indexed 0 through 5, using binary x_i=1 for a selected task. The total selected cost must not exceed 10, and at least 2 tasks must be selected. The pairs in edges are mutual exclusions: never select both tasks in one pair. Maximize the total selected weight. There are no additional requirements.",
+    "data": {
+      "n": 6,
+      "weights": [
+        11,
+        4,
+        9,
+        6,
+        8,
+        3
+      ],
+      "costs": [
+        8,
+        2,
+        5,
+        4,
+        3,
+        1
+      ],
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "id": "7d139ac8",
+    "language": "fr",
+    "intention": "Construire un lot avec les articles d'indices 0 à 6. Les articles 2 et 6 sont interdits et le lot contient au plus 2 articles. Pour chaque article, x_i appartient à {0,1} et indique sa présence. Une paire de edges ne peut pas avoir ses deux articles présents. Maximiser la somme des weights des articles du lot ; aucune autre contrainte n'est demandée.",
+    "data": {
+      "n": 7,
+      "weights": [
+        8,
+        5,
+        14,
+        7,
+        4,
+        10,
+        12
+      ],
+      "costs": [
+        4,
+        2,
+        6,
+        3,
+        1,
+        5,
+        7
+      ],
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    }
+  }
+]

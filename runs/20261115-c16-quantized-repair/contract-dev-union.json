@@ -1,0 +1,38 @@
+{
+  "claim_id": "C16-DEVELOPMENT-UNION",
+  "mathematics": {
+    "assertion_tested": "Union of8actual development records from disjoint2+6batches; no generation/imputation",
+    "coefficient_domain": "record identities and token counts",
+    "conventions": "2v1+6v2, not a uniform-prompt development estimate",
+    "inputs": [
+      "eight development IDs"
+    ],
+    "bounds": {
+      "records": 8
+    },
+    "non_claims": [
+      "No new model calls or test results"
+    ]
+  },
+  "execution_artifacts": [
+    "scripts/merge_c16_development.py",
+    "runs/20261115-c16-quantized-repair/dev_cases.json",
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/driver/generation.json",
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/manifest.json",
+    "runs/20261115-c16-quantized-repair/dev-remaining-v1/driver/raw.jsonl",
+    "runs/20261115-c16-quantized-repair/dev-remaining-v1/driver/generation.json",
+    "runs/20261115-c16-quantized-repair/dev-remaining-v1/manifest.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

@@ -1,0 +1,2 @@
+python3 -m quantage.transferstudy --generate runs/20261113-c04-transfer/cases.json
+Python 3.9.6; random.Random seed 20261114; no model training.

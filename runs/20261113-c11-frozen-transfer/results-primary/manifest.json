@@ -1,0 +1,219 @@
+{
+  "schema_version": 2,
+  "claim_id": "C11-FROZEN-TRANSFER",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-m",
+    "quantage.c11_score",
+    "--cases",
+    "runs/20261113-c11-frozen-transfer/public_cases.json",
+    "--gold",
+    "runs/20261113-c11-frozen-transfer/gold.json",
+    "--primary",
+    "runs/20261113-c11-frozen-transfer/generation-qwen/raw.jsonl",
+    "--output",
+    "runs/20261113-c11-frozen-transfer/results-primary"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Descriptive risk/coverage and preregistered hypotheses on actual new C11 responses; no absent secondary proposals imputed",
+    "coefficient_domain": "Exact integer MIS, float complex photon circuit with1e-12 tolerance; finite labelled decisions",
+    "conventions": "accepted/all and wrong/accepted; wrong task on supported input counts error",
+    "inputs": [
+      "128 new paired requests and frozen independent-role gold"
+    ],
+    "bounds": {
+      "cases": 128,
+      "groups": 64
+    },
+    "non_claims": [
+      "No population generalization",
+      "Decision-only baseline is not an executed solver",
+      "No effect of numerical gate inferred for deterministic correct formulation",
+      "No QPU compatibility"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-14T10:38:31.803693+00:00",
+    "runtime_seconds": 1.250115,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 60.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": null
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "quantage/c11_score.py",
+    "quantage/compact_v2.py",
+    "quantage/compact_v3.py",
+    "quantage/compact_v4.py",
+    "quantage/compact_agent.py",
+    "quantage/core.py",
+    "quantage/contracts.py",
+    "quantage/verification.py",
+    "quantage/transferstudy.py",
+    "runs/20261113-c11-frozen-transfer/public_cases.json",
+    "runs/20261113-c11-frozen-transfer/gold.json",
+    "runs/20261113-c11-frozen-transfer/adjudication.json",
+    "runs/20261113-c11-frozen-transfer/preflight.json",
+    "runs/20261113-c11-frozen-transfer/protocol.md",
+    "runs/20261113-c11-frozen-transfer/generation-qwen/raw.jsonl",
+    "runs/20261113-c11-frozen-transfer/generation-qwen/generation.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "quantage/c11_score.py",
+      "sha256": "4042958024addcbb0ae5a5c7b4c358db4b9a5a602863b6baa41d907386a65065",
+      "sha256_after": "4042958024addcbb0ae5a5c7b4c358db4b9a5a602863b6baa41d907386a65065"
+    },
+    {
+      "path": "quantage/compact_v2.py",
+      "sha256": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d",
+      "sha256_after": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d"
+    },
+    {
+      "path": "quantage/compact_v3.py",
+      "sha256": "87f052487c4bb522b3e4d8580e9aa0199628f910a3e844a5085edc401c86db35",
+      "sha256_after": "87f052487c4bb522b3e4d8580e9aa0199628f910a3e844a5085edc401c86db35"
+    },
+    {
+      "path": "quantage/compact_v4.py",
+      "sha256": "1ad338864a35ce9a2af4f6ce91b2f5806ec3856dd56f2185adaa5e1a19c3c7e9",
+      "sha256_after": "1ad338864a35ce9a2af4f6ce91b2f5806ec3856dd56f2185adaa5e1a19c3c7e9"
+    },
+    {
+      "path": "quantage/compact_agent.py",
+      "sha256": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+      "sha256_after": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323"
+    },
+    {
+      "path": "quantage/core.py",
+      "sha256": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+      "sha256_after": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2"
+    },
+    {
+      "path": "quantage/contracts.py",
+      "sha256": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+      "sha256_after": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef"
+    },
+    {
+      "path": "quantage/verification.py",
+      "sha256": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+      "sha256_after": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f"
+    },
+    {
+      "path": "quantage/transferstudy.py",
+      "sha256": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+      "sha256_after": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/public_cases.json",
+      "sha256": "d181acd855b9db47f53763ee8154a03a838e04683ec5bee8de137f04c9480a45",
+      "sha256_after": "d181acd855b9db47f53763ee8154a03a838e04683ec5bee8de137f04c9480a45"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/gold.json",
+      "sha256": "fc59a965abecebef239f12d1ff93c7c98700512c17021226e7ac4b5b1c01b4eb",
+      "sha256_after": "fc59a965abecebef239f12d1ff93c7c98700512c17021226e7ac4b5b1c01b4eb"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/adjudication.json",
+      "sha256": "bcca643661b52fa4a58006318d62b14f4f9761cffc1ed17555a81b0bcb59e440",
+      "sha256_after": "bcca643661b52fa4a58006318d62b14f4f9761cffc1ed17555a81b0bcb59e440"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/preflight.json",
+      "sha256": "b98ca891e9057e3ad6ff88cda95e0c8121988a01e7d1059e89dd8da313674914",
+      "sha256_after": "b98ca891e9057e3ad6ff88cda95e0c8121988a01e7d1059e89dd8da313674914"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/protocol.md",
+      "sha256": "340afe2d1256596f1d33f77a189a44f181554169dda3301dade44d58bbd868a2",
+      "sha256_after": "340afe2d1256596f1d33f77a189a44f181554169dda3301dade44d58bbd868a2"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/generation-qwen/raw.jsonl",
+      "sha256": "ad379a598f4715afd0496780ae0aaebc246fb038183c500b5fa1a5dd06533d2e",
+      "sha256_after": "ad379a598f4715afd0496780ae0aaebc246fb038183c500b5fa1a5dd06533d2e"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/generation-qwen/generation.json",
+      "sha256": "5d2dfaf5e51676125f39ff9e715d29714803e200b7da564bbc40107d6bf35c90",
+      "sha256_after": "5d2dfaf5e51676125f39ff9e715d29714803e200b7da564bbc40107d6bf35c90"
+    }
+  ],
+  "output_directory": "runs/20261113-c11-frozen-transfer/results-primary",
+  "declared_results": [
+    "runs/20261113-c11-frozen-transfer/results-primary/raw.jsonl",
+    "runs/20261113-c11-frozen-transfer/results-primary/metrics.json"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261113-c11-frozen-transfer/results-primary/stdout.txt",
+      "sha256": "7748b1928afe730aeaed57b15f06526c84f36c4beb8f4eae32a7e304fdeeb1f2",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/results-primary/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/results-primary/raw.jsonl",
+      "sha256": "986fb74fe7823e5c2a518e5f225b507a1fb53751db57cea76c046f746895e63a",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261113-c11-frozen-transfer/results-primary/metrics.json",
+      "sha256": "11f885fcfc7abe7a6140c864f9f82051112a92af19bd9041cae92523e95e3743",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions."
+  ]
+}

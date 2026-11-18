@@ -1,0 +1,51 @@
+{
+  "status": "reviewed_frozen_sources_before_test_results",
+  "timestamp_utc": "2026-11-15T13:07:37.436918+00:00",
+  "source_snapshot": "research/c15-v2-source-snapshot",
+  "inputs": [
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "sha256_after": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "quantage/repair_loop.py",
+      "sha256": "2128dcbaaa1b79d65ff43053ce531c25492bb3d8531f98adcc295002b09ca488",
+      "sha256_after": "2128dcbaaa1b79d65ff43053ce531c25492bb3d8531f98adcc295002b09ca488"
+    },
+    {
+      "path": "quantage/repair_inference_v2.py",
+      "sha256": "704b551452a767dfc841165cd4a88c31e4177275fdea62a5184c80e061418cae",
+      "sha256_after": "704b551452a767dfc841165cd4a88c31e4177275fdea62a5184c80e061418cae"
+    },
+    {
+      "path": "quantage/repair_study_v2.py",
+      "sha256": "199e4e20cd75754509a0798c44b81dbe78bf94d1734d0f948c4a32079e1954b8",
+      "sha256_after": "199e4e20cd75754509a0798c44b81dbe78bf94d1734d0f948c4a32079e1954b8"
+    }
+  ],
+  "audits": [
+    "research/c15-language-loop-audit/manifest.json",
+    "research/c15-study-audit-v2/manifest.json"
+  ],
+  "result": "No blocking defect found for the preregistered comparative matrix. Boundary limitations recorded separately.",
+  "non_claims": [
+    "No LLM outputs generated or scored by this audit.",
+    "No H15 result yet."
+  ]
+}

@@ -1,0 +1,653 @@
+{
+  "status": "complete",
+  "recorded_at_utc": "2026-11-13T19:51:05.899030+00:00",
+  "reviewer": "/root/c11_audit",
+  "author_independence": "distinct agent from prior author, inherited project/history; not blind and no independent model identity established",
+  "network_access_used": false,
+  "qpu_jobs": 0,
+  "llm_generations_performed": 0,
+  "historical_artifacts_modified": false,
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "scripts/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.042086333000000004,
+      "stdout": "OK: 14 claims; 10 completed/blocked handoffs; truth requires scientific review.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-O",
+        "scripts/check.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.107883708,
+      "stdout": "OK: 14 claims; 10 completed/blocked handoffs; truth requires scientific review.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.269168167,
+      "stdout": "['codex', 'exec', '-C', '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpb16yoys5', '--sandbox', 'workspace-write', '-'] 1\nCompleted 20261113T195105300297Z\nCompleted 20261113T195105301228Z\nCompleted 20261113T195105302448Z\n",
+      "stderr": "test_abstention_does_not_execute_model (test_agent_pipeline.AgentBoundary) ... ok\ntest_changed_data_and_false_hardware_claim (test_agent_pipeline.AgentBoundary) ... ok\ntest_original_semantics_is_not_certified (test_agent_pipeline.AgentBoundary) ... ok\ntest_paired_numeric_intervention (test_agent_pipeline.AgentBoundary) ... ok\ntest_two_families_execute_locally (test_agent_pipeline.AgentBoundary) ... ok\ntest_no_repair_and_explicit_abstention (test_compact_agent.Compact) ... ok\ntest_two_supported_contracts (test_compact_agent.Compact) ... ok\ntest_whole_single_code_fence_only (test_compact_agent.Compact) ... ok\ntest_nonredundant_task_and_no_silent_repair (test_compact_v2.CompactV2) ... ok\ntest_same_response_before_after_veto (test_compact_v2.CompactV2) ... ok\ntest_explicit_unknown_input_refused (test_compact_v3.CompactV3) ... ok\ntest_greatest_weight_synonym_without_relaxing_cardinality (test_compact_v3.CompactV3) ... ok\ntest_unresolved_direction_overrides_positive_words (test_compact_v4.CompactV4) ... ok\ntest_metadata_and_overflow_fail_before_execution (test_contracts.ExternalContracts) ... ok\ntest_optical_enums_and_tolerance (test_contracts.ExternalContracts) ... ok\ntest_output_equivalent_models_remain_admissible (test_contracts.ExternalContracts) ... ok\ntest_python_indices_and_boolean_indices_rejected (test_contracts.ExternalContracts) ... ok\ntest_unknown_sense_never_uses_max_default (test_contracts.ExternalContracts) ... ok\ntest_interference_and_global_phase (test_core.Contracts) ... ok\ntest_no_false_hardware_access (test_core.Contracts) ... ok\ntest_penalty_boundary_retains_all_optima (test_core.Contracts) ... ok\ntest_strict_input_validation (test_core.Contracts) ... ok\ntest_weighted_not_cardinality (test_core.Contracts) ... ok\ntest_counting_semantic_errors_separately_from_numeric (test_evaluation.Evaluation) ... ok\ntest_duplicate_or_missing_ids_rejected (test_evaluation.Evaluation) ... ok\ntest_missing_traces_are_not_scored_as_abstentions (test_evaluation.Evaluation) ... ok\ntest_pairing_missing_and_semantic_numeric_separation (test_local_score.LocalScore) ... ok\ntest_candidate_is_not_execution_permission (test_routing.Routing) ... ok\ntest_foreign_host_is_not_provider_nationality (test_routing.Routing) ... ok\ntest_blocked_stops_and_resume_refuses (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpe_9krzyt/runs/20261113T195105288784Z\nReview previous run before resuming: previous run is blocked\nok\ntest_dry_run_never_executes (test_runner.Runner) ... ok\ntest_missing_handoff_lock_and_dirty (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmp6roqz7_m/runs/20261113T195105295287Z\nReview previous run before resuming: [Errno 2] No such file or directory: '/var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmp6roqz7_m/runs/20261113T195105295287Z/completion.json'\nReview and commit changes first.\nRunner lock exists; inspect the running process before removing it.\nok\ntest_success_resume_and_bound (test_runner.Runner) ... ok\ntest_timeout_and_missing_completion_stop (test_runner.Runner) ... Stopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpf3qphyyl/runs/20261113T195105306395Z\nStopped: inspect /var/folders/50/gcqfpw_j5jndbr0zxzlxvr_r0000gn/T/tmpf3qphyyl/runs/20261113T195105308092Z\nok\ntest_timeout_kills_group (test_runner.Runner) ... ok\ntest_validation_survives_python_optimization (test_runner.Runner) ... ok\n\n----------------------------------------------------------------------\nRan 36 tests in 0.041s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/audit_results.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.10564341700000002,
+      "stdout": "OK: four raw datasets reaggregated; recorded input/output hashes and frozen engine checked. C01: 1324 evaluations, 1319 distinct requests (5 repeated MIS). Self-audit only.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/audit_continuation.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.06423525,
+      "stdout": "OK: C05 independent 109-case replay, 73-case metrics and C06 32-case labels/baselines; no embedded code executed, no native performance imputed.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/audit_local_agents.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.056221167000000016,
+      "stdout": "OK: 48 real primary generations on32unique cases, disjoint group stages, token totals, finite numerical solutions, scores and manifests. Three exact raw-text CLI replays. Primary held-out errors preserved; v4 is development only.\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "scripts/replay.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.732723083,
+      "stdout": "Reproduced 20261113-c01-foundation all rows and metrics excluding elapsed_seconds\nReproduced 20261113-c02-formulation all rows and metrics excluding elapsed_seconds\nReproduced 20261113-c03-routing all rows and metrics excluding elapsed_seconds\nReproduced 20261113-c04-transfer all rows and metrics excluding elapsed_seconds\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c01-foundation/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.040835917,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c02-formulation/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.040343291999999975,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c03-routing/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.039790666999999946,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c04-transfer/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04094695800000003,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c05-semantic-contracts/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.042684082999999984,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c06-native-agents/results-baselines/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04842629199999998,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c08-local-agent/generation/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.05015233299999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c08-local-agent/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.045004292,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c09-heldout-guard/generation/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04148345800000003,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c09-heldout-guard/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.043713292000000015,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c10-regression-release/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04205891699999997,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c10-regression-release/results-v4/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.04143599999999997,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ],
+  "manifest_count": 12,
+  "inspected_artifact_hashes": {
+    "quantage/__init__.py": "68bec367c55c6a0841be791edf6fe1ec1d4ddcce4150fd1c1636f7bc1691f06e",
+    "quantage/__main__.py": "f1deb6741526a0dd2a9c7fef2d5fb4b307e42f687e1b4a996ba704964ee22ace",
+    "quantage/agent_pipeline.py": "5c6dbc21c93f0f87073f0a571f54fb11b621644bab953a082324f03959d20229",
+    "quantage/benchmark.py": "7c8dde253185beed7f80c6284ab4020dcd9e0abed719ccfc74e88af67d25225b",
+    "quantage/boundarystudy.py": "07e5cc2811f27455a493513fd850018f75408d3888bf6e6fc765abcf3c6370a4",
+    "quantage/compact_agent.py": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+    "quantage/compact_v2.py": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d",
+    "quantage/compact_v3.py": "87f052487c4bb522b3e4d8580e9aa0199628f910a3e844a5085edc401c86db35",
+    "quantage/compact_v4.py": "1ad338864a35ce9a2af4f6ce91b2f5806ec3856dd56f2185adaa5e1a19c3c7e9",
+    "quantage/contracts.py": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+    "quantage/core.py": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+    "quantage/evaluation.py": "802a3f3a55ef4688cb3ab6f492b43621581a389544d5f9a754d26e86c8a35be6",
+    "quantage/faultstudy.py": "83f3e41bf087212a3fa7b605aff449b13f1575d29c3ef4e260d1a9188a7f4e1a",
+    "quantage/local_agent_cli.py": "77993c451b9e6c600ca031e24c659487736de6d3a54e5bb934d56db80a2f3473",
+    "quantage/local_inference.py": "4ce41105d350e1e41b26b8a569209ab4b5f4285b3f8f508ec2628ffaed35be65",
+    "quantage/local_inference_v2.py": "b24dda76ffd725595c8cf3ed94620be14bd44968754eb33520ebac35bc439f9a",
+    "quantage/local_score.py": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293",
+    "quantage/local_score_v2.py": "c4dd555a6af159ebac437de18f106e30f76c8a58a147e20373fbdbbe8d44edd6",
+    "quantage/local_score_v3.py": "ed4e2c400b85044e869826d8583060b94d960bf87a51b12efab1a11c03a73474",
+    "quantage/local_score_v4.py": "d9e919833e978ee7a1088c9d6c91d215a29494fa31bf224ff824c56c667b4952",
+    "quantage/proposal_cli.py": "1e20c03fa4fab2badcfabb15414af980a709de03c25045303cb5fd8f1f0a51e5",
+    "quantage/routing.py": "ffb64bc9e517f5ba4e01e9e60b07d57ed75c6f6192716e44d543aab86cb902c1",
+    "quantage/routingstudy.py": "1a421aa36857cca4c3cb1e4271c52c2301ec21a1b2bf15c2afefcb16c292849a",
+    "quantage/transferstudy.py": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+    "quantage/verification.py": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+    "scripts/acquire_local_model.py": "a10a96a066ba2bf97958c78e012b7e1c880c2d8dedf1835019b03c1cfe74ca2d",
+    "scripts/acquire_public_traces.py": "fd7aa85272f57fd8b744069f3d0dc6618127fb1eaa39297e9f4d7cb931363e2c",
+    "scripts/audit_continuation.py": "2d3799d1e25cbbc83d0e8d75c720c73de1077526c9d581eac6e0880511d39fc0",
+    "scripts/audit_local_agents.py": "0915ccb6751f44b39d4185c7ee4180b6608de0bd61187b9b08b8ecee84b1a6d0",
+    "scripts/audit_results.py": "557a4d988c5d3e66667871830f96c429e0c94c582acd21cb8c2a951a7baa12c8",
+    "scripts/check.py": "868152b2a1085e3b6261e7678ef139a1aa9e02f429a89555fd80e0a3012359b2",
+    "scripts/replay.py": "cadf169c67cdfa3b92613eda04ca64ecccfaed772aac9c897733379f4be5a5b5",
+    "scripts/run_cycles.py": "6249fa43c09decfa8ec644e6808e4ba05f56084cc044c69428eaed19655910fc",
+    "paper/article.md": "d92c4be3af5591b08461e78da19ab7c43e22fa51af7d7398c92afa4e04962300",
+    "paper/main.tex": "1cc7920c662712bf21731480949a5dd16422f8057fd087c3d0dc0cc078786b60",
+    "runs/20261113-c01-foundation/protocol.md": "10a8f286e99e5b355d330980d9083e90eabbbe71e5e3f715503fe077e12cf0f0",
+    "runs/20261113-c01-foundation/results/metrics.json": "ef66dcc82af54caec34565fc7a94ddb303c5c09f6e094fa92807eb7f88bc9bae",
+    "runs/20261113-c02-formulation/protocol.md": "a94f085b3b6ae4e69456a255b292503a2135a005b670b54e9895ed12d1ffccfe",
+    "runs/20261113-c02-formulation/results/metrics.json": "d27a97ab5e8c40cf047c7eeecdab374f0cc1b024f9e33c017cddbeabc9513034",
+    "runs/20261113-c03-routing/protocol.md": "c1ba0a005b83cfeb88e7fc4918f34e75c0c24debad8de1bf8b185cc0a1b3f8ed",
+    "runs/20261113-c03-routing/results/metrics.json": "880c315d655b4fce2782c75bd38585e2fce5e12dcd8ac3b3f7b27e69728ac302",
+    "runs/20261113-c04-transfer/protocol.md": "a7e154bdd3e874907c880faec5ab251979d4cc51f503205300e3bfac6463912b",
+    "runs/20261113-c04-transfer/results/metrics.json": "2f4247218f0e95c507e1fdf52f5386c1fd4cb8e68c5dd8a814cd793724af1ace",
+    "runs/20261113-c05-semantic-contracts/protocol.md": "0cd09b2830005afcf63b68c81e3e06f2b7cb22a149b0a870f23f03676698bf2d",
+    "runs/20261113-c05-semantic-contracts/results/metrics.json": "0393932379d6935d79677ad67bb7400078caf4ce3917a98dcb0d93cd42791eb0",
+    "runs/20261113-c06-native-agents/protocol-amendment.md": "5b6bb4005307506aca552e78077c81d8ea6f647884cfacd9e646e8ca47ee2787",
+    "runs/20261113-c06-native-agents/protocol.md": "f087e68f0db366745a2e435040e15dcdc2c5633b41fe11a69e407dd57a34558f",
+    "runs/20261113-c06-native-agents/results-baselines/metrics.json": "46bee240b3e6bfa48c7e1b9fcac646b1407234a6772f3bd080f84902cf7a1131",
+    "runs/20261113-c07-public-traces/protocol.md": "970a0941eb68a9e2835ffd072c017412629d3dae6ba28e29c0f46fc4eccc8ba8",
+    "runs/20261113-c08-local-agent/protocol.md": "a914d30b65b55b5b1fd326567faadb6beb3f36fae8796df46aad163ccc009ba4",
+    "runs/20261113-c08-local-agent/results/metrics.json": "81600c26322d99a771b0c679cba7148ccc8aad84cf627d55d7abc6f2c29cb509",
+    "runs/20261113-c09-heldout-guard/protocol.md": "299eabbd464ca82aa7a00b5980517a58020f896cf367bbb27310f396da40b132",
+    "runs/20261113-c09-heldout-guard/results/metrics.json": "05ee4176f4b8be5c279d1743332c3e53b99e57bf12ceda066910c43d5fc2188f",
+    "runs/20261113-c10-regression-release/protocol.md": "b88300ab6fd50ceb55330ee19fd00c0a9ef26370e7e15ca34100e7029c420907",
+    "runs/20261113-c10-regression-release/results/metrics.json": "895993b0a720a885ef979f8ef0708bf19465ecfccfc26de87892e9906b977215",
+    "runs/20261113-c10-regression-release/results-v4/metrics.json": "3a98b06936d14d8107dd0549e5865dc31324b51f23e18a138999e0f829270f10"
+  },
+  "independent_calculations": {
+    "C01_bitmask_optima_checked": 1199,
+    "C01_direct_matrix_probabilities_checked": 125,
+    "C01_max_matrix_probability_error": 2.220446049250313e-16,
+    "new_stage_denominators": {
+      "20261113-c08-local-agent/results": {
+        "strict": {
+          "support": 10,
+          "unsupported": 6,
+          "accepted_supported": 0,
+          "false_accept": 0,
+          "false_refusal": 10,
+          "correct_refusal": 6,
+          "risk_among_accepts": null
+        },
+        "keywords": {
+          "support": 10,
+          "unsupported": 6,
+          "accepted_supported": 3,
+          "false_accept": 1,
+          "false_refusal": 7,
+          "correct_refusal": 5,
+          "risk_among_accepts": 0.25
+        },
+        "alone": {
+          "support": 10,
+          "unsupported": 6,
+          "accepted_supported": 5,
+          "false_accept": 2,
+          "false_refusal": 5,
+          "correct_refusal": 4,
+          "risk_among_accepts": 0.2857142857142857
+        },
+        "documented": {
+          "support": 10,
+          "unsupported": 6,
+          "accepted_supported": 4,
+          "false_accept": 2,
+          "false_refusal": 6,
+          "correct_refusal": 4,
+          "risk_among_accepts": 0.3333333333333333
+        }
+      },
+      "20261113-c09-heldout-guard/results": {
+        "guarded": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 5,
+          "false_accept": 1,
+          "false_refusal": 4,
+          "correct_refusal": 6,
+          "risk_among_accepts": 0.16666666666666666
+        },
+        "keywords": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 6,
+          "false_accept": 4,
+          "false_refusal": 3,
+          "correct_refusal": 3,
+          "risk_among_accepts": 0.4
+        },
+        "strict": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 0,
+          "false_accept": 0,
+          "false_refusal": 9,
+          "correct_refusal": 7,
+          "risk_among_accepts": null
+        },
+        "unprotected": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 7,
+          "false_accept": 3,
+          "false_refusal": 2,
+          "correct_refusal": 4,
+          "risk_among_accepts": 0.3
+        }
+      },
+      "20261113-c10-regression-release/results": {
+        "guarded": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 7,
+          "false_accept": 1,
+          "false_refusal": 2,
+          "correct_refusal": 6,
+          "risk_among_accepts": 0.125
+        },
+        "keywords": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 6,
+          "false_accept": 4,
+          "false_refusal": 3,
+          "correct_refusal": 3,
+          "risk_among_accepts": 0.4
+        },
+        "strict": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 0,
+          "false_accept": 0,
+          "false_refusal": 9,
+          "correct_refusal": 7,
+          "risk_among_accepts": null
+        },
+        "unprotected": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 7,
+          "false_accept": 3,
+          "false_refusal": 2,
+          "correct_refusal": 4,
+          "risk_among_accepts": 0.3
+        }
+      },
+      "20261113-c10-regression-release/results-v4": {
+        "guarded": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 7,
+          "false_accept": 0,
+          "false_refusal": 2,
+          "correct_refusal": 7,
+          "risk_among_accepts": 0.0
+        },
+        "keywords": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 6,
+          "false_accept": 4,
+          "false_refusal": 3,
+          "correct_refusal": 3,
+          "risk_among_accepts": 0.4
+        },
+        "strict": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 0,
+          "false_accept": 0,
+          "false_refusal": 9,
+          "correct_refusal": 7,
+          "risk_among_accepts": null
+        },
+        "unprotected": {
+          "support": 9,
+          "unsupported": 7,
+          "accepted_supported": 7,
+          "false_accept": 3,
+          "false_refusal": 2,
+          "correct_refusal": 4,
+          "risk_among_accepts": 0.3
+        }
+      }
+    },
+    "C08_C09_shared_numerical_inputs": [],
+    "development_counterexample": {
+      "request": {
+        "intent": "Select a maximum weight independent set with an even number of vertices.",
+        "data": {
+          "n": 3,
+          "edges": [],
+          "weights": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      "proposal_origin": "Auditor-crafted software probe, no LLM generation; development only, not part of C11",
+      "parsed": {
+        "valid": true,
+        "proposal": {
+          "action": "propose",
+          "task": "maximum_weight_independent_set",
+          "reason": "software audit probe; not an observed LLM response"
+        },
+        "single_code_fence_removed": false
+      },
+      "result": {
+        "status": "accepted",
+        "stage": "hybrid_pipeline",
+        "problem": {
+          "family": "mis",
+          "n": 3,
+          "edges": [],
+          "weights": [
+            1,
+            1,
+            1
+          ],
+          "objective": "maximize_weight",
+          "domain": "binary",
+          "constraints": "independent"
+        },
+        "formulation": {
+          "kind": "qubo",
+          "linear": [
+            -1,
+            -1,
+            -1
+          ],
+          "quadratic": [],
+          "constant": 0,
+          "sense": "minimize",
+          "penalty": 2
+        },
+        "verification": {
+          "valid": true,
+          "reason": "all optimal states compared",
+          "oracle_value": 3,
+          "states_checked": 8,
+          "stage": "finite_output",
+          "scope": "this normalized instance only"
+        },
+        "route": {
+          "solver": "exhaustive_qubo",
+          "execution": "local_classical_exact",
+          "quantum_candidate": "Pasqal",
+          "hardware_readiness": "unverified",
+          "qpu_submitted": false,
+          "conditions": [
+            "geometric embedding",
+            "interaction errors and controls",
+            "device and account access"
+          ]
+        },
+        "solution": {
+          "energy": -3,
+          "solutions": [
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          "states_evaluated": 8
+        },
+        "original_intent": "Select a maximum weight independent set with an even number of vertices.",
+        "semantic_certificate": false,
+        "provenance": "LLM compact contract, deterministic formulation and solver",
+        "schema": "compact-v4-development",
+        "semantic_guard": "bounded development veto v4 applied"
+      },
+      "observation": "Accepted with three selected vertices although the text requires an even cardinality; finite certificate checks the unconstrained normalized MIS."
+    }
+  },
+  "finished_at_utc": "2026-11-13T19:53:55.207984+00:00",
+  "scope": {
+    "code_review": "All 24 historical quantage modules and eight scripts inspected; historical protocols/amendments, metrics, manuscript and evidence registry read. Optional environments and third-party weights are not source-audited.",
+    "regeneration": "C01–C04 regenerated through project replay.py; C05 109-case boundary replay; C08–C10 scores/records reaggregated and hashes checked. No local LLM generation rerun.",
+    "literature": "No network or new source authentication in this audit; novelty remains for the separately delegated literature review.",
+    "independent_math": "C01 optima recomputed with integer bit masks; photonic probabilities recomputed by direct 2x2 matrix multiplication. Floating tolerance 1e-12.",
+    "not_performed": [
+      "QPU or SDK execution",
+      "New LLM generation",
+      "Human annotation",
+      "Review of future C11 data",
+      "PDF compilation"
+    ]
+  },
+  "manuscript_claim_ids_present_in_both": true,
+  "findings": [
+    {
+      "id": "A01",
+      "severity": "blocking_for_general_reliability",
+      "statement": "All C01–C10 data are development for v4. C10 zero errors is post-hoc and cannot validate v4 generalization.",
+      "evidence": [
+        "runs/20261113-c10-regression-release/protocol.md",
+        "runs/20261113-c10-regression-release/amendment-v4.md"
+      ],
+      "action": "Freeze v4 and evaluate on genuinely new annotated groups, keeping this audit probe outside the new validation."
+    },
+    {
+      "id": "A02",
+      "severity": "blocking_for_full_formulation_agent_claim",
+      "statement": "C08–C10 LLM outputs compact task/action/reason; formulation is generated deterministically. Numeric-only vs no-numeric intervention is structurally weak for this arm.",
+      "evidence": [
+        "quantage/compact_agent.py",
+        "quantage/compact_v2.py"
+      ],
+      "action": "Report this limitation and distinguish compact interpretation from a separately specified full-formulation arm; do not label compact outputs full LLM formulations."
+    },
+    {
+      "id": "A03",
+      "severity": "blocking_for_universal_semantic_claim",
+      "statement": "Auditor-crafted parity constraint passes v4 and is omitted from the normalized problem. Exact numeric verification validates the wrong unconstrained instance.",
+      "evidence": [
+        "independent_calculations.development_counterexample"
+      ],
+      "action": "Preserve as development counterexample, no v4 modification during C11; treat lexical veto as heuristic."
+    },
+    {
+      "id": "A04",
+      "severity": "blocking_for_hardware_claim",
+      "statement": "No Pulser/Perceval SDK program or physical specification validation is established by C01–C10. Routes correctly retain unverified/QPU false.",
+      "evidence": [
+        "quantage/core.py",
+        "quantage/routing.py",
+        "paper/article.md"
+      ],
+      "action": "Execute separate free official-SDK simulator tests and specification checks before claiming that level of compatibility."
+    },
+    {
+      "id": "A05",
+      "severity": "blocking_for_submission_readiness",
+      "statement": "Contribution novelty, strong baselines, independent broader test corpus and model-capacity robustness are not established. Existing exact-text/keyword baselines and one 0.49B model are a bounded pilot.",
+      "evidence": [
+        "paper/article.md",
+        "runs/20261113-c08-local-agent/protocol.md",
+        "runs/20261113-c09-heldout-guard/protocol.md"
+      ],
+      "action": "Use primary literature matrix and preregister bounded hypotheses rather than claim originality or submission readiness."
+    },
+    {
+      "id": "A06",
+      "severity": "interpretation",
+      "statement": "False acceptance rate among unsupported and risk among accepted have different denominators; current reported C09 values 1/7 and 1/6 are consistent. No statistical population is identified.",
+      "evidence": [
+        "independent_calculations.new_stage_denominators"
+      ],
+      "action": "Keep denominators explicit and count groups/pairs, not 48 independent samples."
+    },
+    {
+      "id": "A07",
+      "severity": "interpretation",
+      "statement": "C08/C09 groups, cases and numeric inputs are disjoint, but prompts/schema and case sets both change; not a causal estimate of schema change.",
+      "evidence": [
+        "independent_calculations.C08_C09_shared_numerical_inputs",
+        "runs/20261113-c09-heldout-guard/protocol.md"
+      ],
+      "action": "Use paired ablations on the same fixed generations for C11."
+    },
+    {
+      "id": "A08",
+      "severity": "minor",
+      "statement": "The generated result provenance string is descriptive and hard-coded; it also appears when a software probe calls execute_v4. It is not authentication of a model call.",
+      "evidence": [
+        "quantage/compact_agent.py",
+        "independent_calculations.development_counterexample"
+      ],
+      "action": "Base real model provenance on generation records and explicit proposal origin; keep software fixtures separate."
+    }
+  ],
+  "overall_verdict": "Historical finite results reproduced or audited consistently; article remains a development pilot and is not submission-ready. New independent test and SDK validation are justified.",
+  "tests_run": 36,
+  "independent_calculation_reproduction": "The exact auditor code was executed in this session via python3 heredoc; the parity-probe reproducer is printed in c11-prior-audit.md. No data-embedded replay_source was executed."
+}

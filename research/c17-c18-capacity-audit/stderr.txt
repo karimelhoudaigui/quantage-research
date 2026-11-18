@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/karimelhoudaigui/Downloads/quantage-research/research/c17-c18-capacity-audit.py", line 25, in <module>
+    assert parsed==r['parsed']
+AssertionError

@@ -1,0 +1,21 @@
+{
+  "id": "q_33cf35350c7a",
+  "previous": {
+    "id": "q_33cf35350c7a",
+    "expected_action": "propose",
+    "family": "mis",
+    "reason": "Supported weighted MIS with explicit local reference; no extra mathematical constraint.",
+    "canonical_intent": "Maximize the weight of an independent set."
+  },
+  "replacement": {
+    "id": "q_33cf35350c7a",
+    "expected_action": "abstain",
+    "family": "mis",
+    "reason": "Direction non précisée: optimiser peut minimiser ou maximiser; demander clarification au lieu de supposer maximum.",
+    "canonical_intent": null
+  },
+  "decision": "Accept independent reviewer disagreement before candidate generation. Public text unchanged.",
+  "old_gold_sha256": "ca4315838310f93441101f160273385545758d5438bb373f84c1b84825eafd71",
+  "candidates_generated_before_revision": false,
+  "new_gold_sha256": "7824bb06651e61986d572d8fa3bf95a19872a2bf8437f7ec555368c645cb4d85"
+}

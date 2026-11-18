@@ -1,0 +1,524 @@
+{
+  "recorded_at_utc": "2026-11-13T20:08:01.367753+00:00",
+  "python": "3.11.15",
+  "software": {
+    "pulser": "1.7.2",
+    "pulser-core": "1.7.2",
+    "pulser-simulation": "1.7.2",
+    "qutip": "5.2.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "source_hashes": [
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/__init__.py",
+      "sha256": "695034029b744f6ec970a1f36371a1fe9762afd0cc014990b4172a6b06107afc"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/_hamiltonian_data/__init__.py",
+      "sha256": "97ab9ffaf94628f6d20362560f12c5348baacd36100e2d03f06d933ebd87429f"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/_hamiltonian_data/basis_data.py",
+      "sha256": "a562612389ad32882292468f231ff6c60edca93f069b0bc37dd919aca8e70f46"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/_hamiltonian_data/hamiltonian_data.py",
+      "sha256": "48ac8417709ac9821e6daa2e82a31dfc2a5ee1c9206b59ee04507549857aa291"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/_hamiltonian_data/lindblad_data.py",
+      "sha256": "aeed70e31efa89707e156ae1ddbb4d4b3c62a18ae92c8ccde3c6441923ffb846"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/_hamiltonian_data/noise_trajectory.py",
+      "sha256": "7b97478bcbada62440ec6d536e9d7bb0e6b6661dd8d156a754115e553079d2d5"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/_version.py",
+      "sha256": "bfe28229e7829f183c9b0153400574a8c0fe1ea422a9d751e66222c2d2d81c71"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/abstract_repr.py",
+      "sha256": "dd7e750bc3bc563a03f48d847db6282da1a1db1873c49d04017e260880aa10ff"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/__init__.py",
+      "sha256": "5486a02c9f58f4956f1ac64e953be76573d90b12b25db123401eeaa7b590e967"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/_classproperty.py",
+      "sha256": "ed5c1a5f4350a4ef27a899f23f6325f3cebf6e2e3a81544796b5d7b8fd1d4c39"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/abc.py",
+      "sha256": "72bcb5364d2eb7b00283677fe832f0e1fc14db5f1fa89d5551229ab9d7793ff1"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/aggregators.py",
+      "sha256": "751accc7e4b88b654dfa7c0818b2c3e9ba76ae64397f32734f7f0298d36e1155"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/config.py",
+      "sha256": "42a7e04413236bbe96837df4252b50688a49adbe48e4a9648ace91e92f9a1273"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/default_observables.py",
+      "sha256": "569150578a605adb781a13f7761f6cf4e0116b70dd1bd56a63d76b47f35fa1e6"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/observable.py",
+      "sha256": "4f6ad92bea4abd7061d375bf8701f7a79e83f2920b7147046685ad3540ba206e"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/operator.py",
+      "sha256": "0ddd5e65d81b3bc86ef0d84aee95a6a5a01e5ac5d99b45a0e0a7046b9638d698"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/qpu.py",
+      "sha256": "53269073fadc7d75f1a52fca22266b4f652b9624ce0f57accd639b4eb81ea1ee"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/remote.py",
+      "sha256": "5842dcf681506559c4336729f4b0cc7f504ba4ec43e62b237c277253a10cc5e5"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/results.py",
+      "sha256": "323df30bd5f344087405f20ec7f3067a4515b49422efad6f2a45681bd9d4b4f4"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backend/state.py",
+      "sha256": "7b676d3744d949d800bc9581e98ea3ea41a9422affe4599782051c2ed00fd677"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/backends.py",
+      "sha256": "d1e5dfc074066eb65f60730e8b10054ab3d3ababd9262077dd80999e7627692b"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/channels/__init__.py",
+      "sha256": "2f9d8f2287a4c851f64d277787c273b53be4641be4d4481434b2216c619c0ea6"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/channels/base_channel.py",
+      "sha256": "e41974219dcc8aeaa317e846de821cdfa5a331a78b345bb445f0e7be73a9fdf6"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/channels/channels.py",
+      "sha256": "07a62885a6a25ca494674f9d003ff2bf18d6360c5fb68eb3c5d4fbcfb7ec2600"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/channels/dmm.py",
+      "sha256": "cf767afb015f0dcbfcc23c219fa652c969a41a62c0a7134a5714085f24895720"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/channels/eom.py",
+      "sha256": "e0489282fb2079acf008179b10e72bfb3b4f42c7d06f5724356f80d4e5a16f1d"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/channels/modulation.py",
+      "sha256": "d72de62efc4336f2105699b6285e6ed8bf813c19fe59411ed4917af936702252"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/constants.py",
+      "sha256": "8b2d957b09343b67a0ed869f76320031b7863731949061ecd1d9358214ad3ab4"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/devices/__init__.py",
+      "sha256": "ecb01747ac3081c78705df0bb555e65e242bcc9f08c708fdabf3d413a6ce6da3"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/devices/_device_datacls.py",
+      "sha256": "c88644b392e61c938bed9647195298b0512bf783593751a3d0f9f0add7636b00"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/devices/_devices.py",
+      "sha256": "2872fcce6b523288d48913d974a35575546f4ffabf096cb0a40a000e327a4f7c"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/devices/_mock_device.py",
+      "sha256": "5f015c506e020f913963c5e676f4c629d7b9c3fd13e8ec076ff85bd504522547"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/devices/interaction_coefficients/__init__.py",
+      "sha256": "1c1707a3ed1f15443cbc141d3d8b31c4c723f194ad0cd3ccde6efdd3c32447b6"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/exceptions/__init__.py",
+      "sha256": "5fdb1415709ec36e2caa24d0aa6f11b90901704332fda02f0e08a34644a59a8f"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/exceptions/base.py",
+      "sha256": "96b574e4fe2853a5668fe12f9696244b5a4c9d86b661dbd4f27b898e5ae0b9f0"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/exceptions/sequence.py",
+      "sha256": "68d2ebfd53206070364b83b2887e64335f555bef6203d8a0ffd247e86ee3fabe"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/exceptions/serialization.py",
+      "sha256": "5f8ec6391e3378f545adc74449bc35bf57b85e24dcf56765940c8662ecdf59a1"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/__init__.py",
+      "sha256": "cd780ae4c57eea701338f782f979d0e200049a9386feab231d08984a8cf362c9"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/abstract_repr/__init__.py",
+      "sha256": "2ebde41c45f88ce31c694459be1cc9e0decd5b06d79c72ee1d6961d5301ea693"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/abstract_repr/backend.py",
+      "sha256": "c116b119a7b3e3fe0be996fc57105efd1d9aaa616a8bb0ffca27912f1026b194"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/abstract_repr/deserializer.py",
+      "sha256": "c797ac9cbc03b6e1b8d6625a29d7aed05911015ee47d07e36495b3ebca553cc3"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/abstract_repr/serializer.py",
+      "sha256": "d143eb1e67d03512381d2a23a1690ca9c3d497002dc7620ce95b993dd0cece4e"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/abstract_repr/signatures.py",
+      "sha256": "81efff94b34974324a7f5882774f7b7e0754d44c833dba18964a43b68098a1c0"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/abstract_repr/validation.py",
+      "sha256": "ca4bf60a347397ace04b2a48a087b2b1364cce36245dfb792680c441c905e327"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/coders.py",
+      "sha256": "985b5dd4bad0d1acc488f1b832fb57031b812d604bdf59ede32ba01f48977400"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/exceptions.py",
+      "sha256": "ce9d765b81ef524c279823a80cc5b4191f4d95879070093ada3ba4769fe45937"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/supported.py",
+      "sha256": "e0b08b0df8c78bd6b58833547fd1333a5a826e487ecdcbe3763ec27a20db35eb"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/json/utils.py",
+      "sha256": "f45f0c0cb9d0420effa645a97e23a43cb78b30e23b1a80fdc74bf793d5458cc5"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/math/__init__.py",
+      "sha256": "74675190f5939a6b7bf64dcd4c44f4b3e1677b449ee5a174afdc422ba2de4f9a"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/math/abstract_array.py",
+      "sha256": "5ad7dcf14eb6a6fbfe343f2cf8c65c373af5810e85c53d430729a4b77b668417"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/math/multinomial.py",
+      "sha256": "049390d19421b83698bd22a9328c4c5bde8b95e19b5e88f71c18bc3fc361a6d5"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/noise_model.py",
+      "sha256": "1ef616f26d0da1183af20bdec1ae0351dd9221df527d0b663c65b439d0250e0f"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/parametrized/__init__.py",
+      "sha256": "5d48513c3231ca3ebe1e5c9093971e81b8ee1847f134d54b6938465970d59479"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/parametrized/decorators.py",
+      "sha256": "cf46cdfab9693cca3af5d810b1121c8767c5f6e03e93a9d44cc7d76761af04f0"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/parametrized/paramabc.py",
+      "sha256": "0334eb8cf88dc45ec6d1b57fa6c6a1dbb9910d53e86466b409b2fb8e8201a8f2"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/parametrized/paramobj.py",
+      "sha256": "f11c668f56a808f6eac73bc8297485c421c8460cee390f4417035e56d27f445b"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/parametrized/variable.py",
+      "sha256": "7f083429e623e1ac30641abe41e4511932fbacd22786c995d3a0507b09f20400"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/pulse.py",
+      "sha256": "65f9d30937289806bf3a340e065880bc43b62509d836c4c07f08a8807619b4b4"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/__init__.py",
+      "sha256": "4c452d94d4b273109495b85ccc1ff66bb3001f2747880824ffb4f3912b81f6cd"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/_coordinates.py",
+      "sha256": "80ed4334023ef5acea5fcfa4e241f16bf07927331994ce8606ff74f4a8051ccf"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/_layout_gen.py",
+      "sha256": "127c734007806108809f430114baf15ddc1801d2e1f0a241d26733f11a97be3e"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/_patterns.py",
+      "sha256": "76e60ea030bcbef35d30510c9def8db90b56aaa788d97c84c5ad71b36eab9cfa"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/_reg_drawer.py",
+      "sha256": "ff6b817c6d7422d5f999a6acf85f7d13773a7c53ba9e37edd5160192b7ada30b"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/base_register.py",
+      "sha256": "558a4a49130b175a0971c5063a8d4df32d2a5a2c89a8f38f9c7386817b724f91"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/mappable_reg.py",
+      "sha256": "b600055330f3f5f574b2c576101ffaf691e5ddbfa9509bb9f3efc9ec2fe8611f"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/register.py",
+      "sha256": "21df8f5aa132fe5a8737b9c280d682aed76039dc32ce4f9ec33cf39aa728b99d"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/register3d.py",
+      "sha256": "b55715dd47c0d42fb1562a15e07312167a519aaaf7352fd2a03a86602fc4e18d"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/register_layout.py",
+      "sha256": "da01106da4e0408727c1b929e4ad0ab8f4f608446b0e73b316803fb5f71d91d7"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/special_layouts.py",
+      "sha256": "f80f4126c4f0c58de38c37b3176d039aa151bdfd7e87f342d111bac2cec25d46"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/traps.py",
+      "sha256": "4b18fb55e8aa5729de0f83c1f80200f4669e7ebf86f76b11772c185e174ac0bb"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/register/weight_maps.py",
+      "sha256": "2f2d241fe3a60c1d9964146960ce6f25dd54ad15a170877147055d2d761d0661"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/result.py",
+      "sha256": "0b6423b11328bbb9e6b69b40b3d73c86e6575fb77bf3f649263b22e9f00d4a14"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sampler/__init__.py",
+      "sha256": "8703c9370f65a725db11efaeef99d82b9211bc32c343c8d47b723978a4c566fc"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sampler/sampler.py",
+      "sha256": "e18b40377862cb27b28584a5fc8f64ca443997119904a2bb4e5c1587bacd154b"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sampler/samples.py",
+      "sha256": "217e047c9068b8e4746c53440381e1065fcd2bc655d0bd1b662a37a2c834e242"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/__init__.py",
+      "sha256": "9c6c99ec2a6f1e0ce0ea858f0b60b3657761100f6871b296cd6184dfce15a61b"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/_basis_ref.py",
+      "sha256": "7618c7e6dbe351bd28a9ea362265d844ca93ab93948641d5919fd3dd65f6c707"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/_call.py",
+      "sha256": "711b897e0aff6a48b9c4b182fa9649c34b49b908d33dfcf21cb0488058a3fd7f"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/_decorators.py",
+      "sha256": "6f2ff64a85126e1e6034f1702fba6ee6a3c0e87675fe00ef37e5e0d5755671d8"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/_schedule.py",
+      "sha256": "f37eee6289c857b47f2d4c82cb2451e44d00f221b124b97bcffb06ecf9b0f575"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/_seq_drawer.py",
+      "sha256": "34d4f2b965bd4f54fe6a730f2a8076e1f03ac8788a02dd092363cf8dec409236"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/helpers/__init__.py",
+      "sha256": "ec7795a62adcaa4bef3eabcbc33c0e3069c3d434e5a1a457700f8c1f77a6e2bd"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/helpers/_seq_str.py",
+      "sha256": "be6a6b01eba7bbe1b04540a9d52f60d4f8276d9d5a315a4874f4310a90c6dbfd"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/helpers/_switch_device.py",
+      "sha256": "ae553a703217a25d81d09623545c59b10fa5c92e47d5f044febd17faf8d0435b"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/metadata.py",
+      "sha256": "0ded2efb12decd04b2d2ee31923d574d6565e2608e8c568660115701df86031f"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/sequence/sequence.py",
+      "sha256": "237d7ae799cbb4b995d6c1e18aa7f90c28b37332193e59717ed8fb497dc21487"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser/waveforms.py",
+      "sha256": "415667555ade7f1ef5698e0324bac5c634ccb608b47957846e02afa380df37d0"
+    },
+    {
+      "distribution": "pulser-core",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_core-1.7.2.dist-info/METADATA",
+      "sha256": "eee42a2cbcc2144460c44262e33679d66b2e285092fad0e320457fccf89ea036"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation-1.7.2.dist-info/METADATA",
+      "sha256": "12b000cab4cd6106cccf854b4b84f7e0c004882269507508ab59028edb93d3c1"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/__init__.py",
+      "sha256": "1e8dc4cf3ef605371818aa072ea6f13e54efdf6be4bcc5ec110c7d297ba8911d"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/_version.py",
+      "sha256": "bfe28229e7829f183c9b0153400574a8c0fe1ea422a9d751e66222c2d2d81c71"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/aggregators.py",
+      "sha256": "a4709536db552d99853e097e808dcd4c2ec035004462ab27e1e1d71ebcdb0ba3"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/hamiltonian.py",
+      "sha256": "e0116f6fcdddf10f5b996ce632b1eaadacd106f69cfeb9add940914a60f0e4c7"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/qutip_backend.py",
+      "sha256": "f84317ad1f2318277e23a6cccecb70f4959a9d134a244a6715fe5af4d158c80d"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/qutip_config.py",
+      "sha256": "67c949e67001b6bc9e2c913a23cb5cf48c4b7be830e212dfd8ece1bfdeee749b"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/qutip_op.py",
+      "sha256": "6921c4ed90484f9acd0b4a9daf3abb423070e1270cb4d7671b6ed0ea4b91456b"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/qutip_result.py",
+      "sha256": "56f806b7eeda42607b3f1f461da5861f442dbbba91b6dadad52515bf7dce7318"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/qutip_state.py",
+      "sha256": "c2d947c3fd9d6f2834450f3555e4cfa621b459ef8358ec7c279954a41d03c474"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/simconfig.py",
+      "sha256": "f8768688f912a8d25d71569cc133dbac762830fd17d56ed03e815b1f6ef54a35"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/simresults.py",
+      "sha256": "ee9f994ad177c37787071c98b199484a0774e92ce725559a84f56aad1d7f21c5"
+    },
+    {
+      "distribution": "pulser-simulation",
+      "file": "/opt/homebrew/lib/python3.11/site-packages/pulser_simulation/simulation.py",
+      "sha256": "f9925efa2dc68f1b7990a92bf5c951c06f98fbd86a54fec5b72a8df9d5fd5a73"
+    }
+  ],
+  "source_hashes_scope": "public SDK core/simulation only, no secrets or unrelated environment inspected",
+  "new_installation": false,
+  "sdk_imported_at_recording": false,
+  "runtime_interpreter": "/opt/homebrew/bin/python3.11",
+  "external_purchase_eur": 0
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "native_alone",
+    "files": [
+      "runs/20261113-c06-native-agents/candidates/alone_mis.json",
+      "runs/20261113-c06-native-agents/candidates/alone_photon.json"
+    ],
+    "reason": "Both actual native tasks failed with usage limit, no responses.",
+    "provenance": {
+      "record": "runs/20261113-c06-native-agents/generation_record.json"
+    }
+  },
+  {
+    "name": "native_documented",
+    "files": [
+      "runs/20261113-c06-native-agents/candidates/documented_mis.json",
+      "runs/20261113-c06-native-agents/candidates/documented_photon.json"
+    ],
+    "reason": "Not launched after usage limit; existing output source pending.",
+    "provenance": {
+      "record": "runs/20261113-c06-native-agents/generation_record.json"
+    }
+  }
+]

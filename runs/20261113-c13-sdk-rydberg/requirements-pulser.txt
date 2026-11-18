@@ -1,0 +1,7 @@
+# Observed public SDK/runtime core versions; no installation performed
+pulser==1.7.2
+pulser-core==1.7.2
+pulser-simulation==1.7.2
+qutip==5.2.3
+numpy==2.4.4
+scipy==1.17.1

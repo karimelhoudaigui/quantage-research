@@ -1,0 +1,137 @@
+{
+  "schema_version": 2,
+  "claim_id": "C15-REVIEWER-FINITE-DOMAINS",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "research/c15-annotation-oracle.py",
+    "--output",
+    "research/c15-annotation-oracle/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.9.6"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Exact feasible binary masks and maximum integer weight for each of the 24 public C15 instances under the independently extracted frozen reviewer constraints.",
+    "coefficient_domain": "integers, exact arithmetic",
+    "conventions": "Binary bit i includes item i; edges are mutual exclusions; implication [a,b] is a implies b; only explicit textual cost and cardinality bounds apply.",
+    "inputs": [
+      "24 public cases, 8 dev and 16 test",
+      "Frozen independent reviewer annotations"
+    ],
+    "bounds": {
+      "n_min": 4,
+      "n_max": 7,
+      "case_count": 24,
+      "per_case_assignments_max": 128
+    },
+    "non_claims": [
+      "No inference or performance measurement",
+      "No population or arbitrary-text guarantee",
+      "No author gold or production solver read/imported"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-14T18:47:30.929971+00:00",
+    "runtime_seconds": 0.074418,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c15-annotation-oracle.py",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/test_cases.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c15-annotation-oracle.py",
+      "sha256": "b76369e5daeb598ee653f5df83c54a4d46868b799a32b1ce519f713f463078b9",
+      "sha256_after": "b76369e5daeb598ee653f5df83c54a4d46868b799a32b1ce519f713f463078b9"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+      "sha256": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b",
+      "sha256_after": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test_cases.json",
+      "sha256": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f",
+      "sha256_after": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/private_gold.review.json",
+      "sha256": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+      "sha256_after": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2"
+    }
+  ],
+  "output_directory": "research/c15-annotation-oracle",
+  "declared_results": [
+    "research/c15-annotation-oracle/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c15-annotation-oracle/stdout.txt",
+      "sha256": "8b5b9d4a948d9429604f38af86a2d5fe31a3be7d3b84a85431a49f1f0cdc21af",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-annotation-oracle/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-annotation-oracle/raw.json",
+      "sha256": "29d1dbc5c7b77a2a0ffff087859885ec1848543cd456979e20f799b21296b636",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

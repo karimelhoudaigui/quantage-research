@@ -1,0 +1,39 @@
+{
+  "restored_after_git_temp_cleanup": [
+    {
+      "eviction": "cache-eviction-c07.json",
+      "download": [
+        {
+          "destination": "research/external/models/qwen2.5-0.5b-7ae5576/model.safetensors",
+          "source_url": "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct/resolve/7ae557604adf67be50417f59c2c2f167def9a775/model.safetensors",
+          "sha256_expected": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+          "bytes": 988097824,
+          "status": "completed",
+          "sha256_observed": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe"
+        }
+      ],
+      "paths": [
+        "research/external/models/qwen2.5-0.5b-7ae5576/model.safetensors"
+      ]
+    },
+    {
+      "eviction": "cache-eviction-c16.json",
+      "download": [
+        {
+          "destination": "research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "source_url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/resolve/91cad51170dc346986eccefdc2dd33a9da36ead9/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+          "sha256_expected": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+          "bytes": 1117320736,
+          "status": "completed",
+          "sha256_observed": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e"
+        }
+      ],
+      "paths": [
+        "research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "runs/20261115-c16-quantized-repair/dev-preflight-v1/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+        "runs/20261115-c16-quantized-repair/dev-preflight-v2/source-snapshot/research/external/c16-public/models/qwen2.5-1.5b-instruct-q4_k_m.gguf"
+      ]
+    }
+  ],
+  "unrestored_cache": "C14float weights intentionally still absent, public pinned source remains"
+}

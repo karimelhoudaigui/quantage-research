@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "completed": 8,
+  "planned": 8,
+  "aggregate_of": [
+    "runs/20261115-c16-quantized-repair/dev-preflight-v2/driver",
+    "runs/20261115-c16-quantized-repair/dev-remaining-v1/driver"
+  ],
+  "scope": "union of actual 2 v1 and 6 v2 development responses, not a new inference phase or uniform-prompt estimate",
+  "physical_generation_calls": 8,
+  "phase": "initial",
+  "input_tokens": 4579,
+  "output_tokens": 955,
+  "wall_seconds": 40.081589166,
+  "cpu_seconds": 21.172352,
+  "load_seconds": 16.721279666999997,
+  "client_cpu_seconds": 2.595384,
+  "server_cpu_seconds": 18.576968
+}

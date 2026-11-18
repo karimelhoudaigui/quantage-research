@@ -1,0 +1,218 @@
+{
+  "schema_version": 2,
+  "claim_id": "C19-QUANTIZED-REPAIR",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-m",
+    "quantage.repair_study_c19",
+    "feedback",
+    "--cases",
+    "runs/20261115-c19-instruct-repair/test_cases.json",
+    "--gold",
+    "runs/20261115-c19-instruct-repair/gold.json",
+    "--initial",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+    "--output",
+    "runs/20261115-c19-instruct-repair/test-feedback-v2"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "llama.cpp",
+        "version": "1.0.0-dev build12359 b1b770d90"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.13.1"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "test feedback: actual authored multi-constraint binary ILPs, oracle feedback or finite scoring as applicable",
+    "coefficient_domain": "exact integer ILP; quantized Q4_K_M LLM; float64 HiGHS",
+    "conventions": "same generic linear grammar, known primitive clauses, per-ID SHA256 seeds+round; trusted annotated oracle; no gold in inference",
+    "inputs": [
+      "runs/20261115-c19-instruct-repair/test_cases.json"
+    ],
+    "bounds": {
+      "cases": 20,
+      "max_new_tokens": 512,
+      "context_tokens": 4096,
+      "n": [
+        4,
+        7
+      ],
+      "max_completion_seconds": 180
+    },
+    "non_claims": [
+      "No QPU, spending or free-text semantic guarantee",
+      "No isolated quantization/grammar causal effect",
+      "No population confidence interval or general novelty",
+      "Direct token probability is a pinned-API selection heuristic",
+      "Solver choice is ex-post profiling, cost of both included"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T21:19:32.090838+00:00",
+    "runtime_seconds": 0.123292,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 1800.0,
+    "max_output_bytes": 4194304,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 4
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "scripts/run_c19_phase_v2.py",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_language.py",
+    "runs/20261115-c19-instruct-repair/test_cases.json",
+    "runs/20261115-c19-instruct-repair/instructions.frozen.txt",
+    "runs/20261115-c19-instruct-repair/protocol.md",
+    "runs/20261115-c19-instruct-repair/protocol-test.md",
+    "runs/20261115-c19-instruct-repair/freeze-test-v2.json",
+    "runs/20261115-c19-instruct-repair/annotation-agreement.json",
+    "quantage/repair_study_c19.py",
+    "runs/20261115-c19-instruct-repair/gold.json",
+    "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl"
+  ],
+  "input_artifacts": [
+    {
+      "path": "scripts/run_c19_phase_v2.py",
+      "sha256": "99373eb7503d40ddb83c0a54f8da0c1a64df00ae8f2cd3763570f618d875a4c1",
+      "sha256_after": "99373eb7503d40ddb83c0a54f8da0c1a64df00ae8f2cd3763570f618d875a4c1"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test_cases.json",
+      "sha256": "742301bb909289baaf1f34f328032851aa1ca8b935ede5b34e4081aa903d223b",
+      "sha256_after": "742301bb909289baaf1f34f328032851aa1ca8b935ede5b34e4081aa903d223b"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/instructions.frozen.txt",
+      "sha256": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0",
+      "sha256_after": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/protocol.md",
+      "sha256": "69a96a13ae303038f7aaa3bacef24e23bb00d76f5795a4071c0dca7346b521ff",
+      "sha256_after": "69a96a13ae303038f7aaa3bacef24e23bb00d76f5795a4071c0dca7346b521ff"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/protocol-test.md",
+      "sha256": "0f07c7f2b76709ab7b883f0f6d18c5472fbf62ba83290746963519523ab9fa8c",
+      "sha256_after": "0f07c7f2b76709ab7b883f0f6d18c5472fbf62ba83290746963519523ab9fa8c"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/freeze-test-v2.json",
+      "sha256": "b4c49b188f93b88fce75e12840fb47ccb5f829a477579b979a8910e898f481e9",
+      "sha256_after": "b4c49b188f93b88fce75e12840fb47ccb5f829a477579b979a8910e898f481e9"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/annotation-agreement.json",
+      "sha256": "4f6bc1d64c121061b8aa9896ffc6aa87a3b70f809425a0e06f92e86fa65acf1f",
+      "sha256_after": "4f6bc1d64c121061b8aa9896ffc6aa87a3b70f809425a0e06f92e86fa65acf1f"
+    },
+    {
+      "path": "quantage/repair_study_c19.py",
+      "sha256": "d4588bcdb1a0552cadcbc0efdb2156433aefbd302e0f3e567ce457eb4f6e0bce",
+      "sha256_after": "d4588bcdb1a0552cadcbc0efdb2156433aefbd302e0f3e567ce457eb4f6e0bce"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/gold.json",
+      "sha256": "aed7b458522d9f4f1855c8412a78a5c4c9c0641facec56b3274238b1386dc483",
+      "sha256_after": "aed7b458522d9f4f1855c8412a78a5c4c9c0641facec56b3274238b1386dc483"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-initial-v2/driver/raw.jsonl",
+      "sha256": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3",
+      "sha256_after": "3015269fb4eaed4f50d3eefa5da8c046ffd4872ad509a0109be80eb2228b86e3"
+    }
+  ],
+  "output_directory": "runs/20261115-c19-instruct-repair/test-feedback-v2",
+  "declared_results": [
+    "runs/20261115-c19-instruct-repair/test-feedback-v2/minimal.json",
+    "runs/20261115-c19-instruct-repair/test-feedback-v2/reports.jsonl"
+  ],
+  "outputs": [
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-feedback-v2/stdout.txt",
+      "sha256": "b06b76fa825e08985a2064b5800e4a5e6ec2715bbc161c34d23f6ad07531ea8b",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-feedback-v2/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-feedback-v2/minimal.json",
+      "sha256": "7162bddf83622498e08638019e45c21ef1d81d350f2731c584f80720e8e32e9a",
+      "kind": "result"
+    },
+    {
+      "path": "runs/20261115-c19-instruct-repair/test-feedback-v2/reports.jsonl",
+      "sha256": "862d22b84ea85115c4a1d1c2558e42338cf5e652842a5f052967e59560aa5c19",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

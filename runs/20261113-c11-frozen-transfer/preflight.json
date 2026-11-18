@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "cases": 128,
+  "groups": 64,
+  "actions": {
+    "propose": 64,
+    "abstain": 64
+  },
+  "families": {
+    "mis": 64,
+    "photon": 64
+  },
+  "languages": {
+    "en": 64,
+    "fr": 64
+  },
+  "historical_files_checked_unchanged": 184,
+  "old_public_request_files": [
+    "runs/20261113-c01-foundation/results/raw.jsonl",
+    "runs/20261113-c02-formulation/results/raw.jsonl",
+    "runs/20261113-c04-transfer/cases.json",
+    "runs/20261113-c04-transfer/results/raw.jsonl",
+    "runs/20261113-c05-semantic-contracts/audit_cases.json",
+    "runs/20261113-c05-semantic-contracts/results/raw.jsonl",
+    "runs/20261113-c06-native-agents/inputs/mis.json",
+    "runs/20261113-c06-native-agents/inputs/photon.json",
+    "runs/20261113-c06-native-agents/public_cases.json",
+    "runs/20261113-c06-native-agents/results-baselines/raw.jsonl",
+    "runs/20261113-c08-local-agent/cases.json",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "runs/20261113-c10-regression-release/cli-ambiguous-input/cases.json",
+    "runs/20261113-c10-regression-release/cli-ambiguous-objective-v4/cases.json",
+    "runs/20261113-c10-regression-release/cli-freeform-photon/cases.json"
+  ],
+  "old_requests_distinct": 1385,
+  "old_texts_distinct": 46,
+  "request_overlap": 0,
+  "normalized_text_overlap": 0,
+  "public_sha256": "d181acd855b9db47f53763ee8154a03a838e04683ec5bee8de137f04c9480a45",
+  "gold_sha256": "fc59a965abecebef239f12d1ff93c7c98700512c17021226e7ac4b5b1c01b4eb",
+  "limitations": "Exact/normalized text duplicate checks, not semantic or pretraining contamination proof."
+}

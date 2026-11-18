@@ -1,0 +1,130 @@
+{
+  "cases": 4,
+  "methods": {
+    "initial": {
+      "observed": 4,
+      "schema_valid": 3,
+      "faithful": 2,
+      "optimization_equivalent": 2,
+      "feasibility_mismatches": 2,
+      "objective_mismatches": 0,
+      "assignments_compared": 12,
+      "portfolio_concordant": 3,
+      "usable_for_original_problem": 2,
+      "format_repairs_to_faithful": 0,
+      "mathematical_repairs_to_faithful": 0,
+      "regressions_from_faithful": 0,
+      "initial_errors": 0,
+      "repairs_to_faithful": 0
+    }
+  },
+  "strata": {
+    "language": {
+      "fr": {
+        "initial": {
+          "observed": 2,
+          "schema_valid": 2,
+          "faithful": 2,
+          "optimization_equivalent": 2,
+          "feasibility_mismatches": 0,
+          "objective_mismatches": 0,
+          "assignments_compared": 8,
+          "portfolio_concordant": 2,
+          "usable_for_original_problem": 2,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        }
+      },
+      "en": {
+        "initial": {
+          "observed": 2,
+          "schema_valid": 1,
+          "faithful": 0,
+          "optimization_equivalent": 0,
+          "feasibility_mismatches": 2,
+          "objective_mismatches": 0,
+          "assignments_compared": 4,
+          "portfolio_concordant": 1,
+          "usable_for_original_problem": 0,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        }
+      }
+    },
+    "reference_feasibility": {
+      "feasible": {
+        "initial": {
+          "observed": 3,
+          "schema_valid": 2,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 2,
+          "objective_mismatches": 0,
+          "assignments_compared": 8,
+          "portfolio_concordant": 2,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        }
+      },
+      "infeasible": {
+        "initial": {
+          "observed": 1,
+          "schema_valid": 1,
+          "faithful": 1,
+          "optimization_equivalent": 1,
+          "feasibility_mismatches": 0,
+          "objective_mismatches": 0,
+          "assignments_compared": 4,
+          "portfolio_concordant": 1,
+          "usable_for_original_problem": 1,
+          "format_repairs_to_faithful": 0,
+          "mathematical_repairs_to_faithful": 0,
+          "regressions_from_faithful": 0,
+          "initial_errors": 0,
+          "repairs_to_faithful": 0
+        }
+      }
+    }
+  },
+  "H16": {
+    "status": "development_only"
+  },
+  "physical_generation_calls": 4,
+  "physical_generation_cost": {
+    "input_tokens": 40,
+    "output_tokens": 20,
+    "wall_seconds": 4,
+    "cpu_seconds": 0.4
+  },
+  "attributable_cost_per_arm": {},
+  "generation_executions": {
+    "initial": {
+      "load_seconds": 0.5,
+      "process_wall_seconds": 4.5,
+      "wrapper_wall_seconds": 5.5,
+      "client_cpu_seconds": null,
+      "server_cpu_seconds": null,
+      "server_cpu_scope": null,
+      "aggregate_of": null
+    }
+  },
+  "feedback_computation_seconds": null,
+  "scored_portfolio_seconds_total": 0.0008581260000000146,
+  "cost_scope": "row wall times include server request/postprocessing, not imports/load; row CPU is Python HTTP client only; server CPU is phase-level separately; process/wrapper timings reported; GPU energy and annotation/development/session cost unknown",
+  "budget": "two calls and max768 outputtokens per arm/case; shared initial counted once physically",
+  "selection": {
+    "direct": "schema validity then mean processed-token logprob, tie first",
+    "self_guided": "second if schema-valid, else initial if schema-valid"
+  },
+  "scope": "finite annotated reference, no population CI, full explicit ILP emitted by LLM; portfolio is ex-post profiling"
+}

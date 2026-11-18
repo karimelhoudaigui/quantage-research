@@ -1,0 +1,147 @@
+{
+  "reviewer": "/root/c11_audit",
+  "recorded_at_utc": "2026-11-13T20:25:37.921272+00:00",
+  "status": "finite_assertion_independently_checked",
+  "author_independence": "distinct author, not blind or model-independent",
+  "commands": [
+    {
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_sdk_rydberg.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.336711375,
+      "stdout": "",
+      "stderr": "test_interaction_lifts_only_double_excitation (test_sdk_rydberg.RydbergOracle) ... ok\ntest_no_interaction_is_product_of_rabi_rotations (test_sdk_rydberg.RydbergOracle) ... ok\ntest_zero_drive_preserves_ground (test_sdk_rydberg.RydbergOracle) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.227s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "python3",
+        "/Users/karimelhoudaigui/.codex/plugins/cache/openai-curated-remote/mathbox/4.0.0/skills/computation-audit/scripts/validate_manifest.py",
+        "runs/20261113-c13-sdk-rydberg/results/manifest.json",
+        "--root",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.08136199999999999,
+      "stdout": "valid evidence record (run status: completed); mathematical interpretation requires review\n",
+      "stderr": ""
+    }
+  ],
+  "orthogonal_recalculation": {
+    "method": "tensor-sum Hamiltonian plus explicit matrix Taylor series with scaling/squaring; no numpy.linalg.eigh, QuTiP or project oracle import",
+    "evaluations": 162,
+    "probability_comparisons": 648,
+    "zero_drive_invariant_cases": 54,
+    "max_abs_error_vs_eigh_oracle": 3.064215547965432e-14,
+    "max_abs_error_vs_sdk_ode": 0.00047265280720587555,
+    "max_normalization_error": 1.611415334501487e-09,
+    "max_hamiltonian_nonhermitian_error": 0.0,
+    "elapsed_seconds": 0.04624337500000003
+  },
+  "sdk_probe_observations": [
+    {
+      "probe": "too_close",
+      "sdk_status": "rejected",
+      "exception": "DistanceError",
+      "message": "The minimal distance between atoms in this device (5 µm) is not respected (up to a precision of 1e-6 µm) for the pairs: [('q0', 'q1')]",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "too_far",
+      "sdk_status": "rejected",
+      "exception": "RadiusError",
+      "message": "All atoms must be at most 38 μm away from the center of the array, which is not the case for: ['q1']",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "missing_channel",
+      "sdk_status": "rejected",
+      "exception": "ValueError",
+      "message": "No channel rydberg_local in the device.",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "over_amplitude",
+      "sdk_status": "rejected",
+      "exception": "ValueError",
+      "message": "The pulse's amplitude goes over the maximum value allowed for the chosen channel.",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "over_detuning",
+      "sdk_status": "rejected",
+      "exception": "ValueError",
+      "message": "The pulse's detuning values go out of the range allowed for the chosen channel.",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "short_duration",
+      "sdk_status": "rejected",
+      "exception": "ValueError",
+      "message": "duration has to be at least 16 ns.",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "clock_duration",
+      "sdk_status": "accepted",
+      "requested_duration_ns": 101,
+      "actual_duration_ns": 104,
+      "qpu_backend_constraints_checked": false,
+      "device_requires_layout": true,
+      "warnings": [
+        "A duration of 101 ns is not a multiple of the channel's clock period (4 ns). It was rounded up to 104 ns."
+      ]
+    },
+    {
+      "probe": "long_sequence",
+      "sdk_status": "rejected",
+      "exception": "RuntimeError",
+      "message": "The sequence's duration exceeded the maximum duration allowed by the device (6000 ns).",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "missing_layout",
+      "sdk_status": "accepted",
+      "requested_duration_ns": 100,
+      "actual_duration_ns": 100,
+      "qpu_backend_constraints_checked": false,
+      "device_requires_layout": true,
+      "warnings": []
+    }
+  ],
+  "full_sdk_run_reexecuted": false,
+  "probe_reexecuted": false,
+  "historical_outputs_modified": false,
+  "new_llm_generations": 0,
+  "qpu_jobs": 0,
+  "hardware_compatibility": "unverified; constructor checks do not include QPU backend/layout checks",
+  "scope": "Nominal constant-Hamiltonian oracle versus sampled SDK pulse dynamics within preregistered0.005; not ODE global accuracy1e-10",
+  "residual_risks": [
+    "Finite numerical comparison, not interval-certified dynamics",
+    "Time-boundary effect is a plausible source of observed nominal/SDK mismatch; causal attribution not independently isolated in this review",
+    "No QPU backend/layout/device accessibility or physical execution validation"
+  ],
+  "artifact_hashes": {
+    "quantage/sdk_rydberg.py": "499bf819b1b62e635c92913dd6005990e65b0b3a74cd1ab53ce10d86a3356109",
+    "tests/test_sdk_rydberg.py": "f0f8b2f727e9a0ab2e66afb2cf0c0d62758b8853b0d55880434b78b4f6f3a8b3",
+    "runs/20261113-c13-sdk-rydberg/protocol.md": "cf9aed2da6e78ec90ca7d48d7ae05f3ed2e2a5fd3e5ae8c3ec470a9e0a68226d",
+    "runs/20261113-c13-sdk-rydberg/results/manifest.json": "1149473527729a5ceb6c751eb7bbc2b9b7f9dc273bc92b3c3a77bf98ce927f65",
+    "runs/20261113-c13-sdk-rydberg/results/raw.jsonl": "06e34bc85a4c3f554991f92243fa86600d80bc6bda67d37b02fa7d923aa85ac3",
+    "runs/20261113-c13-sdk-rydberg/results/metrics.json": "db632d97ee5d49eadbb070b6ef264efec2743ef1bc0aad6cc9580c25c7145bee"
+  }
+}

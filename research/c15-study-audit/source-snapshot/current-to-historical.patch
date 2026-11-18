@@ -1,0 +1,126 @@
+--- observed-current/quantage/repair_study.py
++++ historical-snapshot/quantage/repair_study.py
+@@ -2,7 +2,6 @@
+ import argparse
+ import hashlib
+ import json
+-import math
+ from pathlib import Path
+ import time
+ from .repair_model import parse_model, verify_model, model_feasible, objective_value
+@@ -13,30 +12,12 @@
+     return [json.loads(s) for s in path.read_text().splitlines()]
+ 
+ 
+-def indexed(path, public, expected_phase):
++def indexed(path, public):
+     records = rows(path)
+     result = {r['id']:r for r in records}
+     if len(result) != len(records) or set(result) != set(public):
+         raise ValueError('complete unique generation matrix required, no imputation')
+     for i, row in result.items():
+-        if row['phase'] != expected_phase or type(row['output_tokens']) is not int or not 0 < row['output_tokens'] <= 384:
+-            raise ValueError('wrong phase or output budget')
+-        ids=row['generated_token_ids']; logps=row['generated_token_log_probabilities']
+-        if len(ids) != row['output_tokens'] or len(logps) != len(ids) or not all(type(t) is int for t in ids):
+-            raise ValueError('token count mismatch')
+-        if not all(type(x) in (int,float) and math.isfinite(x) for x in logps):
+-            raise ValueError('nonfinite token log probability')
+-        if abs(sum(logps)/len(logps)-row['mean_generated_log_probability']) > 1e-12:
+-            raise ValueError('mean token log probability mismatch')
+-        if row['input_tokens'] > 4096 or row['finish_reason'] not in ('eos','token_limit'):
+-            raise ValueError('input budget or unexplained finish')
+-        if row['finish_reason']=='token_limit' and row['output_tokens'] != 384:
+-            raise ValueError('unexplained early stop')
+-        user=json.loads(row['messages'][1]['content'])
+-        if user != {'intention':public[i]['intention'],'data':public[i]['data']}:
+-            raise ValueError('model input differs')
+-        if expected_phase in ('initial','direct') and len(row['messages']) != 2:
+-            raise ValueError('independent generation saw extra context')
+         if parse_model(row['raw_response'], public[i]['data']['n']) != row['parsed']:
+             raise ValueError('saved parse differs')
+     return result
+@@ -45,9 +26,8 @@
+ def dataset(cases_path, gold_path):
+     cases = json.loads(cases_path.read_text())
+     public = {r['id']:r for r in cases}
+-    label_rows=json.loads(gold_path.read_text())
+-    labels = {r['id']:r for r in label_rows}
+-    if len(public) != len(cases) or len(labels) != len(label_rows) or not set(public) <= set(labels):
++    labels = {r['id']:r for r in json.loads(gold_path.read_text())}
++    if len(public) != len(cases) or not set(public) <= set(labels):
+         raise ValueError('public/label ID mismatch')
+     for case in cases:
+         data = case['data']; spec = labels[case['id']]['constraints']; n=data['n']
+@@ -68,17 +48,12 @@
+         for k in ('required','forbidden'):
+             if any(type(x) is not int or not 0 <= x < n for x in spec[k]):
+                 raise ValueError('invalid reference index')
+-        families=[f for f,k in [('B','budget'),('L','min_count'),('U','max_count')] if spec[k] is not None]
+-        families += [f for f,k in [('M','required'),('F','forbidden'),('I','implications')] if spec[k]]
+-        if 'families' in labels[case['id']] and set(labels[case['id']]['families']) != set(families):
+-            raise ValueError('family metadata disagrees with reference')
+-        labels[case['id']]['families']=sorted(families)
+     return cases,public,labels
+ 
+ 
+ def feedback(cases_path,gold_path,initial_path,output):
+     cases,public,gold = dataset(cases_path,gold_path)
+-    initial = indexed(initial_path,public,'initial')
++    initial = indexed(initial_path,public)
+     output.mkdir(parents=True,exist_ok=True)
+     if (output/'minimal.json').exists():
+         raise ValueError('feedback already recorded')
+@@ -117,14 +92,14 @@
+             'regressions_from_faithful':0,'initial_errors':0,'repairs_to_faithful':0}
+ 
+ 
+-def score(cases_path,gold_path,initial_path,direct_path,self_path,guided_path,output,feedback_reports=None):
++def score(cases_path,gold_path,initial_path,direct_path,self_path,guided_path,output):
+     from .repair_solvers import portfolio
+     cases,public,gold=dataset(cases_path,gold_path)
+-    initial=indexed(initial_path,public,'initial')
++    initial=indexed(initial_path,public)
+     paths={'direct':direct_path,'self':self_path,'guided':guided_path}
+     if any(path is None for path in paths.values()) and not all(path is None for path in paths.values()):
+         raise ValueError('all three second phases or development initial-only')
+-    phases={k:indexed(p,public,k) for k,p in paths.items() if p is not None}
++    phases={k:indexed(p,public) for k,p in paths.items() if p is not None}
+     output.mkdir(parents=True,exist_ok=True)
+     if (output/'raw.jsonl').exists():
+         raise ValueError('scores already exist')
+@@ -183,22 +158,9 @@
+         h={'status':'supported_in_finite_test' if gain>=3 and totals['guided']['regressions_from_faithful']<=1 else 'not_supported_in_finite_test',
+            'guided_minus_self_faithful':gain,'required_gain':3,'guided_regressions':totals['guided']['regressions_from_faithful'],
+            'maximum_regressions':1}
+-    sources={'initial':initial_path,**{k:p for k,p in paths.items() if p is not None}}
+-    executions={}
+-    for name,path in sources.items():
+-        meta_path=path.parent/'generation.json';manifest_path=path.parent/'manifest.json'
+-        meta=json.loads(meta_path.read_text()) if meta_path.exists() else {}
+-        manifest=json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
+-        executions[name]={'load_seconds':meta.get('load_seconds'),'process_wall_seconds':meta.get('wall_seconds'),
+-                          'wrapper_wall_seconds':manifest.get('run',{}).get('runtime_seconds')}
+-    feedback_seconds=sum(r['feedback_wall_seconds'] for r in rows(feedback_reports)) if feedback_reports else None
+-    portfolio_seconds=sum(v['portfolio']['total_portfolio_seconds'] for r in records for v in r['results'].values() if v['portfolio'] is not None)
+     metrics={'cases':len(cases),'methods':totals,'strata':strata,'H15':h,
+              'physical_generation_calls':len(physical),'physical_generation_cost':{k:sum(r[k] for r in physical) for k in fields},
+              'attributable_cost_per_arm':attributable,
+-             'generation_executions':executions,'feedback_computation_seconds':feedback_seconds,
+-             'scored_portfolio_seconds_total':portfolio_seconds,
+-             'cost_scope':'row sums include generation/postprocessing, not imports/load; process/wrapper timings reported separately; annotation/development/session cost unknown',
+              'budget':'two calls and max768 outputtokens per arm/case; shared initial counted once physically',
+              'selection':{'direct':'schema validity then mean processed-token logprob, tie first','self_guided':'second if schema-valid, else initial if schema-valid'},
+              'scope':'finite annotated reference, no population CI, full explicit ILP emitted by LLM; portfolio is ex-post profiling'}
+@@ -212,10 +174,9 @@
+     p.add_argument('--initial',type=Path,required=True);p.add_argument('--output',type=Path,required=True)
+     p.add_argument('--direct',type=Path);p.add_argument('--self',dest='self_path',type=Path)
+     p.add_argument('--guided',type=Path)
+-    p.add_argument('--feedback-reports',type=Path)
+     a=p.parse_args()
+     if a.mode=='feedback':feedback(a.cases,a.gold,a.initial,a.output)
+-    else:score(a.cases,a.gold,a.initial,a.direct,a.self_path,a.guided,a.output,a.feedback_reports)
++    else:score(a.cases,a.gold,a.initial,a.direct,a.self_path,a.guided,a.output)
+ 
+ 
+ if __name__=='__main__':

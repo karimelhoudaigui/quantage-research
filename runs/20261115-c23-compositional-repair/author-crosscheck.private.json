@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checked_local_date": "2026-11-16",
+  "method": "Author self-check with separate set-based enumeration and direct deletion, not bit-violation implementation; regex roundtrip checks rendered clauses. Not independent public annotation.",
+  "checks_passed": 332,
+  "cases": 20,
+  "all_feasible": true,
+  "individual_implications": 60,
+  "all_individual_implications_active": true,
+  "all_present_families_active": true,
+  "all_individual_exclusions_active": true,
+  "rendered_clauses_match_author_gold": true,
+  "new_LLM_calls": 0
+}

@@ -1,0 +1,206 @@
+{
+  "schema_version": 2,
+  "claim_id": "C15-FRONTEND-EXACT-AUDIT",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "research/c15-language-loop-audit.py",
+    "--output",
+    "research/c15-language-loop-audit"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.13.1"
+      },
+      {
+        "name": "NumPy",
+        "version": "1.26.4"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Generated affine comparisons preserve exact integer truth tables, forbidden syntax is rejected, authored fields are preserved, compiled reviewer models retain the independently enumerated public domains, and the bounded controller handles an explicitly injected software sequence.",
+    "coefficient_domain": "exact integers",
+    "conventions": "No eval; expected comparison values computed directly from separately specified coefficients. Loop callbacks are explicitly synthetic software evidence.",
+    "inputs": [
+      "375 affine comparisons and handwritten syntax probes",
+      "24 public cases and frozen reviewer annotations",
+      "Injected two-response software fixture"
+    ],
+    "bounds": {
+      "grid_per_comparison": 27,
+      "public_n_max": 7,
+      "public_cases": 24
+    },
+    "non_claims": [
+      "No LLM inference",
+      "No real repair success rate",
+      "No free-text certificate",
+      "Reusable trace authentication limitation is reported, not resolved"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-15T13:05:04.844553+00:00",
+    "runtime_seconds": 1.136252,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c15-language-loop-audit.py",
+    "research/c15-code-audit.py",
+    "research/c15-annotation-oracle/raw.json",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/test_cases.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json",
+    "quantage/repair_model.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py",
+    "quantage/repair_language.py",
+    "quantage/repair_loop.py",
+    "quantage/repair_inference_v2.py",
+    "quantage/repair_study_v2.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c15-language-loop-audit.py",
+      "sha256": "626ca806fa77b234f4947a0d23451696f86038967716f213a7ad7626aa37fd33",
+      "sha256_after": "626ca806fa77b234f4947a0d23451696f86038967716f213a7ad7626aa37fd33"
+    },
+    {
+      "path": "research/c15-code-audit.py",
+      "sha256": "6de88f9b091405c5822563afd614c3f8bd889f91754961e4c33f7638a7b9c3ce",
+      "sha256_after": "6de88f9b091405c5822563afd614c3f8bd889f91754961e4c33f7638a7b9c3ce"
+    },
+    {
+      "path": "research/c15-annotation-oracle/raw.json",
+      "sha256": "29d1dbc5c7b77a2a0ffff087859885ec1848543cd456979e20f799b21296b636",
+      "sha256_after": "29d1dbc5c7b77a2a0ffff087859885ec1848543cd456979e20f799b21296b636"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+      "sha256": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b",
+      "sha256_after": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test_cases.json",
+      "sha256": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f",
+      "sha256_after": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/private_gold.review.json",
+      "sha256": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+      "sha256_after": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "sha256_after": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+    },
+    {
+      "path": "quantage/repair_language.py",
+      "sha256": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+      "sha256_after": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d"
+    },
+    {
+      "path": "quantage/repair_loop.py",
+      "sha256": "2128dcbaaa1b79d65ff43053ce531c25492bb3d8531f98adcc295002b09ca488",
+      "sha256_after": "2128dcbaaa1b79d65ff43053ce531c25492bb3d8531f98adcc295002b09ca488"
+    },
+    {
+      "path": "quantage/repair_inference_v2.py",
+      "sha256": "704b551452a767dfc841165cd4a88c31e4177275fdea62a5184c80e061418cae",
+      "sha256_after": "704b551452a767dfc841165cd4a88c31e4177275fdea62a5184c80e061418cae"
+    },
+    {
+      "path": "quantage/repair_study_v2.py",
+      "sha256": "199e4e20cd75754509a0798c44b81dbe78bf94d1734d0f948c4a32079e1954b8",
+      "sha256_after": "199e4e20cd75754509a0798c44b81dbe78bf94d1734d0f948c4a32079e1954b8"
+    }
+  ],
+  "output_directory": "research/c15-language-loop-audit",
+  "declared_results": [
+    "research/c15-language-loop-audit/raw.json",
+    "research/c15-language-loop-audit/loop-results/result.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c15-language-loop-audit/stdout.txt",
+      "sha256": "6dca856302019d32be6e943cab518e0ae0ce0b1a3e15f87428f6e23bfdcb2cf3",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-language-loop-audit/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-language-loop-audit/raw.json",
+      "sha256": "e719849827503b2fab5f50a80d608a701c826ad5d4c970fce5f9b66643d062c7",
+      "kind": "result"
+    },
+    {
+      "path": "research/c15-language-loop-audit/loop-results/result.json",
+      "sha256": "e40413064f58a52d49de778837fd1090a3d669c0b6bcc21d46ab01812e0ed532",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

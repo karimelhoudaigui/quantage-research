@@ -1,0 +1,15 @@
+{
+  "recorded_at_utc": "2026-11-13T19:54:25.210077+00:00",
+  "files": {
+    "quantage/core.py": "35001246743a201d2326a53a586fd50bedca48d8e322f52124f2a3e0c7403be2",
+    "quantage/verification.py": "c7d070281763bb46ad6244ef1c0bc4734c159bc32d5adca1dfac6e9786f6426f",
+    "quantage/contracts.py": "652d64ff6051ed0f621b2d9dca1918e89cc9efc8bf2bc10f3702e97226ac28ef",
+    "quantage/compact_agent.py": "b70787177b61139ac34a94f1b958159a374076b1f0bc9b05a3c348b7a12ed323",
+    "quantage/compact_v2.py": "ef63f0bc3000807f330b08a884af71d6f5609210c1704eec721603c5ea46a01d",
+    "quantage/compact_v3.py": "87f052487c4bb522b3e4d8580e9aa0199628f910a3e844a5085edc401c86db35",
+    "quantage/compact_v4.py": "1ad338864a35ce9a2af4f6ce91b2f5806ec3856dd56f2185adaa5e1a19c3c7e9",
+    "quantage/transferstudy.py": "ddb43805603272562a127baa6e4045908f936f7d264b16a3cc1c609fd6310333",
+    "quantage/local_score.py": "f6cee39791371f571dfb2e51d730ff4f613ae6335bb7c6b4ea71419237500293",
+    "runs/20261113-c09-heldout-guard/instructions.md": "872a5cb612628dbdc86c3f919526a5cf150e52423a2e3fca78356ec71b9eb185"
+  }
+}

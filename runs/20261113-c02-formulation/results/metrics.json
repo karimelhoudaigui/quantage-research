@@ -1,0 +1,396 @@
+{
+  "groups": {
+    "mis/linear_sign": {
+      "cases": 175,
+      "effective": 175,
+      "methods": {
+        "shape_only": {
+          "false_accept": 175,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 175
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 175
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 175
+        }
+      }
+    },
+    "mis/zero_penalty": {
+      "cases": 175,
+      "effective": 161,
+      "methods": {
+        "shape_only": {
+          "false_accept": 161,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 161
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 14,
+          "rejected": 175
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 161
+        }
+      }
+    },
+    "mis/boundary_penalty": {
+      "cases": 175,
+      "effective": 48,
+      "methods": {
+        "shape_only": {
+          "false_accept": 48,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 48,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 127,
+          "rejected": 175
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 48
+        }
+      }
+    },
+    "mis/drop_edge": {
+      "cases": 175,
+      "effective": 133,
+      "methods": {
+        "shape_only": {
+          "false_accept": 133,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 42,
+          "false_reject": 0,
+          "rejected": 91
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 28,
+          "rejected": 161
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 133
+        }
+      }
+    },
+    "mis/positive_scaling": {
+      "cases": 175,
+      "effective": 0,
+      "methods": {
+        "shape_only": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 175,
+          "rejected": 175
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        }
+      }
+    },
+    "mis/constant_shift": {
+      "cases": 175,
+      "effective": 0,
+      "methods": {
+        "shape_only": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 175,
+          "rejected": 175
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        }
+      }
+    },
+    "mis/double_penalty": {
+      "cases": 175,
+      "effective": 0,
+      "methods": {
+        "shape_only": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 175,
+          "rejected": 175
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        }
+      }
+    },
+    "photon/omit_phase": {
+      "cases": 125,
+      "effective": 27,
+      "methods": {
+        "shape_only": {
+          "false_accept": 27,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 27,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 73,
+          "rejected": 100
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 27
+        }
+      }
+    },
+    "photon/negate_phase": {
+      "cases": 125,
+      "effective": 0,
+      "methods": {
+        "shape_only": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 100,
+          "rejected": 100
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        }
+      }
+    },
+    "photon/half_angles": {
+      "cases": 125,
+      "effective": 114,
+      "methods": {
+        "shape_only": {
+          "false_accept": 114,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 114,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 6,
+          "rejected": 120
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 114
+        }
+      }
+    },
+    "photon/incoherent": {
+      "cases": 125,
+      "effective": 36,
+      "methods": {
+        "shape_only": {
+          "false_accept": 36,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 36,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 89,
+          "rejected": 125
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 36
+        }
+      }
+    },
+    "photon/amplitude_output": {
+      "cases": 125,
+      "effective": 101,
+      "methods": {
+        "shape_only": {
+          "false_accept": 101,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 101
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 24,
+          "rejected": 125
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 101
+        }
+      }
+    },
+    "photon/global_phase": {
+      "cases": 125,
+      "effective": 0,
+      "methods": {
+        "shape_only": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 125,
+          "rejected": 125
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        }
+      }
+    },
+    "photon/reverse_order": {
+      "cases": 125,
+      "effective": 0,
+      "methods": {
+        "shape_only": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 125,
+          "rejected": 125
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        }
+      }
+    },
+    "photon/phase_other_mode": {
+      "cases": 125,
+      "effective": 0,
+      "methods": {
+        "shape_only": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "one_solution_or_normalization": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        },
+        "syntax_identity": {
+          "false_accept": 0,
+          "false_reject": 125,
+          "rejected": 125
+        },
+        "full_oracle": {
+          "false_accept": 0,
+          "false_reject": 0,
+          "rejected": 0
+        }
+      }
+    }
+  },
+  "elapsed_seconds": 0.171734958,
+  "interpretation": "synthetic mutation study on development cases; oracle-defined equivalence"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "loop-software",
+    "constraints": {
+      "budget": 2,
+      "min_count": 1,
+      "max_count": null,
+      "required": [],
+      "forbidden": [],
+      "implications": []
+    },
+    "private_gold_marker": "must not pass"
+  }
+]

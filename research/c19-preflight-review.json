@@ -1,0 +1,86 @@
+{
+  "status": "passed_bounded_software_checks",
+  "python": "3.9.6",
+  "source_sha256": {
+    "quantage/repair_llama_linear.py": "27da08e8c072ae711aaf8451e761ed91bea0bec421974626241503e74b4195be",
+    "quantage/repair_language.py": "1bda1a555d1277a2a141ba3efe874adaeeea1246420ff9a91741a78d7ad07d3d",
+    "quantage/repair_feedback.py": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+    "quantage/repair_study_c19.py": "d4588bcdb1a0552cadcbc0efdb2156433aefbd302e0f3e567ce457eb4f6e0bce",
+    "scripts/audit_c19_preflight.py": "d2fe4622657f513697b17621565a73ca684722307f8132187ab2efc9df3d6393"
+  },
+  "checks": {
+    "primitive_exclusion": {
+      "passed": true,
+      "assignments": 128
+    },
+    "primitive_budget": {
+      "passed": true,
+      "assignments": 128
+    },
+    "primitive_minimum": {
+      "passed": true,
+      "assignments": 128
+    },
+    "primitive_maximum": {
+      "passed": true,
+      "assignments": 128
+    },
+    "primitive_required": {
+      "passed": true,
+      "assignments": 128
+    },
+    "primitive_forbidden": {
+      "passed": true,
+      "assignments": 128
+    },
+    "primitive_implication": {
+      "passed": true,
+      "assignments": 128
+    },
+    "nan_mean_rejected": {
+      "passed": true
+    },
+    "infinite_mean_rejected": {
+      "passed": true
+    },
+    "input_reserve_rejected": {
+      "passed": true
+    },
+    "boolean_input_rejected": {
+      "passed": true
+    },
+    "arm_selection_without_reference": {
+      "passed": true
+    },
+    "chosen_probabilities_string_speculation_float32_and_eos": {
+      "passed": true
+    },
+    "chosen_probability_id_mismatch_rejected": {
+      "passed": true
+    },
+    "feedback_cannot_add_reference_model": {
+      "passed": true
+    }
+  },
+  "elapsed_seconds": 0.004411999999999999,
+  "model_executions": 0,
+  "network_requests": 0,
+  "test_C19_records_read": 0,
+  "grammar_validation_scope": "manual derivations plus exact parser truth tables; no native GBNF validator invoked",
+  "review_independence": "driver/scorer reviewer distinct; reviewer originally authored repair_language.py and repair_solvers.py",
+  "limitations": [
+    "historical schema feedback wording mentions integer rows",
+    "API scores are heuristics, not grammar-conditioned likelihood",
+    "runtime/native template, Metal and model quality not exercised"
+  ],
+  "new_controller_self_check": {
+    "status": "passed_software_fixture_checks",
+    "guided_fixture_calls": 1,
+    "faithful_initial_extra_calls": 0,
+    "GPU_model_executions": 0,
+    "historical_initial_mutated": false,
+    "language_preserved": true,
+    "new_controller_sha256": "7bdc3697e8ef8c5ef94d2bf4c24b3c91e7b301a9f1cb516c2a950aba8d3197b1",
+    "review": "author_self_check_only"
+  }
+}

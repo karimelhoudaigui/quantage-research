@@ -1,0 +1,8 @@
+{
+  "method": "first four opaque group IDs in each family/language stratum; no model score used",
+  "source_public_sha256": "d181acd855b9db47f53763ee8154a03a838e04683ec5bee8de137f04c9480a45",
+  "cases": 32,
+  "groups": 16,
+  "recorded_at_utc": "2026-11-14T11:39:56.839096+00:00",
+  "scope": "post-C11 exploratory delayed model arm on a matched subset, not a new independent test corpus"
+}

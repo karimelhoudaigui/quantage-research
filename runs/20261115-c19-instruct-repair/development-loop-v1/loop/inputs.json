@@ -1,0 +1,14 @@
+{
+  "id": "b97cb5f56812",
+  "public_cases_sha256": "b1ef8544d0e4f67f5e456486c8e8ac418dcaecca30ab6d0b0ecccd69ff38ad8e",
+  "reference_sha256": "3591f586f76f224ea806c79e843b55286e1a2bfcf234c9341f07c876f154505d",
+  "instructions_sha256": "8281e49d29eeb992240e50b8929cbf70c7ae0c4ede698ef2d3f231bd84d176a0",
+  "max_repairs": 1,
+  "time_budget_seconds": 1800.0,
+  "driver_module": "quantage.repair_llama_linear",
+  "server_binary": "/Users/karimelhoudaigui/Downloads/quantage-research/research/external/c16-public/runtime/llama-b12359/llama-server",
+  "model_path": "/Users/karimelhoudaigui/Downloads/quantage-research/research/external/c19-public/models/Qwen_Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+  "acquisition_sha256": "a528cc7bb876ba5e02084e9593c2bba0b997b053ebbdd92c12345b8cf197b0f6",
+  "initial_records_sha256": "2c42d29f2c06ba879095262bbaf38b2a6323df0f63df5895b344dc44ae1bb5b6",
+  "reference_scope": "trusted annotated contract; never an inference input"
+}

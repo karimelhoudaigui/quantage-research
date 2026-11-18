@@ -1,0 +1,70 @@
+{
+  "claim_id": "C09-RESERVED-GENERATION",
+  "mathematics": {
+    "assertion_tested": "Observe new nonredundant task proposals on16 C06 cases whose groups were not generated in C08, before applying fixed paired guards.",
+    "coefficient_domain": "text proposals for two finite local mathematical contracts",
+    "conventions": "one greedy generation per reserved case, immutable raw responses, no gold read",
+    "inputs": [
+      "16 reserved cases,8disjoint groups",
+      "same pinned local Qwen checkpoint"
+    ],
+    "bounds": {
+      "cases": 16,
+      "output_tokens": 128,
+      "wall_seconds": 1200
+    },
+    "non_claims": [
+      "No training or population claim",
+      "No regeneration of C08 errors",
+      "No independent reviewer for these new prompts"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/contracts.py",
+    "quantage/compact_agent.py",
+    "quantage/compact_v2.py",
+    "quantage/local_inference_v2.py",
+    "runs/20261113-c09-heldout-guard/protocol.md",
+    "runs/20261113-c09-heldout-guard/instructions.md",
+    "runs/20261113-c09-heldout-guard/cases.json",
+    "runs/20261113-c07-public-traces/model-acquisition.json"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "torch",
+      "version": "2.8.0"
+    },
+    {
+      "name": "transformers",
+      "version": "4.45.2"
+    },
+    {
+      "name": "tokenizers",
+      "version": "0.20.3"
+    },
+    {
+      "name": "safetensors",
+      "version": "0.6.2"
+    },
+    {
+      "name": "huggingface-hub",
+      "version": "0.36.0"
+    },
+    {
+      "name": "numpy",
+      "version": "1.26.4"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "torch.manual_seed, greedy do_sample=false",
+    "seed": 20261113
+  }
+}

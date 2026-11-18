@@ -1,0 +1,6 @@
+{
+  "wall_seconds": 2.111280125,
+  "cpu_self_seconds": 0.30966099999999996,
+  "cpu_children_seconds": 0.22858699999999998,
+  "scope": "old closed tmp_pack Git garbage cleanup only, before inference; refs unchanged"
+}

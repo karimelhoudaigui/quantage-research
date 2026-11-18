@@ -1,0 +1,98 @@
+{
+  "id": "loop-software",
+  "status": "exact",
+  "stop_reason": "finite_certificate",
+  "usable_for_original": true,
+  "objective": 3,
+  "solution": [
+    1,
+    0
+  ],
+  "iterations": [
+    {
+      "iteration": 0,
+      "reused_initial": false,
+      "schema_valid": true,
+      "faithful": false,
+      "generation_seconds": 4.0917000000001424e-05,
+      "verification_seconds": 0.00016900000000000248,
+      "feedback_kind": "counterexamples"
+    },
+    {
+      "iteration": 1,
+      "reused_initial": false,
+      "schema_valid": true,
+      "faithful": true,
+      "generation_seconds": 9.97080000000039e-05,
+      "verification_seconds": 0.00014737500000000514,
+      "feedback_kind": "no_counterexample"
+    }
+  ],
+  "max_repairs": 3,
+  "generation_calls_attempted": 2,
+  "initial_record_reused": false,
+  "inference_mode": "injected_software_fixture",
+  "final_verification": {
+    "faithful": true,
+    "stage": "finite_cube",
+    "feedback": {
+      "kind": "no_counterexample",
+      "message": "No discrepancy on the finite cube. Preserve all model fields."
+    },
+    "assignments": 4,
+    "feasibility_mismatches": 0,
+    "objective_mismatches": 0,
+    "reference_feasible_count": 2,
+    "proposed_feasible_count": 2,
+    "scope": "exact finite feasibility and objective values relative to annotated contract, not arbitrary NL certification"
+  },
+  "portfolio": {
+    "concordance": true,
+    "selected_solver": "enumeration_dfs",
+    "selected_solver_seconds": 2.2666000000001046e-05,
+    "objective": 3,
+    "solution": [
+      1,
+      0
+    ],
+    "solvers": [
+      {
+        "solver": "enumeration_dfs",
+        "status": "optimal",
+        "objective": 3,
+        "solution": [
+          1,
+          0
+        ],
+        "all_optima": [
+          [
+            1,
+            0
+          ]
+        ],
+        "visited_leaves": 4,
+        "seconds": 2.2666000000001046e-05
+      },
+      {
+        "solver": "scipy_highs_milp",
+        "status": "optimal",
+        "objective": 3,
+        "solution": [
+          1,
+          0
+        ],
+        "raw_status": 0,
+        "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+        "time_limit_seconds": 2.0,
+        "raw_min_objective": -3.0,
+        "seconds": 0.859233833
+      }
+    ],
+    "comparison_error": null,
+    "total_portfolio_seconds": 0.859270375
+  },
+  "error": null,
+  "wall_seconds": 0.9709075,
+  "time_budget_seconds": 1800.0,
+  "scope": "finite structured oracle; no arbitrary-NL certificate or QPU execution"
+}

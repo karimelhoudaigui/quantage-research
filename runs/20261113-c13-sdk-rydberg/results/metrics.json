@@ -1,0 +1,136 @@
+{
+  "evaluations": 162,
+  "max_probability_error": 0.000472652807212981,
+  "max_hamiltonian_error": 6.123233995736766e-17,
+  "max_normalization_error": 1.611415334501487e-09,
+  "tolerances": {
+    "probability": 0.005,
+    "hamiltonian": 1e-10,
+    "normalization": 1e-08
+  },
+  "software": {
+    "python": "3.11.15",
+    "pulser": "1.7.2",
+    "pulser-core": "1.7.2",
+    "pulser-simulation": "1.7.2",
+    "qutip": "5.2.3",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1"
+  },
+  "device": {
+    "name": "AnalogDevice",
+    "dimensions": 2,
+    "rydberg_level": 60,
+    "min_atom_distance": 5,
+    "max_atom_num": 80,
+    "max_radial_distance": 38,
+    "max_sequence_duration": 6000,
+    "requires_layout": true,
+    "max_layout_filling": 0.5,
+    "accepts_new_layouts": true,
+    "interaction_coeff": 865723.02,
+    "rydberg_global": {
+      "addressing": "Global",
+      "max_amp": 12.566370614359172,
+      "max_abs_detuning": 125.66370614359172,
+      "min_duration": 16,
+      "clock_period": 4,
+      "max_duration": 100000000
+    }
+  },
+  "sdk_probes": [
+    {
+      "probe": "too_close",
+      "sdk_status": "rejected",
+      "exception": "DistanceError",
+      "message": "The minimal distance between atoms in this device (5 \u00b5m) is not respected (up to a precision of 1e-6 \u00b5m) for the pairs: [('q0', 'q1')]",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "too_far",
+      "sdk_status": "rejected",
+      "exception": "RadiusError",
+      "message": "All atoms must be at most 38 \u03bcm away from the center of the array, which is not the case for: ['q1']",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "missing_channel",
+      "sdk_status": "rejected",
+      "exception": "ValueError",
+      "message": "No channel rydberg_local in the device.",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "over_amplitude",
+      "sdk_status": "rejected",
+      "exception": "ValueError",
+      "message": "The pulse's amplitude goes over the maximum value allowed for the chosen channel.",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "over_detuning",
+      "sdk_status": "rejected",
+      "exception": "ValueError",
+      "message": "The pulse's detuning values go out of the range allowed for the chosen channel.",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "short_duration",
+      "sdk_status": "rejected",
+      "exception": "ValueError",
+      "message": "duration has to be at least 16 ns.",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "clock_duration",
+      "sdk_status": "accepted",
+      "requested_duration_ns": 101,
+      "actual_duration_ns": 104,
+      "qpu_backend_constraints_checked": false,
+      "device_requires_layout": true,
+      "warnings": [
+        "A duration of 101 ns is not a multiple of the channel's clock period (4 ns). It was rounded up to 104 ns."
+      ]
+    },
+    {
+      "probe": "long_sequence",
+      "sdk_status": "rejected",
+      "exception": "RuntimeError",
+      "message": "The sequence's duration exceeded the maximum duration allowed by the device (6000 ns).",
+      "qpu_backend_constraints_checked": false,
+      "warnings": []
+    },
+    {
+      "probe": "missing_layout",
+      "sdk_status": "accepted",
+      "requested_duration_ns": 100,
+      "actual_duration_ns": 100,
+      "qpu_backend_constraints_checked": false,
+      "device_requires_layout": true,
+      "warnings": []
+    }
+  ],
+  "sampling_rate": 1.0,
+  "with_modulation": false,
+  "noise": false,
+  "solver_options": {
+    "atol": 1e-10,
+    "rtol": 1e-10,
+    "max_step_us": 0.001
+  },
+  "oracle": "separate4x4Hamiltonian construction with numpy Hermitian eigendecomposition, initial|gg>",
+  "sdk_solver": "QutipEmulator, no-noise ODE",
+  "python_optimization": 0,
+  "elapsed_seconds": 21.815239042043686,
+  "cpu_seconds": 3.730003,
+  "external_purchase_eur": 0,
+  "qpu_jobs": 0,
+  "specific_hardware_compatible": "unverified",
+  "independent_review": "pending"
+}

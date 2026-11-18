@@ -1,0 +1,10 @@
+{
+  "recorded_at_utc": "2026-11-14T18:55:17.187816+00:00",
+  "author_sha256": "fdead29381317c638d30a961aa0472a38f32f48a6f79d80b65a40a1f9acd9166",
+  "review_sha256": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+  "agreements": 24,
+  "disagreements": [],
+  "normalization": "sort unordered index/pair lists; no semantic label change",
+  "gold_sha256": "21fe525a57c12e698fb16d7aaba27dcdfd794a6a778aa1a46512182f6ec8dd8a",
+  "limitations": "distinct roles, not blind human annotation or demonstrated model independence"
+}

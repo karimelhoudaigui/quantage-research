@@ -1,0 +1,41 @@
+{
+  "claim_id": "C16-SCORER-SOFTWARE",
+  "mathematics": {
+    "assertion_tested": "Adapt unchanged independent C15 fixture expectations to C16 scorer H16/context/cost scope; no LLM performance",
+    "coefficient_domain": "integer n2 fixtures",
+    "conventions": "synthetic log probabilities/times, actual local solvers",
+    "inputs": [
+      "4 synthetic software cases, 16 synthetic records"
+    ],
+    "bounds": {
+      "cases": 4
+    },
+    "non_claims": [
+      "No LLM results",
+      "Integrator self-check of adaptation, not independent final review"
+    ]
+  },
+  "execution_artifacts": [
+    "research/c16-study-self-audit.py",
+    "quantage/repair_study_c16.py",
+    "quantage/repair_model.py",
+    "quantage/repair_language.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_solvers.py"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    },
+    {
+      "name": "SciPy",
+      "version": "1.13.1"
+    }
+  ],
+  "randomness": {
+    "used": false,
+    "generator": null,
+    "seed": null
+  }
+}

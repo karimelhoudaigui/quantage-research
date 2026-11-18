@@ -1,0 +1,41 @@
+{
+  "claim_id": "C01-FINITE",
+  "mathematics": {
+    "assertion_tested": "All optimum bitstrings agree for declared MIS inputs; ideal one-photon probabilities agree within 1e-12.",
+    "coefficient_domain": "exact integer QUBO; IEEE754 complex optical amplitudes",
+    "conventions": "See protocol; modes zero-indexed; angles radians",
+    "inputs": [
+      "all simple labelled graphs n=1..5, unit weights",
+      "100 seeded weighted graphs n=2..6",
+      "125 declared optical angle triples"
+    ],
+    "bounds": {
+      "n_max": 6,
+      "optical_cases": 125,
+      "tolerance": 1e-12
+    },
+    "non_claims": [
+      "Not a proof of agent generalization",
+      "No LLM or QPU performance",
+      "Not a hardware noise model"
+    ]
+  },
+  "execution_artifacts": [
+    "quantage/__init__.py",
+    "quantage/core.py",
+    "quantage/verification.py",
+    "quantage/benchmark.py",
+    "runs/20261113-c01-foundation/protocol.md"
+  ],
+  "software": [
+    {
+      "name": "Python",
+      "version": "3.9.6"
+    }
+  ],
+  "randomness": {
+    "used": true,
+    "generator": "random.Random, Python 3.9.6",
+    "seed": 20261113
+  }
+}

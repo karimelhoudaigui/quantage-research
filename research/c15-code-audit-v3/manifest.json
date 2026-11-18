@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "claim_id": "C15-CODE-HELPER-FROZEN-AUDIT",
+  "repository": {
+    "commit": "fee83eb4575198e3e142d41c621300b4d11361d8",
+    "dirty": true
+  },
+  "command": [
+    "python3",
+    "research/c15-code-audit-v3.py",
+    "--output",
+    "research/c15-code-audit-v3/raw.json"
+  ],
+  "environment": {
+    "software": [
+      {
+        "name": "runner-python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "computation Python",
+        "version": "3.9.6"
+      },
+      {
+        "name": "SciPy",
+        "version": "1.13.1"
+      },
+      {
+        "name": "NumPy",
+        "version": "1.26.4"
+      }
+    ],
+    "hardware": "macOS-26.2-arm64-arm-64bit"
+  },
+  "mathematics": {
+    "assertion_tested": "Finite certificate discrepancy counts, deterministic capped witnesses and real DFS/HiGHS outputs agree with independent reviewer semantics on every public C15 instance and explicit candidate mutations.",
+    "coefficient_domain": "exact integers for table verification; HiGHS floating MILP cross-checked against exact domains",
+    "conventions": "1 includes item i; unit-indexed ordered variables; each binary cube exhausted; implication a=>b; no author annotation read.",
+    "inputs": [
+      "24 public instances",
+      "Frozen reviewer constraints and independent domains",
+      "Production model verifier and solvers"
+    ],
+    "bounds": {
+      "cases": 24,
+      "n_min": 4,
+      "n_max": 7,
+      "assignment_count_per_case_max": 128,
+      "HiGHS_limit_seconds": 2
+    },
+    "non_claims": [
+      "No inference",
+      "No scoring of LLM traces",
+      "Audit-only canonical ILPs are not made available to inference",
+      "No theorem for arbitrary text"
+    ]
+  },
+  "randomness": {
+    "used": false,
+    "generator": "",
+    "seed": null
+  },
+  "run": {
+    "started_at": "2026-11-14T20:24:33.870629+00:00",
+    "runtime_seconds": 0.786481,
+    "exit_status": 0,
+    "status": "completed",
+    "timeout_seconds": 30.0,
+    "max_output_bytes": 1048576,
+    "resource_limits": {
+      "memory_bytes": null,
+      "cpu_seconds": null,
+      "max_cores": null,
+      "max_threads": 1
+    },
+    "missing_results": [],
+    "invalid_results": []
+  },
+  "execution_artifacts": [
+    "research/c15-code-audit-v3.py",
+    "research/c15-annotation-oracle/raw.json",
+    "runs/20261114-c15-formulation-repair/dev_cases.json",
+    "runs/20261114-c15-formulation-repair/test_cases.json",
+    "runs/20261114-c15-formulation-repair/private_gold.review.json",
+    "quantage/repair_model.py",
+    "quantage/repair_solvers.py",
+    "quantage/repair_feedback.py",
+    "quantage/repair_inference.py"
+  ],
+  "input_artifacts": [
+    {
+      "path": "research/c15-code-audit-v3.py",
+      "sha256": "6f401684014ddc4fd4d37400be72d0241b50311eba36e92e739f968102d5806f",
+      "sha256_after": "6f401684014ddc4fd4d37400be72d0241b50311eba36e92e739f968102d5806f"
+    },
+    {
+      "path": "research/c15-annotation-oracle/raw.json",
+      "sha256": "29d1dbc5c7b77a2a0ffff087859885ec1848543cd456979e20f799b21296b636",
+      "sha256_after": "29d1dbc5c7b77a2a0ffff087859885ec1848543cd456979e20f799b21296b636"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/dev_cases.json",
+      "sha256": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b",
+      "sha256_after": "22afc76c2318d180331693129189a814020ff4e785d17fb8b19eaacfc6c6337b"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/test_cases.json",
+      "sha256": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f",
+      "sha256_after": "f48e5bbe5b16554719e0abd535bd943eee2074c212300f6b76a1ecaaee92b89f"
+    },
+    {
+      "path": "runs/20261114-c15-formulation-repair/private_gold.review.json",
+      "sha256": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2",
+      "sha256_after": "1bb31ff6323f79987c2d53a541b0738a625e56019475b02095169bcb8bfaa4e2"
+    },
+    {
+      "path": "quantage/repair_model.py",
+      "sha256": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745",
+      "sha256_after": "e022473093267ca7d32fa52bd21a75618fc4cec3888479d655ef4cbcec5a0745"
+    },
+    {
+      "path": "quantage/repair_solvers.py",
+      "sha256": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e",
+      "sha256_after": "ca9a05478cff035e643cb13bbd1fb81fdc05acd0d77b6b19b08e192530d8415e"
+    },
+    {
+      "path": "quantage/repair_feedback.py",
+      "sha256": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9",
+      "sha256_after": "fbcddb5c824f009802e811b664421390d589ba3828bcf09f72b3494fa9c468a9"
+    },
+    {
+      "path": "quantage/repair_inference.py",
+      "sha256": "e6f5f9f51ee0fd3fcc79632b99b93eb80efb72d745b2187e8060cb5f362a71a7",
+      "sha256_after": "e6f5f9f51ee0fd3fcc79632b99b93eb80efb72d745b2187e8060cb5f362a71a7"
+    }
+  ],
+  "output_directory": "research/c15-code-audit-v3",
+  "declared_results": [
+    "research/c15-code-audit-v3/raw.json"
+  ],
+  "outputs": [
+    {
+      "path": "research/c15-code-audit-v3/stdout.txt",
+      "sha256": "dc9a37352e36654600d3513251065270fcb54f8cab28cb90c3a5edd477e69bac",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-code-audit-v3/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "kind": "log"
+    },
+    {
+      "path": "research/c15-code-audit-v3/raw.json",
+      "sha256": "77818d1522b5e51d32fd5223d09fc93788f565e1c9a92cf01ae2ee5ba9be7608",
+      "kind": "result"
+    }
+  ],
+  "checks": [
+    {
+      "check": "input hashes unchanged",
+      "passed": true
+    },
+    {
+      "check": "process exited successfully within enforced limits",
+      "passed": true
+    },
+    {
+      "check": "declared result files are present and regular",
+      "passed": true
+    }
+  ],
+  "result": "Run completed; mathematical assertion requires interpretation and review.",
+  "residual_risks": [
+    "Command success does not establish the mathematical interpretation.",
+    "Only listed input artifacts are pinned; external dependencies need recorded versions.",
+    "The thread cap uses conventional environment variables; a child program may ignore them."
+  ]
+}

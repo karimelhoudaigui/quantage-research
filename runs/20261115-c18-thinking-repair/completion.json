@@ -1,0 +1,5 @@
+{
+  "status": "complete",
+  "question": "Le mode thinking du même 2B produit-il une réponse finale fidèle dans 1024 tokens sur ces deux cas ?",
+  "next_action": "Poursuivre C19 non-thinking distinct ; ne pas présenter ce pilote comme comparaison contrôlée du raisonnement."
+}

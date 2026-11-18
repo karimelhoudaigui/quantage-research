@@ -1,0 +1,193 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "format": "safetensors",
+  "files": [
+    {
+      "name": "README.md",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/README.md",
+      "bytes": 6772,
+      "sha256": "4f97533ad95b1b2fea15fbc075c01b94578ebdd7c8138888fa43fa3abd530dc4",
+      "expected_lfs_sha256": null
+    },
+    {
+      "name": "config.json",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/config.json",
+      "bytes": 861,
+      "sha256": "8eb740e8bbe4cff95ea7b4588d17a2432deb16e8075bc5828ff7ba9be94d982a",
+      "expected_lfs_sha256": null
+    },
+    {
+      "name": "generation_config.json",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/generation_config.json",
+      "bytes": 132,
+      "sha256": "87b916edaaab66b3899b9d0dd0752727dff6666686da0504d89ae0a6e055a013",
+      "expected_lfs_sha256": null
+    },
+    {
+      "name": "merges.txt",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/merges.txt",
+      "bytes": 466391,
+      "sha256": "0b54e8aa4e53d5383e2e4bc635a56b43f9647f7b13832d5d9ecd8f82dac4f510",
+      "expected_lfs_sha256": null
+    },
+    {
+      "name": "model.safetensors",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/model.safetensors",
+      "bytes": 269060552,
+      "sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+      "expected_lfs_sha256": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/special_tokens_map.json",
+      "bytes": 655,
+      "sha256": "2b7379f3ae813529281a5c602bc5a11c1d4e0a99107aaa597fe936c1e813ca52",
+      "expected_lfs_sha256": null
+    },
+    {
+      "name": "tokenizer.json",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/tokenizer.json",
+      "bytes": 2104556,
+      "sha256": "9ca9acddb6525a194ec8ac7a87f24fbba7232a9a15ffa1af0c1224fcd888e47c",
+      "expected_lfs_sha256": null
+    },
+    {
+      "name": "tokenizer_config.json",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/tokenizer_config.json",
+      "bytes": 3764,
+      "sha256": "4ec77d44f62efeb38d7e044a1db318f6a939438425312dfa333b8382dbad98df",
+      "expected_lfs_sha256": null
+    },
+    {
+      "name": "vocab.json",
+      "url": "https://huggingface.co/HuggingFaceTB/SmolLM2-135M-Instruct/resolve/12fd25f77366fa6b3b4b768ec3050bf629380bac/vocab.json",
+      "bytes": 800662,
+      "sha256": "82b84012e3add4d01d12ba14442026e49b8cbbaead1f79ecf3d919784f82dc79",
+      "expected_lfs_sha256": null
+    }
+  ],
+  "source_tree_metadata": [
+    {
+      "type": "directory",
+      "oid": "703e76c4aba4bf9dc5c6f35aab3f1a7a7c0988f6",
+      "size": 0,
+      "path": "onnx"
+    },
+    {
+      "type": "directory",
+      "oid": "9e0733045654fbb09d4359f19a576dc70a306a38",
+      "size": 0,
+      "path": "runs"
+    },
+    {
+      "type": "file",
+      "oid": "a6344aac8c09253b3b630fb776ae94478aa0275b",
+      "size": 1519,
+      "path": ".gitattributes"
+    },
+    {
+      "type": "file",
+      "oid": "d168166639f4dec33a0d0bb5f8e7d4e20d9d52ac",
+      "size": 6772,
+      "path": "README.md"
+    },
+    {
+      "type": "file",
+      "oid": "85c006f9a5e464072db2465b66ac20be695963d0",
+      "size": 783,
+      "path": "all_results.json"
+    },
+    {
+      "type": "file",
+      "oid": "36293b6099200eb8aeb55ae2c01bca2ba46d80d0",
+      "size": 861,
+      "path": "config.json"
+    },
+    {
+      "type": "file",
+      "oid": "b6c91c24d0db60c08b7a8be9692d83b5c071d5c7",
+      "size": 586,
+      "path": "eval_results.json"
+    },
+    {
+      "type": "file",
+      "oid": "da6c4d71a43aa7e6f785bdbb28ea5025438a73fa",
+      "size": 132,
+      "path": "generation_config.json"
+    },
+    {
+      "type": "file",
+      "oid": "69503b13f727ba3812b6803e97442a6de05ef5eb",
+      "size": 466391,
+      "path": "merges.txt"
+    },
+    {
+      "type": "file",
+      "oid": "2ef707371406f95f8aa91fb03a75f22f3c568299",
+      "size": 269060552,
+      "lfs": {
+        "oid": "5af571cbf074e6d21a03528d2330792e532ca608f24ac70a143f6b369968ab8c",
+        "size": 269060552,
+        "pointerSize": 134
+      },
+      "xetHash": "73b079dc7bd546aed26d20a82289bd752fc52a2fda13e7f2b551f3af73845b59",
+      "path": "model.safetensors"
+    },
+    {
+      "type": "file",
+      "oid": "44719d2e365acac0637fd25a3acf46494ca45940",
+      "size": 655,
+      "path": "special_tokens_map.json"
+    },
+    {
+      "type": "file",
+      "oid": "f922b1797f0c88e71addc8393787831f2477a4bd",
+      "size": 2104556,
+      "path": "tokenizer.json"
+    },
+    {
+      "type": "file",
+      "oid": "8c7b22013909450429303ed10be4398bd63f5457",
+      "size": 3764,
+      "path": "tokenizer_config.json"
+    },
+    {
+      "type": "file",
+      "oid": "246b9556e2d21f927f43ff1a0ff9447c5906b46f",
+      "size": 232,
+      "path": "train_results.json"
+    },
+    {
+      "type": "file",
+      "oid": "6870fd88eb2bd4aa2a3c7d3ecb9214bfdddf64f1",
+      "size": 57225,
+      "path": "trainer_state.json"
+    },
+    {
+      "type": "file",
+      "oid": "24687c3b6c17e3c5fb3443798bc9d79442d5f98c",
+      "size": 6520,
+      "lfs": {
+        "oid": "90f508e5769b31070c2c8f82e7ecdce816d610763df89479b5258bc66ee8b357",
+        "size": 6520,
+        "pointerSize": 129
+      },
+      "xetHash": "54f616b01f720edac316f4704ea6cc362360f5a4298436f6b7af70075e14d393",
+      "path": "training_args.bin"
+    },
+    {
+      "type": "file",
+      "oid": "0ad5ecc2035b7031b88afb544ee95e2d49baa484",
+      "size": 800662,
+      "path": "vocab.json"
+    }
+  ],
+  "license": "Apache-2.0 declared in retained model card and primary repository metadata",
+  "credential_use": false,
+  "remote_code_execution": false,
+  "external_purchase_eur": 0,
+  "total_bytes": 272444345,
+  "elapsed_seconds": 5.671336707999999,
+  "recorded_at_utc": "2026-11-13T19:55:04.787114+00:00"
+}
